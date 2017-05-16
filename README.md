@@ -1,7 +1,7 @@
 
 # Taxonworks doc
 
-Tired of reading all this stuff?  Talk to a human on [![Gitter][20]][19].
+Tired of reading all this stuff?  Talk to a human, [![Gitter][1]][2].
 
 This is the current hub for documentation on TaxonWorks ([homepage](http://taxonworks.org), [source](https://github.com/SpeciesFileGroup/taxonworks)).  
 
@@ -21,5 +21,6 @@ No [contribution](CONTRIBUTING.md) is too small!
 
 * Some of the files here are in .vue format (not javascript, but rather 'Visual Understanding Environment').  The can be opened with the free software [Vue](http://vue.tufts.edu/download/index.cfm)
 
-[20]: https://badges.gitter.im/SpeciesFileGroup/taxonworks.svg
 
+[1]: https://badges.gitter.im/SpeciesFileGroup/taxonworks.svg
+[2]: https://gitter.im/SpeciesFileGroup/taxonworks?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge

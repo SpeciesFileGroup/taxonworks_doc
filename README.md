@@ -5,6 +5,10 @@ Tired of reading all this stuff?  Talk to a human, [![Gitter][1]][2].
 
 This is the current hub for documentation on TaxonWorks ([homepage](http://taxonworks.org), [source](https://github.com/SpeciesFileGroup/taxonworks)).  
 
+## Installation
+
+Get started quickly with [install_taxonworks instructions](https://github.com/SpeciesFileGroup/install_taxonworks).
+
 ## Registry
 
 The [registry](REGISTRY.md) is where you can find a place to start a TaxonWorks project.

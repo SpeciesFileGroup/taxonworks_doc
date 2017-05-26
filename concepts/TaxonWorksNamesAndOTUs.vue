@@ -1,14 +1,14 @@
-<!-- Tufts VUE 3.3.0 concept-map (TaxonWorksNamesAndOTUs.vue) 2017-05-10 -->
+<!-- Tufts VUE 3.3.0 concept-map (TaxonWorksNamesAndOTUs.vue) 2017-05-17 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.app/Contents/Resources/Java/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Wed May 10 16:47:51 CDT 2017 by matt on platform Mac OS X 10.12.4 in JVM 1.8.0_25-b17 -->
+<!-- Do Not Remove: Saved date Wed May 17 12:58:33 CDT 2017 by matt on platform Mac OS X 10.12.4 in JVM 1.8.0_25-b17 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built October 8 2015 at 1658 by tomadm on Linux 2.6.32-504.23.4.el6.x86_64 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0"
     label="TaxonWorksNamesAndOTUs.vue" created="1494426619906" x="0.0"
     y="0.0" width="1976.4061" height="2109.6973" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1494452871954" size="41097"
+    <resource referenceCreated="1495043913588" size="55900"
         spec="/Users/matt/WORKING/lib/src/github/species_file_group/taxonworks_doc/concepts/TaxonWorksNamesAndOTUs.vue"
         type="1" xsi:type="URLResource">
         <title>TaxonWorksNamesAndOTUs.vue</title>
@@ -42,7 +42,7 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="8"
-        label="The data is nomenclatural. &#xa;The data is factual, it does&#xa;not involve biological interpretation.&#xa;You could teach undergrads to record it&#xa;with a high degree of confidence.&#xa;While one might infer biology from it, that is&#xa;not the intent of its assertion&#xa;one that is governed by a code&#xa; of nomenclature, and the &#xa;data being recorded are metadata&#xa;that are bound first&#xa;to that &quot;code&quot;."
+        label="The data is nomenclatural. &#xa;The data is factual, it does&#xa;not involve biological interpretation.&#xa;You could teach undergrads to record it&#xa;with a high degree of confidence.&#xa;While one might infer biology from it, that is&#xa;not the intent of its assertion,&#xa;one that is governed by a code&#xa; of nomenclature, and the &#xa;data being recorded are metadata&#xa;that are bound first&#xa;to that &quot;code&quot;."
         layerID="1" created="1494426620960" x="872.75195" y="-826.84155"
         width="291.0" height="210.5968" strokeWidth="1.0"
         autoSized="false" xsi:type="node">
@@ -422,7 +422,7 @@
         <ID1 xsi:type="node">21</ID1>
         <ID2 xsi:type="node">27</ID2>
     </child>
-    <child ID="70" label="I want to relate biolgoical concepts"
+    <child ID="70" label="I want to relate biological concepts"
         layerID="1" created="1494426783764" x="-136.03955" y="-644.5845"
         width="210.50977" height="106.37891" strokeWidth="1.0"
         autoSized="false" xsi:type="node">
@@ -514,7 +514,7 @@
         <ctrlPoint1 x="1727.0824" y="632.98694" xsi:type="point"/>
     </child>
     <child ID="86"
-        label="I have a string that looks to be a biological name&#xa;I likely got it from an alorithim that detects&#xa;such thing.  Many possible processes&#xa;can be used, GNFinder is likely the best. "
+        label="I have a string that looks to be a biological name&#xa;I likely got it from an alorithim that detects&#xa;such things.  Many possible processes&#xa;can be used, GNFinder is likely the best. "
         layerID="1" created="1494427172831" x="482.71445" y="-1406.434"
         width="295.93338" height="110.35791" strokeWidth="1.0"
         autoSized="false" xsi:type="node">
@@ -723,7 +723,7 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="121" label="Facts" layerID="1" created="1494452048303"
-        x="882.00305" y="-924.37054" width="149.0" height="64.0"
+        x="882.00305" y="-924.37054" width="152.0" height="64.0"
         strokeWidth="0.0" autoSized="false" xsi:type="text">
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
@@ -779,7 +779,7 @@
         <label>Opinions</label>
     </child>
     <child ID="123" label="Strings" layerID="1" created="1494452082860"
-        x="661.36206" y="-1293.0933" width="197.0" height="97.0"
+        x="661.36206" y="-1293.0933" width="200.0" height="97.0"
         strokeWidth="0.0" autoSized="false" xsi:type="text">
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
@@ -827,8 +827,8 @@
   &lt;/head&gt;
   &lt;body&gt;
     &lt;p color="#b3bfe3" style="color: #b3bfe3"&gt;
-      &lt;font style="font-size:36;"&gt;Documentation 
-&lt;/font&gt;    &lt;/p&gt;
+      &lt;font style="font-size:36;"&gt;Documentation &lt;/font&gt;
+    &lt;/p&gt;
     &lt;p color="#b3bfe3" style="color: #b3bfe3"&gt;
       
     &lt;/p&gt;
@@ -1024,8 +1024,8 @@
         y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/f2ca9d450ac019466c04854f775cc6d1</URIString>
     </layer>
-    <userZoom>0.75</userZoom>
-    <userOrigin x="-573.65454" y="-1228.2856"/>
+    <userZoom>0.25</userZoom>
+    <userOrigin x="-716.8015" y="-809.0085"/>
     <presentationBackground>#202020</presentationBackground>
     <PathwayList currentPathway="0" revealerIndex="-1">
         <pathway ID="0" label="Untitled Pathway" created="1494426619906"

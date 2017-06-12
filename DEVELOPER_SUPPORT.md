@@ -2,7 +2,9 @@
 # Developer Support
 
 A project the nature of TaxonWorks needs contributions from many people to succeed over the long term. To that end we're working hard to build a foundation that permits and encourages anyone to contribute to the project.  Highlights include:
-  
+
+* All elements of the project are open source.
+
 * Docker images let you build against the API in your own Javascript framework with extremely minimal setup. See [this project, a matrix row coder that can run on your desktop, or be integrated natively into TaxonWorks](https://github.com/SpeciesFileGroup/matrix_row_coder).
  
 * Code generators let you stub a new task view (core feature) or batch-loader in a single line.  

@@ -4,6 +4,10 @@
 
 [![Gitter][4]][3].  Someone from the TaxonWorks community is almost certainly lurking, we can help you in real-time.
 
+## How is TaxonWorks supporting developer contributions?
+
+See [here](DEVELOPER_SUPPORT.md).
+
 ##  How do I report a bug or feature request?
 
 First [read this][14].

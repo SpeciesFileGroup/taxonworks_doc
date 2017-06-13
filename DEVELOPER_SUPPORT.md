@@ -9,10 +9,10 @@ A project the nature of TaxonWorks needs contributions from many people to succe
  
 * Code generators let you stub a new task view (core feature) or batch-loader in a single line.  
   
-* TaxonWorks is built on Rails. The conventions there acts a wrapper around features that can be written in Ruby or javascript. 
+* TaxonWorks is built on Rails. The conventions there acts a wrapper around features that can be written in Ruby or other cutting edge tools like [Vue](https://vuejs.org/), [Elm](), or other webpack supported frameworks.
 
 * TaxonWorks is extensively unit tested.  This means you can code and contribute with a lot less fear of breaking things.
 
-* TaxonWorks is deployed in production in Kubernetes.  
+* TaxonWorks is deployed in production in Kubernetes.  This means you 
  
-* The Species File Group has supported hackathons, and will continue to support hackathons.  Contact them if you're interested in participating.  They are also interested in supporting visits to would-be developers, students, or others wishing to get a bootcamp in TaxonWorks development.
+* The Species File Group and its members have held hackatons and many in-house joint workshops. Contact them if you're interested in participating.  They are also interested in supporting visits to would-be developers, students, or others wishing to get a bootcamp in TaxonWorks development.

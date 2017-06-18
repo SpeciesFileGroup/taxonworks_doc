@@ -13,6 +13,6 @@ A project the nature of TaxonWorks needs contributions from many people to succe
 
 * TaxonWorks is extensively unit tested.  This means you can code and contribute with a lot less fear of breaking things.
 
-* TaxonWorks is deployed in production in Kubernetes.  This means you 
+* TaxonWorks is deployed in production in [Kubernetes](https://kubernetes.io/), cutting edge application deployment and management software.
  
 * The Species File Group and its members have held hackatons and many in-house joint workshops. Contact them if you're interested in participating.  They are also interested in supporting visits to would-be developers, students, or others wishing to get a bootcamp in TaxonWorks development.

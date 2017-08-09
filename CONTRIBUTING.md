@@ -20,6 +20,14 @@ Some other conventions:
 * Use the prefix "task -" in the name to indicate the request for a new or improved task.
 * Use the prefix of your project name if reporting errors with a specific project.
 
+## I'd like to provide an interface or workflow idea?
+
+Perfect.  Interface (e.g. forms, reports, searches) mockups are graphical ways of asking for new features. We love to see them.  To create a mockup you can use tools like Illustrator, Photoshop, or more technical design tools like Balsamiq or Sketch, or just draw them on paper take a picture.  You can get them to us by opening an [issue][13] and attaching the image there.  Add a little story, or multiple pictures to help describe how you might use the interface.
+
+## I use my current tools this way, and it is awesome, can I send you a video to show you?
+
+Send! It is super useful for you to record your screen, or position a video campera to capture your work on-screen and arround you.  This way we see exactly how you work. You can send us big videos through file sharing services like http://www.dropsend.com/.
+
 ##  How do I set up my development environment?
 
 See the [install_taxonworks][5] repository.

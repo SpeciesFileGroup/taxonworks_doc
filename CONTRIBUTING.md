@@ -22,7 +22,7 @@ Some other conventions:
 
 ## I'd like to provide an interface or workflow idea?
 
-Perfect.  Interface (e.g. forms, reports, searches) mockups are graphical ways of asking for new features. We love to see them.  To create a mockup you can use tools like Illustrator, Photoshop, or more technical design tools like Balsamiq or Sketch, or just draw them on paper take a picture.  You can get them to us by opening an [issue][13] and attaching the image there.  Add a little story, or multiple pictures to help describe how you might use the interface.
+Perfect.  Interface (e.g. forms, reports, searches) mockups are graphical ways of asking for new features. We love to see them.  To create a mockup you can use tools like Illustrator, Photoshop, or more technical design tools like Balsamiq or Sketch, or just draw them on paper and take a picture with your phone.  You can get them to us by opening an [issue][13] and attaching the image there.  Add a little story, or multiple pictures to help describe how you might use the interface.
 
 ## I use my current tools this way, and it is awesome, can I send you a video to show you?
 

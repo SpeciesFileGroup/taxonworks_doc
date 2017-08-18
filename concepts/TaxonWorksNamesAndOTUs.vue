@@ -1,14 +1,14 @@
-<!-- Tufts VUE 3.3.0 concept-map (TaxonWorksNamesAndOTUs.vue) 2017-05-17 -->
+<!-- Tufts VUE 3.3.0 concept-map (TaxonWorksNamesAndOTUs.vue) 2017-08-17 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.app/Contents/Resources/Java/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Wed May 17 12:58:33 CDT 2017 by matt on platform Mac OS X 10.12.4 in JVM 1.8.0_25-b17 -->
+<!-- Do Not Remove: Saved date Thu Aug 17 21:19:10 CDT 2017 by matt on platform Mac OS X 10.12.6 in JVM 1.8.0_25-b17 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built October 8 2015 at 1658 by tomadm on Linux 2.6.32-504.23.4.el6.x86_64 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0"
     label="TaxonWorksNamesAndOTUs.vue" created="1494426619906" x="0.0"
-    y="0.0" width="1976.4061" height="2109.6973" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1495043913588" size="55900"
+    y="0.0" width="2196.406" height="2342.1826" strokeWidth="0.0" autoSized="false">
+    <resource referenceCreated="1503022750244" size="59588"
         spec="/Users/matt/WORKING/lib/src/github/species_file_group/taxonworks_doc/concepts/TaxonWorksNamesAndOTUs.vue"
         type="1" xsi:type="URLResource">
         <title>TaxonWorksNamesAndOTUs.vue</title>
@@ -42,7 +42,7 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="8"
-        label="The data is nomenclatural. &#xa;The data is factual, it does&#xa;not involve biological interpretation.&#xa;You could teach undergrads to record it&#xa;with a high degree of confidence.&#xa;While one might infer biology from it, that is&#xa;not the intent of its assertion,&#xa;one that is governed by a code&#xa; of nomenclature, and the &#xa;data being recorded are metadata&#xa;that are bound first&#xa;to that &quot;code&quot;."
+        label="The data is nomenclatural. &#xa;The data is factual, it does&#xa;not involve biological interpretation.&#xa;You could teach undergrads to record it&#xa;with a high degree of confidence.&#xa;While one might infer biology from this data, that is&#xa;not the intent of the assertion.  Assertions here&#xa;are metadata tightly bound to a governing&#xa; code of nomenclature. "
         layerID="1" created="1494426620960" x="872.75195" y="-826.84155"
         width="291.0" height="210.5968" strokeWidth="1.0"
         autoSized="false" xsi:type="node">
@@ -53,7 +53,7 @@
         <URIString>http://vue.tufts.edu/rdf/resource/f2ca9d290ac019466c04854f48243166</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
-    <child ID="9" label="Tie your data to Otu" layerID="1"
+    <child ID="9" label="Tie your data to an Otu" layerID="1"
         created="1494426620960" x="143.90007" y="-649.52576"
         width="273.23682" height="110.35791" strokeWidth="1.0"
         autoSized="false" xsi:type="node">
@@ -127,7 +127,7 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="15"
-        label="My data relates to protonyms together,&#xa; for example a genus and species name, &#xa;or genus and original parent,&#xa; or species and original genus, &#xa;or species and synonymous species."
+        label="My data relates two protonyms together,&#xa; for example a genus and species name, &#xa;or genus and original parent,&#xa; or species and original genus, &#xa;or species and synonymous species."
         layerID="1" created="1494426620960" x="1583.767" y="-207.33633"
         width="251.6936" height="109.4707" strokeWidth="1.0"
         autoSized="false" xsi:type="node">
@@ -150,7 +150,7 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="17"
-        label="I would like to record the &#xa;most basic information about a name.  &#xa;Its latin form, and authorship&#xa; (origininating source). "
+        label="I would like to record the &#xa;most basic information about a name.  &#xa;Its Latin form, and authorship&#xa; (as derived from the origininating source). "
         layerID="1" created="1494426620960" x="1221.5001" y="-773.66943"
         width="285.96027" height="106.37891" strokeWidth="1.0"
         autoSized="false" xsi:type="node">
@@ -314,7 +314,7 @@
     </child>
     <child ID="30"
         label="I am working with &#xa;plant hybrids,&#xa;and want to relate &#xa;two or more combinations"
-        layerID="1" created="1494426620960" x="1255.567" y="162.99759"
+        layerID="1" created="1494426620960" x="1253.5668" y="162.99759"
         width="240.56006" height="106.37891" strokeWidth="1.0"
         autoSized="false" xsi:type="node">
         <fillColor>#E6F7FD</fillColor>
@@ -325,7 +325,7 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="31" label="Your data is a&#xa;TaxonName::Hybrid"
-        layerID="1" created="1494426620960" x="1267.2338" y="307.00793"
+        layerID="1" created="1494426620960" x="1259.5662" y="307.00793"
         width="238.22668" height="110.35791" strokeWidth="1.0"
         autoSized="false" xsi:type="node">
         <fillColor>#C1F780</fillColor>
@@ -335,8 +335,9 @@
         <URIString>http://vue.tufts.edu/rdf/resource/f2ca9d3d0ac019466c04854f300bf84f</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
-    <child ID="58" label="I want to name my biological concept"
-        layerID="1" created="1494426644049" x="147.72467" y="-490.72998"
+    <child ID="58"
+        label="Formally,  accoding&#xa; to a code of nomenclature"
+        layerID="1" created="1494426644049" x="150.92465" y="-304.33002"
         width="261.87253" height="106.37891" strokeWidth="1.0"
         autoSized="false" xsi:type="node">
         <fillColor>#E6F7FD</fillColor>
@@ -347,20 +348,20 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="59" label=" " layerID="1" created="1494426664088"
-        x="278.07794" y="-539.66797" width="3.0" height="49.4375"
+        x="278.25323" y="-539.66406" width="4.0" height="74.14844"
         strokeWidth="1.0" strokeStyle="2" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/f2ca9d3e0ac019466c04854f0d40f0d0</URIString>
-        <point1 x="279.86484" y="-539.16797"/>
-        <point2 x="279.29105" y="-490.73047"/>
+        <point1 x="280.35898" y="-539.16406"/>
+        <point2 x="280.14752" y="-466.01562"/>
         <ID1 xsi:type="node">9</ID1>
-        <ID2 xsi:type="node">58</ID2>
+        <ID2 xsi:type="node">158</ID2>
     </child>
     <child ID="60" label="Your data is a&#xa;Otu#taxon_name_id"
-        layerID="1" created="1494426669732" x="157.058" y="-336.0528"
+        layerID="1" created="1494426669732" x="160.25798" y="-149.65283"
         width="249.87256" height="110.35791" strokeWidth="1.0"
         autoSized="false" xsi:type="node">
         <fillColor>#C1F780</fillColor>
@@ -371,41 +372,41 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="61" label=" " layerID="1" created="1494426674073"
-        x="278.80646" y="-384.85156" width="3.0" height="49.29883"
+        x="282.0064" y="-198.45215" width="3.0" height="49.29883"
         strokeWidth="1.0" strokeStyle="2" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/f2ca9d3f0ac019466c04854fa72bc0a0</URIString>
-        <point1 x="279.79263" y="-384.35156"/>
-        <point2 x="280.82025" y="-336.05273"/>
+        <point1 x="282.99258" y="-197.95215"/>
+        <point2 x="284.02023" y="-149.65332"/>
         <ID1 xsi:type="node">58</ID1>
         <ID2 xsi:type="node">60</ID2>
     </child>
-    <child ID="62" layerID="1" created="1494426694297" x="1371.3442"
-        y="129.5332" width="2.5316162" height="33.966797"
+    <child ID="62" layerID="1" created="1494426694297" x="1370.5634"
+        y="129.53125" width="2.0649414" height="33.964844"
         strokeWidth="1.0" strokeStyle="2" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/f2ca9d3f0ac019466c04854f8c1bdbf3</URIString>
-        <point1 x="1371.8442" y="130.0332"/>
-        <point2 x="1373.3759" y="163.0"/>
+        <point1 x="1371.0634" y="130.03125"/>
+        <point2 x="1372.1283" y="162.9961"/>
         <ID1 xsi:type="node">28</ID1>
         <ID2 xsi:type="node">30</ID2>
     </child>
-    <child ID="63" layerID="1" created="1494426695383" x="1379.1724"
-        y="268.87695" width="3.7062988" height="38.63086"
+    <child ID="63" layerID="1" created="1494426695383" x="1375.1074"
+        y="268.875" width="2.2456055" height="38.632812"
         strokeWidth="1.0" strokeStyle="2" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/f2ca9d400ac019466c04854f36f58751</URIString>
-        <point1 x="1379.6724" y="269.37695"/>
-        <point2 x="1382.3787" y="307.0078"/>
+        <point1 x="1375.6074" y="269.375"/>
+        <point2 x="1376.853" y="307.0078"/>
         <ID1 xsi:type="node">30</ID1>
         <ID2 xsi:type="node">31</ID2>
     </child>
@@ -423,9 +424,9 @@
         <ID2 xsi:type="node">27</ID2>
     </child>
     <child ID="70" label="I want to relate biological concepts"
-        layerID="1" created="1494426783764" x="-136.03955" y="-644.5845"
-        width="210.50977" height="106.37891" strokeWidth="1.0"
-        autoSized="false" xsi:type="node">
+        layerID="1" created="1494426783764" x="-356.03955"
+        y="-650.98444" width="210.50977" height="106.37891"
+        strokeWidth="1.0" autoSized="false" xsi:type="node">
         <fillColor>#E6F7FD</fillColor>
         <strokeColor>#000000</strokeColor>
         <textColor>#000000</textColor>
@@ -435,9 +436,9 @@
     </child>
     <child ID="71"
         label="Your data is an&#xa;RCC relationship from Euler"
-        layerID="1" created="1494426794857" x="-126.19647"
-        y="-460.02502" width="201.99998" height="110.35791"
-        strokeWidth="4.0" strokeStyle="4" autoSized="false" xsi:type="node">
+        layerID="1" created="1494426794857" x="-353.39645" y="-485.625"
+        width="201.99998" height="110.35791" strokeWidth="4.0"
+        strokeStyle="4" autoSized="false" xsi:type="node">
         <fillColor>#C1F780</fillColor>
         <strokeColor>#EA2218</strokeColor>
         <textColor>#000000</textColor>
@@ -445,35 +446,35 @@
         <URIString>http://vue.tufts.edu/rdf/resource/f2ca9d430ac019466c04854f8811929d</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
-    <child ID="73" layerID="1" created="1494426831985" x="73.970215"
-        y="-593.5514" width="70.429855" height="1.6583252"
+    <child ID="73" layerID="1" created="1494426831985" x="-146.0298"
+        y="-597.6119" width="290.42987" height="2.878418"
         strokeWidth="1.0" strokeStyle="2" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/f2ca9d430ac019466c04854f9e423cdc</URIString>
-        <point1 x="143.90007" y="-593.0514"/>
-        <point2 x="74.470215" y="-592.39307"/>
+        <point1 x="143.90007" y="-595.23346"/>
+        <point2 x="-145.52979" y="-597.1119"/>
         <ID1 xsi:type="node">9</ID1>
         <ID2 xsi:type="node">70</ID2>
     </child>
-    <child ID="74" layerID="1" created="1494426833921" x="-29.691349"
-        y="-538.70557" width="3.3419476" height="79.18054"
+    <child ID="74" layerID="1" created="1494426833921" x="-252.36502"
+        y="-545.10547" width="1.5680542" height="59.98047"
         strokeWidth="1.0" strokeStyle="2" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/f2ca9d430ac019466c04854f83054d82</URIString>
-        <point1 x="-29.191347" y="-538.20557"/>
-        <point2 x="-26.8494" y="-460.02502"/>
+        <point1 x="-251.29697" y="-544.60547"/>
+        <point2 x="-251.86502" y="-485.625"/>
         <ID1 xsi:type="node">70</ID1>
         <ID2 xsi:type="node">71</ID2>
     </child>
     <child ID="76"
         label="I want to find all&#xa; names ever used for my concept"
-        layerID="1" created="1494426845505" x="166.22485" y="-180.19757"
+        layerID="1" created="1494426845505" x="169.42484" y="6.2023926"
         width="238.03905" height="106.37891" strokeWidth="1.0"
         autoSized="false" xsi:type="node">
         <fillColor>#E6F7FD</fillColor>
@@ -483,35 +484,35 @@
         <URIString>http://vue.tufts.edu/rdf/resource/f2ca9d440ac019466c04854f7792994d</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
-    <child ID="77" layerID="1" created="1494426868809" x="282.65982"
-        y="-226.19531" width="1.9610596" height="46.499023"
+    <child ID="77" layerID="1" created="1494426868809" x="285.8598"
+        y="-39.79492" width="1.961029" height="46.496094"
         strokeWidth="1.0" strokeStyle="2" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/f2ca9d440ac019466c04854f22cfa5a0</URIString>
-        <point1 x="283.15982" y="-225.69531"/>
-        <point2 x="284.12088" y="-180.19629"/>
+        <point1 x="286.3598" y="-39.29492"/>
+        <point2 x="287.32083" y="6.201172"/>
         <ID1 xsi:type="node">60</ID1>
         <ID2 xsi:type="node">76</ID2>
     </child>
     <child ID="80"
         label="easy, just walk this graph&#xa;of nomenclatural assertions"
-        layerID="1" created="1494426900480" x="312.18442" y="-74.318665"
-        width="1402.439" height="695.7671" strokeWidth="1.0"
+        layerID="1" created="1494426900480" x="315.38437" y="63.53125"
+        width="1399.1677" height="721.01733" strokeWidth="1.0"
         strokeStyle="2" autoSized="false" controlCount="2"
         arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/f2ca9d440ac019466c04854fb25aa33c</URIString>
-        <point1 x="312.68442" y="-73.818665"/>
-        <point2 x="1714.1234" y="64.03125"/>
+        <point1 x="315.88437" y="112.5813"/>
+        <point2 x="1714.0521" y="64.03125"/>
         <ID1 xsi:type="node">76</ID1>
         <ID2 xsi:type="node">16</ID2>
-        <ctrlPoint0 x="862.94684" y="992.8047" xsi:type="point"/>
-        <ctrlPoint1 x="1727.0824" y="632.98694" xsi:type="point"/>
+        <ctrlPoint0 x="866.1467" y="1179.2051" xsi:type="point"/>
+        <ctrlPoint1 x="1730.282" y="819.38684" xsi:type="point"/>
     </child>
     <child ID="86"
         label="I have a string that looks to be a biological name&#xa;I likely got it from an alorithim that detects&#xa;such things.  Many possible processes&#xa;can be used, GNFinder is likely the best. "
@@ -1020,12 +1021,85 @@
 </richText>
         <label>Tables, base classes</label>
     </child>
+    <child ID="158" label="I want to name my biological concept&#xa;"
+        layerID="1" created="1503022553433" x="149.05753" y="-466.02347"
+        width="261.87253" height="106.37891" strokeWidth="1.0"
+        autoSized="false" xsi:type="node">
+        <fillColor>#E6F7FD</fillColor>
+        <strokeColor>#000000</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/f3217cdec0a801096afe851d432a2256</URIString>
+        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
+    </child>
+    <child ID="159"
+        label="Informally, because my taxon&#xa;is named yet"
+        layerID="1" created="1503022567328" x="-131.7425" y="-306.02344"
+        width="261.87253" height="106.37891" strokeWidth="1.0"
+        autoSized="false" xsi:type="node">
+        <fillColor>#E6F7FD</fillColor>
+        <strokeColor>#000000</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/f3217cdec0a801096afe851d9ef0ab44</URIString>
+        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
+    </child>
+    <child ID="160" label="Your data is a&#xa;Otu#name" layerID="1"
+        created="1503022608660" x="-128.14253" y="-151.21294"
+        width="249.87256" height="110.35791" strokeWidth="1.0"
+        autoSized="false" xsi:type="node">
+        <fillColor>#C1F780</fillColor>
+        <strokeColor>#000000</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-bold-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/f3217cdec0a801096afe851d329446ce</URIString>
+        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
+    </child>
+    <child ID="161" layerID="1" created="1503022627897" x="280.10797"
+        y="-360.14453" width="1.6387329" height="56.314453"
+        strokeWidth="1.0" strokeStyle="2" autoSized="false"
+        controlCount="0" arrowState="2" xsi:type="link">
+        <strokeColor>#404040</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/f3217cdfc0a801096afe851d7677828a</URIString>
+        <point1 x="280.60797" y="-359.64453"/>
+        <point2 x="281.2467" y="-304.33008"/>
+        <ID1 xsi:type="node">158</ID1>
+        <ID2 xsi:type="node">58</ID2>
+    </child>
+    <child ID="162" layerID="1" created="1503022630123" x="92.041245"
+        y="-360.14453" width="95.105034" height="54.621124"
+        strokeWidth="1.0" strokeStyle="2" autoSized="false"
+        controlCount="0" arrowState="2" xsi:type="link">
+        <strokeColor>#404040</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/f3217cdfc0a801096afe851d67bcd6e6</URIString>
+        <point1 x="186.64629" y="-359.64456"/>
+        <point2 x="92.54125" y="-306.02344"/>
+        <ID1 xsi:type="node">158</ID1>
+        <ID2 xsi:type="node">159</ID2>
+    </child>
+    <child ID="165" layerID="1" created="1503022670007" x="-2.8616688"
+        y="-200.14453" width="1.7413077" height="49.431595"
+        strokeWidth="1.0" strokeStyle="2" autoSized="false"
+        controlCount="0" arrowState="2" xsi:type="link">
+        <strokeColor>#404040</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/f3224a9bc0a801096afe851d5b0572da</URIString>
+        <point1 x="-1.6203611" y="-199.64453"/>
+        <point2 x="-2.3616688" y="-151.21294"/>
+        <ID1 xsi:type="node">159</ID1>
+        <ID2 xsi:type="node">160</ID2>
+    </child>
     <layer ID="1" label="Layer 1" created="1494426619910" x="0.0"
         y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/f2ca9d450ac019466c04854f775cc6d1</URIString>
     </layer>
-    <userZoom>0.25</userZoom>
-    <userOrigin x="-716.8015" y="-809.0085"/>
+    <userZoom>0.5218800648298217</userZoom>
+    <userOrigin x="-803.75323" y="-841.07965"/>
     <presentationBackground>#202020</presentationBackground>
     <PathwayList currentPathway="0" revealerIndex="-1">
         <pathway ID="0" label="Untitled Pathway" created="1494426619906"

@@ -4,6 +4,10 @@
 
 [![Gitter][4]][3].  Someone from the TaxonWorks community is almost certainly lurking, we can help you in real-time.
 
+## How is TaxonWorks supporting developer contributions?
+
+See [here](DEVELOPER_SUPPORT.md).
+
 ##  How do I report a bug or feature request?
 
 First [read this][14].
@@ -15,6 +19,31 @@ Some other conventions:
 * Categorize your issue using a label.
 * Use the prefix "task -" in the name to indicate the request for a new or improved task.
 * Use the prefix of your project name if reporting errors with a specific project.
+
+## How do I categorize a Issue on Github with a label?
+
+Labels help us organize everything that goes on, their meaning is not always clear.  A current definition of their use is here:
+
+* bug - something is broken in the code
+* data migration bug - there is bad data from a specific data migration due to code that migrates that data, ultimately belongs in a different repo
+* data migration - comments, questions, updates about a specific data migration, ultimately this belongs in a different repo
+* duplicate - issue is identical, or nearly so, to another
+* enhancement - request for improving existing behaviour
+* in progress - being actively worked on 
+* invalid - submitted issue doesn't provide enough information to be understood
+* model - issue pertains to a Rails model 
+* question - open question to the community
+* ready - (not widely used, might be deprecated for swim lanes in waffle/projects handling) - issue is ready to be addressed
+* task - pertains to a TaxonWorks task  typically defining or requesting a new one
+* wontfix - issue is acknowledge, but won't be addressed, provide a reason why
+
+## I'd like to provide an interface or workflow idea?
+
+Perfect.  Interface (e.g. forms, reports, searches) mockups are graphical ways of asking for new features. We love to see them.  To create a mockup you can use tools like Illustrator, Photoshop, or more technical design tools like Balsamiq or Sketch, or just draw them on paper and take a picture with your phone.  You can get them to us by opening an [issue][13] and attaching the image there.  Add a little story, or multiple pictures to help describe how you might use the interface.
+
+## I use my current tools this way, and it is awesome, can I send you a video to show you?
+
+Send! It is super useful for you to record your screen, or position a video campera to capture your work on-screen and arround you.  This way we see exactly how you work. You can send us big videos through file sharing services like http://www.dropsend.com/.
 
 ##  How do I set up my development environment?
 

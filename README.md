@@ -1,7 +1,7 @@
 
 # Taxonworks doc
 
-Tired of reading all this stuff?  Talk to a human, [![Gitter][1]][2].
+Tired of reading all this stuff? Can't find what you are looking for? Talk to a human, [![Gitter][1]][2].
 
 This is the current hub for documentation on TaxonWorks ([homepage](http://taxonworks.org), [source](https://github.com/SpeciesFileGroup/taxonworks)).  
 
@@ -11,7 +11,23 @@ The [registry](REGISTRY.md) is where you can find a place to start a TaxonWorks 
 
 ## Installation
 
-Get started quickly with [install_taxonworks instructions](https://github.com/SpeciesFileGroup/install_taxonworks).
+Get started quickly with [install_taxonworks instructions](https://github.com/SpeciesFileGroup/install_taxonworks).  Instructions for "native" (non-docker based) installs are also maintained there.
+
+## Code documentation
+
+[Rdoc](https://rdoc.taxonworks.org) based on inline documentation is generated on each commit of the code to the development branch.
+
+### API
+
+API documentation will be stubbed prior to TDWG 2017, we promise.  You can run `rake routes` to get a feel for what is possible.  See also the [matrix_row_coder](https://github.com/SpeciesFileGroup/matrix_row_coder) project for an good example of our API approach..
+
+## Conceptual documentation
+
+See Rdoc (link above).  Conceptual bits are also being described in [/concepts/README.md](/concepts).
+
+## Manuals
+
+Help currently currently exists within the application.  Click the orange semicircle on the bottom left whenever it is glowing.  As the project matures we plan to have more concetrated manuals, SOPs etc. recorded as videos, or perhaps wiki pages, etc.
 
 ## Frequently asked questions
 

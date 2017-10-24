@@ -1,14 +1,14 @@
 <!-- Tufts VUE 3.3.0 concept-map (TaxonWorksNomenclature.vue) 2017-10-24 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.app/Contents/Resources/Java/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Tue Oct 24 13:31:33 CDT 2017 by matt on platform Mac OS X 10.12.6 in JVM 1.8.0_25-b17 -->
+<!-- Do Not Remove: Saved date Tue Oct 24 15:04:26 CDT 2017 by matt on platform Mac OS X 10.12.6 in JVM 1.8.0_25-b17 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built October 8 2015 at 1658 by tomadm on Linux 2.6.32-504.23.4.el6.x86_64 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0"
     label="TaxonWorksNomenclature.vue" created="1508867305392" x="0.0"
-    y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1508869893140" size="60133"
+    y="0.0" width="1904.8333" height="2226.5835" strokeWidth="0.0" autoSized="false">
+    <resource referenceCreated="1508875466655" size="60133"
         spec="/Users/matt/src/github/species_file_group/taxonworks_doc/concepts/TaxonWorksNomenclature.vue"
         type="1" xsi:type="URLResource">
         <title>TaxonWorksNomenclature.vue</title>
@@ -547,7 +547,7 @@
         created="1508868654954" x="585.33344" y="979.16675"
         width="198.0" height="82.0" strokeWidth="5.0" autoSized="false" xsi:type="node">
         <fillColor>#FFFFFF</fillColor>
-        <strokeColor>#7C18C9</strokeColor>
+        <strokeColor>#5491A4</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-bold-12</font>
         <URIString>http://vue.tufts.edu/rdf/resource/4f990e1e0ac0194636e4cddbfd0595d7</URIString>
@@ -557,7 +557,7 @@
         created="1508868665855" x="798.3335" y="979.16675" width="198.0"
         height="82.0" strokeWidth="5.0" autoSized="false" xsi:type="node">
         <fillColor>#FFFFFF</fillColor>
-        <strokeColor>#7C18C9</strokeColor>
+        <strokeColor>#5491A4</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-bold-12</font>
         <URIString>http://vue.tufts.edu/rdf/resource/4f990e1f0ac0194636e4cddb3c62a8c4</URIString>
@@ -567,7 +567,7 @@
         created="1508868671539" x="1011.3335" y="979.16675"
         width="198.0" height="82.0" strokeWidth="5.0" autoSized="false" xsi:type="node">
         <fillColor>#FFFFFF</fillColor>
-        <strokeColor>#7C18C9</strokeColor>
+        <strokeColor>#5491A4</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-bold-12</font>
         <URIString>http://vue.tufts.edu/rdf/resource/4f990e1f0ac0194636e4cddb30f68729</URIString>
@@ -577,7 +577,7 @@
         created="1508868676701" x="1224.3336" y="979.16675"
         width="198.0" height="82.0" strokeWidth="5.0" autoSized="false" xsi:type="node">
         <fillColor>#FFFFFF</fillColor>
-        <strokeColor>#7C18C9</strokeColor>
+        <strokeColor>#5491A4</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-bold-12</font>
         <URIString>http://vue.tufts.edu/rdf/resource/4f990e1f0ac0194636e4cddb10af8034</URIString>
@@ -777,7 +777,7 @@
         created="1508869136570" x="604.4999" y="471.30005" width="198.0"
         height="82.0" strokeWidth="5.0" autoSized="false" xsi:type="node">
         <fillColor>#FFFFFF</fillColor>
-        <strokeColor>#7C18C9</strokeColor>
+        <strokeColor>#5491A4</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-bold-12</font>
         <URIString>http://vue.tufts.edu/rdf/resource/4fa660050ac0194636e4cddb82d910d4</URIString>
@@ -787,7 +787,7 @@
         layerID="1" created="1508869136570" x="1159.8331" y="323.30005"
         width="198.0" height="82.0" strokeWidth="5.0" autoSized="false" xsi:type="node">
         <fillColor>#FFFFFF</fillColor>
-        <strokeColor>#7C18C9</strokeColor>
+        <strokeColor>#5491A4</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-bold-12</font>
         <URIString>http://vue.tufts.edu/rdf/resource/4fa660050ac0194636e4cddb33578378</URIString>
@@ -797,7 +797,7 @@
         layerID="1" created="1508869136570" x="894.1666" y="471.30005"
         width="198.0" height="82.0" strokeWidth="5.0" autoSized="false" xsi:type="node">
         <fillColor>#FFFFFF</fillColor>
-        <strokeColor>#7C18C9</strokeColor>
+        <strokeColor>#5491A4</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-bold-12</font>
         <URIString>http://vue.tufts.edu/rdf/resource/4fa660050ac0194636e4cddb6145743b</URIString>
@@ -981,7 +981,7 @@
         created="1508869547603" x="829.6667" y="1349.5834" width="198.0"
         height="82.0" strokeWidth="5.0" autoSized="false" xsi:type="node">
         <fillColor>#FFFFFF</fillColor>
-        <strokeColor>#7C18C9</strokeColor>
+        <strokeColor>#5491A4</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-bold-12</font>
         <URIString>http://vue.tufts.edu/rdf/resource/4fa660060ac0194636e4cddbdf4d22ec</URIString>
@@ -1116,8 +1116,8 @@
         y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/4f8b16fe0ac0194636e4cddba207d924</URIString>
     </layer>
-    <userZoom>0.5</userZoom>
-    <userOrigin x="-1130.25" y="-888.45"/>
+    <userZoom>1.0</userZoom>
+    <userOrigin x="-98.5" y="-806.5"/>
     <presentationBackground>#202020</presentationBackground>
     <PathwayList currentPathway="0" revealerIndex="-1">
         <pathway ID="0" label="Untitled Pathway" created="1508867305392"

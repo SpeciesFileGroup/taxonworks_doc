@@ -1,14 +1,14 @@
 <!-- Tufts VUE 3.3.0 concept-map (TaxonWorksNomenclature.vue) 2017-10-24 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.app/Contents/Resources/Java/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Tue Oct 24 15:04:26 CDT 2017 by matt on platform Mac OS X 10.12.6 in JVM 1.8.0_25-b17 -->
+<!-- Do Not Remove: Saved date Tue Oct 24 15:07:10 CDT 2017 by matt on platform Mac OS X 10.12.6 in JVM 1.8.0_25-b17 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built October 8 2015 at 1658 by tomadm on Linux 2.6.32-504.23.4.el6.x86_64 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0"
     label="TaxonWorksNomenclature.vue" created="1508867305392" x="0.0"
     y="0.0" width="1904.8333" height="2226.5835" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1508875466655" size="60133"
+    <resource referenceCreated="1508875630994" size="64715"
         spec="/Users/matt/src/github/species_file_group/taxonworks_doc/concepts/TaxonWorksNomenclature.vue"
         type="1" xsi:type="URLResource">
         <title>TaxonWorksNomenclature.vue</title>
@@ -1026,9 +1026,10 @@
         label="aus is a synonym of bus, &quot;synonym of&quot; has a &#xa;      URI in NOMEN"
         layerID="1" created="1508869586847" x="1510.0" y="1354.5834"
         width="460.0" height="72.0" strokeWidth="0.0" autoSized="false" xsi:type="text">
+        <fillColor>#FFFFFF</fillColor>
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
-        <font>Arial-plain-18</font>
+        <font>Arial-bold-12</font>
         <URIString>http://vue.tufts.edu/rdf/resource/4fa660070ac0194636e4cddbe3489f81</URIString>
         <richText>&lt;html&gt;
   &lt;head color="#000000" style="color: #000000"&gt;
@@ -1112,12 +1113,102 @@
 </richText>
         <label>Notes</label>
     </child>
+    <child ID="184" label="Status" layerID="1" created="1508875533672"
+        x="471.48325" y="1507.8002" width="66.0" height="32.0"
+        strokeWidth="0.0" autoSized="false" xsi:type="text">
+        <strokeColor>#404040</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-plain-18</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/4ffee72b0ac0194636e4cddbdc11b2fd</URIString>
+        <richText>&lt;html&gt;
+  &lt;head color="#000000" style="color: #000000"&gt;
+    &lt;style type="text/css"&gt;
+      &lt;!--
+        body { margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; font-size: 12; font-family: Arial; color: #000000 }
+        ol { margin-top: 6; font-family: Arial; vertical-align: middle; margin-left: 30; font-size: 12; list-style-position: outside }
+        p { margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; color: #000000 }
+        ul { margin-top: 6; font-size: 12; margin-left: 30; vertical-align: middle; list-style-position: outside; font-family: Arial }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p color="#000000" style="color: #000000"&gt;
+      &lt;font style="font-size:18;"&gt;Status&lt;/font&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</richText>
+        <label>Status</label>
+    </child>
+    <child ID="185" label="Protonym &#xa;Name: aus" layerID="1"
+        created="1508875533672" x="575.5833" y="1497.7001" width="198.0"
+        height="82.0" strokeWidth="5.0" strokeStyle="1"
+        autoSized="false" xsi:type="node">
+        <fillColor>#FFFFFF</fillColor>
+        <strokeColor>#C1F780</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-bold-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/4ffee72b0ac0194636e4cddb97ba8ef8</URIString>
+        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
+    </child>
+    <child ID="186" label="is invalid" layerID="1"
+        created="1508875533672" x="828.91656" y="1497.7001"
+        width="198.0" height="82.0" strokeWidth="5.0" autoSized="false" xsi:type="node">
+        <fillColor>#FFFFFF</fillColor>
+        <strokeColor>#7C18C9</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-bold-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/4ffee72b0ac0194636e4cddb7d8119bd</URIString>
+        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
+    </child>
+    <child ID="188" layerID="1" created="1508875533672" x="771.0833"
+        y="1536.2001" width="60.333252" height="5.0" strokeWidth="5.0"
+        autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
+        <strokeColor>#FFC63B</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/4ffee72b0ac0194636e4cddb6f8266bc</URIString>
+        <point1 x="773.5833" y="1538.7001"/>
+        <point2 x="828.91656" y="1538.7001"/>
+        <ID1 xsi:type="node">185</ID1>
+        <ID2 xsi:type="node">186</ID2>
+    </child>
+    <child ID="190" label="aus is invalid (no further reference to why)"
+        layerID="1" created="1508875533672" x="1509.2499" y="1502.7001"
+        width="460.0" height="116.0" strokeWidth="0.0" autoSized="false" xsi:type="text">
+        <fillColor>#FFFFFF</fillColor>
+        <strokeColor>#404040</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-bold-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/4ffee72b0ac0194636e4cddbc2d15d0e</URIString>
+        <richText>&lt;html&gt;
+  &lt;head color="#000000" style="color: #000000"&gt;
+    &lt;style type="text/css"&gt;
+      &lt;!--
+        body { margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; font-size: 32; font-family: Arial; color: #000000 }
+        ol { margin-top: 6; font-family: Arial; vertical-align: middle; margin-left: 30; font-size: 32; list-style-position: outside }
+        p { margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; color: #000000 }
+        ul { margin-top: 6; font-size: 32; margin-left: 30; vertical-align: middle; list-style-position: outside; font-family: Arial }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p color="#000000" style="color: #000000"&gt;
+      &lt;font style="font-size:18;"&gt;aus is invalid (no further reference to why)&lt;/font&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</richText>
+        <label>aus is invalid (no further reference to why)</label>
+    </child>
     <layer ID="1" label="Layer 1" created="1508867305393" x="0.0"
         y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/4f8b16fe0ac0194636e4cddba207d924</URIString>
     </layer>
     <userZoom>1.0</userZoom>
-    <userOrigin x="-98.5" y="-806.5"/>
+    <userOrigin x="90.16669" y="-806.5"/>
     <presentationBackground>#202020</presentationBackground>
     <PathwayList currentPathway="0" revealerIndex="-1">
         <pathway ID="0" label="Untitled Pathway" created="1508867305392"

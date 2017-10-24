@@ -1,14 +1,15 @@
-<!-- Tufts VUE 3.3.0 concept-map (TaxonConceptRelationships.vue) 2017-10-10 -->
+<!-- Tufts VUE 3.3.0 concept-map (TaxonConceptRelationships.vue) 2017-10-12 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.app/Contents/Resources/Java/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Tue Oct 10 22:00:39 CDT 2017 by matt on platform Mac OS X 10.12.6 in JVM 1.8.0_25-b17 -->
+<!-- Do Not Remove: Saved date Thu Oct 12 10:50:02 CDT 2017 by matt on platform Mac OS X 10.12.6 in JVM 1.8.0_25-b17 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built October 8 2015 at 1658 by tomadm on Linux 2.6.32-504.23.4.el6.x86_64 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0"
     label="TaxonConceptRelationships.vue" created="1505441334742"
-    x="0.0" y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1507690839423" size="61521"
+    x="0.0" y="0.0" width="3925.6997" height="2382.5264"
+    strokeWidth="0.0" autoSized="false">
+    <resource referenceCreated="1507823402233" size="62089"
         spec="/Users/matt/WORKING/lib/src/github/species_file_group/taxonworks_doc/concepts/TaxonConceptRelationships.vue"
         type="1" xsi:type="URLResource">
         <title>TaxonConceptRelationships.vue</title>

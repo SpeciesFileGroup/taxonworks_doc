@@ -59,7 +59,7 @@ TaxonWorks code [documentation][10] is done inline with [Yard tags][12].
 
 ## Is there a database schema I can see?
 
-See [db/schema.rb](db/schema.rb), or, better, checkout out the model [documentation][10].  You can also use a rake task to generate the current SQL structure, or Rails schema.rb.
+See [db/schema.rb](taxonworks/db/schema.rb), or, better, checkout out the model [documentation][10].  You can also use a rake task to generate the current SQL structure, or Rails schema.rb.
 
 [1]: https://help.github.com/articles/fork-a-repo/
 [2]: https://www.atlassian.com/git/tutorials/merging-vs-rebasing

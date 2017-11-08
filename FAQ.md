@@ -16,3 +16,6 @@ No. But TaxonWorks does have awesome history tracking and data reversion capabil
 
 ## Should I host a copy of TaxonWorks at my museum/university?
 Maybe? We are committed to minimizing the barrier to installing TaxonWorks on a server you control, likely in the cloud. We're still working out the best way of doing this. You can [start here](https://github.com/SpeciesFileGroup/install_taxonworks) for documentation.
+
+## Can I batch load images?
+Drag and drop image loading is available, and we anticipate being able to drop multiple images on the object you wish to depict.  There will also almost certainly be a batch upload if your images are available via an HTTP endpoint.

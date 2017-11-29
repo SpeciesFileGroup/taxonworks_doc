@@ -2,7 +2,7 @@
 
 ##  Where can I ask for help? 
 
-[![Gitter][4]][3].  Someone from the TaxonWorks community is almost certainly lurking, we can help you in real-time.
+[![Gitter][4]][3]. someone from the TaxonWorks community is almost certainly lurking, we can help you in real-time.
 
 ## How is TaxonWorks supporting developer contributions?
 
@@ -12,7 +12,7 @@ See [here](DEVELOPER_SUPPORT.md).
 
 First [read this][14].
 
-Use the [issue tracker][13]. You can use [waffle.io](https://waffle.io/SpeciesFileGroup/taxonworks) to do this as well. 
+Use the [issue tracker][13]. 
 
 Some other conventions:
 

@@ -19,7 +19,7 @@ Get started quickly with [install_taxonworks instructions](https://github.com/Sp
 
 ### API
 
-API documentation will be stubbed prior to TDWG 2017, we promise.  You can run `rake routes` to get a feel for what is possible.  See also the [matrix_row_coder](https://github.com/SpeciesFileGroup/matrix_row_coder) project for an good example of our API approach..
+See [taxonworks_api](https://github.com/SpeciesFileGroup/taxonworks_api).
 
 ## Conceptual documentation
 

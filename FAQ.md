@@ -19,3 +19,7 @@ Maybe? We are committed to minimizing the barrier to installing TaxonWorks on a 
 
 ## Can I batch load images?
 Drag and drop image loading is available, and we anticipate being able to drop multiple images on the object you wish to depict.  There will also almost certainly be a batch upload if your images are available via an HTTP endpoint.
+
+## What browsers are supported?
+
+TaxonWorks is forward looking, we experiment with and use features that might not be available in all browsers. We recommend using Firefox as it is the primary browser we develop against. We test on Firefox and Chrome.  

@@ -23,3 +23,8 @@ Drag and drop image loading is available, and we anticipate being able to drop m
 ## What browsers are supported?
 
 TaxonWorks is forward looking, we experiment with and use features that might not be available in all browsers. We recommend using Firefox as it is the primary browser we develop against. We test on Firefox and Chrome.  
+
+## How can I find the internal ID of a record?
+
+`Show` the record in question (double clicking most table rows, or right-click 'Show'), then click "Development view (eye icon, top right). You'll see the `[id: 123 ... ]`.  The global_id can be cut and pasted into API calls as well.  
+

@@ -29,6 +29,8 @@ See Rdoc (link above).  Conceptual bits are also being described in [/concepts/R
 
 Help currently currently exists within the application.  Click the orange semicircle on the bottom left whenever it is glowing.  As the project matures we plan to have more concetrated manuals, SOPs etc. recorded as videos, or perhaps wiki pages, etc.
 
+See [Manuals](/manuals/README.md).
+
 ## Frequently asked questions
 
 The [FAQ](FAQ.md) is just getting started. 

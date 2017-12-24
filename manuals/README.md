@@ -2,4 +2,4 @@
 
 # Manuals
 
-* [Developer Tips](/manuals/DEVELOPER_TIPS.md)
+* [Developers Tips](/manuals/DEVELOPERS_TIPS.md)

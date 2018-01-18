@@ -1,5 +1,5 @@
 
-# Taxonworks doc
+# TaxonWorks doc
 
 Tired of reading all this stuff? Can't find what you are looking for? Talk to a human, [![Gitter][1]][2].
 

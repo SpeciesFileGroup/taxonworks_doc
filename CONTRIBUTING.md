@@ -24,6 +24,7 @@ Some other conventions:
 
 Labels help us organize everything that goes on, their meaning is not always clear.  A current definition of their use is here:
 
+* blocker - issue must be resolved before                                                                           is preventing current development branch from deploying into master
 * bug - something is broken in the code
 * data migration bug - there is bad data from a specific data migration due to code that migrates that data, ultimately belongs in a different repo
 * data migration - comments, questions, updates about a specific data migration, ultimately this belongs in a different repo

@@ -3,7 +3,7 @@
 # Manuals
 
 ## Users
-* [Nomenclature cheatsheet](/manuals/NOMENCLATURE_BASICS.md)
+* [Nomenclature basics](/manuals/NOMENCLATURE_BASICS.md)
 * [Staged image workflow](/manuals/STAGED_IMAGE_WORKFLOW.md)
 
 ## Developers

@@ -2,5 +2,11 @@
 
 # Manuals
 
-* [Developers Tips](/manuals/DEVELOPERS_TIPS.md)
+## Users
+* [Nomenclature cheatsheet](/manuals/NOMENCLATURE_BASICS.md)
 * [Staged image workflow](/manuals/STAGED_IMAGE_WORKFLOW.md)
+
+## Developers
+* [Developers Tips](/manuals/DEVELOPERS_TIPS.md)
+
+

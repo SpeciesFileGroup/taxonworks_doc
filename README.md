@@ -27,7 +27,7 @@ See Rdoc (link above).  Conceptual bits are also being described in [/concepts/R
 
 ## Manuals
 
-Help currently currently exists within the application.  Click the orange semicircle on the bottom left whenever it is glowing.  As the project matures we plan to have more concetrated manuals, SOPs etc. recorded as videos, or perhaps wiki pages, etc.
+See [here](/manuals/README.md).
 
 ## Cheatsheets
 
@@ -35,7 +35,9 @@ _Use the PDF button to download a version._
 
 * [Cheatsheet 1 - Interface overview](https://www.overleaf.com/read/xttgxvcnwcpz)
 
-See [Manuals](/manuals/README.md).
+## In application help
+
+Use the orange question mark slideout on the right of the interface.
 
 ## Frequently asked questions
 

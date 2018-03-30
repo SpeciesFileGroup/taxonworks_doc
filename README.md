@@ -1,7 +1,7 @@
 
-# TaxonWorks doc
+_Tired of reading all this stuff? Can't find what you are looking for? Talk to a human, [![Gitter][1]][2]_.
 
-Tired of reading all this stuff? Can't find what you are looking for? Talk to a human, [![Gitter][1]][2].
+# TaxonWorks doc
 
 This is the current hub for documentation on TaxonWorks ([homepage](http://taxonworks.org), [source](https://github.com/SpeciesFileGroup/taxonworks)).  
 
@@ -28,6 +28,12 @@ See Rdoc (link above).  Conceptual bits are also being described in [/concepts/R
 ## Manuals
 
 Help currently currently exists within the application.  Click the orange semicircle on the bottom left whenever it is glowing.  As the project matures we plan to have more concetrated manuals, SOPs etc. recorded as videos, or perhaps wiki pages, etc.
+
+## Cheatsheets
+
+_Use the PDF button to download a version._
+
+* [Cheatsheet 1 - Interface overview](https://www.overleaf.com/read/xttgxvcnwcpz)
 
 See [Manuals](/manuals/README.md).
 

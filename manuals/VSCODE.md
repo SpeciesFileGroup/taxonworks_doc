@@ -26,7 +26,7 @@ More information about the features could be found at the Vetur site:
 https://vuejs.github.io/vetur/
 
 **Path Intellisense - Christian Kohler**
-Muy util para encontrar y autocompletar la ruta de los ficheros a incluir en el codigo
+Very useful to find and autocomplete the path of the files to be included in the code
 
 **ESLint - Dirk Baeumer**
 

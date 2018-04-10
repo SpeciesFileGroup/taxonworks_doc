@@ -12,37 +12,39 @@ VSCode is available for Mac / Linux / Windows: https://code.visualstudio.com/Dow
 
 ### Installation
 
-To the left of the VSCode window there is a bar that contains 5 icons (Files, Search, Git, Debugger, Extensions). Click the last one and search for the following plugins
+On the left side of the main window there is a bar that contains 5 icons (Files, Search, Git, Debugger, Extensions). Click the last one and search for the following plugins
 
 **Vetur - Pine Wu**
 
-It includes compatibility with files of vuejs and the necessary tools to simplify the workflow:
-
-Syntax-highlighting
-Auto Completion
-Formatting
-
-More information about the features could be found at the Vetur site:
-https://vuejs.github.io/vetur/
+>It includes compatibility with files of vuejs and the necessary tools to simplify the workflow:
+>
+>- Syntax-highlighting
+>- Auto Completion
+>- Formatting
+>
+>More information about the features could be found at the Vetur site:
+>https://vuejs.github.io/vetur/
 
 **Path Intellisense - Christian Kohler**
-Very useful to find and autocomplete the path of the files to be included in the code
+
+> Very useful to find and autocomplete the path of the files to be included in the code
 
 **ESLint - Dirk Baeumer**
 
-A plugin to validate javascript code. We currently use the configuration suggested by VueJS for better development syntax
+> A plugin to validate javascript code. We currently use the configuration suggested by VueJS for better development syntax
 
 **Ruby - Peng Lv**
 
-Ruby Language and Debugging Support for Visual Studio Code
+> Ruby Language and Debugging Support for Visual Studio Code
+
 
 ## Configuration
 
-It is necessary to add some parameters in the user configuration file to get ESLint work with Vue, it is necessary to set certain parameters in the user's configuration. For this we must follow certain steps:
+It is necessary to add some parameters in the user configuration file to get ESLint work with Vue. For this we must follow certain steps:
 
-1) In the main bar, click on Code -> Preferences -> Settings.
+1) In the main bar, click on Code or File (Depending your OS) -> Preferences -> Settings.
 
-2) In the right panel we will add the following code:
+2) In the right panel(User configuration) add the following code:
 
 ```
 {
@@ -58,9 +60,11 @@ It is necessary to add some parameters in the user configuration file to get ESL
 }
 ```
 
-If you already have some configurations within that window, we recommend adding only the ESLint properties to avoid replace any other configuration
+And save the changes
 
-In TaxonWorks we develop using identation of 2 space, to avoid any problem with this in your code, we recommend add the following line inside the configuration file:
+> If you already made a customization of your configuration, we recommend adding only the ESLint properties to avoid replace it
+
+In TaxonWorks we develop using identation of 2 space, to avoid any problem with this in your code, we recommend add the following line inside the user configuration file:
 ```
 "editor.tabSize": 2
 ```

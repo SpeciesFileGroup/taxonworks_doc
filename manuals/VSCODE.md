@@ -64,7 +64,7 @@ It is necessary to add some parameters in the user configuration file to get ESL
 
 > If you already made a customization of your configuration, we recommend adding only the ESLint properties to avoid replace it
 
-In TaxonWorks we develop using identation of 2 space, to avoid any problem with this in your code, we recommend add the following line inside the user configuration file:
+In TaxonWorks we develop using identation of 2 space. To avoid any problem with this in your code, we recommend add the following line inside the user configuration file to make it as the default indentation:
 ```
 "editor.tabSize": 2
 ```

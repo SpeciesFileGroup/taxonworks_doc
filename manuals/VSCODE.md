@@ -60,7 +60,7 @@ It is necessary to add some parameters in the user configuration file to get ESL
 }
 ```
 
-And save the changes
+3) Save the changes
 
 > If you already made a customization of your configuration, we recommend adding only the ESLint properties to avoid replace it
 

@@ -7,7 +7,7 @@ The purpose of this guide is to provide the optimal configuration for a developm
 ### Download
 
 VSCode is available for Mac / Linux / Windows: https://code.visualstudio.com/Download 
-
+JRF
 ## Plugins
 
 ### Installation

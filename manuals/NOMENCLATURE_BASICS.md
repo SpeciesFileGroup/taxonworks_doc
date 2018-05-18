@@ -1,7 +1,7 @@
 
 # Nomenclature basics
 
-_This manual provided a basic cheat-sheet for gettings started with the nomenclature interfaces as they *currently* exist._
+_This manual provided a basic how-to for gettings started with the nomenclature interfaces as they *currently* exist._
 
 ## Accessing the functionality
 
@@ -50,9 +50,6 @@ The year a name becomes available defines its priority for nomenclatural purpose
 
 We assume that if two dates are known then the user will create and reference a Source to record those values, i.e. there is no mechanism to provide and differentiate the two types of year directly with the name itself.
 
-
-
-
 ### Status ("asserted")
 
 ### Relationships (e.g. synonymy) to other names
@@ -62,6 +59,16 @@ We assume that if two dates are known then the user will create and reference a 
 ### Type metadata
 
 ### Citations
+
+### Misidentifications
+
+Misidentifications are a tricky gray area.  Remember that we only care about the nomenclatural consequences of the use of the names in questions.  Taxon Identifications are linkages of OTUs to Collection objects, this is the preferred mechanism for linking one or more identifications to a collection object.
+
+A question from a user reflects the trickieness:
+
+> Imagine there is a genus _Aus_, with type species _Aus bus_. Then someone describe a new species _Aus cus_, which subsequent authors don't even consider to be in the same superfamily. So I cannot enter Aus twice because the second one is a misidentification but no one knows for sure what it is.
+
+Technically one *can* add _Aus_ twice, the second _Aus_ is not the same Protonym, and will have a parent of "Root" if unknown, or some finer classification if known.  This would let you express the nomenclatural difference between the names.
 
 ## Navigation helpers
 

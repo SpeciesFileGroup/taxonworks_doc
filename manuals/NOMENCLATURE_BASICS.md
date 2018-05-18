@@ -60,6 +60,10 @@ We assume that if two dates are known then the user will create and reference a 
 
 ### Citations
 
+### Incertae sedis
+
+Incertae sedis implies a relationship between two protonyms.  Any time something you want to express references two protonyms you must use a Taxon Name Relationship to express this data.  For the name in question select the "parent" under which it should be placed, then select the relationship.
+
 ### Misidentifications
 
 Misidentifications are a tricky gray area.  Remember that we only care about the nomenclatural consequences of the use of the names in questions.  Taxon Identifications are linkages of OTUs to Collection objects, this is the preferred mechanism for linking one or more identifications to a collection object.

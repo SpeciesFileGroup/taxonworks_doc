@@ -58,6 +58,25 @@ We assume that if two dates are known then the user will create and reference a 
 
 ### Type metadata
 
+#### Genus and Family group names
+
+Data can be added directly on the `New Taxon Name` task.
+
+#### Species group names
+
+TODO: move help to in-app overlays.
+
+_Before you start_: 1) Add biocuration classifications that you might reference (e.g. `Male`, `Female`, `Adult` etc.).  Do this by adding a new Controlled Vocabulary Term of type `BiocurationClass` or using the `Manage biocuration types and groups` task.  You only need to do this once in your project.
+
+Either access the task `New type specimen` through the `New taxon name` task in the `Type` section or directly from the tasks tab (filter by `Nomenclature` on the left to quickly find the task).
+
+* Select the type type, this unlocks the Collection object form below.
+* If the type designator is _not the same as the either 1) the original citation on the species protonym or 2) the original citation on the type material record_ then select the type designator if knonw.  The designator will be *inferred* from the aforementioned citations otherwise.
+* At present, if you have created a collecting event find it by id (the current searc is a stub, and very crude), otherwise add verbatim data to the "Buffered" sections, these data persist with the collection object, to be transcribed into collecting events, determinations records, etc. some time downstream in the digitization process.
+* Select the Biocuration classes you want by clicking on a green button (remember green in TaxonWorks means create a record). This creates a record indicating that the collectiong object is that class.  The button will turn red (remember red in TaxonWorks means destroy a record).  Clicking a red button will remove that classification from the object.
+* Click create.  Your record will be added to the right side of the form, you will see it highlighted by type type in a light green.  That means the form on the left can be used to edit that record.
+* Click 'New type' to add another record (e.g. paratype).
+
 ### Citations
 
 ### Incertae sedis

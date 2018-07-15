@@ -8,5 +8,6 @@
 
 ## Developers
 * [Developers Tips](/manuals/DEVELOPERS_TIPS.md)
-
+* [Using VSCode](/manuals/VSCODE.md)
+* [Scaffolding/Generators (new features)](/manuals/GENERATORS.md)
 

@@ -8,7 +8,7 @@ You can use `rails generate scaffold` as you would for any Rails application.
 * Cleanup generate files that are not used (e.g. tests, css, javascript stubs).  In general any scaffold file that does not have customizations to it should be excluded.
 * Register the model (if data) in `config/interface/data/hub.yml`
 
-Use the corresponding files for Otus (e.g. `app/models/otu.rb`, `app/controllers/otus_controller.rb` etc.) as reference patterns:
+_Use the corresponding files for Otus (e.g. `app/models/otu.rb`, `app/controllers/otus_controller.rb` etc.) as reference patterns:_
 
 ## Model
 
@@ -20,11 +20,23 @@ _At this point, while not completely configured, following restart of the develo
 * Add pertinent Concerns to the model.
 * Add a reference to the model to the `#nuke()` method in `project.rb`
 
+# Routes
+
+*  Move the stubbed route at the top of `routes.rb` into it's alphabetic placement, and add the concern:
+
+```Ruby
+resources :lugs do
+  concerns [:data_routes]
+end
+```
+
 ## Controller
 
 * Add `include DataControllerConfiguration::ProjectDataControllerConfiguration`.
 * Update the `index` method.
 * Add a `list` method.
+* Add a `download` method.
+* Update the `set_<model>` by appending the line `@recent_object = @<model>`
 
 ## Views
 

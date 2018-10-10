@@ -57,8 +57,10 @@ Each uncolored square represents a record that needs to be transcribed, clicking
 
 *g.* Type  `ctrl-n`, or click the button (but yuck, touching the mouse is dirty and yucky), to save the record and move to the next image.
 
-### Notes
-* We recommend you only transcribe labels, do not assign the Taxon Determination at this point.
+### Step recommendations
+* Stay focused on verbatim transcription at this stage. We recommend you only transcribe labels, do not assign the Taxon Determination or other attributes like Sex or stage at this point.
+
+### Tips
 * The `Task: Transcribe Specimen` interface can be driven completely by keypresses with the exception of the real-time OCR window.
 * Control (`ctl`) keys are those in square brackets, like `[n]` (which saves the record and jumps you to the next one)
 

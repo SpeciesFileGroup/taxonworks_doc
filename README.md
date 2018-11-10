@@ -7,11 +7,11 @@ This is the current hub for documentation on TaxonWorks ([homepage](http://taxon
 
 # For users
 
-Documentation starts at [USERS.md](DEVELOPERS.md].
+Documentation starts at [USERS.md](/USERS.md].
 
 # For developers
 
-Documentation starts at [DEVELOPERS.md](DEVELOPERS.md].
+Documentation starts at [DEVELOPERS.md](/DEVELOPERS.md].
 
 ## Registry
 

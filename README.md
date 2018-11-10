@@ -5,6 +5,14 @@ _Tired of reading all this stuff? Can't find what you are looking for? Talk to a
 
 This is the current hub for documentation on TaxonWorks ([homepage](http://taxonworks.org), [source](https://github.com/SpeciesFileGroup/taxonworks)).  
 
+# For users
+
+Documentation starts at [USERS.md](DEVELOPERS.md].
+
+# For developers
+
+Documentation starts at [DEVELOPERS.md](DEVELOPERS.md].
+
 ## Registry
 
 The [registry](REGISTRY.md) is where you can find a place to start a TaxonWorks project.

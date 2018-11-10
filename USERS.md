@@ -6,6 +6,10 @@ The documentation for TaxonWors users is obviously in its early stages.  Ultimat
 
 Remember, we want it to be possible for our users to also help in the development of TaxonWorks. No [contribution](CONTRIBUTING.md) is too small!
 
+## Registry
+
+The [registry](REGISTRY.md) is where you can find a place to start a TaxonWorks project.
+
 ## The future: a dedicated website for TaxonWorks documentation
 
 We ulimately expect to unify documentation within a single website.

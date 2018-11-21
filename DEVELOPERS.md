@@ -8,7 +8,10 @@ Get started quickly with [install_taxonworks instructions](https://github.com/Sp
 
 [Rdoc](https://rdoc.taxonworks.org) based on inline documentation is generated on each commit of the code to the development branch.
 
-### API
+## API
 
 See [taxonworks_api](https://github.com/SpeciesFileGroup/taxonworks_api).
 
+## How-to
+
+[How-to](/development/HOW-TO.md) contains quick reminders, recipes, etc. for coding TaxonWorks. 

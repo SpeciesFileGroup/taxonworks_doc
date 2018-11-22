@@ -38,6 +38,10 @@ import HelpSystem from 'plugins/help/help'
 To get the information needed to display the help on the interface, would will be needed to create a file with a js object structure that contains that information, an example will be provided on the next steps.
 
 ```
+//
+// en.js file
+//
+
 export default {
   section: {
     type: {

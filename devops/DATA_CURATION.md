@@ -10,7 +10,7 @@ Existing tasks are in [/lib/tasks/curate/curate.rake](https://github.com/Species
 
 (re)Calculate the boundaries for Sqed depictions.
 
-`rake tw:curate:recalculate_sqed_boundaries project_id=1 id_start=123 id_end=456`
+`bundle exec rake tw:curate:recalculate_sqed_boundaries project_id=1 id_start=123 id_end=456`
 
 The params `id_start` and `id_end` are optional.  Running the task without the range will return the start/end ids.
 

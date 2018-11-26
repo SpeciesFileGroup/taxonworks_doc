@@ -86,5 +86,5 @@ v-help.section.type
 ### For Rails native interfaces (.erb)
 
 ```
-content_tag(:span, nil, data: {'help': 'This is the help line'})
+content_tag(:span, nil, data: {help: 'This is the help line'})
 ```

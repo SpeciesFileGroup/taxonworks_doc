@@ -4,7 +4,7 @@
 
 Assuming you have access to the application environment there are a number of tools that can be used to curate/maintain data.
 
-_Existing tasks are in [/lib/tasks/curate/curate.rake](https://github.com/SpeciesFileGroup/taxonworks/blob/development/lib/tasks/curate/curate.rake)
+Existing tasks are in [/lib/tasks/curate/curate.rake](https://github.com/SpeciesFileGroup/taxonworks/blob/development/lib/tasks/curate/curate.rake)
 
 ## Sqed pre-processing
 

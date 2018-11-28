@@ -82,9 +82,15 @@ v-help.section.type
 <div v-help.section.type></div>
 ```
 
-
 ### For Rails native interfaces (.erb)
 
 ```
 content_tag(:span, nil, data: {help: 'This is the help line'})
 ```
+
+### For HTML 
+
+```
+<h3 data-help="This data lights up the orange help icon!" > My header </h3> 
+```
+

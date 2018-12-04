@@ -13,6 +13,8 @@ _This manual provided a basic how-to for gettings started with the nomenclature 
 
 ### Name and classification
 
+_nothing here_
+
 ### Authorship
 
 Use this section to set authorship of the name (as opposed to a subsequent citation).  Authorship can be *asserted* directly or *inferred*.  If authorship is asserted or inferred in more than one way it is prioritized and take as follows:

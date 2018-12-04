@@ -32,7 +32,7 @@ The _preferred priority_ is:
 
 Advanced tips:
 
-* TaxonWorks is about linking the right concepts first.  The current authorship of a name should reflect how the name *should* look if the rules are followed, not how it *did* look when it appeared.  You can assign alternate values to People's names if you want to reflect how an authors name is spelt in different contexts.  
+* TaxonWorks is about creating the links between concepts (e.g. things like People, Collection Objects, Names, Otus). How those concepts are visualized is a big can of worms.  You can assign alternate values to People's names (e.g. abbreviations, alternate spellings) if you want to reflect how an authors name is spelt in different contexts.  
 
 #### ICZN 
 

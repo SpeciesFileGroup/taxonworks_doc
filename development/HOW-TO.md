@@ -10,6 +10,14 @@ You can stub all the basic code for a new task using a generator.  The result of
 rails scaffold taxonworks:task ...
 ```
 
+To create Vue.js based stub use the `--vue` flag.  When using this paramater do not include method params:
+
+```ruby
+rails generate taxonworks:task print_labels labels/ --vue
+```
+
+You can use `-p` to "practice" running the tasks (no files are written/changed).
+
 ## Creating a new batch loader
 
 There is a batch-load middle layer that batch loaders can take advantage of.  This generator stubs in all the basic pieces that can then be further refined.  [See the code base for more](https://github.com/SpeciesFileGroup/taxonworks/blob/development/lib/generators/taxonworks/batch_load/USAGE.md)

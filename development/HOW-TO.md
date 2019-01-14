@@ -102,3 +102,6 @@ content_tag(:span, nil, data: {help: 'This is the help line'})
 <h3 data-help="This data lights up the orange help icon!" > My header </h3> 
 ```
 
+## Work with dates
+
+Use the format `yyyy-mm-dd`.

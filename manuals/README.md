@@ -5,6 +5,7 @@
 ## Users
 * [Nomenclature basics](/manuals/NOMENCLATURE_BASICS.md)
 * [Staged image workflow](/manuals/STAGED_IMAGE_WORKFLOW.md)
+* [Basic article parsing](/manuals/BASIC_ARTICLE_PARSING.md)
 
 ## Developers
 * [Developers Tips](/manuals/DEVELOPERS_TIPS.md)

@@ -11,6 +11,11 @@ You can exclude some files while generating the model:
 
 Tip: Notice the `-p` for "practice" (or "preview"), this let's you preview what will be done without writing file.
 
+We do not use the following (TODO: update flags)
+
+* spec/requests/<model>_spec.rb
+* spec/views/<model>/
+
 ## Migration tips
 
 _This is not comprehensive, see existing migrations for patterns._
@@ -58,6 +63,54 @@ _At this point restarting the server should already show you a clickable card on
 * Check for an autcomplete action, follow patterns as seen in other controllers
 * Add a `list` action
 
+### Controller spec
+
+_We don't focus on controller specs, but the generated specs are easily modified to work, so we typically tweak them to follow an overall pattern, then leave them alone. do that then leave them as is. The pattern has variously evolved, but generally it follows something like that below._
+
+Add the logon to the spec:
+```
+  before(:each) {
+    sign_in
+  }
+```
+
+Use the corresponding factory to provide valid attributes:
+```
+  let(:valid_attributes) { strip_housekeeping_attributes(FactoryBot.build(:valid_organization).attributes) }
+```
+
+We don't use `invalid_attributes`.
+
+Modify the `#index` call to reference @recent_objects:
+```
+  describe "GET #index" do
+    it "assigns organizations to @recent_objects" do
+      o = Organization.create! valid_attributes
+      get :index, params: {}, session: valid_session
+      expect(assigns(:recent_objects)).to include(o)
+    end
+  end
+```
+
+Add a `#list` spec:
+```
+  describe 'GET list' do
+    it 'with no other parameters, assigns a page of @organizations' do
+      o = Organization.create! valid_attributes
+      get :list, params: {}, session: valid_session
+      expect(assigns(:organizations)).to include(o)
+    end
+
+    it 'renders the list template' do
+      get :list, params: {}, session: valid_session
+      expect(response).to render_template('list')
+    end
+  end
+```
+
+* Reference the model to directly supply invalid_attributes where needed (it's fine to use the spec stub as well).
+* Follow the pending spec responses as necessary.
+
 ## Views
 
 * Delete `index.html.erb`
@@ -67,6 +120,10 @@ _At this point restarting the server should already show you a clickable card on
 * Update `show.html.erb` to use a shared view. 
 * Add `_attributes.html.erb` so that shared view can render attributes
 * Add a `list.html.erb`
+
+### View specs
+
+We do not use view specs, remove if you missed the flag.
 
 ## Queries
 

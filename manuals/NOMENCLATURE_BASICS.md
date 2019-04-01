@@ -58,23 +58,20 @@ We assume that if two dates are known then the user will create and reference a 
 
 #### Homonomy
 
-
-
 If we know that `Aus aus` is a homonym of `Bus aus`, and that `Cus bus` is a replacement name, then we have to express **two** "facts", i.e. relationship between protonyms, in this case 1) between `A. aus` and `B. aus`, 2) between `A. aus` and `C. bus`.
 
 The basic steps are therefor:
 
 1) Ensure all 3 protonyms exist (`aus`, `aus`, `bus`)
-2) Navigate to the invalid name `Aus aus`
-3) Create first relationship: Select the senior homonym name `Bus aus` and add a homonym relationship (be specific: "primary homonym" or "secondary homonym")
-4) Create second relationship: Select the valid name (replacement name) `Cus bus` and add a synonym relationship ("replaced by" or "subjective synonym of")
+2) Navigate to the _invalid_ name `Aus aus`
+3) Create the first relationship: Select the _senior homonym_ name `Bus aus` and a homonym relationship (be specific: "primary homonym" or "secondary homonym")
+4) Create the second relationship: Select the valid name (replacement name) `Cus bus` and add a synonym relationship ("replaced by" or "subjective synonym of")
 
-Few comments:
-1) always start with invalid name and add relationship to the valid name
-2) check the soft validation messages
-3) when selectin the relationship, be as specific as possible. Homonym could be replaced by either a nomen novum or by an existing junior synonym
+A few comments:
+1) Always start with (browse too, then edit) the _invalid_ name and add relationships that reference the valid name
+2) Check the soft validation messages, they will let you know if what can be improved or added.
+3) When adding a relationship, select one that is as specific as possible. A homonym could be replaced by either a `nomen novum` or by an existing `junior synonym`.
  
-
 ### Original combinations
 
 ### Type metadata

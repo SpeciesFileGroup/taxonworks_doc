@@ -64,11 +64,16 @@ If we know that `Aus aus` is a homonym of `Bus aus`, and that `Cus bus` is a rep
 
 The basic steps are therefor:
 
-@proceps - 
-
 1) Ensure all 3 protonyms exist (`aus`, `aus`, `bus`)
-2) Navigate to the invalid name
-3) Select the valid name, and add a relationship.
+2) Navigate to the invalid name `Aus aus`
+3) Create first relationship: Select the senior homonym name `Bus aus` and add a homonym relationship (be specific: "primary homonym" or "secondary homonym")
+4) Create second relationship: Select the valid name (replacement name) `Cus bus` and add a synonym relationship ("replaced by" or "subjective synonym of")
+
+Few comments:
+1) always start with invalid name and add relationship to the valid name
+2) check the soft validation messages
+3) when selectin the relationship, be as specific as possible. Homonym could be replaced by either a nomen novum or by an existing junior synonym
+ 
 
 ### Original combinations
 

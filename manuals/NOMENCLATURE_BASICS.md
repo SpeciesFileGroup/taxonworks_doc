@@ -56,6 +56,20 @@ We assume that if two dates are known then the user will create and reference a 
 
 ### Relationships (e.g. synonymy) to other names
 
+#### Homonomy
+
+
+
+If we know that `Aus aus` is a homonym of `Bus aus`, and that `Cus bus` is a replacement name, then we have to express **two** "facts", i.e. relationship between protonyms, in this case 1) between `A. aus` and `B. aus`, 2) between `A. aus` and `C. bus`.
+
+The basic steps are therefor:
+
+@proceps - 
+
+1) Ensure all 3 protonyms exist (`aus`, `aus`, `bus`)
+2) Navigate to the invalid name
+3) Select the valid name, and add a relationship.
+
 ### Original combinations
 
 ### Type metadata
@@ -66,7 +80,7 @@ Data can be added directly on the `New Taxon Name` task.
 
 #### Species group names
 
-TODO: move help to in-app overlays.
+See also the [basic article parsing](https://github.com/SpeciesFileGroup/taxonworks_doc/blob/master/manuals/BASIC_ARTICLE_PARSING.md) manual for a walk through that addresses many of these issues in a more contextual framework.
 
 _Before you start_: 1) Add biocuration classifications that you might reference (e.g. `Male`, `Female`, `Adult` etc.).  Do this by adding a new Controlled Vocabulary Term of type `BiocurationClass` or using the `Manage biocuration types and groups` task.  You only need to do this once in your project.
 

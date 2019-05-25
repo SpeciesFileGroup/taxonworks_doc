@@ -22,21 +22,7 @@ Some other conventions:
 
 ## How do I categorize a Issue on Github with a label?
 
-Labels help us organize everything that goes on, their meaning is not always clear.  A current definition of their use is here:
-
-* blocker - issue must be resolved before                                                                           is preventing current development branch from deploying into master
-* bug - something is broken in the code
-* data migration bug - there is bad data from a specific data migration due to code that migrates that data, ultimately belongs in a different repo
-* data migration - comments, questions, updates about a specific data migration, ultimately this belongs in a different repo
-* duplicate - issue is identical, or nearly so, to another
-* enhancement - request for improving existing behaviour
-* in progress - being actively worked on 
-* invalid - submitted issue doesn't provide enough information to be understood
-* model - issue pertains to a Rails model 
-* question - open question to the community
-* ready - (not widely used, might be deprecated for swim lanes in waffle/projects handling) - issue is ready to be addressed
-* task - pertains to a TaxonWorks task  typically defining or requesting a new one
-* wontfix - issue is acknowledge, but won't be addressed, provide a reason why
+[See their description.](https://github.com/SpeciesFileGroup/taxonworks/labels)
 
 ## I'd like to provide an interface or workflow idea?
 

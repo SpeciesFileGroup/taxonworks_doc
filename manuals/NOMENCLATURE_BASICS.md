@@ -74,6 +74,8 @@ A few comments:
  
 ### Original combinations
 
+TODO
+
 ### Type metadata
 
 #### Genus and Family group names
@@ -94,6 +96,10 @@ Either access the task `New type specimen` through the `New taxon name` task in 
 * Select the Biocuration classes you want by clicking on a green button (remember green in TaxonWorks means create a record). This creates a record indicating that the collectiong object is that class.  The button will turn red (remember red in TaxonWorks means destroy a record).  Clicking a red button will remove that classification from the object.
 * Click create.  Your record will be added to the right side of the form, you will see it highlighted by type type in a light green.  That means the form on the left can be used to edit that record.
 * Click 'New type' to add another record (e.g. paratype).
+
+### Family group names 
+
+STUB
 
 ### Citations
 

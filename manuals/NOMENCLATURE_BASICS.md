@@ -32,8 +32,8 @@ This section is used to set original authorship of the name (as opposed to a sub
 The _preferred priority_ is:
 
 * Assign an original citation ('Source' in Author section) that has People assigned as authors to it. 
-* Over-ride the authorship in the Source if needed by Assiging one or more People from that source as authors in the 'Person' section (for example when doing Smith in `Jones & Smith`).
-* Over-ride the *appearance* of a authorship rendered from either of the above by providing a `verbatim author`.
+* Over-ride the authorship in the Source if needed by assiging one or more People from that source as authors in the 'Person' section (for example when doing Smith in `Jones & Smith`).
+* Use Verbatim Author and year, if original source and People roles are not provided.
 
 Advanced tips:
 
@@ -43,8 +43,8 @@ Advanced tips:
 
 ##### Parentheses around author/year
 
-* The preferred mechanism to rendering parentheses around a author/year (indicating current placement is different than original) is to assign the original genus in the Original Combination (see below).  This will automatically render then name correctly.
-* If you do not know the original combination, or you wish to "force" the use of parentheses you must use the 'Verbatim name' in 'Verbatim'- place the parentheses around the author there: `(Smith)`.  The code will automatically include the year in rendering out the name as needed.
+* The preferred mechanism to rendering parentheses around a author/year (indicating current placement is different than original) is to assign the original Genus in the Original Combination (see below).  This will automatically render the name correctly.
+* If you do not know the original combination, or you wish to "force" the use of parentheses you must use the 'Verbatim Author'. Place the parentheses around the author there: `(Smith)`.  The code will automatically include the year in rendering out the name as needed.
 
 ##### Year of publication (availability) versus stated year
 
@@ -59,7 +59,20 @@ We assume that if two dates are known then the user will create and reference a 
 
 ### Status ("asserted")
 
+This section related to nomenclatural statuses, which are applicable to the taxon itself and does not require any knowledge of related taxa (e.g., 'Nomen nudum', 'Non binomial'
+
+* Multiple Statuses could be assigned to the same taxon
+* All names by default are valid names, "valid" status should not be assigned to all the names in the database. It is reserved for special cases, for example when the taxon has a nomenclatural history of being treated as a synonym, and later was treated as a valid name again, 
+in order to preserve a historical recorod of synonymy, and override it, a status 'valid' could be added to the taxon, the citation on the status will indicate the source where the validity of taxon was confirmed.
+* Most common status are listed in the "Common section", but all available statuses are listed in "Show all" section. The statuses which are not applicable to a current taxon are greyed out.
+* Advanced section allows to search for a specific status
+
 ### Relationships (e.g. synonymy) to other names
+
+The nomenclatural relationships are the statuses which require record of two Taxon Names. For example, 'Aus' is a synonym of 'Bus'. In this relationship we can get status for each of those two names 'Aus' is a Junior synonym, 'Bus' is a Senior synonym.
+
+* Multiple Relationships could be assigned to the same taxon
+* To record a new relationship, alwasy start with the taxon search. After the taxon is selected, select an appropriate status for this taxon (The taxon name relationship status are selected the same way as statuses (see above)
 
 #### Homonomy
 

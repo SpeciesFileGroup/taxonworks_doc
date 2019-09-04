@@ -1,28 +1,33 @@
 
 # Nomenclature basics
 
-_This manual provided a basic how-to for gettings started with the nomenclature interfaces as they *currently* exist._
+_This manual provided a basic how-to for gettings started with the nomenclature interfaces as they **currently** exist._
 
-## Accessing the functionality
+## How to get started
 
 * Navigate to the Tasks list.
 * Use the filter (on the left) to select 'Nomenclature" related tasks
 * Currently useful tasks are yellow ( red = experiment, works, but might not last, or might radically change; yellow = more or less stable, some changes anticipated but basic functionality will remain same; green=you can write a manual, won't change for any reason)
+* **Browse nomenclature**, **New taxon name**, and **New combination** are useful tasks to view and modify existing classification. 
 
 ## Curating data
 
-### Name and classification
+### Basic information
 
-_nothing here_
+All TaxonNames are stored as uninomials in TaxonWorks. A hierarchical nomenclature is selected to provide the maximum level of flexibility of classifications. Three fields are required to create a TaxonName record in the database: **name**, **parent**, 
+and **taxonomic rank**. The Parent is any valid taxon of a rank higher than a new one. This section is the only section of the form which requires the use of the Save button. All other sections of the form use autosave mode.
+The highest rank taxon in a hierarchy is **Root**. This is a defalt Taxon, which could not be modified, it is created when the project is first iniciated, the first taxon attached to the Root requires selection of the Code of 
+Nomenclature (ICZN, ICN, ICNP, ICTV), this is required to enforce validation rules specific to this particular Code of Nomenclature. All taxa below this taxon do not require selection of the Code, it will be inherited from the parent.
+The same database may contain taxa covered by different Codes of Nomenclature. 
 
 ### Authorship
 
-Use this section to set authorship of the name (as opposed to a subsequent citation).  Authorship can be *asserted* directly or *inferred*.  If authorship is asserted or inferred in more than one way it is prioritized and take as follows:
+This section is used to set original authorship of the name (as opposed to a subsequent citation).  Authorship can be recorded in three different ways. If authorship is provided in more than one way it is prioritized and take as follows:
 
-* From the verbatim_author and verbatim_year fields
+* From the Verbatim Author and Verbatim Year fields
 * From the Person (TaxonNameAuthor) assigned as an author of the taxon name
 * From the Source author and source year fields
-* From the Person assigned as an author of the Source assigned as the original citation
+* From the Person assigned as an author of the Source (SourceAuthor) assigned as the original citation
 
 The _preferred priority_ is:
 

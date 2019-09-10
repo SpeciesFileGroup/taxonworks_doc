@@ -153,8 +153,9 @@ If the source does not exist in the steps above it will need to be added.
  This is important, Crossref will almost always find a hit, it may not be correct.
 
 * Check the box `Also create people from authors and editors of BibTeX source?`
-
 This parses out the authors into People records while it adds the source.  Note that this will result in duplicate people.  There is a utility to merge people that can be used from time to time.
+@proceps: in my practice, more efficient way, is to never use this option to parse the authors, instead go to `Edit source` and add people manually, this will avoid duplication, and results in more clean data in the database. Also, it is always useful to check edit section of the
+source to check for missing data, some journals do not return the volum or number by Crossref, in some other cases, the pages are missing. Adding a Serial for the source is also a good practice. 
 
 * Click `Create BibTex Source`
 * You are taken to the `Show` page for the Source
@@ -252,7 +253,7 @@ Time to assign authorship. We can automatically assign authorship of the species
 
 The `Pages` input is free text, and including ranges, etc. You'll want to fill it consistently according to your team/project's goals.
 
-* Type ctrl-s (or click save).  What happens to the authorship string beside the name as rendered in the top right?
+* What happens to the authorship string beside the name as rendered in the top right?
 
 Wait, only two of the source's authors are listed as authors, let's fix that!
 
@@ -284,6 +285,11 @@ Update the etymology.
 * Paste it into the `Etymology` text area.  
 * The text area accepts Markdown, you can italicize "Xenastei" by adding underscores to either side: `_Xenasteia_`.  Do this by typing or highlighting your text and clicking the `I formatting icon` on the icon bar.
 * Click the `eye icon` (right of the icon bar) to preview the text appearance. Toggle back to edit with the same button.
+
+Select part of speach.
+
+* This is particulary useful for the future, when the species is moved from one genus to another
+* if the name is adjective, 3 alternative forms for each gender is assigned to the name. Those forms could be edited.
 
 #### Assign type material
 

@@ -8,7 +8,8 @@ _This manual provided a basic how-to for gettings started with the nomenclature 
 * Navigate to the Tasks list.
 * Use the filter (on the left) to select 'Nomenclature" related tasks
 * Currently useful tasks are yellow ( red = experiment, works, but might not last, or might radically change; yellow = more or less stable, some changes anticipated but basic functionality will remain same; green=you can write a manual, won't change for any reason)
-* **Browse nomenclature**, **New taxon name**, and **New combination** are useful tasks to view and modify existing classification. 
+* **Browse nomenclature**, **New taxon name**, and **New combination** are useful tasks to view and modify existing classification. Browse nomenclature page provides convenient way of navigation from one Taxon Name to another. It also provide an option to quickly jump to the
+Edit Task 
 
 ## Curating data
 
@@ -57,48 +58,91 @@ The year a name becomes available defines its priority for nomenclatural purpose
 
 We assume that if two dates are known then the user will create and reference a Source to record those values, i.e. there is no mechanism to provide and differentiate the two types of year directly with the name itself.
 
-### Status ("asserted")
+### Nomenclatural Status
 
 This section related to nomenclatural statuses, which are applicable to the taxon itself and does not require any knowledge of related taxa (e.g., 'Nomen nudum', 'Non binomial'
 
 * Multiple Statuses could be assigned to the same taxon
-* All names by default are valid names, "valid" status should not be assigned to all the names in the database. It is reserved for special cases, for example when the taxon has a nomenclatural history of being treated as a synonym, and later was treated as a valid name again, 
-in order to preserve a historical recorod of synonymy, and override it, a status 'valid' could be added to the taxon, the citation on the status will indicate the source where the validity of taxon was confirmed.
 * Most common status are listed in the "Common section", but all available statuses are listed in "Show all" section. The statuses which are not applicable to a current taxon are greyed out.
 * Advanced section allows to search for a specific status
 
-### Relationships (e.g. synonymy) to other names
+Comments:
+1) All names by default are valid names, "valid" status should not be assigned to all the names in the database. It is reserved for special cases, for example when the taxon has a nomenclatural history of being treated as a synonym, and later was treated as a valid name again, 
+in order to preserve a historical recorod of synonymy, and override it, a status 'valid' could be added to the taxon, the citation on the status will indicate the source where the validity of taxon was confirmed.
+2) Status 'Homonym' could be added to the taxon to indicate invalid status in cases where the senior homonym is not known, but this should be avoided, the better way to record homonymy is to create a relationship (see below)
+
+#### Example 1: Nomen nudum
+
+
+* Select 'Nomen nudum', one of Common statuses
+
+### Relationships - a nomenclatural statuses bases on relationship with other taxon
 
 The nomenclatural relationships are the statuses which require record of two Taxon Names. For example, 'Aus' is a synonym of 'Bus'. In this relationship we can get status for each of those two names 'Aus' is a Junior synonym, 'Bus' is a Senior synonym.
 
-* Multiple Relationships could be assigned to the same taxon
-* To record a new relationship, alwasy start with the taxon search. After the taxon is selected, select an appropriate status for this taxon (The taxon name relationship status are selected the same way as statuses (see above)
-
-#### Homonomy
-
-If we know that `Aus aus` is a homonym of `Bus aus`, and that `Cus bus` is a replacement name, then we have to express **two** "facts", i.e. relationship between protonyms, in this case 1) between `A. aus` and `B. aus`, 2) between `A. aus` and `C. bus`.
-
-The basic steps are therefor:
-
-1) Ensure all 3 protonyms exist (`aus`, `aus`, `bus`)
-2) Navigate to the _invalid_ name `Aus aus`
-3) Create the first relationship: Select the _senior homonym_ name `Bus aus` and a homonym relationship (be specific: "primary homonym" or "secondary homonym")
-4) Create the second relationship: Select the valid name (replacement name) `Cus bus` and add a synonym relationship ("replaced by" or "subjective synonym of")
-
-A few comments:
-1) Always start with (browse too, then edit) the _invalid_ name and add relationships that reference the valid name
+Comments:
+1) Always start with (browse too, then edit) the _invalid_ name and add relationships that reference the valid (or senior) name
 2) Check the soft validation messages, they will let you know if what can be improved or added.
-3) When adding a relationship, select one that is as specific as possible. A homonym could be replaced by either a `nomen novum` or by an existing `junior synonym`.
+3) When adding a relationship, select one that is as specific as possible, 'subjective synonym' is better than just 'synonym', 'primary homonym' is better than just 'homonym'
+
+#### Example 1: Synonymy
+
+* Although each relationship could be read in either direction (Aus is junior synonym of Bus, Bus is senior synonym of Aus) only one way recording the information is supported in TaxonWorks at the moment. The relationship should always start from **invalid name**. In our example 
+it is 'Aus', so the editing should start on the Edit Taxon Page for 'Aus', to buld a new relationship, search for the second (related) name, in our example it is 'Bus', and then select the status for this relationship, 'objective synonym'.
+* Once the relationship is created a citation could be added to this relationship to idicate the Source, where this synonymy was first proposed.
+* In cases of compiting synonymy, where in one source 'Aus' is recorded as synonym of 'Bus', and in the next publication it is a synonym of 'Cus', both synonym relationship could be created in the database, if the citations are provided, the latest citation will be used to position
+the taxon in the classification.
+* In cases where the name was reported as a synonym by mistake and was revalidated in a later publication, the relathinship should not be deleted, a 'valid' status could be added to the taxon to overwrite the synonymy (see above) 
+
+#### Example 2: Homonomy
+
+If we know that `Aus aus` is a homonym of `Bus aus`, and that `Aus bus` is a replacement name, then we have to express **two** "facts", i.e. relationship between taxa, in this case 1) `A. aus` is a synonym of `B. aus`, 2) `A. aus` is replaced by `A. bus`.
+Both of those statemens are invalidating statemens, so both of them start with the taxonomic page for `A. aus`
+
+The basic steps:
+1) Ensure all 3 protonyms exist in the database (`aus`, `aus`, `bus`)
+2) Navigate to the _invalid_ name `Aus aus`
+3) Create the first relationship: Select the _senior homonym_ name `Bus aus` and a homonym relationship (be specific: 'primary homonym' or 'secondary homonym')
+4) Create the second relationship: Select the valid name (replacement name) `Aus bus` and add a synonym relationship ('replaced by' or 'subjective synonym of', the second option is true when the substitute name was selected from one of the junior synonyms)
+
+#### Example 3: Misapplication
+
+If we know that `Aus aus Author2` is a misidentification of `Aus aus Author1`, and that `Aus bus` is a correct name, then we have to express **two** "facts", i.e. relationship between taxa, in this case 1) `A. aus Author 2` is a misidentification of `A. aus Author 1`, 
+2) `A. aus` is invalid name for `A. bus`. Both of those statemens are invalidating statemens, so both of them start with the taxonomic page for `A. aus`
+
+The basic steps:
+1) Ensure all 3 protonyms exist in the database (`aus`, `aus`, `bus`). Additional protonym should be created in the database fo 'Aus aus Author2' different from the correctly applied name 'Aus aus Author1'
+2) Navigate to the _invalid_ name `Aus aus Author2`
+3) Create the first relationship: Select the _correctly applied name_ name `Aus aus Author1` and a 'misapplication' relationship
+4) Create the second relationship: Select the valid name `Aus bus` and add non specific 'invalid, linked to' relationship (do not use 'synonym' relationships, since misapplication is not an avaliable name)
+
+#### Misspelling
+Is created the same way as misapplication
  
 ### Original combinations
 
-TODO
+The original combination is required to keep track of the taxon history, properly handle parentheses in the author string, and also to validate homonymy between taxa. 
+There are two ways to enter the original combination in TaxonWorks
+
+#### Method 1 (when the original combination is different from the current combination)
+1) To properly handle taxonomy, always enter taxon name (basic information) in the original form (e.g. species was described as Aus albus Author, now it is Ba alba (Author), the name of the taxon should stay as 'albus', the form transition will be handled by the genus gender 
+and the species part of speach.
+2) To build an original combination, first move the name of the taxon to the nomenclatural rank level, at which it was originally described. This is important, because a species could be originally described at the subspecies level.
+3) Select the original genus and if needed the original subgenus, assuming those taxa are already in the database (if they are not, enter a separate browser tab and enter missing names in the classification.
+4) The rank of each name could be adjusted, the name could be dragged up or down.
+
+Note: if the original name has an incorrect spelling which had to be corrected (e.g. 'mülleri' or 'albi-lineata'), or the original genus was misspelt, two protonyms have to be stored in the database. The first one with the correct spelling and the second one with the 
+original spelling. The second protonym should be linked to the first one with the 'Incorrect original spelling' relationship. This relationship also overrride the restriction on the Taxon Name spelling, if you cannot create a taxon because it is incorrectly spelled, put 
+the corrected spelling for the name, save taxon, add 'misspelling' or 'incorrect original spelling' relationship, change the taxon name to the misspelled form and save it again. 
+
+#### Method 2 (when the original combination is the same as the curent combination)
+* Click the button **Set as current**
 
 ### Type metadata
 
 #### Genus and Family group names
 
-Data can be added directly on the `New Taxon Name` task.
+Data can be added directly in the Type section
 
 #### Species group names
 
@@ -108,10 +152,11 @@ _Before you start_: 1) Add biocuration classifications that you might reference 
 
 Either access the task `New type specimen` through the `New taxon name` task in the `Type` section or directly from the tasks tab (filter by `Nomenclature` on the left to quickly find the task).
 
-* Select the type type, this unlocks the Collection object form below.
+* Select the type (holotype, paratype, etc.), this unlocks the Collection object form below.
 * If the type designator is _not the same as the either 1) the original citation on the species protonym or 2) the original citation on the type material record_ then select the type designator if knonw.  The designator will be *inferred* from the aforementioned citations otherwise.
 * At present, if you have created a collecting event find it by id (the current searc is a stub, and very crude), otherwise add verbatim data to the "Buffered" sections, these data persist with the collection object, to be transcribed into collecting events, determinations records, etc. some time downstream in the digitization process.
 * Select the Biocuration classes you want by clicking on a green button (remember green in TaxonWorks means create a record). This creates a record indicating that the collectiong object is that class.  The button will turn red (remember red in TaxonWorks means destroy a record).  Clicking a red button will remove that classification from the object.
+* Select a repository
 * Click create.  Your record will be added to the right side of the form, you will see it highlighted by type type in a light green.  That means the form on the left can be used to edit that record.
 * Click 'New type' to add another record (e.g. paratype).
 
@@ -133,7 +178,8 @@ A question from a user reflects the trickieness:
 
 > Imagine there is a genus _Aus_, with type species _Aus bus_. Then someone describe a new species _Aus cus_, which subsequent authors don't even consider to be in the same superfamily. So I cannot enter Aus twice because the second one is a misidentification but no one knows for sure what it is.
 
-Technically one *can* add _Aus_ twice, the second _Aus_ is not the same Protonym, and will have a parent of "Root" if unknown, or some finer classification if known.  This would let you express the nomenclatural difference between the names.
+The proper way to hand this is to use a single _Aus_, which is placed in the correct family. In both species _Aus_ is the Original genus, in _Aus bus_, this is also a Parent taxon. In case of _Aus cus_, if the current genus is not assigned, the superfamily is the parent taxon.
+An *incertae sedis* relationship should connect _Aus cus_ and the superfamily
 
 ## Navigation helpers
 

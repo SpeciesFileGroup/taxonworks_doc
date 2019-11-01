@@ -9,7 +9,7 @@ Use `rails c` to load the TaxonWorks environment and play with the data directly
 
 There are two very low level globals that need to be set on the console for most write operations in the console.
 
-`$user_id` and `$project_id`.
+`Current.user_id` and `Current.project_id`.
 
 _You should never reference these variables directly in the taxonworks code base (including tests)._ They are set and handled in the GUI and test framework by the codebase.
 

@@ -108,4 +108,4 @@ Use the format `yyyy-mm-dd`.
 
 ## Run asynchronous code / Active Jobs / Delayed Jobs
 Running `rails s` is not enough to make queued jobs to run since they way it is setup they don't run in-process.
-To make them run you need to open up an extra terminal window and run `rails jobs:work`. You may notice that the CPU usage may constantly be reaching 100% for short bursts continously (and also speed up your CPU fan). If this is an inconvinience to you, or you even wish to control when it is a good time to start working off jobs you may use `rails jobs:workoff`. This command will run all pending jobs and then exit.
+To make them run you need to open up an extra terminal window and run `rails jobs:work`. You may notice that the CPU usage may constantly be reaching 100% for short bursts continuously (and also speed up your CPU fan). If this is an inconvenience to you, or you even wish to control when it is a good time to start working off jobs you may use `rails jobs:workoff`. This command will run all pending jobs and then exit.

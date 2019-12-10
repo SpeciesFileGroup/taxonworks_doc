@@ -2,14 +2,18 @@
 
 # Comprehensive digitization task basics
 
-## Hotkeys
+## Hotkeys and setup
 
 * Don't forget that `ctrl-S` (or alt- in windows/linux) will save the whole of the record
+* Use blue locks to lock values from record to record
+* Use blue "undo" circles to unset a value (does not save)
+* Throughout TaxonWorks green and red buttons touch the database, but nothing else does
 
 ## Catalog number
 
 * You must provide both parts of the catalog number (a Local identifier type in TaxonWorks), a namespace (like `INHS Insect Collection`), and the unique portion of the identifier, like `12345`.
 * New Namespaces can be created via `Data -> Namespace`.
+* The task will automatically check for the presence of an identical identifier if it can, warning you in red.  Red warnings prevent the save of that identifier.
 * Confirm that a catalog number is successfully created by seeing the label for the collection object update (after save) to the right of the search bar on the top of the form.
 
 ## Taxon determinations

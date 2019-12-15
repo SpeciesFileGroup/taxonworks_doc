@@ -6,7 +6,9 @@ Get started quickly with [install_taxonworks instructions](https://github.com/Sp
 
 ## Code documentation
 
-[Rdoc](https://rdoc.taxonworks.org) based on inline documentation is generated on each commit of the code to the development branch.
+[Rdoc](http://rdoc.taxonworks.org) based on inline documentation is generated on each commit of the code to the development branch (has known issues, see [#13](https://github.com/SpeciesFileGroup/taxonworks_doc/issues/13))
+
+This doc is also generated at [https://rdoc.info/github/SpeciesFileGroup/taxonworks](https://rdoc.info/github/SpeciesFileGroup/taxonworks).
 
 ## API
 

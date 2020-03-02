@@ -1,6 +1,6 @@
 # USERS
 
-The documentation for TaxonWors users is obviously in its early stages.  Ultimately we have envisioned multiple help resources of different types, variously integrated. Some of the concepts for these resources are emerging below.
+The documentation for TaxonWorks users is obviously in its early stages.  Ultimately we have envisioned multiple help resources of different types, variously integrated. Some of the concepts for these resources are emerging below.
 
 ## Contributing
 

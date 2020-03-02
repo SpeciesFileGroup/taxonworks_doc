@@ -11,7 +11,7 @@ The authorship label is determined by the FIRST option in the following list tha
 * If People are assigned to a Source as authors, and that Source is the original source for the taxon name, then their family group names are used.
 * If the `author` field of a Source is filled out, then that field is used.
 
-# There are a lot of options for assigning the authorship of a TaxonName, which is the preferred way?
+## There are a lot of options for assigning the authorship of a TaxonName, which is the preferred way?
 
 The preferred mechanism is to link the TaxonName to a Source, and assign authors (People) to that source (third option in the list above).  This is the most granular way of creating the data, and therefor it will ultimately give you the most flexibility in reporting and validating the data.
 

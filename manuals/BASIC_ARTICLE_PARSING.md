@@ -46,9 +46,10 @@ In addition there is help here in the `Addendum` on how to configure various bas
     - Browse nomenclature
     - Browse sources
     - New taxon name
-    - New source from Citation
+    - New source
+    - Find sources
+    - Source hub
   - *Data*
-    - Sources
     - Controlled vocabulary terms
 
 ## Gotchas
@@ -86,7 +87,7 @@ You may not need to download the pdf in general if you get familiar with checkin
  
 #### Check to see if the source exists
 
-* Navigate to the `Browse sources` task
+* Navigate to the `Find sources` task
 * Enter "Hayat 2018", click `Find`
 * In the result table click on the Year tab to sort from earliest to latest year.  
 * Try "Hayat" by itself.  Repeat the year sort.  How is it different?
@@ -145,10 +146,11 @@ A note about the in-application viewer (short version- beware, don't expect it t
 
 If the source does not exist in the steps above it will need to be added.  
 
-* Open the `New source from Citation task`
-* In the Citation to find box paste the DOI: "http://dx.doi.org/10.11646/zootaxa.4521.2.6"
-* Click `Preview`
-* Confirm that the result in the `Create a source in BibTex format` is the source you are looking for
+* Open the `New source` task
+* Click the blue `CrossRef` button
+* Paste the DOI: "http://dx.doi.org/10.11646/zootaxa.4521.2.6"
+* Click `Find`
+* Confirm that the result in the the form is the source you are looking for
 
  This is important, Crossref will almost always find a hit, it may not be correct.
 

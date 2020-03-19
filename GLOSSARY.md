@@ -1,3 +1,5 @@
+[Back to USERS.md](USERS.md)
+
 # Glossary
 
 _A FAQ of sorts that treats words used in the context of TaxonWorks, digitization, etc.  With brief definitions or pointers to where information is found._

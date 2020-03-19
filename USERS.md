@@ -28,6 +28,9 @@ _Use the PDF button to download a version._
 
 * [Cheatsheet 1 - Interface overview](https://www.overleaf.com/read/xttgxvcnwcpz)
 
+## Glossary
+* [A glossary](GLOSSARY.md) includes definitions for words that users have heard in the context of TaxonWorks (and other biodiversity informatics related) discussions.
+
 ## Conceptual documentation
 
 Conceptual bits are being described in [/concepts/README.md](/concepts).  For those of you brave enough our [code documentation](http://rdoc.taxonworks.org) also contains a significant amount of information on our data models.

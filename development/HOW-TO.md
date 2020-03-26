@@ -112,3 +112,13 @@ To make them run you need to open up an extra terminal window and run `rails job
 
 ## Running docker specs
 To run the same tests we run at the deliver stage in TravisCI you may run `.travis/docker-test.sh`. That will set up images and run the tests inside a docker-compose environment.
+
+## Building GeographicArea from scratch
+
+This is a fixed process.  Some of these repositories are private because they contain free, but not distributable data.  TODO- point to original data.
+
+* [Raw data](https://gitlab.com/SpeciesFileGroup/gaz/) (Private)
+* [Build](https://github.com/SpeciesFileGroup/taxonworks/tree/development/lib/tasks/development/data/geo)
+* [Product stored here](https://gitlab.com/SpeciesFileGroup/tw_initialization_data) (Private)
+* [Initialized here](https://github.com/SpeciesFileGroup/taxonworks/blob/development/lib/tasks/initialize/geo.rake)
+* [Subsequently curated here](https://github.com/SpeciesFileGroup/taxonworks/blob/development/lib/tasks/maintenance/geo.rake)

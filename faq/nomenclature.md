@@ -29,6 +29,9 @@ The preferred mechanism is to link the TaxonName to a Source, and assign authors
 
 ## How would I place this name in synonymy? 
 
+## What is the word form for "arbitrary combination of letters"
+
+The word form is "noun in apposition"; etymology "arbitrary combination of letters"
 
 # Contributors
 

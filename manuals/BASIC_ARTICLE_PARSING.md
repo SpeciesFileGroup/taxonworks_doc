@@ -1,6 +1,6 @@
 # Basic article parsing exercise
 
-This is version _0.0.1_. All changes beyond grammar will result in an increment. Higher level increments reflect larger changes that may reflect new ways of doing things, or differences in user interfaces, etc.
+This is version _0.1.0_. All changes beyond grammar will result in an increment. Higher level increments reflect larger changes that may reflect new ways of doing things, or differences in user interfaces, etc.
 
 _You can ask for help and clarification live in person on [Gitter](https://gitter.im/SpeciesFileGroup/taxonworks)!_
 
@@ -32,31 +32,28 @@ At the end of the exercise you should:
 * use a radial annotator to add an asserted distibution
 * use a radial annotator to add citation topics
 * use a radial annotator to add common names 
-* be familiar with a number of the commonly used icons (`Radial annotator`, `Otu radial`, `Otu navigator`)
+* be familiar with a number of the commonly used icons (`Radial annotator`, `OTU radial`, `OTU navigator`)
 
 In addition there is help here in the `Addendum` on how to configure various baseline project data, for example `biological relationships` (things like "parasitoid / host"), `topics` (like "Biological control" in the context of a paper and taxon), `biocuration classes` (things like sex, lifestage, etc.).
 
 ## Assumptions
 
-* It is often more efficient to do one thing at a time for a set of data.  Here we break this rule various times, for example we may want to gather 40 references and then just capture the reference data, then move to capturing one aspect of the data for each paper, then move to the next aspect. We might also be able to take advantage of bulk processing or other services, again this exercise ignores these paths.
+* _Various steps here assume you are using a Species File Group sandbox instances that are populated with source, and nomenclature data derived from the Universal Chalcidoidea database.  If you are not sure whether this is the case we suggest reading through the whole exercise to get a general understanding of the process, then seeing if you can adapt yourself through the exercise as needed._ 
+* It is often more efficient to do one thing at a time for a set of data.  Here we break this rule various times, for example we may want to gather 40 references and then just capture the reference data, then move to capturing one aspect of the data for each paper, then move to the next aspect. We might also be able to take advantage of bulk processing or other services.  Again this exercise ignores these paths.
 * We assume the reader knows that the circular icons on the right of the screen are slideouts, and they know the name of each slideout (but not necessarily how they are used).
 * We assume the reader is familiar with the mechanism to favourite tasks and data cards in the TaxonWorks hub.  
 * We assume you have the following cards on your hub Favorites tab:
   - *Tasks*
     - Browse nomenclature
-    - Browse sources
     - New taxon name
-    - New source
-    - Find sources
     - Source hub
-  - *Data*
-    - Controlled vocabulary terms
+    - Manage controlled vocabulary terms
 
 ## Gotchas
 
 * Someone might have done the exercise in the sandbox project already!  If so we recommend pretending that the they haven't, and simply append or change letters to the taxon names, or other values in question.  
 * TaxonWorks is only officially supported on Firefox and Chrome.
-* _As a technical note this was written for TaxonWorks post commit #f081228fb._
+* _As a technical note this was written for TaxonWorks post commit [1a36d3b](https://github.com/SpeciesFileGroup/taxonworks/tree/1a36d3b)._
 
 ## Tips
 
@@ -87,15 +84,16 @@ You may not need to download the pdf in general if you get familiar with checkin
  
 #### Check to see if the source exists
 
-* Navigate to the `Find sources` task
+_If at any step you do not find your source, skip ahead to `Adding a new source` then come back here and continue on if you wish._
+
+* Navigate to the `Source hub` task
+* Click the `Find sources` button
 * Enter "Hayat 2018", click `Find`
 * In the result table click on the Year tab to sort from earliest to latest year.  
 * Try "Hayat" by itself.  Repeat the year sort.  How is it different?
 * Try a keyword from the title, choose something that would be relatively unique, like "Karnataka".  Try again with the year: "Karnataka 2018".
 * What happens to the search results when a year is added to the query?
 * What about a year with a letter (e.g. "1947a")?
-
-_Skip ahead to `Adding a new source` if you do not find the source._
 
 #### Ensure the source is in your project
 
@@ -107,9 +105,9 @@ Sources are shared across all projects, but a set of sources can be tracked per 
 #### Pin the found source
 _This assumes you completed the search above._
 
-* Pin the source to you pinboard by clicking the corresponding green `Pin` icon in the result row (or top left of the show screen if coming from the instructions below). It will turn red if is on your pinboard (click again to remove, and set the state to green).
+* Pin the source to you pinboard by clicking the corresponding green `Pin` icon in the result row (or top right of the show screen if coming from the instructions below). It will turn red if is on your pinboard (click again to remove, and set the state to green).
 
- In general a green button means something is persisted in the database (in this case the fact that you have added something to your pinboard), a red button means something is removed from the database (in this case you would remove the flag that says "put this in my pinboard"). Red and green rules hold throughout TaxonWorks.
+In general a green button means something is persisted in the database (in this case the fact that you have added something to your pinboard), a red button means something is removed from the database (in this case you would remove the flag that says "put this in my pinboard"). Red and green rules hold throughout TaxonWorks.
 
 * Confirm that the Source is now on your pinboard by clicking the `Pinboard` slideout on the right (Green circle with white pin)
 * Make the source in your pinboard your default source- with the Pinboard open hover over the "hamburger" menu (three horizontal lines).
@@ -119,20 +117,19 @@ _This assumes you completed the search above._
 Only one record of a given type on the binboard can be defaulted to at a time, clicking a second record moves the red check to that record.
 
 #### Attaching a pdf
-_This assumes you completed the search above and are in the `Browse sources` task._
+_This assumes you completed the search above and are in the `Find sources`, although you can attach and do similar checks anywhere the radial annotator for the source is present._
 
 * If you are tracking Pdfs (this is a private research project, pdfs are not shared outside your research) then check to see if a Pdf is loaded by looking for the `Pdf` link in the `Documents` column.
 
-If there is no Pdf link you can add it to the Pdf.
+If there is no Pdf link you can add it to the Pdf. This functionality is available anywhere you see the Source and its associated Radial annotator.
 
-* Navigate to the Source `Show` page by right clicking on the row and selecting `Show`, or, alternatively just double left click on the row. Both methods get you to the same place.
-* In the top right click the `Radial annotator button` (blue circle with catapillar-like white pie sections).
+* In `Find sources` you can see the annotator (blue circle with catapillar-like white pie sections) under the `Annotate` column. 
+* Click the corresponding Radial annotator icon.
 * Click `Documentation`
 * Position your browser so that you can see your filesystem in one window, and the browser window with the open form in another
 * Click on your pdf, and drag it to the box that says `Drop documents here`
 
 Your pdf will automatically load. A successfull load is confirmed with a row below the window that re-lists the citation of the source.  It has a red trash can beside it.  Clicking the trash can will prompt you to destroy the *pdf* (not the source).
-
 * Close the annotator window by clicking on the gray `x` (top right) or anywhere towards the margins of your screen.
 * Open the `Pinboard` slidout
 * Mouse over the hamburger menu
@@ -144,25 +141,30 @@ A note about the in-application viewer (short version- beware, don't expect it t
 
 #### Adding a new Source
 
-If the source does not exist in the steps above it will need to be added.  
+If the source does not exist in the steps above it will need to be added. There are several ways to add sources, some of them semi-automated.  Here we use a query to CrossRef to use a semi-automated approach. 
 
-* Open the `New source` task
+* Open the `New source` task.  You can also access it through the `Source hub` task.
 * Click the blue `CrossRef` button
 * Paste the DOI: "http://dx.doi.org/10.11646/zootaxa.4521.2.6"
 * Click `Find`
-* Confirm that the result in the the form is the source you are looking for
+* Confirm that the parsed result in the the New source form is the source you are looking for.  This is important, Crossref will almost always find a hit, however it may not be correct. Also, it is always useful to check edit section of the source to check for missing data, some journals do not return the volume or number by CrossRef, and pages ares sometimes missing.
 
- This is important, Crossref will almost always find a hit, it may not be correct.
-
+<strike> Functionality currently moved/absent and likely returned in another fashion:
 * Check the box `Also create people from authors and editors of BibTeX source?`
-This parses out the authors into People records while it adds the source.  Note that this will result in duplicate people.  There is a utility to merge people that can be used from time to time.
-@proceps: in my practice, more efficient way, is to never use this option to parse the authors, instead go to `Edit source` and add people manually, this will avoid duplication, and results in more clean data in the database. Also, it is always useful to check edit section of the
-source to check for missing data, some journals do not return the volum or number by Crossref, in some other cases, the pages are missing. Adding a Serial for the source is also a good practice. 
+This parses out the authors into People records while it adds the source.  Note that this will result in duplicate people. There is a utility to merge people that can be used from time to time.
+* Note: In practice some find the more efficient way is to not parse authors but rather add People manually. This will avoid duplication and possible cleaning steps in the database. 
+</strike>
 
-* Click `Create BibTex Source`
-* You are taken to the `Show` page for the Source
-* Follow the steps for `Pin the found source` and `Attaching a pdf` above
-* You may want to edit the authors to downcase their names. This is not critical, a task `Uniquify people` can be used to merge people down the road. Click on the author to show them, then click Edit. Use the back button on your browser to get back to the source and each author name.
+* Click `Save` or more efficiently `Ctrl-s` (function key varies across operating systems) to save the source.
+* Notice the fully text of the Source, as it would be seen in a citation section, is now listed on the top where once there was "New source"
+* Notice their is a red button "Remove from project" indicating that the created source was also flagged as being added to your specific project.
+* Click the `Green pin icon` to Pin your source to the pinboard
+
+* Alternatively follow the steps for `Pin the found source` and `Attaching a pdf` above
+
+There are several other things that can be done at this point:
+* The author names may be upper cased. You may want to edit the authors to downcase their names. A task `Uniquify people` can be used to merge people down the road and this will handle this issue in part. Click on the author to show them, then click Edit. Use the back button on your browser to get back to the source and each author name.
+* This is a good time to do a quick check to see if there is a Serial that can be linked to.  The `Journal` field is the verbatim text in the BibTeX format, however in TaxonWorks you can also link to a Serial record, and draw the name from that record rather than using the verbatim value.
 
 Asside: At this point you may want to step through and capture other sources in the References cite section at this point, for future reference. This might be particularly important if you are adding names that are synonyms of prior work.
 

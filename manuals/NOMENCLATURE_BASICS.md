@@ -194,3 +194,9 @@ An *incertae sedis* relationship should connect _Aus cus_ and the superfamily
 ## Nomenclature, not biology
 
 * A reminder, if you want to record information about biology (hosts, parasites, distribution, etc.) that doesn't belong in the nomenclature section, you will use the Otu radial icon or OTU nav icon to access and record those data from a nomenclatural context.
+
+# FAQ
+* I have a species which was originally described in genus which obviously lies outside the scope of my group.
+  How can I use this genus in the original combination?
+  - The genus name have to be entered into the classification before the use. It may have to Root assigned as
+    the parent, or, preferrably, the basic classification (class, order, family) could be provided as well.

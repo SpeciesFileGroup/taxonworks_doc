@@ -162,7 +162,11 @@ Either access the task `New type specimen` through the `New taxon name` task in 
 
 ### Family group names 
 
-STUB
+Several categories for the family group name exist: original family group name form; incorrect original family group name form;
+subsequent family group name form; misspelling.
+All of them could be added to the database as individual Protonym linked to the correct family group name form (valid or synonym) with 
+single TaxonNameRelationship
+For example Aini is "family group name original form of" Ainae
 
 ### Citations
 
@@ -176,10 +180,30 @@ Misidentifications are a tricky gray area.  Remember that we only care about the
 
 A question from a user reflects the trickieness:
 
-> Imagine there is a genus _Aus_, with type species _Aus bus_. Then someone describe a new species _Aus cus_, which subsequent authors don't even consider to be in the same superfamily. So I cannot enter Aus twice because the second one is a misidentification but no one knows for sure what it is.
+1. Imagine there is a genus _Aus_, with type species _Aus bus_. Then someone describe a new species _Aus cus_, which subsequent authors don't even consider to be in the same superfamily. So I cannot enter Aus twice because the second one is a misidentification but no one knows for sure what it is.
+
+- This is just an original genus. This is the same genus in both species. The genus cannot be misidentified. This is just a position of the 
+species in classification, regardless where it was originally described or subsequently placed.
 
 The proper way to hand this is to use a single _Aus_, which is placed in the correct family. In both species _Aus_ is the Original genus, in _Aus bus_, this is also a Parent taxon. In case of _Aus cus_, if the current genus is not assigned, the superfamily is the parent taxon.
 An *incertae sedis* relationship should connect _Aus cus_ and the superfamily
+
+2. Species misidentification/misappliation. 
+
+- Misapplication itself does not make an available name. But this a common practicy to include misapplication in the list of historical
+usages of the taxon names, especially in the cases where a new name is proposed as a "replacement" for a previously misidentified species.
+Remember, that _nomen novum_ cannot be proposed for misapplication, since it requires a previously availeble name, but invalid because of 
+homonymy. To record this in TaxonWorks, a new Protonym for a missapplied name should be created in the database. This protonym should
+be linked to two other Taxon Names with two Taxon Name Relationships. The first relationship is to an available name with the same spelling
+(it could be a valid name or a synonym). The relationship type is "Misapplication". The second relationship "Invalidating" relationship
+should link this TaxonName to the correct name for this taxon. Remember, the "Synonym" relationship is not applicable here, since
+it assumes that both names are available name, and in this example Misapplication is not an available name. 
+Follow the soft validation messages for other essential information for the Protonym in the database.
+An example: The name _Aus aus_ Author 1, is misapplication for _Aus bus_, and _Aus aus_ Author 2 is completely different species.
+After the protonym for the first name is created two relationships will be added in the database:
+_Aus aus_ Author 1 Misapplication, linked to _Aus aus_ Author 2
+_Aus aus_ Author 1 Invalid, linked to _Aus bus_
+Once the misapplication is created, an OTU could be added to the TaxonName, which could be used, for example, for taxon determination. 
 
 ## Navigation helpers
 
@@ -200,3 +224,7 @@ An *incertae sedis* relationship should connect _Aus cus_ and the superfamily
   How can I use this genus in the original combination?
   - The genus name have to be entered into the classification before the use. It may have to Root assigned as
     the parent, or, preferrably, the basic classification (class, order, family) could be provided as well.
+* How to record in the database a situation when a taxon, species or genus, is moved from one family to another
+  - Add a Taxon Name Relationthip "classified as" to the Protonym and specify the Protonym for the family group name, which
+  is a position for this protonym in this particula publication. Add a citation(s) to this Taxon Name Relationship which indicate 
+  the publication where this position of protonym is recorded. 

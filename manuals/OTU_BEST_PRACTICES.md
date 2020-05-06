@@ -123,6 +123,13 @@ We might see:
 
 ## What happens when I use the "wrong" *OTU*?
 
-
+# FAQ
+* How to add the determination if I know that this is a misidentification?
+  - Prease see Nomenclature Basics where it is described how to create a Protonym and mark it as a Misapplication; Add an OTU
+  to this protonym. Use the OTU for the taxon determination. If you use a misapplied name for a specimen determination, you can get 
+  both the name originally reported name, and the valid name for the same taxon.
+  - Alternatively you can just simply add two determinations to the same specimen. Even though the specimen is now determened as 
+  Name 2, we can still see a historical record linking this name to the previous determination. To make it work, each determination 
+  should be accompanied by the determination date. The correct determination will be determined by the nearest date.
 
 

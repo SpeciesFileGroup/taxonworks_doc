@@ -1,14 +1,14 @@
-<!-- Tufts VUE 3.3.0 concept-map (TaxonWorksNomenclature.vue) 2017-10-24 -->
+<!-- Tufts VUE 3.3.0 concept-map (TaxonWorksNomenclature.vue) 2018-02-16 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.app/Contents/Resources/Java/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Tue Oct 24 16:21:08 CDT 2017 by matt on platform Mac OS X 10.12.6 in JVM 1.8.0_25-b17 -->
+<!-- Do Not Remove: Saved date Fri Feb 16 13:29:57 CST 2018 by matt on platform Mac OS X 10.12.6 in JVM 1.8.0_25-b17 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built October 8 2015 at 1658 by tomadm on Linux 2.6.32-504.23.4.el6.x86_64 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0"
     label="TaxonWorksNomenclature.vue" created="1508867305392" x="0.0"
     y="0.0" width="1904.8333" height="2411.2002" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1508880068543" size="64715"
+    <resource referenceCreated="1518809397208" size="74097"
         spec="/Users/matt/src/github/species_file_group/taxonworks_doc/concepts/TaxonWorksNomenclature.vue"
         type="1" xsi:type="URLResource">
         <title>TaxonWorksNomenclature.vue</title>
@@ -134,8 +134,8 @@
         <ID2 xsi:type="node">29</ID2>
     </child>
     <child ID="34" label="link to the&#xa;physical &#xa;world"
-        layerID="1" created="1508867510111" x="937.50006" y="-338.66406"
-        width="47.0" height="181.66406" strokeWidth="5.0"
+        layerID="1" created="1508867510111" x="938.00006" y="-338.66406"
+        width="46.0" height="181.66406" strokeWidth="5.0"
         autoSized="false" controlCount="0" arrowState="1" xsi:type="link">
         <strokeColor>#FFC63B</strokeColor>
         <textColor>#404040</textColor>
@@ -160,7 +160,7 @@
         <ID2 xsi:type="node">22</ID2>
     </child>
     <child ID="36" label="is a" layerID="1" created="1508867548664"
-        x="1267.8334" y="-344.5" width="18.0" height="189.5"
+        x="1268.3334" y="-344.5" width="17.0" height="189.5"
         strokeWidth="5.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#FFC63B</strokeColor>
@@ -230,7 +230,7 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="47" label="collected in" layerID="1"
-        created="1508867691868" x="614.1667" y="-459.5" width="55.0"
+        created="1508867691868" x="614.6667" y="-459.5" width="54.0"
         height="46.5" strokeWidth="5.0" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#83CEFF</strokeColor>
@@ -700,7 +700,7 @@
         <ID2 xsi:type="node">24</ID2>
     </child>
     <child ID="103" label="label" layerID="1" created="1508868942704"
-        x="1809.3334" y="-340.5" width="23.0" height="184.0"
+        x="1809.8334" y="-340.5" width="22.0" height="184.0"
         strokeWidth="5.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8484EF</strokeColor>
@@ -886,7 +886,7 @@
         strokeWidth="0.0" autoSized="false" xsi:type="text">
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
-        <font>-bold-0</font>
+        <font>-bold-12</font>
         <URIString>http://vue.tufts.edu/rdf/resource/4fa660060ac0194636e4cddbdb962490</URIString>
         <richText>&lt;html&gt;
   &lt;head color="#000000" style="color: #000000"&gt;
@@ -1076,8 +1076,8 @@
   &lt;/head&gt;
   &lt;body&gt;
     &lt;p color="#000000" style="color: #000000"&gt;
-      &lt;font style="font-size:18;"&gt;There exists a combination of 4 protonyms: &amp;quot;Aus 
-      (Bus) dus eus&amp;quot;&lt;/font&gt;
+      &lt;font style="font-size:18;"&gt;There exists a combination of 4 protonyms: 
+      &amp;quot;Aus (Bus) dus eus&amp;quot;&lt;/font&gt;
     &lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;
@@ -1090,7 +1090,7 @@
         strokeWidth="0.0" autoSized="false" xsi:type="text">
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
-        <font>-bold-0</font>
+        <font>-bold-12</font>
         <URIString>http://vue.tufts.edu/rdf/resource/4fa660090ac0194636e4cddb3d85d2cf</URIString>
         <richText>&lt;html&gt;
   &lt;head color="#000000" style="color: #000000"&gt;
@@ -1203,17 +1203,192 @@
 </richText>
         <label>aus is invalid (no further reference to why)</label>
     </child>
+    <child ID="191" label="Nominotypical Genus" layerID="1"
+        created="1518726927061" x="422.6667" y="1644.0" width="113.0"
+        height="32.0" strokeWidth="0.0" autoSized="false" xsi:type="text">
+        <strokeColor>#404040</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-plain-18</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/9b7e42a8fe8000004343a58f303afa05</URIString>
+        <richText>&lt;html&gt;
+  &lt;head color="#000000" style="color: #000000"&gt;
+    &lt;style type="text/css"&gt;
+      &lt;!--
+        body { margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; font-size: 12; font-family: Arial; color: #000000 }
+        ol { margin-top: 6; font-family: Arial; vertical-align: middle; margin-left: 30; font-size: 12; list-style-position: outside }
+        p { margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; color: #000000 }
+        ul { margin-top: 6; font-size: 12; margin-left: 30; vertical-align: middle; list-style-position: outside; font-family: Arial }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p color="#000000" style="color: #000000"&gt;
+      &lt;font style="font-size:18;"&gt;Nominotypical Genus&lt;/font&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</richText>
+        <label>Nominotypical Genus</label>
+    </child>
+    <child ID="192" label="Protonym 2 &#xa;Name: Gus" layerID="1"
+        created="1518726945585" x="842.6667" y="1614.5" width="198.0"
+        height="82.0" strokeWidth="5.0" strokeStyle="1"
+        autoSized="false" xsi:type="node">
+        <fillColor>#FFFFFF</fillColor>
+        <strokeColor>#C1F780</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-bold-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/9b7e42a9fe8000004343a58f92b947eb</URIString>
+        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
+    </child>
+    <child ID="193" label="&quot;parent_id&quot;" layerID="1"
+        created="1518727217155" x="1123.8583" y="-788.5"
+        width="88.61694" height="108.0" strokeWidth="5.0"
+        autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
+        <strokeColor>#EA2218</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/9b7e42a9fe8000004343a58fcb683e89</URIString>
+        <point1 x="1126.3583" y="-683.0"/>
+        <point2 x="1209.9752" y="-786.0"/>
+    </child>
+    <child ID="194" layerID="1" created="1518727326022" x="768.6667"
+        y="1654.102" width="76.5" height="5.7958984" strokeWidth="5.0"
+        autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
+        <strokeColor>#EA2218</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/9b7e42a9fe8000004343a58fe2190b33</URIString>
+        <point1 x="842.6667" y="1656.602"/>
+        <point2 x="771.1667" y="1657.398"/>
+        <ID1 xsi:type="node">192</ID1>
+        <ID2 xsi:type="node">195</ID2>
+    </child>
+    <child ID="195" label="Protonym 1 &#xa;Name: Gus" layerID="1"
+        created="1518727329638" x="573.1667" y="1617.5" width="198.0"
+        height="82.0" strokeWidth="5.0" strokeStyle="1"
+        autoSized="false" xsi:type="node">
+        <fillColor>#FFFFFF</fillColor>
+        <strokeColor>#C1F780</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-bold-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/9b7e42a9fe8000004343a58f8f699f10</URIString>
+        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
+    </child>
+    <child ID="196"
+        label="For nomenclatural classification purposes &#xa;      the sub is currently the &quot;Target&quot;, and the genus is just some &#xa;      level in the hierarchy.  Soft validations &#xa;      fixes handle combination missmatches automatically, unfiying the id to &#xa;      that of the lowest (current) protonym in the classification.  This has &#xa;      issues, but until we get rid of parent_id, it's consistent."
+        layerID="1" created="1518727357577" x="1258.1667" y="1620.5"
+        width="460.0" height="204.0" strokeWidth="0.0" autoSized="false" xsi:type="text">
+        <fillColor>#FFFFFF</fillColor>
+        <strokeColor>#404040</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-bold-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/9b7e42a9fe8000004343a58f6c26f220</URIString>
+        <richText>&lt;html&gt;
+  &lt;head color="#000000" style="color: #000000"&gt;
+    &lt;style type="text/css"&gt;
+      &lt;!--
+        body { margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; font-size: 32; font-family: Arial; color: #000000 }
+        ol { margin-top: 6; font-family: Arial; vertical-align: middle; margin-left: 30; font-size: 32; list-style-position: outside }
+        p { margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; color: #000000 }
+        ul { margin-top: 6; font-size: 32; margin-left: 30; vertical-align: middle; list-style-position: outside; font-family: Arial }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p color="#000000" style="color: #000000"&gt;
+      &lt;font style="font-size:18;"&gt;For nomenclatural classification purposes 
+      the sub is currently the &amp;quot;Target&amp;quot;, and the genus is just some 
+      level in the hierarchy.  Soft validations fixes handle combination 
+      missmatches automatically, unfiying the id to that of the lowest 
+      (current) protonym in the classification.  This has issues, but until we 
+      get rid of parent_id, it's consistent.&lt;/font&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</richText>
+        <label>For nomenclatural classification purposes 
+      the sub is currently the "Target", and the genus is just some 
+      level in the hierarchy.  Soft validations 
+      fixes handle combination missmatches automatically, unfiying the id to 
+      that of the lowest (current) protonym in the classification.  This has 
+      issues, but until we get rid of parent_id, it's consistent.</label>
+    </child>
+    <child ID="197" label="Nominotypical Species" layerID="1"
+        created="1518727473354" x="430.16675" y="1762.5" width="113.0"
+        height="32.0" strokeWidth="0.0" autoSized="false" xsi:type="text">
+        <strokeColor>#404040</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-plain-18</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/9b7e42aafe8000004343a58f4328afa1</URIString>
+        <richText>&lt;html&gt;
+  &lt;head color="#000000" style="color: #000000"&gt;
+    &lt;style type="text/css"&gt;
+      &lt;!--
+        body { margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; font-size: 12; font-family: Arial; color: #000000 }
+        ol { margin-top: 6; font-family: Arial; vertical-align: middle; margin-left: 30; font-size: 12; list-style-position: outside }
+        p { margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; color: #000000 }
+        ul { margin-top: 6; font-size: 12; margin-left: 30; vertical-align: middle; list-style-position: outside; font-family: Arial }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p color="#000000" style="color: #000000"&gt;
+      &lt;font style="font-size:18;"&gt;Nominotypical Species&lt;/font&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</richText>
+        <label>Nominotypical Species</label>
+    </child>
+    <child ID="198" label="Protonym 2 &#xa;Name: aus" layerID="1"
+        created="1518727473354" x="850.16675" y="1733.0" width="198.0"
+        height="82.0" strokeWidth="5.0" strokeStyle="1"
+        autoSized="false" xsi:type="node">
+        <fillColor>#FFFFFF</fillColor>
+        <strokeColor>#C1F780</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-bold-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/9b7e42aafe8000004343a58feb24d074</URIString>
+        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
+    </child>
+    <child ID="199" layerID="1" created="1518727473354" x="771.16675"
+        y="1772.582" width="81.5" height="5.8360596" strokeWidth="5.0"
+        autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
+        <strokeColor>#EA2218</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/9b7e42aafe8000004343a58f76900edf</URIString>
+        <point1 x="850.16675" y="1775.082"/>
+        <point2 x="773.66675" y="1775.9181"/>
+        <ID1 xsi:type="node">198</ID1>
+        <ID2 xsi:type="node">200</ID2>
+    </child>
+    <child ID="200" label="Protonym 1 &#xa;Name: aus" layerID="1"
+        created="1518727473354" x="575.66675" y="1736.0" width="198.0"
+        height="82.0" strokeWidth="5.0" strokeStyle="1"
+        autoSized="false" xsi:type="node">
+        <fillColor>#FFFFFF</fillColor>
+        <strokeColor>#C1F780</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-bold-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/9b7e42aafe8000004343a58fa4179d5e</URIString>
+        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
+    </child>
     <layer ID="1" label="Layer 1" created="1508867305393" x="0.0"
         y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/4f8b16fe0ac0194636e4cddba207d924</URIString>
     </layer>
     <userZoom>1.0</userZoom>
-    <userOrigin x="62.166687" y="-806.5"/>
+    <userOrigin x="-195.83331" y="-1150.5"/>
     <presentationBackground>#202020</presentationBackground>
     <PathwayList currentPathway="0" revealerIndex="-1">
         <pathway ID="0" label="Untitled Pathway" created="1508867305392"
             x="0.0" y="0.0" width="1.4E-45" height="1.4E-45"
-            strokeWidth="0.0" autoSized="false" currentIndex="-1" open="true">
+            strokeWidth="0.0" autoSized="false" currentIndex="0" open="true">
             <strokeColor>#B3CC33CC</strokeColor>
             <textColor>#000000</textColor>
             <font>SansSerif-plain-14</font>

@@ -17,7 +17,7 @@ Use the orange question mark slideout on the right of the interface.
 See [here](/manuals/README.md).
 
 ## Videos
-There is a [Youtube](https://www.youtube.com/channel/UCKNr7QYwvVFcRfQAcMEAhLw) channel with a couple small videos.
+There is a [YouTube](https://www.youtube.com/channel/UCKNr7QYwvVFcRfQAcMEAhLw) channel with a couple small videos.
 
 ## Cheatsheets
 _Use the PDF button to download a version._

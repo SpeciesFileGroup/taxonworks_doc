@@ -60,9 +60,33 @@ At the end of the exercise you should:
 
 ### Export TaxonWorks tables
 
+* Click on a Data Card, e.g. "Otus".
+* On the bar in the middle click on 'Download', you'll get a CSV file with the data for that table.
+
 ### Export DWCA 
 
+* Open the task 'Report DWCA table'.
+* Click 'Download NNNN records.'
+
 ### Export bibliographies
+
+* Open the task 'Filter sources'
+* Use the facets to filter a list of Souces
+
+#### As CSV
+
+* Click the `Download CSV` button
+
+#### As BiBTex
+
+* Click the `BibTex` buttona
+
+##### Direct download
+* Click the `Download Bibtex` button 
+
+##### Create a file to share via the API
+* Click `Generate download`
+If the project administrator has created an API token (See addendum) then you will see a link that you can share that will point to a zipped copy of the download. 
 
 ### Export taxon names as CSV
 

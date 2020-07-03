@@ -31,55 +31,53 @@ At the end of the exercise you should:
 
 ## Assumptions
 
-* We assume you are familiar with navigating TaxonWorks
+* We assume you are familiar with navigating TaxonWorks 
+* We assume you know what TaxonWorks Data and Task cards are
 * We assume you are able to load a CSV file into Excel, or some other database
 * For some exports we assume you are familiar with handling JSON data
 * For some exports we assume you are familiar with the standard in question (e.g. DwC-A)
  
 ## Gotchas
-
-_Export functionality is rapidly evolving and expanding._ There will be a multitude of improvements, enhancements, and new mechanisms coming as TaxonWorks evolves. Please see issues labeled with [Export](https://github.com/SpeciesFileGroup/taxonworks/labels/export), and add your own there if you don't see what you need.
+_Export functionality is rapidly evolving and expanding._ There will be a multitude of ongoing improvements, enhancements, and new export mechanisms coming as TaxonWorks evolves. Please see issues labeled with [Export](https://github.com/SpeciesFileGroup/taxonworks/labels/export), and add your own there if you don't see what you need.
 
 ## Tips
-
 * Tools like [OpenRefine](https://openrefine.org/) are a great way to explore your CSV data
 * [jq](https://stedolan.github.io/jq/) is an awesome command line parser for JSON (and other tools like it exist as well) 
 
 ## Related exercises
-
 * None currently
 
 ## Exercise
-
 ### Syntax
-
 - In the exercise bulleted points are actions you should take, non-bulleted tasks are comments or guiding questions.
 - `Highlighted words` refer to text or elements in the application, for example button or field names.
 - "Quoted words" are literal values to be input or noticed
 
 ### Export TaxonWorks tables
+_The native TaxonWorks database format_
 
+#### Via "Project data overview and download"
+* Open the `Project data overview and download` task
+* Click a `Download` link corresponding to the table you want to download (22+ tables available)
+
+#### Via individual Data cards
 * Click on a Data Card, e.g. `Otus`.
-* On the bar in the middle click on 'Download', you'll get a CSV file with the data for that table.
+* On the bar in the middle click on `Download`, you'll get a CSV file with the data for that table.
 
 ### Export DwC-A
-
 * Open the task `Report DWCA table`.
 * Click `Download NNNN records.`
 
 See also "Export Collection objects as CSV (DwC-A columns)".
 
 ### Export bibliographies
-
 * Open the task `Filter sources`
 * Use the facets to filter a list of Souces
 
 #### As CSV
-
 * Click the `Download CSV` button
 
 #### As BiBTex
-
 * Click the `BibTex` buttona
 
 ##### Direct download
@@ -91,7 +89,6 @@ If the project administrator has created an API token (See addendum) then you wi
 
 ### Export taxon names as CSV
 #### Basic
-
 * Open the task `Download nomenclature (basic)`
 * Use the `Taxon name` autocomplete to choose a name.  All children of this name will be exported.
 * Click `Download`

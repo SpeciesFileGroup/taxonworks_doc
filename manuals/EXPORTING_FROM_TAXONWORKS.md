@@ -77,8 +77,8 @@ See also "Export Collection objects as CSV (DwC-A columns)".
 #### As CSV
 * Click the `Download CSV` button
 
-#### As BiBTex
-* Click the `BibTex` buttona
+#### As BibTeX
+* Click the `BibTeX` buttona
 
 ##### Direct download
 * Click the `Download Bibtex` button 

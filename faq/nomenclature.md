@@ -17,21 +17,54 @@ The preferred mechanism is to link the TaxonName to a Source, and assign authors
 
 ## Is it possible to link a note to a family group name to specify what the original spelling is, at what level it was proposed and when?
 
+Another protonym with the original spelling should be created in the database. Clone button could be used to replicate 
+all information from the current family-group name. This new taxon name should be linked to the original name using special
+Taxon Name Relationship *Incorrect original spelling* or *Family group name original form*. TW could be restrictive
+in the ending of the original name before you assigne the relationship, so it is recommended to save the Taxon Name
+with the proper ending, add the ralationship and return back to modify the *Name* to the original form. And save Taxon Name
+again. Assigning the relationship removes the restriction on the family-group name form and ending.
+
 ##  Do you have any instructions on how to change combinations or enter new synonymies in TW?
+
+Please follow the instruction in the Nomenclature Basics.
 
 ## How do I find out where types are deposited, do you not yet have this function in TW?
 
-## I am still confused by what you mean by basonym. Do you mean the name (and combination) as originally proposed when that name was first made available (as the botanists use it), or do you mean the name as used in specified publication?
+Specimen deposition could be assigned to Specimen. If you create the type specimen for the Taxon Name, there is a field for
+the type repository. To create the type specimen follow one of the links provided in the Edit Taxon Name task, either *Quick* or
+*Comprehensive* in the *Type* section. *Quick type specimen* task allow to copy the entire verbatim-label information. 
+The *Comprehensive collection object* allow to provide more detailed information about the specimen. 
 
-## How do I get to the place in TW where I can add a new basonym? I need to try it out and see what happens.
+## I am still confused by what you mean by basionym. Do you mean the name (and combination) as originally proposed when that name was first made available (as the botanists use it), or do you mean the name as used in specified publication?
+
+## How do I get to the place in TW where I can add a new basionym? I need to try it out and see what happens.
 
 ## How would I remove a name from synonymy? 
 
+You can symply delete the *Synonym* Taxon Name Relationship. But when the name has been historically treated as a synonym, 
+and subsequently was restored, the best practice would be to preserve both treatments in the database. Keep the synonym 
+Taxon Name Relationship with its original citation in the database. Add the nomenclatural Status *Valid* to the name. 
+This status will overwrite the Taxon Name relationship. Please remember to add the citation to the status, to know where and
+when the name was reinstated.
+
 ## How would I place this name in synonymy? 
+
+Please follow the instruction in the Nomenclature Basics.
 
 ## What is the word form for "arbitrary combination of letters"
 
 The word form is "noun in apposition"; etymology "arbitrary combination of letters"
+
+## I have a species which was originally described in genus which obviously lies outside the scope of my group. How can I use this genus in the original combination?
+  
+  The genus name have to be entered into the classification before the use. It may have to Root assigned as
+    the parent, or, preferrably, the basic classification (class, order, family) could be provided as well.
+
+## How to record in the database a situation when a taxon, species or genus, is moved from one family to another
+  
+  Edit TaxonName task has a special section for this, *Classification*. Select the family-group name, and the 
+  relationship *Classified as*. This could be used for original placement of the taxon, or for the subsequent classification.
+  Once the Taxon Name Relationship is created, assigne the citation using the radial annotator. 
 
 # Contributors
 

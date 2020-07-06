@@ -219,12 +219,3 @@ Once the misapplication is created, an OTU could be added to the TaxonName, whic
 
 * A reminder, if you want to record information about biology (hosts, parasites, distribution, etc.) that doesn't belong in the nomenclature section, you will use the Otu radial icon or OTU nav icon to access and record those data from a nomenclatural context.
 
-# FAQ
-* I have a species which was originally described in genus which obviously lies outside the scope of my group.
-  How can I use this genus in the original combination?
-  - The genus name have to be entered into the classification before the use. It may have to Root assigned as
-    the parent, or, preferrably, the basic classification (class, order, family) could be provided as well.
-* How to record in the database a situation when a taxon, species or genus, is moved from one family to another
-  - Add a Taxon Name Relationthip "classified as" to the Protonym and specify the Protonym for the family group name, which
-  is a position for this protonym in this particula publication. Add a citation(s) to this Taxon Name Relationship which indicate 
-  the publication where this position of protonym is recorded. 

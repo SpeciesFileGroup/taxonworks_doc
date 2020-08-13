@@ -58,13 +58,25 @@ The word form is "noun in apposition"; etymology "arbitrary combination of lette
 ## I have a species which was originally described in genus which obviously lies outside the scope of my group. How can I use this genus in the original combination?
   
   The genus name have to be entered into the classification before the use. It may have to Root assigned as
-    the parent, or, preferrably, the basic classification (class, order, family) could be provided as well.
+  the parent, or, preferrably, the basic classification (class, order, family) could be provided as well.
 
 ## How to record in the database a situation when a taxon, species or genus, is moved from one family to another
   
   Edit TaxonName task has a special section for this, *Classification*. Select the family-group name, and the 
   relationship *Classified as*. This could be used for original placement of the taxon, or for the subsequent classification.
   Once the Taxon Name Relationship is created, assigne the citation using the radial annotator. 
+
+## How to record a *nomen nudum* that was "subsequently validated"
+
+  ICZN does not provide a procedure to "validate" a *nomen nudum*. Once unavailable, the
+  taxon name keeps this status. The taxon could be described in a subsequent publication
+  by the same or a different author(s), with the same or a different spelling. Both names
+  in TaxonWorks should be regarded as separate protonyms. *Nomen nudum* should be marked
+  with one or several of the appropriate nomenclatural statuses: *nomen nudum* or, preferrably, a 
+  more specific one, for example *nomen nudum: no description*. Once the valid name is described and the
+  second protonym is entered to the TaxonWorks database, the *nomen nudum* 
+  could be linked to the available name (valid or invalid) with a 
+  TaxonName Relationship "unavailable or invalid".
 
 # Contributors
 

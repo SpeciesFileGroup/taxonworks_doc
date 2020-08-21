@@ -15,10 +15,9 @@ Edit Task
 
 ### Basic information
 
-All TaxonNames are stored as uninomials in TaxonWorks. A hierarchical nomenclature is selected to provide the maximum level of flexibility of classifications. Three fields are required to create a TaxonName record in the database: **name**, **parent**, 
+All TaxonNames are stored as uninomials (called "Protonyms") in TaxonWorks. A hierarchical nomenclature is selected to provide the maximum level of flexibility of classifications. Three fields are required to create a TaxonName record in the database: **name**, **parent**, 
 and **taxonomic rank**. The Parent is any valid taxon of a rank higher than a new one. This section is the only section of the form which requires the use of the Save button. All other sections of the form use autosave mode.
-The highest rank taxon in a hierarchy is **Root**. This is a defalt Taxon, which could not be modified, it is created when the project is first iniciated, the first taxon attached to the Root requires selection of the Code of 
-Nomenclature (ICZN, ICN, ICNP, ICTV), this is required to enforce validation rules specific to this particular Code of Nomenclature. All taxa below this taxon do not require selection of the Code, it will be inherited from the parent.
+The highest rank taxon in a hierarchy is **Root**. This is a default Taxon and can not be modified, it is created when the project is first initiated. The first taxon attached to the Root requires selection of the Code of Nomenclature (ICZN, ICN, ICNP, ICTV), this is required to enforce validation rules specific to this particular Code of Nomenclature. All taxa below this taxon do not require selection of the Code, it will be inherited from the parent.
 The same database may contain taxa covered by different Codes of Nomenclature. 
 
 ### Authorship

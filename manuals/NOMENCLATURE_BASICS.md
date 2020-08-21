@@ -1,7 +1,7 @@
 
 # Nomenclature basics
 
-_This manual provided a basic how-to for gettings started with the nomenclature interfaces as they **currently** exist._
+_This manual provides a how-to to getting started with managing nomenclature.  It makes specific references to interfaces as they currently exists, these may change._
 
 ## How to get started
 
@@ -20,6 +20,10 @@ and **taxonomic rank**. The Parent is any valid taxon of a rank higher than a ne
 The highest rank taxon in a hierarchy is **Root**. This is a default Taxon and can not be modified, it is created when the project is first initiated. The first taxon attached to the Root requires selection of the Code of Nomenclature (ICZN, ICN, ICNP, ICTV), this is required to enforce validation rules specific to this particular Code of Nomenclature. All taxa below this taxon do not require selection of the Code, it will be inherited from the parent.
 The same database may contain taxa covered by different Codes of Nomenclature. 
 
+### Conceptual approach
+
+To understand nomenclature in TaxonWorks it's important to understand that the basic idea is to accumulate/add new facts rather than update, change, or delete existing records.  This is incredibly liberating in many ways, as the system will resolve the current status by inferring across the facts that you have added.  As an example, rather than think "how do I change this name to invalid", think "how do I add the fact that so and so stated this name is invalid".  The name was valid in the past, now we add a fact to indicate somebody more recently thinks its invalid. The system will look at the years the facts were applied, summarize the facts as we presently see them.  This also lets the complete nomenclatural history, in all its gory detail be recorded.
+
 ### Authorship
 
 This section is used to set original authorship of the name (as opposed to a subsequent citation).  Authorship can be recorded in three different ways. If authorship is provided in more than one way it is prioritized and take as follows:
@@ -32,7 +36,7 @@ This section is used to set original authorship of the name (as opposed to a sub
 The _preferred priority_ is:
 
 * Assign an original citation ('Source' in Author section) that has People assigned as authors to it. 
-* Over-ride the authorship in the Source if needed by assiging one or more People from that source as authors in the 'Person' section (for example when doing Smith in `Jones & Smith`).
+* Over-ride the authorship in the Source if needed by assigning one or more People from that source as authors in the 'Person' section (for example when doing Smith in `Jones & Smith`).
 * Use Verbatim Author and year, if original source and People roles are not provided.
 
 Advanced tips:
@@ -66,12 +70,11 @@ This section related to nomenclatural statuses, which are applicable to the taxo
 * Advanced section allows to search for a specific status
 
 Comments:
-1) All names by default are valid names, "valid" status should not be assigned to all the names in the database. It is reserved for special cases, for example when the taxon has a nomenclatural history of being treated as a synonym, and later was treated as a valid name again, 
-in order to preserve a historical recorod of synonymy, and override it, a status 'valid' could be added to the taxon, the citation on the status will indicate the source where the validity of taxon was confirmed.
+1) All names by default are valid names, i.e. a "valid" status should not be assigned to all the names in the database.  Use of the "Valid" status is reserved for special cases, for example when the taxon has a nomenclatural history of being treated as a synonym, and later was treated as a valid name again, 
+in order to preserve a historical record of synonymy, and override it, a status 'valid' could be added to the taxon, the citation on the status will indicate the source where the validity of taxon was confirmed.
 2) Status 'Homonym' could be added to the taxon to indicate invalid status in cases where the senior homonym is not known, but this should be avoided, the better way to record homonymy is to create a relationship (see below)
 
 #### Example 1: Nomen nudum
-
 
 * Select 'Nomen nudum', one of Common statuses
 
@@ -87,11 +90,11 @@ Comments:
 #### Example 1: Synonymy
 
 * Although each relationship could be read in either direction (Aus is junior synonym of Bus, Bus is senior synonym of Aus) only one way recording the information is supported in TaxonWorks at the moment. The relationship should always start from **invalid name**. In our example 
-it is 'Aus', so the editing should start on the Edit Taxon Page for 'Aus', to buld a new relationship, search for the second (related) name, in our example it is 'Bus', and then select the status for this relationship, 'objective synonym'.
-* Once the relationship is created a citation could be added to this relationship to idicate the Source, where this synonymy was first proposed.
-* In cases of compiting synonymy, where in one source 'Aus' is recorded as synonym of 'Bus', and in the next publication it is a synonym of 'Cus', both synonym relationship could be created in the database, if the citations are provided, the latest citation will be used to position
+it is 'Aus', so the editing should start on the Edit Taxon Page for 'Aus', to build a new relationship, search for the second (related) name, in our example it is 'Bus', and then select the status for this relationship, 'objective synonym'.
+* Once the relationship is created a citation could be added to this relationship to indicate the Source, where this synonymy was first proposed.
+* In cases of competing synonymy, where in one source 'Aus' is recorded as synonym of 'Bus', and in the next publication it is a synonym of 'Cus', both synonym relationship should be created in the database, if the citations are provided, the latest citation will be used to position
 the taxon in the classification.
-* In cases where the name was reported as a synonym by mistake and was revalidated in a later publication, the relathinship should not be deleted, a 'valid' status could be added to the taxon to overwrite the synonymy (see above) 
+* In cases where the name was reported as a synonym by mistake and was revalidated in a later publication, the relationship _should not be deleted_, a 'valid' status could be added to the taxon to overwrite the synonymy (see above) 
 
 #### Example 2: Homonomy
 
@@ -123,6 +126,9 @@ Is created the same way as misapplication
 The original combination is required to keep track of the taxon history, properly handle parentheses in the author string, and also to validate homonymy between taxa. 
 There are two ways to enter the original combination in TaxonWorks
 
+### Cititing the original combination
+To cite usage of the original combination cite the taxon name (Protonym) itself.  This is because you are citing the fact that a) there is some name that b) came into existence in some first use, i.e. the definition of a Protonym.
+
 #### Method 1 (when the original combination is different from the current combination)
 1) To properly handle taxonomy, always enter taxon name (basic information) in the original form (e.g. species was described as Aus albus Author, now it is Ba alba (Author), the name of the taxon should stay as 'albus', the form transition will be handled by the genus gender 
 and the species part of speach.
@@ -152,9 +158,9 @@ _Before you start_: 1) Add biocuration classifications that you might reference 
 Either access the task `New type specimen` through the `New taxon name` task in the `Type` section or directly from the tasks tab (filter by `Nomenclature` on the left to quickly find the task).
 
 * Select the type (holotype, paratype, etc.), this unlocks the Collection object form below.
-* If the type designator is _not the same as the either 1) the original citation on the species protonym or 2) the original citation on the type material record_ then select the type designator if knonw.  The designator will be *inferred* from the aforementioned citations otherwise.
+* If the type designator is _not the same as the either 1) the original citation on the species Protonym or 2) the original citation on the type material record_ then select the type designator if known.  The designator will be *inferred* from the aforementioned citations otherwise.
 * At present, if you have created a collecting event find it by id (the current searc is a stub, and very crude), otherwise add verbatim data to the "Buffered" sections, these data persist with the collection object, to be transcribed into collecting events, determinations records, etc. some time downstream in the digitization process.
-* Select the Biocuration classes you want by clicking on a green button (remember green in TaxonWorks means create a record). This creates a record indicating that the collectiong object is that class.  The button will turn red (remember red in TaxonWorks means destroy a record).  Clicking a red button will remove that classification from the object.
+* Select the Biocuration classes you want by clicking on a green button (remember green in TaxonWorks means create a record). This creates a record indicating that the collection object is that class.  The button will turn red (remember red in TaxonWorks means destroy a record).  Clicking a red button will remove that classification from the object.
 * Select a repository
 * Click create.  Your record will be added to the right side of the form, you will see it highlighted by type type in a light green.  That means the form on the left can be used to edit that record.
 * Click 'New type' to add another record (e.g. paratype).
@@ -177,9 +183,9 @@ Incertae sedis implies a relationship between two protonyms.  Any time something
 
 Misidentifications are a tricky gray area.  Remember that we only care about the nomenclatural consequences of the use of the names in questions.  Taxon Identifications are linkages of OTUs to Collection objects, this is the preferred mechanism for linking one or more identifications to a collection object.
 
-A question from a user reflects the trickieness:
+A question from a user reflects the trickiness:
 
-1. Imagine there is a genus _Aus_, with type species _Aus bus_. Then someone describe a new species _Aus cus_, which subsequent authors don't even consider to be in the same superfamily. So I cannot enter Aus twice because the second one is a misidentification but no one knows for sure what it is.
+1. Imagine there is a genus _Aus_, with type species _Aus bus_. Then someone describe a new species _Aus cus_, which subsequent authors don't even consider to be in the same superfamily. So I cannot enter _Aus_ twice because the second one is a misidentification but no one knows for sure what it is.
 
 - This is just an original genus. This is the same genus in both species. The genus cannot be misidentified. This is just a position of the 
 species in classification, regardless where it was originally described or subsequently placed.
@@ -187,24 +193,44 @@ species in classification, regardless where it was originally described or subse
 The proper way to hand this is to use a single _Aus_, which is placed in the correct family. In both species _Aus_ is the Original genus, in _Aus bus_, this is also a Parent taxon. In case of _Aus cus_, if the current genus is not assigned, the superfamily is the parent taxon.
 An *incertae sedis* relationship should connect _Aus cus_ and the superfamily
 
-2. Species misidentification/misappliation. 
+2. Species misidentification/misapplication. 
 
-- Misapplication itself does not make an available name. But this a common practicy to include misapplication in the list of historical
-usages of the taxon names, especially in the cases where a new name is proposed as a "replacement" for a previously misidentified species.
-Remember, that _nomen novum_ cannot be proposed for misapplication, since it requires a previously availeble name, but invalid because of 
-homonymy. To record this in TaxonWorks, a new Protonym for a missapplied name should be created in the database. This protonym should
-be linked to two other Taxon Names with two Taxon Name Relationships. The first relationship is to an available name with the same spelling
-(it could be a valid name or a synonym). The relationship type is "Misapplication". The second relationship "Invalidating" relationship
-should link this TaxonName to the correct name for this taxon. Remember, the "Synonym" relationship is not applicable here, since
-it assumes that both names are available name, and in this example Misapplication is not an available name. 
-Follow the soft validation messages for other essential information for the Protonym in the database.
+- Misapplication itself does not make an available name. But this a common practice to include misapplication in the list of historical usages of the taxon names, especially in the cases where a new name is proposed as a "replacement" for a previously misidentified species.
+Remember, that _nomen novum_ cannot be proposed for misapplication, since it requires a previously available name, but invalid because of homonymy. To record this in TaxonWorks, a new Protonym for a misapplied name should be created in the database. This Protonym should be linked to two other Taxon Names with two Taxon Name Relationships. The first relationship is to an available name with the same spelling (it could be a valid name or a synonym). The relationship type is "Misapplication". The second relationship "Invalidating" relationship should link this TaxonName to the correct name for this taxon. Remember, the "Synonym" relationship is not applicable here, since it assumes that both names are available name, and in this example Misapplication is not an available name.  Follow the soft validation messages for other essential information for the Protonym in the database.
+
 An example: The name _Aus aus_ Author 1, is misapplication for _Aus bus_, and _Aus aus_ Author 2 is completely different species.
-After the protonym for the first name is created two relationships will be added in the database:
-_Aus aus_ Author 1 Misapplication, linked to _Aus aus_ Author 2
-_Aus aus_ Author 1 Invalid, linked to _Aus bus_
-Once the misapplication is created, an OTU could be added to the TaxonName, which could be used, for example, for taxon determination. 
+
+After the Protonym for the first name is created two relationships will be added in the database:
+* _Aus aus_ Author 1 Misapplication, linked to _Aus aus_ Author 2
+* _Aus aus_ Author 1 Invalid, linked to _Aus bus_
+
+Once the misapplication is created, an OTU could be linked to the TaxonName, which could be used, for example, for taxon determination.
 
 ## Navigation helpers
+
+### Hotkeys.
+
+TaxonWorks has many hotkeys that can greatly improve productivity if mastered. Click the orange help circle, then the 'Keyboard shortcuts' slide-out to see an up-to-date list of hotkeys.
+
+Mac computers use 'ctrl' as triggering key, PCs use 'alt'.
+
+While on New/Edit taxon name there are extensive options:
+
+* ctrl+s Save taxon name changes
+* ctrl+n Create a new taxon name
+* ctrl+p Create a new taxon name with the same parent
+* ctrl+d Create a child of this taxon name
+* ctrl+l Clone this taxon name
+* ctrl+e Go to comprehensive specimen digitization
+* ctrl+p Create a new taxon name with the same parent
+* ctrl+m Go to new type material
+* ctrl+c Go to comprehensive specimen digitization
+* ctrl+b Go to browse nomenclature
+* ctrl+o Go to browse otus
+
+Additionally, on any browse/show page you can:
+* ctrl+p - automatically pin and default that name to the pinboard
+* ctrl+g - pop-up a quick navigation modal that lets you navigate to the defaulted records
 
 ## Help
 
@@ -214,7 +240,8 @@ Once the misapplication is created, an OTU could be added to the TaxonName, whic
 
 * Concepts, at a low level, are gradually being documented here https://github.com/SpeciesFileGroup/taxonworks_doc/tree/master/concepts (see the TaxonWorksNomenclature.pdf, you can zoom in to see details).
 
-## Nomenclature, not biology
+## Nomenclature, not biology!
 
-* A reminder, if you want to record information about biology (hosts, parasites, distribution, etc.) that doesn't belong in the nomenclature section, you will use the Otu radial icon or OTU nav icon to access and record those data from a nomenclatural context.
+* A reminder, if you want to record information about biology (hosts, parasites, distribution, etc.) that doesn't belong in the nomenclature section, you will use the OTU radial icon or OTU nav icon to access and record those data from a nomenclatural context.
+
 

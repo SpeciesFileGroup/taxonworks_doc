@@ -78,14 +78,18 @@ See also "Export Collection objects as CSV (DwC-A columns)".
 * Click the `Download CSV` button
 
 #### As BibTeX
-* Click the `BibTeX` buttona
+* Click the `BibTeX` button
+
+#### Formatted for journals
+* Click the `Download formatted` button
 
 ##### Direct download
-* Click the `Download Bibtex` button 
+* Click the `Bibtex` button 
 
-##### Create a file to share via the API
+##### Create shareable link to your filtered bibliography
+You can share a zipped copy of the file by generating a link to it. This functionality is turned on if the project administrator has created an API token (See addendum).
 * Click `Generate download`
-If the project administrator has created an API token (See addendum) then you will `see a URL link` that you can share that will point to a zipped copy of the download. 
+* Copy the link generated and share it.
 
 ### Export taxon names as CSV
 #### Basic

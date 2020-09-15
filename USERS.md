@@ -31,4 +31,4 @@ _Use the PDF button to download a version._
 Conceptual bits are being described in [/concepts/README.md](/concepts).  For those of you brave enough our [code documentation](http://rdoc.taxonworks.org) also contains a significant amount of information on our data models.
 
 ## Frequently asked questions
-The [FAQ](FAQ.md) is just getting started. 
+See the [FAQs](faq/README.md).

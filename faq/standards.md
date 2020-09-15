@@ -3,13 +3,13 @@
 
 ## What standards does TaxonWorks utilize?
 
-TaxonWorks data model represents the evolution of over 20 years of work on taxonomic workbenches via multiple developers. Those approaches evolved into three preceeding platforms, mx, 3i, and SpeciesFiles. Each of these could export to multiple standards. TaxonWorks semantics represent a unified and improved merging of these approaches.  They do not adhere to, nor are the constrained by, any one standard, yet they have been developed with a lot of thought as to how to serialize to many standards and formats. The current persistence layer is a graph-influenced, ontology-aware relational model. It is highly influenced by object-relational approaches.  It consists of "core" classes, properties of the classes ("supporting" data), and a suite of annotation classes.
+TaxonWorks data model represents the evolution of over 20 years of work on taxonomic workbenches via multiple developers. Those approaches evolved into three preceeding platforms, mx, 3i, and SpeciesFiles. Each of these could export to multiple standards. TaxonWorks semantics represent a unified and improved merging of these approaches. They do not adhere to, nor are the constrained by, any one standard, yet they have been developed with a lot of thought as to how to serialize to many standards and formats, and they reflect a lot of the work done elsewhere either standards or application based. The current persistence layer is a graph-influenced, ontology-aware relational model. Its implementation is highly influenced by object-relational approaches. It consists of "core" classes, properties of the classes ("supporting" data), and a suite of annotation types.
 
 Ultimately TaxonWorks is tracking closer to the approach of the work being done in the BioSchemas world (more graph/RDF/ontology influenced) than the flat/star implemented in some tools that Darwin Core at the center.
 
-Some of the key modelling decisions made in TaxonWorks reflect critically important semantics not, or vaguely implemented in production-used curation tools anywhere else.  Most notably the division of biological concepts (OTU) and nomenclature is a critical distinction that various standards fail to distinguish sufficiently, and that many curatorial tools fail to adequately implement.
+Some of the key modelling decisions made in TaxonWorks reflect critically important semantics not, or vaguely implemented in production-used curation tools elsewhere.  Most notably the division of biological concepts (OTUs) and nomenclature is a critical distinction that various standards fail to distinguish sufficiently, and that many curatorial tools fail to adequately implement.
 
-## What standards emerged from the development of TaxonWorks
+## What standards emerged from the development of TaxonWorks?
 
 * [NOMEN](https://github.com/SpeciesFileGroup/nomen) is perhaps the most advanced nomenclatural rules ontology available. 
 

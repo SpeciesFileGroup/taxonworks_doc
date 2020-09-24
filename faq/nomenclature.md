@@ -51,7 +51,7 @@ when the name was reinstated.
 
 Please follow the instruction in the Nomenclature Basics.
 
-## What is the word form for "arbitrary combination of letters"
+## What is the word form for "arbitrary combination of letters"?
 
 The word form is "noun in apposition"; etymology "arbitrary combination of letters"
 
@@ -60,13 +60,13 @@ The word form is "noun in apposition"; etymology "arbitrary combination of lette
   The genus name have to be entered into the classification before the use. It may have to Root assigned as
   the parent, or, preferrably, the basic classification (class, order, family) could be provided as well.
 
-## How to record in the database a situation when a taxon, species or genus, is moved from one family to another
+## How to record in the database a situation when a taxon, species or genus, is moved from one family to another?
   
   Edit TaxonName task has a special section for this, *Classification*. Select the family-group name, and the 
   relationship *Classified as*. This could be used for original placement of the taxon, or for the subsequent classification.
   Once the Taxon Name Relationship is created, assigne the citation using the radial annotator. 
 
-## How to record a *nomen nudum* that was "subsequently validated"
+## How to record a *nomen nudum* that was "subsequently validated"?
 
   ICZN does not provide a procedure to "validate" a *nomen nudum*. Once unavailable, the
   taxon name keeps this status. The taxon could be described in a subsequent publication
@@ -77,6 +77,20 @@ The word form is "noun in apposition"; etymology "arbitrary combination of lette
   second protonym is entered to the TaxonWorks database, the *nomen nudum* 
   could be linked to the available name (valid or invalid) with a 
   TaxonName Relationship "unavailable or invalid".
+
+## How to enter the author for misspeled name?
+
+The name which is not spelled correctly, the original source, where the misspelling was 
+introduced, is still required. The role is not require, because the author string is always 
+generated from the correctly spelled protonym.
+
+## How can I record the history of the taxon which had several historical *Incertae sedis* placements?
+
+The *incertae sedis* relationship always correspond to the current placement of the taxon.
+For example, a species assigned to the family, instead of proper genus as a parent.
+Normally, this will be marked as an invalid placement, the *incertae sedis* relationship
+helps to override the error. For historical placements, a different relationship should be used:
+*source classified as*.
 
 # Contributors
 

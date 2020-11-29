@@ -1,6 +1,44 @@
 # HOW-TO
 
-_A working list of commonly repeated development patterns in TaxonWorks._
+_A list of commonly repeated development patterns in TaxonWorks._
+
+## Enter the app shell
+
+* Open a terminal
+```
+cd /path/to/taxonworks/
+```
+If using [Docker environment](https://github.com/SpeciesFileGroup/install_taxonworks/blob/master/development/docker/README.md) then continue with: 
+```
+docker-compose exec app bash
+```
+
+## Enter the Rails console
+* Enter the app shell
+```
+rails c
+exit
+```
+
+## Create a user from the console
+* Enter the Rails console
+```
+User.create!(name: 'you', password: 'password', password_confirmation: 'password', self_created: true, is_administrator: true, email: 'user@example.com')
+quit
+```
+
+## Seed a project, users, and some data from the command line
+* Enter the app shell
+```
+bundle exec rails db:seed
+```
+This includes an admin and a non-admin user, which are admin@example.com and user@example.com respectively, both with password `taxonworks`.
+
+### One-line using docker
+From the taxonworks directory:
+```
+docker-compose exec app bundle exec rails db:seed
+```
 
 ## Creating a new task
 
@@ -122,3 +160,5 @@ This is a fixed process.  Some of these repositories are private because they co
 * [Product stored here](https://gitlab.com/SpeciesFileGroup/tw_initialization_data) (Private)
 * [Initialized here](https://github.com/SpeciesFileGroup/taxonworks/blob/development/lib/tasks/initialize/geo.rake)
 * [Subsequently curated here](https://github.com/SpeciesFileGroup/taxonworks/blob/development/lib/tasks/maintenance/geo.rake)
+
+

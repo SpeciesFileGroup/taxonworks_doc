@@ -116,10 +116,13 @@ The `ap` is an "amazing print" plugin.  The `<pre>` tag is HTML telling the brow
 ### Next steps to consider/discuss
 
 * Edit the task index (`user_tasks.yml`) to describe our task
-* `content_for :head do`
-* Describe `object_tag()`, illustrate where views are found
+
+* Describe `object_tag()`, illustrate where view helpers are found
+* What about params/forms?
+* Pointer to Rails documentation, e.g. [Layouts and rendering](https://guides.rubyonrails.org/layouts_and_rendering.html)
 * What about Javascript?
   * Vanilla
+    * `content_for :head do`
   * Vue.js 
 
 ## Addendum
@@ -148,32 +151,4 @@ One is (very) strongly encouraged to learning 1 rather than 2:
 #### `push`
 
 ### Setting up SSH to share code
-
-## Next steps
-
-* [Ask for help](https://gitter.im/SpeciesFileGroup/taxonworks)
-
-* Learn HTML
-* Learn Ruby
-* Learn Rails
-* Learn Vue.js
-* 
-* Explore the TaxonWorks models
-
-
-- hack on a task together
-
-
-- add a header
-- add some data
-- a param 
-
-- 5 basic model bits into to some basical models
-
-Where to next
-* Rails manual
-* Interaction
-
-
-Git, branches
 

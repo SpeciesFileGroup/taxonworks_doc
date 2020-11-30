@@ -2,6 +2,12 @@
 
 _A list of commonly repeated development patterns in TaxonWorks._
 
+Each underlined item stands alone, with pre-requisite steps listed above it. For example `Create a user from the console` requires you to `Enter the Rails console` which requires you to `Enter the app shell`.  This means you must follow the instructions in order:
+* Enter the app shell
+* Enter the Rails console
+* Create a user from the console
+
+
 ## Enter the app shell
 
 * Open a terminal

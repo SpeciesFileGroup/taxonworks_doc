@@ -92,6 +92,24 @@ Normally, this will be marked as an invalid placement, the *incertae sedis* rela
 helps to override the error. For historical placements, a different relationship should be used:
 *source classified as*.
 
+## When creating protonym, what names should I put in Original combination fields?
+
+When selecting Original genus for a species, sometimes two options are available: a valid genus 
+name and coordinated subgenus with the same name("*Aus*" and "*Aus* (*Aus*)"). In cases like this the preference should 
+always be given to the lower coordinated taxon name ("*Aus* (*Aus*)"). If the genus name is
+selected instead, you will get a soft validation waring "*Original Combination: Relationship should move from genus to subgenus*".
+This is not a critical error. TaxonWorks can detect and automatically move the relationship
+from a genus to coordinated subgenus. But at the present implementation, it could only be done programmatically.
+
+## Do I have to create nominotypical subgenus or subspecies manually?
+
+When a new subgenus or subspecies created and the parent taxon does not contain any other sub- taxa,
+you can see the soft validation message like this: "*The parent species of this subspecies does not contain nominotypical subspecies*".
+TaxonWorks can detect and created the nominotypical subgenus and subspecies automatically when
+running Soft validation fixes, but now it could only be done programmatically. Before the fix is
+implemented to the interface, it is advisable to created the missing subgenus or subspecies manually.
+
+
 # Contributors
 
 In addition those committing changes to this file the following people have contributed to this FAQ:

@@ -244,4 +244,155 @@ Additionally, on any browse/show page you can:
 
 * A reminder, if you want to record information about biology (hosts, parasites, distribution, etc.) that doesn't belong in the nomenclature section, you will use the OTU radial icon or OTU nav icon to access and record those data from a nomenclatural context.
 
+# FAQ 
+
+## Can you describe how the authorship label for a name is determined?
+
+Authorship of a name can asserted in 4(!) different ways. That seems confusing at first, but determining what gets shown is pretty straightforwrd.
+
+The authorship label is determined by the FIRST option in the following list that is true. All other values are referenced only in validation reports.
+
+* If the `verbatim name` field is filled out, then it is used.
+* If People are assigned as TaxonName authors, then their family names are used.
+* If People are assigned to a Source as authors, and that Source is the original source for the taxon name, then their family group names are used.
+* If the `author` field of a Source is filled out, then that field is used.
+
+## There are a lot of options for assigning the authorship of a TaxonName, which is the preferred way?
+
+The preferred mechanism is to link the TaxonName to a Source, and assign authors (People) to that source (third option in the list above).  This is the most granular way of creating the data, and therefor it will ultimately give you the most flexibility in reporting and validating the data.
+
+##  Do you have any instructions on how to change combinations or enter new synonymies in TW?
+
+Please follow the instruction in the Nomenclature Basics.
+
+## How do I find out where types are deposited, do you not yet have this function in TW?
+
+Specimen deposition could be assigned to Specimen. If you create the type specimen for the Taxon Name, there is a field for
+the type repository. To create the type specimen follow one of the links provided in the Edit Taxon Name task, either *Quick* or
+*Comprehensive* in the *Type* section. *Quick type specimen* task allow to copy the entire verbatim-label information. 
+The *Comprehensive collection object* allow to provide more detailed information about the specimen. 
+
+## How do I get to the place in TW where I can add a new basionym? I need to try it out and see what happens.
+
+For ICN names, the basionym have to be creaed as a separate protonym and linked to current name with basionym TaxonNameRelationship
+For ICZN names, the original combination of protonym is an equivalent of basionym in botany.
+
+## How would I remove a name from synonymy? 
+
+You can symply delete the *Synonym* Taxon Name Relationship. But when the name has been historically treated as a synonym, 
+and subsequently was restored, the best practice would be to preserve both treatments in the database. Keep the synonym 
+Taxon Name Relationship with its original citation in the database. Add the nomenclatural Status *Valid* to the name. 
+This status will overwrite the Taxon Name relationship. Please remember to add the citation to the status, to know where and
+when the name was reinstated.
+
+## What is the word form for "arbitrary combination of letters"?
+
+The word form is "noun in apposition"; etymology "arbitrary combination of letters"
+
+## How to record in the database a situation when a taxon, species or genus, is moved from one family to another?
+  
+  Edit TaxonName task has a special section for this, *Classification*. Select the family-group name, and the 
+  relationship *Classified as*. This could be used for original placement of the taxon, or for the subsequent classification.
+  Once the Taxon Name Relationship is created, assigne the citation using the radial annotator. 
+
+## How to record a *nomen nudum* that was "subsequently validated"?
+
+  ICZN does not provide a procedure to "validate" a *nomen nudum*. Once unavailable, the
+  taxon name keeps this status. The taxon could be described in a subsequent publication
+  by the same or a different author(s), with the same or a different spelling. Both names
+  in TaxonWorks should be regarded as separate protonyms. *Nomen nudum* should be marked
+  with one or several of the appropriate nomenclatural statuses: *nomen nudum* or, preferrably, a 
+  more specific one, for example *nomen nudum: no description*. Once the valid name is described and the
+  second protonym is entered to the TaxonWorks database, the *nomen nudum* 
+  could be linked to the available name (valid or invalid) with a 
+  TaxonName Relationship "unavailable or invalid".
+
+## How to enter the author for misspeled name?
+
+The name which is not spelled correctly, the original source, where the misspelling was 
+introduced, is still required. The role is not require, because the author string is always 
+generated from the correctly spelled protonym. Protonym of misspelled name is linked to the correctly 
+spelled name with the Misspelling TaxonNameRelationship.
+
+## How can I record the history of the taxon which had several historical *Incertae sedis* placements?
+
+The *incertae sedis* relationship always correspond to the current placement of the taxon.
+For example, a species assigned to the family, instead of proper genus as a parent.
+Normally, this will be marked as an invalid placement, the *incertae sedis* relationship
+helps to override the error. For historical placements, a different relationship should be used:
+*source classified as*.
+
+# FAQ related to family-group names
+
+## Is it possible to link a note to a family group name to specify what the original spelling is, at what level it was proposed and when?
+
+Another protonym with the original spelling should be created in the database. Clone button could be used to replicate 
+all information from the current family-group name. This new taxon name should be linked to the original name using special
+Taxon Name Relationship *Incorrect original spelling* or *Family group name original form*. TW could be restrictive
+in the ending of the original name before you assigne the relationship, so it is recommended to save the Taxon Name
+with the proper ending, add the ralationship and return back to modify the *Name* to the original form. And save Taxon Name
+again. Assigning the relationship removes the restriction on the family-group name form and ending.
+
+## What protonyms do I need to create for each form of the family-group name?
+
+Individual protonyms should be created for original and each subsequent form of the family group name.
+Each protonym should be linked to the current form with the "Family-group name form" or "Family-group name original form" relationships
+
+## To which ranked Protonym do I attach the type genus?
+
+The type genus shoild be attached to any available family-group protonym. 
+
+## Do I have to re-attach the type genus to each family group protonym?
+
+If there are several coordinate names with the same type genus (for example, a family with nomynopypical subfamily),
+the same type could be automatically assigned from one to another through the Soft Validation fixes.
+
+# FAQ related to genus-group names
+
+## Do I have to create nominotypical subgenus or subspecies manually?
+
+When a new subgenus or subspecies created and the parent taxon does not contain any other sub- taxa,
+you can see the soft validation message like this: "*The parent species of this subspecies does not contain nominotypical subspecies*".
+TaxonWorks can detect and created the nominotypical subgenus and subspecies automatically when
+running Soft validation fixes, but now it could only be done programmatically. Before the fix is
+implemented to the interface, it is advisable to created the missing subgenus or subspecies manually.
+
+## To which rank should I attach the type species in cases where nominotypical genera exist, genus, or subgenus?  What if I have done the opposite?
+
+The type species should be attached to each available protonym. If the type species is attached to either
+genus or subgenus, it could be automatically re-assigned to the other through Soft Validation Fixes.
+
+## Does the attachment of the type species differ if the nominotypical subgenus came with, or after the original description of the genus?
+
+According to the ICZN Art. 43, a name established for a taxon at either rank in the genu-group
+is deemed to have been simultaneously established by the same author for a nominal taxon at
+the other rank in the group; both nominal taxa have the same type species, whether it was fixed originally
+or subsequently. Changes in the rank also do not affect the type genus designation. 
+
+# FAQ related to species-group names
+
+## I have a species which was originally described in genus which obviously lies outside the scope of my group. How can I use this genus in the original combination?
+  
+  The genus name have to be entered into the classification before the use. It may have to Root assigned as
+  the parent, or, preferrably, the basic classification (class, order, family) could be provided as well.
+
+## Do I have to create a nominotypical subspecies?
+
+See the description above for the nominotypical subgenus.
+
+## Which ranked name should I attach the type material to, species, or subspecies? 
+
+The type material could be attached to the coordinate taxon of any rank (species, subspecies, superspecies). The Soft
+Validation Fix will help to re-attache the same specimen to different ranks. Multiple specimens should 
+not be created.
+
+## When creating protonym, what names should I put in Original combination fields?
+
+When selecting Original genus for a species, sometimes two options are available: a valid genus 
+name and coordinate subgenus with the same name("*Aus*" and "*Aus* (*Aus*)"). In cases like this the preference should 
+always be given to the lower coordinate taxon name ("*Aus* (*Aus*)"). If the genus name is
+selected instead, you will get a soft validation waring "*Original Combination: Relationship should move from genus to subgenus*".
+This is not a critical error. TaxonWorks can detect and automatically move the relationship
+from a genus to coordinate subgenus. But at the present implementation, it could only be done programmatically.
+
 

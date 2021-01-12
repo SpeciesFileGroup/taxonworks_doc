@@ -167,4 +167,10 @@ This is a fixed process.  Some of these repositories are private because they co
 * [Initialized here](https://github.com/SpeciesFileGroup/taxonworks/blob/development/lib/tasks/initialize/geo.rake)
 * [Subsequently curated here](https://github.com/SpeciesFileGroup/taxonworks/blob/development/lib/tasks/maintenance/geo.rake)
 
+## Run TaxonWorks linters
+
+There are a couple of meta-checks built in.
+* Run lint/related specs by passing `-t lint=true` to rspec or turn it on always: set an ENV variable to trigger: `TAXONWORKS_TEST_LINTING=true`
+* There is a rake task to output a list of models and their relationship to annotations: `rake tw:development:linting:list_annotated_models`
+
 

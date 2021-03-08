@@ -25,6 +25,29 @@ Term|Mapping
 `sex` | Selects the biocuration class from the "sex" biocuration group to be assigned as biocuration classification for the specimen.
 `preparations` | Selects an existing preparation matching the name with this value
 
+#### Event class
+
+Term|Mapping
+---|---
+`fieldNumber` | Verbatim trip identifier of collecting event
+`eventDate` | The ISO8601-formatted date is split into start year, month and day collecting event fields. If the value is composed of two dates separated by `/`, then rightmost date is used as end date and split in the same way as start date. If data contradicts dates from other non-empty date-related terms the record will fail to import
+`eventTime` | Time is split into time start hour, minute and second of collecting event
+`startDayOfYear` | Using `year` and the value for this term month and day are calculated and stored in start year, month and day collecting event fields. If the computed value contradicts dates from other non-empty date-related terms the record will fail to import
+`endDayOfYear` |  Using `year` and the value for this term month and day are calculated and stored in end year, month and day collecting event fields. If the computed value contradicts dates from other non-empty date-related terms the record will fail to import
+`year` | The start date year of the collecting event. If the value contradicts dates from other non-empty date-related terms the record will fail to import
+`month` | The start date month of the collecting event. If the value contradicts dates from other non-empty date-related terms the record will fail to import
+`day` | The start date day of the collecting event. If the value contradicts dates from other non-empty date-related terms the record will fail to import
+`verbatimDate` | Verbatim date of the collecting event
+`habitat` | Verbatim habitat of the collecting event
+`samplingProtocol` | Verbatim method of the collecting event
+`fieldNotes` | Field notes of the collecting event
+
+#### Location class
+
+Term|Mapping
+---|---
+`fieldNumber` | Verbatim trip identifier of collecting event
+
 #### Taxon class
 
 Term|Mapping
@@ -35,10 +58,11 @@ Term|Mapping
 `class` | Creates (unless already present) a protonym at class rank
 `order` | Creates (unless already present) a protonym at order rank
 `family` | Creates (unless already present) a protonym at family rank
-`genus` | Ignored. Extracted from `scientificName` instead.
-`subgenus` | Ignored. Extracted from `scientificName` instead.
-`specificEpithet` | Ignored. Extracted from `scientificName` instead.
-`infraspecificEpithet` | Ignored. Extracted from `scientificName` instead.
+`genus` | Ignored. Extracted from `scientificName` instead
+`subgenus` | Ignored. Extracted from `scientificName` instead
+`specificEpithet` | Ignored. Extracted from `scientificName` instead
+`infraspecificEpithet` | Ignored. Extracted from `scientificName` instead
 `scientificName` | Several protonyms created (only when not present already) with their corresponding ranks and placements
 `taxonRank` | The taxon rank of the most specific protonym
+`higherClassification` | Several protonyms created (only when not present already) with their corresponding ranks and placement. In case a protonym was not already present, only family-group names will be created, names with classsification higher than family-group not previously registered will result in error. Names at genus rank or lower are ignored and extracted from `scientificName` instead
 `scientificNameAuthorship` | Verbatim author of most specific protonym

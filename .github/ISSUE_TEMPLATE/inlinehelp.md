@@ -1,9 +1,10 @@
 ---
-name:Manual
+name: Inline help by screenshot
 about: Template for inline help feature
 title: ''
 labels: ''
 assignees: ''
+
 ---
 
 # Some Content Here

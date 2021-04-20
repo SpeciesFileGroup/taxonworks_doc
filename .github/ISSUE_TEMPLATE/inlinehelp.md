@@ -62,17 +62,17 @@ In the ticket created by you filling out this form, please enter the ids you hav
 ## Step Nine. Tech team validates and closes
 
 # Summary steps
-- [] Create **Inline help by screenshot** issue
-- [] URL
-- [] Annotated Screenshot
-- [] Your questions and languages
-- [] Submit new issue
-- [] Issue tagging
-- [] Developer adds anchor/s ids where needed
-- [] Developer posts the .js file to (?github) for editing via URL
-- [] Github issue is linked to this ticket (via a label? or handle?)
-- [] Submitter of this ticket is pinged (.js file ready to edit)
-- [] Submitter edits to add text
-- [] Submitter indicates edits complete (via label?)
-- [] Review by dev team
-- [] Accept changes and close ticket
+- [ ] Create **Inline help by screenshot** issue
+- [ ] URL
+- [ ] Annotated Screenshot
+- [ ] Your questions and languages
+- [ ] Submit new issue
+- [ ] Issue tagging
+- [ ] Developer adds anchor/s ids where needed
+- [ ] Developer posts the .js file to (?github) for editing via URL
+- [ ] Github issue is linked to this ticket (via a label? or handle?)
+- [ ] Submitter of this ticket is pinged (.js file ready to edit)
+- [ ] Submitter edits to add text
+- [ ] Submitter indicates edits complete (via label?)
+- [ ] Review by dev team
+- [ ] Accept changes and close ticket

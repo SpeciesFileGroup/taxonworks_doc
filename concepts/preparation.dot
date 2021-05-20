@@ -1,4 +1,11 @@
-
+# Brainstorming "Preparation" 
+#
+# Observations:
+# * 1 - A primary decision in modeling the "PreparationSpace" is whether to treat it as outward->in (e.g. from a building to the specimen), or inward->out (from the specimen, outwards)
+# * 2 - None of the attributes of a Preparation space are an attribute of the *current* physical state of the CollectionObject, therefor they must be tied to things that are *not* the collection object
+# * 3 - Given 2, we should favour outward-in approaches (CollectionObject in some Container has_some Environment)
+# * 4 - There is a history of operations that change the physical nature of the CollectionObject, these should be captured in a Protocol (Treatment being a subclass of sorts in TW). Nothing about the CollectionObject's *current* physical nature should be stored as metadata in the Protocol.  For example, if the Protocol ends with the CollectionObject having some physical property then that physical property should be "duplicated" as a property of the _present_ CollectionObject?!
+#
 #
 graph  {
 # Concepts
@@ -15,7 +22,8 @@ subgraph concepts {
 
   # Container
   # A physical (with one exception) that "localized" collection objects.  "Localizes": if you find the container, the probability of finding the specimen increases. Containers nest if a) it is physically possible and b) by nesting the probability of finding the CollectionObject increases.
-
+  # Current proxy: Container, see https://rdoc.taxonworks.org/Container.html
+  # Target implementation: Container (ontology)
   Container
 
   # Proximity
@@ -35,16 +43,15 @@ subgraph concepts {
   # Current proxy: Preparation type label.
   # Target implementation: `environment` attribute on PreparationSpace
   Environment
-
 }
 
-
+# Preparation space
 TaxonWorks -- PreparationSpace
 PreparationSpace -- Treatment
 PreparationSpace -- Container
 PreparationSpace -- Matrix 
 PreparationSpace -- Environment 
-PreparationSpace -- Proximity
+PreparationSpace -- Proximity 
 
 subgraph containers {
   Virtual [URL="https://rdoc.taxonworks.org/Container/Virtual.html"]
@@ -72,4 +79,9 @@ subgraph environments {
   Ambient -- Indoors
   Ambient -- Outdoors
 }
+
+
 }
+
+
+

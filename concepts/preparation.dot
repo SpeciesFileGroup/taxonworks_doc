@@ -1,0 +1,75 @@
+
+#
+graph  {
+# Concepts
+subgraph concepts {
+  node [shape=rectangle color=blue]
+  TaxonWorks 
+  PreparationSpace
+
+  # Treatment
+  # The treatment is the process of physically altering the specimen _by a curator_ prior to the CollectionObjects current physical state.
+  # Current proxy: Protocol.
+  # Target implementation: Protocol, ProtocolSteps
+  Treatment
+
+  # Container
+  # A physical (with one exception) that "localized" collection objects.  "Localizes": if you find the container, the probability of finding the specimen increases. Containers nest if a) it is physically possible and b) by nesting the probability of finding the CollectionObject increases.
+
+  Container
+
+  # Proximity
+  # Proximity is temporary attribute to indicate the difference between "Bulk" and non-bulk assertions
+  # Current proxy: Preparation type label
+  # Target implementation: inferred, not asserted by inspection of CollectionObject#total and Container
+  Proximity
+
+  # Matrix 
+  # The matrix is the immediate surrounding of the CollectionObject, what surrounds it.
+  # Current proxy: Preparation type label
+  # Target implementation: `matrix` attribute on PreparationSpace drawn from Matrix ontology/CVT
+  Matrix
+
+  # Environment 
+  # The Environment is the sum of the attributes that describe the the space within, or encompassing the Container the CollectionObject is in.
+  # Current proxy: Preparation type label.
+  # Target implementation: `environment` attribute on PreparationSpace
+  Environment
+
+}
+
+
+TaxonWorks -- PreparationSpace
+PreparationSpace -- Treatment
+PreparationSpace -- Container
+PreparationSpace -- Matrix 
+PreparationSpace -- Environment 
+PreparationSpace -- Proximity
+
+subgraph containers {
+  Virtual [URL="https://rdoc.taxonworks.org/Container/Virtual.html"]
+  Container --  Virtual
+  Container -- Room
+}
+
+subgraph matrix {
+  Matrix -- Solid
+  Matrix -- Liquid
+  Matrix -- Gas
+
+  # Solids
+  Solid -- Amber
+  Solid -- Stone # compression fossils
+
+}
+
+subgraph environments {
+  Environment -- Temperature
+  Environment -- Atmosphere
+  Atmosphere -- Argon
+  Atmosphere -- Vacuum
+  Atmosphere -- Ambient
+  Ambient -- Indoors
+  Ambient -- Outdoors
+}
+}

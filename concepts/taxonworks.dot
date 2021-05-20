@@ -1,0 +1,159 @@
+# An experiment modelling the broader TaxonWorks environment
+graph  {
+ size="1,1";
+  node [labelfontsize=16 penwidth=2 fontname=arial]
+    edge [penwidth=2 fontname=arial splines="true"]
+    subgraph urls {
+      node [shape=parallelogram color=blue fontname=Courier]
+
+        # Public
+        "taxonworks.org"
+        "api.taxonworks.org"
+        "rdoc.taxonworks.org"
+        "speciesfilegroup.org"
+
+        # Code and support
+        "github.com/species_file_group/taxonworks"
+        "github.com/species_file_group/taxonworks_api"
+        "github.com/species_file_group/taxonworks_doc"
+        "github.com/species_file_group/install_taxonworks"
+        "gitter.im/SpeciesFileGroup/taxonworks" [labelhref="https:gitter.im/SpeciesFileGroup/taxonworks"]
+
+        # Example documentation
+        "github.com/SpeciesFileGroup/taxonworks_doc/blob/master/manuals/EXPORTING_FROM_TAXONWORKS.md"
+
+        # Instances
+        # Production 
+        "sfg.taxonworks.org"
+
+        # Sandboxes
+        "sandbox.taxonworks.org"
+        "sandstorm.taxonworks.org"
+        "sandfly.taxonworks.org"
+        "sandcastle.taxonworks.org"
+
+        # Outreach
+        "stats.taxonworks.org"
+    }
+
+  subgraph cluster_people {
+    lable="People"
+    node [shape=egg color=bronze]
+      "Deborah Paul"
+      "Dmitry Dmitriev"
+      "Dmitry Mozzherin"
+      "Geoff Ower"
+      "Hernán Luis Pereira"
+      "José Luis Pereira"
+      "Matt Yoder"
+      "Rich Flood"
+      "Yuri Ruskov"
+  }  
+
+  subgraph cluster_technical_stack {
+    node [shape=hexagon]
+      PostgreSQL
+      PostGIS
+      Rails
+      Ruby
+      Vue
+      "Node"
+      Webpack
+      Docker
+      Kubernetes
+      Ansible
+      "SFG libraries"
+  }
+
+  subgraph cluster_data_flow {
+    subgraph cluster_data_flow_out {
+    node [shape="rarrow"]
+      "github.com/SpeciesFileGroup/taxonworks_doc/blob/master/manuals/EXPORTING_FROM_TAXONWORKS.md"
+    }
+
+    subgraph cluster_data_flow_in {
+    node [shape="larrow"]
+      "User interface input"
+      "Rake tasks"
+      "ORM calls from REPL"
+      "SQL calls (bad)"
+      "Batch importers"
+    }
+  }
+
+  subgraph concepts {
+    node [style="filled"]
+      "Species File Group" [color=azure]
+      TaxonWorks [shape=tripleoctagon color="orange2" root=true ]
+      "TaxonWorks technical infrastructure"
+      "TaxonWorks data in"
+      "TaxonWorks data out"
+  }
+
+  subgraph roles {
+    "TaxonWorks Developers" -- "Deborah Paul" [label="support, QA, modelling"]
+      "TaxonWorks Developers" -- "Matt Yoder" [label="modelling, core dev"]
+      "TaxonWorks Developers" -- "Dmitry Dmitriev" [label="modelling, import"]
+      "TaxonWorks Developers" -- "Dmitry Mozzherin" [label="sys admin"]
+      "TaxonWorks Developers" -- "Geoff Ower" [label="export, sys admin"]
+      "TaxonWorks Developers" -- "Hernán Luis Pereira" [label="core, sys admin, CI"]
+      "TaxonWorks Developers" -- "José Luis Pereira" [label="user interface"]
+      "TaxonWorks Developers" -- "Rich Flood" [label="UI, API, user support"]
+      "TaxonWorks Developers" -- "Yuri Ruskov" [label="Q/A, export, integration"]
+  }
+
+  subgraph concept_relations {
+    TaxonWorks -- "TaxonWorks Developers"
+      "Species File Group" -- TaxonWorks
+      TaxonWorks -- "taxonworks.org" [ label="homepage" ];
+      TaxonWorks -- "stats.taxonworks.org" [label="usage, example app"]
+      TaxonWorks -- "TaxonWorks Code Repositories"
+      TaxonWorks -- "TaxonWorks data in" 
+      TaxonWorks -- "TaxonWorks data out" 
+      subgraph repositories {
+        "TaxonWorks Code Repositories" [shape=oval color="orange"]
+        "TaxonWorks Code Repositories" -- "github.com/species_file_group/taxonworks" [ label="code repository " ];
+        "TaxonWorks Code Repositories" -- "github.com/species_file_group/taxonworks_doc" [ label="user docs" ];
+        "TaxonWorks Code Repositories" -- "github.com/species_file_group/install_taxonworks" [ label="installation docs" ];
+        "TaxonWorks Code Repositories" -- "github.com/species_file_group/taxonworks_api" [ label="api docs repository" ];
+        "github.com/species_file_group/taxonworks_api" -- "api.taxonworks.org" [ label="API homepage" ];
+        "github.com/species_file_group/taxonworks"  -- "rdoc.taxonworks.org" [ label="code docs" ];
+        TaxonWorks -- "gitter.im/SpeciesFileGroup/taxonworks" [ label="chat support" ];
+        subgraph taxonworks_instances {
+          node [shape=oval color=orange]
+            "TaxonWorks Instances"
+            "TaxonWorks Instances" -- TaxonWorks
+            "TaxonWorks Instances" -- "TaxonWorks Instances Production"
+            "TaxonWorks Instances" -- "TaxonWorks Instances Sandboxes"
+            "TaxonWorks Instances Production" -- "sfg.taxonworks.org"
+            "TaxonWorks Instances Sandboxes" -- "sandbox.taxonworks.org"
+            "TaxonWorks Instances Sandboxes" -- "sandstorm.taxonworks.org"
+            "TaxonWorks Instances Sandboxes" -- "sandfly.taxonworks.org"
+            "TaxonWorks Instances Sandboxes" -- "sandcastle.taxonworks.org"
+        }
+        subgraph technical_infrastructure {
+          TaxonWorks -- "TaxonWorks technical infrastructure"
+          "TaxonWorks technical infrastructure" -- PostgreSQL [label="database"]
+            "TaxonWorks technical infrastructure" -- PostGIS [label="database"]
+            "TaxonWorks technical infrastructure" -- Rails [label="middle layer"]
+            "TaxonWorks technical infrastructure" -- Ruby [label="script, REPL"]
+            "TaxonWorks technical infrastructure" -- Vue [label="UI"]
+            "TaxonWorks technical infrastructure" -- "Node" [label="JS package management"]
+            "TaxonWorks technical infrastructure" -- Webpack [label="asset build"]
+            "TaxonWorks technical infrastructure" -- Docker [label="containerization"]
+            "TaxonWorks technical infrastructure" -- Kubernetes [label="clustering"]
+            "TaxonWorks technical infrastructure" -- Ansible [label="deployment"]
+            "TaxonWorks technical infrastructure" -- "SFG libraries" [label="numerous stand alone libs/gems/modules"]
+        }
+
+      subgraph data_flow {
+       "TaxonWorks data in" -- "User interface input"
+
+       "TaxonWorks data in" -- "Rake tasks"
+       "TaxonWorks data in" -- "ORM calls from REPL"
+       "TaxonWorks data in" -- "SQL calls (bad)"
+       "TaxonWorks data in" -- "Batch importers"
+      }
+      } 
+  }
+}

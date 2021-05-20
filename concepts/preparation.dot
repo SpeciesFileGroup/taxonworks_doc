@@ -7,24 +7,30 @@
 # * 4 - Environment is a property of the container.
 # * 5 - Only Matrix is an attribute of the *current* physical state of the CollectionObject.  All other attributes should be tied to Thins that are *not* the collection object
 # * 5 - Given 2, we should favour outward-in approaches for environment (CollectionObject in some Container has_some Environment)
-# * 4 - There is a history of operations that change the physical nature of the CollectionObject, these should be captured in a Protocol (Treatment being a subclass of sorts in TW). Nothing about the CollectionObject's *current* physical nature should be stored as metadata in the Protocol.  For example, if the Protocol ends with the CollectionObject having some physical property then that physical property should be "duplicated" as a property of the _present_ CollectionObject?!
-#
+# * 6 - There is a history of operations that change the physical nature of the CollectionObject, these should be captured in a Protocol (Treatment being a subclass of sorts in TW). Nothing about the CollectionObject's *current* physical nature should be stored as metadata in the Protocol.  For example, if the Protocol ends with the CollectionObject having some physical property then that physical property should be "duplicated" as a property of the _present_ CollectionObject?!
+# * 7 - If Matrix is shared between CollectionObjects (e.g. many inclusions) then it needs to be a container.
 #
 graph  {
 # Concepts
-  TaxonWorks
-  CollectionObject 
+TaxonWorks
+CollectionObject 
+PreparationSpace [shape=hexagon color=orange]
 
-subgraph concepts {
-  node [shape=rectangle color=blue]
 
-  PreparationSpace
+subgraph preparation_space {
+  node [shape=rectangle color=blue] rank=same
 
   # Treatment
   # The treatment is the process of physically altering the specimen _by a curator_ prior to the CollectionObjects current physical state.
   # Current proxy: Protocol.
   # Target implementation: Protocol, ProtocolSteps
   Treatment
+
+  # Matrix 
+  # The matrix is the immediate surrounding of the CollectionObject, what surrounds it.
+  # Current proxy: Preparation type label
+  # Target implementation: `matrix` attribute on PreparationSpace drawn from Matrix ontology/CVT
+  Matrix
 
   # Container
   # A physical (with one exception) that "localized" collection objects.  "Localizes": if you find the container, the probability of finding the specimen increases. Containers nest if a) it is physically possible and b) by nesting the probability of finding the CollectionObject increases.
@@ -38,26 +44,22 @@ subgraph concepts {
   # Target implementation: inferred, not asserted by inspection of CollectionObject#total and Container
   # Proximity
 
-  # Matrix 
-  # The matrix is the immediate surrounding of the CollectionObject, what surrounds it.
-  # Current proxy: Preparation type label
-  # Target implementation: `matrix` attribute on PreparationSpace drawn from Matrix ontology/CVT
-  Matrix
-
   # Environment 
   # The Environment is the sum of the attributes that describe the the space within, or encompassing the Container the CollectionObject is in.
   # Current proxy: Preparation type label.
   # Target implementation: `environment` attribute on PreparationSpace
   Environment
+
 }
 
 # Preparation space
 TaxonWorks -- CollectionObject
+PreparationSpace -- Matrix 
 PreparationSpace -- CollectionObject 
 PreparationSpace -- Treatment
-PreparationSpace -- Environment 
+PreparationSpace -- Environment
+PreparationSpace -- Container
 Container -- Environment [label="has" dir="forward"] 
-CollectionObject -- Matrix [label="may have" dir="forward"]
 
 subgraph containers {
   Virtual [URL="https://rdoc.taxonworks.org/Container/Virtual.html"]
@@ -103,5 +105,6 @@ subgraph environments {
 
 
 }
+
 
 

@@ -36,7 +36,7 @@ subgraph concepts {
   # Proximity is temporary attribute to indicate the difference between "Bulk" and non-bulk assertions
   # Current proxy: Preparation type label
   # Target implementation: inferred, not asserted by inspection of CollectionObject#total and Container
-  Proximity
+  # Proximity
 
   # Matrix 
   # The matrix is the immediate surrounding of the CollectionObject, what surrounds it.
@@ -58,7 +58,6 @@ PreparationSpace -- Treatment
 PreparationSpace -- Environment 
 Container -- Environment [label="has" dir="forward"] 
 CollectionObject -- Matrix [label="may have" dir="forward"]
-PreparationSpace -- Proximity 
 
 subgraph containers {
   Virtual [URL="https://rdoc.taxonworks.org/Container/Virtual.html"]

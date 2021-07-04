@@ -167,4 +167,15 @@ This is a fixed process.  Some of these repositories are private because they co
 * [Initialized here](https://github.com/SpeciesFileGroup/taxonworks/blob/development/lib/tasks/initialize/geo.rake)
 * [Subsequently curated here](https://github.com/SpeciesFileGroup/taxonworks/blob/development/lib/tasks/maintenance/geo.rake)
 
+## Run TaxonWorks linters
+There are a couple of meta-checks built in.  
+### Specs
+_Not all linting specs are run by default._
+* To turn on specs *not* run at default use `-t lint:true` or set an ENV variable `TAXONWORKS_TEST_LINTING=true`
+* To run specs tagged as linters use `-t group:lint`
+* Therefor, to run all linting specs use `spring rspec -t lint:true -t group:lint`
+* Linting specs reside at `spec/taxonworks/`
+### Metadata descriptions
+* There is a rake task to output a list of models and their relationship to annotations: `rake tw:development:linting:list_annotated_models`
+
 

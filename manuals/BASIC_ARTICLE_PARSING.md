@@ -119,7 +119,7 @@ In general a green button means something is persisted in the database (in this 
 * Click the green circle that pops up, the icon turns red and the menu quickly closes
 * Hover over the menu to double check that the circle check mark is red.
 
-Only one record of a given type on the binboard can be defaulted to at a time, clicking a second record moves the red check to that record.
+Only one record of a given type on the pinboard can be defaulted to at a time, clicking a second record moves the red check to that record.
 
 #### Attaching a pdf
 _This assumes you completed the search above and are in the `Find sources`, although you can attach and do similar checks anywhere the radial annotator for the source is present._
@@ -202,7 +202,7 @@ Before starting page through the publication. Get a feel for how many names, hos
 
 In this case the wasps are the group being curated, they are the target taxa.
 
-TaxonWorks nomenclature is based on monomials, i.e. each single word element has its own record. Behind the scenes the database links these single monomials ("Protonyms") together to represent the various name-strings as we are used to seeing them. A "Combination" in TaxonWorks is in fact also another single record, one that has no value in its name field. Within Combinatoins the name-string a user sees is built up by relating Protonyms to this "anonymous" Combination record. For example the combination "Aus bus (Smith, 1920)" consists of three TaxonName records: 1) the Combination record (with nothing in its name field), and 2-3) two other protonyms "Aus" and "bus". The two protonyms are related to the Combination with specific records indicating how they are being used (e.g. as a species, as a genus). All of this is hidden from the user in the user interfaces, but it can be important to understand the underlying model when representing complicated nomenclatural histories.
+TaxonWorks nomenclature is based on monomials, i.e. each single word element has its own record. Behind the scenes the database links these single monomials ("Protonyms") together to represent the various name-strings as we are used to seeing them. A "Combination" in TaxonWorks is in fact also another single record, one that has no value in its name field. Within Combinations the name-string a user sees is built up by relating Protonyms to this "anonymous" Combination record. For example the combination "Aus bus (Smith, 1920)" consists of three TaxonName records: 1) the Combination record (with nothing in its name field), and 2-3) two other protonyms "Aus" and "bus". The two protonyms are related to the Combination with specific records indicating how they are being used (e.g. as a species, as a genus). All of this is hidden from the user in the user interfaces, but it can be important to understand the underlying model when representing complicated nomenclatural histories.
 
 Given this we need a strategy for composing our names.
 

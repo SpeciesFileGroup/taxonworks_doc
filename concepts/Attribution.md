@@ -3,7 +3,7 @@ WIP
 
 # Attribution
 
-This begins to summarize the interseciton of Attribution sensu the work of Thessen and Shorthouse with concepts in TaxonWorks.
+This begins to summarize the intersection of Attribution sensu the work of Thessen and Shorthouse with concepts in TaxonWorks.
 
 ## Housekeeping
 
@@ -56,3 +56,8 @@ We're working on exposing a token based API to data exposed at various levels.  
 
 We currently track the ammount of time spent on a project, and have pondered more specific tracking (e.g. time spent using a digitization task).  This discrete quantization of effort becomes useful in Attribution.
 
+## References 
+
+Thessen A, Shorthouse D, Paul D, Conlon M, Woodburn M, Koureas D, Ramdeen S, Haak L, Cornwell P (2019) A Proposed Metadata Standard for Recording and Sharing Attribution Information in Biodiversity. Biodiversity Information Science and Standards 3: e35169. https://doi.org/10.3897/biss.3.35169
+
+Thessen, A.E., Woodburn, M., Koureas, D., Paul, D., Conlon, M., Shorthouse, D.P. and Ramdeen, S., 2019. Proper Attribution for Curation and Maintenance of Research Collections: Metadata Recommendations of the RDA/TDWG Working Group. Data Science Journal, 18(1), p.54. DOI: http://doi.org/10.5334/dsj-2019-054

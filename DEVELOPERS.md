@@ -26,9 +26,7 @@ See [taxonworks_api](https://github.com/SpeciesFileGroup/taxonworks_api), this r
 * All commits merged to Development should have a corresponding [CHANGELOG.md](https://github.com/SpeciesFileGroup/taxonworks/blob/development/CHANGELOG.md) entry.
 
 ### Code
-[Rdoc](http://rdoc.taxonworks.org) based on inline documentation is generated on each commit of the code to the development branch (has known issues, see [#13](https://github.com/SpeciesFileGroup/taxonworks_doc/issues/13))
-
-This doc is also generated at [https://rdoc.info/github/SpeciesFileGroup/taxonworks](https://rdoc.info/github/SpeciesFileGroup/taxonworks).
+[Rdoc](https://rdoc.taxonworks.org) based on inline documentation is generated on each commit of the code to the development branch.
 
 ### Schema, database, data-model
 * TaxonWorks uses a relational database that is fairly strongly graph and ontology influenced.  This meshes well with [Rails](https://rubyonrails.org/) conventions that lean heavily on a RESTful approach. Some aspects are object-relational in nature, but overall it does not strictly follow this convention.  This means that the `Code documentation` above contains a description of the schema.

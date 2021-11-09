@@ -13,8 +13,8 @@ Tip: Notice the `-p` for "practice" (or "preview"), this let's you preview what 
 
 We do not use the following (TODO: update flags)
 
-* spec/requests/<model>_spec.rb
-* spec/views/<model>/
+* spec/requests/`<model>`_spec.rb
+* spec/views/`<model>`/
 
 ## Migration tips
 

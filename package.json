@@ -1,0 +1,31 @@
+{
+  "name": "taxonworks_doc",
+  "version": "1.0.0",
+  "description": "TaxonWorks documentation",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpeciesFileGroup/taxonworks_doc.git"
+  },
+  "keywords": [
+    "taxonworks",
+    "docs",
+    "documentation"
+  ],
+  "author": "SpeciesFileGroup",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SpeciesFileGroup/taxonworks_doc/issues"
+  },
+  "homepage": "https://github.com/SpeciesFileGroup/taxonworks_doc#readme",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.27"
+  }
+}

@@ -1,6 +1,7 @@
 const generateSidebar = require('../../utils/generateSidebar.js')
 
 module.exports = {
-  '/development/': generateSidebar('development', 'Develop'),
-  '/guide/': generateSidebar('guide', 'Guide')
+  '/develop/': generateSidebar('develop', 'Develop'),
+  '/guide/': generateSidebar('guide', 'Guide'),
+  '/about/': generateSidebar('about', 'About')
 }

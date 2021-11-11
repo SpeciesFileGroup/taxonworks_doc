@@ -1,6 +1,4 @@
+# Introduction
 
-# FAQs
+_Categorized questions that answer "How do I?"_.
 
-* [Basics](basics.md)
-* [Nomenclature](nomenclature.md)
-* [Standards](standards.md)

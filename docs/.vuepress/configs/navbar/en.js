@@ -5,15 +5,15 @@ module.exports = [
   },
   {
     text: 'Develop',
-    link: '/development/'
+    link: '/develop/'
   },
   {
     text: 'Get a project',
-    link: '/project/'
+    link: '/guide/start-a-project'
   },
   {
     text: 'Cite',
-    link: '/citation/'
+    link: '/about/citing-taxonworks/'
   },
   {
     text: 'API',
@@ -25,7 +25,7 @@ module.exports = [
   },
   {
     text: 'Contact',
-    link: '/contact/'
+    link: '/about/#contact'
   },
   {
     text: 'GitHub',

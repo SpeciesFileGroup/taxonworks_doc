@@ -14,7 +14,6 @@ module.exports = function getSideBar(folder, text) {
     .readdirSync(folderPath)
     .filter(
       item =>
-        item.toLowerCase() != "readme.md" &&
         fs.statSync(path.join(folderPath, item)).isFile() &&
         extension.includes(path.extname(item))
     ).map(file => `/${folder}/${file}`);

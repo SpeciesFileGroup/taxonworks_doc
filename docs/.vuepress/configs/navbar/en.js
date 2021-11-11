@@ -17,7 +17,7 @@ module.exports = [
   },
   {
     text: 'API',
-    link: '/api/'
+    link: 'https://api.taxonworks.org/'
   },
   {
     text: 'Bug report',

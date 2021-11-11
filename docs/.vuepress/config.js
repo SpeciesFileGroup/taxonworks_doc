@@ -25,5 +25,5 @@ module.exports = {
         sidebar: sidebar.en
       }
     }
-  },
+  }
 }

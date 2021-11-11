@@ -155,7 +155,7 @@ If the source does not exist in the steps above it will need to be added. There 
 * Confirm that the parsed result in the New source form is the source you are looking for. This is important, Crossref will almost always find a hit, however it may not be correct.
 * This is now a good point at which to check the values in the form to edit any that may be incorrect, or to add values that are missing. For example CrossRef results may not have pages.
 
-<strike> Functionality currently moved/absent and likely returned in another fashion:
+<strike v-pre> Functionality currently moved/absent and likely returned in another fashion:
 * Check the box `Also create people from authors and editors of BibTeX source?`
 This parses out the authors into People records while it adds the source. Note that this will result in duplicate people. There is a utility to merge people that can be used from time to time.
 * Note: In practice some find the more efficient way is to not parse authors but rather add People manually. This will avoid duplication and possible cleaning steps in the database.

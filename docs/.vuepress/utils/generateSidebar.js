@@ -1,19 +1,33 @@
 const fs = require("fs")
 const path = require("path")
 
+const getDirectories = source =>
+  fs.readdirSync(source, { withFileTypes: true })
+    .filter(dirent => dirent.isDirectory())
+    .map(dirent => dirent.name)
+
 module.exports = function getSideBar(folder, text) {
   const extension = [".md"]
-
+  const folderPath = path.join(`${__dirname}/../../${folder}`)
+  const childrenFolders = getDirectories(folderPath)
   const files = fs
-    .readdirSync(path.join(`${__dirname}/../../${folder}`))
+    .readdirSync(folderPath)
     .filter(
       item =>
         item.toLowerCase() != "readme.md" &&
-        fs.statSync(path.join(`${__dirname}/../../${folder}`, item)).isFile() &&
+        fs.statSync(path.join(folderPath, item)).isFile() &&
         extension.includes(path.extname(item))
     ).map(file => `/${folder}/${file}`);
 
-    console.log([{ text, children: [...files] }])
+  const sideBar = { 
+    text, 
+    children: [].concat(
+      files, 
+      ...childrenFolders.map(folderName => getSideBar(`${folder}/${folderName}`, folderName))
+    )
+  }
 
-  return [{ text, children: [...files] }]
+  return Array.isArray(sideBar) 
+    ? sideBar 
+    : [sideBar]
 }

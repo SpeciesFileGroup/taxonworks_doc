@@ -18,12 +18,14 @@ module.exports = {
 
   themeConfig: {
     logo: '/images/taxonworks-black-circle.svg',
+    logoDark: '/images/taxonworks-white-circle.svg',
     locales: {
       '/': {
         lang: 'en-US',
         navbar: navbar.en,
         sidebar: sidebar.en
       }
-    }
+    },
+    contributors: false
   }
 }

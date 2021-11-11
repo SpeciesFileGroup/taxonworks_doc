@@ -5,7 +5,17 @@ For now, we add content here.  Ultimately we'll re-organize into the wiki here, 
 
 # TaxonWorks doc
 
-This is the current hub for documentation on TaxonWorks ([homepage](http://taxonworks.org), [source](https://github.com/SpeciesFileGroup/taxonworks), [installation](https://github.com/SpeciesFileGroup/install_taxonworks)).  
+This is the current hub for documentation on TaxonWorks ([homepage](http://taxonworks.org), [source](https://github.com/SpeciesFileGroup/taxonworks), [installation](https://github.com/SpeciesFileGroup/install_taxonworks)).
+
+# Install VuePress and run locally
+
+```
+npm install
+
+npm run docs:dev
+```
+
+
 
 # For users
 

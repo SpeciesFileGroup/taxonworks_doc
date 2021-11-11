@@ -19,7 +19,8 @@ module.exports = function getSideBar(folder, text) {
     ).map(file => `/${folder}/${file}`);
 
   const sideBar = { 
-    text, 
+    text,
+    link: `/${folder}/`,
     children: [].concat(
       files, 
       ...childrenFolders.map(folderName => getSideBar(`${folder}/${folderName}`, folderName))

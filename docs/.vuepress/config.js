@@ -22,8 +22,14 @@ module.exports = {
   },
 
   themeConfig: {
+    docsRepo: 'https://github.com/SpeciesFileGroup/taxonworks_doc',
+    docsBranch: 'development',
+    docsDir: 'docs',
+    editLinkPattern: ':repo/edit/:branch/:path',
+
     logo: '/images/taxonworks-black-circle.svg',
     logoDark: '/images/taxonworks-white-circle.svg',
+
     locales: {
       '/': {
         lang: 'en-US',

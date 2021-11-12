@@ -1,5 +1,6 @@
 const fs = require("fs")
 const path = require("path")
+const matter = require('gray-matter');
 
 const getDirectories = source =>
   fs.readdirSync(source, { withFileTypes: true })
@@ -18,11 +19,23 @@ module.exports = function getSideBar(folder, text) {
         extension.includes(path.extname(item))
     ).map(file => `/${folder}/${file}`);
 
+  const orderedFile = files.sort((a, b) => {
+    const fileA = fs.readFileSync(path.join(`${__dirname}/../../${a}`), 'utf8')
+    const fileB = fs.readFileSync(path.join(`${__dirname}/../../${b}`), 'utf8')
+    const objectA = matter(fileA)
+    const objectB = matter(fileB)
+
+    const aPosition = objectA?.data?.sidebarPosition
+    const bPosition = objectB?.data?.sidebarPosition
+
+    return aPosition - bPosition
+  })
+
   const sideBar = { 
     text,
     link: `/${folder}/`,
     children: [].concat(
-      files, 
+      orderedFile, 
       ...childrenFolders.map(folderName => getSideBar(`${folder}/${folderName}`, folderName))
     )
   }

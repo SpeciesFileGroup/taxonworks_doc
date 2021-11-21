@@ -7,9 +7,6 @@ The documentation for TaxonWorks users is obviously in its early stages.  Ultima
 ## Contributing
 Remember, we want it to be possible for our users to also help in the development of TaxonWorks. No [contribution](CONTRIBUTING.md) is too small!
 
-## In application help
-Use the orange question mark slideout on the right of the interface.
-
 ## Manuals
 Manuals are detailed documents targeting specific workflows. See [here](/manuals/README.md).
 

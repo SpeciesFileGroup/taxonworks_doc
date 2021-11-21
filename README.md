@@ -1,7 +1,13 @@
+# TaxonWorks Docs
+
+Contains the content for the [TaxonWorks Docs website](https://docs.taxonworks.org/).
+
+* The (legacy) content on this branch is being moved to the [development branch](https://github.com/SpeciesFileGroup/taxonworks_doc/tree/development) that serves as the current source of the website.
+* When migration is complete this branch will become the source of the website, with changes being staged on the development branch.
+
+--- Content below legacy remaining to be migrated  ---
 
 _Tired of reading all this stuff? Can't find what you are looking for? Talk to a human, [![Gitter][1]][2]_.
-
-For now, we add content here.  Ultimately we'll re-organize into the wiki here, or a Github pages site using Jekyll or similar.
 
 # TaxonWorks doc
 

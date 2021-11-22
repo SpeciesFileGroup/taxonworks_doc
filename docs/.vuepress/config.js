@@ -1,5 +1,6 @@
 const navbar = require('./configs/navbar')
 const sidebar = require('./configs/sidebar')
+const pluginsLang = require('./configs/plugins')
 
 module.exports = {
   lang: 'en-US',
@@ -64,5 +65,17 @@ module.exports = {
       },
     },
     contributors: false
-  }
+  },
+
+  plugins: [
+    [
+      '@vuepress/plugin-search',
+      {
+        locales: {
+          '/': pluginsLang.en,
+          '/es/': pluginsLang.es
+        },
+      },
+    ],
+  ],
 }

@@ -154,9 +154,6 @@ Use the format `yyyy-mm-dd`.
 Running `rails s` is not enough to make queued jobs to run since they way it is setup they don't run in-process.
 To make them run you need to open up an extra terminal window and run `rails jobs:work`. You may notice that the CPU usage may constantly be reaching 100% for short bursts continuously (and also speed up your CPU fan). If this is an inconvenience to you, or you even wish to control when it is a good time to start working off jobs you may use `rails jobs:workoff`. This command will run all pending jobs and then exit.
 
-## Running docker specs
-To run the same tests we run at the deliver stage in TravisCI you may run `.travis/docker-test.sh`. That will set up images and run the tests inside a docker-compose environment.
-
 ## Building GeographicArea from scratch
 
 This is a fixed process.  Some of these repositories are private because they contain free, but not distributable data.  TODO- point to original data.

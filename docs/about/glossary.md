@@ -23,6 +23,9 @@ Identifiers identify instances, i.e. specific things. TaxonWorks supports many d
 ### Naïve matching
 Used in context of tracing text in `buffered` fields to the `verbatim` fields include parsed out values.  "Naïve" means we anticipate a very simple match, string to string, no fuzziness, no AI, etc.
 
+### OTU (Operational Taxonomic Unit)
+The biological unit that is useful to work with. 
+
 ### Parsing
 Breaking down `buffered` or `verbatim` values into further fields, or semantic relationships.
 

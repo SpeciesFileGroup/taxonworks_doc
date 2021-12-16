@@ -1,6 +1,6 @@
 # The big picture 
 
-_The view from 30K feet to why this online documentation tool._
+_The view from 30K feet at TaxonWorks and why this online documentation tool._
 
 ## Vision and mission
 From the Species File Group, and TaxonWorks, we work toward realizing a vision for open, shared taxonomic information for all.

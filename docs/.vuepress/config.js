@@ -12,7 +12,7 @@ module.exports = {
     '/': {
       lang: 'en-US',
       title: 'TaxonWorks Docs',
-      description: 'TaxonWorks is an workbench with many tools for describing life. This site contains the documentation.',
+      description: 'TaxonWorks is a workbench with many tools for describing life. This site contains the documentation.',
       sidebar: sidebar.en
     },
     '/es/': {

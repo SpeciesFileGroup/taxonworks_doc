@@ -1,8 +1,7 @@
 # TaxonWorks Documentation
 
-
 ## Content
-This repository documents [TaxonWorks](https://taxonworks.org) for both users and developers. It is the source for the [https://docs.taxonworks.org](TaxonWorks Documentation). 
+This repository documents [TaxonWorks](https://taxonworks.org) for both users and developers. It is the source for the [https://docs.taxonworks.org](TaxonWorks Documentation).
 
 Content is being migrated from and/or also available from various other locations. You might also see:
 
@@ -12,14 +11,14 @@ Content is being migrated from and/or also available from various other location
 
 ## Building
 
-Use the `development branch`
+Use the `development` branch
 
 Install packages.
 ```
 npm install
 ```
 
-Start a development server at `http://localhost:8080`.  Changes to files will be detected automatically. _Adding/removing files may require restart._
+Start a development server at `http://localhost:8080`. Changes to files will be detected automatically. _Adding/removing files may require restart._
 ```
 npm run docs:dev
 ```
@@ -28,6 +27,8 @@ While not needed because it is handled by continunous integration (CI) you can b
 ```
 npm run docs:build 
 ```
+
+Docs are built using [VuePress](https://vuepress.vuejs.org/) and served on Github pages.
 
 _Tired of reading all this stuff? Can't find what you are looking for? Talk to a human, [![Gitter][1]][2]_.
 

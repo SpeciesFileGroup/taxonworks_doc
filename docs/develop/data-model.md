@@ -18,7 +18,10 @@ At its core TaxonWorks' data model has a handfull of key concepts (orange nodes 
 
 _Nodes are clickable, they will open in a new page._
 
-![Alt text](./Model/er.svg)
+<object
+  data="/images/model/er.svg"
+  type="image/svg+xml">
+</object>
 
 ### Meta-model
 TaxonWorks uses an "ontology-based, graph-aware, relational database" approach to representing and storing data. Practically speaking this means several things:

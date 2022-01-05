@@ -8,8 +8,10 @@ _Answer the question "What does the data-store in TaxonWorks look like, and what
 ## Approach
 ### Overview
 
-![Alt text](./Model/er.svg)
-<img src="./Model/er.svg">
+<object
+  data="/images/model/er.svg"
+  type="image/svg+xml">
+</object>
 
 ### Meta-model
 TaxonWorks uses an "ontology-based, graph-aware, relational database" approach to storing data. Practically speaking this means several things:

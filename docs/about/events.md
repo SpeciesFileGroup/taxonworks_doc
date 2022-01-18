@@ -6,7 +6,7 @@ sidebarPosition: 200
 
 ## Weekly
 
-The Species File Group hosts [regular weekly events](https://speciesfilegroup.org/events.html) on nomenclature and digitization. Questions of any sort are welcome there, regardless of topic.
+Every Wednesday, the Species File Group hosts [topic-specific meetings](https://speciesfilegroup.org/events.html) covering nomenclature, digitization, matrices/observations, technical input, and two open sessions. Questions of any sort are welcome there, regardless of topic. All are welcome.
 
 ## TaxonWorks Together
 

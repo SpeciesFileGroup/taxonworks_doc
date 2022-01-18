@@ -10,7 +10,10 @@ The Species File Group hosts [regular weekly events](https://speciesfilegroup.or
 
 ## TaxonWorks Together
 
-A yearly event promoting community development. For 2021 [see here](https://github.com/SpeciesFileGroup/taxonworks_together_2021/).
+A yearly event promoting community and commons development. 
+- 2021 [see here](https://github.com/SpeciesFileGroup/taxonworks_together_2021/).
+- 2022 [see here](https://github.com/SpeciesFileGroup/taxonworks_together_2022/) and please
+  - [Submit your ideas for content](https://github.com/SpeciesFileGroup/taxonworks_together_2022/issues)
 
 ## TaxonWorks Late-nite
 

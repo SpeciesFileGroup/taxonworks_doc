@@ -9,7 +9,7 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 711.5)">
 <title>G</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-711.5 548.14,-711.5 548.14,4 -4,4"/>
-<text text-anchor="middle" x="272.07" y="-7.8" font-family="Times,serif" font-size="14.00">Generated 2022&#45;01&#45;25 11:42:22 &#45;0600 via &#39;rake tw:docs:er&#39;.</text>
+<text text-anchor="middle" x="272.07" y="-7.8" font-family="Times,serif" font-size="14.00">Generated 2022&#45;01&#45;25 14:16:59 &#45;0600 via &#39;rake tw:docs:er&#39;.</text>
 <!-- CollectingEvent&#45;&gt;CollectionObject -->
 <g id="edge5" class="edge">
 <title>CollectingEvent&#45;&gt;CollectionObject</title>
@@ -166,9 +166,9 @@
 <path fill="none" stroke="black" d="M400.37,-41.5C388.69,-41.5 375.9,-41.5 363.49,-41.5"/>
 <polygon fill="black" stroke="black" points="363.2,-38 353.2,-41.5 363.2,-45 363.2,-38"/>
 </g>
-<!-- People&#45;&gt;Role:Collector -->
+<!-- Person&#45;&gt;Role:Collector -->
 <g id="edge15" class="edge">
-<title>People&#45;&gt;Role:Collector</title>
+<title>Person&#45;&gt;Role:Collector</title>
 <path fill="none" stroke="black" stroke-dasharray="5,2" d="M490.06,-113.5C473.54,-113.5 451.77,-113.5 431.5,-113.5"/>
 <polygon fill="black" stroke="black" points="431.38,-110 421.38,-113.5 431.38,-117 431.38,-110"/>
 </g>
@@ -322,12 +322,12 @@
 </a>
 </g>
 </g>
-<!-- People -->
+<!-- Person -->
 <g id="node17" class="node">
-<title>People</title>
-<g id="a_node17"><a xlink:href="/develop/Data/models.html#person" xlink:title="People">
+<title>Person</title>
+<g id="a_node17"><a xlink:href="/develop/Data/models.html#person" xlink:title="Person">
 <polygon fill="#eeefff" stroke="#dddeee" points="544.14,-131.5 490.14,-131.5 490.14,-95.5 544.14,-95.5 544.14,-131.5"/>
-<text text-anchor="middle" x="517.14" y="-109.8" font-family="Times,serif" font-size="14.00">People</text>
+<text text-anchor="middle" x="517.14" y="-109.8" font-family="Times,serif" font-size="14.00">Person</text>
 </a>
 </g>
 </g>

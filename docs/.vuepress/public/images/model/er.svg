@@ -172,7 +172,7 @@
 <!-- CollectingEvent -->
 <g id="node1" class="node">
 <title>CollectingEvent</title>
-<g id="a_node1"><a xlink:href="https://rdoc.taxonworks.org/CollectingEvent.html" xlink:title="CollectingEvent" target="_blank">
+<g id="a_node1"><a xlink:href="https://rdoc.taxonworks.org/CollectingEvent.html" xlink:title="CollectingEvent" target="_top">
 <path fill="#fedcba" stroke="#dddeee" d="M261.14,-68.5C261.14,-68.5 341.14,-68.5 341.14,-68.5 347.14,-68.5 353.14,-74.5 353.14,-80.5 353.14,-80.5 353.14,-92.5 353.14,-92.5 353.14,-98.5 347.14,-104.5 341.14,-104.5 341.14,-104.5 261.14,-104.5 261.14,-104.5 255.14,-104.5 249.14,-98.5 249.14,-92.5 249.14,-92.5 249.14,-80.5 249.14,-80.5 249.14,-74.5 255.14,-68.5 261.14,-68.5"/>
 <text text-anchor="middle" x="301.14" y="-82.8" font-family="Times,serif" font-size="14.00">CollectingEvent</text>
 </a>
@@ -181,7 +181,7 @@
 <!-- CollectionObject -->
 <g id="node2" class="node">
 <title>CollectionObject</title>
-<g id="a_node2"><a xlink:href="https://rdoc.taxonworks.org/CollectionObject.html" xlink:title="CollectionObject" target="_blank">
+<g id="a_node2"><a xlink:href="https://rdoc.taxonworks.org/CollectionObject.html" xlink:title="CollectionObject" target="_top">
 <path fill="#fedcba" stroke="#dddeee" d="M258.64,-212.5C258.64,-212.5 343.64,-212.5 343.64,-212.5 349.64,-212.5 355.64,-218.5 355.64,-224.5 355.64,-224.5 355.64,-236.5 355.64,-236.5 355.64,-242.5 349.64,-248.5 343.64,-248.5 343.64,-248.5 258.64,-248.5 258.64,-248.5 252.64,-248.5 246.64,-242.5 246.64,-236.5 246.64,-236.5 246.64,-224.5 246.64,-224.5 246.64,-218.5 252.64,-212.5 258.64,-212.5"/>
 <text text-anchor="middle" x="301.14" y="-226.8" font-family="Times,serif" font-size="14.00">CollectionObject</text>
 </a>
@@ -190,7 +190,7 @@
 <!-- Otu -->
 <g id="node3" class="node">
 <title>Otu</title>
-<g id="a_node3"><a xlink:href="https://rdoc.taxonworks.org/Otu.html" xlink:title="Otu" target="_blank">
+<g id="a_node3"><a xlink:href="https://rdoc.taxonworks.org/Otu.html" xlink:title="Otu" target="_top">
 <path fill="#fedcba" stroke="#dddeee" d="M286.14,-356.5C286.14,-356.5 316.14,-356.5 316.14,-356.5 322.14,-356.5 328.14,-362.5 328.14,-368.5 328.14,-368.5 328.14,-380.5 328.14,-380.5 328.14,-386.5 322.14,-392.5 316.14,-392.5 316.14,-392.5 286.14,-392.5 286.14,-392.5 280.14,-392.5 274.14,-386.5 274.14,-380.5 274.14,-380.5 274.14,-368.5 274.14,-368.5 274.14,-362.5 280.14,-356.5 286.14,-356.5"/>
 <text text-anchor="middle" x="301.14" y="-370.8" font-family="Times,serif" font-size="14.00">Otu</text>
 </a>
@@ -199,7 +199,7 @@
 <!-- TaxonName -->
 <g id="node4" class="node">
 <title>TaxonName</title>
-<g id="a_node4"><a xlink:href="https://rdoc.taxonworks.org/TaxonName.html" xlink:title="TaxonName" target="_blank">
+<g id="a_node4"><a xlink:href="https://rdoc.taxonworks.org/TaxonName.html" xlink:title="TaxonName" target="_top">
 <path fill="#fedcba" stroke="#dddeee" d="M271.14,-500.5C271.14,-500.5 331.14,-500.5 331.14,-500.5 337.14,-500.5 343.14,-506.5 343.14,-512.5 343.14,-512.5 343.14,-524.5 343.14,-524.5 343.14,-530.5 337.14,-536.5 331.14,-536.5 331.14,-536.5 271.14,-536.5 271.14,-536.5 265.14,-536.5 259.14,-530.5 259.14,-524.5 259.14,-524.5 259.14,-512.5 259.14,-512.5 259.14,-506.5 265.14,-500.5 271.14,-500.5"/>
 <text text-anchor="middle" x="301.14" y="-514.8" font-family="Times,serif" font-size="14.00">TaxonName</text>
 </a>
@@ -208,7 +208,7 @@
 <!-- Descriptor -->
 <g id="node5" class="node">
 <title>Descriptor</title>
-<g id="a_node5"><a xlink:href="https://rdoc.taxonworks.org/Descriptor.html" xlink:title="Descriptor" target="_blank">
+<g id="a_node5"><a xlink:href="https://rdoc.taxonworks.org/Descriptor.html" xlink:title="Descriptor" target="_top">
 <path fill="#fedcba" stroke="#dddeee" d="M564.14,-356.5C564.14,-356.5 614.14,-356.5 614.14,-356.5 620.14,-356.5 626.14,-362.5 626.14,-368.5 626.14,-368.5 626.14,-380.5 626.14,-380.5 626.14,-386.5 620.14,-392.5 614.14,-392.5 614.14,-392.5 564.14,-392.5 564.14,-392.5 558.14,-392.5 552.14,-386.5 552.14,-380.5 552.14,-380.5 552.14,-368.5 552.14,-368.5 552.14,-362.5 558.14,-356.5 564.14,-356.5"/>
 <text text-anchor="middle" x="589.14" y="-370.8" font-family="Times,serif" font-size="14.00">Descriptor</text>
 </a>
@@ -217,7 +217,7 @@
 <!-- Source -->
 <g id="node6" class="node">
 <title>Source</title>
-<g id="a_node6"><a xlink:href="https://rdoc.taxonworks.org/Source.html" xlink:title="Source" target="_blank">
+<g id="a_node6"><a xlink:href="https://rdoc.taxonworks.org/Source.html" xlink:title="Source" target="_top">
 <path fill="#fedcba" stroke="#dddeee" d="M178.14,-68.5C178.14,-68.5 208.14,-68.5 208.14,-68.5 214.14,-68.5 220.14,-74.5 220.14,-80.5 220.14,-80.5 220.14,-92.5 220.14,-92.5 220.14,-98.5 214.14,-104.5 208.14,-104.5 208.14,-104.5 178.14,-104.5 178.14,-104.5 172.14,-104.5 166.14,-98.5 166.14,-92.5 166.14,-92.5 166.14,-80.5 166.14,-80.5 166.14,-74.5 172.14,-68.5 178.14,-68.5"/>
 <text text-anchor="middle" x="193.14" y="-82.8" font-family="Times,serif" font-size="14.00">Source</text>
 </a>
@@ -226,7 +226,7 @@
 <!-- AssertedDistribution -->
 <g id="node7" class="node">
 <title>AssertedDistribution</title>
-<g id="a_node7"><a xlink:href="https://rdoc.taxonworks.org/AssertedDistribution.html" xlink:title="AssertedDistribution" target="_blank">
+<g id="a_node7"><a xlink:href="https://rdoc.taxonworks.org/AssertedDistribution.html" xlink:title="AssertedDistribution" target="_top">
 <path fill="#fedcba" stroke="#dddeee" d="M176.64,-428.5C176.64,-428.5 281.64,-428.5 281.64,-428.5 287.64,-428.5 293.64,-434.5 293.64,-440.5 293.64,-440.5 293.64,-452.5 293.64,-452.5 293.64,-458.5 287.64,-464.5 281.64,-464.5 281.64,-464.5 176.64,-464.5 176.64,-464.5 170.64,-464.5 164.64,-458.5 164.64,-452.5 164.64,-452.5 164.64,-440.5 164.64,-440.5 164.64,-434.5 170.64,-428.5 176.64,-428.5"/>
 <text text-anchor="middle" x="229.14" y="-442.8" font-family="Times,serif" font-size="14.00">AssertedDistribution</text>
 </a>
@@ -235,7 +235,7 @@
 <!-- BiologicalAssociation -->
 <g id="node8" class="node">
 <title>BiologicalAssociation</title>
-<g id="a_node8"><a xlink:href="https://rdoc.taxonworks.org/BiologicalAssociation.html" xlink:title="BiologicalAssociation" target="_blank">
+<g id="a_node8"><a xlink:href="https://rdoc.taxonworks.org/BiologicalAssociation.html" xlink:title="BiologicalAssociation" target="_top">
 <path fill="#fedcba" stroke="#dddeee" d="M388.64,-212.5C388.64,-212.5 501.64,-212.5 501.64,-212.5 507.64,-212.5 513.64,-218.5 513.64,-224.5 513.64,-224.5 513.64,-236.5 513.64,-236.5 513.64,-242.5 507.64,-248.5 501.64,-248.5 501.64,-248.5 388.64,-248.5 388.64,-248.5 382.64,-248.5 376.64,-242.5 376.64,-236.5 376.64,-236.5 376.64,-224.5 376.64,-224.5 376.64,-218.5 382.64,-212.5 388.64,-212.5"/>
 <text text-anchor="middle" x="445.14" y="-226.8" font-family="Times,serif" font-size="14.00">BiologicalAssociation</text>
 </a>
@@ -244,7 +244,7 @@
 <!-- Observation -->
 <g id="node9" class="node">
 <title>Observation</title>
-<g id="a_node9"><a xlink:href="https://rdoc.taxonworks.org/Observation.html" xlink:title="Observation" target="_blank">
+<g id="a_node9"><a xlink:href="https://rdoc.taxonworks.org/Observation.html" xlink:title="Observation" target="_top">
 <path fill="#fedcba" stroke="#dddeee" d="M415.64,-356.5C415.64,-356.5 474.64,-356.5 474.64,-356.5 480.64,-356.5 486.64,-362.5 486.64,-368.5 486.64,-368.5 486.64,-380.5 486.64,-380.5 486.64,-386.5 480.64,-392.5 474.64,-392.5 474.64,-392.5 415.64,-392.5 415.64,-392.5 409.64,-392.5 403.64,-386.5 403.64,-380.5 403.64,-380.5 403.64,-368.5 403.64,-368.5 403.64,-362.5 409.64,-356.5 415.64,-356.5"/>
 <text text-anchor="middle" x="445.14" y="-370.8" font-family="Times,serif" font-size="14.00">Observation</text>
 </a>
@@ -253,7 +253,7 @@
 <!-- Sequence -->
 <g id="node10" class="node">
 <title>Sequence</title>
-<g id="a_node10"><a xlink:href="https://rdoc.taxonworks.org/Sequence.html" xlink:title="Sequence" target="_blank">
+<g id="a_node10"><a xlink:href="https://rdoc.taxonworks.org/Sequence.html" xlink:title="Sequence" target="_top">
 <path fill="#fedcba" stroke="#dddeee" d="M423.14,-500.5C423.14,-500.5 467.14,-500.5 467.14,-500.5 473.14,-500.5 479.14,-506.5 479.14,-512.5 479.14,-512.5 479.14,-524.5 479.14,-524.5 479.14,-530.5 473.14,-536.5 467.14,-536.5 467.14,-536.5 423.14,-536.5 423.14,-536.5 417.14,-536.5 411.14,-530.5 411.14,-524.5 411.14,-524.5 411.14,-512.5 411.14,-512.5 411.14,-506.5 417.14,-500.5 423.14,-500.5"/>
 <text text-anchor="middle" x="445.14" y="-514.8" font-family="Times,serif" font-size="14.00">Sequence</text>
 </a>
@@ -262,7 +262,7 @@
 <!-- ControlledVocabularyTerm -->
 <g id="node11" class="node">
 <title>ControlledVocabularyTerm</title>
-<g id="a_node11"><a xlink:href="https://rdoc.taxonworks.org/ControlledVocabularyTerm.html" xlink:title="ControlledVocabularyTerm" target="_blank">
+<g id="a_node11"><a xlink:href="https://rdoc.taxonworks.org/ControlledVocabularyTerm.html" xlink:title="ControlledVocabularyTerm" target="_top">
 <path fill="#fedcba" stroke="#dddeee" d="M230.14,-572.5C230.14,-572.5 372.14,-572.5 372.14,-572.5 378.14,-572.5 384.14,-578.5 384.14,-584.5 384.14,-584.5 384.14,-596.5 384.14,-596.5 384.14,-602.5 378.14,-608.5 372.14,-608.5 372.14,-608.5 230.14,-608.5 230.14,-608.5 224.14,-608.5 218.14,-602.5 218.14,-596.5 218.14,-596.5 218.14,-584.5 218.14,-584.5 218.14,-578.5 224.14,-572.5 230.14,-572.5"/>
 <text text-anchor="middle" x="301.14" y="-586.8" font-family="Times,serif" font-size="14.00">ControlledVocabularyTerm</text>
 </a>
@@ -271,7 +271,7 @@
 <!-- Image -->
 <g id="node12" class="node">
 <title>Image</title>
-<g id="a_node12"><a xlink:href="https://rdoc.taxonworks.org/Image.html" xlink:title="Image" target="_blank">
+<g id="a_node12"><a xlink:href="https://rdoc.taxonworks.org/Image.html" xlink:title="Image" target="_top">
 <polygon fill="#eeefff" stroke="#dddeee" points="256.14,-680.5 202.14,-680.5 202.14,-644.5 256.14,-644.5 256.14,-680.5"/>
 <text text-anchor="middle" x="229.14" y="-658.8" font-family="Times,serif" font-size="14.00">Image</text>
 </a>
@@ -280,7 +280,7 @@
 <!-- TypeMaterial -->
 <g id="node13" class="node">
 <title>TypeMaterial</title>
-<g id="a_node13"><a xlink:href="https://rdoc.taxonworks.org/TypeMaterial.html" xlink:title="TypeMaterial" target="_blank">
+<g id="a_node13"><a xlink:href="https://rdoc.taxonworks.org/TypeMaterial.html" xlink:title="TypeMaterial" target="_top">
 <polygon fill="#eeefff" stroke="#dddeee" points="418.64,-464.5 327.64,-464.5 327.64,-428.5 418.64,-428.5 418.64,-464.5"/>
 <text text-anchor="middle" x="373.14" y="-442.8" font-family="Times,serif" font-size="14.00">TypeMaterial</text>
 </a>
@@ -289,7 +289,7 @@
 <!-- TaxonDetermination -->
 <g id="node14" class="node">
 <title>TaxonDetermination</title>
-<g id="a_node14"><a xlink:href="https://rdoc.taxonworks.org/TaxonDetermination.html" xlink:title="TaxonDetermination" target="_blank">
+<g id="a_node14"><a xlink:href="https://rdoc.taxonworks.org/TaxonDetermination.html" xlink:title="TaxonDetermination" target="_top">
 <polygon fill="#eeefff" stroke="#dddeee" points="294.14,-320.5 164.14,-320.5 164.14,-284.5 294.14,-284.5 294.14,-320.5"/>
 <text text-anchor="middle" x="229.14" y="-298.8" font-family="Times,serif" font-size="14.00">TaxonDetermination</text>
 </a>
@@ -298,7 +298,7 @@
 <!-- Georeference -->
 <g id="node15" class="node">
 <title>Georeference</title>
-<g id="a_node15"><a xlink:href="https://rdoc.taxonworks.org/Georeference.html" xlink:title="Georeference" target="_blank">
+<g id="a_node15"><a xlink:href="https://rdoc.taxonworks.org/Georeference.html" xlink:title="Georeference" target="_top">
 <polygon fill="#eeefff" stroke="#dddeee" points="489.64,-104.5 400.64,-104.5 400.64,-68.5 489.64,-68.5 489.64,-104.5"/>
 <text text-anchor="middle" x="445.14" y="-82.8" font-family="Times,serif" font-size="14.00">Georeference</text>
 </a>
@@ -307,7 +307,7 @@
 <!-- OriginRelationship -->
 <g id="node16" class="node">
 <title>OriginRelationship</title>
-<g id="a_node16"><a xlink:href="https://rdoc.taxonworks.org/OriginRelationship.html" xlink:title="OriginRelationship" target="_blank">
+<g id="a_node16"><a xlink:href="https://rdoc.taxonworks.org/OriginRelationship.html" xlink:title="OriginRelationship" target="_top">
 <polygon fill="#eeefff" stroke="#dddeee" points="649.14,-680.5 529.14,-680.5 529.14,-644.5 649.14,-644.5 649.14,-680.5"/>
 <text text-anchor="middle" x="589.14" y="-658.8" font-family="Times,serif" font-size="14.00">OriginRelationship</text>
 </a>
@@ -316,7 +316,7 @@
 <!-- Citation -->
 <g id="node17" class="node">
 <title>Citation</title>
-<g id="a_node17"><a xlink:href="https://rdoc.taxonworks.org/Citation.html" xlink:title="Citation" target="_blank">
+<g id="a_node17"><a xlink:href="https://rdoc.taxonworks.org/Citation.html" xlink:title="Citation" target="_top">
 <ellipse fill="#abcdef" stroke="#dddeee" cx="85.14" cy="-86.5" rx="38.99" ry="18"/>
 <text text-anchor="middle" x="85.14" y="-82.8" font-family="Times,serif" font-size="14.00">Citation</text>
 </a>
@@ -325,7 +325,7 @@
 <!-- Tag -->
 <g id="node18" class="node">
 <title>Tag</title>
-<g id="a_node18"><a xlink:href="https://rdoc.taxonworks.org/Tag.html" xlink:title="Tag" target="_blank">
+<g id="a_node18"><a xlink:href="https://rdoc.taxonworks.org/Tag.html" xlink:title="Tag" target="_top">
 <ellipse fill="#abcdef" stroke="#dddeee" cx="85.14" cy="-590.5" rx="27" ry="18"/>
 <text text-anchor="middle" x="85.14" y="-586.8" font-family="Times,serif" font-size="14.00">Tag</text>
 </a>
@@ -334,7 +334,7 @@
 <!-- DataAttribute -->
 <g id="node19" class="node">
 <title>DataAttribute</title>
-<g id="a_node19"><a xlink:href="https://rdoc.taxonworks.org/DataAttribute.html" xlink:title="DataAttribute" target="_blank">
+<g id="a_node19"><a xlink:href="https://rdoc.taxonworks.org/DataAttribute.html" xlink:title="DataAttribute" target="_top">
 <ellipse fill="#abcdef" stroke="#dddeee" cx="85.14" cy="-518.5" rx="59.29" ry="18"/>
 <text text-anchor="middle" x="85.14" y="-514.8" font-family="Times,serif" font-size="14.00">DataAttribute</text>
 </a>
@@ -343,7 +343,7 @@
 <!-- Note -->
 <g id="node20" class="node">
 <title>Note</title>
-<g id="a_node20"><a xlink:href="https://rdoc.taxonworks.org/Note.html" xlink:title="Note" target="_blank">
+<g id="a_node20"><a xlink:href="https://rdoc.taxonworks.org/Note.html" xlink:title="Note" target="_top">
 <ellipse fill="#abcdef" stroke="#dddeee" cx="85.14" cy="-302.5" rx="27.9" ry="18"/>
 <text text-anchor="middle" x="85.14" y="-298.8" font-family="Times,serif" font-size="14.00">Note</text>
 </a>
@@ -352,7 +352,7 @@
 <!-- Identifier -->
 <g id="node21" class="node">
 <title>Identifier</title>
-<g id="a_node21"><a xlink:href="https://rdoc.taxonworks.org/Identifier.html" xlink:title="Identifier" target="_blank">
+<g id="a_node21"><a xlink:href="https://rdoc.taxonworks.org/Identifier.html" xlink:title="Identifier" target="_top">
 <ellipse fill="#abcdef" stroke="#dddeee" cx="85.14" cy="-374.5" rx="42.79" ry="18"/>
 <text text-anchor="middle" x="85.14" y="-370.8" font-family="Times,serif" font-size="14.00">Identifier</text>
 </a>
@@ -361,7 +361,7 @@
 <!-- Confidence -->
 <g id="node22" class="node">
 <title>Confidence</title>
-<g id="a_node22"><a xlink:href="https://rdoc.taxonworks.org/Confidence.html" xlink:title="Confidence" target="_blank">
+<g id="a_node22"><a xlink:href="https://rdoc.taxonworks.org/Confidence.html" xlink:title="Confidence" target="_top">
 <ellipse fill="#abcdef" stroke="#dddeee" cx="85.14" cy="-446.5" rx="50.89" ry="18"/>
 <text text-anchor="middle" x="85.14" y="-442.8" font-family="Times,serif" font-size="14.00">Confidence</text>
 </a>
@@ -370,7 +370,7 @@
 <!-- AlternateValue -->
 <g id="node23" class="node">
 <title>AlternateValue</title>
-<g id="a_node23"><a xlink:href="https://rdoc.taxonworks.org/AlternateValue.html" xlink:title="AlternateValue" target="_blank">
+<g id="a_node23"><a xlink:href="https://rdoc.taxonworks.org/AlternateValue.html" xlink:title="AlternateValue" target="_top">
 <ellipse fill="#abcdef" stroke="#dddeee" cx="85.14" cy="-158.5" rx="63.89" ry="18"/>
 <text text-anchor="middle" x="85.14" y="-154.8" font-family="Times,serif" font-size="14.00">AlternateValue</text>
 </a>
@@ -379,7 +379,7 @@
 <!-- Depiction -->
 <g id="node24" class="node">
 <title>Depiction</title>
-<g id="a_node24"><a xlink:href="https://rdoc.taxonworks.org/Depiction.html" xlink:title="Depiction" target="_blank">
+<g id="a_node24"><a xlink:href="https://rdoc.taxonworks.org/Depiction.html" xlink:title="Depiction" target="_top">
 <ellipse fill="#abcdef" stroke="#dddeee" cx="85.14" cy="-662.5" rx="45.49" ry="18"/>
 <text text-anchor="middle" x="85.14" y="-658.8" font-family="Times,serif" font-size="14.00">Depiction</text>
 </a>
@@ -388,7 +388,7 @@
 <!-- ProtocolRelationship -->
 <g id="node25" class="node">
 <title>ProtocolRelationship</title>
-<g id="a_node25"><a xlink:href="https://rdoc.taxonworks.org/ProtocolRelationship.html" xlink:title="ProtocolRelationship" target="_blank">
+<g id="a_node25"><a xlink:href="https://rdoc.taxonworks.org/ProtocolRelationship.html" xlink:title="ProtocolRelationship" target="_top">
 <ellipse fill="#abcdef" stroke="#dddeee" cx="85.14" cy="-230.5" rx="85.29" ry="18"/>
 <text text-anchor="middle" x="85.14" y="-226.8" font-family="Times,serif" font-size="14.00">ProtocolRelationship</text>
 </a>
@@ -397,7 +397,7 @@
 <!-- Attribution -->
 <g id="node26" class="node">
 <title>Attribution</title>
-<g id="a_node26"><a xlink:href="https://rdoc.taxonworks.org/Attribution.html" xlink:title="Attribution" target="_blank">
+<g id="a_node26"><a xlink:href="https://rdoc.taxonworks.org/Attribution.html" xlink:title="Attribution" target="_top">
 <ellipse fill="#abcdef" stroke="#dddeee" cx="85.14" cy="-734.5" rx="50.09" ry="18"/>
 <text text-anchor="middle" x="85.14" y="-730.8" font-family="Times,serif" font-size="14.00">Attribution</text>
 </a>

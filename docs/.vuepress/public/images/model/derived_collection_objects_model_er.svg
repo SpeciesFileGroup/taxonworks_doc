@@ -10,7 +10,7 @@
 <title>DerivedCollectionObject</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-423.19 718,-423.19 718,4 -4,4"/>
 <text text-anchor="middle" x="357" y="-22.8" font-family="Times,serif" font-size="14.00">Algorithmically generated relationships for DerivedCollectionObject based on assertions of &#39;has_many&#39;, &#39;has_one&#39;, &#39;belongs_to&#39;. </text>
-<text text-anchor="middle" x="357" y="-7.8" font-family="Times,serif" font-size="14.00">Generated 2022&#45;01&#45;25 11:37:42 &#45;0600.</text>
+<text text-anchor="middle" x="357" y="-7.8" font-family="Times,serif" font-size="14.00">Generated 2022&#45;01&#45;25 11:43:10 &#45;0600.</text>
 <!-- DerivedCollectionObject&#45;&gt;CollectionObject -->
 <g id="edge5" class="edge">
 <title>DerivedCollectionObject&#45;&gt;CollectionObject</title>

@@ -10,7 +10,7 @@
 <title>DataAttribute</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-610 739.7,-610 739.7,4 -4,4"/>
 <text text-anchor="middle" x="367.85" y="-22.8" font-family="Times,serif" font-size="14.00">Algorithmically generated relationships for DataAttribute based on assertions of &#39;has_many&#39;, &#39;has_one&#39;, &#39;belongs_to&#39;. </text>
-<text text-anchor="middle" x="367.85" y="-7.8" font-family="Times,serif" font-size="14.00">Generated 2022&#45;01&#45;25 11:36:55 &#45;0600.</text>
+<text text-anchor="middle" x="367.85" y="-7.8" font-family="Times,serif" font-size="14.00">Generated 2022&#45;01&#45;25 11:42:25 &#45;0600.</text>
 <!-- DataAttribute&#45;&gt;Citation -->
 <g id="edge2" class="edge">
 <title>DataAttribute&#45;&gt;Citation</title>

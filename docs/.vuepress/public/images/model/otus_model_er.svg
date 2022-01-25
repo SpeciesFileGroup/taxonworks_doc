@@ -10,7 +10,7 @@
 <title>Otu</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-1385 1185.29,-1385 1185.29,4 -4,4"/>
 <text text-anchor="middle" x="590.64" y="-22.8" font-family="Times,serif" font-size="14.00">Algorithmically generated relationships for Otu based on assertions of &#39;has_many&#39;, &#39;has_one&#39;, &#39;belongs_to&#39;. </text>
-<text text-anchor="middle" x="590.64" y="-7.8" font-family="Times,serif" font-size="14.00">Generated 2022&#45;01&#45;25 11:38:14 &#45;0600.</text>
+<text text-anchor="middle" x="590.64" y="-7.8" font-family="Times,serif" font-size="14.00">Generated 2022&#45;01&#45;25 11:43:32 &#45;0600.</text>
 <!-- Citation&#45;&gt;Source -->
 <g id="edge38" class="edge">
 <title>Citation&#45;&gt;Source</title>

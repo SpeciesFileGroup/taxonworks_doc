@@ -10,7 +10,7 @@
 <title>RangedLotCategory</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-359.11 692,-359.11 692,4 -4,4"/>
 <text text-anchor="middle" x="344" y="-22.8" font-family="Times,serif" font-size="14.00">Algorithmically generated relationships for RangedLotCategory based on assertions of &#39;has_many&#39;, &#39;has_one&#39;, &#39;belongs_to&#39;. </text>
-<text text-anchor="middle" x="344" y="-7.8" font-family="Times,serif" font-size="14.00">Generated 2022&#45;01&#45;25 11:38:24 &#45;0600.</text>
+<text text-anchor="middle" x="344" y="-7.8" font-family="Times,serif" font-size="14.00">Generated 2022&#45;01&#45;25 11:43:40 &#45;0600.</text>
 <!-- RangedLotCategory&#45;&gt;PinboardItem -->
 <g id="edge1" class="edge">
 <title>RangedLotCategory&#45;&gt;PinboardItem</title>

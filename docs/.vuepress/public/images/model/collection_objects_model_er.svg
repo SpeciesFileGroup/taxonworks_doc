@@ -10,7 +10,7 @@
 <title>CollectionObject</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-1862 948.65,-1862 948.65,4 -4,4"/>
 <text text-anchor="middle" x="472.32" y="-22.8" font-family="Times,serif" font-size="14.00">Algorithmically generated relationships for CollectionObject based on assertions of &#39;has_many&#39;, &#39;has_one&#39;, &#39;belongs_to&#39;. </text>
-<text text-anchor="middle" x="472.32" y="-7.8" font-family="Times,serif" font-size="14.00">Generated 2022&#45;01&#45;25 11:37:26 &#45;0600.</text>
+<text text-anchor="middle" x="472.32" y="-7.8" font-family="Times,serif" font-size="14.00">Generated 2022&#45;01&#45;25 11:42:55 &#45;0600.</text>
 <!-- Citation&#45;&gt;Source -->
 <g id="edge36" class="edge">
 <title>Citation&#45;&gt;Source</title>

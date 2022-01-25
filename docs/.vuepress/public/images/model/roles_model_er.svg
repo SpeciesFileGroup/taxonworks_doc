@@ -10,7 +10,7 @@
 <title>Role</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-424 608,-424 608,4 -4,4"/>
 <text text-anchor="middle" x="302" y="-22.8" font-family="Times,serif" font-size="14.00">Algorithmically generated relationships for Role based on assertions of &#39;has_many&#39;, &#39;has_one&#39;, &#39;belongs_to&#39;. </text>
-<text text-anchor="middle" x="302" y="-7.8" font-family="Times,serif" font-size="14.00">Generated 2022&#45;01&#45;25 11:37:08 &#45;0600.</text>
+<text text-anchor="middle" x="302" y="-7.8" font-family="Times,serif" font-size="14.00">Generated 2022&#45;01&#45;25 11:42:38 &#45;0600.</text>
 <!-- Role&#45;&gt;Role -->
 <g id="edge2" class="edge">
 <title>Role&#45;&gt;Role</title>

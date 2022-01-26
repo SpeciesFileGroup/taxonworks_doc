@@ -7,7 +7,6 @@ export default defineClientAppEnhance(({ app, router, siteData }) => {
   router.options.scrollBehavior = async (to, from, saved) => {
     if (
       to.path != from.path && 
-      from.path !== modelPath &&
       to.path === modelPath
     ) {
       await new Promise(resolve => setTimeout(resolve, 1000))

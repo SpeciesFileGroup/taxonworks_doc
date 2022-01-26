@@ -3,29 +3,28 @@ sidebarPosition: 300
 ---
 
 # Overview
-_Addresses the questions "What does the data-store in TaxonWorks look like, and what is the thought process behind it?"_
+_Addresses the questions "What does the data-store in TaxonWorks look like, and what is the thought process behind its development?"_
 
-To understand the data model, in addition to the discussion below, there are series of linked resources here.  
+To understand the data model used in TaxonWorks, in addition to the discussion below, there are series of linked resources here.  
 
-1) An graphical "ER" (entity-relationship) representation, draw from the perspective of each model. Follow the `er` links or see the `Model` section. _Most nodes can be clicked to navigate onwards._
-2) A description of the database table for each model. Follow the `table` links or see the`Tables` section.
-3) A text description of each model/class. This is provided in the context of the code for that model. Follow the `rdoc` links from the respective tables and models.
+1) Graphical "ER" (entity-relationship) figures, drawn from the perspective of each model. These are algorithmically drawn. To draw these figures certain constraints are used, this means that they are cleaner looking, and not cluttered, but also that they may not completely illustrate all pertinent classes related to the one in question. Follow the `er` links or see the `Model` section. _Most nodes can be clicked to navigate onwards._
+2) A description of the database table for each model. Tables are named as seen in the headers. Many (but not all) related tables are linked in the column name. Follow the `table` links or see the`Tables` section.
+3) A text description of each model/class. This is provided in the context of the code for that model on a [separate website](https://rdoc.taxonworks.org). That website is generated with each code commit, it includes the full documentation for the TaxonWorks code-base, so it is easy to get lost for the uninitiated.  Follow the `rdoc` links from the respective tables and models. Using this site as a basis for exploring `rdoc` can keep you from getting lost therein.
 
 ## Concepts 
-
-At its core TaxonWorks' data model is a handfull of straightforward, yet broad `core` concepts (orange rounded ovals below): 
+At its core TaxonWorks' data model is a handful of straightforward, yet broad `core` concepts (orange rounded ovals below): 
 * [Taxon names](/develop/Data/models.html#taxon-name) - about nomenclature
 * [Collection objects](/develop/Data/models.html#collection-object) - about specimens 
 * [Collecting events](/develop/Data/models.html#collecting-event) - who, where, when, and how some things was collected
-* [OTUs](/develop/Data/models.html#otu) - like species or taxon concepts, but even broader, a place to link all the bits that aren't nomenclature, a useful biological unit permiting meaningful work
-* [Observations](/develop/Data/models.html#observation) - data about CollectionObjects or Otus, e.g. characters or measurements
-* [Descriptors](/develop/Data/models.html#descriptor) - classes of observations, like quantitative, qualitative, or statistical
+* [OTUs](/develop/Data/models.html#otu) - like species or taxon concepts, but even broader, a place to link all the bits that aren't nomenclature, a useful biological unit permitting meaningful work
+* [Observations](/develop/Data/models.html#observation) - data about CollectionObjects or OTUs, e.g. characters or measurements
+* [Descriptors](/develop/Data/models.html#descriptor) - classes of Observations, like quantitative, qualitative, or statistical
 * [Asserted distributions](/develop/Data/models.html#asserted-distribution) - the low-resolution distribution of OTUs according to the literature
 * [Biological associations](/develop/Data/models.html#biological-association) - biological relationships, like host-parasite
 * [Sequence](/develop/Data/models.html#sequence) - curated chunks of the genome
 * [Source](/develop/Data/models.html#source) - a reference
 
-The other types of data are looslely classified as `annotations` (blue ovals) and `supporting` (light-blue rectangles). Annotations can be thought of as ways to customize the data-model. Supporting data are the bits of information that link to and across core classes, for example a [Citation](/develop/Data/models.html#citation) links a [Source](/develop/Data/models.html#source) to nearly everything.
+The other types of data are loosely classified as `annotations` (blue ovals) and `supporting` (light-blue rectangles). Annotations can be thought of as ways to customize the data-model. Supporting data are the bits of information that link to and across `core` classes, for example a [Citation](/develop/Data/models.html#citation) links a [Source](/develop/Data/models.html#source) to nearly anything. This organization, core, supporting, annotation, is echoed in the UI by clicking the "Data" tab in the hub.
 
 <figure>
   <object data="/images/model/er.svg" type="image/svg+xml"> </object>
@@ -35,11 +34,11 @@ The other types of data are looslely classified as `annotations` (blue ovals) an
 </figure>
 
 ## Meta-model
-TaxonWorks uses an "ontology-based, graph-aware, relational database" approach to representing and storing data. Practically speaking this means several things:
-* Each Data table (see below) corresponds to a class of data. A record in that table asserts that an single instance of that class exists. This is the "Ontology" bit.
-* In various cases data are organized into graph patterns (network-based, i.e. nodes, edges, and their attributes) ammenable to down-stream migration into graph databases (e.g. [TaxonNames](), [BiologicalAssociations]()) or serialization into formats like RDF.
-* Tables are named exactly as the class is named, in a pluralized format, for example the class [`TaxonName`]() is stored in table [`taxon_names`]()).
-* Some classes of data have subclasses (e.g. `BiologicalCollectionObject` is a subclass of [CollectionObject](/develop/Data/models.html#collection-object) and `Specimen` is a subclass of [BiologicalCollectionObject]. Each subclass adds assertions as to what the thing being represented is. Subclass assertions are stored in the field `type` (e.g. [CollectionObject](develop/Data/tables.html#collection-objects).
+TaxonWorks uses an "ontology-based, graph-aware, relational database" approach to representing and storing data. Practically, this means several things:
+* Each [data table](/develop/Data/tables.htm) corresponds to a class of data. A record in that table asserts that an single instance of that class exists. This is the "Ontology" bit.
+* In various cases data are organized into graph patterns (network-based, i.e. nodes, edges, and their attributes) amenable to down-stream migration into graph databases (e.g.[`TaxonName`](/develop/Data/models.html#taxon-name) and [Biological associations](/develop/Data/models.html#biological-association)) or serialization into formats like RDF.
+* Tables are named exactly as the class is named, in a pluralized format, for example the class [`TaxonName`](/develop/Data/models.html#taxon-name) is stored in table [`taxon_names`](develop/Data/tables.html#taxon-names)).
+* Some classes of data have subclasses (e.g. `BiologicalCollectionObject` is a subclass of [CollectionObject](/develop/Data/models.html#collection-object) and `Specimen` is a subclass of `BiologicalCollectionObject`. Each subclass adds assertions as to what the thing being represented is. Subclass assertions are stored in the field `type` (e.g. [CollectionObject](develop/Data/tables.html#collection-objects).
 * Some classes of data are "polymorphic", particularly annotators (see below). This means that one table references many other tables by a combination of `<object>_type` and `<object>_id`.  For example see the fields `note_object_id` and `note_object_type` in [Notes](develop/Data/tables.html#notes).
 
 There are well known arguments as to when/how each aspect of this approach breaks down or fails in certain circumstances.  Our approach is to try and balance the semantics of the data models with the understanding and needs of the scientists using them. Too much semantics and there is a disconnect between what they actually do and the model, too little and things like identifiers, citations, provenance and attribution are not supported.
@@ -52,10 +51,9 @@ In addition to the individual table-class approach there are several higher-leve
 * Project - Describes Users, and Projects, i.e. manages who can curate what data.
 * UI/Display/Layout - Tables that define how we display, visualize, or present Data.
 
-When customizing or adapting TaxonWorks to your needs, maintaing this seperate of concerns will faciliate the long term integrity of your data. For example, you can create custom attributes for Data classes via [DataAttributes](/develop/Data/models.html#data-attribute), these attributes should describe the things they are tied to, not just what "I want to see on some page".
+When customizing or adapting TaxonWorks to your needs, maintaining this separate of concerns will facilitate the long term integrity of your data. For example, you can create custom attributes for Data classes via [DataAttributes](/develop/Data/models.html#data-attribute), these attributes should describe the things they are tied to, not just what "I want to see on some page".
 
 ## Code
-
 As noted the database model is mirrored almost exactly in code, for example the [`otus table`](develop/Data/tables.html#otus) is represented by an [`OTU model`](/develop/Data/models.html#otu) in a [`otu.rb file`](https://rdoc.taxonworks.org/Otu.html). This is broadly a convention from [Rails](https://rubyonrails.org/), to back-end software to TaxonWorks.
 
 ## Database

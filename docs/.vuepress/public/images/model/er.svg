@@ -9,7 +9,7 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 711.5)">
 <title>G</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-711.5 548.14,-711.5 548.14,4 -4,4"/>
-<text text-anchor="middle" x="272.07" y="-7.8" font-family="Times,serif" font-size="14.00">Generated 2022&#45;01&#45;25 14:16:59 &#45;0600 via &#39;rake tw:docs:er&#39;.</text>
+<text text-anchor="middle" x="272.07" y="-7.8" font-family="Times,serif" font-size="14.00">Generated 2022&#45;01&#45;26 16:02:29 &#45;0600 via &#39;rake tw:docs:er&#39;.</text>
 <!-- CollectingEvent&#45;&gt;CollectionObject -->
 <g id="edge5" class="edge">
 <title>CollectingEvent&#45;&gt;CollectionObject</title>

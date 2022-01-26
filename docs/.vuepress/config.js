@@ -1,6 +1,7 @@
 const navbar = require('./configs/navbar')
 const sidebar = require('./configs/sidebar')
 const pluginsLang = require('./configs/plugins')
+const path = require('path')
 
 module.exports = {
   lang: 'en-US',
@@ -21,6 +22,7 @@ module.exports = {
       description: 'TaxonWorks es un banco de trabajo con muchas herramientas para describir la vida. Este sitio contiene la documentación',
     },
   },
+  clientAppEnhanceFiles: path.resolve(__dirname, './configs/clientAppEnhance.js'),
 
   themeConfig: {
     docsRepo: 'https://github.com/SpeciesFileGroup/taxonworks_doc',

@@ -1,7 +1,7 @@
 const navbar = require('./configs/navbar')
 const sidebar = require('./configs/sidebar')
 const pluginsLang = require('./configs/plugins')
-const path = require('path')
+const { path } = require('@vuepress/utils')
 
 module.exports = {
   lang: 'en-US',

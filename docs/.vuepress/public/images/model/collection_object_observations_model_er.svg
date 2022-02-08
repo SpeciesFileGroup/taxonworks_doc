@@ -12,13 +12,13 @@
 <!-- Depiction&#45;&gt;Image -->
 <g id="edge4" class="edge">
 <title>Depiction&#45;&gt;Image</title>
-<path fill="none" stroke="black" d="M91.07,-209.69C128.59,-210.05 181.59,-210.56 216.62,-210.9"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M91.07,-209.69C128.59,-210.05 181.59,-210.56 216.62,-210.9"/>
 <polygon fill="black" stroke="black" points="216.85,-214.41 226.88,-211 216.92,-207.41 216.85,-214.41"/>
 </g>
 <!-- Tag&#45;&gt;Keyword -->
 <g id="edge5" class="edge">
 <title>Tag&#45;&gt;Keyword</title>
-<path fill="none" stroke="black" d="M72.66,-97C107.3,-96.67 168.81,-96.07 210.27,-95.67"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M72.66,-97C107.3,-96.67 168.81,-96.07 210.27,-95.67"/>
 <polygon fill="black" stroke="black" points="210.38,-99.17 220.35,-95.57 210.31,-92.17 210.38,-99.17"/>
 </g>
 <!-- CollectionObjectObservation&#45;&gt;Depiction -->
@@ -84,14 +84,14 @@
 <!-- DerivedCollectionObject&#45;&gt;CollectionObject -->
 <g id="edge1" class="edge">
 <title>DerivedCollectionObject&#45;&gt;CollectionObject</title>
-<path fill="none" stroke="black" d="M569.24,-315.26C577.8,-315.26 586.46,-315.26 594.85,-315.26"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M569.24,-315.26C577.8,-315.26 586.46,-315.26 594.85,-315.26"/>
 <polygon fill="black" stroke="black" points="594.92,-318.76 604.92,-315.26 594.92,-311.76 594.92,-318.76"/>
 </g>
 <!-- Role&#45;&gt;Verifier -->
 <!-- VerifierRole&#45;&gt;Verifier -->
 <g id="edge11" class="edge">
 <title>VerifierRole&#45;&gt;Verifier</title>
-<path fill="none" stroke="black" d="M534.88,-159.93C561.22,-164.25 595.28,-169.84 621.01,-174.07"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M534.88,-159.93C561.22,-164.25 595.28,-169.84 621.01,-174.07"/>
 <polygon fill="black" stroke="black" points="620.7,-177.56 631.13,-175.73 621.83,-170.66 620.7,-177.56"/>
 </g>
 <!-- Creator&#45;&gt;Updater -->

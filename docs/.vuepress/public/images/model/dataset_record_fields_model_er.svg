@@ -36,20 +36,26 @@
 <!-- DatasetRecordField&#45;&gt;ImportDataset -->
 <g id="edge6" class="edge">
 <title>DatasetRecordField&#45;&gt;ImportDataset</title>
-<path fill="none" stroke="black" stroke-dasharray="1,5" d="M145.04,-128.31C171.39,-115.99 202.7,-101.35 226.78,-90.09"/>
-<polygon fill="black" stroke="black" points="143.52,-125.15 135.95,-132.56 146.49,-131.5 143.52,-125.15"/>
+<path fill="none" stroke="black" d="M145.04,-128.31C168.1,-117.53 194.95,-104.97 217.44,-94.46"/>
+<polygon fill="none" stroke="black" points="137.64,-136.18 134.25,-128.94 141.5,-125.55 144.89,-132.8 137.64,-136.18"/>
+<polyline fill="none" stroke="black" points="143.19,-129.17 145.01,-128.32 "/>
+<polygon fill="none" stroke="black" points="225.09,-86.46 228.48,-93.71 221.23,-97.1 217.84,-89.85 225.09,-86.46"/>
+<polyline fill="none" stroke="black" points="219.54,-93.48 217.73,-94.32 "/>
 </g>
 <!-- DatasetRecordField&#45;&gt;Project -->
 <g id="edge7" class="edge">
 <title>DatasetRecordField&#45;&gt;Project</title>
-<path fill="none" stroke="black" stroke-dasharray="1,5" d="M122.98,-123.85C147.75,-101.07 184.02,-69.31 218.47,-45 224.77,-40.55 231.86,-36.18 238.58,-32.3"/>
-<polygon fill="black" stroke="black" points="120.31,-121.54 115.35,-130.91 125.07,-126.68 120.31,-121.54"/>
+<path fill="none" stroke="black" d="M122.98,-123.85C147.75,-101.07 184.02,-69.31 218.47,-45 222.11,-42.43 226.02,-39.88 229.96,-37.44"/>
+<polygon fill="none" stroke="black" points="118.07,-133.84 112.63,-127.97 118.51,-122.54 123.94,-128.41 118.07,-133.84"/>
+<polyline fill="none" stroke="black" points="121.22,-125.47 122.69,-124.11 "/>
+<polygon fill="none" stroke="black" points="236.53,-28.86 240.63,-35.73 233.76,-39.83 229.66,-32.96 236.53,-28.86"/>
+<polyline fill="none" stroke="black" points="231.71,-36.4 229.99,-37.42 "/>
 </g>
 <!-- Role&#45;&gt;Verifier -->
 <!-- VerifierRole&#45;&gt;Verifier -->
 <g id="edge4" class="edge">
 <title>VerifierRole&#45;&gt;Verifier</title>
-<path fill="none" stroke="black" d="M307.98,-189.9C318.52,-192.47 329.82,-195.24 340.21,-197.77"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M307.98,-189.9C318.52,-192.47 329.82,-195.24 340.21,-197.77"/>
 <polygon fill="black" stroke="black" points="339.68,-201.25 350.22,-200.22 341.34,-194.45 339.68,-201.25"/>
 </g>
 <!-- DatasetRecordField -->

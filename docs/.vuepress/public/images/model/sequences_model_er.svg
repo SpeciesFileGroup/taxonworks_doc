@@ -12,25 +12,25 @@
 <!-- AlternateValue&#45;&gt;AlternateValueLanguage -->
 <g id="edge1" class="edge">
 <title>AlternateValue&#45;&gt;AlternateValueLanguage</title>
-<path fill="none" stroke="black" d="M149.07,-573.53C164.01,-573.53 180.19,-573.53 195.94,-573.53"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M149.07,-573.53C164.01,-573.53 180.19,-573.53 195.94,-573.53"/>
 <polygon fill="black" stroke="black" points="196.2,-577.03 206.2,-573.53 196.2,-570.03 196.2,-577.03"/>
 </g>
 <!-- Confidence&#45;&gt;ConfidenceLevel -->
 <g id="edge5" class="edge">
 <title>Confidence&#45;&gt;ConfidenceLevel</title>
-<path fill="none" stroke="black" d="M136.01,-519.53C160.58,-519.53 190.47,-519.53 216.71,-519.53"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M136.01,-519.53C160.58,-519.53 190.47,-519.53 216.71,-519.53"/>
 <polygon fill="black" stroke="black" points="216.94,-523.03 226.94,-519.53 216.94,-516.03 216.94,-523.03"/>
 </g>
 <!-- Tag&#45;&gt;Keyword -->
 <g id="edge15" class="edge">
 <title>Tag&#45;&gt;Keyword</title>
-<path fill="none" stroke="black" d="M112.39,-303.53C144.55,-303.53 199.46,-303.53 237.81,-303.53"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M112.39,-303.53C144.55,-303.53 199.46,-303.53 237.81,-303.53"/>
 <polygon fill="black" stroke="black" points="238.15,-307.03 248.15,-303.53 238.15,-300.03 238.15,-307.03"/>
 </g>
 <!-- ProtocolRelationship&#45;&gt;Protocol -->
 <g id="edge25" class="edge">
 <title>ProtocolRelationship&#45;&gt;Protocol</title>
-<path fill="none" stroke="black" d="M170.38,-249.53C194.71,-249.53 220.14,-249.53 240.46,-249.53"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M170.38,-249.53C194.71,-249.53 220.14,-249.53 240.46,-249.53"/>
 <polygon fill="black" stroke="black" points="240.58,-253.03 250.58,-249.53 240.58,-246.03 240.58,-253.03"/>
 </g>
 <!-- Sequence&#45;&gt;AlternateValue -->
@@ -180,87 +180,87 @@
 <!-- BlastQuerySequenceRelationship&#45;&gt;BlastQuerySequenceSequence -->
 <g id="edge4" class="edge">
 <title>BlastQuerySequenceRelationship&#45;&gt;BlastQuerySequenceSequence</title>
-<path fill="none" stroke="black" d="M625.13,-854.53C654.58,-854.53 686.91,-854.53 716.51,-854.53"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M625.13,-854.53C654.58,-854.53 686.91,-854.53 716.51,-854.53"/>
 <polygon fill="black" stroke="black" points="716.86,-858.03 726.86,-854.53 716.86,-851.03 716.86,-858.03"/>
 </g>
 <!-- OriginRelationship&#45;&gt;DerivedSequence -->
 <g id="edge8" class="edge">
 <title>OriginRelationship&#45;&gt;DerivedSequence</title>
-<path fill="none" stroke="black" d="M585.92,-787.78C634.19,-790.44 702.31,-794.19 752.14,-796.94"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M585.92,-787.78C634.19,-790.44 702.31,-794.19 752.14,-796.94"/>
 <polygon fill="black" stroke="black" points="751.99,-800.44 762.16,-797.49 752.37,-793.45 751.99,-800.44"/>
 </g>
 <!-- OriginRelationship&#45;&gt;RelatedOriginRelationship -->
 <!-- Documentation&#45;&gt;Document -->
 <g id="edge10" class="edge">
 <title>Documentation&#45;&gt;Document</title>
-<path fill="none" stroke="black" d="M576.39,-692.53C630.93,-692.53 717.86,-692.53 771.03,-692.53"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M576.39,-692.53C630.93,-692.53 717.86,-692.53 771.03,-692.53"/>
 <polygon fill="black" stroke="black" points="771.19,-696.03 781.19,-692.53 771.19,-689.03 771.19,-696.03"/>
 </g>
 <!-- ForwardPrimerRelationship&#45;&gt;ForwardPrimerSequence -->
 <g id="edge12" class="edge">
 <title>ForwardPrimerRelationship&#45;&gt;ForwardPrimerSequence</title>
-<path fill="none" stroke="black" d="M610.03,-638.53C648.2,-638.53 693.4,-638.53 731.83,-638.53"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M610.03,-638.53C648.2,-638.53 693.4,-638.53 731.83,-638.53"/>
 <polygon fill="black" stroke="black" points="731.97,-642.03 741.97,-638.53 731.97,-635.03 731.97,-642.03"/>
 </g>
 <!-- RelatedOriginRelationship&#45;&gt;OriginExtract -->
 <g id="edge17" class="edge">
 <title>RelatedOriginRelationship&#45;&gt;OriginExtract</title>
-<path fill="none" stroke="black" d="M898.88,-729.94C913.37,-726.67 928.31,-723.13 942.28,-719.53 954.13,-716.47 966.75,-712.92 978.71,-709.42"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M898.88,-729.94C913.37,-726.67 928.31,-723.13 942.28,-719.53 954.13,-716.47 966.75,-712.92 978.71,-709.42"/>
 <polygon fill="black" stroke="black" points="979.97,-712.69 988.57,-706.49 977.98,-705.98 979.97,-712.69"/>
 </g>
 <!-- RelatedOriginRelationship&#45;&gt;OriginLot -->
 <g id="edge18" class="edge">
 <title>RelatedOriginRelationship&#45;&gt;OriginLot</title>
-<path fill="none" stroke="black" d="M899.07,-738.33C914.3,-734.26 929.47,-728.28 942.28,-719.53 966.1,-703.25 956.59,-684.54 978.28,-665.53 981.75,-662.49 985.63,-659.7 989.66,-657.17"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M899.07,-738.33C914.3,-734.26 929.47,-728.28 942.28,-719.53 966.1,-703.25 956.59,-684.54 978.28,-665.53 981.75,-662.49 985.63,-659.7 989.66,-657.17"/>
 <polygon fill="black" stroke="black" points="991.72,-660.03 998.68,-652.05 988.26,-653.95 991.72,-660.03"/>
 </g>
 <!-- RelatedOriginRelationship&#45;&gt;OriginRangedLot -->
 <g id="edge19" class="edge">
 <title>RelatedOriginRelationship&#45;&gt;OriginRangedLot</title>
-<path fill="none" stroke="black" d="M899.07,-754.73C914.3,-758.79 929.47,-764.77 942.28,-773.53 966.1,-789.8 956.59,-808.52 978.28,-827.53 979.58,-828.66 980.93,-829.76 982.32,-830.82"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M899.07,-754.73C914.3,-758.79 929.47,-764.77 942.28,-773.53 966.1,-789.8 956.59,-808.52 978.28,-827.53 979.58,-828.66 980.93,-829.76 982.32,-830.82"/>
 <polygon fill="black" stroke="black" points="980.45,-833.78 990.68,-836.51 984.39,-827.99 980.45,-833.78"/>
 </g>
 <!-- RelatedOriginRelationship&#45;&gt;OriginSequence -->
 <g id="edge21" class="edge">
 <title>RelatedOriginRelationship&#45;&gt;OriginSequence</title>
-<path fill="none" stroke="black" d="M898.88,-763.12C913.37,-766.39 928.31,-769.92 942.28,-773.53 951.98,-776.03 962.2,-778.86 972.14,-781.73"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M898.88,-763.12C913.37,-766.39 928.31,-769.92 942.28,-773.53 951.98,-776.03 962.2,-778.86 972.14,-781.73"/>
 <polygon fill="black" stroke="black" points="971.39,-785.15 981.97,-784.6 973.35,-778.43 971.39,-785.15"/>
 </g>
 <!-- RelatedOriginRelationship&#45;&gt;OriginSpecimen -->
 <g id="edge22" class="edge">
 <title>RelatedOriginRelationship&#45;&gt;OriginSpecimen</title>
-<path fill="none" stroke="black" d="M898.97,-746.53C922.78,-746.53 948.51,-746.53 971.03,-746.53"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M898.97,-746.53C922.78,-746.53 948.51,-746.53 971.03,-746.53"/>
 <polygon fill="black" stroke="black" points="971.13,-750.03 981.13,-746.53 971.13,-743.03 971.13,-750.03"/>
 </g>
 <!-- ReferenceSequenceForAssemblyRelationship&#45;&gt;ReferenceSequenceForAssemblySequence -->
 <g id="edge27" class="edge">
 <title>ReferenceSequenceForAssemblyRelationship&#45;&gt;ReferenceSequenceForAssemblySequence</title>
-<path fill="none" stroke="black" d="M658.44,-438.53C666.87,-438.53 675.36,-438.53 683.8,-438.53"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M658.44,-438.53C666.87,-438.53 675.36,-438.53 683.8,-438.53"/>
 <polygon fill="black" stroke="black" points="684.06,-442.03 694.06,-438.53 684.06,-435.03 684.06,-442.03"/>
 </g>
 <!-- RelatedSequenceRelationship&#45;&gt;RelatedSequence -->
 <g id="edge30" class="edge">
 <title>RelatedSequenceRelationship&#45;&gt;RelatedSequence</title>
-<path fill="none" stroke="black" d="M615.13,-384.53C659.6,-384.53 712.53,-384.53 753.07,-384.53"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M615.13,-384.53C659.6,-384.53 712.53,-384.53 753.07,-384.53"/>
 <polygon fill="black" stroke="black" points="753.1,-388.03 763.1,-384.53 753.1,-381.03 753.1,-388.03"/>
 </g>
 <!-- ReversePrimerRelationship&#45;&gt;ReversePrimerSequence -->
 <g id="edge32" class="edge">
 <title>ReversePrimerRelationship&#45;&gt;ReversePrimerSequence</title>
-<path fill="none" stroke="black" d="M608.87,-330.53C647.68,-330.53 693.96,-330.53 733.05,-330.53"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M608.87,-330.53C647.68,-330.53 693.96,-330.53 733.05,-330.53"/>
 <polygon fill="black" stroke="black" points="733.34,-334.03 743.34,-330.53 733.34,-327.03 733.34,-334.03"/>
 </g>
 <!-- Role&#45;&gt;Verifier -->
 <!-- SequenceRelationship&#45;&gt;Sequence -->
 <g id="edge35" class="edge">
 <title>SequenceRelationship&#45;&gt;Sequence</title>
-<path fill="none" stroke="black" d="M457.03,-176.97C434.25,-180.84 410.32,-188.45 393.28,-204.53 348.12,-247.14 387.17,-285.09 357.28,-339.53 347.83,-356.75 333.95,-373.2 320.73,-386.14"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M457.03,-176.97C434.25,-180.84 410.32,-188.45 393.28,-204.53 348.12,-247.14 387.17,-285.09 357.28,-339.53 347.83,-356.75 333.95,-373.2 320.73,-386.14"/>
 <polygon fill="black" stroke="black" points="317.96,-383.94 313.06,-393.34 322.75,-389.05 317.96,-383.94"/>
 </g>
 <!-- VerifierRole&#45;&gt;Verifier -->
 <g id="edge38" class="edge">
 <title>VerifierRole&#45;&gt;Verifier</title>
-<path fill="none" stroke="black" d="M567.48,-272.74C623.82,-267.51 724.78,-258.12 779.51,-253.04"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M567.48,-272.74C623.82,-267.51 724.78,-258.12 779.51,-253.04"/>
 <polygon fill="black" stroke="black" points="779.86,-256.52 789.5,-252.11 779.22,-249.55 779.86,-256.52"/>
 </g>
 <!-- Version&#45;&gt;PinboardItem -->

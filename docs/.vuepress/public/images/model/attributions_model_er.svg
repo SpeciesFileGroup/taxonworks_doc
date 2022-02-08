@@ -96,44 +96,44 @@
 <!-- Confidence&#45;&gt;ConfidenceLevel -->
 <g id="edge5" class="edge">
 <title>Confidence&#45;&gt;ConfidenceLevel</title>
-<path fill="none" stroke="black" d="M114.78,-73.94C132.96,-64.6 157.43,-52.91 180.06,-45 196.19,-39.36 214.02,-34.52 230.7,-30.57"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M114.78,-73.94C132.96,-64.6 157.43,-52.91 180.06,-45 196.19,-39.36 214.02,-34.52 230.7,-30.57"/>
 <polygon fill="black" stroke="black" points="231.96,-33.87 240.92,-28.22 230.39,-27.05 231.96,-33.87"/>
 </g>
 <!-- Tag&#45;&gt;Keyword -->
 <g id="edge10" class="edge">
 <title>Tag&#45;&gt;Keyword</title>
-<path fill="none" stroke="black" d="M100.43,-163.54C117.27,-145.32 147.75,-115.43 180.06,-99 202.49,-87.59 229.85,-80.91 252.21,-77.05"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M100.43,-163.54C117.27,-145.32 147.75,-115.43 180.06,-99 202.49,-87.59 229.85,-80.91 252.21,-77.05"/>
 <polygon fill="black" stroke="black" points="252.77,-80.51 262.1,-75.47 251.67,-73.59 252.77,-80.51"/>
 </g>
 <!-- CopyrightHolderRole&#45;&gt;AttributionCopyrightHolder -->
 <g id="edge1" class="edge">
 <title>CopyrightHolderRole&#45;&gt;AttributionCopyrightHolder</title>
-<path fill="none" stroke="black" d="M362.77,-542C385.82,-542 412.15,-542 437,-542"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M362.77,-542C385.82,-542 412.15,-542 437,-542"/>
 <polygon fill="black" stroke="black" points="437.18,-545.5 447.18,-542 437.18,-538.5 437.18,-545.5"/>
 </g>
 <!-- CreatorRole&#45;&gt;AttributionCreator -->
 <g id="edge2" class="edge">
 <title>CreatorRole&#45;&gt;AttributionCreator</title>
-<path fill="none" stroke="black" d="M337.14,-488C371.76,-488 422.29,-488 463.04,-488"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M337.14,-488C371.76,-488 422.29,-488 463.04,-488"/>
 <polygon fill="black" stroke="black" points="463.18,-491.5 473.18,-488 463.18,-484.5 463.18,-491.5"/>
 </g>
 <!-- EditorRole&#45;&gt;AttributionEditor -->
 <g id="edge3" class="edge">
 <title>EditorRole&#45;&gt;AttributionEditor</title>
-<path fill="none" stroke="black" d="M333.72,-434C369.29,-434 423.72,-434 466.36,-434"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M333.72,-434C369.29,-434 423.72,-434 466.36,-434"/>
 <polygon fill="black" stroke="black" points="466.37,-437.5 476.37,-434 466.37,-430.5 466.37,-437.5"/>
 </g>
 <!-- OwnerRole&#45;&gt;AttributionOwner -->
 <g id="edge4" class="edge">
 <title>OwnerRole&#45;&gt;AttributionOwner</title>
-<path fill="none" stroke="black" d="M335.29,-380C370.43,-380 423.04,-380 464.82,-380"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M335.29,-380C370.43,-380 423.04,-380 464.82,-380"/>
 <polygon fill="black" stroke="black" points="464.92,-383.5 474.92,-380 464.92,-376.5 464.92,-383.5"/>
 </g>
 <!-- Role&#45;&gt;Verifier -->
 <!-- VerifierRole&#45;&gt;Verifier -->
 <g id="edge17" class="edge">
 <title>VerifierRole&#45;&gt;Verifier</title>
-<path fill="none" stroke="black" d="M337.14,-222.67C381.02,-227.73 450.46,-235.74 493.15,-240.67"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M337.14,-222.67C381.02,-227.73 450.46,-235.74 493.15,-240.67"/>
 <polygon fill="black" stroke="black" points="492.8,-244.15 503.14,-241.82 493.6,-237.2 492.8,-244.15"/>
 </g>
 <!-- Creator&#45;&gt;Updater -->

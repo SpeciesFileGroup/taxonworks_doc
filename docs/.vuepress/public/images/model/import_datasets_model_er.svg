@@ -74,7 +74,7 @@
 <!-- VerifierRole&#45;&gt;Verifier -->
 <g id="edge8" class="edge">
 <title>VerifierRole&#45;&gt;Verifier</title>
-<path fill="none" stroke="black" d="M281.6,-165.17C311.17,-169.69 350.79,-175.75 379.56,-180.15"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M281.6,-165.17C311.17,-169.69 350.79,-175.75 379.56,-180.15"/>
 <polygon fill="black" stroke="black" points="379.22,-183.64 389.63,-181.69 380.28,-176.72 379.22,-183.64"/>
 </g>
 <!-- Creator&#45;&gt;Updater -->

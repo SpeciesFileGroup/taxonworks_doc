@@ -12,19 +12,19 @@
 <!-- AlternateValue&#45;&gt;AlternateValueLanguage -->
 <g id="edge1" class="edge">
 <title>AlternateValue&#45;&gt;AlternateValueLanguage</title>
-<path fill="none" stroke="black" d="M127.71,-288C135.98,-288 144.57,-288 153.13,-288"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M127.71,-288C135.98,-288 144.57,-288 153.13,-288"/>
 <polygon fill="black" stroke="black" points="153.14,-291.5 163.14,-288 153.14,-284.5 153.14,-291.5"/>
 </g>
 <!-- Confidence&#45;&gt;ConfidenceLevel -->
 <g id="edge4" class="edge">
 <title>Confidence&#45;&gt;ConfidenceLevel</title>
-<path fill="none" stroke="black" d="M114.79,-234C133.34,-234 154.62,-234 174.21,-234"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M114.79,-234C133.34,-234 154.62,-234 174.21,-234"/>
 <polygon fill="black" stroke="black" points="174.28,-237.5 184.28,-234 174.28,-230.5 174.28,-237.5"/>
 </g>
 <!-- Tag&#45;&gt;Keyword -->
 <g id="edge9" class="edge">
 <title>Tag&#45;&gt;Keyword</title>
-<path fill="none" stroke="black" d="M91,-18C118.58,-18 162.36,-18 194.96,-18"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M91,-18C118.58,-18 162.36,-18 194.96,-18"/>
 <polygon fill="black" stroke="black" points="195.11,-21.5 205.11,-18 195.11,-14.5 195.11,-21.5"/>
 </g>
 <!-- Repository&#45;&gt;AlternateValue -->
@@ -109,7 +109,7 @@
 <!-- VerifierRole&#45;&gt;Verifier -->
 <g id="edge15" class="edge">
 <title>VerifierRole&#45;&gt;Verifier</title>
-<path fill="none" stroke="black" d="M446.67,-141.71C459.67,-138.75 473.98,-135.49 486.74,-132.58"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M446.67,-141.71C459.67,-138.75 473.98,-135.49 486.74,-132.58"/>
 <polygon fill="black" stroke="black" points="487.62,-135.97 496.59,-130.33 486.06,-129.14 487.62,-135.97"/>
 </g>
 <!-- Creator&#45;&gt;Updater -->

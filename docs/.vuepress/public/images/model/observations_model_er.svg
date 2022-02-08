@@ -12,31 +12,31 @@
 <!-- Citation&#45;&gt;Source -->
 <g id="edge13" class="edge">
 <title>Citation&#45;&gt;Source</title>
-<path fill="none" stroke="black" d="M98.27,-599.41C158.05,-599.41 273.07,-599.41 331.93,-599.41"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M98.27,-599.41C158.05,-599.41 273.07,-599.41 331.93,-599.41"/>
 <polygon fill="black" stroke="black" points="332.23,-602.91 342.23,-599.41 332.23,-595.91 332.23,-602.91"/>
 </g>
 <!-- Citation&#45;&gt;CitationTopic -->
 <g id="edge1" class="edge">
 <title>Citation&#45;&gt;CitationTopic</title>
-<path fill="none" stroke="black" d="M90.5,-610.15C110.55,-617.24 137.39,-626.73 161.08,-635.11"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M90.5,-610.15C110.55,-617.24 137.39,-626.73 161.08,-635.11"/>
 <polygon fill="black" stroke="black" points="160.07,-638.46 170.66,-638.49 162.4,-631.86 160.07,-638.46"/>
 </g>
 <!-- Confidence&#45;&gt;ConfidenceLevel -->
 <g id="edge3" class="edge">
 <title>Confidence&#45;&gt;ConfidenceLevel</title>
-<path fill="none" stroke="black" d="M110.21,-470.41C123.38,-470.41 137.76,-470.41 151.55,-470.41"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M110.21,-470.41C123.38,-470.41 137.76,-470.41 151.55,-470.41"/>
 <polygon fill="black" stroke="black" points="151.95,-473.91 161.95,-470.41 151.95,-466.91 151.95,-473.91"/>
 </g>
 <!-- Depiction&#45;&gt;Image -->
 <g id="edge8" class="edge">
 <title>Depiction&#45;&gt;Image</title>
-<path fill="none" stroke="black" d="M104.71,-254.41C128.43,-254.41 157.21,-254.41 179.52,-254.41"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M104.71,-254.41C128.43,-254.41 157.21,-254.41 179.52,-254.41"/>
 <polygon fill="black" stroke="black" points="179.58,-257.91 189.58,-254.41 179.58,-250.91 179.58,-257.91"/>
 </g>
 <!-- Tag&#45;&gt;Keyword -->
 <g id="edge9" class="edge">
 <title>Tag&#45;&gt;Keyword</title>
-<path fill="none" stroke="black" d="M86.18,-200.41C109.8,-200.41 145.06,-200.41 172.84,-200.41"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M86.18,-200.41C109.8,-200.41 145.06,-200.41 172.84,-200.41"/>
 <polygon fill="black" stroke="black" points="173.07,-203.91 183.07,-200.41 173.07,-196.91 173.07,-203.91"/>
 </g>
 <!-- Observation&#45;&gt;Citation -->
@@ -84,8 +84,11 @@
 <!-- Observation&#45;&gt;Source -->
 <g id="edge28" class="edge">
 <title>Observation&#45;&gt;Source</title>
-<path fill="none" stroke="black" stroke-dasharray="1,5" d="M238.27,-368.37C251.3,-388.98 267.76,-417.02 279.07,-443.41 301.5,-495.77 280.53,-521.12 315.07,-566.41 322.15,-575.7 332.66,-582.99 342.49,-588.33"/>
-<polygon fill="black" stroke="black" points="241.09,-366.27 232.74,-359.74 235.19,-370.05 241.09,-366.27"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M238.27,-368.37C251.3,-388.98 267.76,-417.02 279.07,-443.41 301.5,-495.77 280.53,-521.12 315.07,-566.41 320.05,-572.94 326.72,-578.48 333.66,-583.05"/>
+<polygon fill="none" stroke="black" points="229.38,-361.9 236.11,-357.59 240.43,-364.32 233.69,-368.64 229.38,-361.9"/>
+<polyline fill="none" stroke="black" points="237.06,-366.48 238.14,-368.16 "/>
+<polygon fill="none" stroke="black" points="344.54,-584.89 340.44,-591.76 333.57,-587.66 337.67,-580.79 344.54,-584.89"/>
+<polyline fill="none" stroke="black" points="335.62,-584.22 333.9,-583.2 "/>
 </g>
 <!-- Observation&#45;&gt;CollectionObject -->
 <g id="edge21" class="edge">
@@ -156,28 +159,31 @@
 <!-- Observation&#45;&gt;OriginCitation -->
 <g id="edge27" class="edge">
 <title>Observation&#45;&gt;OriginCitation</title>
-<path fill="none" stroke="black" stroke-dasharray="1,5" d="M235.86,-368.41C262.31,-413.28 308.92,-491.43 315.07,-495.41 362.53,-526.15 429.18,-529.28 473.45,-527.15"/>
-<polygon fill="black" stroke="black" points="238.79,-366.49 230.7,-359.65 232.76,-370.04 238.79,-366.49"/>
+<path fill="none" stroke="black" d="M235.86,-368.41C262.31,-413.28 308.92,-491.43 315.07,-495.41 359,-523.86 419.4,-528.66 463.24,-527.53"/>
+<polygon fill="none" stroke="black" points="227.26,-361.68 234.15,-357.62 238.21,-364.52 231.31,-368.57 227.26,-361.68"/>
+<polyline fill="none" stroke="black" points="234.76,-366.54 235.77,-368.27 "/>
+<polygon fill="none" stroke="black" points="473.31,-523.15 473.6,-531.14 465.61,-531.44 465.31,-523.45 473.31,-523.15"/>
+<polyline fill="none" stroke="black" points="465.46,-527.44 463.46,-527.52 "/>
 </g>
 <!-- Source&#45;&gt;SubsequentCitation -->
 <!-- Source&#45;&gt;OriginCitation -->
 <!-- CitationTopic&#45;&gt;Topic -->
 <g id="edge17" class="edge">
 <title>CitationTopic&#45;&gt;Topic</title>
-<path fill="none" stroke="black" d="M262.95,-654.41C285.08,-654.41 311.36,-654.41 332.17,-654.41"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M262.95,-654.41C285.08,-654.41 311.36,-654.41 332.17,-654.41"/>
 <polygon fill="black" stroke="black" points="332.2,-657.91 342.2,-654.41 332.2,-650.91 332.2,-657.91"/>
 </g>
 <!-- Role&#45;&gt;Verifier -->
 <!-- SubsequentCitation&#45;&gt;SubsequentSource -->
 <g id="edge15" class="edge">
 <title>SubsequentCitation&#45;&gt;SubsequentSource</title>
-<path fill="none" stroke="black" d="M582.1,-591.41C590.43,-591.41 599.04,-591.41 607.5,-591.41"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M582.1,-591.41C590.43,-591.41 599.04,-591.41 607.5,-591.41"/>
 <polygon fill="black" stroke="black" points="607.71,-594.91 617.71,-591.41 607.71,-587.91 607.71,-594.91"/>
 </g>
 <!-- VerifierRole&#45;&gt;Verifier -->
 <g id="edge19" class="edge">
 <title>VerifierRole&#45;&gt;Verifier</title>
-<path fill="none" stroke="black" d="M411.42,-454.75C433.76,-447.28 461.23,-438.09 482.96,-430.83"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M411.42,-454.75C433.76,-447.28 461.23,-438.09 482.96,-430.83"/>
 <polygon fill="black" stroke="black" points="484.12,-434.13 492.5,-427.63 481.9,-427.49 484.12,-434.13"/>
 </g>
 <!-- Creator&#45;&gt;Updater -->

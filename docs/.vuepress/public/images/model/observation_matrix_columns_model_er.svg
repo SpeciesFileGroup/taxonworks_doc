@@ -12,7 +12,7 @@
 <!-- Tag&#45;&gt;Keyword -->
 <g id="edge1" class="edge">
 <title>Tag&#45;&gt;Keyword</title>
-<path fill="none" stroke="black" d="M55.31,-255.11C84.69,-255.44 132.61,-255.97 167.4,-256.35"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M55.31,-255.11C84.69,-255.44 132.61,-255.97 167.4,-256.35"/>
 <polygon fill="black" stroke="black" points="167.7,-259.85 177.74,-256.47 167.77,-252.85 167.7,-259.85"/>
 </g>
 <!-- Observation&#45;&gt;ObservationMatrix -->
@@ -86,7 +86,7 @@
 <!-- VerifierRole&#45;&gt;Verifier -->
 <g id="edge8" class="edge">
 <title>VerifierRole&#45;&gt;Verifier</title>
-<path fill="none" stroke="black" d="M453.86,-152.71C473.14,-156.44 496,-160.86 514.88,-164.52"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M453.86,-152.71C473.14,-156.44 496,-160.86 514.88,-164.52"/>
 <polygon fill="black" stroke="black" points="514.43,-167.99 524.91,-166.46 515.76,-161.12 514.43,-167.99"/>
 </g>
 <!-- Creator&#45;&gt;Updater -->

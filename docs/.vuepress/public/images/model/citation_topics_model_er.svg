@@ -18,8 +18,11 @@
 <!-- CitationTopic&#45;&gt;Source -->
 <g id="edge10" class="edge">
 <title>CitationTopic&#45;&gt;Source</title>
-<path fill="none" stroke="black" stroke-dasharray="1,5" d="M198.92,-194.19C216.7,-228.26 248.68,-283.13 287.44,-321.14 292.78,-326.38 299.26,-331.14 305.61,-335.18"/>
-<polygon fill="black" stroke="black" points="201.97,-192.47 194.29,-185.17 195.74,-195.66 201.97,-192.47"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M198.92,-194.19C216.7,-228.26 248.68,-283.13 287.44,-321.14 290.44,-324.09 293.81,-326.88 297.31,-329.48"/>
+<polygon fill="none" stroke="black" points="190.73,-187 197.85,-183.34 201.5,-190.46 194.38,-194.11 190.73,-187"/>
+<polyline fill="none" stroke="black" points="197.94,-192.29 198.85,-194.07 "/>
+<polygon fill="none" stroke="black" points="307.88,-331.88 303.35,-338.48 296.75,-333.95 301.28,-327.36 307.88,-331.88"/>
+<polyline fill="none" stroke="black" points="299.02,-330.66 297.37,-329.52 "/>
 </g>
 <!-- CitationTopic&#45;&gt;PinboardItem -->
 <g id="edge1" class="edge">
@@ -67,7 +70,7 @@
 <!-- VerifierRole&#45;&gt;Verifier -->
 <g id="edge4" class="edge">
 <title>VerifierRole&#45;&gt;Verifier</title>
-<path fill="none" stroke="black" d="M374.46,-196.27C384.32,-198.74 394.82,-201.36 404.53,-203.79"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M374.46,-196.27C384.32,-198.74 394.82,-201.36 404.53,-203.79"/>
 <polygon fill="black" stroke="black" points="403.75,-207.2 414.3,-206.23 405.45,-200.41 403.75,-207.2"/>
 </g>
 <!-- Creator&#45;&gt;Updater -->

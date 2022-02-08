@@ -12,13 +12,13 @@
 <!-- Depiction&#45;&gt;Image -->
 <g id="edge6" class="edge">
 <title>Depiction&#45;&gt;Image</title>
-<path fill="none" stroke="black" d="M104.95,-174.67C120.27,-174.67 137.22,-174.67 151.81,-174.67"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M104.95,-174.67C120.27,-174.67 137.22,-174.67 151.81,-174.67"/>
 <polygon fill="black" stroke="black" points="151.95,-178.17 161.95,-174.67 151.95,-171.17 151.95,-178.17"/>
 </g>
 <!-- Tag&#45;&gt;Keyword -->
 <g id="edge7" class="edge">
 <title>Tag&#45;&gt;Keyword</title>
-<path fill="none" stroke="black" d="M86.38,-120.67C103.38,-120.67 125.92,-120.67 145.47,-120.67"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M86.38,-120.67C103.38,-120.67 125.92,-120.67 145.47,-120.67"/>
 <polygon fill="black" stroke="black" points="145.67,-124.17 155.67,-120.67 145.67,-117.17 145.67,-124.17"/>
 </g>
 <!-- Loan&#45;&gt;DataAttribute -->
@@ -120,32 +120,32 @@
 <!-- Documentation&#45;&gt;Document -->
 <g id="edge4" class="edge">
 <title>Documentation&#45;&gt;Document</title>
-<path fill="none" stroke="black" d="M374.98,-502.67C392.14,-502.67 411.29,-502.67 428.18,-502.67"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M374.98,-502.67C392.14,-502.67 411.29,-502.67 428.18,-502.67"/>
 <polygon fill="black" stroke="black" points="428.37,-506.17 438.37,-502.67 428.37,-499.17 428.37,-506.17"/>
 </g>
 <!-- LoanRecipientRole&#45;&gt;LoanRecipient -->
 <g id="edge10" class="edge">
 <title>LoanRecipientRole&#45;&gt;LoanRecipient</title>
-<path fill="none" stroke="black" d="M385.57,-394.67C396.03,-394.67 406.87,-394.67 417.24,-394.67"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M385.57,-394.67C396.03,-394.67 406.87,-394.67 417.24,-394.67"/>
 <polygon fill="black" stroke="black" points="417.43,-398.17 427.43,-394.67 417.43,-391.17 417.43,-398.17"/>
 </g>
 <!-- LoanSupervisorRole&#45;&gt;LoanSupervisor -->
 <g id="edge12" class="edge">
 <title>LoanSupervisorRole&#45;&gt;LoanSupervisor</title>
-<path fill="none" stroke="black" d="M388.6,-340.67C396.97,-340.67 405.54,-340.67 413.87,-340.67"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M388.6,-340.67C396.97,-340.67 405.54,-340.67 413.87,-340.67"/>
 <polygon fill="black" stroke="black" points="413.88,-344.17 423.88,-340.67 413.88,-337.17 413.88,-344.17"/>
 </g>
 <!-- Role&#45;&gt;Person -->
 <g id="edge14" class="edge">
 <title>Role&#45;&gt;Person</title>
-<path fill="none" stroke="black" d="M351.24,-286.67C375.31,-286.67 411.33,-286.67 438.26,-286.67"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M351.24,-286.67C375.31,-286.67 411.33,-286.67 438.26,-286.67"/>
 <polygon fill="black" stroke="black" points="438.45,-290.17 448.45,-286.67 438.45,-283.17 438.45,-290.17"/>
 </g>
 <!-- Role&#45;&gt;Verifier -->
 <!-- VerifierRole&#45;&gt;Verifier -->
 <g id="edge19" class="edge">
 <title>VerifierRole&#45;&gt;Verifier</title>
-<path fill="none" stroke="black" d="M366.05,-232.67C388.19,-232.67 415.36,-232.67 437,-232.67"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M366.05,-232.67C388.19,-232.67 415.36,-232.67 437,-232.67"/>
 <polygon fill="black" stroke="black" points="437.12,-236.17 447.12,-232.67 437.12,-229.17 437.12,-236.17"/>
 </g>
 <!-- Version&#45;&gt;PinboardItem -->

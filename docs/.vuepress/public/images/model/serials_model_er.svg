@@ -12,13 +12,13 @@
 <!-- AlternateValue&#45;&gt;AlternateValueLanguage -->
 <g id="edge1" class="edge">
 <title>AlternateValue&#45;&gt;AlternateValueLanguage</title>
-<path fill="none" stroke="black" d="M127.71,-408.85C135.98,-408.85 144.57,-408.85 153.13,-408.85"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M127.71,-408.85C135.98,-408.85 144.57,-408.85 153.13,-408.85"/>
 <polygon fill="black" stroke="black" points="153.14,-412.35 163.14,-408.85 153.14,-405.35 153.14,-412.35"/>
 </g>
 <!-- Tag&#45;&gt;Keyword -->
 <g id="edge7" class="edge">
 <title>Tag&#45;&gt;Keyword</title>
-<path fill="none" stroke="black" d="M91,-192.85C118.58,-192.85 162.36,-192.85 194.96,-192.85"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M91,-192.85C118.58,-192.85 162.36,-192.85 194.96,-192.85"/>
 <polygon fill="black" stroke="black" points="195.11,-196.35 205.11,-192.85 195.11,-189.35 195.11,-196.35"/>
 </g>
 <!-- Serial&#45;&gt;AlternateValue -->
@@ -126,20 +126,20 @@
 <!-- SucceedingSerialChronology&#45;&gt;ImmediatelyPrecedingSerial -->
 <g id="edge5" class="edge">
 <title>SucceedingSerialChronology&#45;&gt;ImmediatelyPrecedingSerial</title>
-<path fill="none" stroke="black" d="M525.52,-527.85C535.26,-527.85 545.22,-527.85 555.06,-527.85"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M525.52,-527.85C535.26,-527.85 545.22,-527.85 555.06,-527.85"/>
 <polygon fill="black" stroke="black" points="555.26,-531.35 565.26,-527.85 555.26,-524.35 555.26,-531.35"/>
 </g>
 <!-- PrecedingSerialChronology&#45;&gt;ImmediatelySucceedingSerial -->
 <g id="edge6" class="edge">
 <title>PrecedingSerialChronology&#45;&gt;ImmediatelySucceedingSerial</title>
-<path fill="none" stroke="black" d="M521.57,-473.85C531.2,-473.85 541.1,-473.85 550.93,-473.85"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M521.57,-473.85C531.2,-473.85 541.1,-473.85 550.93,-473.85"/>
 <polygon fill="black" stroke="black" points="551.12,-477.35 561.12,-473.85 551.12,-470.35 551.12,-477.35"/>
 </g>
 <!-- Role&#45;&gt;Verifier -->
 <!-- VerifierRole&#45;&gt;Verifier -->
 <g id="edge17" class="edge">
 <title>VerifierRole&#45;&gt;Verifier</title>
-<path fill="none" stroke="black" d="M479.67,-268.64C518.18,-263.73 575.46,-256.41 612.87,-251.64"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M479.67,-268.64C518.18,-263.73 575.46,-256.41 612.87,-251.64"/>
 <polygon fill="black" stroke="black" points="613.38,-255.1 622.86,-250.36 612.5,-248.16 613.38,-255.1"/>
 </g>
 <!-- Version&#45;&gt;PinboardItem -->

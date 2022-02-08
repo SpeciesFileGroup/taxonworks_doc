@@ -72,8 +72,11 @@
 <!-- Depiction&#45;&gt;SqedDepiction -->
 <g id="edge14" class="edge">
 <title>Depiction&#45;&gt;SqedDepiction</title>
-<path fill="none" stroke="black" stroke-dasharray="1,5" d="M131.35,-250.79C135.43,-247.85 139.26,-244.59 142.57,-241 169.84,-211.45 148.4,-184.58 178.57,-158 195.75,-142.87 219.7,-134.88 240.88,-130.66"/>
-<polygon fill="black" stroke="black" points="129.21,-248 122.71,-256.36 133.01,-253.88 129.21,-248"/>
+<path fill="none" stroke="black" d="M131.35,-250.79C135.43,-247.85 139.26,-244.59 142.57,-241 169.84,-211.45 148.4,-184.58 178.57,-158 193.13,-145.18 212.56,-137.48 231.04,-132.86"/>
+<polygon fill="none" stroke="black" points="124.87,-259.72 120.54,-253 127.26,-248.66 131.6,-255.39 124.87,-259.72"/>
+<polyline fill="none" stroke="black" points="129.43,-252.02 131.11,-250.94 "/>
+<polygon fill="none" stroke="black" points="240.01,-126.76 241.76,-134.56 233.95,-136.31 232.2,-128.5 240.01,-126.76"/>
+<polyline fill="none" stroke="black" points="233.07,-132.41 231.12,-132.84 "/>
 </g>
 <!-- Depiction&#45;&gt;Objects with Depictions -->
 <g id="edge9" class="edge">
@@ -84,14 +87,14 @@
 <!-- Tag&#45;&gt;Keyword -->
 <g id="edge2" class="edge">
 <title>Tag&#45;&gt;Keyword</title>
-<path fill="none" stroke="black" d="M109.01,-207.94C120.74,-203.86 134.05,-197.28 142.57,-187 184.13,-136.88 132.36,-90.86 178.57,-45 196.14,-27.57 223,-20.75 245.79,-18.32"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M109.01,-207.94C120.74,-203.86 134.05,-197.28 142.57,-187 184.13,-136.88 132.36,-90.86 178.57,-45 196.14,-27.57 223,-20.75 245.79,-18.32"/>
 <polygon fill="black" stroke="black" points="246.25,-21.8 255.93,-17.49 245.68,-14.82 246.25,-21.8"/>
 </g>
 <!-- Role&#45;&gt;Verifier -->
 <!-- VerifierRole&#45;&gt;Verifier -->
 <g id="edge7" class="edge">
 <title>VerifierRole&#45;&gt;Verifier</title>
-<path fill="none" stroke="black" d="M331.34,-424.33C360.04,-428.79 398.21,-434.73 426.28,-439.1"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M331.34,-424.33C360.04,-428.79 398.21,-434.73 426.28,-439.1"/>
 <polygon fill="black" stroke="black" points="426.08,-442.61 436.5,-440.69 427.15,-435.69 426.08,-442.61"/>
 </g>
 <!-- Creator&#45;&gt;Updater -->

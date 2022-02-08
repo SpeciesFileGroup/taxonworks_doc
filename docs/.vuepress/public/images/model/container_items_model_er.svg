@@ -78,20 +78,20 @@
 <!-- AncestorHierarchy&#45;&gt;SelfAndAncestor -->
 <g id="edge6" class="edge">
 <title>AncestorHierarchy&#45;&gt;SelfAndAncestor</title>
-<path fill="none" stroke="black" d="M369.32,-526C401.69,-526 441.95,-526 475.16,-526"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M369.32,-526C401.69,-526 441.95,-526 475.16,-526"/>
 <polygon fill="black" stroke="black" points="475.23,-529.5 485.23,-526 475.23,-522.5 475.23,-529.5"/>
 </g>
 <!-- DescendantHierarchy&#45;&gt;SelfAndDescendant -->
 <g id="edge7" class="edge">
 <title>DescendantHierarchy&#45;&gt;SelfAndDescendant</title>
-<path fill="none" stroke="black" d="M376.87,-418C405.29,-418 438.58,-418 467.61,-418"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M376.87,-418C405.29,-418 438.58,-418 467.61,-418"/>
 <polygon fill="black" stroke="black" points="467.68,-421.5 477.68,-418 467.68,-414.5 467.68,-421.5"/>
 </g>
 <!-- Role&#45;&gt;Verifier -->
 <!-- VerifierRole&#45;&gt;Verifier -->
 <g id="edge9" class="edge">
 <title>VerifierRole&#45;&gt;Verifier</title>
-<path fill="none" stroke="black" d="M351.35,-260.8C393.93,-265.83 460.29,-273.66 501.72,-278.56"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M351.35,-260.8C393.93,-265.83 460.29,-273.66 501.72,-278.56"/>
 <polygon fill="black" stroke="black" points="501.34,-282.04 511.68,-279.73 502.16,-275.08 501.34,-282.04"/>
 </g>
 <!-- Creator&#45;&gt;Updater -->

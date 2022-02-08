@@ -108,26 +108,26 @@
 <!-- AncestorHierarchy&#45;&gt;SelfAndAncestor -->
 <g id="edge10" class="edge">
 <title>AncestorHierarchy&#45;&gt;SelfAndAncestor</title>
-<path fill="none" stroke="black" d="M352.83,-714.47C375.98,-714.47 402.65,-714.47 426.32,-714.47"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M352.83,-714.47C375.98,-714.47 402.65,-714.47 426.32,-714.47"/>
 <polygon fill="black" stroke="black" points="426.61,-717.97 436.61,-714.47 426.61,-710.97 426.61,-717.97"/>
 </g>
 <!-- DescendantHierarchy&#45;&gt;SelfAndDescendant -->
 <g id="edge11" class="edge">
 <title>DescendantHierarchy&#45;&gt;SelfAndDescendant</title>
-<path fill="none" stroke="black" d="M360.39,-606.47C379.19,-606.47 399.73,-606.47 418.84,-606.47"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M360.39,-606.47C379.19,-606.47 399.73,-606.47 418.84,-606.47"/>
 <polygon fill="black" stroke="black" points="418.98,-609.97 428.98,-606.47 418.98,-602.97 418.98,-609.97"/>
 </g>
 <!-- GeographicAreasGeographicItem&#45;&gt;GeographicItem -->
 <g id="edge7" class="edge">
 <title>GeographicAreasGeographicItem&#45;&gt;GeographicItem</title>
-<path fill="none" stroke="black" d="M393.25,-552.47C405.38,-552.47 417.48,-552.47 428.83,-552.47"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M393.25,-552.47C405.38,-552.47 417.48,-552.47 428.83,-552.47"/>
 <polygon fill="black" stroke="black" points="429.02,-555.97 439.02,-552.47 429.02,-548.97 429.02,-555.97"/>
 </g>
 <!-- Role&#45;&gt;Verifier -->
 <!-- VerifierRole&#45;&gt;Verifier -->
 <g id="edge13" class="edge">
 <title>VerifierRole&#45;&gt;Verifier</title>
-<path fill="none" stroke="black" d="M334.86,-396.07C369.59,-400.84 419.15,-407.65 452.98,-412.3"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M334.86,-396.07C369.59,-400.84 419.15,-407.65 452.98,-412.3"/>
 <polygon fill="black" stroke="black" points="452.56,-415.77 462.94,-413.67 453.51,-408.84 452.56,-415.77"/>
 </g>
 <!-- Creator&#45;&gt;Updater -->

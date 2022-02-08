@@ -12,13 +12,13 @@
 <!-- Citation&#45;&gt;Source -->
 <g id="edge6" class="edge">
 <title>Citation&#45;&gt;Source</title>
-<path fill="none" stroke="black" d="M78.3,-428.24C152.77,-428.24 316.12,-428.24 388.75,-428.24"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M78.3,-428.24C152.77,-428.24 316.12,-428.24 388.75,-428.24"/>
 <polygon fill="black" stroke="black" points="388.79,-431.74 398.79,-428.24 388.79,-424.74 388.79,-431.74"/>
 </g>
 <!-- Citation&#45;&gt;CitationTopic -->
 <g id="edge1" class="edge">
 <title>Citation&#45;&gt;CitationTopic</title>
-<path fill="none" stroke="black" d="M72.34,-437.7C99.95,-445.77 140.27,-457.56 172.97,-467.12"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M72.34,-437.7C99.95,-445.77 140.27,-457.56 172.97,-467.12"/>
 <polygon fill="black" stroke="black" points="172.28,-470.56 182.86,-470 174.24,-463.84 172.28,-470.56"/>
 </g>
 <!-- Source&#45;&gt;SubsequentCitation -->
@@ -38,8 +38,11 @@
 <!-- TaxonNameClassification&#45;&gt;Source -->
 <g id="edge17" class="edge">
 <title>TaxonNameClassification&#45;&gt;Source</title>
-<path fill="none" stroke="black" stroke-dasharray="1,5" d="M257.02,-273.06C286.14,-304.72 334.59,-355.57 380.3,-395.24 386.11,-400.29 392.63,-405.4 398.86,-410.05"/>
-<polygon fill="black" stroke="black" points="259.38,-270.45 250.05,-265.44 254.22,-275.18 259.38,-270.45"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M257.02,-273.06C286.14,-304.72 334.59,-355.57 380.3,-395.24 383.66,-398.16 387.25,-401.1 390.9,-403.96"/>
+<polygon fill="none" stroke="black" points="247.1,-268.14 253,-262.74 258.4,-268.64 252.5,-274.04 247.1,-268.14"/>
+<polyline fill="none" stroke="black" points="255.45,-271.34 256.8,-272.82 "/>
+<polygon fill="none" stroke="black" points="401.29,-406.87 396.43,-413.23 390.07,-408.36 394.93,-402.01 401.29,-406.87"/>
+<polyline fill="none" stroke="black" points="392.5,-405.19 390.92,-403.97 "/>
 </g>
 <!-- TaxonNameClassification&#45;&gt;TaxonName -->
 <g id="edge14" class="edge">
@@ -92,26 +95,29 @@
 <!-- TaxonNameClassification&#45;&gt;OriginCitation -->
 <g id="edge16" class="edge">
 <title>TaxonNameClassification&#45;&gt;OriginCitation</title>
-<path fill="none" stroke="black" stroke-dasharray="1,5" d="M265.26,-271.49C294.73,-294.26 338.58,-326.05 380.3,-348.24 426.06,-372.59 481.9,-392.98 520.58,-405.78"/>
-<polygon fill="black" stroke="black" points="267.38,-268.7 257.34,-265.32 263.08,-274.22 267.38,-268.7"/>
+<path fill="none" stroke="black" d="M265.26,-271.49C294.73,-294.26 338.58,-326.05 380.3,-348.24 422.31,-370.59 472.81,-389.61 510.73,-402.48"/>
+<polygon fill="none" stroke="black" points="254.88,-268.47 259.8,-262.16 266.11,-267.08 261.19,-273.39 254.88,-268.47"/>
+<polyline fill="none" stroke="black" points="263.65,-270.23 265.23,-271.46 "/>
+<polygon fill="none" stroke="black" points="521.85,-401.99 519.31,-409.57 511.73,-407.03 514.27,-399.45 521.85,-401.99"/>
+<polyline fill="none" stroke="black" points="513,-403.24 511.1,-402.6 "/>
 </g>
 <!-- CitationTopic&#45;&gt;Topic -->
 <g id="edge9" class="edge">
 <title>CitationTopic&#45;&gt;Topic</title>
-<path fill="none" stroke="black" d="M275.29,-483.24C309.7,-483.24 356.46,-483.24 388.47,-483.24"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M275.29,-483.24C309.7,-483.24 356.46,-483.24 388.47,-483.24"/>
 <polygon fill="black" stroke="black" points="388.72,-486.74 398.72,-483.24 388.72,-479.74 388.72,-486.74"/>
 </g>
 <!-- Role&#45;&gt;Verifier -->
 <!-- SubsequentCitation&#45;&gt;SubsequentSource -->
 <g id="edge8" class="edge">
 <title>SubsequentCitation&#45;&gt;SubsequentSource</title>
-<path fill="none" stroke="black" d="M629.33,-351.24C637.66,-351.24 646.27,-351.24 654.72,-351.24"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M629.33,-351.24C637.66,-351.24 646.27,-351.24 654.72,-351.24"/>
 <polygon fill="black" stroke="black" points="654.94,-354.74 664.94,-351.24 654.94,-347.74 654.94,-354.74"/>
 </g>
 <!-- VerifierRole&#45;&gt;Verifier -->
 <g id="edge11" class="edge">
 <title>VerifierRole&#45;&gt;Verifier</title>
-<path fill="none" stroke="black" d="M467.44,-252.21C487.08,-256.54 510.51,-261.71 529.74,-265.96"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M467.44,-252.21C487.08,-256.54 510.51,-261.71 529.74,-265.96"/>
 <polygon fill="black" stroke="black" points="529.13,-269.41 539.65,-268.14 530.64,-262.57 529.13,-269.41"/>
 </g>
 <!-- Creator&#45;&gt;Updater -->

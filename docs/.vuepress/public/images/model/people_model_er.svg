@@ -12,31 +12,31 @@
 <!-- AlternateValue&#45;&gt;AlternateValueLanguage -->
 <g id="edge1" class="edge">
 <title>AlternateValue&#45;&gt;AlternateValueLanguage</title>
-<path fill="none" stroke="black" d="M127.71,-522C135.98,-522 144.57,-522 153.13,-522"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M127.71,-522C135.98,-522 144.57,-522 153.13,-522"/>
 <polygon fill="black" stroke="black" points="153.14,-525.5 163.14,-522 153.14,-518.5 153.14,-525.5"/>
 </g>
 <!-- Depiction&#45;&gt;Image -->
 <g id="edge19" class="edge">
 <title>Depiction&#45;&gt;Image</title>
-<path fill="none" stroke="black" d="M109.3,-306C137.96,-306 174.73,-306 201.61,-306"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M109.3,-306C137.96,-306 174.73,-306 201.61,-306"/>
 <polygon fill="black" stroke="black" points="201.74,-309.5 211.74,-306 201.74,-302.5 201.74,-309.5"/>
 </g>
 <!-- Tag&#45;&gt;Keyword -->
 <g id="edge20" class="edge">
 <title>Tag&#45;&gt;Keyword</title>
-<path fill="none" stroke="black" d="M91,-252C118.58,-252 162.36,-252 194.96,-252"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M91,-252C118.58,-252 162.36,-252 194.96,-252"/>
 <polygon fill="black" stroke="black" points="195.11,-255.5 205.11,-252 195.11,-248.5 195.11,-255.5"/>
 </g>
 <!-- CollectingEvent&#45;&gt;CollectionObject -->
 <g id="edge7" class="edge">
 <title>CollectingEvent&#45;&gt;CollectionObject</title>
-<path fill="none" stroke="black" d="M667.05,-675C684.03,-675 703.14,-675 720.95,-675"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M667.05,-675C684.03,-675 703.14,-675 720.95,-675"/>
 <polygon fill="black" stroke="black" points="721.26,-678.5 731.26,-675 721.26,-671.5 721.26,-678.5"/>
 </g>
 <!-- CollectionObject&#45;&gt;DwcOccurrence -->
 <g id="edge12" class="edge">
 <title>CollectionObject&#45;&gt;DwcOccurrence</title>
-<path fill="none" stroke="black" d="M840.41,-675C848.88,-675 857.7,-675 866.32,-675"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M840.41,-675C848.88,-675 857.7,-675 866.32,-675"/>
 <polygon fill="black" stroke="black" points="866.34,-678.5 876.34,-675 866.34,-671.5 866.34,-678.5"/>
 </g>
 <!-- Person&#45;&gt;AlternateValue -->
@@ -168,63 +168,66 @@
 <!-- Person&#45;&gt;User -->
 <g id="edge36" class="edge">
 <title>Person&#45;&gt;User</title>
-<path fill="none" stroke="black" stroke-dasharray="1,5" d="M278.82,-368.45C292.24,-359.38 306,-347.47 314.39,-333 379.08,-221.4 270.24,-146.07 350.39,-45 361.64,-30.81 381.11,-24.08 397.12,-20.88"/>
-<polygon fill="black" stroke="black" points="276.66,-365.67 270.1,-373.99 280.42,-371.58 276.66,-365.67"/>
+<path fill="none" stroke="black" d="M278.82,-368.45C292.24,-359.38 306,-347.47 314.39,-333 379.08,-221.4 270.24,-146.07 350.39,-45 359.35,-33.69 373.54,-27.12 387.03,-23.3"/>
+<polygon fill="none" stroke="black" points="272.25,-377.36 267.96,-370.61 274.71,-366.32 279,-373.07 272.25,-377.36"/>
+<polyline fill="none" stroke="black" points="276.85,-369.7 278.54,-368.62 "/>
+<polygon fill="none" stroke="black" points="396.19,-17 398.05,-24.77 390.27,-26.64 388.41,-18.86 396.19,-17"/>
+<polyline fill="none" stroke="black" points="389.34,-22.75 387.39,-23.22 "/>
 </g>
 <!-- AuthorRole&#45;&gt;AuthoredSource -->
 <g id="edge4" class="edge">
 <title>AuthorRole&#45;&gt;AuthoredSource</title>
-<path fill="none" stroke="black" d="M464.45,-784C489.82,-784 523.42,-784 552.34,-784"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M464.45,-784C489.82,-784 523.42,-784 552.34,-784"/>
 <polygon fill="black" stroke="black" points="552.35,-787.5 562.35,-784 552.35,-780.5 552.35,-787.5"/>
 </g>
 <!-- TaxonNameAuthorRole&#45;&gt;AuthoredTaxonName -->
 <g id="edge5" class="edge">
 <title>TaxonNameAuthorRole&#45;&gt;AuthoredTaxonName</title>
-<path fill="none" stroke="black" d="M498.54,-730C511.19,-730 524.39,-730 537.14,-730"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M498.54,-730C511.19,-730 524.39,-730 537.14,-730"/>
 <polygon fill="black" stroke="black" points="537.25,-733.5 547.25,-730 537.25,-726.5 537.25,-733.5"/>
 </g>
 <!-- CollectorRole&#45;&gt;CollectingEvent -->
 <g id="edge6" class="edge">
 <title>CollectorRole&#45;&gt;CollectingEvent</title>
-<path fill="none" stroke="black" d="M470.54,-675C495.17,-675 526,-675 552.75,-675"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M470.54,-675C495.17,-675 526,-675 552.75,-675"/>
 <polygon fill="black" stroke="black" points="552.79,-678.5 562.79,-675 552.79,-671.5 552.79,-678.5"/>
 </g>
 <!-- DeterminerRole&#45;&gt;TaxonDetermination -->
 <g id="edge29" class="edge">
 <title>DeterminerRole&#45;&gt;TaxonDetermination</title>
-<path fill="none" stroke="black" d="M476.4,-620C495.8,-620 518.31,-620 539.44,-620"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M476.4,-620C495.8,-620 518.31,-620 539.44,-620"/>
 <polygon fill="black" stroke="black" points="539.68,-623.5 549.68,-620 539.68,-616.5 539.68,-623.5"/>
 </g>
 <!-- EditorRole&#45;&gt;EditedSource -->
 <g id="edge13" class="edge">
 <title>EditorRole&#45;&gt;EditedSource</title>
-<path fill="none" stroke="black" d="M462.63,-566C490.39,-566 528.73,-566 559.85,-566"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M462.63,-566C490.39,-566 528.73,-566 559.85,-566"/>
 <polygon fill="black" stroke="black" points="560.11,-569.5 570.11,-566 560.11,-562.5 560.11,-569.5"/>
 </g>
 <!-- GeoreferencerRole&#45;&gt;Georeference -->
 <g id="edge16" class="edge">
 <title>GeoreferencerRole&#45;&gt;Georeference</title>
-<path fill="none" stroke="black" d="M484,-512C508.29,-512 536.28,-512 560.04,-512"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M484,-512C508.29,-512 536.28,-512 560.04,-512"/>
 <polygon fill="black" stroke="black" points="560.29,-515.5 570.29,-512 560.29,-508.5 560.29,-515.5"/>
 </g>
 <!-- SourceRole&#45;&gt;HumanSource -->
 <g id="edge17" class="edge">
 <title>SourceRole&#45;&gt;HumanSource</title>
-<path fill="none" stroke="black" d="M464.45,-458C491.17,-458 527.03,-458 556.92,-458"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M464.45,-458C491.17,-458 527.03,-458 556.92,-458"/>
 <polygon fill="black" stroke="black" points="557.22,-461.5 567.22,-458 557.22,-454.5 557.22,-461.5"/>
 </g>
 <!-- OriginRelationship&#45;&gt;RelatedOriginRelationship -->
 <!-- Role&#45;&gt;Source -->
 <g id="edge27" class="edge">
 <title>Role&#45;&gt;Source</title>
-<path fill="none" stroke="black" d="M451.6,-218.14C484.28,-218.31 540.35,-218.61 577.27,-218.81"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M451.6,-218.14C484.28,-218.31 540.35,-218.61 577.27,-218.81"/>
 <polygon fill="black" stroke="black" points="577.58,-222.31 587.6,-218.86 577.62,-215.31 577.58,-222.31"/>
 </g>
 <!-- Role&#45;&gt;Verifier -->
 <!-- VerifierRole&#45;&gt;Verifier -->
 <g id="edge32" class="edge">
 <title>VerifierRole&#45;&gt;Verifier</title>
-<path fill="none" stroke="black" d="M466.29,-164C498.88,-164 544.16,-164 575.95,-164"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M466.29,-164C498.88,-164 544.16,-164 575.95,-164"/>
 <polygon fill="black" stroke="black" points="576.17,-167.5 586.17,-164 576.17,-160.5 576.17,-167.5"/>
 </g>
 <!-- Version&#45;&gt;PinboardItem -->

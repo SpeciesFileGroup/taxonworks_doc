@@ -1,9 +1,9 @@
 ---
 ---
 # Models
-_This file auto-generated 2022-01-26 16:02:31 -0600 via 'rake tw:docs:model_ers'. Do not hand-edit._.
+_This file auto-generated 2022-02-08 10:47:07 -0600 via 'rake tw:docs:model_ers'. Do not hand-edit._
 
-Algorithmically generated relationships based on assertions of 'has_many', 'has_one', and 'belongs_to'. Click on a node to navigate (not all are linked).
+Algorithmically generated ER diagrams. Node shapes: green octagons- the target model the ER perspective is drawn from; orange rounded rectangles- core models;  light purple rectangles- supporting models; blue ovals- annotating models; purple diamonds- polymorphic models (matches to many other models). Node edges (arrow points to many side): solid arrows- 'has many'; dotted arrows- *target model* 'has many' _through_ one side model; dashed arrows: *target model* 'has one'; dotted squared arrows: *target model* 'has one', but _through_ a corresponding dotted relationship. See also description in [Overview](/develop/Data/#concepts). Click a node to navigate (not all are linked).
 
 [Alternate value](/develop/Data/models.html#alternate-value), [Asserted distribution](/develop/Data/models.html#asserted-distribution), [Attribution](/develop/Data/models.html#attribution), [Biocuration classification](/develop/Data/models.html#biocuration-classification), [Biological association](/develop/Data/models.html#biological-association), [Biological associations biological associations graph](/develop/Data/models.html#biological-associations-biological-associations-graph), [Biological associations graph](/develop/Data/models.html#biological-associations-graph), [Biological relationship type](/develop/Data/models.html#biological-relationship-type), [Biological relationship](/develop/Data/models.html#biological-relationship), [Character state](/develop/Data/models.html#character-state), [Citation topic](/develop/Data/models.html#citation-topic), [Citation](/develop/Data/models.html#citation), [Collecting event](/develop/Data/models.html#collecting-event), [Collection object observation](/develop/Data/models.html#collection-object-observation), [Collection object](/develop/Data/models.html#collection-object), [Collection profile](/develop/Data/models.html#collection-profile), [Common name](/develop/Data/models.html#common-name), [Confidence](/develop/Data/models.html#confidence), [Container item](/develop/Data/models.html#container-item), [Container](/develop/Data/models.html#container), [Content](/develop/Data/models.html#content), [Controlled vocabulary term](/develop/Data/models.html#controlled-vocabulary-term), [Data attribute](/develop/Data/models.html#data-attribute), [Dataset record field](/develop/Data/models.html#dataset-record-field), [Dataset record](/develop/Data/models.html#dataset-record), [Depiction](/develop/Data/models.html#depiction), [Derived collection object](/develop/Data/models.html#derived-collection-object), [Descriptor](/develop/Data/models.html#descriptor), [Documentation](/develop/Data/models.html#documentation), [Document](/develop/Data/models.html#document), [Extract](/develop/Data/models.html#extract), [Gene attribute](/develop/Data/models.html#gene-attribute), [Geographic area type](/develop/Data/models.html#geographic-area-type), [Geographic area](/develop/Data/models.html#geographic-area), [Geographic areas geographic item](/develop/Data/models.html#geographic-areas-geographic-item), [Geographic item](/develop/Data/models.html#geographic-item), [Georeference](/develop/Data/models.html#georeference), [Identifier](/develop/Data/models.html#identifier), [Image](/develop/Data/models.html#image), [Import dataset](/develop/Data/models.html#import-dataset), [Label](/develop/Data/models.html#label), [Language](/develop/Data/models.html#language), [Loan item](/develop/Data/models.html#loan-item), [Loan](/develop/Data/models.html#loan), [Namespace](/develop/Data/models.html#namespace), [Note](/develop/Data/models.html#note), [Observation matrix](/develop/Data/models.html#observation-matrix), [Observation matrix column item](/develop/Data/models.html#observation-matrix-column-item), [Observation matrix column](/develop/Data/models.html#observation-matrix-column), [Observation matrix row item](/develop/Data/models.html#observation-matrix-row-item), [Observation matrix row](/develop/Data/models.html#observation-matrix-row), [Observation](/develop/Data/models.html#observation), [Organization](/develop/Data/models.html#organization), [Origin relationship](/develop/Data/models.html#origin-relationship), [Otu page layout section](/develop/Data/models.html#otu-page-layout-section), [Otu page layout](/develop/Data/models.html#otu-page-layout), [Otu](/develop/Data/models.html#otu), [Person](/develop/Data/models.html#person), [Preparation type](/develop/Data/models.html#preparation-type), [Project member](/develop/Data/models.html#project-member), [Project source](/develop/Data/models.html#project-source), [Protocol relationship](/develop/Data/models.html#protocol-relationship), [Protocol](/develop/Data/models.html#protocol), [Ranged lot category](/develop/Data/models.html#ranged-lot-category), [Repository](/develop/Data/models.html#repository), [Role](/develop/Data/models.html#role), [Sequence relationship](/develop/Data/models.html#sequence-relationship), [Sequence](/develop/Data/models.html#sequence), [Serial chronology](/develop/Data/models.html#serial-chronology), [Serial](/develop/Data/models.html#serial), [Sled image](/develop/Data/models.html#sled-image), [Source](/develop/Data/models.html#source), [Tagged section keyword](/develop/Data/models.html#tagged-section-keyword), [Tag](/develop/Data/models.html#tag), [Taxon determination](/develop/Data/models.html#taxon-determination), [Taxon name classification](/develop/Data/models.html#taxon-name-classification), [Taxon name relationship](/develop/Data/models.html#taxon-name-relationship), [Taxon name](/develop/Data/models.html#taxon-name), [Type material](/develop/Data/models.html#type-material)
 
@@ -12,7 +12,7 @@ Algorithmically generated relationships based on assertions of 'has_many', 'has_
 <object data="/images/model/alternate_values_model_er.svg" type="image/svg+xml"></object>
 
 ## Asserted distribution
-[top](#models),[table](/develop/Data/tables.html#asserted-distributions),[rdoc](https://rdoc.taxonworks.org/AssertedDistribution.html)
+[top](#models),[table](/develop/Data/tables.html#asserted-distributions),[rdoc](https://rdoc.taxonworks.org/AssertedDistribution.html),[api](https://api.taxonworks.org/#/asserted_distributions)
 <object data="/images/model/asserted_distributions_model_er.svg" type="image/svg+xml"></object>
 
 ## Attribution
@@ -24,7 +24,7 @@ Algorithmically generated relationships based on assertions of 'has_many', 'has_
 <object data="/images/model/biocuration_classifications_model_er.svg" type="image/svg+xml"></object>
 
 ## Biological association
-[top](#models),[table](/develop/Data/tables.html#biological-associations),[rdoc](https://rdoc.taxonworks.org/BiologicalAssociation.html)
+[top](#models),[table](/develop/Data/tables.html#biological-associations),[rdoc](https://rdoc.taxonworks.org/BiologicalAssociation.html),[api](https://api.taxonworks.org/#/biological_associations)
 <object data="/images/model/biological_associations_model_er.svg" type="image/svg+xml"></object>
 
 ## Biological associations biological associations graph
@@ -52,11 +52,11 @@ Algorithmically generated relationships based on assertions of 'has_many', 'has_
 <object data="/images/model/citation_topics_model_er.svg" type="image/svg+xml"></object>
 
 ## Citation
-[top](#models),[table](/develop/Data/tables.html#citations),[rdoc](https://rdoc.taxonworks.org/Citation.html)
+[top](#models),[table](/develop/Data/tables.html#citations),[rdoc](https://rdoc.taxonworks.org/Citation.html),[api](https://api.taxonworks.org/#/citations)
 <object data="/images/model/citations_model_er.svg" type="image/svg+xml"></object>
 
 ## Collecting event
-[top](#models),[table](/develop/Data/tables.html#collecting-events),[rdoc](https://rdoc.taxonworks.org/CollectingEvent.html)
+[top](#models),[table](/develop/Data/tables.html#collecting-events),[rdoc](https://rdoc.taxonworks.org/CollectingEvent.html),[api](https://api.taxonworks.org/#/collecting_events)
 <object data="/images/model/collecting_events_model_er.svg" type="image/svg+xml"></object>
 
 ## Collection object observation
@@ -64,7 +64,7 @@ Algorithmically generated relationships based on assertions of 'has_many', 'has_
 <object data="/images/model/collection_object_observations_model_er.svg" type="image/svg+xml"></object>
 
 ## Collection object
-[top](#models),[table](/develop/Data/tables.html#collection-objects),[rdoc](https://rdoc.taxonworks.org/CollectionObject.html)
+[top](#models),[table](/develop/Data/tables.html#collection-objects),[rdoc](https://rdoc.taxonworks.org/CollectionObject.html),[api](https://api.taxonworks.org/#/collection_objects)
 <object data="/images/model/collection_objects_model_er.svg" type="image/svg+xml"></object>
 
 ## Collection profile
@@ -88,7 +88,7 @@ Algorithmically generated relationships based on assertions of 'has_many', 'has_
 <object data="/images/model/containers_model_er.svg" type="image/svg+xml"></object>
 
 ## Content
-[top](#models),[table](/develop/Data/tables.html#contents),[rdoc](https://rdoc.taxonworks.org/Content.html)
+[top](#models),[table](/develop/Data/tables.html#contents),[rdoc](https://rdoc.taxonworks.org/Content.html),[api](https://api.taxonworks.org/#/contents)
 <object data="/images/model/contents_model_er.svg" type="image/svg+xml"></object>
 
 ## Controlled vocabulary term
@@ -96,7 +96,7 @@ Algorithmically generated relationships based on assertions of 'has_many', 'has_
 <object data="/images/model/controlled_vocabulary_terms_model_er.svg" type="image/svg+xml"></object>
 
 ## Data attribute
-[top](#models),[table](/develop/Data/tables.html#data-attributes),[rdoc](https://rdoc.taxonworks.org/DataAttribute.html)
+[top](#models),[table](/develop/Data/tables.html#data-attributes),[rdoc](https://rdoc.taxonworks.org/DataAttribute.html),[api](https://api.taxonworks.org/#/data_attributes)
 <object data="/images/model/data_attributes_model_er.svg" type="image/svg+xml"></object>
 
 ## Dataset record field
@@ -156,11 +156,11 @@ Algorithmically generated relationships based on assertions of 'has_many', 'has_
 <object data="/images/model/georeferences_model_er.svg" type="image/svg+xml"></object>
 
 ## Identifier
-[top](#models),[table](/develop/Data/tables.html#identifiers),[rdoc](https://rdoc.taxonworks.org/Identifier.html)
+[top](#models),[table](/develop/Data/tables.html#identifiers),[rdoc](https://rdoc.taxonworks.org/Identifier.html),[api](https://api.taxonworks.org/#/identifiers)
 <object data="/images/model/identifiers_model_er.svg" type="image/svg+xml"></object>
 
 ## Image
-[top](#models),[table](/develop/Data/tables.html#images),[rdoc](https://rdoc.taxonworks.org/Image.html)
+[top](#models),[table](/develop/Data/tables.html#images),[rdoc](https://rdoc.taxonworks.org/Image.html),[api](https://api.taxonworks.org/#/images)
 <object data="/images/model/images_model_er.svg" type="image/svg+xml"></object>
 
 ## Import dataset
@@ -188,11 +188,11 @@ Algorithmically generated relationships based on assertions of 'has_many', 'has_
 <object data="/images/model/namespaces_model_er.svg" type="image/svg+xml"></object>
 
 ## Note
-[top](#models),[table](/develop/Data/tables.html#notes),[rdoc](https://rdoc.taxonworks.org/Note.html)
+[top](#models),[table](/develop/Data/tables.html#notes),[rdoc](https://rdoc.taxonworks.org/Note.html),[api](https://api.taxonworks.org/#/notes)
 <object data="/images/model/notes_model_er.svg" type="image/svg+xml"></object>
 
 ## Observation matrix
-[top](#models),[table](/develop/Data/tables.html#observation-matrices),[rdoc](https://rdoc.taxonworks.org/ObservationMatrix.html)
+[top](#models),[table](/develop/Data/tables.html#observation-matrices),[rdoc](https://rdoc.taxonworks.org/ObservationMatrix.html),[api](https://api.taxonworks.org/#/observation_matrices)
 <object data="/images/model/observation_matrices_model_er.svg" type="image/svg+xml"></object>
 
 ## Observation matrix column item
@@ -212,7 +212,7 @@ Algorithmically generated relationships based on assertions of 'has_many', 'has_
 <object data="/images/model/observation_matrix_rows_model_er.svg" type="image/svg+xml"></object>
 
 ## Observation
-[top](#models),[table](/develop/Data/tables.html#observations),[rdoc](https://rdoc.taxonworks.org/Observation.html)
+[top](#models),[table](/develop/Data/tables.html#observations),[rdoc](https://rdoc.taxonworks.org/Observation.html),[api](https://api.taxonworks.org/#/observations)
 <object data="/images/model/observations_model_er.svg" type="image/svg+xml"></object>
 
 ## Organization
@@ -232,11 +232,11 @@ Algorithmically generated relationships based on assertions of 'has_many', 'has_
 <object data="/images/model/otu_page_layouts_model_er.svg" type="image/svg+xml"></object>
 
 ## Otu
-[top](#models),[table](/develop/Data/tables.html#otus),[rdoc](https://rdoc.taxonworks.org/Otu.html)
+[top](#models),[table](/develop/Data/tables.html#otus),[rdoc](https://rdoc.taxonworks.org/Otu.html),[api](https://api.taxonworks.org/#/otus)
 <object data="/images/model/otus_model_er.svg" type="image/svg+xml"></object>
 
 ## Person
-[top](#models),[table](/develop/Data/tables.html#people),[rdoc](https://rdoc.taxonworks.org/Person.html)
+[top](#models),[table](/develop/Data/tables.html#people),[rdoc](https://rdoc.taxonworks.org/Person.html),[api](https://api.taxonworks.org/#/people)
 <object data="/images/model/people_model_er.svg" type="image/svg+xml"></object>
 
 ## Preparation type
@@ -292,7 +292,7 @@ Algorithmically generated relationships based on assertions of 'has_many', 'has_
 <object data="/images/model/sled_images_model_er.svg" type="image/svg+xml"></object>
 
 ## Source
-[top](#models),[table](/develop/Data/tables.html#sources),[rdoc](https://rdoc.taxonworks.org/Source.html)
+[top](#models),[table](/develop/Data/tables.html#sources),[rdoc](https://rdoc.taxonworks.org/Source.html),[api](https://api.taxonworks.org/#/sources)
 <object data="/images/model/sources_model_er.svg" type="image/svg+xml"></object>
 
 ## Tagged section keyword
@@ -308,15 +308,15 @@ Algorithmically generated relationships based on assertions of 'has_many', 'has_
 <object data="/images/model/taxon_determinations_model_er.svg" type="image/svg+xml"></object>
 
 ## Taxon name classification
-[top](#models),[table](/develop/Data/tables.html#taxon-name-classifications),[rdoc](https://rdoc.taxonworks.org/TaxonNameClassification.html)
+[top](#models),[table](/develop/Data/tables.html#taxon-name-classifications),[rdoc](https://rdoc.taxonworks.org/TaxonNameClassification.html),[api](https://api.taxonworks.org/#/taxon_name_classifications)
 <object data="/images/model/taxon_name_classifications_model_er.svg" type="image/svg+xml"></object>
 
 ## Taxon name relationship
-[top](#models),[table](/develop/Data/tables.html#taxon-name-relationships),[rdoc](https://rdoc.taxonworks.org/TaxonNameRelationship.html)
+[top](#models),[table](/develop/Data/tables.html#taxon-name-relationships),[rdoc](https://rdoc.taxonworks.org/TaxonNameRelationship.html),[api](https://api.taxonworks.org/#/taxon_name_relationships)
 <object data="/images/model/taxon_name_relationships_model_er.svg" type="image/svg+xml"></object>
 
 ## Taxon name
-[top](#models),[table](/develop/Data/tables.html#taxon-names),[rdoc](https://rdoc.taxonworks.org/TaxonName.html)
+[top](#models),[table](/develop/Data/tables.html#taxon-names),[rdoc](https://rdoc.taxonworks.org/TaxonName.html),[api](https://api.taxonworks.org/#/taxon_names)
 <object data="/images/model/taxon_names_model_er.svg" type="image/svg+xml"></object>
 
 ## Type material

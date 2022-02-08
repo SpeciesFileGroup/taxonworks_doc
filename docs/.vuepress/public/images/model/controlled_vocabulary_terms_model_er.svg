@@ -12,7 +12,7 @@
 <!-- AlternateValue&#45;&gt;AlternateValueLanguage -->
 <g id="edge1" class="edge">
 <title>AlternateValue&#45;&gt;AlternateValueLanguage</title>
-<path fill="none" stroke="black" d="M121.53,-250.89C144.96,-254.01 172.62,-257.68 198.37,-261.09"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M121.53,-250.89C144.96,-254.01 172.62,-257.68 198.37,-261.09"/>
 <polygon fill="black" stroke="black" points="198.14,-264.59 208.51,-262.44 199.06,-257.65 198.14,-264.59"/>
 </g>
 <!-- ControlledVocabularyTerm&#45;&gt;AlternateValue -->
@@ -78,7 +78,7 @@
 <!-- ObservationMatrixRowItem&#45;&gt;ObservationMatrix -->
 <g id="edge3" class="edge">
 <title>ObservationMatrixRowItem&#45;&gt;ObservationMatrix</title>
-<path fill="none" stroke="black" d="M612.22,-401.51C632.28,-402.26 653.42,-403.05 672.69,-403.77"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M612.22,-401.51C632.28,-402.26 653.42,-403.05 672.69,-403.77"/>
 <polygon fill="black" stroke="black" points="672.76,-407.27 682.88,-404.15 673.02,-400.28 672.76,-407.27"/>
 </g>
 <!-- ObservationMatrixRowItem&#45;&gt;ObservationMatrixColumnItem -->
@@ -86,7 +86,7 @@
 <!-- VerifierRole&#45;&gt;Verifier -->
 <g id="edge9" class="edge">
 <title>VerifierRole&#45;&gt;Verifier</title>
-<path fill="none" stroke="black" d="M568.05,-165.46C607.12,-170.38 665.76,-177.76 703.95,-182.57"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M568.05,-165.46C607.12,-170.38 665.76,-177.76 703.95,-182.57"/>
 <polygon fill="black" stroke="black" points="703.78,-186.07 714.14,-183.85 704.66,-179.13 703.78,-186.07"/>
 </g>
 <!-- Version&#45;&gt;PinboardItem -->

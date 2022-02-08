@@ -12,7 +12,7 @@
 <!-- ProtocolRelationship&#45;&gt;Protocol -->
 <g id="edge18" class="edge">
 <title>ProtocolRelationship&#45;&gt;Protocol</title>
-<path fill="none" stroke="black" d="M170.27,-267.96C183.55,-267.8 196.74,-267.64 208.39,-267.5"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M170.27,-267.96C183.55,-267.8 196.74,-267.64 208.39,-267.5"/>
 <polygon fill="black" stroke="black" points="208.68,-270.99 218.63,-267.37 208.59,-263.99 208.68,-270.99"/>
 </g>
 <!-- Extract&#45;&gt;DataAttribute -->
@@ -96,99 +96,108 @@
 <!-- Extract&#45;&gt;Container -->
 <g id="edge28" class="edge">
 <title>Extract&#45;&gt;Container</title>
-<path fill="none" stroke="black" stroke-dasharray="1,5" d="M286.77,-301.73C289.12,-299.31 291.26,-296.73 293.08,-294 331.47,-236.16 285.97,-196.42 329.08,-142 336.71,-132.36 348.01,-125.39 359,-120.47"/>
-<polygon fill="black" stroke="black" points="284.38,-299.17 279.27,-308.45 289.06,-304.38 284.38,-299.17"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M286.77,-301.73C289.12,-299.31 291.26,-296.73 293.08,-294 331.47,-236.16 285.97,-196.42 329.08,-142 334.62,-135 342.11,-129.4 350,-124.98"/>
+<polygon fill="none" stroke="black" points="281.95,-311.43 276.6,-305.48 282.56,-300.13 287.9,-306.09 281.95,-311.43"/>
+<polyline fill="none" stroke="black" points="285.23,-303.11 286.72,-301.78 "/>
+<polygon fill="none" stroke="black" points="357.21,-116.89 360.79,-124.04 353.64,-127.63 350.06,-120.47 357.21,-116.89"/>
+<polyline fill="none" stroke="black" points="351.85,-124.05 350.06,-124.95 "/>
 </g>
 <!-- Extract&#45;&gt;ContainerItem -->
 <g id="edge29" class="edge">
 <title>Extract&#45;&gt;ContainerItem</title>
-<path fill="none" stroke="black" stroke-dasharray="1,5" d="M286.97,-301.85C289.27,-299.41 291.35,-296.79 293.08,-294 343.14,-213.11 256.37,-144.35 329.08,-83 388.72,-32.67 487.64,-67.55 539.85,-91.92"/>
-<polygon fill="black" stroke="black" points="284.57,-299.3 279.55,-308.63 289.29,-304.47 284.57,-299.3"/>
+<path fill="none" stroke="black" d="M286.97,-301.85C289.27,-299.41 291.35,-296.79 293.08,-294 343.14,-213.11 256.37,-144.35 329.08,-83 385.34,-35.52 476.56,-63.87 530.54,-87.7"/>
+<polygon fill="none" stroke="black" points="282.24,-311.58 276.85,-305.67 282.76,-300.28 288.15,-306.19 282.24,-311.58"/>
+<polyline fill="none" stroke="black" points="285.45,-303.23 286.93,-301.89 "/>
+<polygon fill="none" stroke="black" points="541.5,-88.28 538.19,-95.56 530.91,-92.26 534.22,-84.97 541.5,-88.28"/>
+<polyline fill="none" stroke="black" points="532.56,-88.61 530.74,-87.79 "/>
 </g>
 <!-- Extract&#45;&gt;ParentContainerItem -->
 <g id="edge30" class="edge">
 <title>Extract&#45;&gt;ParentContainerItem</title>
-<path fill="none" stroke="black" stroke-dasharray="1,5" d="M287.04,-301.89C289.32,-299.44 291.38,-296.81 293.08,-294 349.71,-200.15 264.78,-138.78 329.08,-50 333.01,-44.57 338.13,-40 343.77,-36.18"/>
-<polygon fill="black" stroke="black" points="284.64,-299.34 279.64,-308.69 289.38,-304.5 284.64,-299.34"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M287.04,-301.89C289.32,-299.44 291.38,-296.81 293.08,-294 349.71,-200.15 264.78,-138.78 329.08,-50 331.04,-47.28 333.31,-44.78 335.78,-42.49"/>
+<polygon fill="none" stroke="black" points="282.35,-311.63 276.94,-305.74 282.83,-300.33 288.24,-306.22 282.35,-311.63"/>
+<polyline fill="none" stroke="black" points="285.54,-303.28 287.01,-301.92 "/>
+<polygon fill="none" stroke="black" points="341.29,-33.04 346.25,-39.32 339.97,-44.28 335.01,-38 341.29,-33.04"/>
+<polyline fill="none" stroke="black" points="337.49,-41.14 335.92,-42.38 "/>
 </g>
 <!-- RelatedOriginRelationship&#45;&gt;CollectionObject -->
 <g id="edge1" class="edge">
 <title>RelatedOriginRelationship&#45;&gt;CollectionObject</title>
-<path fill="none" stroke="black" d="M583.41,-746.1C598.12,-782.99 636.07,-867.69 692.08,-919 693.2,-920.03 694.38,-921.03 695.59,-922.01"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M583.41,-746.1C598.12,-782.99 636.07,-867.69 692.08,-919 693.2,-920.03 694.38,-921.03 695.59,-922.01"/>
 <polygon fill="black" stroke="black" points="693.86,-925.07 704.05,-927.97 697.9,-919.35 693.86,-925.07"/>
 </g>
 <!-- RelatedOriginRelationship&#45;&gt;Otu -->
 <g id="edge15" class="edge">
 <title>RelatedOriginRelationship&#45;&gt;Otu</title>
-<path fill="none" stroke="black" d="M588.58,-746.15C607.76,-774.1 647.73,-828.08 692.08,-863 698.04,-867.69 704.91,-871.93 711.73,-875.61"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M588.58,-746.15C607.76,-774.1 647.73,-828.08 692.08,-863 698.04,-867.69 704.91,-871.93 711.73,-875.61"/>
 <polygon fill="black" stroke="black" points="710.41,-878.87 720.91,-880.27 713.58,-872.62 710.41,-878.87"/>
 </g>
 <!-- RelatedOriginRelationship&#45;&gt;Extract -->
 <g id="edge7" class="edge">
 <title>RelatedOriginRelationship&#45;&gt;Extract</title>
-<path fill="none" stroke="black" d="M494.98,-728.39C440.85,-720.81 371.59,-700.32 329.08,-654 289.45,-610.82 263.03,-431.73 254.07,-357.36"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M494.98,-728.39C440.85,-720.81 371.59,-700.32 329.08,-654 289.45,-610.82 263.03,-431.73 254.07,-357.36"/>
 <polygon fill="black" stroke="black" points="257.51,-356.7 252.87,-347.18 250.56,-357.52 257.51,-356.7"/>
 </g>
 <!-- RelatedOriginRelationship&#45;&gt;OriginExtract -->
 <g id="edge9" class="edge">
 <title>RelatedOriginRelationship&#45;&gt;OriginExtract</title>
-<path fill="none" stroke="black" d="M600.19,-746.19C623.03,-763.4 658.98,-789.43 692.08,-809 694.4,-810.37 696.8,-811.74 699.25,-813.09"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M600.19,-746.19C623.03,-763.4 658.98,-789.43 692.08,-809 694.4,-810.37 696.8,-811.74 699.25,-813.09"/>
 <polygon fill="black" stroke="black" points="697.74,-816.25 708.21,-817.86 701.03,-810.07 697.74,-816.25"/>
 </g>
 <!-- RelatedOriginRelationship&#45;&gt;OriginLot -->
 <g id="edge10" class="edge">
 <title>RelatedOriginRelationship&#45;&gt;OriginLot</title>
-<path fill="none" stroke="black" d="M633.82,-746.13C656.29,-753.25 681.67,-761.29 702.71,-767.95"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M633.82,-746.13C656.29,-753.25 681.67,-761.29 702.71,-767.95"/>
 <polygon fill="black" stroke="black" points="701.76,-771.32 712.35,-771 703.87,-764.64 701.76,-771.32"/>
 </g>
 <!-- RelatedOriginRelationship&#45;&gt;OriginOtu -->
 <g id="edge11" class="edge">
 <title>RelatedOriginRelationship&#45;&gt;OriginOtu</title>
-<path fill="none" stroke="black" d="M656.33,-728C671.81,-728 687.52,-728 701.42,-728"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M656.33,-728C671.81,-728 687.52,-728 701.42,-728"/>
 <polygon fill="black" stroke="black" points="701.67,-731.5 711.67,-728 701.67,-724.5 701.67,-731.5"/>
 </g>
 <!-- RelatedOriginRelationship&#45;&gt;OriginRangedLot -->
 <g id="edge12" class="edge">
 <title>RelatedOriginRelationship&#45;&gt;OriginRangedLot</title>
-<path fill="none" stroke="black" d="M633.82,-709.87C649.37,-704.95 666.31,-699.58 682.23,-694.54"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M633.82,-709.87C649.37,-704.95 666.31,-699.58 682.23,-694.54"/>
 <polygon fill="black" stroke="black" points="683.52,-697.8 692,-691.44 681.41,-691.13 683.52,-697.8"/>
 </g>
 <!-- RelatedOriginRelationship&#45;&gt;OriginSpecimen -->
 <g id="edge14" class="edge">
 <title>RelatedOriginRelationship&#45;&gt;OriginSpecimen</title>
-<path fill="none" stroke="black" d="M641.79,-709.95C646.84,-707.34 651.68,-704.37 656.08,-701 678.95,-683.43 670.38,-666.01 692.08,-647 693.37,-645.87 694.72,-644.77 696.11,-643.71"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M641.79,-709.95C646.84,-707.34 651.68,-704.37 656.08,-701 678.95,-683.43 670.38,-666.01 692.08,-647 693.37,-645.87 694.72,-644.77 696.11,-643.71"/>
 <polygon fill="black" stroke="black" points="698.18,-646.53 704.48,-638.02 694.24,-640.75 698.18,-646.53"/>
 </g>
 <!-- OriginRelationship&#45;&gt;Sequence -->
 <g id="edge21" class="edge">
 <title>OriginRelationship&#45;&gt;Sequence</title>
-<path fill="none" stroke="black" d="M453.85,-636.01C479.26,-643.79 508.44,-652.74 531.75,-659.88"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M453.85,-636.01C479.26,-643.79 508.44,-652.74 531.75,-659.88"/>
 <polygon fill="black" stroke="black" points="530.77,-663.24 541.35,-662.82 532.82,-656.54 530.77,-663.24"/>
 </g>
 <!-- OriginRelationship&#45;&gt;RelatedOriginRelationship -->
 <!-- OriginRelationship&#45;&gt;DerivedExtract -->
 <g id="edge3" class="edge">
 <title>OriginRelationship&#45;&gt;DerivedExtract</title>
-<path fill="none" stroke="black" d="M454.35,-618C474.09,-618 496.06,-618 515.77,-618"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M454.35,-618C474.09,-618 496.06,-618 515.77,-618"/>
 <polygon fill="black" stroke="black" points="515.84,-621.5 525.84,-618 515.84,-614.5 515.84,-621.5"/>
 </g>
 <!-- OriginRelationship&#45;&gt;DerivedSequence -->
 <g id="edge4" class="edge">
 <title>OriginRelationship&#45;&gt;DerivedSequence</title>
-<path fill="none" stroke="black" d="M454.35,-600.17C472.01,-594.86 491.46,-589 509.48,-583.58"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M454.35,-600.17C472.01,-594.86 491.46,-589 509.48,-583.58"/>
 <polygon fill="black" stroke="black" points="510.75,-586.86 519.32,-580.62 508.73,-580.15 510.75,-586.86"/>
 </g>
 <!-- ExtractorRole&#45;&gt;Extractor -->
 <g id="edge6" class="edge">
 <title>ExtractorRole&#45;&gt;Extractor</title>
-<path fill="none" stroke="black" d="M440.37,-510C468.46,-510 504.32,-510 531.9,-510"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M440.37,-510C468.46,-510 504.32,-510 531.9,-510"/>
 <polygon fill="black" stroke="black" points="532.04,-513.5 542.04,-510 532.04,-506.5 532.04,-513.5"/>
 </g>
 <!-- Role&#45;&gt;Verifier -->
 <!-- VerifierRole&#45;&gt;Verifier -->
 <g id="edge23" class="edge">
 <title>VerifierRole&#45;&gt;Verifier</title>
-<path fill="none" stroke="black" d="M435.81,-354.13C466.16,-358.69 507.29,-364.88 536.89,-369.33"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M435.81,-354.13C466.16,-358.69 507.29,-364.88 536.89,-369.33"/>
 <polygon fill="black" stroke="black" points="536.43,-372.8 546.84,-370.83 537.47,-365.88 536.43,-372.8"/>
 </g>
 <!-- Creator&#45;&gt;Updater -->

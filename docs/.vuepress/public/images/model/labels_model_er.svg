@@ -12,13 +12,13 @@
 <!-- Depiction&#45;&gt;Image -->
 <g id="edge2" class="edge">
 <title>Depiction&#45;&gt;Image</title>
-<path fill="none" stroke="black" d="M91.23,-212.77C102.9,-212.97 115.35,-213.18 126.54,-213.37"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M91.23,-212.77C102.9,-212.97 115.35,-213.18 126.54,-213.37"/>
 <polygon fill="black" stroke="black" points="126.77,-216.88 136.83,-213.55 126.89,-209.88 126.77,-216.88"/>
 </g>
 <!-- Tag&#45;&gt;Keyword -->
 <g id="edge3" class="edge">
 <title>Tag&#45;&gt;Keyword</title>
-<path fill="none" stroke="black" d="M72.65,-99.55C86.64,-99.31 104.21,-99.01 120.14,-98.74"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M72.65,-99.55C86.64,-99.31 104.21,-99.01 120.14,-98.74"/>
 <polygon fill="black" stroke="black" points="120.37,-102.23 130.31,-98.56 120.25,-95.23 120.37,-102.23"/>
 </g>
 <!-- Label&#45;&gt;Depiction -->
@@ -85,7 +85,7 @@
 <!-- VerifierRole&#45;&gt;Verifier -->
 <g id="edge9" class="edge">
 <title>VerifierRole&#45;&gt;Verifier</title>
-<path fill="none" stroke="black" d="M372.59,-209.02C396.7,-213.19 427.06,-218.43 450.61,-222.5"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M372.59,-209.02C396.7,-213.19 427.06,-218.43 450.61,-222.5"/>
 <polygon fill="black" stroke="black" points="450.14,-225.97 460.59,-224.22 451.33,-219.07 450.14,-225.97"/>
 </g>
 <!-- Creator&#45;&gt;Updater -->

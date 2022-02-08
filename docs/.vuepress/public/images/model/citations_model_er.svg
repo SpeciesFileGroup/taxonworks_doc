@@ -78,26 +78,26 @@
 <!-- Tag&#45;&gt;Keyword -->
 <g id="edge3" class="edge">
 <title>Tag&#45;&gt;Keyword</title>
-<path fill="none" stroke="black" d="M91.8,-70.42C107.97,-62.68 130.87,-52.3 151.68,-45 171.03,-38.21 192.96,-32.22 211.55,-27.62"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M91.8,-70.42C107.97,-62.68 130.87,-52.3 151.68,-45 171.03,-38.21 192.96,-32.22 211.55,-27.62"/>
 <polygon fill="black" stroke="black" points="212.61,-30.96 221.51,-25.21 210.96,-24.16 212.61,-30.96"/>
 </g>
 <!-- Source&#45;&gt;Document -->
 <g id="edge2" class="edge">
 <title>Source&#45;&gt;Document</title>
-<path fill="none" stroke="black" d="M282.38,-473C309.33,-473 351.91,-473 384.56,-473"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M282.38,-473C309.33,-473 351.91,-473 384.56,-473"/>
 <polygon fill="black" stroke="black" points="384.79,-476.5 394.79,-473 384.79,-469.5 384.79,-476.5"/>
 </g>
 <!-- CitationTopic&#45;&gt;Topic -->
 <g id="edge8" class="edge">
 <title>CitationTopic&#45;&gt;Topic</title>
-<path fill="none" stroke="black" d="M301.65,-418C330.55,-418 367.47,-418 394.43,-418"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M301.65,-418C330.55,-418 367.47,-418 394.43,-418"/>
 <polygon fill="black" stroke="black" points="394.6,-421.5 404.6,-418 394.6,-414.5 394.6,-421.5"/>
 </g>
 <!-- Role&#45;&gt;Verifier -->
 <!-- VerifierRole&#45;&gt;Verifier -->
 <g id="edge10" class="edge">
 <title>VerifierRole&#45;&gt;Verifier</title>
-<path fill="none" stroke="black" d="M297.17,-262.33C326.25,-266.83 365,-272.82 393.29,-277.2"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M297.17,-262.33C326.25,-266.83 365,-272.82 393.29,-277.2"/>
 <polygon fill="black" stroke="black" points="392.78,-280.66 403.2,-278.73 393.85,-273.74 392.78,-280.66"/>
 </g>
 <!-- Creator&#45;&gt;Updater -->

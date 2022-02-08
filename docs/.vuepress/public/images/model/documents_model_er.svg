@@ -12,7 +12,7 @@
 <!-- Tag&#45;&gt;Keyword -->
 <g id="edge3" class="edge">
 <title>Tag&#45;&gt;Keyword</title>
-<path fill="none" stroke="black" d="M70.16,-85.83C88.29,-85.56 112.81,-85.19 133.77,-84.87"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M70.16,-85.83C88.29,-85.56 112.81,-85.19 133.77,-84.87"/>
 <polygon fill="black" stroke="black" points="134.09,-88.37 144.04,-84.72 133.99,-81.37 134.09,-88.37"/>
 </g>
 <!-- Document&#45;&gt;Identifier -->
@@ -78,14 +78,14 @@
 <!-- Documentation&#45;&gt;Source -->
 <g id="edge7" class="edge">
 <title>Documentation&#45;&gt;Source</title>
-<path fill="none" stroke="black" d="M370.97,-304.22C380.08,-304.22 389.43,-304.22 398.06,-304.22"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M370.97,-304.22C380.08,-304.22 389.43,-304.22 398.06,-304.22"/>
 <polygon fill="black" stroke="black" points="398.16,-307.72 408.16,-304.22 398.16,-300.72 398.16,-307.72"/>
 </g>
 <!-- Role&#45;&gt;Verifier -->
 <!-- VerifierRole&#45;&gt;Verifier -->
 <g id="edge10" class="edge">
 <title>VerifierRole&#45;&gt;Verifier</title>
-<path fill="none" stroke="black" d="M362.2,-151.97C373.53,-154.68 385.77,-157.6 396.9,-160.26"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M362.2,-151.97C373.53,-154.68 385.77,-157.6 396.9,-160.26"/>
 <polygon fill="black" stroke="black" points="396.21,-163.7 406.75,-162.62 397.84,-156.89 396.21,-163.7"/>
 </g>
 <!-- Creator&#45;&gt;Updater -->

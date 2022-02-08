@@ -12,7 +12,7 @@
 <!-- Tag&#45;&gt;Keyword -->
 <g id="edge2" class="edge">
 <title>Tag&#45;&gt;Keyword</title>
-<path fill="none" stroke="black" d="M70.21,-95.77C106.39,-95.6 171.95,-95.3 215.35,-95.09"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M70.21,-95.77C106.39,-95.6 171.95,-95.3 215.35,-95.09"/>
 <polygon fill="black" stroke="black" points="215.62,-98.59 225.61,-95.05 215.59,-91.59 215.62,-98.59"/>
 </g>
 <!-- ObservationMatrixColumnItem&#45;&gt;Identifier -->
@@ -79,7 +79,7 @@
 <!-- VerifierRole&#45;&gt;Verifier -->
 <g id="edge8" class="edge">
 <title>VerifierRole&#45;&gt;Verifier</title>
-<path fill="none" stroke="black" d="M534.91,-207.88C549.14,-211.02 565.03,-214.52 578.98,-217.6"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M534.91,-207.88C549.14,-211.02 565.03,-214.52 578.98,-217.6"/>
 <polygon fill="black" stroke="black" points="578.23,-221.02 588.75,-219.75 579.74,-214.18 578.23,-221.02"/>
 </g>
 <!-- Creator&#45;&gt;Updater -->

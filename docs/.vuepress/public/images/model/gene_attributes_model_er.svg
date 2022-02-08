@@ -12,7 +12,7 @@
 <!-- Tag&#45;&gt;Keyword -->
 <g id="edge2" class="edge">
 <title>Tag&#45;&gt;Keyword</title>
-<path fill="none" stroke="black" d="M70.18,-113.45C91.81,-113.16 122.91,-112.74 148.13,-112.39"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M70.18,-113.45C91.81,-113.16 122.91,-112.74 148.13,-112.39"/>
 <polygon fill="black" stroke="black" points="148.22,-115.89 158.17,-112.26 148.13,-108.89 148.22,-115.89"/>
 </g>
 <!-- GeneAttribute&#45;&gt;Identifier -->
@@ -85,7 +85,7 @@
 <!-- VerifierRole&#45;&gt;Verifier -->
 <g id="edge8" class="edge">
 <title>VerifierRole&#45;&gt;Verifier</title>
-<path fill="none" stroke="black" d="M385.07,-152.94C394.93,-155.41 405.44,-158.03 415.15,-160.46"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M385.07,-152.94C394.93,-155.41 405.44,-158.03 415.15,-160.46"/>
 <polygon fill="black" stroke="black" points="414.37,-163.87 424.92,-162.9 416.06,-157.08 414.37,-163.87"/>
 </g>
 <!-- Creator&#45;&gt;Updater -->

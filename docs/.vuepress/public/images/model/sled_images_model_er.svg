@@ -12,13 +12,13 @@
 <!-- Depiction&#45;&gt;CollectionObject -->
 <g id="edge1" class="edge">
 <title>Depiction&#45;&gt;CollectionObject</title>
-<path fill="none" stroke="black" d="M87.38,-331.58C97.24,-333.32 108.01,-335.21 118.65,-337.09"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M87.38,-331.58C97.24,-333.32 108.01,-335.21 118.65,-337.09"/>
 <polygon fill="black" stroke="black" points="118.33,-340.58 128.78,-338.87 119.54,-333.69 118.33,-340.58"/>
 </g>
 <!-- Tag&#45;&gt;Keyword -->
 <g id="edge3" class="edge">
 <title>Tag&#45;&gt;Keyword</title>
-<path fill="none" stroke="black" d="M72.77,-195.76C91.73,-196.04 117.75,-196.42 139.72,-196.75"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M72.77,-195.76C91.73,-196.04 117.75,-196.42 139.72,-196.75"/>
 <polygon fill="black" stroke="black" points="139.76,-200.25 149.81,-196.89 139.87,-193.25 139.76,-200.25"/>
 </g>
 <!-- SledImage&#45;&gt;Tag -->
@@ -78,14 +78,14 @@
 <!-- Image&#45;&gt;Depiction -->
 <g id="edge2" class="edge">
 <title>Image&#45;&gt;Depiction</title>
-<path fill="none" stroke="black" d="M294.76,-303.58C250.24,-307.31 159.09,-314.94 100.48,-319.85"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M294.76,-303.58C250.24,-307.31 159.09,-314.94 100.48,-319.85"/>
 <polygon fill="black" stroke="black" points="99.97,-316.38 90.3,-320.71 100.56,-323.36 99.97,-316.38"/>
 </g>
 <!-- Role&#45;&gt;Verifier -->
 <!-- VerifierRole&#45;&gt;Verifier -->
 <g id="edge9" class="edge">
 <title>VerifierRole&#45;&gt;Verifier</title>
-<path fill="none" stroke="black" d="M363.54,-149.51C373.4,-151.97 383.9,-154.6 393.61,-157.03"/>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M363.54,-149.51C373.4,-151.97 383.9,-154.6 393.61,-157.03"/>
 <polygon fill="black" stroke="black" points="392.83,-160.44 403.38,-159.47 394.53,-153.65 392.83,-160.44"/>
 </g>
 <!-- Creator&#45;&gt;Updater -->

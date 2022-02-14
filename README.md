@@ -1,7 +1,7 @@
 # TaxonWorks Documentation
 
 ## Content
-This repository documents [TaxonWorks](https://taxonworks.org) for both users and developers. It is the source for the [https://docs.taxonworks.org](TaxonWorks Documentation).
+This repository documents [TaxonWorks](https://taxonworks.org) for both users and developers. It is the source for the [TaxonWorks Documentation](https://docs.taxonworks.org).
 
 Content is being migrated from and/or also available from various other locations. You might also see:
 

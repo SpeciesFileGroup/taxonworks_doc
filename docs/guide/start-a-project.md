@@ -23,7 +23,9 @@ _If you wish to be added to this list contact us or make a [pull request](/about
 
 ## New projects in sandboxes
 
-Some provider (see above) offer accounts in "sandboxes", i.e. test or example use.  _Each provider may have their own conditions as to how a sandbox should be used, be sure to understand the terms of use before using a sandbox account._
+Some providers (see above) offer accounts in "sandboxes", i.e. test or example use.  _Each provider may have their own conditions as to how a sandbox should be used, be sure to understand the terms of use before using a sandbox account._ Please read:
+* [Sandbox Terms of Use](https://speciesfilegroup.org/docs/taxonworks_sandboxes_at_sfg.html)
+* [TW Memorandum of Understanding](https://speciesfilegroup.org/docs/taxonworks_in_production_at_sfg.html)
 
 ## Manging your own instance of TaxonWorks
 

@@ -4,7 +4,23 @@ sidebarPosition: 1000
 
 # Citing TaxonWorks
 
-_There are many ways to cite TaxonWorks, products derived from the software, and more._
+_There are many ways to cite TaxonWorks, products derived from the software, and more. Here we offer general guidelines and some specific examples._
+
+## General Citation Guidance
+A generalized citation showing what each part needs to contain:
+
+`<who, "community" or "individuals>`. `<year>`. `<project title, as seen in TW>` curated in TaxonWorks [software]. `<optional maintainer statement>`. Accessed on `<date>` from `<url, e.g. https://sfg.taxonworks.org/>`.
+
+Note optional roles: author(s), editors (maintainer) where best practices include: a)everyone is an author, and b) keep it flat.
+
+Best practices expect one to include the following when _citing data sources_ (see <a href="https://library.cumc.columbia.edu/insight/citing-data-sources" target="_blank">Citing data sources</a>):   
+- author(s), 
+- date of pub
+- title of dataset
+- publisher or distributor
+- PID/identifiers
+- version, when appropriate
+- date accessed, when appropriate
 
 ## Software
 
@@ -53,19 +69,4 @@ McElrath TC, Thomas MC, & Yoshida T. 2021. Nomenclature of family Laemophloeidae
 2 - Heraty, John; Woolley, Jim, et al. 2022. Universal Chalcidoidea Database (UCD) curated in TaxonWorks [software]. Accessed on Oct 26, 2021 from https://sfg.taxonworks.org/.
 
 3 - Heraty, John; Woolley, Jim, et al. 2022. Universal Chalcidoidea Database (UCD) curated in TaxonWorks [software]. Species File Group (maintainers, https://speciesfilegroup.org). Accessed on Oct 26, 2021 from https://sfg.taxonworks.org/.
-
-**Generalized parts of the above citation types**  
-`<who, "community" or "individuals>`. `<year>`. `<project title, as seen in TW>` curated in TaxonWorks [software]. `<optional maintainer statement>`. Accessed on `<date>` from `<url, e.g. https://sfg.taxonworks.org/>`.
-
-
-Note optional roles: author, editors (maintainer) where best practices are: Everyone is an author, and keep it flat.  
-
-Best practices expect one to include the following when _citing data sources_ (see <a href="https://library.cumc.columbia.edu/insight/citing-data-sources" target="_blank">Citing data sources</a>):   
-- author(s), 
-- date of pub
-- title of dataset
-- publisher or distributor
-- PID/identifiers
-- version, when appropriate
-- date accessed, when appropriate
 

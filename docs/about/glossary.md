@@ -1,9 +1,6 @@
 # Glossary
 _I read the word(s) X on this site, or heard them in relation to TaxonWorks. What do they mean according to this community?_
 
-### Pull Request
-A simple means to elegantly suggest changes to a website or code repository by editing a clone of that respository and then sending a message back to the origin that includes those changes. The changes can be considered by the maintainers of the original respostory and integrated, or not.
-
 ### Buffered
 A prefix (`buffered_`) used to indicate verbatim text that is part of a CollectionObject record. Buffered fields are used TaxonWorks in a digitization workflow as the first step of transcribing labels, or images, to digital data. Buffered fields are write-once, they after addition they should not be changed, nor do they track changes to `parsed` values.
 
@@ -25,20 +22,23 @@ Used in context of tracing text in `buffered` fields to the `verbatim` fields in
 ### OTU (Operational Taxonomic Unit)
 The biological unit that is useful to work with. They act as proxies.
 
-### Parsing
-Breaking down `buffered` or `verbatim` values into further fields, or semantic relationships.
-
 ### Parsed values
 In TaxonWorks `parsed values` are the formalized representation of the data. For example the verbatim date "12.iv.1997" parsed into three fields in TaxonWorks: `start_date_day` (12), `start_date_month` (4), `start_date_year (1997).
 
-### Project
-An instance of TaxonWorks supports multiple projects. Each project may have one or more users. Data in one project are only accessible in that project -- with a couple of key strategic exceptions (e.g. "Community" data like source publications that are public, or people names) where data are shared across projects. 
+### Parsing
+Breaking down `buffered` or `verbatim` values into further fields, or semantic relationships.
 
-### Staged (or staged images)
-A reference to a digitization process in where all data are laid out for complete capture within an image. TaxonWorks uses stages that have areas defined to match specific types of data, for example "Catalog numbers", "Specimen", "Image registration".
+### Project
+An instance of TaxonWorks supports multiple projects. Each project may have one or more users. Data in one project are only accessible in that project -- with a couple of key strategic exceptions (e.g. "Community" data like source publications that are public, or people names) where data are shared across projects.
+
+### Pull Request
+A simple means to elegantly suggest changes to a website or code repository by editing a clone of that respository and then sending a message back to the origin that includes those changes. The changes can be considered by the maintainers of the original respostory and integrated, or not.
 
 ### Stage 2
 A temporary(?) code-name referencing a step in the digitization process that represents moving from Buffered or Verbatim values to `parsed values`.
+
+### Staged (or staged images)
+A reference to a digitization process in where all data are laid out for complete capture within an image. TaxonWorks uses stages that have areas defined to match specific types of data, for example "Catalog numbers", "Specimen", "Image registration".
 
 ### UI
 **U**ser **i**nterface = the buttons, inputs, layout, and views in the application.

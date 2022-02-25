@@ -65,8 +65,7 @@ module.exports = {
         toggleDarkMode: 'Alternar al modo oscuro',
         toggleSidebar: 'Alternar barra lateral',
       },
-    },
-    contributors: false
+    }
   },
 
   plugins: [

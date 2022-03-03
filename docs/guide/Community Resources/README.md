@@ -9,7 +9,7 @@ _Those using TW often create their own software manuals. They also produce custo
 ## Manuals
 
 ### Universal Chalcidoidea Database (UCD) Project
-- (Help Documentation from UCD@TW)[https://docs.google.com/document/d/1RoItHhbX2JsupeAByB6az_TI7CwoC6Ai/edit?usp=sharing&ouid=107341112756143001576&rtpof=true&sd=true]
+- [Help Documentation from UCD@TW](https://docs.google.com/document/d/1RoItHhbX2JsupeAByB6az_TI7CwoC6Ai/edit?usp=sharing&ouid=107341112756143001576&rtpof=true&sd=true)
 The Universal Chalcidoidea Database (UCD) Project in TW shares their manual with detailed instructions for using TaxonWorks to collectively manage nomenclatural and related taxonomic information for this group. Currently at version 2-19.
 
 ## Workflows

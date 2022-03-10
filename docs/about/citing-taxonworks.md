@@ -39,18 +39,17 @@ Abstract:
 
 ## Data
 
-## Data in TaxonWorks
+For each citation consider the following possibilities / options for citing:  
+  1- a) some data; b) all data  
+  2- a) data retrieved in real time; b) archived somewhere { WHERE }  
+  3- a) data Via API; b) native TW interface; c) Via some public interface { HOW }; d) after some time at Zenodo   
 
-For each:  
-  1- a) Some data; b) All data  
-  2- a) In real time; b) archived somewhere { WHERE }  
-  3- a) Via API; b) native TW interface; c) Via some public interface { HOW }; d) after some time at Zenodo   
+### Use Cases
+- citing data in any instance of TaxonWorks, ever, destroyed or not (cross project)  
+- citing data in a single instance of TaxonWorks  
+- citing data in a single project  
 
-Data in any instance of TaxonWorks, ever, destroyed or not (cross project)  
-Data in a single instance of TaxonWorks  
-Data in a single project  
-
-Use case examples
+### Use case (mock) examples
 
 - 1a  
 McElrath TC, Thomas MC, & Yoshida T. 2021. `<scope of data>` extracted from `<project name>` curated in TaxonWorks [software]. Retrieved `<date>` from `<URL, e.g. https://sfg.taxonworks.org/>`.  { Best practices, the from URL is not a generic TW server link }

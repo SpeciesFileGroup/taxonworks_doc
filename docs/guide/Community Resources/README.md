@@ -4,7 +4,7 @@ sidebarPosition: 400
 
 # Community Documentation
 
-_Those using TW often create their own software manuals. They also produce customized workflows, protocols and procedures for specific tasks. Here, everyone can share access, input, and curation for these products.
+_Those using TW often create their own software manuals. They also produce customized workflows, protocols and procedures for specific tasks. Here, everyone can share access, input, and curation for these products._
 
 ## Manuals
 

@@ -3,6 +3,7 @@ sidebarPosition: 10
 ---
 
 # Contact 
+_TW offers many ways for the community to offer help, find answers, and welcome all to join in the collective commons centered around the needs of researchers._
 
 ## Chat
 

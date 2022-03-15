@@ -24,6 +24,10 @@ module.exports = {
   },
   clientAppEnhanceFiles: path.resolve(__dirname, './configs/clientAppEnhance.js'),
 
+  extendsMarkdown: md => {
+	  md.use(require('markdown-it-task-lists'))
+	},
+
   themeConfig: {
     docsRepo: 'https://github.com/SpeciesFileGroup/taxonworks_doc',
     docsBranch: 'development',

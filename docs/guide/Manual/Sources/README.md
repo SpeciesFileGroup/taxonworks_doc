@@ -1,5 +1,6 @@
 ---
 ---
+
 # About Sources in TW
 
 _Discover the Source (e.g. publications) management features of TaxonWorks here. For example, sources are shared across projects, a cool time-saving community feature of TW._
@@ -90,14 +91,71 @@ If a source has a title in a language other than English, and you wish to enter 
 1. Enter the source with the title as given in the paper and create it.
 2. Click on the blue radial BibTex annotator to the right of the source at the top of the page, and click on the pie slice for Alternate Values.
 3. Choose title from the pick-list, the language for the translated title, and paste the translation in the Value field.
-4. Be sure to save it (green button) if this is a new source.  Then the original title and translation will both be rendered.
+4. Be sure to save it (green button) if this is a new source. Then the original title and translation will both be rendered.
 
+## PDFs for Sources
+At least in the UCD@TW Project, most screens that pull up lists of sources in TW have a convenient PDF icon that either opens the source in the PDF viewer (where you can download it), or enables you to download it directly to your browser. For example, if you pull up a source using the Source Hub, you will get a screen like this. The pdf icon will open the source in your browser.
+
+SCREENSHOT SOURCE HAS PDF
+
+You can also check to see whether a pdf is associated with a source using the Radial Annotator associated with that source (see above). Click the documentation wedge in the Radial Annotator to get the screen below. If a pdf for the source is not present, drag and drop it into the box as shown. If a pdf is associated with the source, you can hit the icon indicated by the red arrow to download to your browser.
+
+SCREENSHOT OF RADIAL ANNOTATOR DOWNLOAD PDF
+
+## Tags on Sources
+Tags in TW provide a unique way to group documents (or other objects in TW) in any way that you choose. With these tags that you create and apply, you and colleagues can find the relevant materials needing work or find groups where work is complete and may need vetting. 
+
+### UCD@TW Project Tag Example
+
+Because UCD@TW is a community-curated database, they added tags for sources that allow them to better organize and coordinate group work. These are the tags currently associated with their sources. Tags can be added or removed from a source in the Radial Annotator. Most of these tags should be self-explanatory. 
+- HINT: Tags are also referred to as **Keywords** in TW.
+- If they are certain that a source is an "early view" document, that is, not yet published, they add this tag as any nomenclatural acts in the source are not yet valid.
+- If the source is new to TW, for now, they use the tag “Source unprocessed”, as this allows other curators and helpers to pull up sources that need to be curated.
+- And to anyone starting work to curate a paper, they apply the tag “Source being processed” so that other community members will not try to work on it simultaneously.
+
+## Creating or Editing Tags
+This is most easily done using the **Manage Controlled Vocabulary task**, as shown below. Tags on sources are treated as "Keywords" here. To create a new tag use the Name, Definition, and CSS Color fields on the left of the screen. Note that the definition field must have at least 20 characters before the Create button is clickable. Note that if you want to use the same color for multiple tags, you can use the eyedropper tool in the Label Color window. To edit an existing tag, use the green icon (circle with a pencil in it) associated with the Tag (Keyword).
+
+Sample UCD@TW Project Tags
+
+SCREENSHOT OF TAGS
+
+SCREENSHOT Manage Controlled Vocabulary task
+
+## Sources With Versions or Translated Titles
+Some sources exist in more than one version, either with translated titles or in entirely translated versions. To add a translated title, use the radial annotator, under "alternate values", and add the information under "title" to add the English version, such as in the case below:
+
+SCREENSHOT Of Paper With Title in German and English
+
+Note, there are at least two reasons why you might have more than one version of source:
+1. Someone has done a translation of a paper, but it has not been published separately. In this case, simpy add the translated pdf as a second document to the source (Documentation tool in Radial Annotator).
+2. The translation has been published separately from the original source. A common example is Entomological Review, which is a parallel version of Entomologicheskoe Obozrenie published in English. In this case, the page numbers are likely to be different in the two journals. You should enter this as a separate source from the original paper in Russian. A search on the author and date will bring up both sources.
+
+## Filtering Sources
+TW employs a powerful utility to search for particular sources, the **Filter Source task**. Among the search fields, which can be used in any combination, are the following:
+- **Keywords**: search text or title. These are verbatim text search fields that will scan the title or other text fields for keywords, such as taxon names. However, if the name is not in the title, it may not get picked up.
+- **Authors**: self explanatory. Search for authors verbatim or for authors in the Authors data table.
+- **Date**: you can provide starting and ending years for the search.
+- **Tags**: If a source has been tagged, you can search for the tag(s) here. 
+  - You can batch tag sources using the method described below.
+  - (UCD@TW specific note: However, this will apply mostly to literature that has been added since the transfer of sources from UCD@NHM to UCD@TW).
+- **Topics**: This is one of the potentially most powerful uses of this utility. All of the tags to citations from UCD@NHM (the original UCD in London) should have been carried over to UCD@TW on import. Thus, UCD@TW folks can search for papers containing host information, keys to species, redescriptions, or any of the topics in the Topics list. Note that if you have Topics in your pinboard, they will appear here if you select Pinboard. Or you can Search for a topic or pull up the entire list of topics using All.
+
+Once you have created a list of sources, you can do the following:
+
+- **Select All** (button is at top left) or **Select Individual Sources**.
+- **Tag**: once you have selected sources you can tag them using whatever tag or tags are in your pinboard by hitting the green Tag button. If there is more than one tag indicated as the default in your pinboard, both will be added. Note that if you create a new tag (explained above) this automatically becomes the default tag in your pinboard. 
+  - HINT: This is a powerful way to create groups of sources for particular projects.
+- **Download CSV**: this creates and downloads to your browser a comma-delimited data file.
+- **Download formatted**: here you have the option to choose a format style (e.g. Zootaxa) and create a formatted bibliography.
+- If a **pdf** is associated with the source, you can capture it using the pdf icon.
 
 ## Importing
-
-## Filtering
+- one at a time
+- batch upload
 
 ## Exporting
-
+- CSV
+- in a custom format
 
 

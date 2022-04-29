@@ -10,10 +10,9 @@ Credit: much of the following information derived from a manual tailored for and
 ## The Source Hub
 In TaxonWorks, "sources" include the literature database, citations, and other content that is fed directly into the database. The easiest way to access sources is through the Source Hub task. This is a unifying task that combines several commonly used tasks associated with sources. As a curator, researcher, or perhaps data manager, or technician you may primarily be working from sources that are published papers. Source data can be entered one record at-a-time field-by-field or using BibTeX or CrossRef DOIs. From most reference manager software, one can export source information in the BibTex format and edited as needed in any regular text editor. A good source of information on BibTex is https://en.wikipedia.org/wiki/BibTeX.
 
-SOURCE HUB SCREEN SHOT
-
-Legend
-- (1) To see if a source is in the database, type information in **Select a source.** This is a smart selector so you only need to enter as many letters needed to uniquely identify a source. For example, the string “wool dal sig” brings up Woolley and Dal Molin (2017). If a source is found it will show beneath the search box. If you click on this, it will take you to a page describing the source.
+Source Hub [Screenshot](https://sfg.taxonworks.org/s/rdc03q) Legend
+<img align="right" width="200" title="Source Hub" src="https://sfg.taxonworks.org/s/rdc03q"/>
+- (1) To see if a source is in the database, type information in **Select a source.** This is a smart selector so you only need to enter as many letters needed to uniquely identify a source. For example, the string “wool dal sig” brings up Woolley and Dal Molin (2017). If a source is found it will show beneath the search box. If you click on this, it will take you to a page describing the source. <img align="right" width="200" title="Search Sources" src="https://sfg.taxonworks.org/s/7vgq1z"/>
 - (2) **Filter sources** takes you to a screen that allows you to apply different search criteria to locate sources of interest. We will use this later to identify sources that you may need to work on.
 - (3) **My recent sources** shows a list of sources that you have entered recently.
 - (4) **New Source** takes you to a screen that enables you to add new sources using various methods.
@@ -39,13 +38,13 @@ FUTURE LINK TO INFORMATION about each of these items
 
 Using the Source Hub to search for a publication of your choice, you may find the information needs editing.
 
-SCREENSHOT TO SHOW WHERE TO CLICK ON SOURCE TO OPEN IT
+<img align="right" width="200" title="Edit, Pin, Annotate a source" src="https://sfg.taxonworks.org/s/m0pegj"/>
 
 Note the green **Pinboard icon** at the upper right. Hitting this adds the source to your Pinboard for quick access.
 
 The **Radial Annotator** is a very common function used throughout TW.  It provides convenient access in one place to a variety of relevant functions. For example, the Radial Annotator for a given Source might look like this:
 
-RADIAL ANNOTATOR SCREENSHOT
+<img align="right" width="200" title="The Radial Annotator" src="https://sfg.taxonworks.org/s/9fbwug"/>
 
 - **Documentation** is where you can drop a pdf of the source, or supplementary files.
 - **Tags** allow you to mark sources for later with tags such as "Source Unprocessed", or "Source Processed for Nomenclature." Instructions on creating and editing Tags are included below.
@@ -54,11 +53,12 @@ RADIAL ANNOTATOR SCREENSHOT
 - **Data attributes** in TW gives you a place to store your unique data that may not fit in any typical TW field currently in the data model.
 
 ### Try Editing a Source
+
+<img align="right" width="200" title="Edit a source" hspace="10" src="https://sfg.taxonworks.org/s/vrbjbz"/>  
+
 From the Source Hub search to a publication and then click Edit to open the task to make corrections or put text in italics, for example. Note that italics are indicated in BibTex format as follows `<i> text </i>`.  Everything in between the special symbols will display or print in italics. There are tools in TW to do this for you by selecting text and hitting a button. Be sure to click the Save button to keep any changes.
 
-HINT: In Edit, you see "New source" but you started by clicking the `Edit` option. Rest assured this "New source" does not mean duplication of the source.
-
-SAMPLE EDIT SCREENSHOT
+HINT: In Edit, you see **New source** but you started by clicking the `Edit` option from an existing source. Rest assured this "New source" window does not mean duplication of the source.
 
 ## Adding a Source
 
@@ -66,9 +66,10 @@ First, always check to be sure the source is not already in TW. If it isn’t fo
 
 Hitting **New Source** in the **Source Hub** brings up this screen. _Note that the order of items may be somewhat different on your screen as we have sorted them to be more convenient._ To do this, check the "Sortable fields" box at upper right and arrange them however you like. There is a lot going on here, so we will concentrate on the most important things. Later we provide some various related scenarios that may fit your workflows.
 
-SCREENSHOT NEW SOURCE
+Add Source [Screenshot](https://sfg.taxonworks.org/s/nhjizu") Legend
 
-Legend.
+<img align="right" width="400" title="Add a source" hspace="10" src="https://sfg.taxonworks.org/s/nhjizu"/>
+
 - (1) The yellow triangle means you have made changes that have not been saved.
 - (2) BE SURE TO SAVE CHANGES before you leave this screen, or they will be lost.
 - (3) If you have the doi for a new source, this button provides access to the CrossRef database of doi's. If it works (it usually does), most of the fields you need will be filled in. However, BE SURE TO CHECK THEM, as they aren’t always correct.
@@ -94,38 +95,41 @@ If a source has a title in a language other than English, and you wish to enter 
 4. Be sure to save it (green button) if this is a new source. Then the original title and translation will both be rendered.
 
 ## PDFs for Sources
-At least in the UCD@TW Project, most screens that pull up lists of sources in TW have a convenient PDF icon that either opens the source in the PDF viewer (where you can download it), or enables you to download it directly to your browser. For example, if you pull up a source using the Source Hub, you will get a screen like this. The pdf icon will open the source in your browser.
+<img align="right" width="400" title="Source has PDF" hspace="10" src="https://sfg.taxonworks.org/s/cbn6vy"/> At least in the UCD@TW Project, most screens that pull up lists of sources in TW have a convenient PDF icon that either opens the source in the PDF viewer (where you can download it), or enables you to download it directly to your browser. For example, if you pull up a source using the Source Hub, you will get a screen like this. The pdf icon will open the source in your browser.
 
-SCREENSHOT SOURCE HAS PDF
-
-You can also check to see whether a pdf is associated with a source using the Radial Annotator associated with that source (see above). Click the documentation wedge in the Radial Annotator to get the screen below. If a pdf for the source is not present, drag and drop it into the box as shown. If a pdf is associated with the source, you can hit the icon indicated by the red arrow to download to your browser.
-
-SCREENSHOT OF RADIAL ANNOTATOR DOWNLOAD PDF
+<img align="right" width="400" title="Does PDF exist for source?" hspace="10" src="https://sfg.taxonworks.org/s/bitrgd"/> You can also check to see whether a pdf has been  associated with a source using the **Radial Annotator** associated with that source. Click the **documentation** wedge in the Radial Annotator to get the screen below. If a pdf for the source is not present, drag and drop it into the box as shown. If a pdf is associated with the source, you can hit the icon indicated by the red arrow to download to your browser.
 
 ## Tags on Sources
-Tags in TW provide a unique way to group documents (or other objects in TW) in any way that you choose. With these tags that you create and apply, you and colleagues can find the relevant materials needing work or find groups where work is complete and may need vetting. 
+Tags in TW provide a unique way to group documents (or other objects in TW) in any way that you choose. With these tags (aka "keywords") that you create and apply, you and colleagues can find the relevant materials needing work or find groups where work is complete and may need vetting. 
 
 ### UCD@TW Project Tag Example
 
 Because UCD@TW is a community-curated database, they added tags for sources that allow them to better organize and coordinate group work. These are the tags currently associated with their sources. Tags can be added or removed from a source in the Radial Annotator. Most of these tags should be self-explanatory. 
+
+<img align="right" width="300" title="Source Processing Tags for UCD" hspace="10" src="https://sfg.taxonworks.org/s/2cldsu"/> 
+
 - HINT: Tags are also referred to as **Keywords** in TW.
 - If they are certain that a source is an "early view" document, that is, not yet published, they add this tag as any nomenclatural acts in the source are not yet valid.
-- If the source is new to TW, for now, they use the tag “Source unprocessed”, as this allows other curators and helpers to pull up sources that need to be curated.
-- And to anyone starting work to curate a paper, they apply the tag “Source being processed” so that other community members will not try to work on it simultaneously.
+- If the source is new to TW, for now, they use the tag "Source unprocessed", as this allows other curators and helpers to pull up sources that need to be curated.
+- And to anyone starting work to curate a paper, they apply the tag "Source being processed" so that other community members will not try to work on it simultaneously.
+
+HINT: Using the Browse Annotations task you can find out who has claimed sources (or assigned various tags).
 
 ## Creating or Editing Tags
-This is most easily done using the **Manage Controlled Vocabulary task**, as shown below. Tags on sources are treated as "Keywords" here. To create a new tag use the Name, Definition, and CSS Color fields on the left of the screen. Note that the definition field must have at least 20 characters before the Create button is clickable. Note that if you want to use the same color for multiple tags, you can use the eyedropper tool in the Label Color window. To edit an existing tag, use the green icon (circle with a pencil in it) associated with the Tag (Keyword).
+<img align="right" width="300" hspace="10" title="Find Manage Controlled Vocabulary task" src="https://sfg.taxonworks.org/s/p7t05x"/> This is most easily done using the **Manage Controlled Vocabulary task**, as shown below. Tags on sources are treated as "Keywords" here. 
 
-Sample UCD@TW Project Tags
+- To create a new tag use the Name, Definition, and CSS Color fields on the left of the screen. 
+- Note that the definition field _must have at least_ **20 characters** before the Create button is clickable. 
+- Note that if you want to use the same color for multiple tags, you can use the eyedropper tool in the Label Color window. 
+- To edit an existing tag, use the green icon (circle with a pencil in it) associated with the Tag (Keyword).
 
-SCREENSHOT OF TAGS
-
-SCREENSHOT Manage Controlled Vocabulary task
+<img width="500" title="Create, Edit Tags" hspace="10" src="https://sfg.taxonworks.org/s/h1tuyz"/>    
 
 ## Sources With Versions or Translated Titles
 Some sources exist in more than one version, either with translated titles or in entirely translated versions. To add a translated title, use the radial annotator, under "alternate values", and add the information under "title" to add the English version, such as in the case below:
 
-SCREENSHOT Of Paper With Title in German and English
+Example Paper With Title in German and English
+<img width="600" title="Source Title Versions" hspace="10" src="https://sfg.taxonworks.org/s/8vsf1w"/> 
 
 Note, there are at least two reasons why you might have more than one version of source:
 1. Someone has done a translation of a paper, but it has not been published separately. In this case, simpy add the translated pdf as a second document to the source (Documentation tool in Radial Annotator).

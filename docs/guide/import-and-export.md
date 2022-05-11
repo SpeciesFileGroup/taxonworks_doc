@@ -88,13 +88,17 @@ In your project, try creating a simple new specimen record.
 - Select the Preparation type for this specimen. You may need to add a new value to the dropdown using the New preparation type task. 
 
 ### Darwin Core Archive (DwC-A) import
-To upload occurrence (vouchered specimen data records) data, TW offers the ability to use a DwC Archive file. This provides options to share data that maps to concepts (aka terms, elements, properties) in Darwin Core, but also to specific fields in TaxonWorks and to custom "Data Attribute" fields you can add, if need
+To upload occurrence (vouchered specimen data records) data, TW offers the ability to use a DwC Archive file. This provides options to share data that maps to concepts (aka terms, elements, properties) in Darwin Core, but also to specific fields in TaxonWorks and to custom "Data Attribute" fields you can add, if needed.
 
 For these **occurrence datasets** one needs to map each term to be imported. This next section explains the different mapping options available and steps needed to get started.
 
 ### Precursor steps to DwC-A import
-- For your dataset, you may need to create one or more **namespaces.** These namespaces allow TW to a) track uniqueness of each object and b) group these objects. For example, in your collection of physical objects, your catalog numbers may have duplicates if your specimens have come from other instituion collections in the past. Creating namespaces in TW is simple to do, but spending some time on this before upload can simplify the process. Namespaces also need to be unique in your TW Project (first-come, first-served). [NEED EXAMPLES here].
-- In addition, if your dataset has terms not mappable to TW concepts or the DwC terms we currently support, you'll need to create custom "Data Attributes." These need to be created before upload (ideally). If you don't, then records with these data will not upload but are easy for you to address after other records import.
+- For your dataset, you may need to create one or more **namespaces.** These namespaces allow TW to
+  - track uniqueness of each object and
+  - group these objects. 
+  
+  For example, in your collection of physical objects, your catalog numbers may have duplicates if your specimens have come from other instituion collections in the past. Creating namespaces in TW is simple to do, but spending some time on this before upload can simplify the process. Namespaces also need to be unique in your TW Project (first-come, first-served). [NEED EXAMPLES here].
+- In addition, if your dataset has terms not mappable to TW concepts or the DwC terms we currently support, you will need to create custom "Data Attributes." These need to be created before upload (ideally). If you don't, then records with these data will not upload but are easy for you to address after other records import.
 - For some **biocuration** data in TW you may find you need to add the group and accepted values for a given class before upload (e.g. group=caste and class=queen).
 
 ### DwC terms mappings
@@ -107,17 +111,17 @@ Term|Mapping
 `type` | It is checked that it equals `PhysicalObject` before allowing the record to be imported. If the value is empty or term not present it is assumed it is a `PhysicalObject`
 `institutionCode` | Selects the repository for the specimen that is registered with an acronym equal to this value
 `collectionCode` | Paired with `institutionCode` it is used to select the namespace for `catalogNumber` from a user-defined lookup table in import settings, the value itself is not imported.
-`basisOfRecord` | It is checked that it equals `PreservedSpecimen` before allowing the record to be imported. If the value is empty or term not present it is assumed it is a `PreservedSpecimen`
+`basisOfRecord` | It is checked that it equals an expected valid value for term, e.g. `PreservedSpecimen` or `FossilSpecimen` before allowing the record to be imported. If the value is empty or term not present it is assumed it is a `PreservedSpecimen` [IS THIS STILL TRUE?]
 
 #### Occurrence class
 
 Term|Mapping
 ---|---
 `catalogNumber` | The identifier value for Catalog Number local identifier. The namespace is selected from the namespaces lookup table in import settings queried by `institutionCode`:`collectionCode` pair.
-`recordedBy` | It is imported as-is in verbatim collectors field of the collecting event. Additionally, the value is parsed into people and assigned as collectors of the CE. Previously existing people is not used unless the data origin is the same dataset the record belongs to, otherwise any missing people is created.
-`individualCount` | The total individuals count of the specimen record.
+`recordedBy` | It is imported as-is in verbatim collectors field of the collecting event. Additionally, the value is parsed into people and assigned as collectors of the CE. Previously existing people are not used unless the data origin is the same dataset the record belongs to, otherwise any missing people are created.
+`individualCount` | The total number of entities associated with the specimen record (e.g. this record may be for a "lot" containing 6 objects).
 `sex` | Selects the biocuration class from the "sex" biocuration group to be assigned as biocuration classification for the specimen.
-`preparations` | Selects an existing preparation matching the name with this value
+`preparations` | Selects an existing preparation matching the name with this value.
 
 #### Event class
 
@@ -125,11 +129,11 @@ Term|Mapping
 ---|---
 `fieldNumber` | Verbatim trip identifier of collecting event
 `eventDate` | The ISO8601-formatted date is split into start year, month and day collecting event fields. If the value is composed of two dates separated by `/`, then rightmost date is used as end date and split in the same way as start date. If data contradicts dates from other non-empty date-related terms the record will fail to import
-`eventTime` | Time is split into time start hour, minute and second of collecting event
-`startDayOfYear` | Using `year` and the value for this term month and day are calculated and stored in start year, month and day collecting event fields. If the computed value contradicts dates from other non-empty date-related terms the record will fail to import
-`endDayOfYear` |  Using `year` and the value for this term month and day are calculated and stored in end year, month and day collecting event fields. If the computed value contradicts dates from other non-empty date-related terms the record will fail to import
+`eventTime` | Time is split into time start hour, minute, and second of collecting event
+`startDayOfYear` | Using `year` and the value for this term month and day are calculated and stored in start year, month, and day collecting event fields. If the computed value contradicts dates from other non-empty date-related terms the record will fail to import.
+`endDayOfYear` |  Using `year` and the value for this term month and day are calculated and stored in end year, month and day collecting event fields. If the computed value contradicts dates from other non-empty date-related terms the record will fail to import.
 `year` | The start date year of the collecting event. If the value contradicts dates from other non-empty date-related terms the record will fail to import
-`month` | The start date month of the collecting event. If the value contradicts dates from other non-empty date-related terms the record will fail to import
+`month` | The start date month of the collecting event. If the value contradicts dates from other non-empty date-related terms the record will fail to import.
 `day` | The start date day of the collecting event. If the value contradicts dates from other non-empty date-related terms the record will fail to import
 `verbatimDate` | Verbatim date of the collecting event
 `habitat` | Verbatim habitat of the collecting event
@@ -163,7 +167,7 @@ Term|Mapping
 
 ### TW non-standard mappings
 
-The DwC importer has some TW-specific mappings that are neither DwC core terms nor extensions but direct mappings to predicates in your projects imported as data attributes for collection objects and collecting events, biocuration groups and classes, and as an advanced-use feature you may have direct mappings to model fields.
+The DwC importer task includes some TW-specific mappings that are neither DwC core terms nor in any DwC extension term lists but instead, direct mappings to predicates in your projects imported as data attributes for collection objects and collecting events, biocuration groups and classes, and as an advanced-use feature you may have direct mappings to model fields.
 
 **IMPORTANT**: If submitting an actual DwC-A zip file and not tab-separated text file or spreadsheet, this TW-specific mappings have to be placed as headers in the core table, and not in meta.xml. If you are replacing a mapping from meta.xml, you must make sure to comment it out and also if inserting colums make sure you do the appropriate adjustments to avoid collision.
 
@@ -185,12 +189,12 @@ Whenever the importer sees that your project has custom attributes for collectin
 
 #### Direct mapping to TW model fields (advanced)
 
-This is an advance mapping and requires knowledge of the underlying TW models. The pattern is `TW:<model_class>:<field>` where model can be either `CollectionObject` or `CollectingEvent`, and `<field>` can be the ones listed below.
+This is an advance mapping and requires knowledge of the underlying TW models. The pattern is `TW:<model_class>:<field>` where model can be either [`CollectionObject`](https://docs.taxonworks.org/develop/Data/models.html#collection-object) or [`CollectingEvent`](https://docs.taxonworks.org/develop/Data/models.html#collecting-event), and `<field>` can be the ones listed below.
 
 |Class|fields|
 |---|---|
 |`CollectionObject`|`buffered_collecting_event`, `buffered_determinations`, `buffered_other_labels`, `total`,
-|CollectingEvent|`document_label`, `print_label`, `verbatim_label`, `field_notes`, `formation`, `group`, `lithology`, `max_ma`, `maximum_elevation`, `member`, `min_ma`, `minimum_elevation`, `elevation_precision`, `start_date_day`, `start_date_month`, `start_date_year`, `end_date_day`, `end_date_month`, `end_date_year`, `time_end_hour`, `time_end_minute`, `time_end_second`, `time_start_hour`, `time_start_minute`, `time_start_second`, `verbatim_collectors`, `verbatim_date`, `verbatim_datum`, `verbatim_elevation`, `verbatim_geolocation_uncertainty`, `verbatim_habitat`, `verbatim_latitude`, `verbatim_locality`, `verbatim_longitude`, `verbatim_method`, `verbatim_trip_identifier`
+|`CollectingEvent`|`document_label`, `print_label`, `verbatim_label`, `field_notes`, `formation`, `group`, `lithology`, `max_ma`, `maximum_elevation`, `member`, `min_ma`, `minimum_elevation`, `elevation_precision`, `start_date_day`, `start_date_month`, `start_date_year`, `end_date_day`, `end_date_month`, `end_date_year`, `time_end_hour`, `time_end_minute`, `time_end_second`, `time_start_hour`, `time_start_minute`, `time_start_second`, `verbatim_collectors`, `verbatim_date`, `verbatim_datum`, `verbatim_elevation`, `verbatim_geolocation_uncertainty`, `verbatim_habitat`, `verbatim_latitude`, `verbatim_locality`, `verbatim_longitude`, `verbatim_method`, `verbatim_trip_identifier`
 
 ## Exports
 

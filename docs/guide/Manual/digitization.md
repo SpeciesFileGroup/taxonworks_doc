@@ -8,5 +8,5 @@ Uniquely in TaxonWorks, we make it easy up-front to add customized fields (aka "
 
 To get a sense of what can be tracked regarding specimens in your collection, see the Comprehensive Digitization Task in TW outlined next. Note also that you may enter data into TW record-by-record, or in batch mode (see Import and Export).
 
-[INSERT screenshot of Comprehesive Digitization Task screen here]
+[INSERT screenshot of Comprehensive Digitization Task screen here]
 

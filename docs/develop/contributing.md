@@ -32,10 +32,85 @@ Send! It is super useful for you to record your screen, or position a video came
 TaxonWorks code [documentation](http://rdoc.taxonworks.org) is done inline with [Yard tags](http://rdoc.info/gems/yard/file/docs/Tags.md). 
 
 ## Documentation
+This software and workflow together make it possible for all to contribute to TaxonWorks Doc. Note all the pages here in docs.taxonworks.org have an "edit this page" feature. Scroll down to bottom of this page to see it.
+### Add / edit documentation
+To add / edit to this resource (brief instructions for existing content):
+- click "edit this page" where you see a need
+- add the desired text using markdown syntax (very easy!)
+- if there are relevant screenshots to include then,
+  - ask to become a member of the [TaxonWorks Meta Project](https://sfg.taxonworks.org/projects/7/select)
+  - upload the images in TaxonWorks Meta (details to be added)
+  - use the Meta image links to the large image as your screenshot link (see markdown format for links)
+  - click to submit a "pull request."
+  - a [TaxonWorks Docs GitHub repository](https://github.com/SpeciesFileGroup/taxonworks_doc) team member will review, make edits, ping you with questions if needed, and then accept the pull request to "merge" this into the live documentation.
+
+NOTE: Using this method also ensures everyone gets contribution credit and recognition along with the ability to generate metrics and track this work.
+
+### Ordering Sidebar content
+#### Order by filename
+First, the system will take the files within the directory in alphabetical order of the filenames to generate the sidebar. For example:
+
+Folder structure:
+
+```
+-- My folder example
+---- bar.md
+---- foo.md
+```
+
+Filename: foo.md
+```
+#A is the first letter of this title
+```
+
+
+Filename: bar.md
+```
+#B is the first letter of this title
+```
+
+##### Sidebar result:
+
+##### My folder example
+- B is the first letter of this title
+- A is the first letter of this title
+
+
+#### Order by sidebarPosition variable
+
+`sidebarPosition` allows you to change the order of the sidebar _regardless of the alphabetical order of the files_.
+Let's take the example above, but now we're going to add sidebarPosition in each file to change the order
+
+
+Filename: foo.md
+```
+---
+sidebarPosition: 100
+---
+#A is the first letter of this title
+```
+
+
+Filename: bar.md
+```
+---
+sidebarPosition: 200
+---
+#B is the first letter of this title
+```
+
+##### Sidebar result:
+
+##### My folder example
+- A is the first letter of this title
+- B is the first letter of this title
+
+#### Order Directories (aka folders)
+To order (and name?) folders in the sidebar, each directory will need a README.md file. In that file, at the top in the "front-matter" the property of **sidebarPosition** needs to be added and a numeric value provided (as described above). The numeric values will order the Directories (else they will be alphabetical).
 
 ## Project management
 
-### Categorize a Issue on Github
+### Categorize an Issue on Github
 _Not everyone has permissions to label issues._
 [See their descriptions.](https://github.com/SpeciesFileGroup/taxonworks/labels)
 

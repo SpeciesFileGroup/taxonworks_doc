@@ -1,5 +1,5 @@
 ---
-sidebarPosition: 400
+sidebarPosition: 300
 ---
 # Matrices
 

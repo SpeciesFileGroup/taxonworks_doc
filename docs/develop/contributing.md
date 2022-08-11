@@ -2,7 +2,7 @@
 sidebarPosition: 500
 ---
 
-# Contributing
+# Contributing Now
 _Contributions can come in many different ways, not all are technical. How do I contribute? You can always [contact us](/about/Contact) with questions._
 
 ## Ideas, feature requests

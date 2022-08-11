@@ -24,12 +24,12 @@ module.exports = function getSideBar(folder, text) {
     }
   }
 
-  filesAndDirectories.sort((a, b) => getPosition(a) - getPosition(b))
+  const sortedFilesAndDirectories = filesAndDirectories.slice().sort((a, b) => sortFunction(getPosition(b), getPosition(a)))
 
   const sideBar = { 
     text,
     link: `/${folder}/`,
-    children: [].concat(...filesAndDirectories.map(item => 
+    children: [].concat(...sortedFilesAndDirectories.map(item => 
       item.isDirectory() 
         ? getSideBar(`${folder}/${item.name}`, item.name) 
         : `/${folder}/${item.name}`
@@ -39,4 +39,20 @@ module.exports = function getSideBar(folder, text) {
   return Array.isArray(sideBar) 
     ? sideBar 
     : [sideBar]
+}
+
+function sortFunction (a, b, asc) {
+  if (a === undefined) return 1
+  if (b === undefined) return -1
+  if (a === undefined && b === null) return 0
+
+  const result = a - b
+
+  if (isNaN(result)) {
+    return (asc)
+      ? a?.toString().localeCompare(b, undefined, { numeric: true, sensitivity: 'base' })
+      : b?.toString().localeCompare(a, undefined, { numeric: true, sensitivity: 'base' })
+  } else {
+    return (asc) ? result : -result
+  }
 }

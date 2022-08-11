@@ -20,7 +20,9 @@ module.exports = function getSideBar(folder, text) {
       const file = fs.readFileSync(path.join(sourcePath), 'utf8')
       const markdownObject = matter(file)
 
-      return markdownObject?.data?.sidebarPosition
+      return source.isDirectory() 
+        ? markdownObject?.data?.sidebarParentPosition
+        : markdownObject?.data?.sidebarPosition
     }
   }
 

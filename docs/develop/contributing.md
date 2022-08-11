@@ -5,8 +5,6 @@ sidebarPosition: 500
 # Contributing
 _Contributions can come in many different ways, not all are technical. How do I contribute? You can always [contact us](/about/Contact) with questions._
 
-**This page is a stub**
-
 ## Ideas, feature requests
 
 ### Provide an interface or workflow idea
@@ -75,12 +73,10 @@ Filename: bar.md
 - B is the first letter of this title
 - A is the first letter of this title
 
-
 #### Order by sidebarPosition variable
 
 `sidebarPosition` allows you to change the order of the sidebar _regardless of the alphabetical order of the files_.
 Let's take the example above, but now we're going to add sidebarPosition in each file to change the order
-
 
 Filename: foo.md
 ```
@@ -107,6 +103,40 @@ sidebarPosition: 200
 
 #### Order Directories (aka folders)
 To order (and name?) folders in the sidebar, each directory will need a README.md file. In that file, at the top in the "front-matter" the property of **sidebarPosition** needs to be added and a numeric value provided (as described above). The numeric values will order the Directories (else they will be alphabetical).
+
+### Style conventions
+
+We use Markdown.  Many guides exist, for example on [GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github).
+
+* Bold - ?
+* Italics - As typically used in English writing, to add emphasis, or draw attention.
+* "Double quotes" - follow typical English use.
+* 'Single quoted words' are literal values to be input or observed 
+* Bullets - Actions we are instructing the user to take.  Do this now.
+* Numbered bullets - Unused?
+* `Highlighted words` (surrounded by backticks) refer to, typically literal, text or elements in the application, that are generally part of the user interface (as opposed to dynamic data being displayed). For example they might be on button or field names like "Notice the `Data`, `Tasks` `Favourite` tabs".
+* Inline quotes - ?? (use "> ")
+> this is an inline quote
+* Tripple-tick blocks - literal examples 
+
+```
+Some code, or literal example.
+```
+
+Figures can make use of the HTML figure element, and its corresponding figcaption:
+
+```html
+ <figure>
+  <img src="https://sfg.taxonworks.org/s/rdc03q" alt="Sample image" style="width:100%">
+  <figcaption>Fig.1 - A TaxonWorks Interface</figcaption>
+</figure>
+``` 
+
+
+
+
+
+
 
 ## Project management
 

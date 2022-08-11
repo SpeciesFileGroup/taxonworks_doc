@@ -13,11 +13,16 @@ In TaxonWorks, "sources" include the literature database, citations, and other c
 
 Source Hub [Screenshot](https://sfg.taxonworks.org/s/rdc03q) Legend
 <img align="right" width="200" title="Source Hub" src="https://sfg.taxonworks.org/s/rdc03q"/>
-- (1) To see if a source is in the database, type information in **Select a source.** This is a smart selector so you only need to enter as many letters needed to uniquely identify a source. For example, the string “wool dal sig” brings up Woolley and Dal Molin (2017). If a source is found it will show beneath the search box. If you click on this, it will take you to a page describing the source. <img align="right" width="200" title="Search Sources" src="https://sfg.taxonworks.org/s/7vgq1z"/>
-- (2) **Filter sources** takes you to a screen that allows you to apply different search criteria to locate sources of interest. We will use this later to identify sources that you may need to work on.
-- (3) **My recent sources** shows a list of sources that you have entered recently.
-- (4) **New Source** takes you to a screen that enables you to add new sources using various methods.
-- (5) Note the **Batch upload** option here via BibTeX formatted source data.
+
+Note the sections you see here in the screenshot for the Source Hub for selecting (1), filtering (2), my recent sources (3), adding a new source (4), and batch upload (5).
+
+To see if a source is in the database, type information in `Select a source.` 
+
+This is a smart selector so you only need to enter as many letters needed to uniquely identify a source. For example, the string “wool dal sig” brings up Woolley and Dal Molin (2017). If a source is found it will show beneath the search box. If you click on this, it will take you to a page describing the source. <img align="right" width="200" title="Search Sources" src="https://sfg.taxonworks.org/s/7vgq1z"/>
+- (2) `Filter sources` takes you to a screen that allows you to apply different search criteria to locate sources of interest. We will use this later to identify sources that you may need to work on.
+- (3) `My recent sources` shows a list of sources that you have entered recently.
+- (4) `New Source` takes you to a screen that enables you to add new sources using various methods.
+- (5) Note the `Batch upload` option here via BibTeX formatted source data.
 
 ## Related Source Tasks
 Next we delve into the details of various work you may need or want to do with source information (e.g. adding sources, editing, tagging, and filtering). The source content needing to be captured includes such data as new taxon names, people strings or names, distribution information, type information, and biological associations. For efficient source data extraction and entry, we recommend familiarity with the following TW Tasks and Data Cards.

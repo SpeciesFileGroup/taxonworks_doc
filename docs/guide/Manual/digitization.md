@@ -1,3 +1,6 @@
+---
+sidebarPosition: 300
+---
 # Digitization
 
 _TaxonWorks offers taxonomists, collections staff, and others to collectively manage vouchered collections data._

@@ -1,5 +1,5 @@
 ---
-sidebarPosition: 400
+sidebarPosition: 50 
 ---
 
 # Community Documentation

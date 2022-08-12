@@ -30,21 +30,66 @@ Send! It is super useful for you to record your screen, or position a video came
 TaxonWorks code [documentation](http://rdoc.taxonworks.org) is done inline with [Yard tags](http://rdoc.info/gems/yard/file/docs/Tags.md). 
 
 ## Documentation
-This software and workflow together make it possible for all to contribute to TaxonWorks Doc. Note all the pages here in docs.taxonworks.org have an "edit this page" feature. Scroll down to bottom of this page to see it.
-### Add / edit documentation
-To add / edit to this resource (brief instructions for existing content):
-- click "edit this page" where you see a need
-- add the desired text using markdown syntax (very easy!)
-- if there are relevant screenshots to include then,
-  - ask to become a member of the [TaxonWorks Meta Project](https://sfg.taxonworks.org/projects/7/select)
-  - upload the images in TaxonWorks Meta (details to be added)
-  - use the Meta image links to the large image as your screenshot link (see markdown format for links)
-  - click to submit a "pull request."
-  - a [TaxonWorks Docs GitHub repository](https://github.com/SpeciesFileGroup/taxonworks_doc) team member will review, make edits, ping you with questions if needed, and then accept the pull request to "merge" this into the live documentation.
+_This software and workflow together make it possible for all to contribute to TaxonWorks Doc. Note all the pages here in docs.taxonworks.org have an "edit this page" feature. Scroll down to bottom of this page to see it._
+
+### Editing 
+_You can edit files offline, on your own local computer, or online within the browser._
+
+You will need a [Github](http://github.com) account.
 
 NOTE: Using this method also ensures everyone gets contribution credit and recognition along with the ability to generate metrics and track this work.
 
-### Ordering Sidebar content
+#### Online 
+_A brief summary of the steps._
+
+* Login to your [Github](https://github.com/login) account.
+* While browsing these documents click `Edit this page` where you see a need.
+* Add or edit the desired text. Use [Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github). 
+* Ensure your edits follow the [style conventions](#style-conventions).
+* If you need to add an image see [including a screenshot](#including-screenshots-or-images).
+* Click `<something>` to submit a "pull request."
+
+A [TaxonWorks Docs GitHub repository](https://github.com/SpeciesFileGroup/taxonworks_doc) team member will review, make edits, ping you with questions if needed, and then accept the pull request to "merge" this into the live documentation.
+
+#### Offline
+
+_Offline editing follows a typical Git-based workflow that are detailed on Github and many other places online._
+
+* Fork the repository
+* Clone the fork your local machine
+* Make a new feature branch 
+* Edit, and commit to the branch
+* Push your local edits to your Github fork
+* Make a pull request 
+
+### Including screenshots or images
+* Ask to become a member of the [TaxonWorks Meta Project](https://sfg.taxonworks.org/projects/7/select)
+* Upload the images to that project 
+* In TaxonWorks find the generated image link, use the `large` format, and copy it
+* Return to editing and use the Markdown format to insert images.
+
+You can also use HTML to insert the image as a figure, this allows you to include a caption:
+
+```html
+ <figure>
+  <img src="https://sfg.taxonworks.org/s/rdc03q" alt="Sample image" style="width:100%">
+  <figcaption>Fig.1 - A TaxonWorks Interface</figcaption>
+</figure>
+``` 
+
+### Adding a file
+* After you fork the repository you can use Github [directly to add a new file](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository)
+. You can also add a new file within the Github interface
+
+### Ordering sidebar content
+In brief this is controlled alphabetically, or it can be over-written via 2 frontmatter parameters, `sidebarPosition` and `sidebarParentPosition`.  
+
+#### sidebarPosition
+Where: In _any_ (README.md or other) documentation file.  When: You want to position the _content of that document_ within the context of the other files within that directory.
+
+#### sidebarParentPosition
+Where: Only in a README.md.  When: You want to position the name of the _directory_ within the context of other directories _and_ files at the level of that directory.
+
 #### Order by filename
 First, the system will take the files within the directory in alphabetical order of the filenames to generate the sidebar. For example:
 
@@ -58,51 +103,50 @@ Folder structure:
 
 Filename: foo.md
 ```
-#A is the first letter of this title
+# A is the first letter of this title
 ```
-
 
 Filename: bar.md
 ```
-#B is the first letter of this title
+# B is the first letter of this title
 ```
 
 ##### Sidebar result:
 
-##### My folder example
-- B is the first letter of this title
-- A is the first letter of this title
+```
+My folder example
+  B is the first letter of this title
+  A is the first letter of this title
+```
 
 #### Order by sidebarPosition variable
 
 `sidebarPosition` allows you to change the order of the sidebar _regardless of the alphabetical order of the files_.
-Let's take the example above, but now we're going to add sidebarPosition in each file to change the order
+Let's take the example above, but now we're going to add `sidebarPosition` in each file to change the order:
 
 Filename: foo.md
 ```
 ---
-sidebarPosition: 100
+sidebarPosition: 200
 ---
-#A is the first letter of this title
+# A is the first letter of this title
 ```
-
 
 Filename: bar.md
 ```
 ---
-sidebarPosition: 200
+sidebarPosition: 100
 ---
-#B is the first letter of this title
+# B is the first letter of this title
 ```
 
 ##### Sidebar result:
 
-##### My folder example
-- A is the first letter of this title
-- B is the first letter of this title
-
-#### Order Directories (aka folders)
-To order (and name?) folders in the sidebar, each directory will need a README.md file. In that file, at the top in the "front-matter" the property of **sidebarPosition** needs to be added and a numeric value provided (as described above). The numeric values will order the Directories (else they will be alphabetical).
+```
+My folder example
+  B is the first letter of this title
+  A is the first letter of this title
+```
 
 ### Style conventions
 
@@ -123,24 +167,10 @@ We use Markdown.  Many guides exist, for example on [GitHub](https://docs.github
 Some code, or literal example.
 ```
 
-Figures can make use of the HTML figure element, and its corresponding figcaption:
-
-```html
- <figure>
-  <img src="https://sfg.taxonworks.org/s/rdc03q" alt="Sample image" style="width:100%">
-  <figcaption>Fig.1 - A TaxonWorks Interface</figcaption>
-</figure>
-``` 
-
-
-
-
-
-
 
 ## Project management
+_How to issues are triaged, prioritized, and discussed._
 
 ### Categorize an Issue on Github
 _Not everyone has permissions to label issues._
 [See their descriptions.](https://github.com/SpeciesFileGroup/taxonworks/labels)
-

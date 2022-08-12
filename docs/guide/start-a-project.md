@@ -1,5 +1,5 @@
 ---
-sidebarPosition: 100
+sidebarPosition: 30
 ---
 
 # Start a project

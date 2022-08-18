@@ -15,14 +15,14 @@ _TaxonWorks offers conventions via a unique user interface building in forward-a
 
 
 ### Logging in
-After you review this information and screenshot below you'll know where to
-- log in
-- submit an issue or idea
-- find the TW software version
-- see your projects in TW
-- access administration of a TW Project(s)
-
-[INSERT screenshot of TW UI front page here - with parts labeled]
+This screenshot provides a quick overview of the TW User Interface after log in. In the caption, you will find brief descriptions of each highlighted feature. If you have an account, please log in and click to see each for yourself. 
+<figure>
+    <img src="https://sfg.taxonworks.org/s/ggwwfj"
+         alt="The TaxonWorks User Interface after signin" title="TaxonWorks User Interface Features">
+         <figcaption>LEGEND. <b>In the header menu</b>: <b>Sign out</b>/in, see your <b>Account</b> information, <b>Administer</b> projects, click <b>Project</b> to manage a specific project, click <b>Issues</b> to submit an idea or issue to GitHub, note the <b>software version number</b> (e.g. v0.28.0). 
+         <b>In the main section</b>: see all of your <b>Projects</b> (click to go into that project), from <b>Data</b> you can see recent data added for that project, and with <b>Preferences</b> you can order the next User Interface hub options (<b>Tasks</b>, <b>Data</b>, and <b>Favorites</b>). <b>On the far right</b> the four icons (top to bottom): <b>PDF Document viewer</b>, your <b>Pinboard</b> for frequently used items, a <b>Clipboard</b> for frequently used text, and a <b>built-in Help</b> feature.
+         </figcaption>
+</figure>
 
 ### Administration
 Next, for any given Project, notice the UI changes once you click _Administration_ for that Project. In the Administration module you can:

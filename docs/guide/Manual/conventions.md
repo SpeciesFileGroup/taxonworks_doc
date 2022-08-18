@@ -8,19 +8,19 @@ _TaxonWorks offers conventions via a unique user interface building in forward-a
 
 ## Philosophy
 
-- [ ] TW seeks to offer a user interface that is as intuitive as possible that supports elegant software features to improve both the experience and the data products.
-- [ ] This guide and manual exemplify one way in which the Species File Group and TaxonWorks endeavor to build a sustainable, open, transparent community. The software and process for building and maintaining the content here were selected specifically for ease of community curation of this resource.
-- [ ]  The structure, tasks, and features of TW focus on addressing specifically-stated needs of those using the product. We use an agile, "epic story" approach that can be summarized as: _As a [your role], I want to do [your task], in order to accomplish [some product]._
-- [ ] Note color conventions used in the TW UI offer information to orient the observer to more information (e.g. this task is still under development, or these data are shared across projects).
-- [ ]
+- TW seeks to offer a user interface that is as intuitive as possible that supports elegant software features to improve both the experience and the data products.  
+- This guide and manual exemplify one way in which the Species File Group and TaxonWorks endeavor to build a sustainable, open, transparent community. The software and process for building and maintaining the content here were selected specifically for ease of community curation of this resource.
+- The structure, tasks, and features of TW focus on addressing specifically-stated needs of those using the product. We use an agile, "epic story" approach that can be summarized as: _As a [your role], I want to do [your task], in order to accomplish [some product]._
+- Note color conventions used in the TW UI offer information to orient the observer to more information (e.g. this task is still under development, or these data are shared across projects).
+
 
 ### Logging in
-After you review this information and screenshot below you'll know more about
-- logging in
-- submitting an issue or idea
-- finding the TW software version
-- projects in TW
-- administration of a TW Project(s)
+After you review this information and screenshot below you'll know where to
+- log in
+- submit an issue or idea
+- find the TW software version
+- see your projects in TW
+- access administration of a TW Project(s)
 
 [INSERT screenshot of TW UI front page here - with parts labeled]
 

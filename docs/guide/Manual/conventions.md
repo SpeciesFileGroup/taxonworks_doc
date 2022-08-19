@@ -8,7 +8,7 @@ _TaxonWorks offers conventions via a unique user interface building in forward-a
 
 ## Philosophy
 
-- TW seeks to offer a user interface that is as intuitive as possible that supports elegant software features to improve both the experience and the data products.  
+- TW seeks to offer a user interface (UI) that is as intuitive as possible that supports elegant software features to improve both the experience and the data products.  
 - This guide and manual exemplify one way in which the Species File Group and TaxonWorks endeavor to build a sustainable, open, transparent community. The software and process for building and maintaining the content here were selected specifically for ease of community curation of this resource.
 - The structure, tasks, and features of TW focus on addressing specifically-stated needs of those using the product. We use an agile, "epic story" approach that can be summarized as: _As a [your role], I want to do [your task], in order to accomplish [some product]._
 - Note color conventions used in the TW UI offer information to orient the observer to more information (e.g. this task is still under development, or these data are shared across projects).
@@ -19,8 +19,9 @@ This screenshot provides a quick overview of the TW User Interface after log in.
 <figure>
     <img src="https://sfg.taxonworks.org/s/ggwwfj"
          alt="The TaxonWorks User Interface after signin" title="TaxonWorks User Interface Features">
-         <figcaption>LEGEND. <b>In the header menu</b>: <b>Sign out</b>/in, see your <b>Account</b> information, <b>Administer</b> projects, click <b>Project</b> to manage a specific project, click <b>Issues</b> to submit an idea or issue to GitHub, note the <b>software version number</b> (e.g. v0.28.0). 
-         <b>In the main section</b>: see all of your <b>Projects</b> (click to go into that project), from <b>Data</b> you can see recent data added for that project, and with <b>Preferences</b> you can order the next User Interface hub options (<b>Tasks</b>, <b>Data</b>, and <b>Favorites</b>). <b>On the far right</b> the four icons (top to bottom): <b>PDF Document viewer</b>, your <b>Pinboard</b> for frequently used items, a <b>Clipboard</b> for frequently used text, and a <b>built-in Help</b> feature.
+         <figcaption>
+            <p>Legend. <b>In the header menu</b>: <b>Sign out</b>/in, see your <b>Account</b> information, <b>Administer</b> projects, click <b>Project</b> to manage a specific project, click <b>Issues</b> to submit an idea or issue to GitHub, note the <b>software version number</b> (e.g. v0.28.0). 
+         <b>In the main section</b>: see all of your <b>Projects</b> (click to go into that project), from <b>Data</b> you can see recent data added for that project, and with <b>Preferences</b> you can order the next User Interface hub options (<b>Tasks</b>, <b>Data</b>, and <b>Favorites</b>). <b>On the far right</b> the four icons (top to bottom): <b>PDF Document viewer</b>, your <b>Pinboard</b> for frequently used items, a <b>Clipboard</b> for frequently used text, and a <b>built-in Help</b> feature.</p>
          </figcaption>
 </figure>
 

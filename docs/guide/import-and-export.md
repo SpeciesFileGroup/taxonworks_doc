@@ -146,6 +146,13 @@ Term|Mapping
 ---|---
 `fieldNumber` | Verbatim trip identifier of collecting event
 
+#### Identifcation class
+
+Term|Mapping
+---|---
+`identifiedBy` | A list (concatenated and separated) of names of people, groups, or organizations who assigned the Taxon to the subject. If possible, separate the values in a list with space vertical bar space \| (known as a pipe). (e.g. <code>Theodore Pappenfuss &#124; Robert Macey</code>)
+`dateIdentified` | The date on which the subject was determined as representing the Taxon. Best practice is to use a date that conforms to ISO 8601-1:2019 [see examples](https://dwc.tdwg.org/terms/#dwc:dateIdentified).
+
 #### Taxon class
 
 Term|Mapping

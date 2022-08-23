@@ -1,7 +1,10 @@
+const { path } = require('@vuepress/utils')
+const { defaultTheme } = require('vuepress')
+const { searchPlugin } = require('@vuepress/plugin-search')
+const figurePlugin = require('./plugins/figure')
 const navbar = require('./configs/navbar')
 const sidebar = require('./configs/sidebar')
 const pluginsLang = require('./configs/plugins')
-const { path } = require('@vuepress/utils')
 
 module.exports = {
   lang: 'en-US',
@@ -26,9 +29,10 @@ module.exports = {
 
   extendsMarkdown: md => {
 	  md.use(require('markdown-it-task-lists'))
+    md.use(figurePlugin)
 	},
 
-  themeConfig: {
+  theme: defaultTheme({
     docsRepo: 'https://github.com/SpeciesFileGroup/taxonworks_doc',
     docsBranch: 'development',
     docsDir: 'docs',
@@ -70,17 +74,14 @@ module.exports = {
         toggleSidebar: 'Alternar barra lateral',
       },
     }
-  },
+  }),
 
   plugins: [
-    [
-      '@vuepress/plugin-search',
-      {
-        locales: {
-          '/': pluginsLang.en,
-          '/es/': pluginsLang.es
-        },
-      },
-    ],
-  ],
+    searchPlugin({
+      locales: {
+        '/': pluginsLang.en,
+        '/es/': pluginsLang.es
+      }
+    })
+  ]
 }

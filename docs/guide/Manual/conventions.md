@@ -15,13 +15,16 @@ _TaxonWorks offers conventions via a unique user interface building in forward-a
 
 
 ### Logging in
-This screenshot provides a quick overview of the TW User Interface after log in. In the caption, you will find brief descriptions of each highlighted feature. If you have an account, please log in and click to see each for yourself. 
+This screenshot provides a quick overview of the TW User Interface after log in. In the caption, you will find brief descriptions of each highlighted feature. If you have an account, please log in and click to try header menu options. 
+
+[**Legend**: The TaxonWorks User Interface after signin. In the header menu:`Sign out`/in, see your `Account`information, `Administer` project, click `Issues` to submit idea or snafu to GitHub, find the `software version number` (e.g. v0.28.0)](https://sfg.taxonworks.org/s/ax1ccw)
+
 <figure>
-    <img src="https://sfg.taxonworks.org/s/ggwwfj"
+    <img src="https://sfg.taxonworks.org/s/ax1ccw"
          alt="The TaxonWorks User Interface after signin" title="TaxonWorks User Interface Features">
          <figcaption>
-            <p>Legend. <b>In the header menu</b>: <b>Sign out</b>/in, see your <b>Account</b> information, <b>Administer</b> projects, click <b>Project</b> to manage a specific project, click <b>Issues</b> to submit an idea or issue to GitHub, note the <b>software version number</b> (e.g. v0.28.0). 
-         <b>In the main section</b>: see all of your <b>Projects</b> (click to go into that project), from <b>Data</b> you can see recent data added for that project, and with <b>Preferences</b> you can order the next User Interface hub options (<b>Tasks</b>, <b>Data</b>, and <b>Favorites</b>). <b>On the far right</b> the four icons (top to bottom): <b>PDF Document viewer</b>, your <b>Pinboard</b> for frequently used items, a <b>Clipboard</b> for frequently used text, and a <b>built-in Help</b> feature.</p>
+            <p>Legend. <b>In the header menu</b>: (top left) click <b>TaxonWorks</b> to see this Dashboard, (right to left) <b>Sign out</b>/in, see your <b>Account</b> information, <b>Administer</b> projects, click <b>Project</b> to manage a specific project, click <b>Issues</b> to submit an idea or issue to GitHub, note the <b>software version number</b> (e.g. v0.28.0). 
+         <b>In the main section</b>: see all of your <b>Projects</b> (click to go into that project), from <b>Data</b> you can see recent data added for that project, and with <b>Preferences</b> you can order the User Interface hub options (<b>Tasks</b>, <b>Data</b>, and <b>Favorites</b>). <b>On the far right</b> the four icons (top to bottom): <b>PDF Document viewer</b>, your <b>Pinboard</b> for frequently used items, a <b>Clipboard</b> for frequently used text, and a <b>built-in Help</b> feature.</p>
          </figcaption>
 </figure>
 

@@ -1,4 +1,4 @@
-module.exports = [
+export const en = [
   {
     text: 'Guide',
     link: '/guide/',

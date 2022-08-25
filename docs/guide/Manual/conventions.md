@@ -17,7 +17,8 @@ _TaxonWorks offers conventions via a unique user interface building in forward-a
 ### Logging in
 This screenshot provides a quick overview of the TW User Interface after log in. In the caption, you will find brief descriptions of each highlighted feature. If you have an account, please log in and click to try header menu options. 
 
-[**Legend**: The TaxonWorks User Interface after signin. In the header menu:`Sign out`/in, see your `Account`information, `Administer` project, click `Issues` to submit idea or snafu to GitHub, find the `software version number` (e.g. v0.28.0)](https://sfg.taxonworks.org/s/ax1ccw)
+
+#left[**Legend**: The TaxonWorks User Interface after signin. In the header menu:`Sign out`/in, see your `Account`information, `Administer` project, click `Issues` to submit idea or snafu to GitHub, find the `software version number` (e.g. v0.28.0)](https://sfg.taxonworks.org/s/ax1ccw)
 
 <figure>
     <img src="https://sfg.taxonworks.org/s/ax1ccw"

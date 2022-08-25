@@ -27,7 +27,7 @@ function validateStart (src, pos) {
   return false
 }
 
-const FIGURE_REGEX = /#(\w+)*\[([a-zA-Z].+)]\([\s]*(.*?)[\s]*(\[.*?\])??[)]/im;
+const FIGURE_REGEX = /#(\w+)*\[(\S.+)]\([\s]*(.*?)[\s]*(\[.*?\])??[)]/im;
 
 function figureRuler (md) {
   return function figureTokenize(state, silent) {
@@ -67,7 +67,8 @@ function figureRuler (md) {
       token.figalt = figalt;
     }
 
-    theState.pos += theState.src.indexOf(')', theState.pos);
+    theState.pos += theState.src.lastIndexOf(')');
+
   
     return true;
   };

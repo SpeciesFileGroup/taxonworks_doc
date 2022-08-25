@@ -1,10 +1,11 @@
-const { path } = require('@vuepress/utils')
-const { defaultTheme } = require('vuepress')
-const { searchPlugin } = require('@vuepress/plugin-search')
-const figurePlugin = require('./plugins/figure')
-const navbar = require('./configs/navbar')
-const sidebar = require('./configs/sidebar')
-const pluginsLang = require('./configs/plugins')
+import { path } from '@vuepress/utils'
+import { defaultTheme } from'vuepress'
+import { searchPlugin } from '@vuepress/plugin-search'
+import figurePlugin from './plugins/figure'
+import navbar from './configs/navbar'
+import taskListPlugin from 'markdown-it-task-lists'
+import * as sidebar from './configs/sidebar'
+import * as pluginsLang from './configs/plugins'
 
 module.exports = {
   lang: 'en-US',
@@ -28,7 +29,7 @@ module.exports = {
   clientAppEnhanceFiles: path.resolve(__dirname, './configs/clientAppEnhance.js'),
 
   extendsMarkdown: md => {
-	  md.use(require('markdown-it-task-lists'))
+	  md.use(taskListPlugin)
     md.use(figurePlugin)
 	},
 

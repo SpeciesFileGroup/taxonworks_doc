@@ -158,10 +158,11 @@ We use Markdown.  Many guides exist, for example on [GitHub](https://docs.github
 * 'Single quoted words' are literal values to be input or observed 
 * Bullets - Actions we are instructing the user to take.  Do this now.
 * Numbered bullets - Unused?
-* `Highlighted words` (surrounded by backticks) refer to, typically literal, text or elements in the application, that are generally part of the user interface (as opposed to dynamic data being displayed). For example they might be on button or field names like "Notice the `Data`, `Tasks` `Favourite` tabs".
+* Backticks ` are used to wrap text. See next.
+* `Highlighted words` (surrounded by backticks) refer to, typically literal, text or elements in the application, that are generally part of the user interface (as opposed to dynamic data being displayed). For example they might be on button or field names like "Notice the `Data`, `Tasks`, `Favourite` tabs".
 * Inline quotes - ?? (use "> ")
 > this is an inline quote
-* Tripple-tick blocks - literal examples 
+* Triple-tick blocks - use these for literal examples. Put 3 backtick marks ``` before the text block and 3 backtick marks after the text. This results in the following block in documentation.
 
 ```
 Some code, or literal example.

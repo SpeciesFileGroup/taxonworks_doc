@@ -18,24 +18,47 @@ _TaxonWorks offers conventions via a unique user interface building in forward-a
 This screenshot provides a quick overview of the TW User Interface after log in. In the caption, you will find brief descriptions of each highlighted feature. If you have an account, please log in and click to try header menu options. 
 
 
-#left[**Legend**: The TaxonWorks User Interface after signin. In the header menu:`Sign out`/in, see your `Account`information, `Administer` project, click `Issues` to submit idea or snafu to GitHub, find the `software version number` (e.g. v0.28.0)](https://sfg.taxonworks.org/s/ax1ccw)
+#left[**Legend**: The TaxonWorks User Interface after signin. See items explained next](https://sfg.taxonworks.org/s/ax1ccw [screenshot of the TaxonWorks User Interface options after logging in])
 
-<figure>
-    <img src="https://sfg.taxonworks.org/s/ax1ccw"
-         alt="The TaxonWorks User Interface after signin" title="TaxonWorks User Interface Features">
-         <figcaption>
-            <p>Legend. <b>In the header menu</b>: (top left) click <b>TaxonWorks</b> to see this Dashboard, (right to left) <b>Sign out</b>/in, see your <b>Account</b> information, <b>Administer</b> projects, click <b>Project</b> to manage a specific project, click <b>Issues</b> to submit an idea or issue to GitHub, note the <b>software version number</b> (e.g. v0.28.0). 
-         <b>In the main section</b>: see all of your <b>Projects</b> (click to go into that project), from <b>Data</b> you can see recent data added for that project, and with <b>Preferences</b> you can order the User Interface hub options (<b>Tasks</b>, <b>Data</b>, and <b>Favorites</b>). <b>On the far right</b> the four icons (top to bottom): <b>PDF Document viewer</b>, your <b>Pinboard</b> for frequently used items, a <b>Clipboard</b> for frequently used text, and a <b>built-in Help</b> feature.</p>
-         </figcaption>
-</figure>
+- In the header menu (left-to-right), click
+  - `TaxonWorks` to return to this `Dashboard` view
+  - (copy) `software version number` (e.g. v0.28.0)
+  - `Issues` to submit an idea or issue to GitHub
+  - `Project` to manage a specific project
+  - `Administration` to see/access all projects you administer
+  - `Account` to access your own account information
+  - `Sign out`/in
+
+In the main section (left-to-right): click items under the headers. Options under `Projects` give you access to all your projects. With `Data` you can view `recently created` data added for that project. With `Preferences` you can order the User Interface hub options `Tasks`, `Data`, and `Favorites`. 
+
+- On the far bottom right, note the four icons (top to bottom).
+  - Click a half-circle icon on the right side to open a panel
+
+The red circle opens the `PDF Document viewer`. The green circle gives you a `Pinboard` to access frequently used items like source PDFs. With the blue circle, you get a `Clipboard` for frequently used text. The orange circle provides built-in context-dependent `Help`.
 
 ### Administration
-Next, for any given Project, notice the UI changes once you click _Administration_ for that Project. In the Administration module you can:
-- add members to a project
-- control permissions
-- see a list of members
+Next, for any given Project you select, notice the UI changes once you click `Administration` for that Project. In the Administration module you can, for example: see/add project members, and control permissions. Detailed UI overviews follow this general view.
 
-[screenshots for each of the above]
+#left[**Legend**: The TaxonWorks Project Administration UI. See options explained next.](https://sfg.taxonworks.org/s/j3zdyy [screenshot of the TaxonWorks Adminstration Interface options])
+
+In the main section under `Projects` you can click to create a `New` Project or use `Projects overview` to find a Project and add a current TW user as a member.
+
+From the `Users` section, you have options to add a `New` user, add multiple users using `Batch add new`, `List` all users, and see the `Activity` for all Projects and Users.
+
+Under the `Data` topic, using `Overview` you can create specific reports for different data types and projects. With `Health` you find any data issues that the TW software has detected. `Reindex` opens an option for you to create Darwin Core (standard) occurrence records.
+
+#### Add a New Project
+#left[**Legend**: Add New Project UI ](https://sfg.taxonworks.org/s/y40u6c [screenshot of the TaxonWorks Add New Project UI])]
+- To create a `New` Project, under `Projects`
+  - Click `New`
+  - Enter the desired `Name` in the field provided
+  - You are a member by default.
+  - For the `API access token` you click
+    - `Generate new token` if you want to be able to access your data programatically
+    - `clear api access token` if you need / want to stop all public access to your data.
+  - Click `Create Project`.
+
+As a result, your `Dashboard` list will include the new Project. If for some reason you find you need to edit the name of your project, it's also editable after creation.
 
 ### Try it
 1. For your project, add a member.

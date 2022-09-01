@@ -65,10 +65,20 @@ _Offline editing follows a typical Git-based workflow that are detailed on Githu
 ### Including screenshots or images
 * Ask to become a member of the [TaxonWorks Meta Project](https://sfg.taxonworks.org/projects/7/select)
 * Upload the images to that project 
-* In TaxonWorks find the generated image link, use the `large` format, and copy it
-* Return to editing and use the Markdown format to insert images.
+* In TaxonWorks find the generated image link, use the `large` format, and copy the link.
+* Return to editing and use the Markdown format or HTML format to insert images (examples next).
+* Note that both methods allow you to specify the image size.
 
-You can also use HTML to insert the image as a figure, this allows you to include a caption:
+#### Markdown for image with caption
+
+Examples:  
+`#left[caption](https://foobar [alt title] h{400} w{500})`  
+`#center[caption](https://foobar [alt title] w{500} h{400})`  
+`#right[caption](https://foobar [alt title] w{80%} h{50%})`  
+`#left[caption](https://foobar [alt title] h{50%})`  
+`#left[caption](https://foobar [alt title] w{80%})`  
+
+#### HTML for image with caption
 
 ```html
  <figure>

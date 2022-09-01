@@ -48,14 +48,16 @@ From the `Users` section, you have options to add a `New` user, add multiple use
 Under the `Data` topic, using `Overview` you can create specific reports for different data types and projects. With `Health` you find any data issues that the TW software has detected. `Reindex` opens an option for you to create Darwin Core (standard) occurrence records.
 
 #### Add a New Project
-#left[**Legend**: Add New Project UI ](https://sfg.taxonworks.org/s/y40u6c [screenshot of the TaxonWorks Add New Project UI])]
-- To create a `New` Project, under `Projects`
-  - Click `New`
+#left[**Legend**: Add New Project UI](https://sfg.taxonworks.org/s/y40u6c [screenshot of the TaxonWorks Add New Project UI] w{60%})
+- To create a `New` Project
+  - Click `Administration` in the header menu, 
+  - then under `Projects` click `New`
   - Enter the desired `Name` in the field provided
   - You are a member by default.
-  - For the `API access token` you click
+    - Uncheck if creating for others.
+  - For the `API access token` you select
     - `Generate new token` if you want to be able to access your data programatically
-    - `clear api access token` if you need / want to stop all public access to your data.
+    - `clear api access token` if you need / want to stop all public programatic access to your data.
   - Click `Create Project`.
 
 As a result, your `Dashboard` list will include the new Project. If for some reason you find you need to edit the name of your project, it's also editable after creation.
@@ -65,26 +67,26 @@ As a result, your `Dashboard` list will include the new Project. If for some rea
 [STEPS here]
 
 ## Inside a Project
-Note that once you log into a given project, you see 3 options for interacting with others and data. See the **Tasks**, **Data**, and **Favorites** tabs. 
+Note that once you log into a given project, you see 3 options for interacting with others and data. See the `Tasks`, `Data`, and `Favorites` tabs. 
 
-The **Tasks** provide you with one-click access to working on a specific goal such as _Filter Sources_ or _Comprehensive Digitization_. 
-- currently [number of] tasks exist in TW
+The `Tasks` provide you with one-click access to working on a specific activity such as `Filter Sources` for the ones you seek or `Comprehensive Digitization` of specimen data. 
+- currently 80 tasks exist in TW
 - tasks can be customized
 - new tasks can be written
 - you can search tasks
-- tasks are associated with given global concepts (e.g. Nomenclature, Sources, Digitiation, etc.)
+- tasks are associated with given global concepts (e.g. `Nomenclature`, `Source`, `Biology`, `Collection object`, `Collecting event`, `Image`, `Matrix`, `dna`, etc.)
 
-With the **Favorites** tab feature, you can store your most-used tasks (aka activities) for quick access to what you do most often.
+With the `Favorites` tab, you can store your most-used tasks (aka activities) for quick access to what you do most often.
 
-The **Data** tab provides you with more of a traditional _table_ view of information as stored in TW. Here you begin to get a sense of how the data are structured and related in TW. 
+The `Data` tab provides you with more of a traditional _table_ view of information as stored in TW. Here you begin to get a sense of how the data are structured and related in TW. 
 
 If you would like more details about the TW Data Model, see the [Data](https://docs.taxonworks.org/develop/Data/) section of docs.taxonworks.org
 
 ### Try it
 
-With your knowledge of the **Tasks**, **Data**, and **Favorites** structure you can try these actions.
+With your knowledge of the `Tasks`, `Data`, and `Favorites` structure you can try these actions.
 
-1. Find a **Task** of interest, click on the _star_ and then click on the **Favorites** tab. You'll see this task listed now for easy access.
+1. Find a `Task` of interest, click on the _star_ and then click on the `Favorites` tab. You'll see this task listed now for easy access.
 
 2. ...
 

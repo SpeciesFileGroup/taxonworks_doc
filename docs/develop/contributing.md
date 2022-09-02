@@ -63,20 +63,35 @@ _Offline editing follows a typical Git-based workflow that are detailed on Githu
 * Make a pull request 
 
 ### Including screenshots or images
-* Ask to become a member of the [TaxonWorks Meta Project](https://sfg.taxonworks.org/projects/7/select)
-* Upload the images to that project 
-* In TaxonWorks find the generated image link, use the `large` format, and copy the link.
-* Return to editing and use the Markdown format or HTML format to insert images (examples next).
-* Note that both methods allow you to specify the image size.
+
+In adding documentation, you will note that on any page at [docs.taxonworks.org](https://docs.taxonworks.org) you can click the **Edit pencil icon** to add / edit text. To manage the screenshot image files we add to the documentation, we use `TaxonWorks Meta Project` hosted on [sfg.taxonworks.org](sfg.taxonworks.org). To add screenshots to this documentation, you'll need to become a member of that `TaxonWorks Meta Project`. Let us know you want to be added (e.g. send dlpaul AT illinois DOT edu an email, or ping us on [gitter](https://gitter.im/SpeciesFileGroup/taxonworks)). When taking screenshots, note the resolution of your computer's monitor makes a difference if these images are sharp and clear or out of focus.
+
+- Take the desired screenshots.
+- Upload these images (in bulk or one-at-a-time) to the `TaxonWorks Meta Project` using the `New Image` task.
+
+In TaxonWorks, find the generated image link URLs, using the `Filter Image` task. Try `Filter Image` using the `Housekeeping` filter to limit your result set to only images uploaded by you.
+
+  - In the resulting set, click on the desired image, then
+  - Click the `Navigate radial` under the image and select `Show`.
+  - From `Attributes` copy the `short URL to orginal` URL link.
+- Return to editing documentation and use the Markdown format or HTML format below to insert image URLs (examples next).
+    - Note that both methods allow you to specify the image size.
 
 #### Markdown for image with caption
 
-Examples:  
-`#left[caption](https://foobar [alt title] h{400} w{500})`  
-`#center[caption](https://foobar [alt title] w{500} h{400})`  
-`#right[caption](https://foobar [alt title] w{80%} h{50%})`  
-`#left[caption](https://foobar [alt title] h{50%})`  
-`#left[caption](https://foobar [alt title] w{80%})`  
+Examples here show the markdown (md) format for adding a **caption** to an image. 
+- Select one of the four options below for your caption. Put that text string into the documentation as described next.
+- With the `position` option, choose `left`, `center`, or `right` which aligns your caption text according to what you pick. 
+- Enter the text of your choice in-between the brackets `[caption text goes here]`.
+- Paste in the `short URL to orginal` URL link (from `Filter Image` > `Navigate radial` > `Show` > `Attributes`).
+- Add `alt` text in-between brackets. It is best practice to include this for accessibility.
+- (Optional) Declare the width or height or both of the image to control the size displayed.
+  - The default sizes works well. Sometimes, depending on the screenshot, it might appear too large and then this option gives you the ability to modify the size.
+
+`#position[caption text goes here](link [alt text if you want it])`  
+`#position[caption text goes here](link [alt text if you want it] w{60%})`  
+`#position[caption text goes here](link [alt text if you want it] h{50%})`  
+`#position[caption text goes here](link [alt text if you want it] w{80%} h{50%})`  
 
 #### HTML for image with caption
 

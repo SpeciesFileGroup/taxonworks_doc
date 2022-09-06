@@ -12,7 +12,7 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/images/favicon.svg' }]
   ],
-
+  
   locales: {
     '/': {
       lang: 'en-US',
@@ -25,23 +25,31 @@ module.exports = {
       title: 'Documentación de TaxonWorks',
       description: 'TaxonWorks es un banco de trabajo con muchas herramientas para describir la vida. Este sitio contiene la documentación',
     },
+    
   },
+  
+  markdown: {
+    code: {
+      lineNumbers: false
+    }
+  },    
+  
   clientAppEnhanceFiles: path.resolve(__dirname, './configs/clientAppEnhance.js'),
-
+  
   extendsMarkdown: md => {
-	  md.use(taskListPlugin)
+    md.use(taskListPlugin)
     md.use(figurePlugin)
-	},
-
+  },
+  
   theme: defaultTheme({
     docsRepo: 'https://github.com/SpeciesFileGroup/taxonworks_doc',
     docsBranch: 'development',
     docsDir: 'docs',
     editLinkPattern: ':repo/edit/:branch/:path',
-
+    
     logo: '/images/taxonworks-black-circle.svg',
     logoDark: '/images/taxonworks-white-circle.svg',
-
+    
     locales: {
       '/': {
         lang: 'en-US',
@@ -53,30 +61,30 @@ module.exports = {
         selectLanguageName: 'Español',
         selectLanguageText: 'Español',
         selectLanguageAriaLabel: 'Español',
-
+        
         sidebar: sidebar.es,
-
+        
         editLinkText: 'Edita esta pagina en GitHub',
         lastUpdatedText: 'Ultima actualización',
         contributorsText: 'Contribuidores',
-
+        
         tip: 'Tip',
         warning: 'Advertencia',
         danger: 'Cuidado',
-
+        
         notFound: [
           'Esta pagina no existe',
           'Parece que ha entrado a un link erroneo',
         ],
         backToHome: 'Volver al inicio',
-
+        
         openInNewWindow: 'Abrir en nueva ventana',
         toggleDarkMode: 'Alternar al modo oscuro',
         toggleSidebar: 'Alternar barra lateral',
       },
     }
   }),
-
+  
   plugins: [
     searchPlugin({
       locales: {

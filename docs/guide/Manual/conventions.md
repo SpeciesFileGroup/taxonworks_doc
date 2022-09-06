@@ -14,7 +14,7 @@ _TaxonWorks offers conventions via a unique user interface building in forward-a
 - Note color conventions used in the TW UI offer information to orient the observer to more information (e.g. this task is still under development, or these data are shared across projects).
 
 
-### Logging in
+## Logging in
 This screenshot provides a quick overview of the TW User Interface after log in. In the caption, you will find brief descriptions of each highlighted feature. If you have an account, please log in and click to try header menu options. 
 
 
@@ -36,8 +36,8 @@ In the main section (left-to-right): click items under the headers. Options unde
 
 The red circle opens the `PDF Document viewer`. The green circle gives you a `Pinboard` to access frequently used items like source PDFs. With the blue circle, you get a `Clipboard` for frequently used text. The orange circle provides built-in context-dependent `Help`.
 
-### Administration
-Next, for any given Project you select, notice the UI changes once you click `Administration` for that Project. In the Administration module you can, for example: see/add project members, and control permissions. Detailed UI overviews follow this general view.
+## Administration
+Next, for any given Project you select, notice the UI changes once you click `Administration` for that Project. In the Administration module you can, for example: see/add project members, and control permissions. In any TW sandbox, you can add yourself to other projects using the `Administration` link. See next for more about the `Administraion` tools.
 
 #left[**Legend**: The TaxonWorks Project Administration UI. See options explained next.](https://sfg.taxonworks.org/s/j3zdyy [screenshot of the TaxonWorks Adminstration Interface options])
 
@@ -47,7 +47,7 @@ From the `Users` section, you have options to add a `New` user, add multiple use
 
 Under the `Data` topic, using `Overview` you can create specific reports for different data types and projects. With `Health` you find any data issues that the TW software has detected. `Reindex` opens an option for you to create Darwin Core (standard) occurrence records.
 
-#### Add a New Project
+### Add New Project
 #left[**Legend**: Add New Project UI](https://sfg.taxonworks.org/s/y40u6c [screenshot of the TaxonWorks Add New Project UI] w{60%})
 - To create a `New` Project
   - Click `Administration` in the header menu, 
@@ -62,9 +62,49 @@ Under the `Data` topic, using `Overview` you can create specific reports for dif
 
 As a result, your `Dashboard` list will include the new Project. If for some reason you find you need to edit the name of your project, it's also editable after creation.
 
-### Try it
-1. For your project, add a member.
-[STEPS here]
+### Adding folks to projects
+`Users` need to be added to TW before they can become `Project members`. Once a user, they can be added as members, to any project desired. If you are flagged as an administrator you can do everything in the workbench. As an admin, you see the `Adminstration` link in the header menu. **Feel free to add users to your sandbox through the `Administration` link. If you do, please provide them a link to this [Terms of Use Page](https://speciesfilegroup.org/docs/taxonworks_sandboxes_at_sfg.html) and our [Collaboration Understanding](https://speciesfilegroup.org/docs/taxonworks_in_production_at_sfg.html).**
+
+Sandbox Only: Feel free to **add yourself to projects that are currently not visible to you**. Steps to do this:
+- Click `Administration` (top right)
+- Click `Projects overview` (on left)
+- Click `List`
+- Review the list, select one using **Double click** for that `row`
+- Click `Add project member`, find your name
+- Click `Create Project member` 
+
+### Add New User
+
+Before adding anyone to the list of TW `Users`, please check the list as someone may already be in the TW Community through another project. In this case, you'll need to add them to your project as a new member. If they do need a `User` account. Note you can also go to `Batch add new` to add many `users` at one time (see under `Administration` > `Users` > `Batch add new`). See the following steps.
+
+- Signin to TaxonWorks
+- Select the `Project` of interest
+- Click `Administration` in the header menu
+- Then under `Users`, click list to search existing list.
+- If you do not find the name / email you are looking for, go back one step to `Users` and click `New` and fill out the form.
+  - Type their `Name`
+  - Enter their `Email`
+  - Provide a `Password` (It will be temporary, they will need to reset it).
+  - Retype the `Password`
+  - (Optional) select `Is administrator` if you want them to have this role.
+  - (Optional) select the matching `Person` if they are in TaxonWorks.
+  - (Optional) select `Generate new api access token` if desired for a `User` that wants to query the TW Project database programmatically.
+- Send the new `User` (and soon-to-be `Project member`) an email with instructions to read the [Terms of Use Page](https://speciesfilegroup.org/docs/taxonworks_sandboxes_at_sfg.html) and our [Collaboration Understanding](https://speciesfilegroup.org/docs/taxonworks_in_production_at_sfg.html). They will also need to `reset password.`
+
+Note: in TaxonWorks a `Person` differs from a `User`. To be a `Person` in TaxonWorks, you have been vetted and with best practice, you have a globally unique identifier (e.g. an ORCiD or Wikidata Q number). 
+
+### Add Project Member
+
+When you want to add an existing TW `User` to a `Project`see these steps:
+- After signin, select the desired `Project`
+- Then click `Project` in the header menu
+- Under `Members` click `Add project member`
+- Search the `User` and once found, click to select
+- (Optional) select `Is administrator` if desired
+- Click `Create Project member`
+- (Optional) you may want to send the new `Project members` an email if need be with a link to the new project.
+
+If you need to add many folks at one time, use the `Add many project members` option instead. (See `Project` > `Members` > `Add many project members`) and select the desired individuals and click `Create project members`.
 
 ## Inside a Project
 Note that once you log into a given project, you see 3 options for interacting with others and data. See the `Tasks`, `Data`, and `Favorites` tabs. 

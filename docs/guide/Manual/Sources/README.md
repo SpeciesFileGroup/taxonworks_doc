@@ -9,20 +9,25 @@ _Discover the Source (e.g. publications) management features of TaxonWorks here.
 Credit: much of the following information derived from a manual tailored for and written by the Universal Chalcidoidea Database (UCD@TW) Project community.
 
 ## The Source Hub
-In TaxonWorks, "sources" include the literature database, citations, and other content that is fed directly into the database. The easiest way to access sources is through the Source Hub task. This is a unifying task that combines several commonly used tasks associated with sources. As a curator, researcher, or perhaps data manager, or technician you may primarily be working from sources that are published papers. Source data can be entered one record at-a-time field-by-field or using BibTeX or CrossRef DOIs. From most reference manager software, one can export source information in the BibTex format and edited as needed in any regular text editor. A good source of information on BibTex is https://en.wikipedia.org/wiki/BibTeX.
+In TaxonWorks, sources include the literature database, citations, and other content that is fed directly into the database. The easiest way to access sources is through the `Source hub` task. This is a unifying task that combines several commonly used tasks associated with sources. As a curator, researcher, data manager, or technician you may primarily be working from sources that are published papers. Source data can be entered one record at-a-time field-by-field or using BibTeX or CrossRef DOIs. From most reference manager software, one can export source information in the BibTex format and edited as needed in any regular text editor. This can be used for uploading `source` data into TW. With this [wiki](https://en.wikipedia.org/wiki/BibTeX), you can learn more about BibTex.
 
-Source Hub [Screenshot](https://sfg.taxonworks.org/s/rdc03q) Legend
-<img align="right" width="200" title="Source Hub" src="https://sfg.taxonworks.org/s/rdc03q"/>
+<!--Source Hub [Screenshot](https://sfg.taxonworks.org/s/rdc03q) Legend
+<img align="right" width="200" title="Source Hub" src="https://sfg.taxonworks.org/s/rdc03q"/>-->
 
-Note the sections you see here in the screenshot for the Source Hub for selecting (1), filtering (2), my recent sources (3), adding a new source (4), and batch upload (5).
+#left[**Legend:** `Source hub` user interface sections](https://sfg.taxonworks.org/s/rdc03q [Screenshot of user interface for the Source hub task])
 
-To see if a source is in the database, type information in `Select a source.` 
+### `Source hub` task features
+`Source hub` sections offer select, filter, recent sources, add new source, and batch upload. The `Select a source` option offers a smart selector so you only need to enter as many letters needed to uniquely identify a source. For example, the string 'wool dal sig' brings up Woolley and Dal Molin (2017). If a source is found it will show beneath the search box. 
 
-This is a smart selector so you only need to enter as many letters needed to uniquely identify a source. For example, the string “wool dal sig” brings up Woolley and Dal Molin (2017). If a source is found it will show beneath the search box. If you click on this, it will take you to a page describing the source. <img align="right" width="200" title="Search Sources" src="https://sfg.taxonworks.org/s/7vgq1z"/>
-- (2) `Filter sources` takes you to a screen that allows you to apply different search criteria to locate sources of interest. We will use this later to identify sources that you may need to work on.
-- (3) `My recent sources` shows a list of sources that you have entered recently.
-- (4) `New Source` takes you to a screen that enables you to add new sources using various methods.
-- (5) Note the `Batch upload` option here via BibTeX formatted source data.
+- Type information in `Select a source` to see if a source is in the database.
+  - If you click on a result in the popup beneath the search box, it will take you to a page describing the source. 
+  #left[`Source hub` search result](https://sfg.taxonworks.org/s/7vgq1z [User interface showing result of a source search])
+  <!--<img align="right" width="400" title="Search Sources" src="https://sfg.taxonworks.org/s/7vgq1z"/>-->
+- With `Filter sources` you can apply different search criteria to locate sources of interest. 
+  - Use this feature to identify sources you want to work on.
+- `My recent sources` shows a list of sources that you have entered recently.
+- `New Source` takes you to a screen that enables you to add new sources using various methods.
+- Note the `Batch upload` option here via BibTeX formatted source data.
 
 ## Related Source Tasks
 Next we delve into the details of various work you may need or want to do with source information (e.g. adding sources, editing, tagging, and filtering). The source content needing to be captured includes such data as new taxon names, people strings or names, distribution information, type information, and biological associations. For efficient source data extraction and entry, we recommend familiarity with the following TW Tasks and Data Cards.
@@ -42,7 +47,7 @@ FUTURE LINK TO INFORMATION about each of these items
 
 ## Editing a Source
 
-Using the Source Hub to search for a publication of your choice, you may find the information needs editing.
+Using the `Source Hub` to search for a publication of your choice, you may find the information needs editing.
 
 <img align="right" width="200" title="Edit, Pin, Annotate a source" src="https://sfg.taxonworks.org/s/m0pegj"/>
 
@@ -194,7 +199,7 @@ When a new source (paper/book/etc.) is published and you want to document the in
   3. If it is in the database but has not been processed, this will be indicated in the Radial Annotator under tags.  Always be careful since automatically imported articles, even if they are recent, may have wrong data. For example, the year informed by the web site may not match the year of publication (usually explicitly stated in the PDF file).
   4. Also, see immediately above for instructions on using the Filter Sources task.
 
-### Add a new taxon name
+### Add new taxon name
 To manually create a new taxon name (e.g. species / genus / family), select the *New Taxon Name** card from the Hub. This will lead to the first screen, where you provide the new name and its parent. 
 
 HINT: Be sure you have put the source in the Pinboard and selected it as the default, as this will save a lot of time during the process.
@@ -260,7 +265,7 @@ After you hit create and save you should be returned to the Browse Nomenclature 
 If you have entered all the information correctly, it should be shown here. Note that the “Validation” form can serve as a checklist. In this case, we have neglected to enter several items, indicated here. To fix these, the easiest way is hit the **Navigate Radial** button (3 at upper right) and from here choose Edit.
 We think the easiest way to proceed from here is to hit the **Browse OTUs** button (1 at top of screen).  This takes you to the summary form for the OTU that you have just created.  Note that there is a similar icon on the Browse OTUs page, which will take you back to **Browse Nomenclature** page. This is an easy way to move back and forth between these two important screens.
 
-### Add more species information from source
+### Add more species information
 To add additional information about the species from the publication, first navigate to the OTU corresponding to the new taxon name. From the Browse nomenclature page for the taxon, you can hit the Browse OTU icon at the top of the page.  This takes you to the OTU that is associated with the taxon: 
 
 Alternatively, you can use the Browse OTU task to find the OTU.  TW may bring up more than one choice:
@@ -330,11 +335,11 @@ Remember to make good use of the **tags** for tracking progress.
 - If you have entered data for the biological associations reported in a paper, but are not planning to enter other data such as geographic distributions at this time, add the **Source processed – Biological Information** to the source.
 - If you have entered all nomenclatural acts in the paper, all relevant topics associated with the citation, all distribution information and all biological information, remove any tags associated with processing and add the tag **Source processed – Complete** to the source.  Congratulations, you have successfully and completely curated this publication!
 
-### Enter information on an existing taxon from a publication.
+### Enter information on an existing taxon
 
 Before you do this, we recommend you add the **Browse Taxa** and **Browse Nomenclature** cards to your favorites for easy quick access.
 
-1. Check to ensure the source you are working with is on your Pinboard and selected as the default.
+1. Check to ensure the publication source you are working with is on your Pinboard and selected as the default.
 2. Navigate to the taxon (OTU) using the **Browse Taxa card** in tasks 
 3. Once you have found the correct taxon, proceed exactly as instructed above for a new taxon.
 
@@ -343,7 +348,7 @@ Before you do this, we recommend you add the **Browse Taxa** and **Browse Nomenc
     - one will be the OTU attached to the combination (indicated by a C next to the name). 
     - _Use the OTU attached to the combination_, at least for now. This is an area of the database that is still being worked on, but this should facilitate downstream display of the new information.
 
-### Add or amend type information for a new taxon
+### Add / amend type information for a new taxon
 
 For many older species group names, there will be no information on the type in TW. If you wish to add this information, please have the original description handy, and pin it to the Pinboard.
 
@@ -377,7 +382,7 @@ HINT a la UCD@TW: It is the consenus of UCD@TW curators that if a genus is synon
 3. Choose Valid (nested under Available), and then be sure to 
 4. enter the Source citation and pagination as above, but this time use the Radial annotator in the right lower corner of the Status box.
 
-4.7 - Scenario: new combination
+### New combination
 
 In older version of TW, your strategy depended upon whether the combination is really new (that is, the species has previously been placed in that genus), or whether the combination had been used before.  Scenarios 1 and 2 below cover those cases, respectively.  Both procedures still work, but as of November 2021, there is new functionality on the Edit Taxon Name page that allows you to handle either case.  This is shown as scenario 3 below.  Scenario 3 is probably the easiest, most preferred way to handle all new combinations now.
 
@@ -389,7 +394,7 @@ In older version of TW, your strategy depended upon whether the combination is r
 
 If the gender of species is incorrect following the new combination, you may need to change the Gender and form of the species name, and/or the gender of the genus (on the Edit taxon name forms for the species name and genus respectively). This correction can also be made using “Click to edit verbatim” (use sparingly).
 
-4.8 - Scenario: revised family placement for a genus or genus placement for a species
+### Revised family placement for a genus or genus placement for a species
 
 If someone has published a new family-level placement for a genus, recording this is a two step process.  Navigate to the Edit taxon name form for the genus.  First, change the Parent at the top of the Edit taxon name form to the new family-level taxon.  If the family name has not been used at this hierarchical level before, you many need to create the protonym for it first.  Second, you must record the source of this change.  Scroll to the bottom of the Edit taxon name screen and find the Classification box.  Search for the new family-level taxon and Set to Parent.  In the radial annotator that now appears, choose Citation and enter the source and page number where the revised placement was published.  If you are moving a subfamily, tribe or subtribe to a new family, the process is the same, but you would work from the Edit taxon name screen for the appropriate family-level taxon.
 
@@ -397,13 +402,13 @@ To move a species to a different genus or subgenus, use the New Combination task
 
 If you are moving a subfamily, tribe or subtribe to a different family level taxon, but the categorical level of the taxon you are moving does not change, follow the same procedure.  However, if you are changing the categorical level of a family-group name, the process is more complicated, and you will need to refer to Scenario 4.14 below.
 
-4.9 - Scenario: designating a nomen nudum or numen dubium 
+### Designating nomen nudum or numen dubium 
 
 To designate a name as a nomen nudum, nomen dubium or as unavailabe, navigate to the Status field in the Edit Taxon Name form.  The default for this field is valid.  Four common choices are shown: Unavailable, Nomen Nudum, Nomen Dubium, and Fossil.  Hitting the All button here brings up a comprehensive list of other possibilities.  For unavailable names you should probably look at the entire list and designate the reason the name is not available.
 
 Be sure to enter the source and page number for the paper that published this information.  
 
-4.10 - Scenario: homonyms and replacement names
+### Homonyms and replacement names
 
 The most common scenario will be that someone has discovered a junior homonym and provided a replacement name.  Here are the steps you would follow.  First be sure the source is the default in your pinboard.
 
@@ -413,17 +418,17 @@ The most common scenario will be that someone has discovered a junior homonym an
 
 3- Now designate the replacement name.  In the Relationships field, enter the replacement name.  Replaced By does not appear in the short list of choices, so either search for it (easiest) or find it in the table of All choices.  Enter the citation and page number where the replacement name was published.
 
-4.11 - Scenario: resolving redundant instances of person names, and matching author names with and without diacritical marks.
+### Resolving redundant instances of person names, and matching author names with and without diacritical marks
 
 Often when you enter a person in a search field, such as for authors of a source or taxon, multiple entries will pop up that appear to be the same person, such as A. Dal Molin and Ana Dal Molin.  The Uniquify People card in tasks provides tools to resolve these.  Find one instance of the person in the Select Person field, and load another instance (probably with different abbreviations of names) in the Match People field.  The task will show you information about each person, such as representative publications.  If you are sure that they are the same people, you can merge them by hitting the Merge People button.
 
 Diacritical marks on author names pose special problems, as the search engines may not find them.  For example, if the author name is Ferrière and you enter Ferriere (without the diacritical mark), the search engine will not find it.  The best way to resolve this is to treat Ferriere as an alternate spelling of the name Fèrriere.  To accomplish this, go to the People data card, and pull up the name.  In the radial annotator at the top of the screen, choose Alternate Values, and then hit the Alternate Spelling tab.  Select whether it is the first or last name, enter the alternate spelling, and hit Create.  Once this is done, the search engine will find the person using either spelling of the name.
 
-4.12 – Scenario: recording a subsequent misspelling of a name.
+### Recording subsequent misspelling of a name
 
 First, you need to create the misspelled name using the New Taxon Name task.  Do not give it an author.  Scroll down to the Relationship field, search for the correctly spelled name, set the correctly spelled name as the Parent, and choose the Misspelling Of button.  Enter the citation (source) for the misspelled name and the page number in the Radial Annotator on the right of the Relationship field.
 
-4.13 – Scenario: adding images to TW.
+### Adding images to TW
 
 Images can be attached to various entities in TW, such as collection objects (specimens) including types, OTU’s (concepts of taxa), collecting events, etc.  If you put images in TW that are not your own property or in the public domain, you should be sensitive to copyright issues.  TW will accept images in PNG, TIFF or JPEG formats.  The following are probably the most common cases in which you might wish to upload images.  
 
@@ -439,7 +444,7 @@ Associated with each image are a Label field and a Caption field.  We recommend 
 
 It is also possible to batch process images using the New Image task, which may be more efficient if you are uploading many images from the same publication.  You can drag and drop batches of images, and then assign the author/creator, source (publication), copyright information and so forth for all of them at once.  If you plan to attach the images to an OTU or Collection Object (including type specimens) upload only the relevant images in each batch.  Then you can use the Depict Some screen to assign them.
 
-4.14 – Scenario: Changing rank of a family-level taxon.
+### Changing rank of a family-level taxon
 
 This is a multi-step process.  For example, let’s assume that we wish to raise the categorical level of the taxon Coccophaginae to family level, Coccophagidae.  Here are the steps to follow.
 
@@ -461,7 +466,7 @@ This is a multi-step process.  For example, let’s assume that we wish to raise
 
 9- If you are demoting a family level name, say from family to subfamily, follow the same steps as above.  
 
-4.15 – Scenario: changing rank of a genus-level taxon or species-level taxon.
+### Changing rank of a genus-level taxon or species-level taxon
 
 To elevate a subgenus to genus level, first navigate to the name of the subgenus and click on the Edit taxon name tool.  Change the parent as appropriate (family, subfamily, tribe etc.) and change the rank to genus.  How to record the citation?
 
@@ -486,7 +491,7 @@ If you are working with a genus in which a subgeneric classification has been us
 
 3- If you want to record historic subgeneric placement, use the New Combination task.
 
-4.16 – Scenario: species groups.
+### Species groups
 
 These are used in many genera of chalcidoids as informal grouping of species without nomenclatural rank or status.  UCD@TW provides the tools to treat these formally (as superspecies which is what the ICZN recommends) but it will not display them as such in Browse Nomenclature.  However, the consensus in the UCD project seems to be that it is preferable to leave species groups as informal groupings without nomenclatural baggage.  How then to indicate or record assignment to species groups?  There are several options, each of which has strong and weak points.  You will have to decide which option works best for your group.
 
@@ -505,7 +510,7 @@ Once you have completed Step 1 (above), the Predicate will be available for any 
 4- Create a matrix of OTU’s for each species group.
 
 
-4.17 – Scenario: How to handle tribes and subtribes.
+### About tribes and subtribes
 
 UCD@NHM did not formally recognize taxonomic levels between genera and subfamilies.  Names of tribes and subtribes were treated as junior synonyms of their respective families.  However, tribal and subtribal classifications are currently used in many families of chalcidoids.  If you wish to incorporate these into classifications in UCD@TW, these are the steps to follow.
 
@@ -534,11 +539,11 @@ Continue from this point only if the tribal or subtribal form of the name did no
 
 
  
-4.18 – Scenario: taxon classified as Incertae Sedis.
+### Taxon classified as _incertae sedis_
 
 First navigate to the appropriate taxon name and hit the green Edit Taxon Name button.  Change the parent to the higher level taxon in which the taxon has been classified as Incertae Sedis.  Navigate down to the Classification field, hit Set to Parent, and choose Incertae Sedis.  Then record the source and page number in which the classification was made using the radial annotator to the right.
 
-4.19 -- Scenario: species name endings changing due to movement to another genus, or correction by publication.
+### Species name endings changing due to movement to another genus, or correction by publication
 
 For some name:
 
@@ -579,7 +584,7 @@ Example use case of name ending corrected by subsequent publication:
 ○	Remember if you type in a gendered ending, and no suggestions are found, you can always click to search directly by the original combination, or to track down the protonym in the taxon name autocomplete.
 ○	For all of the above to work, the “Gender and form” section of the Edit Taxon Name form on the original protonym must be filled in.
 
-4.20 -- Scenario: species is synonymized with two or more other species
+### Species synonymized with two or more other species
 
 ●	A name is published.
 ●	A type series is used (i.e. there is no holotype)
@@ -589,7 +594,7 @@ Example use case of name ending corrected by subsequent publication:
 ○	If you did have specimen catalog numbers then you could create 2 OTUs, each with the same species name, pre-adapting the data to receive new names for the new names if they come out.
 ○	Recommendation 2: Use a "Nomen Dubium" status and attach a citation to this.
 
-4.21-- Scenario: junior synonym conserved by ICZN decision (ie. senior synonym suppressed)
+### Junior synonym conserved by ICZN decision (i.e. senior synonym suppressed)
 
 1.	Start at the Edit Taxon Name form for the suppressed name (senior homonym). Under the Relationship section type in the suppressed name and using the “Show all” button, select “suppressed under”. Cite this.
 2.	Now go to the Edit Taxon Name form for the junior homonym. Under the Status section, use the “Show all” button to find “official list of specific names in zoology” and select “valid”. NB: use the “Advanced” button if for some reason the “Show all” button is grayed out. Cite this.

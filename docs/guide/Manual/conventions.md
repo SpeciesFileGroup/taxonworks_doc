@@ -106,7 +106,7 @@ When you want to add an existing TW `User` to a `Project`see these steps:
 
 If you need to add many folks at one time, use the `Add many project members` option instead. (See `Project` > `Members` > `Add many project members`) and select the desired individuals and click `Create project members`.
 
-## Inside a Project
+### Inside a Project
 Note that once you log into a given project, you see 3 options for interacting with others and data. See the `Tasks`, `Data`, and `Favorites` tabs. 
 
 The `Tasks` provide you with one-click access to working on a specific activity such as `Filter Sources` for the ones you seek or `Comprehensive Digitization` of specimen data. 
@@ -122,13 +122,14 @@ The `Data` tab provides you with more of a traditional _table_ view of informati
 
 If you would like more details about the TW Data Model, see the [Data](https://docs.taxonworks.org/develop/Data/) section of docs.taxonworks.org
 
-### Try it
+### Explore TW Tasks
 
 With your knowledge of the `Tasks`, `Data`, and `Favorites` structure you can try these actions.
 
 1. Find a `Task` of interest, click on the _star_ and then click on the `Favorites` tab. You'll see this task listed now for easy access.
 
 2. ...
+
 
 ## Did you know
 - As of this writing, you can only be logged into one instance (one project) of TW at-a-time.

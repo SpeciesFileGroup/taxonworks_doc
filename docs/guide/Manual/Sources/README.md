@@ -9,7 +9,7 @@ _Discover the Source (e.g. publications) management features of TaxonWorks here.
 Credit: much of the following information derived from a manual tailored for and written by the Universal Chalcidoidea Database (UCD@TW) Project community.
 
 ## The Source Hub
-In TaxonWorks, sources include the literature database, citations, and other content that is fed directly into the database. The easiest way to access sources is through the `Source hub` task. This is a unifying task that combines several commonly used tasks associated with sources. As a curator, researcher, data manager, or technician you may primarily be working from sources that are published papers. Source data can be entered one record at-a-time field-by-field or using BibTeX or CrossRef DOIs. From most reference manager software, one can export source information in the BibTex format and edited as needed in any regular text editor. This can be used for uploading `source` data into TW. With this [wiki](https://en.wikipedia.org/wiki/BibTeX), you can learn more about BibTex.
+In TaxonWorks, sources include the literature database, citations, and other content that is fed directly into the database. The easiest way to access sources is through the `Source hub` task. This is a unifying task that combines several commonly used tasks associated with sources. As a curator, researcher, data manager, student, or technician you may primarily be working from sources that are published papers. Source data can be entered one record at-a-time field-by-field or using BibTeX or CrossRef DOIs. From most reference manager software, one can export source information in the BibTex format and edited as needed in any regular text editor. This can be used for uploading `source` data into TW. With this [wiki](https://en.wikipedia.org/wiki/BibTeX), you can learn more about BibTex.
 
 <!--Source Hub [Screenshot](https://sfg.taxonworks.org/s/rdc03q) Legend
 <img align="right" width="200" title="Source Hub" src="https://sfg.taxonworks.org/s/rdc03q"/>-->
@@ -21,7 +21,7 @@ In TaxonWorks, sources include the literature database, citations, and other con
 
 - Type information in `Select a source` to see if a source is in the database.
   - If you click on a result in the popup beneath the search box, it will take you to a page describing the source. 
-  #left[`Source hub` search result](https://sfg.taxonworks.org/s/7vgq1z [User interface showing result of a source search])
+  #left[**Legend**: `Source hub` search result](https://sfg.taxonworks.org/s/7vgq1z [User interface showing result of a source search])
   <!--<img align="right" width="400" title="Search Sources" src="https://sfg.taxonworks.org/s/7vgq1z"/>-->
 - With `Filter sources` you can apply different search criteria to locate sources of interest. 
   - Use this feature to identify sources you want to work on.
@@ -34,9 +34,9 @@ Next we delve into the details of various work you may need or want to do with s
 
 FUTURE LINK TO INFORMATION about each of these items
 
-| Tasks                     | Data Cards                        |
+| Tasks                    | Data Cards                        |
 |:--------------------------|:-----------------------------------|
-| Browse nomenclature       | Taxon names 
+| Browse nomenclature       | Taxon names                        |
 | Browse OTUs               | Biological Associations            |
 | Source hub                | Sources                            |
 | Filter sources            | Manage Controlled Vocabulary Terms |
@@ -45,65 +45,74 @@ FUTURE LINK TO INFORMATION about each of these items
 | New combination           |                                    |
 | Uniquify People           |                                    |
 
-## Editing a Source
+## Source Show
 
-Using the `Source Hub` to search for a publication of your choice, you may find the information needs editing.
+Once you find the publication of your choice using the `Source Hub`, clicking on it opens the `Show` page. Here you will find various ways to navigate to related information and a path to `Edit` this source record. Next we describe some of the features and functions found in the `Source show.`
 
 <img align="right" width="200" title="Edit, Pin, Annotate a source" src="https://sfg.taxonworks.org/s/m0pegj"/>
 
-Note the green **Pinboard icon** at the upper right. Hitting this adds the source to your Pinboard for quick access.
+Note the green `Pinboard icon` <img src="https://sfg.taxonworks.org/s/5ou5yb" width=30px> at the upper right. Clicking this adds the source to your Pinboard for quick access.
 
-The **Radial Annotator** is a very common function used throughout TW.  It provides convenient access in one place to a variety of relevant functions. For example, the Radial Annotator for a given Source might look like this:
+The `Radial Annotator` <img src="https://sfg.taxonworks.org/s/sio9gk" width=30px> is a very common function used throughout TW.  It provides convenient access in one place to a variety of relevant functions. For example, clicking on the `Radial Annotator` for a given`Source` might look like this:
 
-<img align="right" width="200" title="The Radial Annotator" src="https://sfg.taxonworks.org/s/9fbwug"/>
+<!--<img align="right" width="200" title="The Radial Annotator" src="https://sfg.taxonworks.org/s/9fbwug"/>-->
 
-- **Documentation** is where you can drop a pdf of the source, or supplementary files.
-- **Tags** allow you to mark sources for later with tags such as "Source Unprocessed", or "Source Processed for Nomenclature." Instructions on creating and editing Tags are included below.
-- **Notes** is a free text field for any information you might want to add.
-- **Identifiers** provides a place to store one-to-many identifiers for a given object. For example, a paper might have a globally unique digital object identifier, aka DOI, but also an author-assigned identifier.
-- **Data attributes** in TW gives you a place to store your unique data that may not fit in any typical TW field currently in the data model.
+#left[**Legend**: The `Radial Annotator` functions ](https://sfg.taxonworks.org/s/9fbwug[])
+
+- `Documentation` is where you can drop a pdf of the source, or supplementary files.
+- `Tags` allow you to mark sources for later with tags such as `Source Unprocessed`, or `Source Processed for Nomenclature`. Instructions on creating and editing Tags are included below.
+- `Notes` is a free text field for any information you might want to add.
+- `Identifiers` provides a place to store one-to-many identifiers for a given object. For example, a paper might have a globally unique digital object identifier, aka DOI, but also an author-assigned identifier.
+- `Data attributes` in TW gives you a place to store your unique data that may not fit in any typical TW field currently in the data model.
 
 ### Try Editing a Source
 
 <img align="right" width="200" title="Edit a source" hspace="10" src="https://sfg.taxonworks.org/s/vrbjbz"/>  
 
-From the Source Hub search to a publication and then click Edit to open the task to make corrections or put text in italics, for example. Note that italics are indicated in BibTex format as follows `<i> text </i>`.  Everything in between the special symbols will display or print in italics. There are tools in TW to do this for you by selecting text and hitting a button. Be sure to click the Save button to keep any changes.
+- From the `Source Hub` search to a publication you choose
+- Click `Edit` to open the task to make corrections or put text in title in italics, for example. 
 
-HINT: In Edit, you see **New source** but you started by clicking the `Edit` option from an existing source. Rest assured this "New source" window does not mean duplication of the source.
+Note that italics are indicated in BibTex format as follows `<i> text </i>`.  Everything in between the special symbols will display or print in italics. There are tools in TW to do this for you by selecting text and hitting a button. 
+- Be sure to click the `Save` button to keep any changes.
+
+HINT: In `Edit`, you see **New source** but you started by clicking the `Edit` option from an existing source. Rest assured this **New source** window does not mean duplication of the source.
 
 ## Adding a Source
 
-First, always check to be sure the source is not already in TW. If it isn’t found in the search box in the Source Hub, "—None—" will appear below it. Be sure you are spelling all search terms correctly. Remember that searches in TW are "smart", you need only provide enough text to find the source.
+About adding Sources, options offered here include the option to re-order fields and ways to auto-fill the `Source` information using a CrossRef DOI or using BibTeX you may generate from Zotero or EndNote. This section features commonly used fields. See the scenarios section to find related activities that fit your workflows.
 
-Clicking **New Source** in the **Source Hub** brings up this screen. _Note that the order of items may be somewhat different on your screen as we have sorted them to be more convenient._ To do this, check the "Sortable fields" box at upper right and arrange them however you like. There is a lot going on here, so we will concentrate on the most important things. Later we provide some various related scenarios that may fit your workflows.
+- First, using the `Source hub` always check to be sure the source is not already in TW. If it isn’t found in the search box in the Source Hub, '—None—' will appear below it. With TW "smart" searches you need only provide enough minimal text to find the source (e.g. misspellings may cause you to miss a source).
+- Clicking `New Source` in the `Source Hub` brings up this screen.
 
-Add Source [Screenshot](https://sfg.taxonworks.org/s/nhjizu") Legend
+#left[New Source user interface options. Note you may reorder the fields as you see fit using the `Sortable fields` box in the upper right.](https://sfg.taxonworks.org/s/nhjizu [screenshot of the New Source user interfact])
 
-<img align="right" width="400" title="Add a source" hspace="10" src="https://sfg.taxonworks.org/s/nhjizu"/>
+- The yellow triangle means you have made changes that have not been saved.
+- Be sure to _Save_ before you leave this screen, or changes will be lost.
+- If you have the DOI for a new source, this button provides access to the CrossRef database of DOIs. If it works (it usually does), most of the fields you need will be filled in. However, BE SURE TO CHECK THEM, as they are not always correct.
+- If you have the reference in BibTex format (most reference databases will output this), you can input it here.
+  - From Zotero, simply select the reference, right-click on it, select “export item” and save the file as BibTeX.
+  - From EndNote, select the reference and fill out the "label" field. Then go to File > export and select "text file", "BibTeX export". Most people don’t fill out the "label" field in their EndNote database, but if you don’t, you will have to add the label manually by editing the exported text file (that is the field highlighted in the example below). In the New Source Form, Choose the blue BibTex box at the top of the screen, and paste in the exported *.txt file. Drag and drop doesn’t seem to work here.
 
-- (1) The yellow triangle means you have made changes that have not been saved.
-- (2) BE SURE TO SAVE CHANGES before you leave this screen, or they will be lost.
-- (3) If you have the doi for a new source, this button provides access to the CrossRef database of doi's. If it works (it usually does), most of the fields you need will be filled in. However, BE SURE TO CHECK THEM, as they aren’t always correct.
-- (4) If you have the reference in BibTex format (most reference databases will output this), you can input it here.
-  - from Zotero, simply select the reference, right-click on it, select “export item” and save the file as BibTeX.
-  - from EndNote, select the reference and fill out the "label" field. Then go to File > export and select "text file", "BibTeX export". Most people don’t fill out the "label" field in their EndNote database, but if you don’t, you will have to add the label manually by editing the exported text file (that is the field highlighted in the example below). In the New Source Form, Choose the blue BibTex box at the top of the screen, and paste in the exported *.txt file. Drag and drop doesn’t seem to work here.
+Most of the fields may be self-explanatory. Here we note a few tricks, for instance:
+- Entering an author name in this box (5) `Authors` tries to pull it up from the table of known authors. If it isn’t found, you can use the `Add New` button that appears in this case. This is an advantage in some situations over entering authors as verbatim text (in the Verbatim from BibTex field lower in the screen), because you can easily pull them up later, for example, when adding author names to new species.
 
-Most of the fields should be self-explanatory. However, there are a few tricks, for instance:
-- (5) Entering an author name in this box (5) tries to pull it up from the table of known authors. If it isn’t found, you can ADD NEW. This is an advantage in some situations over entering authors as verbatim text (in the Verbatim from BibTex field lower in the screen), because you can easily pull them up later, for example, when adding author names to new species.
+- Similarly, below the `Author` section is a search box for `Serials` (journals). If the journal is not found, look for the `New` button to the right of the Serial screen. This opens a screen for you to add a serial to the serials table.
 
-Below the Author section is a search box for Serials (journals).  If the journal is not found, look for the NEW button to the right of the Serial screen. This will add a serial to the serials table.
+- Once you have created the new source, you should go to `Documentation` in the blue `Radial annotator` to the right of the `Source` and upload the PDF file if available.
 
-As all fields are present on the data entry screen for all types of sources, it can be a bit confusing, particularly for books and chapters in books. The article type for a chapter in a book is "Inbook", and the book title would go into the Booktitle field.  For books, there are fields for Editors, Series (if needed), Booktitle, Publisher, and Address (usually city or city and country). The type of a technical report is "techreport".
+- (Optional) Use the TW `Tag` feature to group and track which papers need data parsing or do not. 
+  - To do this go to the Tags choice in the `Radial annotator`
+  - Tag the source as desired (e.g. `Unprocessed`)
+  - And add other suitable tags such as `No Nomenclatural Acts` or `Nomenclatural Acts` as appropriate (this is specific for the UCD project, other projects may use different tags).
 
-Once you have created the new source, you should go to Documentation in the blue radial annotator to the right of the Source and upload the PDF file if available.
+- If a source has a title in a language other than English, and you wish to enter the English translation (or translation in any other language), follow these steps:
+  - Enter the source with the title as given in the paper and create it.
+  - Click on the blue radial BibTex annotator to the right of the source at the top of the page, and click on the pie slice for Alternate Values.
+  - Choose title from the pick-list, the language for the translated title, and paste the translation in the Value field.
+  - Be sure to save it (green button) if this is a new source. Then the original title and translation will both be rendered.
 
-Also, you may wish to use the TW tagging feature to group which papers need to data entered. To do this go to the Tags choice in the radial annotator, tag the source as "Unprocessed" (or other suitable tags), and add a Tag for either "No Nomenclatural Acts" or "Nomenclatural Acts" as appropriate (this is specific for the UCD project, other projects may use different tags).
+  As all fields are present on the data entry screen for all types of sources, it can be a bit confusing, particularly for books and chapters in books. The article type for a chapter in a book is "Inbook", and the book title would go into the Booktitle field.  For books, there are fields for Editors, Series (if needed), Booktitle, Publisher, and Address (usually city or city and country). The type of a technical report is "techreport".
 
-If a source has a title in a language other than English, and you wish to enter the English translation (or translation in any other language), follow these steps:
-1. Enter the source with the title as given in the paper and create it.
-2. Click on the blue radial BibTex annotator to the right of the source at the top of the page, and click on the pie slice for Alternate Values.
-3. Choose title from the pick-list, the language for the translated title, and paste the translation in the Value field.
-4. Be sure to save it (green button) if this is a new source. Then the original title and translation will both be rendered.
 
 ## PDFs for Sources
 <img align="right" width="400" title="Source has PDF" hspace="10" src="https://sfg.taxonworks.org/s/cbn6vy"/> At least in the UCD@TW Project, most screens that pull up lists of sources in TW have a convenient PDF icon that either opens the source in the PDF viewer (where you can download it), or enables you to download it directly to your browser. For example, if you pull up a source using the Source Hub, you will get a screen like this. The pdf icon will open the source in your browser.
@@ -599,25 +608,22 @@ Example use case of name ending corrected by subsequent publication:
 1.	Start at the Edit Taxon Name form for the suppressed name (senior homonym). Under the Relationship section type in the suppressed name and using the “Show all” button, select “suppressed under”. Cite this.
 2.	Now go to the Edit Taxon Name form for the junior homonym. Under the Status section, use the “Show all” button to find “official list of specific names in zoology” and select “valid”. NB: use the “Advanced” button if for some reason the “Show all” button is grayed out. Cite this.
 
-4.22--Scenario: entering names that do not have the correct endings for their taxonomic level
+### Entering names with incorrect endings for their taxonomic level
 
-One method: Create name using correct ending, save. Designate as “Not Latin” under status. Change the name ending to the form wanted, save.
+One method: 
+- Create name using correct ending, `Save`. 
+- Designate as `Not Latin` under status. 
+- Change the name ending to the form wanted, `Save`.
 
- 	Second method: Create name. Using navigation radial, go to “Show”. Click on “Edit”.
- 
-Scroll down to bottom of form to “Verbatim” field and type in name as it was originally published. Click “Update Taxon Name”
+Second method: 
+- Create name. Using navigation radial, go to `Show`. 
+- Click on `Edit`
+- Scroll down to bottom of form to `Verbatim` field and type in name as it was originally published. 
+- Click `Update Taxon Name`
 
- 
-
- 
-
-
-	Third method: Create the name. Click on “Edit” to get to “edit taxon name” form.
-
- 
- 
-
-Click on “Clone”. Select “Add invalid relationship”. Type “clone” and then the “Clone” button.
- 
-
-Edit the relationship field and select “Family Group Name Form”.
+Third method: 
+- Create the name. Click on `Edit` to get to `Edit taxon name` form.
+- Click on`Clone`. 
+- Select `Add invalid relationship`. 
+- Type `clone` and then click the `Clone` button.
+- `Edit` the `Relationship` field and select `Family Group Name Form`.

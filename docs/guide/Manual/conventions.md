@@ -75,7 +75,7 @@ Sandbox Only: Feel free to **add yourself to projects that are currently not vis
 
 ### Add New User
 
-Before adding anyone to the list of TW `Users`, please check the list as someone may already be in the TW Community through another project. In this case, you'll need to add them to your project as a new member. If they do need a `User` account. Note you can also go to `Batch add new` to add many `users` at one time (see under `Administration` > `Users` > `Batch add new`). See the following steps.
+Before adding anyone to the list of TW `Users`, please check the list as someone may already be in the TW Community through another project. In this case, you'll need to add them to your project as a new member. If they do need a `User` account, see the following steps.
 
 - Signin to TaxonWorks
 - Select the `Project` of interest
@@ -90,6 +90,8 @@ Before adding anyone to the list of TW `Users`, please check the list as someone
   - (Optional) select the matching `Person` if they are in TaxonWorks.
   - (Optional) select `Generate new api access token` if desired for a `User` that wants to query the TW Project database programmatically.
 - Send the new `User` (and soon-to-be `Project member`) an email with instructions to read the [Terms of Use Page](https://speciesfilegroup.org/docs/taxonworks_sandboxes_at_sfg.html) and our [Collaboration Understanding](https://speciesfilegroup.org/docs/taxonworks_in_production_at_sfg.html). They will also need to `reset password.`
+
+Note: you can also go to `Batch add new` to add many `users` at one time (see under `Administration` > `Users` > `Batch add new`) and you will need their email and name string for each new user.
 
 Note: in TaxonWorks a `Person` differs from a `User`. To be a `Person` in TaxonWorks, you have been vetted and with best practice, you have a globally unique identifier (e.g. an ORCiD or Wikidata Q number). 
 
@@ -117,6 +119,7 @@ The `Tasks` provide you with one-click access to working on a specific activity 
 - tasks are associated with given global concepts (e.g. `Nomenclature`, `Source`, `Biology`, `Collection object`, `Collecting event`, `Image`, `Matrix`, `dna`, etc.)
 
 With the `Favorites` tab, you can store your most-used tasks (aka activities) for quick access to what you do most often.
+- To add a task to appear in your `Favorites` tab, click the 'star' on the task card. 
 
 The `Data` tab provides you with more of a traditional _table_ view of information as stored in TW. Here you begin to get a sense of how the data are structured and related in TW. 
 
@@ -129,6 +132,24 @@ With your knowledge of the `Tasks`, `Data`, and `Favorites` structure you can tr
 1. Find a `Task` of interest, click on the _star_ and then click on the `Favorites` tab. You'll see this task listed now for easy access.
 
 2. ...
+
+## Common Icons in TaxonWorks
+Some icons in TaxonWorks help you move around (i.e. "navigate") in the software. Other icons _touch the database_, providing you with functions to add data or delete something. In TaxonWorks, icon button colors convey this idea.
+- Green buttons = write to the database
+- Red buttons = delete from the database
+- Blue buttons = activate something in the interface 
+
+| Icon   | Icon Name      | Purpose of Icon
+|:----------|:-----------------|----------------------------------------|
+|<img src="https://sfg.taxonworks.org/s/sio9gk"> |Radial Annotator    | a tool found many places in TW, that integrates commonly used functions or tasks for annotating things (adding related information) in one place.  The particular functions found after click are context dependent.
+|<img src="https://sfg.taxonworks.org/s/7w1dx2"> |Navigate radial     | use this icon to move across to different areas in TaxonWorks  |
+| <img src="https://sfg.taxonworks.org/s/w7ow2j">|Quick Forms         | use this to bring up commonly used forms associated with OTUs, such as `Asserted distributions` or `Biological Associations`|
+| <img src="https://sfg.taxonworks.org/s/mta4zq">|Browse Taxa         | moves you from a taxon name to its associated OTU |
+| <img src="https://sfg.taxonworks.org/s/5vz2hx"> |Browse Nomenclature | takes you from an OTU to its associated taxonomic name |
+| <img src="https://sfg.taxonworks.org/s/5ou5yb">|Pinboard            | Add (if green) or Remove (if red) an item from your Pinboard.  If the icon is blue, the item has been selected as the default in your pinboard and you can add it to a field automatically, for example, with literature citations.     |
+| <img src="https://sfg.taxonworks.org/s/tkwvhi">|Edit | With this icon, you may edit a given item. For example, from the `Browse nomenclature` page, this icon takes you to the `Edit taxon name` page associated with the taxon.
+| <img src="https://sfg.taxonworks.org/s/lnxbjc">|Trashcan            | Use this to remove the current record from the database                                |
+|<img src="https://sfg.taxonworks.org/s/sio9gk"> |Is Original         | If you check this, it means that the information has not been published before                                   |
 
 
 ## Did you know

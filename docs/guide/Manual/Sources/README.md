@@ -79,7 +79,7 @@ HINT: In `Edit`, you see **New source** but you started by clicking the `Edit` o
 
 ## Adding a Source
 
-About adding Sources, options offered here include the option to re-order fields and ways to auto-fill the `Source` information using a CrossRef DOI or using BibTeX you may generate from Zotero or EndNote. This section features commonly used fields. See the scenarios section to find related activities that fit your workflows.
+About adding Sources, options offered here include the option to re-order fields and ways to auto-fill the `Source` information using a `CrossRef DOI` or using BibTeX you may generate from Zotero or EndNote. This section features commonly used fields. See the scenarios section to find related activities that fit your workflows.
 
 - First, using the `Source hub` always check to be sure the source is not already in TW. If it isn’t found in the search box in the Source Hub, '—None—' will appear below it. With TW "smart" searches you need only provide enough minimal text to find the source (e.g. misspellings may cause you to miss a source).
 - Clicking `New Source` in the `Source Hub` brings up this screen.
@@ -87,11 +87,12 @@ About adding Sources, options offered here include the option to re-order fields
 #left[New Source user interface options. Note you may reorder the fields as you see fit using the `Sortable fields` box in the upper right.](https://sfg.taxonworks.org/s/nhjizu [screenshot of the New Source user interfact])
 
 - The yellow triangle means you have made changes that have not been saved.
-- Be sure to _Save_ before you leave this screen, or changes will be lost.
-- If you have the DOI for a new source, this button provides access to the CrossRef database of DOIs. If it works (it usually does), most of the fields you need will be filled in.  Be sure to _check them_, as they are not always correct.
+- Be sure to `Save` before you leave this screen, or changes will be lost.
+- If you have the DOI for a new source, this button provides access to the CrossRef database of DOIs. If it works (it usually does), most of the fields you need will be filled in. Be sure to _check them_, as they are not always correct.
 - If you have the reference in BibTex format (most reference databases will output this), you can input it here.
-  - From Zotero, simply select the reference, right-click on it, select “export item” and save the file as BibTeX.
-  - From EndNote, select the reference and fill out the "label" field. Then go to File > export and select "text file", "BibTeX export". Most people don’t fill out the "label" field in their EndNote database, but if you don’t, you will have to add the label manually by editing the exported text file (that is the field highlighted in the example below). In the New Source Form, Choose the blue BibTex box at the top of the screen, and paste in the exported *.txt file. Drag and drop doesn’t seem to work here.
+  - From Zotero, simply select the reference, right-click on it, select "export item" and save the file as BibTeX.
+  - From EndNote, select the reference and fill out the "label" field. Then go to File > export and select "text file", "BibTeX export". Most people don’t fill out the "label" field in their EndNote database, but if you don’t, you will have to add the label manually by editing the exported text file (that is the field highlighted in the example below). 
+  - In the `New Source Form`, Choose the blue `BibTex` box at the top of the screen, and paste in the exported *.txt file. (No drag and drop here).
 
 Most of the fields may be self-explanatory. Here we note a few tricks, for instance:
 - Entering an author name in this box (5) `Authors` tries to pull it up from the table of known authors. If it isn’t found, you can use the `Add New` button that appears in this case. This is an advantage in some situations over entering authors as verbatim text (in the Verbatim from BibTex field lower in the screen), because you can easily pull them up later, for example, when adding author names to new species.
@@ -176,7 +177,7 @@ TW employs a powerful utility to search for particular sources, the `Filter Sour
 Once you have created a list of sources, you can do the following:
 
 - `Select All` (button is at top left) or `Select Individual Sources`.
-- `Tag`: once you have selected sources you can tag them using whatever tag or tags are in your pinboard by hitting the green Tag button. If there is more than one tag indicated as the default in your pinboard, both will be added. Note that if you create a new tag (explained above) this automatically becomes the default tag in your pinboard. 
+- `Tag`: once you have selected sources you can tag them using whatever tag or tags are in your pinboard by hitting the green `Tag` button. If there is more than one tag indicated as the default in your pinboard, both will be added. Note that if you create a new tag (explained above) this automatically becomes the default tag in your pinboard. 
   - HINT: This is a powerful way to create groups of sources for particular projects.
 - **Download CSV**: this creates and downloads to your browser a comma-delimited data file.
 - **Download formatted**: here you have the option to choose a format style (e.g. Zootaxa) and create a formatted bibliography.
@@ -191,111 +192,118 @@ Once you have created a list of sources, you can do the following:
 - in a custom format
 
 ## Source Scenarios (aka How-To)
-When getting data from publication sources into TW, many "how-to" questions may arise. Please see next the following common situations and how to proceed for each. Each of these examples offer you an opportunity to **try it**.
+When getting data from publication sources into TW, many "how-to" questions may arise. Please see next the following common situations and how to proceed for each. Each of these examples offer you an opportunity to _try it_ yourself in your sandbox account.
 
 ### Find uncurated papers
-_Say you want to find new sources (papers) that have not yet been curated._ The easiest way to do this is to use the **Filter Sources** task. For example, if you enter the family name in both Search Text and Title, and "Source unprocessed" in Tags, you will generate a list of currently uncurated papers for that family:  
+_Say you want to find new sources (papers) that have not yet been curated._ The easiest way to do this is to use the `Filter Sources` task. For example, if you enter the family name in both `Search Text and Title`, and `Source unprocessed` in Tags, you will generate a list of currently uncurated papers for that family:  
 
 [INSERT SCREENSHOT] 
 
-The tag box allows you to create collections of sources, for example, to download as *.CSV files for your own spreadsheet or database.
+The `tag` box allows you to create collections of sources, for example, to download as *.CSV files for your own spreadsheet or database.
 
-The PDF icon opens the source in the source viewer, from which it can be downloaded.  If no PDF is associated with the source, the PDF icon will not show.  You will need to find a pdf for the source outside of TW, and add it using the **Radial Annotator**, as shown above.
+The `PDF icon` opens the `source` in the `source viewer`, from which it can be downloaded. If no PDF is associated with the source, the PDF icon will not show.  You will need to find a pdf for the source outside of TW, and add it using the `Radial Annotator`, as shown above.
 
-Note that there is a red button to "remove from project". This is because references are SHARED across projects in TaxonWorks, that is, if someone outside UCD already created this source record, you should be able to simply add it. Note that reference data for sources are shared, but not PDFs.
+Note that there is a red button to `remove from project`. This is because references are SHARED across projects in TaxonWorks, that is, if someone outside UCD already created this source record, you should be able to simply add it. Note that reference data for sources are shared, but not PDFs.
 
-The blue buttons to the right are the BibTex Annotator for sources, described above, and the Navigate Radial (looks like a compass arrow), which brings up various functions, including an _edit slice_ which takes you to the source editor.
+The blue buttons to the right are the `BibTex Annotator` for sources, described above, and the `Navigate Radial` (looks like a compass arrow), which brings up various functions, including an _edit slice_ which takes you to the source editor.
 
 ### Document information from a newly published source
 When a new source (paper/book/etc.) is published and you want to document the information it contains, note the following steps. 
 
-(Historically, this workflow is described in-depth as an exercise in the former documentation repository in "basic_article_parsing.md").
+(Historically, this workflow is described in-depth as an exercise in the former documentation repository in "basic_article_parsing.md" which you can find in [Other Documents](https://docs.taxonworks.org/guide/other-documents.html) from the left sidebar).
 
-  1. Go to the **Source Hub** task card, search the sources in TW to see if it exists.
-  2. If it doesn’t then create it, preferably using CrossRef function (blue icon at top of New Source Screen) as described above. We recommend using CrossRef because it imports more metadata (BibTeX e.g. from Google Scholar keeps fields to a bare minimum).
-  3. If it is in the database but has not been processed, this will be indicated in the Radial Annotator under tags.  Always be careful since automatically imported articles, even if they are recent, may have wrong data. For example, the year informed by the web site may not match the year of publication (usually explicitly stated in the PDF file).
-  4. Also, see immediately above for instructions on using the Filter Sources task.
+  1. Go to the `Source Hub` task card, search the sources in TW to see if it exists.
+  2. If it doesn’t then create it, preferably using `CrossRef` function (blue icon at top of `New Source` Screen) as described above. We recommend using `CrossRef` because it imports more metadata (`BibTeX` e.g. from Google Scholar keeps fields to a bare minimum).
+  3. If it is in the database but has not been processed, this will be indicated in the `Radial Annotator` under `tags`.  Always be careful since automatically imported articles, even if they are recent, may have wrong data. For example, the year informed by the web site may not match the year of publication (usually explicitly stated in the PDF file).
+  4. Also, see immediately above for instructions on using the `Filter Sources` task.
 
 ### Add new taxon name
-To manually create a new taxon name (e.g. species / genus / family), select the *New Taxon Name** card from the Hub. This will lead to the first screen, where you provide the new name and its parent. 
+For this task, be sure you have put the `source` in the `Pinboard` and selected it as the `default`, as this will save a lot of time during the process. To manually create a new taxon name (e.g. species / genus / family):
+- Select the `New Taxon Name` card from the `Hub`. This will lead to the first screen, where you provide the new name and its parent. 
 
-HINT: Be sure you have put the source in the Pinboard and selected it as the default, as this will save a lot of time during the process.
-
-UCD Specific Note: UCD@TW has been previously populated with the data from John Noyes’ UCD, so inside the UCD@TW database you will not have to create a “root” for the taxonomic name tree (that is, there should always be a parent taxon). First, fill out the name of the highest-level taxon that you are creating, and indicate its parent taxon. For example, if you are creating a new genus with 2 new species, first create the genus, and then create the two new species. If one of the two new species is type-species for the genus, you can come back to the genus name and add the type-species later.
+UCD Specific Note: UCD@TW has been previously populated with the data from John Noyes’ UCD, so inside the UCD@TW database you will not have to create a `root` for the taxonomic name tree (that is, there should always be a parent taxon). First, fill out the name of the highest-level taxon that you are creating, and indicate its parent taxon. For example, if you are creating a new genus with 2 new species, first create the genus, and then create the two new species. If one of the two new species is type-species for the genus, you can come back to the genus name and add the type-species later.
 
 [INSERT SCREENSHOT] 
 
-Note that TW is smart, and as soon as you enter the name, it checks to see if it already has it. Then select the parent. This should provide a list of possible parents, pick the correct one. Based on the rank of the parent, TW will then ask you to select the precise taxonomic rank of the new name (see below). If everything is correct, hit CREATE. This will open up the next screen.
+Note that TW is smart, and as soon as you enter the name, it checks to see if it already has it.
 
-Next you provide the **Source** (publication) and **authors**. If you have pinned the source, the pinboard icon will be blue and you can hit it to automatically fill in the source details. Then choose **Person**, and enter enough letters to bring up each author (they should be in the database if they were entered with the source).  If the authors of the Source are the same as the authors of the new name, you can hit the button to the right “Clone from source”. If multiple persons pop up that appear to be the same (for example A. Dal Molin and Ana Dal Molin), you can use the **Uniquify People** task to resolve and merge them (see below, Scenario 4.11).  If an author name is not found, you can enter it and add it by hitting the green Add New button. This will add the author to the names table. 
+- Next, select the `parent`. This should provide a list of possible parents, pick the correct one. 
+  - Based on the rank of the parent, TW will then ask you to select the `precise taxonomic rank of the new name` (see below). If everything is correct, hit `Create`. This will open up the next screen.
 
-In most cases, for new taxa, you can skip over the Status and Relationship fields.  However, if the taxon is a fossil, you should check Fossil in the Status field.  The name will now appear with a little cross symbol to the left. There are special rules in ICZN and TW for fossil taxa.
+- Now you provide the `Source` (publication) and `authors`. If you have pinned the source, the `pinboard` icon will be blue and you can click it to automatically fill in the source details. 
+- Then choose `Person`, and enter enough letters to bring up each author (they should be in the database if they were entered with the source).
+  - If the authors of the Source are the same as the authors of the new name, you can click the button to the right `Clone from source`. 
+  - If multiple persons pop up that appear to be the same (for example `A. Dal Molin` and `Ana Dal Molin`), you can use the `Uniquify People task` to resolve and merge them (see Scenario: Resolving redundant person name strings, and matching author names with and without diacritical marks). 
+  - If an author name is not found, you can enter it and add it by clicking the green `Add New` button. This will add the author to the names table. 
 
-The **Type** form is next, which opens up a new form to capture details on the type.  We prefer to complete the rest of the **New Taxon Name** form first, and then do the Type.
+- In most cases, for new taxa, you can skip over the `Status` and `Relationship` fields.  However, if the taxon is a fossil, you should check `Fossil` in the `Status` field.  he name will now appear with a little cross symbol to the left. There are special rules in ICZN and TW for fossil taxa.
 
-For new species, the **Original Combination** will be the same as used in the paper, so **Set as Current**. Finally you can _specify the gender and form of the new name_. For species-level names there are four possibilities:
+The `Type` form is next, which opens up a new form to capture details on the type.  We prefer to complete the rest of the `New Taxon Name` form first, and then do the `Type`.
 
-  1. **Adjective**. Most species epithets are probably treated as adjectives, for example, Signiphora flavella meaning a yellow species. These will change their ending if moved to a genus with a different gender. Names with the suffix “-ensis” (usually referring to a place), change the ending only if put in combination with a genus name that is neuter, in which case it becomes “-ense”.
-  2. **Noun in Apposition**. These don’t change gender when transferred to other genera with a different gender. An example might be a name like _Aphelinus mali_, named after the common host, the woolly apple aphid. An arbitrary combination of letters is treated as a noun.
-  3. **Noun in genitive case**. These are commonly patronyms, ending in “-i” for males and “-ae” for females.
-  4. **Participle**. A participle is an adjectival form of a verb. These are treated as adjectives, and they must agree in gender with the genus name. 
+- For new species, the `Original Combination` will be the same as used in the paper, so `Set as Current`. 
+- Finally you can _specify the gender and form of the new name_. For species-level names there are four possibilities:
 
-There is a text field to capture the **Etymology**, in most cases you can simply paste this text from the publication.
+  1. `Adjective`. Most species epithets are probably treated as adjectives, for example, Signiphora flavella meaning a yellow species. These will change their ending if moved to a genus with a different gender. Names with the suffix “-ensis” (usually referring to a place), change the ending only if put in combination with a genus name that is neuter, in which case it becomes “-ense”.
+  2. `Noun in Apposition`. These don’t change gender when transferred to other genera with a different gender. An example might be a name like _Aphelinus mali_, named after the common host, the woolly apple aphid. An arbitrary combination of letters is treated as a noun.
+  3. `Noun in genitive case`. These are commonly patronyms, ending in “-i” for males and “-ae” for females.
+  4. `Participle`. A participle is an adjectival form of a verb. These are treated as adjectives, and they must agree in gender with the genus name. 
 
-**BE SURE TO SAVE** all the information (green Save button at upper right) before moving to the Type screen. (UCD prefers to enter Type information last, after everything else on this page has been saved).
+- There is a text field to capture the `Etymology`, in most cases you can simply paste this text from the publication.
+- Be sure to `Save` all the information (green `Save` button at upper right) before moving to the `Type` screen. (UCD prefers to enter `Type` information last, after everything else on this page has been saved).
 
-In most cases, the **Quick** type screen will provide all the details you need to enter information on the type, and this is what we show below. However, if you have other information to add for the type, such as Lat/Long data, you will need to use the **Comprehensive** form.
+In most cases, the `Quick type` screen will provide all the details you need to enter information on the type, and this is what we show below. However, if you have other information to add for the type, such as Lat/Long data, you will need to use the `Comprehensive` form.
 
-First, pick the nature of the type (for most new species this will be a holotype), provide the source (hit blue pin button if source is the default), and the page number(s) on which the type is designated.
+- First, pick the nature of the `type` (for most new species this will be a holotype), provide the `source` (click blue `pin` button if source is the `default`), and the `page number`(s) on which the type is designated.
 The rest of the information on the type is filled in with the screen below.
 
-  1. In most cases, the type will be a new specimen, not already in TW as an Existing Collection Object.  If so, hit New.
-  2. Paste the label data for the type into Buffered Collecting event.  This is a verbatim text field.
-  3. In most cases, you can ignore Buffered determinations, and Buffered other labels.
+  1. In most cases, the type will be a new specimen, not already in TW as an `Existing Collection Object`.  If so, click `New`.
+  2. Paste the label data for the type into `Buffered Collecting` event.  This is a verbatim text field.
+  3. In most cases, you can ignore `Buffered determinations`, and `Buffered other labels`.
   4. Total is number of specimens (one for a holotype).
-  5. Designate the preparation type (pin, slide-mount, there are several choices).
-  6. The Repository is the institution where the type is deposited.  Hopefully the repository will be in the TW table, otherwise you may need to create it using the Repositories card in the Data portfolio.  
-  7. “Collection Event” refers to a specimen already in the TW database, which in most cases will not be the case if you are curating a new species description.
-  8. In “Biocurations”, indicate whether the type is an adult or immature, and a male or female.
-  9. Finally, you enter the Identifier for the type, which consists of two parts.  You must first Search for the “Namespace” (se the Glossary above) of the collection in which the type is deposited.  Note that this may be different from the repository (a single institution may have several collections, each with a different “namespace”). Think of the “namespace” as the part of a specimen ID number that does not change for each specimen, for example, “TAMU” in TAMU x01234567. If the namespace is not in the database, you may need to create it, but since these are shared across projects, there is a good chance it will be there.  Once you have selected the namespace, paste in the type or specimen number (only) in the Identifier field, and hit the green Create button.
+  5. Designate the `preparation type` (pin, slide-mount, there are several choices).
+  6. The `Repository` is the institution where the type is deposited.  Hopefully the repository will be in the TW table, otherwise you may need to create it using the `Repositories card` in the Data portfolio.  
+  7. `Collection Event` refers to a specimen already in the TW database, which in most cases will not be the case if you are curating a new species description.
+  8. In `Biocurations`, indicate whether the type is an adult or immature, and a male or female.
+  9. Finally, you enter the Identifier for the type, which consists of two parts.  You must first Search for the `Namespace` (see the Glossary above) of the collection in which the type is deposited. Note that this may be different from the repository (a single institution may have several collections, each with a different “namespace”). Think of the `namespace` as the part of a specimen ID number that does not change for each specimen, for example, `TAMU` in `TAMU x01234567`. If the namespace is not in the database, you may need to create it, but since these are shared across projects, there is a good chance it will be there. Once you have selected the namespace, paste in the type or specimen number (only) in the `Identifier` field, and hit the green `Create` button.
  
 [INSERT SCREENSHOT]
 
-If you wish to add **paratypes** (optional), you essentially follow the same process for each one.
+If you wish to add `paratypes` (optional), you essentially follow the same process for each one.
 
-For many contemporary taxa, there may also be a **ZooBank number** associated with the species. The correct way to enter this is to scroll to the top of the **Edit Type Specimen** page (or **Edit taxon name** page) and hit the Radial Annotator to the right of the blue species name.  In this case, the **Identifier** will be **Global**. Pick **Lsid**, and enter the ZooBank accession number in the Identifier box. Note that some publications will provide the link to ZooBank which is not accepted by TW, but not the actual Lsid. In this case, navigate to ZooBank to get the valid Lsid, which will have the following format:
+For many contemporary taxa, there may also be a `ZooBank number` associated with the species. The correct way to enter this is to:
+- Scroll to the top of the `Edit Type Specimen` page (or `Edit taxon name` page) and click the `Radial Annotator` to the right of the blue species name.
+  - In this case, the `Identifier` will be `Global`. 
+  - Pick `Lsid`, and enter the `ZooBank accession number` in the `Identifier` box. Note that some publications will provide the link to ZooBank which is not accepted by TW, but not the actual Lsid. In this case, navigate to ZooBank to get the valid Lsid, which will have the following format:
 
 urn:lsid:zoobank.org:act:5EB72879-1E9C-4A89-BCD8-FF37534B7172
 
 If the paper does not list an Lsid for the new species, it might be worth a try to find it on the Zoobank.org web site.
-
-**BE SURE TO HIT THE GREEN CREATE** button at the bottom of the screen before leaving!
+- Be sure to click the green `Create` button at the bottom of the screen before leaving!
 
 You show now add any additional information about the new species (or genus) in the publication following the process described next.
 
-If you are creating a new **genus-level** or **family-level** name, the process is similar, but in many ways more simple because the type will be a species name or a genus name, respectively.  If the type-species or type-genus name is also new, probably the easiest path would be to create the family-level or genus-level name first, then create the name of the type-species or type-genus, and then return to the new genus-level or family-level name and indicate the type.  If you enter an existing name in the **New Taxon Name** task and select it (assuming it is found), TW will take you to the **Edit Taxon Name** screen where you can enter the type information.
+If you are creating a new `genus-level` or `family-level` name, the process is similar, but in many ways more simple because the type will be a species name or a genus name, respectively.  If the type-species or type-genus name is also new, probably the easiest path would be to create the family-level or genus-level name first, then create the name of the type-species or type-genus, and then return to the new genus-level or family-level name and indicate the type.  If you enter an existing name in the `New Taxon Name` task and select it (assuming it is found), TW will take you to the `Edit Taxon Name` screen where you can enter the type information.
 
-After you hit create and save you should be returned to the Browse Nomenclature page:
+After you click `Create` and `Save` you should be returned to the `Browse Nomenclature` page:
 
 [INSERT SCREENSHOT HERE] 
 
-If you have entered all the information correctly, it should be shown here. Note that the “Validation” form can serve as a checklist. In this case, we have neglected to enter several items, indicated here. To fix these, the easiest way is hit the **Navigate Radial** button (3 at upper right) and from here choose Edit.
-We think the easiest way to proceed from here is to hit the **Browse OTUs** button (1 at top of screen).  This takes you to the summary form for the OTU that you have just created.  Note that there is a similar icon on the Browse OTUs page, which will take you back to **Browse Nomenclature** page. This is an easy way to move back and forth between these two important screens.
+If you have entered all the information correctly, it should be shown here. Note that the `Validation` form can serve as a checklist. In this case, we have neglected to enter several items, indicated here. To fix these, the easiest way is hit the `Navigate Radial` button (3 at upper right) and from here choose `Edit`.
+We think the easiest way to proceed from here is to hit the `Browse OTUs` button (1 at top of screen). This takes you to the summary form for the OTU that you have just created. Note that there is a similar icon on the Browse OTUs page, which will take you back to `Browse Nomenclature` page. This is an easy way to move back and forth between these two important screens.
 
 ### Add more species information
-To add additional information about the species from the publication, first navigate to the OTU corresponding to the new taxon name. From the Browse nomenclature page for the taxon, you can hit the Browse OTU icon at the top of the page.  This takes you to the OTU that is associated with the taxon: 
+To add additional information about the species from the publication, first navigate to the OTU corresponding to the new taxon name. From the `Browse nomenclature` page for the taxon, you can hit the `Browse OTU` icon at the top of the page. This takes you to the OTU that is associated with the taxon: 
 
-Alternatively, you can use the Browse OTU task to find the OTU.  TW may bring up more than one choice:
+Alternatively, you can use the `Browse OTU` task to find the OTU.  TW may bring up more than one choice:
 
 [INSERT SCREENSHOT HERE] 
 
-In this case the OTU name with the check mark refers to the protonym (name as originally published.  The OTU name followed by (c) refers to a subsequent combination. It is best to choose the subsequent combination as this will ensure that the data is tracked correctly.
+In this case the OTU name with the check mark refers to the protonym (name as originally published. The OTU name followed by (c) refers to a subsequent combination. It is best to choose the subsequent combination as this will ensure that the data is tracked correctly.
 
-(UCD-specific note: in this case, there is a third choice, which looks like a ghost, that is, a name that was created as a string when host or distribution records were imported from the original UCD@NHM. You should ignore ghosts. We are working on eliminating them).
+(UCD-specific note: in this case, there is a third choice, which looks like a ghost, that is, a name that was created as a string when host or distribution records were imported from the original UCD@NHM. You should ignore ghosts. UCD@TW are working on eliminating them).
 
 The most common tasks at this point will be to capture `Citations`, `Asserted Distributions`, and `Biological Associations`.
 - `Citations`. These provide a way to capture any information that is in the publication (e.g. whether it includes a diagnosis, whether the taxon is figured, information on hosts or distribution, etc.), and `page numbers` on which the information is found. Citing the exact page numbers will help subsequent users quickly find this information in long publications treating many species.
-
 - To enter this information, hit the `Radial Annotator` at top of screen
 - Choose `Citations`, enter the source (it should still be pinned)
 - Enter the exact `page number`s on which the information is found in the publication
@@ -303,8 +311,8 @@ The most common tasks at this point will be to capture `Citations`, `Asserted Di
 - Click the blue `All` button for a list of currently used topics. Select the ones that are relevant
 - Scroll to the bottom of the screen, and click the green `Create` button. 
 - When you close this screen (x at upper right) you should return to the OTU (`Browse Taxa`) page. If you refresh this in your browser, you should see the `citation` you have created in the upper right.  
-  
-  HINT: `Topics` are unique to each project. For the UCD project, having created a lot of topics now, they suggest creating a new topic only if absolutely necessary.  
+
+HINT: `Topics` are unique to each project. For the UCD project, having created a lot of topics now, they suggest creating a new topic only if absolutely necessary.  
   
   For those working on other projects, you can use the `Manage Controlled Vocabulary Terms` card in the Tasks portfolio to create and define new topics.  Here, the `Keyword` tab at the top refers to `Tags`, discussed above, and the `Topic` tab refers to `Topics`.
 

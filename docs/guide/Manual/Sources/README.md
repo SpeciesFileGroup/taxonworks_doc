@@ -88,7 +88,7 @@ About adding Sources, options offered here include the option to re-order fields
 
 - The yellow triangle means you have made changes that have not been saved.
 - Be sure to _Save_ before you leave this screen, or changes will be lost.
-- If you have the DOI for a new source, this button provides access to the CrossRef database of DOIs. If it works (it usually does), most of the fields you need will be filled in. However, BE SURE TO CHECK THEM, as they are not always correct.
+- If you have the DOI for a new source, this button provides access to the CrossRef database of DOIs. If it works (it usually does), most of the fields you need will be filled in.  Be sure to _check them_, as they are not always correct.
 - If you have the reference in BibTex format (most reference databases will output this), you can input it here.
   - From Zotero, simply select the reference, right-click on it, select “export item” and save the file as BibTeX.
   - From EndNote, select the reference and fill out the "label" field. Then go to File > export and select "text file", "BibTeX export". Most people don’t fill out the "label" field in their EndNote database, but if you don’t, you will have to add the label manually by editing the exported text file (that is the field highlighted in the example below). In the New Source Form, Choose the blue BibTex box at the top of the screen, and paste in the exported *.txt file. Drag and drop doesn’t seem to work here.
@@ -107,43 +107,51 @@ Most of the fields may be self-explanatory. Here we note a few tricks, for insta
 
 - If a source has a title in a language other than English, and you wish to enter the English translation (or translation in any other language), follow these steps:
   - Enter the source with the title as given in the paper and create it.
-  - Click on the blue radial BibTex annotator to the right of the source at the top of the page, and click on the pie slice for Alternate Values.
+  - Click on the blue `Radial BibTex annotator` to the right of the source at the top of the page, and click on the pie slice for `Alternate Values`.
   - Choose title from the pick-list, the language for the translated title, and paste the translation in the Value field.
-  - Be sure to save it (green button) if this is a new source. Then the original title and translation will both be rendered.
+  - Be sure to `Save` it (green button) if this is a new source. Then the original title and translation will both be rendered.
 
   As all fields are present on the data entry screen for all types of sources, it can be a bit confusing, particularly for books and chapters in books. The article type for a chapter in a book is "Inbook", and the book title would go into the Booktitle field.  For books, there are fields for Editors, Series (if needed), Booktitle, Publisher, and Address (usually city or city and country). The type of a technical report is "techreport".
 
-
 ## PDFs for Sources
-<img align="right" width="400" title="Source has PDF" hspace="10" src="https://sfg.taxonworks.org/s/cbn6vy"/> At least in the UCD@TW Project, most screens that pull up lists of sources in TW have a convenient PDF icon that either opens the source in the PDF viewer (where you can download it), or enables you to download it directly to your browser. For example, if you pull up a source using the Source Hub, you will get a screen like this. The pdf icon will open the source in your browser.
+ Using the UCD@TW Project as an example, note that most screens that pull up lists of sources in TW have a convenient PDF icon that either opens the source in the PDF viewer (where you can download it), or enables you to download it directly to your browser. For example, if you pull up a source using the `Source hub`, you will get a screen like this -- the so-called `Show` page. The pdf icon will open the source in your browser.
 
-<img align="right" width="400" title="Does PDF exist for source?" hspace="10" src="https://sfg.taxonworks.org/s/bitrgd"/> You can also check to see whether a pdf has been  associated with a source using the **Radial Annotator** associated with that source. Click the **documentation** wedge in the Radial Annotator to get the screen below. If a pdf for the source is not present, drag and drop it into the box as shown. If a pdf is associated with the source, you can hit the icon indicated by the red arrow to download to your browser.
+#left[**Legend**: `Source` has PDF](https://sfg.taxonworks.org/s/cbn6vy [])
+
+You can also check to see whether a pdf has been associated with a source using the `Radial Annotator` associated with that source. 
+- Click the `Documentation` wedge in the `Radial Annotator` to get the screen below. 
+- If a pdf for the source is not present, drag and drop it into the box as shown. 
+- If a pdf is associated with the source, you can click the icon indicated by the red arrow to download to your browser.
+
+#left[**Legend**: Does `Source` have a PDF?](https://sfg.taxonworks.org/s/bitrgd)
 
 ## Tags on Sources
-Tags in TW provide a unique way to group documents (or other objects in TW) in any way that you choose. With these tags (aka "keywords") that you create and apply, you and colleagues can find the relevant materials needing work or find groups where work is complete and may need vetting. 
+`Tags` in TW provide a unique way to group documents (or other objects in TW) in any way that you choose. With the `keywords` that you put into a tag, you and colleagues can find the relevant materials needing work or find groups where work is complete and may need vetting. 
 
 ### UCD@TW Project Tag Example
 
-Because UCD@TW is a community-curated database, they added tags for sources that allow them to better organize and coordinate group work. These are the tags currently associated with their sources. Tags can be added or removed from a source in the Radial Annotator. Most of these tags should be self-explanatory. 
+Because UCD@TW is a community-curated database, they added keyword tags for sources that allow them to better organize and coordinate group work. These are the tags currently associated with their sources. Tags can be added or removed from a source in the `Radial Annotator`. Most of these tags should be self-explanatory. 
 
 <img align="right" width="300" title="Source Processing Tags for UCD" hspace="10" src="https://sfg.taxonworks.org/s/2cldsu"/> 
 
-- HINT: Tags are also referred to as **Keywords** in TW.
-- If they are certain that a source is an "early view" document, that is, not yet published, they add this tag as any nomenclatural acts in the source are not yet valid.
-- If the source is new to TW, for now, they use the tag "Source unprocessed", as this allows other curators and helpers to pull up sources that need to be curated.
-- And to anyone starting work to curate a paper, they apply the tag "Source being processed" so that other community members will not try to work on it simultaneously.
+- HINT: `Keywords` are the words you put in a `Tag`.
+- If certain that a source is an `early view document`, that is, not yet published, they add this tag as any nomenclatural acts in the source are not yet valid.
+- If the source is new to TW, for now, they use the tag `Source unprocessed`, as this allows other curators and helpers to pull up sources that need to be curated.
+- And to anyone starting work to curate a paper, they apply the tag `Source being processed` so that other community members will not try to work on it simultaneously.
 
-HINT: Using the Browse Annotations task you can find out who has claimed sources (or assigned various tags).
+HINT: Using the `Browse Annotations` task you can find out who has claimed sources (or assigned various tags).
 
 ## Creating or Editing Tags
-<img align="right" width="300" hspace="10" title="Find Manage Controlled Vocabulary task" src="https://sfg.taxonworks.org/s/p7t05x"/> This is most easily done using the **Manage Controlled Vocabulary task**, as shown below. Tags on sources are treated as "Keywords" here. 
+Using the **Manage Controlled Vocabulary task** (shown below), you can create custom `tags` with the `keywords` of your choice. In this task, you will need to decide the keywords to use, enter them, and define what they mean.
 
-- To create a new tag use the Name, Definition, and CSS Color fields on the left of the screen. 
-- Note that the definition field _must have at least_ **20 characters** before the Create button is clickable. 
-- Note that if you want to use the same color for multiple tags, you can use the eyedropper tool in the Label Color window. 
-- To edit an existing tag, use the green icon (circle with a pencil in it) associated with the Tag (Keyword).
+#left[**Legend**: Find `Manage Controlled Vocabulary task`](https://sfg.taxonworks.org/s/p7t05x [])
 
-<img width="500" title="Create, Edit Tags" hspace="10" src="https://sfg.taxonworks.org/s/h1tuyz"/>    
+#left[**Legend**: Create and Edit Tags](https://sfg.taxonworks.org/s/h1tuyz [])
+
+- To create a new tag use the `Name`, `Definition`, and `Label color` fields on the left of the screen. 
+- Note that the definition field _must have at least_ **20 characters** before the `Create` button is clickable. 
+- Note that if you want to use the same color for multiple tags, you can use the eyedropper tool in the `Label color` window. 
+- To `Edit` an existing tag, use the green icon <img src="https://sfg.taxonworks.org/s/tkwvhi" width=30px/> associated with the `Tag`.
 
 ## Sources With Versions or Translated Titles
 Some sources exist in more than one version, either with translated titles or in entirely translated versions. To add a translated title, use the radial annotator, under "alternate values", and add the information under "title" to add the English version, such as in the case below:
@@ -156,19 +164,19 @@ Note, there are at least two reasons why you might have more than one version of
 2. The translation has been published separately from the original source. A common example is Entomological Review, which is a parallel version of Entomologicheskoe Obozrenie published in English. In this case, the page numbers are likely to be different in the two journals. You should enter this as a separate source from the original paper in Russian. A search on the author and date will bring up both sources.
 
 ## Filtering Sources
-TW employs a powerful utility to search for particular sources, the **Filter Source task**. Among the search fields, which can be used in any combination, are the following:
-- **Keywords**: search text or title. These are verbatim text search fields that will scan the title or other text fields for keywords, such as taxon names. However, if the name is not in the title, it may not get picked up.
-- **Authors**: self explanatory. Search for authors verbatim or for authors in the Authors data table.
-- **Date**: you can provide starting and ending years for the search.
-- **Tags**: If a source has been tagged, you can search for the tag(s) here. 
+TW employs a powerful utility to search for particular sources, the `Filter Source task`. Among the search fields, which can be used in any combination, are the following:
+- `Keywords`: search text or title. These are verbatim text search fields that will scan the title or other text fields for keywords, such as taxon names. However, if the name is not in the title, it may not get picked up.
+- `Authors`: self explanatory. Search for authors verbatim or for authors in the Authors data table.
+- `Date`: you can provide starting and ending years for the search.
+- `Tags`: If a source has been tagged, you can search for the tag(s) here. 
   - You can batch tag sources using the method described below.
   - (UCD@TW specific note: However, this will apply mostly to literature that has been added since the transfer of sources from UCD@NHM to UCD@TW).
-- **Topics**: This is one of the potentially most powerful uses of this utility. All of the tags to citations from UCD@NHM (the original UCD in London) should have been carried over to UCD@TW on import. Thus, UCD@TW folks can search for papers containing host information, keys to species, redescriptions, or any of the topics in the Topics list. Note that if you have Topics in your pinboard, they will appear here if you select Pinboard. Or you can Search for a topic or pull up the entire list of topics using All.
+- `Topics`: This is one of the potentially most powerful uses of this utility. All of the tags to citations from UCD@NHM (the original UCD in London) should have been carried over to UCD@TW on import. Thus, UCD@TW folks can search for papers containing host information, keys to species, redescriptions, or any of the topics in the Topics list. Note that if you have Topics in your pinboard, they will appear here if you select Pinboard. Or you can Search for a topic or pull up the entire list of topics using All.
 
 Once you have created a list of sources, you can do the following:
 
-- **Select All** (button is at top left) or **Select Individual Sources**.
-- **Tag**: once you have selected sources you can tag them using whatever tag or tags are in your pinboard by hitting the green Tag button. If there is more than one tag indicated as the default in your pinboard, both will be added. Note that if you create a new tag (explained above) this automatically becomes the default tag in your pinboard. 
+- `Select All` (button is at top left) or `Select Individual Sources`.
+- `Tag`: once you have selected sources you can tag them using whatever tag or tags are in your pinboard by hitting the green Tag button. If there is more than one tag indicated as the default in your pinboard, both will be added. Note that if you create a new tag (explained above) this automatically becomes the default tag in your pinboard. 
   - HINT: This is a powerful way to create groups of sources for particular projects.
 - **Download CSV**: this creates and downloads to your browser a comma-delimited data file.
 - **Download formatted**: here you have the option to choose a format style (e.g. Zootaxa) and create a formatted bibliography.
@@ -546,67 +554,78 @@ Continue from this point only if the tribal or subtribal form of the name did no
 
 8- The problem with this approach is that all of the children of Coccophaginae will have been transferred to Coccophagini.  If some of these genera belong to another tribe, you will need to create it, using the steps above, and transfer them, one by one.
 
+### Taxon classified as _Incertae Sedis_
 
- 
-### Taxon classified as _incertae sedis_
-
-First navigate to the appropriate taxon name and hit the green Edit Taxon Name button.  Change the parent to the higher level taxon in which the taxon has been classified as Incertae Sedis.  Navigate down to the Classification field, hit Set to Parent, and choose Incertae Sedis.  Then record the source and page number in which the classification was made using the radial annotator to the right.
+- First navigate to the appropriate taxon name
+- Click the green `Edit Taxon Name` button.
+- Change the parent to the higher level taxon in which the taxon has been classified as _Incertae Sedis_.
+- Navigate down to the `Classification` field
+- Click `Set to Parent`, and choose `Incertae Sedis`.
+- Then record the source and page number in which the classification was made using the `Radial annotator` to the right.
 
 ### Species name endings changing due to movement to another genus, or correction by publication
 
 For some name:
 
-A - start (origin) 
-B - current -> current classification
-   change the parent here -> everything looks more or less right
-C - second move
+A - start (origin)   
+B - current -> current classification  
+    change the parent here -> everything looks more or less right  
+C - second move  
 preserve "b"
 
-A - Protonym
-B - Combination
-C - Parent (Combination)
+A - Protonym  
+B - Combination  
+C - Parent (Combination)  
 
-From a practical standpoint, when a name changes, use New Combination task.  Why?
+From a practical standpoint, when a name changes, use `New Combination` task.  Why?
 
-1)	It lets you create the new combination just by typing in the string
-2)	Having that combination, even if its just a B, pre-adapts you for C's. This gives you the historical record.
-3)	In the New Combination task, after the combination has been created, there is an option to easily move the name to the correct parent
+1. It lets you create the new combination just by typing in the string
+2. Having that combination, even if its just a B, pre-adapts you for C's. This gives you the historical record.
+3. In the `New Combination` task, after the combination has been created, there is an option to easily move the name to the correct parent
 
-Considerations vs. line endings.
-4)	In the new combination task you will find/pick the species *in its original latin form*
-a)	If that name has gendered data with it
-i)	and the new genus has gendered data with it
-(1)	Then conjugation of the species name will automatically be rendered correctly in the new combination, and in reference to the new Parent (after you do 3) above)
-ii)	To pre-adapt your steps above being easy, follow best practices and add the gendered information at the time of entry of a Protonym.
-Never just change parent, always go the Combination route. (i.e. 2) above).
+Considerations vs. line endings.  
+
+4. In the `New combination task` you will find/pick the species _in its original latin form_
+  -	If that name has gendered data with it
+    - and the new genus has gendered data with it
+      - Then conjugation of the species name will automatically be rendered correctly in the new combination, and in reference to the new Parent (after you do 3) above)
+    -	To pre-adapt your steps above being easy, follow best practices and **add the gendered information at the time of entry of a Protonym.**
+
+Never just change parent, always go the `Combination` route. (i.e. 2) above).
 
 Example use case of name ending corrected by subsequent publication:
 
-●	Species published with incorrect ending
-○	Name is always the original form, latinized, never changed
-●	Author "corrects" the ending in a subsequence publication
-○	Key information- in this case there is *no* second Protonym, gender ending correction happens automagically
-○	Key trick - to add a citation with this "fixed" data you must create a new Combination, and cite it.  You must compose the combination with the same protonym that was "misspelled"
-●	Key bits of making new combinations
-○	Think about making your new combination by finding
-■	Protonyms in the *original* combination
-○	Remember if you type in a gendered ending, and no suggestions are found, you can always click to search directly by the original combination, or to track down the protonym in the taxon name autocomplete.
-○	For all of the above to work, the “Gender and form” section of the Edit Taxon Name form on the original protonym must be filled in.
+- Species published with incorrect ending
+  - Name is always the original form, latinized, never changed
+- Author "corrects" the ending in a subsequent publication
+  - Key information: in this case there is **no second Protonym**, the gender ending correction happens automagically
+  - Key trick: to add a citation with this "fixed" data you must create a new `Combination`, and cite it.  You must compose the combination with the same protonym that was "misspelled"
+- Key bits of making new combinations
+  - Think about making your new combination by finding
+    - `Protonyms` in the *original* combination
+  - Remember if you type in a gendered ending, and no suggestions are found, you can always click to search directly by the original combination, or to track down the protonym in the taxon name autocomplete.
+  - For all of the above to work, the `Gender and form` section of the `Edit Taxon Name` form on the original protonym must be filled in.
 
 ### Species synonymized with two or more other species
 
-●	A name is published.
-●	A type series is used (i.e. there is no holotype)
-●	The type series is found to represent two different species.
-●	The author says "we're stating this is two different species, and synonymizing the original name under two other names, but not selecting a holotype. If a future worker selects a holotype, our actions here may need to be changed again" (alternatively, author may synonymize the species “in partim”).
-○	Recommendation: Do nothing (do not post the two synonymies in TW) but add a citation and note, there are no governed consequences to manage.
-○	If you did have specimen catalog numbers then you could create 2 OTUs, each with the same species name, pre-adapting the data to receive new names for the new names if they come out.
-○	Recommendation 2: Use a "Nomen Dubium" status and attach a citation to this.
+- A name is published.
+- A type series is used (i.e. there is no holotype)
+- The type series is found to represent two different species.
+- The author says "we're stating this is two different species, and synonymizing the original name under two other names, but not selecting a holotype. If a future worker selects a holotype, our actions here may need to be changed again" (alternatively, author may synonymize the species _in partim_).
+  - Recommendation: Do nothing (do not post the two synonymies in TW) but add a citation and note, there are no governed consequences to manage.
+  - If you did have specimen catalog numbers then you could create 2 OTUs, each with the same species name, pre-adapting the data to receive new names for the new names if they come out.
+  - Recommendation 2: Use a `Nomen Dubium` status and attach a citation to this.
 
 ### Junior synonym conserved by ICZN decision (i.e. senior synonym suppressed)
 
-1.	Start at the Edit Taxon Name form for the suppressed name (senior homonym). Under the Relationship section type in the suppressed name and using the “Show all” button, select “suppressed under”. Cite this.
-2.	Now go to the Edit Taxon Name form for the junior homonym. Under the Status section, use the “Show all” button to find “official list of specific names in zoology” and select “valid”. NB: use the “Advanced” button if for some reason the “Show all” button is grayed out. Cite this.
+- Start at the `Edit Taxon Name` form for the suppressed name (senior homonym). 
+- Under the `Relationship` section type in the suppressed name
+- And using the `Show all` button, select `suppressed under`. 
+- Cite this.
+- Next, go to the `Edit Taxon Name` form for the junior homonym.
+- Under the `Status` section, use the `Show all` button to find `official list of specific names in zoology` and select `valid`. 
+- NB: use the `Advanced` button if for some reason the `Show all` button is grayed out. 
+- Cite this.
 
 ### Entering names with incorrect endings for their taxonomic level
 

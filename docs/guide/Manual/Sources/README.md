@@ -293,266 +293,370 @@ In this case the OTU name with the check mark refers to the protonym (name as or
 
 (UCD-specific note: in this case, there is a third choice, which looks like a ghost, that is, a name that was created as a string when host or distribution records were imported from the original UCD@NHM. You should ignore ghosts. We are working on eliminating them).
 
-The most common tasks at this point will be to capture **Citations**, **Asserted Distributions**, and **Biological Associations**.
+The most common tasks at this point will be to capture `Citations`, `Asserted Distributions`, and `Biological Associations`.
+- `Citations`. These provide a way to capture any information that is in the publication (e.g. whether it includes a diagnosis, whether the taxon is figured, information on hosts or distribution, etc.), and `page numbers` on which the information is found. Citing the exact page numbers will help subsequent users quickly find this information in long publications treating many species.
 
-- **Citations**. These provide a way to capture any information that is in the publication (e.g. whether it includes a diagnosis, whether the taxon is figured, information on hosts or distribution, etc.), and page numbers on which the information is found. Citing the exact page numbers will help subsequent users quickly find this information in long publications treating many species.
-
-  1. To enter this information, hit the **Radial Annotator** at top of screen
-  2. Choose **Citations**, enter the source (it should still be pinned)
-  3. Enter the exact page numbers on which the information is found in the publication
-  4. Hit **Create**
-  5. Click the blue All button for a list of currently used topics. Select the ones that are relevant
-  6. Scroll to the bottom of the screen, and click the green **Create** button. 
-  7. When you close this screen (x at upper right) you should return to the OTU (Browse Taxa) page. If you refresh this in your browser, you should see the citation you have created in the upper right.  
+- To enter this information, hit the `Radial Annotator` at top of screen
+- Choose `Citations`, enter the source (it should still be pinned)
+- Enter the exact `page number`s on which the information is found in the publication
+- Click `Create`
+- Click the blue `All` button for a list of currently used topics. Select the ones that are relevant
+- Scroll to the bottom of the screen, and click the green `Create` button. 
+- When you close this screen (x at upper right) you should return to the OTU (`Browse Taxa`) page. If you refresh this in your browser, you should see the `citation` you have created in the upper right.  
   
-  HINT: **Topics** are unique to each project. For the UCD project, having created a lot of topics now, they suggest creating a new topic only if absolutely necessary.  
+  HINT: `Topics` are unique to each project. For the UCD project, having created a lot of topics now, they suggest creating a new topic only if absolutely necessary.  
   
-  For those working on other projects, you can use the **Manage Controlled Vocabulary Terms** card in the Tasks portfolio to create and define new topics.  Here, the Keyword tab at the top refers to Tags, discussed above, and the Topic tab refers to Topics.
+  For those working on other projects, you can use the `Manage Controlled Vocabulary Terms` card in the Tasks portfolio to create and define new topics.  Here, the `Keyword` tab at the top refers to `Tags`, discussed above, and the `Topic` tab refers to `Topics`.
 
-- **Asserted Distributions**. 
-    1. Click the blue Quick Forms icon at top right, and follow the instructions to pick geographic areas from which the taxon is reported. This is the place to capture information from a Distribution section of the publication. 
-    2. Enter the source which should still be pinned, and the exact page numbers on which the distribution information is given. 
-      - "Is Original" means this is the first time that this distribution has been published. 
-      - "Is absent" presumably means that the publication states that the taxon is not present in the designated area, but UCD notes they are not sure when to use this.
-    3. Next, enter the most restrictive geographic area present in the TW database, which in most cases will be a state or a province.  
+#### Asserted Distributions 
+- Click the blue `Quick Forms` icon <img src="https://sfg.taxonworks.org/s/w7ow2j" width=20px> at top right, and follow the instructions to pick geographic areas from which the taxon is reported. This is the place to capture information from a `Distribution` section of the publication.
+- Enter the `source` which should still be pinned, and the exact `page numbers` on which the distribution information is given. 
+  - `Is Original` means this is the first time that this distribution has been published. 
+  - `Is absent` presumably means that the publication states that the taxon is not present in the designated area, but UCD notes they are not sure when to use this.
+- Next, enter the most restrictive geographic area present in the TW database, which in most cases will be a state or a province.  
 
-HINT: If the paper contains many new asserted distributions, it is more efficient to record these using the **New Asserted Distribution** task. Here you can lock in the source and each OTU, and enter the geographic areas one by one, without having to repeat the other information. In this example, we have locked the source and OTU (red arrows below), and we can enter geographic areas one by one. The task contains other tools (not shown below) that enable you to clone combinations of the Source/OTU, Source/Geographic area, or OTU/Geographic area.
+HINT: If the paper contains many new asserted distributions, it is more efficient to record these using the `New Asserted Distribution task`. Here you can lock in the source and each OTU, and enter the geographic areas one by one, without having to repeat the other information. In this example, we have locked the source and OTU (red arrows below), and we can enter geographic areas one by one. The task contains other tools (not shown below) that enable you to clone combinations of the Source/OTU, Source/Geographic area, or OTU/Geographic area.
 
 [INSERT SCREENSHOT HERE]
 
-Next, update the tags (if necessary) to track progress. UCD Example, once you have entered the distribution data from the source, if you are not at this time going to enter other information such as biological associations, add the "Source processed – Distribution" tag to the source.
+Next, update the `tags` (if necessary) to track progress. UCD Example, once you have entered the `distribution` data from the source, if you are not at this time going to enter other information such as biological associations, add the `Source processed – Distribution` tag to the source.
 
-- **Biological Associations**. These are also accessed from the blue Quick forms icon. The form is shown below. Examples presented here are UCD-based. You may have to enter more information as host data may or maynot already be in your instance of TW.  
+- `Biological Associations`. These are also accessed from the blue `Quick forms` icon <img src="https://sfg.taxonworks.org/s/w7ow2j" width=20px/>.  The form is shown below. Examples presented here are UCD-based. You may have to enter more information as host data may or maynot already be in your instance of TW.  
 
 [INSERT SCREENSHOT HERE] 
 
-  - Selecting All (1) will bring up a list of all Biological Association in the project (2).
+  - Selecting `All` (1) will bring up a list of all `Biological Association` in the project (2).
 
-(UCD-specific note: In general for chalcidoids, you will want to capture the Primary (animal) host or Plant host, Plant Associate in the case of parasitoids, or Parasitoid host in the case of hyperparasitoids). 
+(UCD-specific note: In general for chalcidoids, you will want to capture the `Primary (animal) host` or `Plant host`, `Plant Associate` in the case of parasitoids, or Parasitoid host in the case of hyperparasitoids). 
 
-  - Pick the relevant blue tab and then hit the blue Search button (4) to find the host or associate name in the TW database. In most (UCD) cases, this will be a plant or animal name, so select OTU (3). 
-    - Search for the taxon name in the database (this brings up a select OTU search box). The UCD database is extensive, and usually the host will already be there, either as a Taxon Name or as an OTU. If TW finds either of these, it will bring them up for you to choose. 
+  - Pick the relevant blue tab and then hit the blue `Search` button (4) to find the host or associate name in the TW database. In most (UCD) cases, this will be a plant or animal name, so select OTU (3). 
+    - Search for the taxon name in the database (this brings up a select OTU search box). The UCD database is extensive, and usually the host will already be there, either as a `Taxon Name` or as an `OTU`. If TW finds either of these, it will bring them up for you to choose. 
     - If neither are found, TW will ask you if you want to "customize an OTU with that name". Say yes, and cut and paste the OTU name in the OTU box that comes up. Leave the Taxon Name box below the OTU box blank. IF YOU DO THIS, BE SURE YOU ARE SPELLING THE NAME CORRECTLY! For this reason it is best to cut and paste whenever possible. There is probably no reason to enter the author name of the OTU, but it doesn’t hurt anything. 
-  - Once you have entered the host or associate OTU, enter the Citation (source) (5) and page number(s) on which the information is located. 
-  - As above the “Is original” box (6) means that _this biological association has not been published previously_. So check this box if this is new information not published before.
-  - Use the **Browse OTUs** page for the taxon (accessed with the **Browse OTUs card**) to see all previous biological associations recorded in TW for that entity.
+  - Once you have entered the host or associate OTU, enter the `Citation` (source) (5) and `page number`(s) on which the information is located. 
+  - As above the `Is original` box (6) means that _this biological association has not been published previously_. So check this box if this is new information not published before.
+  - Use the `Browse OTUs` page for the taxon (accessed with the `Browse OTUs card`) to see all previous biological associations recorded in TW for that entity.
 
-At this time, there is no Biological Associations task comparable to the **Asserted Distributions** task (this has been requested of the development team). 
-- IF you are entering several new Biological Associations from a paper, you can _lock the citation_ for the source by hitting the little lock icon next to the pinboard icon in the Citation box.
+At this time, there is no Biological Associations task comparable to the `Asserted Distributions` task (this has been requested of the development team). 
+- IF you are entering several new `Biological Associations` from a paper, you can _lock the citation_ for the source by hitting the little lock icon next to the pinboard icon in the Citation box.
 - [INSERT SCREEN SHOT for above]
 
 Since most new species will be compared with other existing species, you will want to capture this information also. This is treated as another Biological Association, since any comparison will involve another OTU. 
-- Repeat the process for hosts, but choose **Compared With** (instead of associate) and follow the procedure above.
+- Repeat the process for hosts, but choose `Compared With` (instead of associate) and follow the procedure above.
 
 After completing these tasks, close the form and return to the OTU page for the taxon. If you refresh your browser, all the new information should be displayed.
 
 [INSERT SCREEN SHOT of OTU for a taxon showing biological associations]
 
-Remember to make good use of the **tags** for tracking progress.
-- If you have entered data for the biological associations reported in a paper, but are not planning to enter other data such as geographic distributions at this time, add the **Source processed – Biological Information** to the source.
-- If you have entered all nomenclatural acts in the paper, all relevant topics associated with the citation, all distribution information and all biological information, remove any tags associated with processing and add the tag **Source processed – Complete** to the source.  Congratulations, you have successfully and completely curated this publication!
+Remember to make good use of the `tags` for tracking progress.
+- If you have entered data for the biological associations reported in a paper, but are not planning to enter other data such as geographic distributions at this time, add the `Source processed – Biological Information` to the source.
+- If you have entered all nomenclatural acts in the paper, all relevant topics associated with the citation, all distribution information and all biological information, remove any tags associated with processing and add the tag `Source processed – Complete` to the source.  Congratulations, you have successfully and completely curated this publication!
 
 ### Enter information on an existing taxon
 
-Before you do this, we recommend you add the **Browse Taxa** and **Browse Nomenclature** cards to your favorites for easy quick access.
+Before you do this, we recommend you add the `Browse Taxa` and `Browse Nomenclature` cards to your favorites for easy quick access.
 
-1. Check to ensure the publication source you are working with is on your Pinboard and selected as the default.
-2. Navigate to the taxon (OTU) using the **Browse Taxa card** in tasks 
-3. Once you have found the correct taxon, proceed exactly as instructed above for a new taxon.
+- Check to ensure the publication source you are working with is on your `Pinboard` and selected as the `default`.
+- Navigate to the taxon (OTU) using the `Browse Taxa card` in tasks 
+- Once you have found the correct taxon, proceed exactly as instructed above for a new taxon.
 
-  - HINT: _There is, however, at least one important caveat._ If you are capturing information for a species that is currently used in a different combination from the genus in which it was originally described, you may get two OTU’s for the species name when you search for it in Browse taxa. 
-    - one will be the OTU attached to the original protonym (indicated by a check mark next to the name)
-    - one will be the OTU attached to the combination (indicated by a C next to the name). 
-    - _Use the OTU attached to the combination_, at least for now. This is an area of the database that is still being worked on, but this should facilitate downstream display of the new information.
+HINT: _There is at least one important caveat._ If you are capturing information for a species that is currently used in a different combination from the genus in which it was originally described, you may get two OTUs for the species name when you search for it in `Browse taxa`. 
+  - one will be the `OTU` attached to the `original protonym` (indicated by a `check mark` next to the name)
+  - one will be the `OTU` attached to the `combination` (indicated by a `c` next to the name). 
+  - _Use the OTU attached to the combination_, at least for now. This is an area of the database that is still being worked on, but this should facilitate downstream display of the new information.
 
 ### Add / amend type information for a new taxon
 
-For many older species group names, there will be no information on the type in TW. If you wish to add this information, please have the original description handy, and pin it to the Pinboard.
+For many older species group names, there will be no information on the type in TW. If you wish to add this information, you will want to have the original description handy, and pin it to the `Pinboard`. The easiest way to proceed is to use the `New type specimen task`. You can then follow the steps above for designating a type for a new species. 
 
-The easiest way to proceed is to use the **New type specimen task.** You can then follow the steps above for designating a type for a new species. 
-
-HINT: The New type specimen task is also used to add or modify information on types already in the system.
+HINT: The `New type specimen task` is also used to add or modify information on types already in the system.
 
 ### New synonymy or removal from synonymy (stat. rev.)
 
-1. Find the junior synonym name using the Browse Nomenclature task. 
-2. Click the Edit icon (pencil icon in green circle at top right) to navigate to the Edit taxon name page.
-3. Enter the senior synonym in the Relationship box. A list of candidate names will come up.
-4. Select the correct one and Set to Parent. 
-    - A list of choices for the synonym relationship will include Subjective synonym, Objective synonym, subsequent Misspelling, and Homonym of.
-5. Note that you must also tag this nomenclatural act (new synonymy) to a citation and page number.
-   1. Click the Radial Annotator icon to the right in the Relationship box, and choose Citations. 
-   2. Enter the Source (use the blue pin key!) and page number(s). 
-   3. If this is the first time the synonymy has been proposed, check the “Is Original” box.
+- Find the `junior synonym` name using the `Browse Nomenclature` task. 
+- Click the `Edit` icon <img src="https://sfg.taxonworks.org/s/tkwvhi" width=20px/> to navigate to the `Edit taxon name` page.
+- Enter the `senior synonym` in the `Relationship` box. A list of candidate names will come up.
+- Select the correct one and Set to `Parent`. 
+    - A list of choices for the synonym relationship will include `Subjective synonym`, `Objective synonym`, `subsequent Misspelling`, and `Homonym of`.
+- Note that you must also `tag` this nomenclatural act (new synonymy) to a citation and page number.
+   - Click the `Radial Annotator` icon to the right in the `Relationship box`, and choose `Citations`. 
+   - Enter the `Source` (use the blue pin key!) and `page number`(s). 
+   - If this is the first time the synonymy has been proposed, check the `Is Original` box.
 
 #### Transfer species to new parent or not
 If the junior synonym is a genus name, you must then decide if you want to transfer some or all of the species to the new parent. 
-1. Once you have made the synonymy, TW will present a table called Manage Synonyms. This shows the current parent, and by default, the new parent. You can change the latter to cover cases in which a genus is being split up and the species are being moved to different genera. 
-2. You can select species individually, or select All of them. 
-3. At the bottom of the screen click the green Move button. TW will ask you if you are sure you want to do this! 
+- Once you have made the synonymy, TW will present a table called `Manage Synonyms`. This shows the current parent, and by default, the new parent. You can change the latter to cover cases in which a genus is being split up and the species are being moved to different genera. 
+  - You can select species individually, or select All of them.
+  - At the bottom of the screen click the green `Move` button. TW will ask you if you are sure you want to do this! 
 
 HINT a la UCD@TW: It is the consenus of UCD@TW curators that if a genus is synonymized under another genus, and the author(s) of the paper do not explicitly treat generic placement of the species formerly contained in it, that all species are considered to belong to the senior synonym, by default.
 
 #### Remove name from synonomy
-1. To do this, find the junior synonym and move to the Edit taxon name page as above. 
-2. Scroll down to Status and click the Show All button to the right. This brings up a list of all possibilities. 
-3. Choose Valid (nested under Available), and then be sure to 
-4. enter the Source citation and pagination as above, but this time use the Radial annotator in the right lower corner of the Status box.
+1. To do this, find the junior synonym and move to the `Edit taxon name` page as above. 
+2. Scroll down to `Status` and click the `Show All` button to the right. This brings up a list of all possibilities. 
+3. Choose `Valid` (nested under Available), and then be sure to 
+4. enter the `Source citation` and pagination as above, but this time use the `Radial annotator` in the right lower corner of the `Status` box.
 
 ### New combination
 
-In older version of TW, your strategy depended upon whether the combination is really new (that is, the species has previously been placed in that genus), or whether the combination had been used before.  Scenarios 1 and 2 below cover those cases, respectively.  Both procedures still work, but as of November 2021, there is new functionality on the Edit Taxon Name page that allows you to handle either case.  This is shown as scenario 3 below.  Scenario 3 is probably the easiest, most preferred way to handle all new combinations now.
+In an older version of TW, your strategy depended upon whether the combination is really new (that is, the species has previously been placed in that genus), or whether the combination had been used before. Scenarios 1 and 2 below cover those cases, respectively. Both procedures still work, but as of November 2021, there is new functionality on the `Edit Taxon Name` page that allows you to handle either case. This is shown as option 3 below. Option 3 is probably the easiest, most preferred way to handle all new combinations now.
 
-1- For New Combinations.  Open the New Combination task, and type in the new combination.  TW will bring up a list of candidate genera and candidate species.  If you enter a trinomial (for assigning to a subgenus, TW will show 3 sets of names.  Pick the correct genus name and species name, hit the pinboard icon to paste in the citation, add the page number, and hit Create.  Once you have created the new combination, be sure to hit the green button to move the species to the new genus. (The only time you would not want to move the species to this genus is if you were entering a historical combination, and the species is not currently classified in that genus).  It’s as simple as that!  
+For New Combinations.  
 
-2- For combinations that have been used before. Navigate to the Edit Taxon name page for the species. Change the parent to the current genus (the “revived combination”). Then move to the radial annotator to the right of the species name shown in blue at the top right of the screen. Choose citation and enter the source and page number for the paper in which the former combination was revived.
+- Open the `New Combination` task, and type in the new combination. TW will bring up a list of candidate genera and candidate species. 
+  - If you enter a trinomial (for assigning to a subgenus, TW will show 3 sets of names. Pick the correct `genus name` and `species name`
+  - Click the `pinboard` icon to paste in the `citation`, add the `page number`, and hit `Create`.
+- Once you have created the new combination, be sure to click the `green button` to move the species to the new genus. 
+  - (The only time you would not want to move the species to this genus is if you were entering a historical combination, and the species is not currently classified in that genus).  It’s as simple as that!  
 
-3- For either case (1- or 2-).  Navigate to the Edit Taxon Name page for the species in its existing combination. Change the parent to the genus in which it has now been placed. Scroll down to the Subsequent combination box. Click “Set as current”, or drag down the old combination to the species line and enter the genus for the new combination on the genus line. Enter the source and page number of the paper in which the transfer was published and click “Create”. The new combination will be added to the chronological list at the bottom of the box, and it should show in the historical list when you return to the name in Browse Nomenclature.
+Combinations used before.  
 
-If the gender of species is incorrect following the new combination, you may need to change the Gender and form of the species name, and/or the gender of the genus (on the Edit taxon name forms for the species name and genus respectively). This correction can also be made using “Click to edit verbatim” (use sparingly).
+- Navigate to the `Edit Taxon name` page for the species. 
+- Change the parent to the current genus (the `revived combination`). 
+- Then move to the `Radial annotator` to the right of the species name shown in blue at the top right of the screen. 
+  - Choose `citation` and enter the `source` and `page number` for the paper in which the former combination was revived.
+
+Option 3 (either use case above)
+- Navigate to the `Edit Taxon Name` page for the species in its existing combination. 
+- Change the `parent` to the `genus` in which it has now been placed. 
+- Scroll down to the `Subsequent combination` box. Click `Set as current`, or drag down the old combination to the species line and enter the genus for the new combination on the genus line. 
+- Enter the `source` and `page number` of the paper in which the transfer was published and click `Create`. 
+
+The `new combination` will be added to the chronological list at the bottom of the box, and it should show in the historical list when you return to the name in `Browse Nomenclature`.
+
+If the gender of species is incorrect following the new combination, you may need to change the Gender and form of the species name, and/or the gender of the genus (on the `Edit taxon name` forms for the species name and genus respectively). This correction can also be made using `Click to edit verbatim` (use sparingly).
 
 ### Revised family placement for a genus or genus placement for a species
 
-If someone has published a new family-level placement for a genus, recording this is a two step process.  Navigate to the Edit taxon name form for the genus.  First, change the Parent at the top of the Edit taxon name form to the new family-level taxon.  If the family name has not been used at this hierarchical level before, you many need to create the protonym for it first.  Second, you must record the source of this change.  Scroll to the bottom of the Edit taxon name screen and find the Classification box.  Search for the new family-level taxon and Set to Parent.  In the radial annotator that now appears, choose Citation and enter the source and page number where the revised placement was published.  If you are moving a subfamily, tribe or subtribe to a new family, the process is the same, but you would work from the Edit taxon name screen for the appropriate family-level taxon.
+If someone has published a new family-level placement for a genus, recording this is a two step process.
+- Navigate to the `Edit taxon name` form for the genus. 
+- First, change the `Parent` at the top of the `Edit taxon name` form to the new `family-level taxon`. 
+  - If the family name has not been used at this hierarchical level before, you many need to create the `protonym` for it first.
+- Second, you must record the `source` of this change. Scroll to the bottom of the `Edit taxon name` screen and find the `Classification` box. Search for the new family-level taxon and `Set to Parent`.
+- In the `Radial annotator` that now appears, choose `Citation` and enter the `source` and `page number` where the revised placement was published. 
 
-To move a species to a different genus or subgenus, use the New Combination task (Scenario 4.7 above).
+If you are moving a subfamily, tribe or subtribe to a new family, the process is the same, but you would work from the `Edit taxon name` screen for the appropriate family-level taxon.
 
-If you are moving a subfamily, tribe or subtribe to a different family level taxon, but the categorical level of the taxon you are moving does not change, follow the same procedure.  However, if you are changing the categorical level of a family-group name, the process is more complicated, and you will need to refer to Scenario 4.14 below.
+To move a species to a different genus or subgenus, use the New Combination task Scenario <!--(Scenario 4.7 above).-->. If you are moving a subfamily, tribe or subtribe to a different family level taxon, but the categorical level of the taxon you are moving does not change, follow the same procedure.
 
-### Designating nomen nudum or numen dubium 
+However, if you are changing the categorical level of a `family-group name`, the process is more complicated, and you will need to refer to [Scenario: Changing rank of a family-level taxon](#changing-rank-of-a-family-level-taxon). <!--4.14 below.-->
 
-To designate a name as a nomen nudum, nomen dubium or as unavailabe, navigate to the Status field in the Edit Taxon Name form.  The default for this field is valid.  Four common choices are shown: Unavailable, Nomen Nudum, Nomen Dubium, and Fossil.  Hitting the All button here brings up a comprehensive list of other possibilities.  For unavailable names you should probably look at the entire list and designate the reason the name is not available.
+### Designate nomen nudum or numen dubium 
 
-Be sure to enter the source and page number for the paper that published this information.  
+- To designate a name as a `_nomen nudum_`, `_nomen dubium_` or as `unavailable`, navigate to the `Status field` in the `Edit Taxon Name` form. 
+  - The default for this field is valid. Four common choices are shown: `Unavailable`, `Nomen Nudum`, `Nomen Dubium`, and `Fossil`.
+  - Click the `All` button here brings up a comprehensive list of other possibilities. For unavailable names you should probably look at the entire list and designate the reason the name is not available.
+  - Be sure to enter the `source` and `page number` for the paper that published this information.  
 
 ### Homonyms and replacement names
 
-The most common scenario will be that someone has discovered a junior homonym and provided a replacement name.  Here are the steps you would follow.  First be sure the source is the default in your pinboard.
+The most common scenario will be that someone has discovered a junior homonym and provided a replacement name. Here are the steps you would follow. First be sure the `source` is the `default` in your `pinboard`.
 
-1- First create the replacement name using the New Taxon Name card, as described above, entering all information on the authors, citation, etc.
+- First create the replacement name using the `New Taxon Name task`, as described above, entering all information on the authors, citation, etc.
+- Then move to the junior homonym (`Browse Nomenclature`, click the green `Edit` button at top right corner). 
+  - In the `Relationships` field, enter the `senior homonym`. 
+  - You will be given a list of choices, choose `Homonym of`.
+- Now designate the replacement name. In the `Relationships` field, enter the `replacement name`. 
+  - HINT: `Replaced By` does not appear in the short list of choices, so either search for it (easiest) or find it in the table of `All choices`.
+  - Enter the `citation` and `page number` where the `replacement name` was published.
 
-2- Then move to the junior homonym (Browse Nomenclature, hit green edit button at top right corner).  In the Relationships field, enter the senior homonym.  You will be given a list of choices, choose Homonym of.
+### Resolving redundant person name strings, and matching author names with and without diacritical marks
 
-3- Now designate the replacement name.  In the Relationships field, enter the replacement name.  Replaced By does not appear in the short list of choices, so either search for it (easiest) or find it in the table of All choices.  Enter the citation and page number where the replacement name was published.
+Often when you enter a person's name string in a search field, such as for authors of a source or taxon, multiple entries will pop up that appear to be the same person, such as `A. Dal Molin` and `Ana Dal Molin`. The `Uniquify People task` provides tools to resolve and merge these. 
+- Find one instance of the person in the `Select Person` field, and 
+- Load another instance (probably with different abbreviations of names) in the `Match People` field. The task will show you information about each person, such as representative publications. 
+- If you are sure that they are the same people, you can merge them by clicking the `Merge People` button.
 
-### Resolving redundant instances of person names, and matching author names with and without diacritical marks
-
-Often when you enter a person in a search field, such as for authors of a source or taxon, multiple entries will pop up that appear to be the same person, such as A. Dal Molin and Ana Dal Molin.  The Uniquify People card in tasks provides tools to resolve these.  Find one instance of the person in the Select Person field, and load another instance (probably with different abbreviations of names) in the Match People field.  The task will show you information about each person, such as representative publications.  If you are sure that they are the same people, you can merge them by hitting the Merge People button.
-
-Diacritical marks on author names pose special problems, as the search engines may not find them.  For example, if the author name is Ferrière and you enter Ferriere (without the diacritical mark), the search engine will not find it.  The best way to resolve this is to treat Ferriere as an alternate spelling of the name Fèrriere.  To accomplish this, go to the People data card, and pull up the name.  In the radial annotator at the top of the screen, choose Alternate Values, and then hit the Alternate Spelling tab.  Select whether it is the first or last name, enter the alternate spelling, and hit Create.  Once this is done, the search engine will find the person using either spelling of the name.
+Diacritical marks (e.g. umlauts, tildas) on author names pose special problems, as the search engines may not find them. For example, if the author name is Ferrière and you enter Ferriere (without the diacritical mark), the search engine will not find it. The best way to resolve this is to treat Ferriere as an `alternate spelling` of the name Fèrriere. To accomplish this:
+- Go to the `People data card`, and pull up the name.
+- In the `Radial annotator` at the top of the screen, choose `Alternate Values`
+- Then click the `Alternate Spelling` tab.
+- Select whether it is the first or last name, enter the alternate spelling, and click `Create`. Once this is done, the search engine will find the person using either spelling of the name.
 
 ### Recording subsequent misspelling of a name
 
-First, you need to create the misspelled name using the New Taxon Name task.  Do not give it an author.  Scroll down to the Relationship field, search for the correctly spelled name, set the correctly spelled name as the Parent, and choose the Misspelling Of button.  Enter the citation (source) for the misspelled name and the page number in the Radial Annotator on the right of the Relationship field.
+- First, you need to `create` the misspelled name using the `New Taxon Name task`.  Do not give it an author. 
+- Scroll down to the `Relationship` field
+- Search for the correctly spelled name
+- Set the correctly spelled name as the `Parent`, and 
+- Choose the `Misspelling Of` button.
+- Enter the `citation` (source) for the `misspelled name` and the `page number` in the `Radial Annotator` on the right of the `Relationship` field.
 
 ### Adding images to TW
 
-Images can be attached to various entities in TW, such as collection objects (specimens) including types, OTU’s (concepts of taxa), collecting events, etc.  If you put images in TW that are not your own property or in the public domain, you should be sensitive to copyright issues.  TW will accept images in PNG, TIFF or JPEG formats.  The following are probably the most common cases in which you might wish to upload images.  
+Images can be attached to various entities in TW, such as `Collection objects` (specimens) including types, `OTUs` (concepts of taxa), `Collecting events`, etc.  If you put images in TW that are not your own property or are in the public domain, you should be sensitive to copyright issues. TW will accept images in PNG, TIFF, or JPEG formats. The following are probably the most common cases in which you might wish to upload images.  
 
-Type specimens.  Navigate to the Collection object form for the type using the New type specimen task, or go to the Type screen (either Quick or Comprehensive) in the Edit taxon name form.  If the type has not already been recorded (which will be the case for many old names), you will need to create it first.  Drag and drop the image into the Depiction field (it contains the text “Drop images here to add figures”), in either the quick or comprehensive type screen.  Of course, if you do this, you need to be sure that the images are actually of the types!  Note that you can add images to holotypes, allotypes, and all of the other types possible in the Type screen.   Note also that if you click in the box surrounded by a dashed line, TW will open a dialog box representing the folders on your computer where you can browse for the images.  
+Type specimen images.  
+- Navigate to the `Collection object` form for the type using the `New type specimen task`, or go to the `Type` screen (either `Quick` or `Comprehensive`) in the `Edit taxon name` form. 
+- If the type has not already been recorded (which will be the case for many old names), you will need to create it first. **Drag and drop** the image into the `Depiction field` (it contains the text `Drop images here to add figures`), in either the `quick` or `comprehensive type` screen.
+  - Of course, if you do this, you need to be sure that the images are actually of the types! Note that you can add images to holotypes, allotypes, and all of the other types possible in the `Type` screen. 
+  - Note also that if you click in the box surrounded by a dashed line, TW will open a dialog box representing the folders on your computer where you can browse for the images.  
 
-If the image is something other than the type specimen itself, such as labels of a type specimen label or a copy of notes on the type, navigate to the Expanded Edit radial navigator to the upper right of the Depiction field, choose Depiction, and check “Is data depiction”.  If you are pulling the image from a publication, find Citation in the radial annotator below the image and give the source and page number. 
+If the image is something other than the type specimen itself, such as labels of a type specimen label or a copy of notes on the type, then:
+- Navigate to the `Expanded Edit` `Radial navigator` to the upper right of the `Depiction` field,
+- Choose `Depiction` and check `Is data depiction`. 
+- If you are pulling the image from a publication, find `Citation` in the `Radial annotator` below the image and give the `source` and `page number`. 
 
-OTU’s.  Images illustrating taxa should be attached to OTU’s.  Use the Browse taxa task to find the OTU.  The Radial Annotator to the right of the name at the top left of the field has a Depiction slice, which you can use to add the image.  Once the image has loaded, you can use the green edit button to add a figure name and a caption.  If you are pulling the image from a published source, be sure to enter the source and page number, using the Citations slice in the radial annotator to the right of the image.  To delete an image, hit the red trash icon to the right of it.
+OTUs.  
 
-Copyright issues.  To enter the copyright status for an image, find the Attribution slice in the radial annotator associated with it (it also has a copyright symbol in it).  Here you will find a menu with different copyright options, the year of copyright, and various other places to enter the Creator, Owner, Editor, and Copyright holder for the image.
+Images illustrating taxa should be attached to `OTUs`.
+- Use the `Browse taxa` task to find the `OTU`.
+- Note the `Radial Annotator` to the right of the name at the top left of the field has a `Depiction slice`, which you can click on and then use to add the image.
+- Once the image has loaded, you can use the green `Edit` button to add a `figure name` and a `caption`.
+- If you are pulling the image from a published source, be sure to enter the `source` and `page number`, using the `Citations` slice in the `Radial annotator` to the right of the image.
+- To delete an image, click the red `trash icon`<img src="https://sfg.taxonworks.org/s/lnxbjc" width=20px/> to the right of it.
 
-Associated with each image are a Label field and a Caption field.  We recommend using the Caption field only to record information associated with the image, such as “Fig. 2, male head, frontal view”.  The Label field is intended for use primarily when using TW to create output such as species pages or publications.
+Copyright issues.  
 
-It is also possible to batch process images using the New Image task, which may be more efficient if you are uploading many images from the same publication.  You can drag and drop batches of images, and then assign the author/creator, source (publication), copyright information and so forth for all of them at once.  If you plan to attach the images to an OTU or Collection Object (including type specimens) upload only the relevant images in each batch.  Then you can use the Depict Some screen to assign them.
+To enter the `copyright status` for an image, find the `Attribution` slice in the `Radial annotator` associated with it (it also has a copyright symbol in it). Here you will find a menu with different copyright options, the year of copyright, and various other places to enter the `Creator`, `Owner`, `Editor`, and `Copyright holder` for the image.
+
+Associated with each image are a `Label` field and a `Caption` field.  We recommend using the `Caption` field only to record information associated with the image, such as "Fig. 2, male head, frontal view". The `Label` field is intended for use primarily when using TW to create output such as species pages or publications.
+
+It is also possible to batch process images using the `New Image` task, which may be more efficient if you are uploading many images from the same publication. You can drag and drop batches of images, and then assign the author/creator, source (publication), copyright information and so forth for all of them at once. If you plan to attach the images to an `OTU` or `Collection Object` (including type specimens) upload only the relevant images in each batch. Then you can use the `Depict Some` screen to assign them.
 
 ### Changing rank of a family-level taxon
+<a name="change family-level taxon rank"></a>
+This is a multi-step process. You may need to raise or lower the rank of a family-level taxon. The process is the same. Here's an example: let’s assume that we wish to raise the categorical level of the taxon Coccophaginae to family level, Coccophagidae. Here are the steps to follow.
 
-This is a multi-step process.  For example, let’s assume that we wish to raise the categorical level of the taxon Coccophaginae to family level, Coccophagidae.  Here are the steps to follow.
+1. Check to see if Coccophagidae has been used at the family level before (use `Browse Nomenclature`). If it has, you can skip step 2 below, because the taxon name Coccophagidae already exists in the system.
 
-1- Check to see if Coccophagidae has been used at the family level before (Browse Nomenclature).  If it has, you can skip step 2 below, because the taxon name Coccophagidae already exists in the system.
+2. If the taxon at the family-level (Coccophagidae here) does not exist, navigate to the taxon name Coccophaginae (`Browse Nomenclature`) and move to the `Edit Taxon Name screen` to create the name Coccophagidae.
+- The best way to do this is to `Clone` the subfamily level name (green button in upper right), as this will retain the author and date, type genus, and other historical information.
+- `Select all the boxes` to retain all historical information and type `CLONE` in the box. This will active the green `Clone` button. Note that _you are creating a `taxon name` here_, not an OTU, which is a separate issue.
 
-2- If the taxon at the family-level (Coccophagidae here) does not exist, navigate to the taxon name Coccophaginae (Browse Nomenclature) and move to the Edit Taxon Name screen.  We will need to create the name Coccophagidae.  The best way to do this is to clone the subfamily level name (green button in upper right), as this will retain the author and date, type genus, and other historical information.  Select all the boxes to retain all historical information and type CLONE in the box.  This will active the green Clone button. Note that you are creating a taxon name here, not an OTU, which is a separate issue.
+3. You are now on the `Edit taxon name` page for the cloned name. 
+- Change the family ending suffix to “idae”, or Coccophagidae.
+- Now change the parent. In this case, it will now be Chalcidoidea.
+- Then `Show all ranks`, and pick `Family`.  
 
-3- You are now on the Edit taxon name page for the cloned name.  Change the family ending suffix to “idae”, or Coccophagidae.  Now change the parent.  In this case, it will now be Chalcidoidea.  Then Show all ranks, and pick Family.  
+4. To record who made the change in categorical level:
+- Scroll down to the `Classification field`
+- Click `Set to Parent` (which will pick up Chalcidoidea from above), if the current classification is correct. Otherwise, type in the correct parent. 
+  - Below the field will be two choices, `Incertae Sedis` and `Classified As`. Pick Source `Classified As`.
+- Enter the `source` and `page number` for the publication in which the change was made (in this case, elevation of Coccophaginae to Coccophagidae).
 
-4- To record who made the change in categorical level, scroll down to the Classification field, hit Set to Parent (which will pick up Chalcidoidea from above), if the current classification is correct.  Otherwise, type in the correct parent.  Below the field will be two choices, Incertae Sedis and Classified As.  Pick Source Classified As.  Enter the source and page number for the publication in which the change was made (in this case, elevation of Coccophaginae to Coccophagidae).
+5. Now you need to make the appropriate changes to the nominate subfamily taxon, the subfamily Coccophaginae in this example.
+- `Navigate` to the `Edit Taxon Name` form for Coccophaginae.
+- Change the `parent` here to the new family-level name, in this case, Coccophagidae.  
 
-5- Now you need to make the appropriate changes to the nominate subfamily taxon, the subfamily Coccophaginae in this example.  Navigate to the Edit Taxon Name form for Coccophaginae.  Change the parent here to the new family-level name, in this case, Coccophagidae.  
+6. Next, scroll down to the Relationships field.  
+- Enter the new `family-level name` (Coccophagidae), and 
+- `show all possible choices` (blue box to right). 
+  - Choose `Family Group Name, Original Form Of` from the menu of choices (it is below `Usage` which is below `Unavailable or Invalid, linked to`).
+- Enter the `source` and `page number`, as always.
 
-6- Next, scroll down to the Relationships field.  Here enter the new family-level name (Coccophagidae), and show all possible choices (blue box to right).  Choose “Family Group Name, Original Form Of” from the menu of choices (it is below Usage which is below Unavailable or Invalid, linked to).  Enter the source and page number, as always.
+7. At this point, a `Manage Synonymy` screen will appear. This provides a dashboard for assigning the classification of all taxa subordinate to the family name (children, in other words).  
 
-7- At this point, a Manage Synonymy screen will appear.  This provides a dashboard for assigning the classification of all taxa subordinate to the family name (children, in other words).  
-
-8- Below the Manage Synonymy screen you will find the Classification screen.  Type in new Parent (Coccophagidae in this example), and choose Source Classified As.  Enter the citation and page number for the appropriate publication.
-
-9- If you are demoting a family level name, say from family to subfamily, follow the same steps as above.  
+8. Below the `Manage Synonymy` screen you will find the `Classification` screen.
+- Type in new `Parent` (Coccophagidae in this example), and 
+- Choose `Source Classified As`.
+- Enter the `citation` and `page number` for the appropriate publication.
 
 ### Changing rank of a genus-level taxon or species-level taxon
 
-To elevate a subgenus to genus level, first navigate to the name of the subgenus and click on the Edit taxon name tool.  Change the parent as appropriate (family, subfamily, tribe etc.) and change the rank to genus.  How to record the citation?
+Example: to elevate a subgenus to genus level:
+- First `Navigate` to the name of the subgenus and click on the `Edit taxon name` tool. 
+- Change the `parent` as appropriate (family, subfamily, tribe etc.) and 
+- Change the `rank` to genus. 
 
+Next, how to record the citation? Note well, classification relationships should be used only *above* the genus level.
 
-NB: Classification relationships should be used only *above* the genus level
+For making any changes in rank at the genus level and below use the `New Combination task`: (explained in <!--section 4.7--> the `New Combination Scenario`). There is still a 2-part process required at the moment.
+1. Create the combination (using the `New Combination` task), e.g. Camptoptera (Eofoersteria), and add the `citation` for same there.
+2. Update the `classification` by changing the `parent` for the "now" subgenus. You will be required to manually `select the rank`, (e.g. subgenus)
 
-For making any changes in rank at the genus level and below use the New Combination task: (explained above in section 4.7)
-a.	There is still a 2-part process required at the moment:
-i.	Create the combination (using the New Combination task), e.g. Camptoptera (Eofoersteria), and add the citation for same there.
-ii.	Update the classification by changing the parent for the "now" subgenus. You will be required to manually select the rank, (e.g. subgenus)
+One should be aware that UCD@NHM did not use subgeneric names, they were treated as synonyms of the parent genus. However, if species names were originally described in a subgenus, the original combination was recorded and will show in UCD@TW as a combination, as in the following example:
 
+INSERT Screenshot
 
-One should be aware that UCD@NHM did not use subgeneric names, they were treated as synonyms of the parent genus.  However, if species names were originally described in a subgenus, the original combination was recorded and will show in UCD@TW as a combination, as in the following example
+If you are working with a genus in which a subgeneric classification has been used, you have the following options:
 
- 
+1. You can create all of the subgeneric names, or find them and treat them as valid children of the appropriate genus. Nominate subgeneric names can be created by cloning the genus name and changing rank (see examples for subfamilies above, section 4.14). Whether or not you want to take the time to do this is up to you and your colleagues, but the tools are there in UCD@TW and in TaxonWorks generally.
 
-If you are working with a genus in which a subgeneric classification has been used, you have two options:
+2. You can continue to treat the subgenera as junior synonyms of the parent genus.  However, if you curate a paper in which a species is originally described in a subgenus, you should be sure to enter both the `Genus` and `Subgenus` names in the `Original Combination` and `Rank` section of `Edit Taxon Name`.
 
-1- You can create all of the subgeneric names, or find them and treat them as valid children of the appropriate genus.  Nominate subgeneric names can be created by cloning the genus name and changing rank (see examples for subfamilies above, section 4.14).  Whether or not you want to take the time to do this is up to you and your colleagues, but the tools are there in UCD@TW.
-
-2- You can continue to treat the subgenera as junior synonyms of the parent genus.  However, if you curate a paper in which a species is originally described in a subgenus, you should be sure to enter both the Genus and Subgenus names in the Original Combination and Rank section of Edit Taxon Name.
-
-3- If you want to record historic subgeneric placement, use the New Combination task.
+3. If you want to record historic subgeneric placement, use the `New Combination task`.
 
 ### Species groups
 
-These are used in many genera of chalcidoids as informal grouping of species without nomenclatural rank or status.  UCD@TW provides the tools to treat these formally (as superspecies which is what the ICZN recommends) but it will not display them as such in Browse Nomenclature.  However, the consensus in the UCD project seems to be that it is preferable to leave species groups as informal groupings without nomenclatural baggage.  How then to indicate or record assignment to species groups?  There are several options, each of which has strong and weak points.  You will have to decide which option works best for your group.
+These are used in many genera of chalcidoids as informal grouping of species without nomenclatural rank or status. UCD@TW provides the tools to treat these formally (as superspecies which is what the ICZN recommends) but it will not display them as such in `Browse Nomenclature`. However, the consensus in the UCD project seems to be that it is preferable to leave species groups as informal groupings without nomenclatural baggage. How then to indicate or record assignment to species groups? There are several options, each of which has strong and weak points. It is a "policy decision". You will have to decide which option works best for your group.
 
-1- Add the species group designation to the OTU name field using the edit OTU function.  The OTU can remain linked to the original taxonomic name.  It will display as follows, every time the OTU name is displayed:
+One.  
+- Add the `species group designation` to the `OTU name` field using the `edit OTU` function. The OTU can remain linked to the original taxonomic name. It will display as follows, every time the OTU name is displayed:
 
- 
+INSERT screenshot
 
-2- Step 1: Use a data attribute with the Predicate name “species group” and add the predicate as a default option to the OTU display.  First, create a new Predicate using the Manage Controlled Vocabulary task.  Provide a definition and choose a color.  Next, go to Project (upper right corner of any screen), choose Edit Preferences under Edit (upper left corner of screen), select OTU, scroll down to Species Group and select it.  
+Two.  
 
-Step 2: Now browse to a particular OTU and choose Data Attributes in the radial annotator.  Type species group in the Select a Predicate box, the name of the species group in the Value box, and hit the green create button.  If you want to associate this placement with a literature citation, enter it using the citations button to the right of the species group name at bottom of the screen.
+You will need to use a data attribute with the Predicate name `species group` and add the predicate as a default option to the OTU display.  
+- First, create a new `Predicate` using the `Manage Controlled Vocabulary task`. 
+- Provide a `definition` and choose a `color`.
+- Next, go to `Project` (upper right corner of any screen)
+- Choose `Edit Preferences` under `Edit` (upper left corner of screen)
+- Select `OTU`, scroll down to`Species Group` and select it.  
 
-Once you have completed Step 1 (above), the Predicate will be available for any OTU, you can designate them using Step 2.
+Now the `Predicate` is created and will be available for any `OTU` and can be designated where needed.
 
-3- Create a Tag for each species group in Manage Controlled Vocabulary, and apply the tag to the OTU using the radial annotator.  This will allow you to pull up all OTU’s assigned to a particular species group in the radial annotator.  However, the downside is that the tags will appear in the list for everyone in the project.
+- Second, `Browse` to a particular OTU and choose `Data Attributes` in the `Radial annotator`. 
+- Type `species group` in the `Select a Predicate` box, the `name` of the species group in the `Value` box, and click the green `Create` button. 
+- If you want to associate this placement with a literature citation, enter it using the `citations` button to the right of the `species group name` at bottom of the screen.
 
-4- Create a matrix of OTU’s for each species group.
+Once you have completed Step One above, the `Predicate` will be available for any `OTU`, you can designate them using Step Two.
+
+Three.  
+- Create a `Tag` for each species group in `Manage Controlled Vocabulary`, 
+- Apply the tag to the OTU using the `Radial annotator`. This will allow you to pull up all OTUs assigned to a particular species group in the `Radial annotator`.
+- Note well, however, the downside is that the tags will appear in the list for everyone in the project.
+
+Four.  
+- Create a matrix of OTUs for each species group.
 
 
 ### About tribes and subtribes
 
-UCD@NHM did not formally recognize taxonomic levels between genera and subfamilies.  Names of tribes and subtribes were treated as junior synonyms of their respective families.  However, tribal and subtribal classifications are currently used in many families of chalcidoids.  If you wish to incorporate these into classifications in UCD@TW, these are the steps to follow.
+Again, using the UCD@NHM Project as an example, they did not formally recognize taxonomic levels between genera and subfamilies. Names of tribes and subtribes were treated as junior synonyms of their respective families. However, tribal and subtribal classifications are currently used in many families of chalcidoids. If you wish to incorporate these into classifications in UCD@TW, steps to follow are describe below. First, you must determine if the tribal or subtribal form of the name is in UCD@TW, treated as a synonym of the subfamily. See the entire scenario next.
 
-1- First, you must determine if the tribal or subtribal form of the name is in UCD@TW, treated as a synonym of the subfamily.  In Browse Nomenclature, search for the name, for example, Coccophagini.  Be sure that you do not have the redirect to valid name box checked!  If you get a result showing the tribe (or subtribe) name in a black box to the right of the subfamily name (see below), the tribal form is in TW treated as a synonym of the subfamily.
+One.  
+- To determine if the tribal or subtribal form of the name is in UCD@TW and treated as a synonym of the subfamily, go to `Browse Nomenclature`, `search` for the name, for example, `Coccophagini`.  
+  - Be sure that you do not have the redirect to valid name box checked!  
+  - If you get a result showing the tribe (or subtribe) name in a black box to the right of the subfamily name (see below), the tribal form is in TW treated as a synonym of the subfamily.
 
-In most cases, if the tribe or subtribe name has been used in the literature, it will show up as a synonym of the nominate subfamily.  If it does not, you will need to create it, so skip to 5- below.
+In most cases, if the tribe or subtribe name has been used in the literature, it will show up as a synonym of the nominate subfamily.  If it does not, you will need to create it, so skip to section Five below.
 
- 
-Navigate to the name with the tribal name at right (not to the valid form of the subfamily name, which may come up without the tribe name in the black box).  It will be shown as an invalid synonym of the subfamily.  Hit the green edit icon to move to the Edit Taxon Name form.  Here, Show all ranks in the Basic Information form and pick tribe.  Then change the suffix from -inae to -ini and pick the appropriate parent.
+- Navigate to the name with the tribal name at right (not to the valid form of the subfamily name, which may come up without the tribe name in the black box). It will be shown as an invalid synonym of the subfamily. 
+- Click the green `Edit` icon to move to the `Edit Taxon Name` form.
+- `Show all ranks` in the `Basic Information` form and pick `tribe`.
+- Then change the suffix from `-inae` to `-ini` and pick the appropriate `parent`.
 
-2- Scroll down to Status, Show All, and select Valid.  Provide the citation and page number using the radial annotator to the right.
+Two.  
+- Scroll down to `Status`, `Show All`, and select `Valid`.
+- Provide the `citation` and `page number` using the `Radial annotator` to the right.
 
-3- If you wish to provide a citation for this usage of the name, scroll down to Classification, choose Set to Parent (in this case it would be Coccophagini), and choose Source Classified As.
+Three.  
+- If you wish to provide a citation for this usage of the name, scroll down to `Classification`, choose `Set to Parent` (in this case it would be `Coccophagini`)
+- Choose `Source Classified As`.
 
-4- One more rather obscure task remains.  In the Navigate Radial icon to the right of the tribal name at the top of the page (blue icon resembling a stack of papers), choose Show, then choose Edit in the menu bar at the top of the next screen.  This takes you to an older version of the Edit Taxon Name form.  If a name appears in the Verbatim Name field at the bottom of the screen (like Coccophaginae), delete it and hit the green Update Taxon Name button.  This removes an artifact created when tribal or subtribal names were imported as synonyms from TW@NHM.
+Four.  
+- One more (obsure) task remains. Using the `Navigate Radial icon`<img src="https://sfg.taxonworks.org/s/7w1dx2" width=20px/> to the right of the tribal name at the top of the page, choose `Show`
+- Then choose `Edit` in the menu bar at the top of the next screen. This takes you to an older version of the `Edit Taxon Name` form. 
+- If a name appears in the `Verbatim Name` field at the bottom of the screen (like `Coccophaginae ), `delete` it and click the green `Update Taxon Name` button. This removes an artifact created when tribal or subtribal names were imported as synonyms from TW@NHM.
 
-Continue from this point only if the tribal or subtribal form of the name did not show up as synonym when you searched for it in step 1- above.  Most likely, in this case it has not been used at this hierachical level before.  If it does not, create it using the following process.  
+Continue from this point only if the tribal or subtribal form of the name did not show up as synonym when you searched for it in step One above. Most likely, in this case it has not been used at this hierachical level before. If it does not show up, create it using the following process.  
 
-5- Navigate to the taxon name at the subfamily level, for example, Coccophaginae (Browse Nomenclature) and move to the Edit Taxon Name screen.  Create the name at the tribal or subtribal level, for example, Coccophagini.  The best way to do this is to clone the subfamily level name (green button in upper right), as this will retain the author and date, type genus, and other historical information.  Select all the boxes to retain all historical information and type CLONE in the box.  This will active the green Clone button. Note that you are creating a taxon name here, not an OTU, which is a separate issue.
+Five.  
+- Navigate to the taxon name at the subfamily level, for example, Coccophaginae (via `Browse Nomenclature`) and move to the `Edit Taxon Name` screen. 
+- Create the name at the tribal or subtribal level, for example, Coccophagini. The best way to do this is to `Clone` the subfamily level name (see green button in upper right), as this will retain the author and date, type genus, and other historical information. `Select all the boxes` to retain all historical information and type `CLONE` in the box. This will active the green `Clone` button. Note that you are creating a taxon name here, not an OTU, which is a separate issue.
 
-6- Navigate to the tribal (or subtribal) name in Browse Nomenclature and move to the Edit Taxon Name screen.  Pick the rank (tribe) and change the ending to -ini.  Change the parent.  In this case, the parent of Coccophagini would be Coccophaginae.
+Six.  
+- Navigate to the tribal (or subtribal) name in `Browse Nomenclature` and move to the `Edit Taxon Name` screen.
+- `Pick` the rank (tribe) and change the ending to `-ini`. 
+- Change the `parent`. In this case, the parent of Coccophagini would be Coccophaginae.
 
-7- Under Classification, set to parent (Coccophaginae) and choose Source Classified As.  Use the radial annotator to the right to enter a citation for the publication and page number of the paper in which the tribe was recognized or moved.
+Seven.  
+- Under Classification, set to parent (Coccophaginae) and choose `Source Classified As`. 
+- Use the `Radial annotator` to the right to enter a citation for the publication and page number of the paper in which the tribe was recognized or moved.
 
-8- The problem with this approach is that all of the children of Coccophaginae will have been transferred to Coccophagini.  If some of these genera belong to another tribe, you will need to create it, using the steps above, and transfer them, one by one.
+Eight.  
+- The problem with this approach is that all of the children of Coccophaginae will have been transferred to Coccophagini. If some of these genera belong to another tribe, you will need to create any such tribe, using the steps above, and transfer the genera, one by one.
 
 ### Taxon classified as _Incertae Sedis_
 

@@ -6,7 +6,7 @@ sidebarPosition: 200
 
 ## Weekly
 
-Every Wednesday, the Species File Group hosts [topic-specific meetings](https://speciesfilegroup.org/events.html) covering nomenclature, digitization, matrices/observations, technical input, and two open sessions. Questions of any sort are welcome there, regardless of topic. All are welcome.
+Every Wednesday, the Species File Group hosts [topic-specific meetings](https://speciesfilegroup.org/events.html) currently covering nomenclature, digitization, matrices/observations, technical input, and two open sessions. Questions of any sort are welcome there, regardless of topic. All are welcome.
 
 ## TaxonWorks Together
 

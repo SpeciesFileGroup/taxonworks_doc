@@ -1,5 +1,5 @@
 ---
-sidebarPosition: 700
+sidebarPosition: 70
 ---
 
 # Videos

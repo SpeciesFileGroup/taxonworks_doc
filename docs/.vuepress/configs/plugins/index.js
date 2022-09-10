@@ -1,4 +1,2 @@
-module.exports = {
-  en: require('./en'),
-  es: require('./es')
-}
+export * from './en'
+export * from './es'

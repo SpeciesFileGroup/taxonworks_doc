@@ -1,6 +1,6 @@
-const generateSidebar = require('../../utils/generateSidebar.js')
+import generateSidebar from '../../utils/generateSidebar.js'
 
-module.exports = {
+export const en = {
   '/develop/': generateSidebar('develop', 'Develop'),
   '/guide/': generateSidebar('guide', 'Guide'),
   '/about/': generateSidebar('about', 'About')

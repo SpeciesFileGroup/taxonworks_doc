@@ -184,8 +184,32 @@ Once you have created a list of sources, you can do the following:
 - If a **pdf** is associated with the source, you can capture it using the pdf icon.
 
 ## Importing
-- one at a time
-- batch upload
+### One at a time
+- 
+### Batch Upload
+Using the `Batch Upload` section of the `Sources` Data tab from the project home screen, you can upload a list of BibTex-formatted references all at once. 
+![batch_load](https://user-images.githubusercontent.com/11411328/190240979-b9801d87-b97b-47fd-a5aa-bbc251ff6253.jpg)
+
+From this screen, you can upload a Bibtex formatted TXT file that will allow for import of your references. Use this to load bibliographies exported from tools like EndNote, or Zotero. An example file is available [here](https://github.com/SpeciesFileGroup/taxonworks_doc/files/9569266/Monotomidae2.txt). Your Bibtex file must meet the following conditions:
+- The file to import should be in UTF-8 encoding.
+- The file should have unix style line-endings.
+- All entries should include a populated 'Label' field containing a unique internal identifier for the record. Endnote does not provide this by default, Zotero does.
+![label_field](https://user-images.githubusercontent.com/11411328/190244623-abc03a72-e110-4907-aec6-7f342cd08170.jpg)
+
+Year fields should not include periods ('.').
+Try using a BibTeX bibliography "linter" or validating tool ([for example](https://biblatex-linter.herokuapp.com/)) on the web to find errors in your file. 
+
+Once you upload, you will see a preview list of your sources, highlighted in green, brown, and red. Green references will be imported, brown ones will be imported but have some soft validation that should be cehcked or fixed before upload, and red ones will not be imported.
+![references_red_green](https://user-images.githubusercontent.com/11411328/190242804-7cfcde53-d369-4c1a-8fc6-b66dded57152.jpg)
+
+Once you've ironed out any problems, you need to re-upload your data using the `Choose File` button. 
+![image](https://user-images.githubusercontent.com/11411328/190245725-76f05ea7-5cb7-453f-b648-28c649fa0272.png)
+
+Click the `Create` Button to upload your sources. 
+Once the upload finishes, you should get a screen like this:
+![image](https://user-images.githubusercontent.com/11411328/190246930-6c9b23a3-ece1-48d8-97de-f357f48fa5aa.png). 
+You can click the edit buttons or search for them in the `Filter Sources` task. 
+
 
 ## Exporting
 - CSV

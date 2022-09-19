@@ -22,5 +22,5 @@ features:
   - title: About
     splash: Learn more about TaxonWorks
     details: Contact and connect with the community. Understand who TaxonWorks is for. Cite the project. Find users, their data, and examples of use. Read about its past, present and future. More about biodiversity informatics.
-footer: Content is CC0.  Please consider citation.
+footer: Content is CC0.  [Please consider citation](https://docs.taxonworks.org/about/citing-taxonworks.html).
 ---

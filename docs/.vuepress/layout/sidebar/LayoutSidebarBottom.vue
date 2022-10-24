@@ -3,11 +3,20 @@
 </template>
 
 <style lang="css">
+
 .vue-press-information {
-  position: absolute;
   text-align: center;
   width: 100%;
-  bottom: 1.5em;
+  position: absolute;
   font-size: 12px;
+  padding: 1.5em;
+  bottom: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 720px) {
+  .vue-press-information {
+    position: relative;
+  }
 }
 </style>

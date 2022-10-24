@@ -1,5 +1,6 @@
 import { path } from '@vuepress/utils'
-import { defaultTheme } from'vuepress'
+import { defaultTheme } from'@vuepress/theme-default'
+import { defineUserConfig } from 'vuepress'
 import { searchPlugin } from '@vuepress/plugin-search'
 import figurePlugin from './plugins/figure'
 import taskListPlugin from 'markdown-it-task-lists'
@@ -7,7 +8,7 @@ import * as navbar from './configs/navbar'
 import * as sidebar from './configs/sidebar'
 import * as pluginsLang from './configs/plugins'
 
-module.exports = {
+export default defineUserConfig({
   lang: 'en-US',
   head: [
     ['link', { rel: 'icon', href: '/images/favicon.svg' }]
@@ -93,4 +94,4 @@ module.exports = {
       }
     })
   ]
-}
+})

@@ -4,13 +4,17 @@
 
 <style lang="css">
 
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .vue-press-information {
   text-align: center;
   width: 100%;
-  position: absolute;
   font-size: 12px;
   padding: 1.5em;
-  bottom: 0;
   box-sizing: border-box;
 }
 

@@ -41,7 +41,7 @@ _If you wish to be added to this list contact us or make a [pull request](/about
 The Species File group has a [document outlining how they collobarate](https://speciesfilegroup.org/docs/taxonworks_in_production_at_sfg.html), its purpose is to get everyone on the same page as to what a TaxonWorks project in the instances they support means.
 
 ## Join 
-As more and more projects are created in TaxonWorks the scope of the taxa covered grows.  If your projects overlap then we encourage you to find an existing project and join up, rather than work in parallel.
+As more and more projects are created in TaxonWorks the scope of the taxa covered grows. If your projects overlap then we encourage you to find an existing project and join up, rather than work in parallel.
 
 ## Serve
 We encourage organizations or individuals with the resources to run their own instance of TaxonWorks. The core development team is mandated to facilitate this happening, and is committed to working with you to navigate the technical challenges to this. When individuals or organizations manage their own instance then this demonstrates to the broader community the growing role and importance of TaxonWorks. New instances help distribute valuable technical resources and underlying responsibility across our community.

@@ -25,7 +25,7 @@ export const es = [
   },
   {
     text: 'Contacto',
-    link: '/es/about/#contact'
+    link: '/about/contact'
   },
   {
     text: 'GitHub',

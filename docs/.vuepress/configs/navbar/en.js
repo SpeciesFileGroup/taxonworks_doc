@@ -29,7 +29,7 @@ export const en = [
   },
   {
     text: 'Contact',
-    link: '/about/#contact'
+    link: '/about/contact'
   },
   {
     text: 'GitHub',

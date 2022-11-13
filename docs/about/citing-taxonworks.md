@@ -1,5 +1,5 @@
 ---
-sidebarPosition: 1000
+sidebarPosition: 40 
 ---
 
 # Citing TaxonWorks

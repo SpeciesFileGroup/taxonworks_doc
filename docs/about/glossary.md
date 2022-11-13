@@ -1,3 +1,7 @@
+---
+sidebarPosition: 40 
+---
+
 # Glossary
 _I read the word(s) X on this site, or heard them in relation to TaxonWorks. What do they mean according to this community?_
 
@@ -55,7 +59,6 @@ Lick Creek Park
 M. Yoder, YPT
 ```
 Then the TaxonWorks verbatim fields `verbatim_locality` would contain 'Lick Creek Park' and the `verbatim_date` would include `12.iv.1997`.
-
 
 ## Other glossaries and descriptions
 

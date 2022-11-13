@@ -13,6 +13,3 @@ Our mission encompasses building software tools that facilitate cataloging, desc
 
 ## Everyone included
 Here in [docs.taxonworks.org](https://docs.taxonworks.org), everyone contributes to the content, development, and evolution of the documentation. Click where you see "Edit this page" to offer new information and update existing content.
-
-
-

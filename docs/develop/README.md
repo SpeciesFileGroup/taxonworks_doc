@@ -1,8 +1,10 @@
+---
+sidebarPosition: 10
+---
+
 # The big picture
 
 _Why emphasize that software development in science is big-picture important? How are the resources available to developers described here?_
-
-**This page is a stub**
 
 ## How is TaxonWorks supporting developer contributions?
 A project the nature of TaxonWorks needs contributions from many people to succeed over the long term. To that end we're working hard to build a foundation that permits and encourages anyone to contribute to the project. Highlights include:

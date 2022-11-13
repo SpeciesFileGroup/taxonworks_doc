@@ -1,5 +1,5 @@
 ---
-sidebarPosition: 500
+sidebarPosition: 30
 ---
 
 # Contributing Now

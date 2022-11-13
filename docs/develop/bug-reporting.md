@@ -1,5 +1,5 @@
 ---
-sidebarPosition: 300
+sidebarPosition: 40 
 ---
 
 # Bug reporting

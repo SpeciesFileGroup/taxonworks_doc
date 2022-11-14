@@ -11,8 +11,8 @@ _There are various ways to cite TaxonWorks, products derived from the software, 
 ### Collective code, documentation and API related material
 TaxonWorks Community. 2022. Taxonworks [software and supporting resources], https://taxonworks.org. Species File Group (maintainers, https://speciesfilegroup.org). Accessible at: https://github.com/SpeciesFileGroup/taxonworks.
 
-``` bibtex
-misc{taxonworks_software_and_related,
+```bibtex
+@misc{taxonworks_software_and_related,
   author = {{TaxonWorks Community}},
   organization = {Species File Group (maintainers, https://speciesfilegroup.org)},
   title = {TaxonWorks [software and supporting resources], https://taxonworks.org},
@@ -24,8 +24,8 @@ misc{taxonworks_software_and_related,
 ### Code (version free)
 TaxonWorks Community (2022) TaxonWorks [software]. Species File Group (maintainers, https://speciesfilegroup.org). Accessible at: https://github.com/SpeciesFileGroup/taxonworks
 
-``` bibtex
-misc{taxonworks_software,
+```bibtex
+@misc{taxonworks_software,
   author = {{TaxonWorks Community}},
   organization = {Species File Group (maintainers, https://speciesfilegroup.org)},
   title = {TaxonWorks [software]},
@@ -37,8 +37,8 @@ misc{taxonworks_software,
 ### Code at a specific version 
 TaxonWorks Community (2022) TaxonWorks [software, Version 0.29.0]. Species File Group (maintainers, https://speciesfilegroup.org). Accessible at https://github.com/SpeciesFileGroup/taxonworks/tree/v0.29.0
 
-``` bibtex
-misc{taxonworks_software_version_29,
+```bibtex
+@misc{taxonworks_software_version_29,
   author = {{TaxonWorks Community}},
   organization = {Species File Group (maintainers, https://speciesfilegroup.org)},
   title = {TaxonWorks [software, Version 0.29.0]},
@@ -51,7 +51,7 @@ misc{taxonworks_software_version_29,
 TaxonWorks Community (2022) TaxonWorks [documentation]. Species File Group (maintainers, https://speciesfilegroup.org). [Accessed yyyy/mm/dd] Accessible at https://docs.taxonworks.org
 
 ``` bibtex
-misc{taxonworks_documentation,
+@misc{taxonworks_documentation,
   author = {{TaxonWorks Community}},
   organization = {Species File Group (maintainers, https://speciesfilegroup.org)},
   title = {TaxonWorks [documentation]},
@@ -72,8 +72,8 @@ A generalized data citation looks like:
 
 `<who, "community" or "individuals>`. `<year>`. `<project title, as seen in TW>` curated in TaxonWorks [software]. `<optional maintainer statement>`. Retrieved `<date>` at `<url, e.g. https://sfg.taxonworks.org/api/v1>`.
 
-``` bibtex
-misc{my_data_in_taxonworks,
+```bibtex
+@misc{my_data_in_taxonworks,
   author = {{TaxonWorks Community}},
   organization = {Species File Group (maintainers, https://speciesfilegroup.org)},
   title = {<Project title as seen in TW> curated in TaxonWorks [software]},

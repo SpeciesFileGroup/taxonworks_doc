@@ -6,15 +6,14 @@ sidebarPosition: 400
 _Collectively gather all your relevant nomenclature information in one place in TW. Nomenclatural data are separated from but connected to the biological taxonomically-related information about such topics as host information, genetic/genomic or other biological associations data about a given biological taxon._
 
 ## Nomenclature Quick Start
-TW provides a suite of common tasks help you to manage your nomenclatural and related data. This section assumes you have some familiarity with the [TW user interface conventions](/guide/Manual/conventions.html) and introduces new user interface features where needed. First, please familiarize yourself with the kinds of tasks TW offers. 
+TW provides a suite of common tasks help you to manage your nomenclatural and related data. This section assumes you have some familiarity with the [TW user interface conventions](/guide/Manual/conventions.html) and introduces new user interface features where needed. Next, please familiarize yourself with the kinds of tasks TW offers related to Nomenclature. 
 
 ### Finding `Nomenclature` Tasks
 - Navigate to the `Tasks` list
-- Use the left side bar filter (on the left) to `Select` `Nomenclature`
+- Use the left side bar filter to `Select` `Nomenclature`
+  - The result is a list of task cards, each one related in some way to capturing, using, filtering, editing, and publishing nomenclatural data.
 
-#left[**Legend:** `Nomenclature tasks`](https://sfg.taxonworks.org/s/ipegpl [Screenshot of user interface showing all the current nomenclature-related tasks])
-
-Currently useful tasks are yellow (red = experiment, works, but might not last, or might radically change; yellow = more or less stable, some changes anticipated but basic functionality will remain same; green = you can write a manual, won't change for any reason).  
+#left[**Legend:** Color-coded `Nomenclature tasks`. Yellow tasks are more or less stable and useful, some changes anticipated but basic functionality will remain the same. If green, they likely won't change. Red indicates experimental status -- they work, but might not last or may radically change.](https://sfg.taxonworks.org/s/xaxbq3 [Screenshot of user interface showing all the current nomenclature-related tasks]). 
 
 `Browse nomenclature`, `New taxon name`, and `New combination` are useful tasks to add, view, and modify existing classification. `Browse nomenclature` provides a convenient way of navigating from one `Taxon Name` to another. It also gives you an option to quickly jump to the `Edit Task`.
 
@@ -22,19 +21,68 @@ Currently useful tasks are yellow (red = experiment, works, but might not last, 
 
 ### Basic information
 
-All `Taxon Names` are stored as uninomials (called `Protonyms`) in TaxonWorks. A hierarchical nomenclature is selected to provide the maximum level of flexibility of classifications. Three fields are required to create a Taxon Name record in the database: `name`, `parent`, and `taxonomic rank`. The Parent is any valid taxon of a rank higher than a new one. This section is the only section of the form which requires the use of the Save button. All other sections of the form use autosave mode.
+All `Taxon Names` are stored as uninomials (called `Protonyms`) in TaxonWorks. A hierarchical nomenclature is entered by you and is customizable to provide the maximum level of flexibility for classifications. Three fields are required to create a `Taxon Name` record in the database: `Name`, `Parent`, and `Taxonomic rank` using the `New taxon name` task. 
 
-The highest rank taxon in a hierarchy is `Root`. This is a default Taxon and can not be modified, it is created when the project is first initiated. The first taxon attached to the Root requires selection of the Code of Nomenclature (ICZN, ICN, ICNP, ICTV), this is required to enforce validation rules specific to this particular Code of Nomenclature. All taxa below this taxon do not require selection of the Code, it will be inherited from the parent. The same database may contain taxa covered by different Codes of Nomenclature. 
+- Select the `New taxon name` task.
+- Enter the desired `Name`
+- Start typing to select the `Parent` from a drop-down that will appear
+- Select the `Rank` 
+  - Note that TW software smart logic guesses at the `Rank` so please check.
+- Click `Create` to `save`.
+  - The `Parent` is any valid taxon of a rank higher than a new one. This section is the only section of the form which requires the use of the Save button (after `Create` step). All other sections of the `New Taxon name` form use autosave mode.
+  - After you click `Create` the task name changes to `Edit taxon name`.
 
-[NEED TO EXPLAIN / example for ROOT]
+#left[Three fields required to create a `New taxon name`](https://sfg.taxonworks.org/s/0qc1zo [image shows `Name`, `Parent`, and `Rank` populated])
+
+Once you have entered the required fields for `New taxon name` and clicked `Create` more fields become available for you to populate with data for adding `Author`, `Status`, `Relationship`, `Synonymy`, `Type`, `Original Combination`, `Subsequent Combination`, `Classification`, `Gender`, and `Etymlogy`. Please review the next screenshot for what this looks like in the UI. Below this screenshot after the [Conceptual Approach](https://docs.taxonworks.org/guide/Manual/nomenclature.html#conceptual-approach) section, you will find a breif description of each of these sections followed by detailed explanations and examples.
+
+#left[All fields in the `New taxon name` task](https://sfg.taxonworks.org/s/xvmrib [image shows `Author`, `Status`, `Relationship`, `Synonymy`, `Type`, `Original Combination`, `Subsequent Combination`, `Classification`, `Gender`, and `Etymlogy` fields])
+
+### About Root
+The highest rank taxon in a given hierarchy is `Root`. This is a default Taxon and can not be modified, it is created when the project is first initiated. The first taxon attached to the Root requires selection of the Code of Nomenclature (ICZN, ICN, ICNP, ICTV). This selection is required to enforce validation rules specific to this particular Code of Nomenclature. All taxa below this taxon do not require selection of the Code, it will be inherited from the parent. The same database may contain taxa covered by different Codes of Nomenclature. 
+
+#left[Illustrating the concept of `Root` in TaxonWorks](https://sfg.taxonworks.org/s/kn9ib3 [showing how a taxa is related to the concept of root])
+
+See this next screenshot to show how you can have other taxa at the `Root` as needed, that reference a different Code of Nomenclature. 
+
+#left[Showing several taxa that cross kingdoms and Codes of Nomenclature at the level of root](https://sfg.taxonworks.org/s/p13yje [3 taxa shown at level of root])
 
 ### Conceptual approach
 
-To understand nomenclature in TaxonWorks it's important to understand that the basic idea is to accumulate/add new facts rather than update, change, or delete existing records. This is incredibly liberating in many ways, as the system will resolve the current status by inferring across the facts that you have added. As an example, rather than think "how do I change this name to invalid", think "how do I add the fact that so and so stated this name is invalid". The name was valid in the past, now we add a fact to indicate somebody more recently thinks it's invalid. The system will look at the years the facts were applied, summarize the facts as we presently see them.  This also lets the complete nomenclatural history, in all its gory detail be recorded.
+To understand nomenclature in TaxonWorks it's important to understand that the basic idea is to accumulate/add new facts rather than update, change, or delete existing records. This is incredibly liberating in many ways, as the system will resolve the current status by inferring across the facts that you have added. As an example, rather than think "how do I change this name to invalid", think "how do I add the fact that so-and-so stated this name is invalid". The name was valid in the past, now we add a fact to indicate somebody more recently thinks it's invalid. The system will look at the years the facts were applied and then summarize the facts as we presently see them. This also lets the complete nomenclatural history, in all its gory detail, be recorded.
 
 ### Authorship
 
-This section describes how data are used to set `original authorship` of the name (as opposed to a subsequent citation). Authorship can be recorded in three (four?) different ways. If authorship is provided in more than one way it is prioritized and works as follows:
+In the `Author` section of `Edit taxon name` you have _three optional ways_ to pick from to record authorship. This information sets the **original authorship** of the name (as opposed to a subsequent citation). 
+
+#left[Three ways to add **original authorship** via `Source`, `Verbatim`, or `Person`]( https://sfg.taxonworks.org/s/sqzx6q [screenshot shows the 3 ways taxon name `Author` can be added])
+
+The `Source` option works if you have added the relevant `Source` (e. g. publication) for this particular `Taxon name` to TaxonWorks.
+
+#left[Add **original authorship** via `Source`](https://sfg.taxonworks.org/s/a37hw9 [adding taxon name `Author` via `Source`])
+- Click `Source`
+- Type just a few characters in the search box to find the correct source. A drop-down appears with your search results. Select the relevant publication.
+  - `Source author` and `Source year` of that publication will be used for the taxon name `Author`.
+  - Note you can **pin** this source if you know you'll immediately be adding more names with the same `Author`.
+- Results for this example above would be _Suricata_ Desmarest, 1804.
+
+Here, this example shows using the verbatim option:
+#left[Add **original authorship** via `Verbatim`](https://sfg.taxonworks.org/s/b7go7i [screenshot shows adding taxon name `Author` by entering the verbtim information in Verbatim author and Verbatim year fields])
+
+- Click `Verbatim`
+- Enter the `Verbatim author` and `Verbatim year` directly.
+
+With the third option to use `Person` you search to find the name you want. (This works the same way as the search for `Source` worked in the above example). Note `People` names are shared across TaxonWorks Projects. Review the options before choosing from the dropdown your search provides.
+#left[Add **original authorship** via `Person`](https://sfg.taxonworks.org/s/ezfjtu [screenshot shows adding taxon name `Author` by searching the `Person` table in TaxonWorks])
+
+- Click `Person`
+- `Search` (enter only a few letters)
+- Click to select the desired `Person`
+  - This example shows Desmarest was found by Search and then selected.
+  - If you pick an incorrect `Person` then Click on the trash can to remove and search to pick a different person.
+  - If you have more than one `Author`, then pick the others here as well.
+
+If **authorship** is provided by you in more than one way it is prioritized and works as follows:
 
 - From the `Verbatim Author` and `Verbatim Year` fields
 - From the `Person` (TaxonNameAuthor) assigned as an author of the taxon name
@@ -43,20 +91,23 @@ This section describes how data are used to set `original authorship` of the nam
 
 The _preferred priority_ is:
 
-- Assign an original citation (`Source` in `Author` section) that has  `People` assigned as authors to it. 
-- Over-ride the authorship in the Source if needed by assigning one or more People from that source as authors in the `Person` section (for example when doing Smith in `Jones & Smith`).
-- Use `Verbatim Author` and `year`, if original source and People roles are not provided.
+- Assign an original citation (`Source` in `Author` section) that has `People` assigned as authors to that `Source` entry. 
+- Override the **authorship** in the `Source` if needed by assigning one or more `People` from that source as authors in the `Person` section (for example when doing Smith in `Jones & Smith`).
+- Use `Verbatim Author` and `year`, if original source and `People` roles are not provided.
 
 Keep in mind.
 
-TaxonWorks is about creating the links between concepts (e.g. things like People, Collection Objects, Names, OTUs). How those concepts are visualized is a big can of worms. You can assign alternate values to People's names (e.g. abbreviations, alternate spellings) if you want to reflect how an author's name is spelled in different contexts.
+TaxonWorks is about creating the links between concepts (e.g. things like `People`, `Collection Objects`, `Names`, `OTUs`). How those concepts are visualized is a big can of worms. You can assign alternate values to People's names (e.g. abbreviations, alternate spellings) if you want to reflect how an author's name is spelled in different contexts.
 
 #### ICZN 
 
 ##### Parentheses around author/year
 
-- The preferred mechanism to rendering parentheses around a author/year (indicating current placement is different than original) is to assign the `original Genus` in the `Original Combination` (see below). This will automatically render the name correctly.
-- If you do not know the original combination, or you wish to "force" the use of parentheses you must use the `Verbatim Author`. 
+- The preferred mechanism to rendering parentheses around an author/year (indicating current placement is different than original) is to assign the `original Genus` in the `Original Combination` (see below). This will automatically render the name correctly.
+
+#left[Adding parentheses around author/year using `Original Combination` in `Edit taxon name`](https://sfg.taxonworks.org/s/glilp1 [screenshot shows `Original Combination` section of `Edit taxon name` task])
+
+- If you do not know the original combination, or you wish to "force" the use of parentheses you must use the `Verbatim Author` option. 
   - Place the parentheses around the author there: `(Smith)`. The code will automatically include the year in rendering out the name as needed.
 
 ##### Year of publication (availability) versus stated year
@@ -72,11 +123,16 @@ We assume that if two dates are known then the user will create and reference a 
 
 ### Nomenclatural Status
 
-This section relates to nomenclatural statuses, which are applicable to the taxon itself and does not require any knowledge of related taxa (e.g., `Nomen nudum`, `Non binomial`)
+This section of `Edit taxon name` relates to nomenclatural statuses, which are applicable to the taxon itself and does not require any knowledge of related taxa (e.g., `Nomen nudum`, `Non binomial`). Note that `valid` is the default `Status`.
+
+#left[Three ways to assign `Status` to a taxon name](https://sfg.taxonworks.org/s/2tmtam [screenshot showing where to pick `Status` values for this taxon])
 
 - Multiple Statuses could/can be assigned to the same taxon
-- Most common status are listed in the `Common section`, but all available statuses are listed in `Show all` section. The statuses which are not applicable to a current taxon are greyed out.
-- `Advanced section` allows you to search for a specific status
+- Most common status are listed directly in the `Common` section for you to pick from.
+- All available statuses are listed in `Show all` section in a pop-up for you to scroll down and click to select. The statuses which are not applicable to a current taxon are greyed out.
+- The `Advanced` option allows you to search for a specific status.
+
+#left[Using `Show all` to select a `Status` for a taxon](https://sfg.taxonworks.org/s/nyehuz [screenshot for how to pick `Status` values for this taxon using `Show all` option])
 
 Keep in mind.
 
@@ -256,40 +312,47 @@ Additionally, on any browse/show page you can:
 
 * A reminder, if you want to record information about biology (hosts, parasites, distribution, etc.) that doesn't belong in the nomenclature section, you will use the OTU radial icon or OTU nav icon to access and record those data from a nomenclatural context.
 
-# FAQ 
+## FAQ 
 
-## Can you describe how the authorship label for a name is determined?
+### What about `fossil` taxa in TaxonWorks?
+- If the taxon is a fossil, you need to select `Fossil` in the `Status` field of the `New (Edit) Taxon name` task.  The name will now appear with a little cross symbol to the left. 
+
+There are special rules in [ICZN](https://code.iczn.org/zoological-nomenclature/article-1-definition-and-scope/) and TW for fossil taxa. From Article 1 of the ICZN Code "1.2.1. The scientific names of extant or extinct animals include names based on domesticated animals, names based on fossils that are substitutions (replacements, impressions, moulds and casts) for the actual remains of animals, names based on the fossilized work of organisms (ichnotaxa), and names established for collective groups (see, in particular, Articles 10.3, 13.3.2, 23.7, 42.2.1, 66.1, 67.14), as well as names proposed before 1931 based on the work of extant animals."
+
+Note well that for simplicity in TW, the flag `fossil = extinct` is set to `true` by default. If the taxon name is based on a fossil remnant or cast or animal evidence trace, the organismal group may not be extinct. In this case, unselect the flag.
+
+### Can you describe how the authorship label for a name is determined?
 
 Authorship of a name can asserted in 4(!) different ways. That seems confusing at first, but determining what gets shown is pretty straightforwrd.
 
 The authorship label is determined by the FIRST option in the following list that is true. All other values are referenced only in validation reports.
 
-* If the `verbatim name` field is filled out, then it is used.
-* If People are assigned as TaxonName authors, then their family names are used.
-* If People are assigned to a Source as authors, and that Source is the original source for the taxon name, then their family group names are used.
-* If the `author` field of a Source is filled out, then that field is used.
+- If the `verbatim name` field is filled out, then it is used.
+- If People are assigned as TaxonName authors, then their family names are used.
+- If People are assigned to a Source as authors, and that Source is the original source for the taxon name, then their family group names are used.
+- If the `author` field of a Source is filled out, then that field is used.
 
-## There are a lot of options for assigning the authorship of a TaxonName, which is the preferred way?
+### There are a lot of options for assigning the authorship of a TaxonName, which is the preferred way?
 
 The preferred mechanism is to link the TaxonName to a Source, and assign authors (People) to that source (third option in the list above).  This is the most granular way of creating the data, and therefor it will ultimately give you the most flexibility in reporting and validating the data.
 
-##  Do you have any instructions on how to change combinations or enter new synonymies in TW?
+###  Do you have any instructions on how to change combinations or enter new synonymies in TW?
 
 Please follow the instruction in the Nomenclature Basics.
 
-## How do I find out where types are deposited, do you not yet have this function in TW?
+### How do I find out where types are deposited, do you not yet have this function in TW?
 
 Specimen deposition could be assigned to Specimen. If you create the type specimen for the Taxon Name, there is a field for
 the type repository. To create the type specimen follow one of the links provided in the Edit Taxon Name task, either *Quick* or
 *Comprehensive* in the *Type* section. *Quick type specimen* task allow to copy the entire verbatim-label information. 
 The *Comprehensive collection object* allow to provide more detailed information about the specimen. 
 
-## How do I get to the place in TW where I can add a new basionym? I need to try it out and see what happens.
+### How do I get to the place in TW where I can add a new basionym? I need to try it out and see what happens.
 
 For ICN names, the basionym have to be creaed as a separate protonym and linked to current name with basionym TaxonNameRelationship
 For ICZN names, the original combination of protonym is an equivalent of basionym in botany.
 
-## How would I remove a name from synonymy? 
+### How would I remove a name from synonymy? 
 
 You can symply delete the *Synonym* Taxon Name Relationship. But when the name has been historically treated as a synonym, 
 and subsequently was restored, the best practice would be to preserve both treatments in the database. Keep the synonym 
@@ -297,17 +360,17 @@ Taxon Name Relationship with its original citation in the database. Add the nome
 This status will overwrite the Taxon Name relationship. Please remember to add the citation to the status, to know where and
 when the name was reinstated.
 
-## What is the word form for "arbitrary combination of letters"?
+### What is the word form for "arbitrary combination of letters"?
 
 The word form is "noun in apposition"; etymology "arbitrary combination of letters"
 
-## How to record in the database a situation when a taxon, species or genus, is moved from one family to another?
+### How to record in the database a situation when a taxon, species or genus, is moved from one family to another?
   
   Edit TaxonName task has a special section for this, *Classification*. Select the family-group name, and the 
   relationship *Classified as*. This could be used for original placement of the taxon, or for the subsequent classification.
   Once the Taxon Name Relationship is created, assigne the citation using the radial annotator. 
 
-## How to record a *nomen nudum* that was "subsequently validated"?
+### How to record a *nomen nudum* that was "subsequently validated"?
 
   ICZN does not provide a procedure to "validate" a *nomen nudum*. Once unavailable, the
   taxon name keeps this status. The taxon could be described in a subsequent publication
@@ -319,14 +382,14 @@ The word form is "noun in apposition"; etymology "arbitrary combination of lette
   could be linked to the available name (valid or invalid) with a 
   TaxonName Relationship "unavailable or invalid".
 
-## How to enter the author for misspeled name?
+### How to enter the author for misspelled name?
 
 The name which is not spelled correctly, the original source, where the misspelling was 
 introduced, is still required. The role is not require, because the author string is always 
 generated from the correctly spelled protonym. Protonym of misspelled name is linked to the correctly 
 spelled name with the Misspelling TaxonNameRelationship.
 
-## How can I record the history of the taxon which had several historical *Incertae sedis* placements?
+### How can I record the history of the taxon which had several historical *Incertae sedis* placements?
 
 The *incertae sedis* relationship always correspond to the current placement of the taxon.
 For example, a species assigned to the family, instead of proper genus as a parent.
@@ -334,9 +397,9 @@ Normally, this will be marked as an invalid placement, the *incertae sedis* rela
 helps to override the error. For historical placements, a different relationship should be used:
 *source classified as*.
 
-# FAQ related to family-group names
+## FAQ related to family-group names
 
-## Is it possible to link a note to a family group name to specify what the original spelling is, at what level it was proposed and when?
+### Is it possible to link a note to a family group name to specify what the original spelling is, at what level it was proposed and when?
 
 Another protonym with the original spelling should be created in the database. Clone button could be used to replicate 
 all information from the current family-group name. This new taxon name should be linked to the original name using special
@@ -345,23 +408,23 @@ in the ending of the original name before you assigne the relationship, so it is
 with the proper ending, add the ralationship and return back to modify the *Name* to the original form. And save Taxon Name
 again. Assigning the relationship removes the restriction on the family-group name form and ending.
 
-## What protonyms do I need to create for each form of the family-group name?
+### What protonyms do I need to create for each form of the family-group name?
 
 Individual protonyms should be created for original and each subsequent form of the family group name.
 Each protonym should be linked to the current form with the "Family-group name form" or "Family-group name original form" relationships
 
-## To which ranked Protonym do I attach the type genus?
+### To which ranked Protonym do I attach the type genus?
 
 The type genus shoild be attached to any available family-group protonym. 
 
-## Do I have to re-attach the type genus to each family group protonym?
+### Do I have to re-attach the type genus to each family group protonym?
 
 If there are several coordinate names with the same type genus (for example, a family with nomynopypical subfamily),
 the same type could be automatically assigned from one to another through the Soft Validation fixes.
 
-# FAQ related to genus-group names
+## FAQ related to genus-group names
 
-## Do I have to create nominotypical subgenus or subspecies manually?
+### Do I have to create nominotypical subgenus or subspecies manually?
 
 When a new subgenus or subspecies created and the parent taxon does not contain any other sub- taxa,
 you can see the soft validation message like this: "*The parent species of this subspecies does not contain nominotypical subspecies*".
@@ -369,36 +432,36 @@ TaxonWorks can detect and created the nominotypical subgenus and subspecies auto
 running Soft validation fixes, but now it could only be done programmatically. Before the fix is
 implemented to the interface, it is advisable to created the missing subgenus or subspecies manually.
 
-## To which rank should I attach the type species in cases where nominotypical genera exist, genus, or subgenus?  What if I have done the opposite?
+### To which rank should I attach the type species in cases where nominotypical genera exist, genus, or subgenus?  What if I have done the opposite?
 
 The type species should be attached to each available protonym. If the type species is attached to either
 genus or subgenus, it could be automatically re-assigned to the other through Soft Validation Fixes.
 
-## Does the attachment of the type species differ if the nominotypical subgenus came with, or after the original description of the genus?
+### Does the attachment of the type species differ if the nominotypical subgenus came with, or after the original description of the genus?
 
 According to the ICZN Art. 43, a name established for a taxon at either rank in the genu-group
 is deemed to have been simultaneously established by the same author for a nominal taxon at
 the other rank in the group; both nominal taxa have the same type species, whether it was fixed originally
 or subsequently. Changes in the rank also do not affect the type genus designation. 
 
-# FAQ related to species-group names
+## FAQ related to species-group names
 
-## I have a species which was originally described in genus which obviously lies outside the scope of my group. How can I use this genus in the original combination?
+### I have a species which was originally described in genus which obviously lies outside the scope of my group. How can I use this genus in the original combination?
   
   The genus name have to be entered into the classification before the use. It may have to Root assigned as
   the parent, or, preferrably, the basic classification (class, order, family) could be provided as well.
 
-## Do I have to create a nominotypical subspecies?
+### Do I have to create a nominotypical subspecies?
 
 See the description above for the nominotypical subgenus.
 
-## Which ranked name should I attach the type material to, species, or subspecies? 
+### Which ranked name should I attach the type material to, species, or subspecies? 
 
 The type material could be attached to the coordinate taxon of any rank (species, subspecies, superspecies). The Soft
 Validation Fix will help to re-attache the same specimen to different ranks. Multiple specimens should 
 not be created.
 
-## When creating protonym, what names should I put in Original combination fields?
+### When creating protonym, what names should I put in Original combination fields?
 
 When selecting Original genus for a species, sometimes two options are available: a valid genus 
 name and coordinate subgenus with the same name("*Aus*" and "*Aus* (*Aus*)"). In cases like this the preference should 

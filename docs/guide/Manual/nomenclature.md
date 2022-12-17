@@ -89,7 +89,7 @@ If **authorship** is provided by you in more than one way it is prioritized and 
 - From the `Source author` and `source year` fields
 - From the `Person` assigned as an author of the Source (SourceAuthor) assigned as the original citation
 
-The _preferred priority_ is:
+The _preferred priority_ for your workflow is:
 
 - Assign an original citation (`Source` in `Author` section) that has `People` assigned as authors to that `Source` entry. 
 - Override the **authorship** in the `Source` if needed by assigning one or more `People` from that source as authors in the `Person` section (for example when doing Smith in `Jones & Smith`).
@@ -105,32 +105,35 @@ TaxonWorks is about creating the links between concepts (e.g. things like `Peopl
 
 - The preferred mechanism to rendering parentheses around an author/year (indicating current placement is different than original) is to assign the `original Genus` in the `Original Combination` (see below). This will automatically render the name correctly.
 
-#left[Adding parentheses around author/year using `Original Combination` in `Edit taxon name`](https://sfg.taxonworks.org/s/glilp1 [screenshot shows `Original Combination` section of `Edit taxon name` task])
+#left[Use `Original Combination` in `Edit taxon name` to render parentheses](https://sfg.taxonworks.org/s/glilp1 [screenshot shows `Original Combination` section of `Edit taxon name` task])
 
 - If you do not know the original combination, or you wish to "force" the use of parentheses you must use the `Verbatim Author` option. 
   - Place the parentheses around the author there: `(Smith)`. The code will automatically include the year in rendering out the name as needed.
 
 ##### Year of publication (availability) versus stated year
 
-The year a name becomes available defines its priority for nomenclatural purposes. It may differ from the year printed on the matter which is made available. The year of publication can be inferred from the Source linked to the name as an original combination, or explicitly noted in the `Author` > `Verbatim` > `Verbatim year` section.
+The year a name becomes available defines its priority for nomenclatural purposes. It may differ from the year printed on the matter which is made available. The year of publication can be inferred from the `Source` you linked to the name as an original combination, or explicitly noted in the `Edit taxon name` task in the `Author` > `Verbatim` > `Verbatim year` section.
 
-1. If you only have reference to a single value, it goes in `year` (month, day)
-2. If you have reference to two year values, the actual `year of publication` goes in `year`, and the `stated year of publication` goes in `stated_year`.
-3. If you have `month` or `day` publication, they go in `month` or `day`.
-4. The value provided in `verbatim_year` is always assumed to be the actual year of publication.
+From the `Source hub` task
+- Type a few characters to find your `Source` and select it.
+- Click the `Edit` (pencil) icon to edit the `year` (month, day) as follows
+  - If you only have reference to a single value, it goes in `year` (month, day)
+  - If you have reference to two year values, the actual `year of publication` goes in `year`, and the `stated year of publication` goes in `stated_year`.
+  - If you have `month` or `day` publication, they go in `month` or `day`.
+  - The value provided in `Edit taxon name` > `Author` > `Verbatim` > `verbatim_year` is always assumed to be the actual `year of publication`.
 
 We assume that if two dates are known then the user will create and reference a `Source` to record those values, i.e. there is no mechanism to provide and differentiate the two types of year directly with the name itself.
 
 ### Nomenclatural Status
 
-This section of `Edit taxon name` relates to nomenclatural statuses, which are applicable to the taxon itself and does not require any knowledge of related taxa (e.g., `Nomen nudum`, `Non binomial`). Note that `valid` is the default `Status`.
+This section of `Edit taxon name` relates to nomenclatural statuses, which are applicable to the taxon itself and does not require any knowledge of related taxa (e.g., `Nomen nudum`, `Non binomial`). Note that `valid` is the default `Status` so that you do not usually have to select `Valid` (except in certain circumstances, see below).
 
-#left[Three ways to assign `Status` to a taxon name](https://sfg.taxonworks.org/s/2tmtam [screenshot showing where to pick `Status` values for this taxon])
+#left[In `Edit taxon name`: Three ways to assign `Status` to a taxon name](https://sfg.taxonworks.org/s/2tmtam [screenshot showing where to pick `Status` values for this taxon])
 
 - Multiple Statuses could/can be assigned to the same taxon
 - Most common status are listed directly in the `Common` section for you to pick from.
-- All available statuses are listed in `Show all` section in a pop-up for you to scroll down and click to select. The statuses which are not applicable to a current taxon are greyed out.
 - The `Advanced` option allows you to search for a specific status.
+- All available statuses are listed in `Show all` section in a pop-up for you to scroll down and click to select. The statuses which are not applicable to a current taxon are greyed out.
 
 #left[Using `Show all` to select a `Status` for a taxon](https://sfg.taxonworks.org/s/nyehuz [screenshot for how to pick `Status` values for this taxon using `Show all` option])
 
@@ -141,26 +144,37 @@ Keep in mind.
 
 #### Example 1: Nomen nudum
 
-- Select 'Nomen nudum', one of Common statuses
+In this example, you use the selection of a `Status` using the radio buttons shown under `Common`.
+#left[After you select a `Common` status, e. g. `Nomen nudum`](https://sfg.taxonworks.org/s/2eqibx [screen shot from `Status` section of `Edit taxon name`])
+- Select `Status` = `Nomen nudum` option under `Common`.
+- Note your choice is automatically saved after you selected it.
 
-### Relationships - a nomenclatural statuses bases on relationship with other taxon
+### Relationship
 
-The nomenclatural relationships are the statuses which require record of two Taxon Names. For example, 'Aus' is a synonym of 'Bus'. In this relationship we can get status for each of those two names 'Aus' is a Junior synonym, 'Bus' is a Senior synonym.
+In this sense, a `Relationship` references a nomenclatural `status` (or more than one status) based on the connection to other taxon names.
+
+These nomenclatural relationships are the statuses which require record of two Taxon Names. For example, `Aus` is a **synonym** of `Bus`. In this relationship we can specify a status for each of those two names: 
+- `Aus` is a Junior synonym
+- `Bus` is a Senior synonym
 
 Keep in mind.
 
-[START MORE EDITING HERE]
+For a given _invalid_ name, navigate to `Edit taxon name` > `Relationship` for that _invalid_ name. In the `Relationship` section, you will do two things: search for and select the related name, then you declare the relationship status picking from the options provided (as described above).
 
-1. Always start with (browse too, then edit) the _invalid_ name and add relationships that reference the valid (or senior) name
-2. Check the soft validation messages, they will let you know if what can be improved or added.
-3. When adding a relationship, select one that is as specific as possible, 'subjective synonym' is better than just 'synonym', 'primary homonym' is better than just 'homonym'
+Here's a quick example of what it looks like when you have completed the above process. In this example, we started by using the `Browse Nomenclature` task to search for and find the Nomenclatural record for the _invalid_ name `Thysanidae Peck, 1951`. Then, we clicked the <img src="https://sfg.taxonworks.org/s/tkwvhi" width=25> to get to `Edit taxon name` and go to the `Relationship` section. We searched for the (valid) name Signiphoridae Howard, 1894 and picked it. We then selected one of the default statuses: `Subjective synonym of`. Our choice was saved automatically.
+
+#left[What we see after we declared the `Subjective synonym` status relationship ](https://sfg.taxonworks.org/s/7xi00h [showing the declared relationship between two taxon names])
+
+1. Always start with the _invalid_ name and add relationships that reference the valid (or senior) name
+2. Use `Browse nomenclature` to find the _invalid_ name, then `Edit` the `Relationship` for that name.
+3. Check the soft validation messages, they will let you know what may be improved or added.
+4. When adding a relationship, select one that is as specific as possible, 'subjective synonym' is better than just 'synonym', 'primary homonym' is better than just 'homonym'.
 
 #### Example 1: Synonymy
 
-* Although each relationship could be read in either direction (Aus is junior synonym of Bus, Bus is senior synonym of Aus) only one way recording the information is supported in TaxonWorks at the moment. The relationship should always start from **invalid name**. In our example 
-it is 'Aus', so the editing should start on the Edit Taxon Page for 'Aus', to build a new relationship, search for the second (related) name, in our example it is 'Bus', and then select the status for this relationship, 'objective synonym'.
-* Once the relationship is created a citation could be added to this relationship to indicate the Source, where this synonymy was first proposed.
-* In cases of competing synonymy, where in one source 'Aus' is recorded as synonym of 'Bus', and in the next publication it is a synonym of 'Cus', both synonym relationship should be created in the database, if the citations are provided, the latest citation will be used to position
+* Although each relationship could be read in either direction (`Aus` is **junior synonym** of `Bus`, `Bus` is **senior synonym** of `Aus`) only **one way recording** of the information is supported in TaxonWorks at the moment. The relationship should always start from **invalid name**. In our example, it is `Aus`, so the editing should start on the `Edit taxon name` Page for `Aus`. Then, to build a new `relationship`, search for the second (related) name, in our example it is `Bus`, and then select the `status` for this relationship, which is `objective synonym` in this case.
+* Once the relationship is created a `citation` could be added to this `relationship` to indicate the `Source`, where this synonymy was first proposed.
+* In cases of competing synonymy, where in one source `Aus` is recorded as synonym of `Bus`, and in the next publication it is a synonym of `Cus`, **both** synonym relationships should be created in the database, if the citations are provided, the latest citation will be used to position
 the taxon in the classification.
 * In cases where the name was reported as a synonym by mistake and was revalidated in a later publication, the relationship _should not be deleted_, a 'valid' status could be added to the taxon to overwrite the synonymy (see above) 
 

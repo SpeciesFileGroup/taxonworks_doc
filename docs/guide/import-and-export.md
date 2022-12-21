@@ -135,7 +135,7 @@ Term|Mapping
 `year` | The start date year of the collecting event. If the value contradicts dates from other non-empty date-related terms the record will fail to import
 `month` | The start date month of the collecting event. If the value contradicts dates from other non-empty date-related terms the record will fail to import.
 `day` | The start date day of the collecting event. If the value contradicts dates from other non-empty date-related terms the record will fail to import
-`verbatimDate` | Verbatim date of the collecting event
+`verbatimEventDate` | Verbatim date of the collecting event
 `habitat` | Verbatim habitat of the collecting event
 `samplingProtocol` | Verbatim method of the collecting event
 `fieldNotes` | Field notes of the collecting event

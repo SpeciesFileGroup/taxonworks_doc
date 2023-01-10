@@ -8,6 +8,10 @@ _Collectively gather all your relevant nomenclature information in one place in 
 ## Nomenclature Quick Start
 TW provides a suite of common tasks help you to manage your nomenclatural and related data. This section assumes you have some familiarity with the [TW user interface conventions](/guide/Manual/conventions.html) and introduces new user interface features where needed. Next, please familiarize yourself with the kinds of tasks TW offers related to Nomenclature. 
 
+### Nomenclature, not biology!
+
+* A reminder, if you want to record information about biology (hosts, parasites, distribution, etc.) that doesn't belong in the nomenclature section, you will use the `OTU radial icon` or `OTU nav icon` to access and record those data from a nomenclatural context.
+
 ### Finding `Nomenclature` Tasks
 - Navigate to the `Tasks` list
 - Use the left side bar filter to `Select` `Nomenclature`
@@ -16,6 +20,39 @@ TW provides a suite of common tasks help you to manage your nomenclatural and re
 #left[**Legend:** Color-coded `Nomenclature tasks`. Yellow tasks are more or less stable and useful, some changes anticipated but basic functionality will remain the same. If green, they likely won't change. Red indicates experimental status -- they work, but might not last or may radically change.](https://sfg.taxonworks.org/s/xaxbq3 [Screenshot of user interface showing all the current nomenclature-related tasks]). 
 
 `Browse nomenclature`, `New taxon name`, and `New combination` are useful tasks to add, view, and modify existing classification. `Browse nomenclature` provides a convenient way of navigating from one `Taxon Name` to another. It also gives you an option to quickly jump to the `Edit Task`.
+
+### Navigation helpers
+
+#### Hotkeys
+
+TaxonWorks has many hotkeys that can greatly improve productivity if mastered. Click the orange help circle, then the 'Keyboard shortcuts' slide-out to see an up-to-date list of hotkeys.
+- Mac computers use 'ctrl' as triggering key, PCs use 'alt'.
+
+Example: From the `New/Edit taxon name` task there are extensive options:
+
+* ctrl+s Save taxon name changes
+* ctrl+n Create a new taxon name
+* ctrl+p Create a new taxon name with the same parent
+* ctrl+d Create a child of this taxon name
+* ctrl+l Clone this taxon name
+* ctrl+e Go to comprehensive specimen digitization
+* ctrl+p Create a new taxon name with the same parent
+* ctrl+m Go to new type material
+* ctrl+c Go to comprehensive specimen digitization
+* ctrl+b Go to browse nomenclature
+* ctrl+o Go to browse otus
+
+Additionally, on any `browse/show` page you can:
+* ctrl+p - automatically pin and default that name to the pinboard
+* ctrl+g - pop-up a quick navigation modal that lets you navigate to the defaulted records
+
+## Understanding the data model
+
+* Concepts, at a low level, are gradually being documented here https://github.com/SpeciesFileGroup/taxonworks_doc/tree/master/concepts (see the TaxonWorksNomenclature.pdf, you can zoom in to see details).
+
+## Help
+
+* _Their is currently NO useful help from the orange slideout on the right, this will change as text appears here and migrates to the native help system._
 
 ## Curating data
 
@@ -208,7 +245,7 @@ Is created the same way as misapplication
 The original combination is required to keep track of the taxon history, properly handle parentheses in the author string, and also to validate homonymy between taxa. 
 There are two ways to enter the original combination in TaxonWorks
 
-### Cititing the original combination
+### Citing the original combination
 To cite usage of the original combination cite the taxon name (Protonym) itself.  This is because you are citing the fact that a) there is some name that b) came into existence in some first use, i.e. the definition of a Protonym.
 
 #### Method 1 (when the original combination is different from the current combination)
@@ -287,44 +324,6 @@ After the Protonym for the first name is created two relationships will be added
 * _Aus aus_ Author 1 Invalid, linked to _Aus bus_
 
 Once the misapplication is created, an OTU could be linked to the TaxonName, which could be used, for example, for taxon determination.
-
-## Navigation helpers
-
-### Hotkeys.
-
-TaxonWorks has many hotkeys that can greatly improve productivity if mastered. Click the orange help circle, then the 'Keyboard shortcuts' slide-out to see an up-to-date list of hotkeys.
-
-Mac computers use 'ctrl' as triggering key, PCs use 'alt'.
-
-While on New/Edit taxon name there are extensive options:
-
-* ctrl+s Save taxon name changes
-* ctrl+n Create a new taxon name
-* ctrl+p Create a new taxon name with the same parent
-* ctrl+d Create a child of this taxon name
-* ctrl+l Clone this taxon name
-* ctrl+e Go to comprehensive specimen digitization
-* ctrl+p Create a new taxon name with the same parent
-* ctrl+m Go to new type material
-* ctrl+c Go to comprehensive specimen digitization
-* ctrl+b Go to browse nomenclature
-* ctrl+o Go to browse otus
-
-Additionally, on any browse/show page you can:
-* ctrl+p - automatically pin and default that name to the pinboard
-* ctrl+g - pop-up a quick navigation modal that lets you navigate to the defaulted records
-
-## Help
-
-* _Their is currently NO useful help from the orange slideout on the right, this will change as text appears here and migrates to the native help system._
-
-## Understanding the data model
-
-* Concepts, at a low level, are gradually being documented here https://github.com/SpeciesFileGroup/taxonworks_doc/tree/master/concepts (see the TaxonWorksNomenclature.pdf, you can zoom in to see details).
-
-## Nomenclature, not biology!
-
-* A reminder, if you want to record information about biology (hosts, parasites, distribution, etc.) that doesn't belong in the nomenclature section, you will use the OTU radial icon or OTU nav icon to access and record those data from a nomenclatural context.
 
 ## Nomenclature Senarios (aka How-To) 
 

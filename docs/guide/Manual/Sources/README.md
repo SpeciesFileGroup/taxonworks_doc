@@ -155,13 +155,13 @@ Using the **Manage Controlled Vocabulary task** (shown below), you can create cu
 - To `Edit` an existing tag, use the green icon <img src="https://sfg.taxonworks.org/s/tkwvhi" width=30px/> associated with the `Tag`.
 
 ## Sources With Versions or Translated Titles
-Some sources exist in more than one version, either with translated titles or in entirely translated versions. To add a translated title, use the radial annotator, under "alternate values", and add the information under "title" to add the English version, such as in the case below:
+Some sources exist in more than one version, either with translated titles or in entirely translated versions. To add a translated title, use the radial annotator, under `Alternate values`, and add the information under `title` to add the English version, such as in the case below:
 
 Example Paper With Title in German and English
 <img width="600" title="Source Title Versions" hspace="10" src="https://sfg.taxonworks.org/s/8vsf1w"/> 
 
 Note, there are at least two reasons why you might have more than one version of source:
-1. Someone has done a translation of a paper, but it has not been published separately. In this case, simpy add the translated pdf as a second document to the source (Documentation tool in Radial Annotator).
+1. Someone has done a translation of a paper, but it has not been published separately. In this case, simpy add the translated pdf as a second document to the source (see `Documentation` option in `Radial Annotator`).
 2. The translation has been published separately from the original source. A common example is Entomological Review, which is a parallel version of Entomologicheskoe Obozrenie published in English. In this case, the page numbers are likely to be different in the two journals. You should enter this as a separate source from the original paper in Russian. A search on the author and date will bring up both sources.
 
 ## Filtering Sources
@@ -179,8 +179,8 @@ Once you have created a list of sources, you can do the following:
 - `Select All` (button is at top left) or `Select Individual Sources`.
 - `Tag`: once you have selected sources you can tag them using whatever tag or tags are in your pinboard by hitting the green `Tag` button. If there is more than one tag indicated as the default in your pinboard, both will be added. Note that if you create a new tag (explained above) this automatically becomes the default tag in your pinboard. 
   - HINT: This is a powerful way to create groups of sources for particular projects.
-- **Download CSV**: this creates and downloads to your browser a comma-delimited data file.
-- **Download formatted**: here you have the option to choose a format style (e.g. Zootaxa) and create a formatted bibliography.
+- **`Download CSV`**: this creates and downloads to your browser a comma-delimited data file.
+- **`Download formatted`**: here you have the option to choose a format style (e.g. Zootaxa) and create a formatted bibliography.
 - If a **pdf** is associated with the source, you can capture it using the pdf icon.
 
 ## Importing

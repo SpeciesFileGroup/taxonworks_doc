@@ -12,6 +12,10 @@ TW provides a suite of common tasks help you to manage your nomenclatural and re
 
 * A reminder, if you want to record information about biology (hosts, parasites, distribution, etc.) that doesn't belong in the nomenclature section, you will use the `OTU radial icon` or `OTU nav icon` to access and record those data from a nomenclatural context.
 
+#left[**Legend:** Navigate from `Browse Nomenclature` to the `OTU` for a given taxon. Biologically related information about a taxon goes into the Operational Taxonomic Unit (OTU) task](https://sfg.taxonworks.org/s/0qo8cm [Screenshot of user interface showing where to click to get from the `Browse Nomenclature` task to the `Browse OTU` for that particular name]).
+
+#left[**Legend:** In the `Browse OTU` task, enter biologically-related information.](https://sfg.taxonworks.org/s/h3k9hs [Screenshot of OTU user interface])
+
 ### Finding `Nomenclature` Tasks
 - Navigate to the `Tasks` list
 - Use the left side bar filter to `Select` `Nomenclature`
@@ -26,9 +30,11 @@ TW provides a suite of common tasks help you to manage your nomenclatural and re
 #### Hotkeys
 
 TaxonWorks has many hotkeys that can greatly improve productivity if mastered. Click the orange help circle, then the 'Keyboard shortcuts' slide-out to see an up-to-date list of hotkeys.
-- Mac computers use 'ctrl' as triggering key, PCs use 'alt'.
+ #left[**Legend:** Finding keyboard shortcuts associated with the `Browse Nomenclature` user interface](https://sfg.taxonworks.org/s/k49rj6 [Screenshot of help via the question mark icon that shows what keyboard shortcuts are possible for a given screen])
+ 
+- Mac computers use `ctrl` as triggering key, PCs use `alt`.
 
-Example: From the `New/Edit taxon name` task there are extensive options:
+Example: From the `New/Edit taxon name` task there are different extensive keyboard shortcut options:
 
 * ctrl+s Save taxon name changes
 * ctrl+n Create a new taxon name
@@ -42,13 +48,16 @@ Example: From the `New/Edit taxon name` task there are extensive options:
 * ctrl+b Go to browse nomenclature
 * ctrl+o Go to browse otus
 
-Additionally, on any `browse/show` page you can:
+Additionally, on any `Browse/Show` page you can:
 * ctrl+p - automatically pin and default that name to the pinboard
 * ctrl+g - pop-up a quick navigation modal that lets you navigate to the defaulted records
 
 ## Understanding the data model
 
-* Concepts, at a low level, are gradually being documented here https://github.com/SpeciesFileGroup/taxonworks_doc/tree/master/concepts (see the TaxonWorksNomenclature.pdf, you can zoom in to see details).
+Extensive information exists about the [TaxonWorks data model](https://docs.taxonworks.org/develop/Data/models.html). Information is presented in text and searchable graphic formats.
+
+* TaxonName relationships, at a low level, are gradually being documented [here](https://github.com/SpeciesFileGroup/taxonworks_doc/blob/dwc/concepts/TaxonWorksNomenclature.pdf) where you can zoom in to see details). See next for PNG version of the same information.
+ #left[**Legend:** Visualizing `TaxonName` relationships in TW](https://sfg.taxonworks.org/s/5oqq47 [PNG made from the PDF showing Taxon Name relationships in TW])
 
 ## Help
 

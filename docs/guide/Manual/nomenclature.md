@@ -299,7 +299,7 @@ Several categories for the family group name exist: original family group name f
 subsequent family group name form; misspelling.
 All of them could be added to the database as individual Protonym linked to the correct family group name form (valid or synonym) with 
 single TaxonNameRelationship
-For example Aini is "family group name original form of" Ainae
+For example Aini is "family group name original form of" Ainae.
 
 ### Citations
 

@@ -53,14 +53,13 @@ _A brief summary of the steps._
   * Add a (very) brief description of your change in the filed that has `Update README.md` in muted colors
   * Add a longer optional description in the bigger box, if you want
   * In your message not to use words like "Changed, tweaked, updated", describe *what* was done
-  * Choose the second option `Create a new branch ...`
+  * Choose the second option `Create a new branch ...`.  There is an exception to this, if your changes are small, and ready to go directly to the public site, then you can commit to the `development` branch.
 * Click `Commit changes` again
 
-A [TaxonWorks Docs GitHub repository](https://github.com/SpeciesFileGroup/taxonworks_doc) team member will review, make edits, ping you with questions if needed, and then accept the pull request to "merge" this into the live documentation.
+A [TaxonWorks Docs GitHub repository](https://github.com/SpeciesFileGroup/taxonworks_doc) team member will review, make edits, ping you with questions if needed, and then ultimately accept the pull request to "merge" this our documentation.
 
 #### What branch should I use?
-
-In deciding which branch to make a change on start by asking the question: "Is my change ready to go live, right now?" If the answer is *yes* (and you have permissions) then you can *commit to the develompent branch*.  If the answer is *no* (e.g. you want to further refine your text), then you should commit to a new branch.
+In deciding which branch to make a change on start by asking the question: "Is my change ready to go live, right now?" If the answer is *yes* (and you have permissions) then you can *commit to the development branch*. If the answer is *no* (e.g. you want to further refine your text), then you should commit to a new branch.
 
 In addition:
 * The *development* branch is the staging ground for the *main* branch. 
@@ -82,8 +81,6 @@ _Offline editing follows a typical Git-based workflow that are detailed on Githu
 * Edit, and commit to the branch
 * Push your local edits to your Github fork
 * Make a pull request 
-
-
 
 ### Including screenshots or images
 

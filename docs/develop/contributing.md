@@ -43,13 +43,34 @@ NOTE: Using this method also ensures everyone gets contribution credit and recog
 _A brief summary of the steps._
 
 * Login to your [Github](https://github.com/login) account.
-* While browsing these documents click `Edit this page` where you see a need.
-* Add or edit the desired text. Use [Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github). 
-* Ensure your edits follow the [style conventions](#style-conventions).
+* Return to [docs.taxonworks.org](https://docs.taxonworks.org)
+* On any given document, scroll to the bottom, and click `Edit this page` where you see a need.
+* Add or edit your text. 
+* Ensure your edits follow the [style conventions](#style-conventions). We use [Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github) to style text.
 * If you need to add an image see [including a screenshot](#including-screenshots-or-images).
-* Click `<something>` to submit a "pull request."
+* Click `Commit changes` to submit a "pull request."
+* In the form that pops up:
+  * Add a (very) brief description of your change in the filed that has `Update README.md` in muted colors
+  * Add a longer optional description in the bigger box, if you want
+  * In your message not to use words like "Changed, tweaked, updated", describe *what* was done
+  * Choose the second option `Create a new branch ...`
+* Click `Commit changes` again
 
 A [TaxonWorks Docs GitHub repository](https://github.com/SpeciesFileGroup/taxonworks_doc) team member will review, make edits, ping you with questions if needed, and then accept the pull request to "merge" this into the live documentation.
+
+#### What branch should I use?
+
+In deciding which branch to make a change on start by asking the question: "Is my change ready to go live, right now?" If the answer is *yes* (and you have permissions) then you can *commit to the develompent branch*.  If the answer is *no* (e.g. you want to further refine your text), then you should commit to a new branch.
+
+In addition:
+* The *development* branch is the staging ground for the *main* branch. 
+* You should always assume that that *development* branch changes will go live at any time.
+* *Development* changes may accumulate before moving to *main*.
+* The *main* branch must never be committed to directly.  Changes to *main* happen when *development* is merged into it.
+* It is always safest, and OK, to start a new branch. 
+* It's best to limit the scope of your changes on each new branch. 
+* If you have large/ongoing changes to your branch its useful to start your editing session by merging *development* into *your branch*. This keeps the differences between *development* and *your branch* minimal.
+* If you are editing locally, make sure you syncronize your changes with those on the remote server (`git pull`) before you start your editing session.
 
 #### Offline
 
@@ -61,6 +82,8 @@ _Offline editing follows a typical Git-based workflow that are detailed on Githu
 * Edit, and commit to the branch
 * Push your local edits to your Github fork
 * Make a pull request 
+
+
 
 ### Including screenshots or images
 
@@ -192,7 +215,6 @@ We use Markdown.  Many guides exist, for example on [GitHub](https://docs.github
 ```
 Some code, or literal example.
 ```
-
 
 ## Project management
 _How to issues are triaged, prioritized, and discussed._

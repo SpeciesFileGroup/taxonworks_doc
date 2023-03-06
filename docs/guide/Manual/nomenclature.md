@@ -59,10 +59,6 @@ Extensive information exists about the [TaxonWorks data model](https://docs.taxo
 * TaxonName relationships, at a low level, are gradually being documented [here](https://github.com/SpeciesFileGroup/taxonworks_doc/blob/dwc/concepts/TaxonWorksNomenclature.pdf) where you can zoom in to see details). See next for PNG version of the same information.
  #left[**Legend:** Visualizing `TaxonName` relationships in TW](https://sfg.taxonworks.org/s/5oqq47 [PNG made from the PDF showing Taxon Name relationships in TW])
 
-## Help
-
-* _Their is currently NO useful help from the orange slideout on the right, this will change as text appears here and migrates to the native help system._
-
 ## Curating data
 
 ### Basic information
@@ -301,7 +297,8 @@ _Before you start_:
 
 In the `New type specimen` task:
 - Select the `type` (e.g. holotype, paratype, etc.), this unlocks the `Collection object` section of the form (see screen shot next).
-  - #left[`New Type Specimen` Task options](https://sfg.taxonworks.org/s/e31y6v [the new type speicmen task showing collection object section])
+
+#left[`New Type Specimen` Task options](https://sfg.taxonworks.org/s/e31y6v [the new type speicmen task showing collection object section])
 - If the type designator is _not the same as the either 1) the original citation on the species Protonym or 2) the original citation on the type material record_ then select the type designator if known. The designator will be *inferred* from the aforementioned citations otherwise.
 - At present, if you have created a `Collecting event`, find it by `id` (the current search is a stub, and very crude), otherwise add verbatim data to the `Buffered` sections.
   - `Buffered` data persist with the `Collection object`, to be transcribed into `Collecting events`, `determinations` records, etc. some time downstream in the digitization process.
@@ -309,63 +306,77 @@ In the `New type specimen` task:
   - This creates a record indicating that the collection object is that class. The button will turn red (remember red in TaxonWorks means destroy a record). Clicking a red button will remove that classification from the object.
 - Select a `repository`
 - Click `create`. Your record will be added to the right side of the form, you will see it highlighted by type type in a light green. That means the form on the left can be used to edit that record.
-- Click 'New type' to add another record (e.g. paratype).
+- Click `New type` to add another record (e.g. paratype).
 
 ### Family group names 
 
-Several categories for the family group name exist: original family group name form; incorrect original family group name form;
-subsequent family group name form; misspelling.
-All of them could be added to the database as individual Protonym linked to the correct family group name form (valid or synonym) with 
-single TaxonNameRelationship
-For example Aini is "family group name original form of" Ainae.
+Several categories for the `family group name` exist: 
+- `original family group name form`; 
+- `incorrect original family group name form`;
+- `subsequent family group name form`; 
+- `misspelling`.
+All of them could be added to the database as individual Protonym linked to the correct family group name form (valid or synonym) with a single `Taxon Name Relationship`, for example Aini is `family group name original form of` Ainae.
 
 ### Citations
 
 ### Incertae sedis
 
-Incertae sedis implies a relationship between two protonyms.  Any time something you want to express references two protonyms you must use a Taxon Name Relationship to express this data.  For the name in question select the "parent" under which it should be placed, then select the relationship.
+_Incertae sedis_ implies a relationship between two protonyms. Any time something you want to express references two protonyms you must use a `Taxon Name Relationship` to express this data. 
+- For the name in question select the `parent` under which it should be placed, 
+- then select the `relationship`.
 
 ### Misidentifications
 
-Misidentifications are a tricky gray area.  Remember that we only care about the nomenclatural consequences of the use of the names in questions.  Taxon Identifications are linkages of OTUs to Collection objects, this is the preferred mechanism for linking one or more identifications to a collection object.
+Misidentifications are a tricky gray area. Remember that we only care about the nomenclatural consequences of the use of the names in questions. Taxon Identifications are linkages of `OTUs` to `Collection objects`, this is the preferred mechanism for linking one or more identifications to a collection object.
 
 A question from a user reflects the trickiness:
 
-1. Imagine there is a genus _Aus_, with type species _Aus bus_. Then someone describe a new species _Aus cus_, which subsequent authors don't even consider to be in the same superfamily. So I cannot enter _Aus_ twice because the second one is a misidentification but no one knows for sure what it is.
+1. Imagine there is a genus _Aus_, with type species _Aus bus_. Then someone describes a new species _Aus cus_, which subsequent authors don't even consider to be in the same superfamily. So I cannot enter _Aus_ twice because the second one is a misidentification but no one knows for sure what it is.
 
-- This is just an original genus. This is the same genus in both species. The genus cannot be misidentified. This is just a position of the 
-species in classification, regardless where it was originally described or subsequently placed.
+This is just an `original genus`. This is the same genus in both species. The genus cannot be misidentified. This is just a position of the species in classification, regardless where it was originally described or subsequently placed.
 
-The proper way to hand this is to use a single _Aus_, which is placed in the correct family. In both species _Aus_ is the Original genus, in _Aus bus_, this is also a Parent taxon. In case of _Aus cus_, if the current genus is not assigned, the superfamily is the parent taxon.
-An *incertae sedis* relationship should connect _Aus cus_ and the superfamily
+The proper way to handle this is to use a single _Aus_, which is placed in the correct family. In both species _Aus_ is the `Original genus`, in _Aus bus_, this is also a `Parent taxon`. In case of _Aus cus_, if the current genus is not assigned, the superfamily is the parent taxon.
+An _incertae sedis_ relationship should connect _Aus cus_ and the superfamily.
 
 2. Species misidentification/misapplication. 
 
-- Misapplication itself does not make an available name. But this a common practice to include misapplication in the list of historical usages of the taxon names, especially in the cases where a new name is proposed as a "replacement" for a previously misidentified species.
-Remember, that _nomen novum_ cannot be proposed for misapplication, since it requires a previously available name, but invalid because of homonymy. To record this in TaxonWorks, a new Protonym for a misapplied name should be created in the database. This Protonym should be linked to two other Taxon Names with two Taxon Name Relationships. The first relationship is to an available name with the same spelling (it could be a valid name or a synonym). The relationship type is "Misapplication". The second relationship "Invalidating" relationship should link this TaxonName to the correct name for this taxon. Remember, the "Synonym" relationship is not applicable here, since it assumes that both names are available name, and in this example Misapplication is not an available name.  Follow the soft validation messages for other essential information for the Protonym in the database.
+Misapplication itself does not make an available name. But this a common practice to include misapplication in the list of historical usages of the taxon names, especially in the cases where a new name is proposed as a "replacement" for a previously misidentified species. Remember, that _nomen novum_ cannot be proposed for misapplication, since it requires a previously available name, but invalid because of homonymy. 
 
-An example: The name _Aus aus_ Author 1, is misapplication for _Aus bus_, and _Aus aus_ Author 2 is completely different species.
+To record this in TaxonWorks, a `new Protonym` for a misapplied name should be created in the database. This Protonym should be linked to two other `Taxon Names` with two `Taxon Name Relationships`. The first relationship is to an available name with the same spelling (it could be a valid name or a synonym). The `relationship type` is `Misapplication`. The second relationship `Invalidating` relationship should link this `TaxonName` to the correct name for this taxon. Remember, the `Synonym` relationship is not applicable here, since it assumes that both names are available name, and in this example `Misapplication` is not an available name. Follow the soft validation messages for other essential information for the `Protonym` in the database.
+
+An example: The name _Aus aus_ Author 1, is a misapplication for _Aus bus_, and _Aus aus_ Author 2 is a completely different species.
 
 After the Protonym for the first name is created two relationships will be added in the database:
 * _Aus aus_ Author 1 Misapplication, linked to _Aus aus_ Author 2
 * _Aus aus_ Author 1 Invalid, linked to _Aus bus_
 
-Once the misapplication is created, an OTU could be linked to the TaxonName, which could be used, for example, for taxon determination.
+Once the misapplication is created, an `OTU` could be linked to the `TaxonName`, which could be used, for example, for `taxon determination`.
 
 ## Nomenclature Senarios (aka How-To) 
 
 ### Add new taxon name
-For this task, be sure you have put the `source` in the `Pinboard` and selected it as the `default`, as this will save a lot of time during the process. To manually create a new taxon name (e.g. species / genus / family):
-- Select the `New Taxon Name` card from the `Hub`. This will lead to the first screen, where you provide the new name and its parent. 
+For this task, be sure you have put the `source` in the `Pinboard` and selected it as the `default`, as this will save a lot of time during the process. Note also, that TW is smart, and as soon as you enter the name, it checks to see if it already has it (see example below).
 
-UCD Specific Note: UCD@TW has been previously populated with the data from John Noyes’ UCD, so inside the UCD@TW database you will not have to create a `root` for the taxonomic name tree (that is, there should always be a parent taxon). First, fill out the name of the highest-level taxon that you are creating, and indicate its parent taxon. For example, if you are creating a new genus with 2 new species, first create the genus, and then create the two new species. If one of the two new species is type-species for the genus, you can come back to the genus name and add the type-species later.
+UCD Specific Note: UCD@TW has been previously populated with the data from John Noyes’ UCD, so inside the UCD@TW database you will not have to create a `root` for the taxonomic name tree (that is, there should always be a `parent taxon`). First, fill out the name of the highest-level taxon that you are creating, and indicate its parent taxon. For example, if you are creating a new genus with 2 new species, first create the genus, and then create the two new species. If one of the two new species is type-species for the genus, you can come back to the genus name and add the type-species later.
 
-[INSERT SCREENSHOT] 
+To manually create a `new taxon name` (e.g. species / genus / family):
+- Select the `New Taxon Name` card from the `Hub`.
+ 
+ #left[Finding the `New Taxon Name` task card](https://sfg.taxonworks.org/s/heyy55 [shows `Nomenclature` tasks in TaxonWorks and how and where to find them])
 
-Note that TW is smart, and as soon as you enter the name, it checks to see if it already has it.
+- In the `New Taxon Name form` add the `new name` and select the `parent`. 
+  - Entering a string in the `Parent` field gives you a list of possible matching names to pick from.
+  - The new `Name` field works similarly to help you avoid adding the same name twice (think about collaborations).
 
-- Next, select the `parent`. This should provide a list of possible parents, pick the correct one. 
-  - Based on the rank of the parent, TW will then ask you to select the `precise taxonomic rank of the new name` (see below). If everything is correct, hit `Create`. This will open up the next screen.
+#left[Partial view of the `New Taxon Name` task](https://sfg.taxonworks.org/s/q47rk6 [shows `New taxon name` fields available when first adding a new taxon name])
+
+#left[Adding new `name` and selecting the `parent` in `New Taxon Name` task](https://sfg.taxonworks.org/s/17swba [adding a new name and the parent provides auto-finding of names. This helps prevent adding names more than once.])
+
+- Based on the rank of the parent, TW will then ask you to select the `precise taxonomic rank of the new name` (see below). If everything is correct, hit `Create`. Once you do this, the rest of the fields related to a new name will appear (see below).
+
+#left[Check `rank` of name to be added is correct and click `create](https://sfg.taxonworks.org/s/77d2jq[TaxonWorks guesses the rank of the new name. Verify correct then click on create button])]
+
+#left[The entire `New Taxon Name` form options now appear](https://sfg.taxonworks.org/s/7zfjtw[all fields now active for more taxon name information to be added])
 
 - Now you provide the `Source` (publication) and `authors`. If you have pinned the source, the `pinboard` icon will be blue and you can click it to automatically fill in the source details. 
 - Then choose `Person`, and enter enough letters to bring up each author (they should be in the database if they were entered with the source).

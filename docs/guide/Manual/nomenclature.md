@@ -384,7 +384,7 @@ To manually create a `new taxon name` (e.g. species / genus / family):
   - If multiple persons pop up that appear to be the same (for example `A. Dal Molin` and `Ana Dal Molin`), you can use the `Uniquify People task` to resolve and merge them (see Scenario: Resolving redundant person name strings, and matching author names with and without diacritical marks). 
   - If an author name is not found, you can enter it and add it by clicking the green `Add New` button. This will add the author to the names table. 
 
-- In most cases, for new taxa, you can skip over the `Status` and `Relationship` fields.  However, if the taxon is a fossil, you should check `Fossil` in the `Status` field.  he name will now appear with a little cross symbol to the left. There are special rules in ICZN and TW for fossil taxa.
+- In most cases, for new taxa, you can skip over the `Status` and `Relationship` fields.  However, if the taxon is a fossil, you should check `Fossil` in the `Status` field. The name will now appear with a little cross symbol to the left. There are special rules in ICZN and TW for fossil taxa.
 
 The `Type` form is next, which opens up a new form to capture details on the type.  We prefer to complete the rest of the `New Taxon Name` form first, and then do the `Type`.
 
@@ -404,7 +404,7 @@ In most cases, the `Quick type` screen will provide all the details you need to 
 - First, pick the nature of the `type` (for most new species this will be a holotype), provide the `source` (click blue `pin` button if source is the `default`), and the `page number`(s) on which the type is designated.
 The rest of the information on the type is filled in with the screen below.
 
-  1. In most cases, the type will be a new specimen, not already in TW as an `Existing Collection Object`.  If so, click `New`.
+  1. In most cases, the type will be a new specimen, not already in TW as an existing `Collection Object`.  If so, click `New`.
   2. Paste the label data for the type into `Buffered Collecting` event.  This is a verbatim text field.
   3. In most cases, you can ignore `Buffered determinations`, and `Buffered other labels`.
   4. Total is number of specimens (one for a holotype).
@@ -412,7 +412,7 @@ The rest of the information on the type is filled in with the screen below.
   6. The `Repository` is the institution where the type is deposited.  Hopefully the repository will be in the TW table, otherwise you may need to create it using the `Repositories card` in the Data portfolio.  
   7. `Collection Event` refers to a specimen already in the TW database, which in most cases will not be the case if you are curating a new species description.
   8. In `Biocurations`, indicate whether the type is an adult or immature, and a male or female.
-  9. Finally, you enter the Identifier for the type, which consists of two parts.  You must first Search for the `Namespace` (see the Glossary above) of the collection in which the type is deposited. Note that this may be different from the repository (a single institution may have several collections, each with a different “namespace”). Think of the `namespace` as the part of a specimen ID number that does not change for each specimen, for example, `TAMU` in `TAMU x01234567`. If the namespace is not in the database, you may need to create it, but since these are shared across projects, there is a good chance it will be there. Once you have selected the namespace, paste in the type or specimen number (only) in the `Identifier` field, and hit the green `Create` button.
+  9. Finally, you enter the Identifier for the type, which consists of two parts.  You must first Search for the `Namespace` (see the [Glossary](https://docs.taxonworks.org/about/glossary.html#namespace) for more details) of the collection in which the type is deposited. Note that this may be different from the repository (a single institution may have several collections, each with a different “namespace”). Think of the `namespace` as the part of a specimen ID number that does not change for each specimen, for example, `TAMU` in `TAMU x01234567`. If the namespace is not in the database, you may need to create it, but since these are shared across projects, there is a good chance it will be there. Once you have selected the namespace, paste in the type or specimen number (only) in the `Identifier` field, and hit the green `Create` button.
  
 [INSERT SCREENSHOT]
 

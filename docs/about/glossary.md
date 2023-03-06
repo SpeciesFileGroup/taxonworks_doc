@@ -36,7 +36,7 @@ A “namespace” is the abbreviation for a collection used in specimen accessio
 The biological unit that is useful to work with. They act as proxies.
 
 ### Parsed values
-In TaxonWorks `parsed values` are the formalized representation of the data. For example the verbatim date "12.iv.1997" parsed into three fields in TaxonWorks: `start_date_day` (12), `start_date_month` (4), `start_date_year (1997).
+In TaxonWorks `parsed values` are the formalized representation of the data. For example the verbatim date "12.iv.1997" parsed into three fields in TaxonWorks: `start_date_day` (12), `start_date_month` (4), `start_date_year (1997)`.
 
 ### Parent
 In TW the parent is the next higher taxon in which the taxon of interest is classified, for example, a genus for a species or a subfamily for a genus. By setting the parent, a curator controls how the classification will appear in TW. For example, for a small family in which subfamilies are not used, the parent of a genus may be a family. In other cases, the parent of a genus could be a tribe.  This is determined by the curator. The complete taxonomic history of the taxon’s classification is recorded separately on the Browse Nomenclature screen.

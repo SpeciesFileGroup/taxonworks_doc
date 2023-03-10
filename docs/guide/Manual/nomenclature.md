@@ -76,7 +76,7 @@ All `Taxon Names` are stored as uninomials (called `Protonyms`) in TaxonWorks. A
 
 #left[Three fields required to create a `New taxon name`](https://sfg.taxonworks.org/s/0qc1zo [image shows `Name`, `Parent`, and `Rank` populated])
 
-Once you have entered the required fields for `New taxon name` and clicked `Create` more fields become available for you to populate with data for adding `Author`, `Status`, `Relationship`, `Synonymy`, `Type`, `Original Combination`, `Subsequent Combination`, `Classification`, `Gender`, and `Etymlogy`. Please review the next screenshot for what this looks like in the UI. Below this screenshot after the [Conceptual Approach](https://docs.taxonworks.org/guide/Manual/nomenclature.html#conceptual-approach) section, you will find a breif description of each of these sections followed by detailed explanations and examples.
+Once you have entered the required fields for `New taxon name` and clicked `Create` more fields become available for you to populate with data for adding `Author`, `Status`, `Relationship`, `Synonymy`, `Type`, `Original Combination`, `Subsequent Combination`, `Classification`, `Gender`, and `Etymlogy`. Please review the next screenshot for what this looks like in the UI. Below this screenshot after the [Conceptual Approach](https://docs.taxonworks.org/guide/Manual/nomenclature.html#conceptual-approach) section, you will find a brief description of each of these sections followed by detailed explanations and examples.
 
 #left[All fields in the `New taxon name` task](https://sfg.taxonworks.org/s/xvmrib [image shows `Author`, `Status`, `Relationship`, `Synonymy`, `Type`, `Original Combination`, `Subsequent Combination`, `Classification`, `Gender`, and `Etymlogy` fields])
 
@@ -288,25 +288,46 @@ Find the `New type specimen` task via the `New taxon name` task `Type` section o
 
 #### Species group names
 
-See also the [basic article parsing](https://github.com/SpeciesFileGroup/taxonworks_doc/blob/master/manuals/BASIC_ARTICLE_PARSING.md) manual for a walk through that addresses many of these issues in a more contextual framework.
+See also the [basic article parsing](https://github.com/SpeciesFileGroup/taxonworks_doc/blob/archive/manuals/BASIC_ARTICLE_PARSING.md) exercise for a walk through that addresses many of these issues in a more contextual framework.
 
-_Before you start_:
-1. Add `biocuration classifications` that you might reference (e.g. `Male`, `Female`, `Adult` etc.).
-    - Do this by adding a new `Controlled Vocabulary Term` of type `BiocurationClass` or 
-    - Use the `Manage biocuration types and groups` task.  You only need to do this once in your project.
+_Before you start_: Add `biocuration classifications` that you might reference (e.g. `Male`, `Female`, `Adult` etc.). You can do this by adding a new `Controlled Vocabulary Term` of type `BiocurationClass` or you can use the `Manage biocuration groups and classes` task to do this. You only need to set these up once in your project. You can add to them later as needed. See the screenshots below.
+    #left[Manage Biocuration Groups and the Classes associated with each of the groups](https://sfg.taxonworks.org/s/t3ssdi [buttons showing where to add classes or groups and what class terms already exist for a group]) 
 
-In the `New type specimen` task:
+Adding `Groups` and `Classes` can be done independently. You can then assign classes to a given group (e. g. class `Female` or `Male` get added to group `Sex`). Classes do not have to be part of a group. Adding Groups and Classes work the same way.
+
+#left[Manage Biocuration Groups using the `Manage Controlled Vocabulary` task](https://sfg.taxonworks.org/s/o8mldy [Add group name, define what you mean with this label, choose a color for the group label, and assign a known standard ontology or link to a standard term if one applies])
+
+  - To add a `biocuration group`
+    - First, give your `biocuration group` a `Name`
+    - Next, `write a definition` for this `group` so that others may apply it correctly for your project. Note that definitions must be at least 20 characters.
+    - Then, `select` a color to apply to this `group` label for ease of use / finding in the user interface. 
+    - If one exists, enter a URL here to a known standard term / ontology entry for this group concept.
+      - Example, for `group` = `Sex` there is a term in the Darwin Core Standard (DwC) (from Biodiversity Information Standards TDWG) for `Sex`. You would get this URL `http://rs.tdwg.org/dwc/terms/sex` from the [DwC Terms List](https://dwc.tdwg.org/list/) from [tdwg.org](https://www.tdwg.org/) and enter it in the URL field for this term. This ensures the data get mapped / associated with the intended concept on export.
+    - Lastly, click `Create.`
+
+#left[Manage Biocuration Classes using the `Manage Controlled Vocabulary` task](https://sfg.taxonworks.org/s/nz19xm [Add class name, define what you mean with this label, choose a color for the class label, and assign a known standard ontology or link to a standard term if one applies])  
+  - To add a `biocuration class`
+    - First, give your `biocuration class` a `Name`.
+    - Next, `write a definition` for this `class` so that others may apply it correctly for your project. Note that definitions must be at least 20 characters.
+    - Then, `select` a color to apply to this `class` label for ease of use / finding in the user interface. 
+    - If one exists, enter a URL here to a known standard term / ontology entry for this group concept.
+      - Example, for `class` = `Female` there is a standard term and definition in the [Phenotype and Trait Ontology (PATO)](https://ontobee.org/ontology/PATO). You can search PATO for `female` and you will get this URL `http://purl.obolibrary.org/obo/PATO_0000383` to enter in the URL field for this term. This ensures the data get mapped / associated with the intended concept on export.
+    - Lastly, click `Create.`
+
+Now you can navigate to the `New type specimen` task
 - Select the `type` (e.g. holotype, paratype, etc.), this unlocks the `Collection object` section of the form (see screen shot next).
 
-#left[`New Type Specimen` Task options](https://sfg.taxonworks.org/s/e31y6v [the new type speicmen task showing collection object section])
-- If the type designator is _not the same as the either 1) the original citation on the species Protonym or 2) the original citation on the type material record_ then select the type designator if known. The designator will be *inferred* from the aforementioned citations otherwise.
+#left[`New Type Specimen` Task options](https://sfg.taxonworks.org/s/e31y6v [the new type specimen task showing collection object section])
+- If the type designator is _not the same as either the 1) the original citation on the species Protonym or 2) the original citation on the type material record_ then select the type designator if known. The designator will be *inferred* from the aforementioned citations otherwise.
 - At present, if you have created a `Collecting event`, find it by `id` (the current search is a stub, and very crude), otherwise add verbatim data to the `Buffered` sections.
   - `Buffered` data persist with the `Collection object`, to be transcribed into `Collecting events`, `determinations` records, etc. some time downstream in the digitization process.
 - Select the `Biocuration classes` you want by clicking on a green button (remember green in TaxonWorks means create a record). 
   - This creates a record indicating that the collection object is that class. The button will turn red (remember red in TaxonWorks means destroy a record). Clicking a red button will remove that classification from the object.
 - Select a `repository`
-- Click `create`. Your record will be added to the right side of the form, you will see it highlighted by type type in a light green. That means the form on the left can be used to edit that record.
+- Click `create`. Your record will be added to the right side of the form, you will see it highlighted by type in a light green. That means the form on the left can be used to edit that record.
 - Click `New type` to add another record (e.g. paratype).
+
+#left[`New Type Specimen` task showing `Buffered`, `Repository`, and `Biocurations` sections](https://sfg.taxonworks.org/s/x10tpl[expanded view of New Type Specimen task showing where to add label information, repository, and any biocuration data])
 
 ### Family group names 
 
@@ -319,13 +340,13 @@ All of them could be added to the database as individual Protonym linked to the 
 
 ### Citations
 
-### Incertae sedis
+#### Incertae sedis
 
 _Incertae sedis_ implies a relationship between two protonyms. Any time something you want to express references two protonyms you must use a `Taxon Name Relationship` to express this data. 
 - For the name in question select the `parent` under which it should be placed, 
 - then select the `relationship`.
 
-### Misidentifications
+#### Misidentifications
 
 Misidentifications are a tricky gray area. Remember that we only care about the nomenclatural consequences of the use of the names in questions. Taxon Identifications are linkages of `OTUs` to `Collection objects`, this is the preferred mechanism for linking one or more identifications to a collection object.
 

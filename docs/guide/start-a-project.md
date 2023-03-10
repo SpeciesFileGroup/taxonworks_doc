@@ -23,7 +23,7 @@ Considerations:
 
 ## Sandboxes
 
- Some providers (see below) offer accounts in sandboxes. A sandbox is a temporary installation of TaxonWorks that can be used without fear of damaging "real" data.  They are used to test functionality, practice making changes, preview large data imports, and assess whether necessary requirements are met. _Each sandbox provider may have their own conditions as to how a sandbox should be used, be sure to understand the terms of use before using a sandbox account.
+ Some providers (see below) offer accounts in sandboxes. A sandbox is a temporary installation of TaxonWorks that can be used without fear of damaging "real" data. They are used to test functionality, practice making changes, preview large data imports, and assess whether necessary requirements are met. Each sandbox provider may have their own conditions as to how a sandbox should be used, be sure to understand the terms of use before using a sandbox account.
 
 The Species File Group manages multiple sandboxes. Their [terms of use are outlined here](https://speciesfilegroup.org/docs/taxonworks_sandboxes_at_sfg.html).
 

@@ -290,15 +290,16 @@ Find the `New type specimen` task via the `New taxon name` task `Type` section o
 
 See also the [basic article parsing](https://github.com/SpeciesFileGroup/taxonworks_doc/blob/archive/manuals/BASIC_ARTICLE_PARSING.md) exercise for a walk through that addresses many of these issues in a more contextual framework.
 
-_Before you start_: Add `biocuration classifications` that you might reference (e.g. `Male`, `Female`, `Adult` etc.). You can do this by adding a new `Controlled Vocabulary Term` of type `BiocurationClass` or you can use the `Manage biocuration groups and classes` task to do this. You only need to set these up once in your project. You can add to them later as needed. See the screenshots below.
+_Before you start_: Add `biocuration classifications` that you might reference (e.g. `Male`, `Female`, `Adult` etc.). You can do this by adding a new `Controlled Vocabulary Term` of type `BiocurationClass` or you can use the `Manage biocuration classes and groups` task to do this. You only need to set these up once in your project. You can add to them later as needed. See the screenshots below.
     #left[Manage Biocuration Groups and the Classes associated with each of the groups](https://sfg.taxonworks.org/s/t3ssdi [buttons showing where to add classes or groups and what class terms already exist for a group]) 
 
-Adding `Groups` and `Classes` can be done independently. You can then assign classes to a given group (e. g. class `Female` or `Male` get added to group `Sex`). Classes do not have to be part of a group. Adding Groups and Classes work the same way.
+Adding `Groups` and `Classes` can be done independently. You can then assign classes to a given group (e. g. class `Female` or `Male` get added to group `Sex`). Classes do not have to be part of a group. Adding Groups and Classes work the same way. Classes, once added, can be associated with any given group created. Note the "plus" sign in the above screenshot which gives you a list of your classes you can add to that group.
 
 #left[Manage Biocuration Groups using the `Manage Controlled Vocabulary` task](https://sfg.taxonworks.org/s/o8mldy [Add group name, define what you mean with this label, choose a color for the group label, and assign a known standard ontology or link to a standard term if one applies])
 
   - To add a `biocuration group`
-    - First, give your `biocuration group` a `Name`
+    - Select `Biocuration Group` from the menu bar.
+    - Give your `biocuration group` a `Name`
     - Next, `write a definition` for this `group` so that others may apply it correctly for your project. Note that definitions must be at least 20 characters.
     - Then, `select` a color to apply to this `group` label for ease of use / finding in the user interface. 
     - If one exists, enter a URL here to a known standard term / ontology entry for this group concept.
@@ -307,7 +308,8 @@ Adding `Groups` and `Classes` can be done independently. You can then assign cla
 
 #left[Manage Biocuration Classes using the `Manage Controlled Vocabulary` task](https://sfg.taxonworks.org/s/nz19xm [Add class name, define what you mean with this label, choose a color for the class label, and assign a known standard ontology or link to a standard term if one applies])  
   - To add a `biocuration class`
-    - First, give your `biocuration class` a `Name`.
+    - Select `Biocuration Class` from the menu bar.
+    - Give your `biocuration class` a `Name`.
     - Next, `write a definition` for this `class` so that others may apply it correctly for your project. Note that definitions must be at least 20 characters.
     - Then, `select` a color to apply to this `class` label for ease of use / finding in the user interface. 
     - If one exists, enter a URL here to a known standard term / ontology entry for this group concept.
@@ -395,7 +397,7 @@ To manually create a `new taxon name` (e.g. species / genus / family):
 
 - Based on the rank of the parent, TW will then ask you to select the `precise taxonomic rank of the new name` (see below). If everything is correct, hit `Create`. Once you do this, the rest of the fields related to a new name will appear (see below).
 
-#left[Check `rank` of name to be added is correct and click `create](https://sfg.taxonworks.org/s/77d2jq[TaxonWorks guesses the rank of the new name. Verify correct then click on create button])]
+#left[Check `rank` of name to be added is correct and click `create`](https://sfg.taxonworks.org/s/77d2jq[TaxonWorks guesses the rank of the new name. Verify correct then click on create button])
 
 #left[The entire `New Taxon Name` form options now appear](https://sfg.taxonworks.org/s/7zfjtw[all fields now active for more taxon name information to be added])
 
@@ -405,7 +407,25 @@ To manually create a `new taxon name` (e.g. species / genus / family):
   - If multiple persons pop up that appear to be the same (for example `A. Dal Molin` and `Ana Dal Molin`), you can use the `Uniquify People task` to resolve and merge them (see Scenario: Resolving redundant person name strings, and matching author names with and without diacritical marks). 
   - If an author name is not found, you can enter it and add it by clicking the green `Add New` button. This will add the author to the names table. 
 
-- In most cases, for new taxa, you can skip over the `Status` and `Relationship` fields.  However, if the taxon is a fossil, you should check `Fossil` in the `Status` field. The name will now appear with a little cross symbol to the left. There are special rules in ICZN and TW for fossil taxa.
+In most cases, _for new taxa_, you can skip over the `Status` and `Relationship` fields. 
+- However, if the taxon is a fossil, you should check `Fossil` in the `Status` field. The name will now appear with a little cross symbol to the left. There are special rules in ICZN and TW for fossil taxa.
+
+Notes for `Status` and `Relationship` fields.
+- To pick a `Status` for a name, you note `Common` ones are listed by default for you to pick from.
+  -  Pick from the `Common` list OR
+  - Click `Advanced` to search for a `Status` not in the `Common` list and pick it OR
+  - Click `Show all` to get a scrollable list of all `Status` options possible for the given code (e.g. ICN vs ICZN options will differ) to pick from.
+
+- To declare a `Relationship` 
+  - First go to the `Edit Taxon Name` record with the _lesser_ status (e.g. the `Synonym` name)
+  - From there, in the `Relationship` field, search for the name with the _higher status_ (e.g. accepted or valid name).
+  - Select the desired name
+  - You then get to select the `Status` of the `Relationship` for the two names.
+  - The result always in TaxonWorks is that you read the result as the _lesser status name_ has `Relationship` (what ever you selected) to the _higher status name._ (Not in the other direction).
+
+#left[The `Status` and `Relationship` fields in `Add/Edit new taxon name` task](https://sfg.taxonworks.org/s/boo2tw [shows status and relationship fields in `Add/Edit New taxon name` task])
+
+#left[The scrollable `Status` list resulting when you click `Show All`](https://sfg.taxonworks.org/s/7ihgh3 [when you click on show all you get a list of all status values you can choose from])
 
 The `Type` form is next, which opens up a new form to capture details on the type.  We prefer to complete the rest of the `New Taxon Name` form first, and then do the `Type`.
 

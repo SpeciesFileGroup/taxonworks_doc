@@ -24,12 +24,12 @@ There are many places where you can print labels from different tasks in TaxonWo
 - To create a set of new header labels.
   - Search for `Filter Nomenclature` search bar and click the task box. 
   - Use the various search parameters on the left to create a list of names you want to have on header labels.
-    - For example, you can select a higher taxon, then check "descendents" to include all of its children.
+    - For example, you can select a higher taxon, then check `descendents` to include all of its children.
     - Or, you can search for a group, and then choose to only find names of a specific taxonomic level, like "Genus group" or "Species group". 
 #left[**Legend**: Filter Nomenclature Task](https://sfg.taxonworks.org/s/yve1hj [screenshot of the TaxonWorks Task Filter Nomenclature Task with some parameters])
-  - Once you have a list of names you want to create header labels for, check the "Select All" Box or select individual names. 
-  - Then, click the "Radial Label" icon at the top right, and click the "Unit Tray" option. #right[Legend: Radial Label](https://sfg.taxonworks.org/s/1t0yrt [radial label button])
-![Unit tray radial label](https://sfg.taxonworks.org/s/gqb0rz)
+  - Once you have a list of names you want to create header labels for, check the `Select All` Box or select individual names. 
+  - Then, click the `Radial Label` icon at the top right, and click the `Unit Tray` option. #right[Legend: Radial Label](https://sfg.taxonworks.org/s/1t0yrt [radial label button])
+[Unit tray radial label](https://sfg.taxonworks.org/s/gqb0rz)
   - A "Labels Created" success box will pop-up. Your labels should now be ready in the `Print Labels` task. 
 
 ### Print Labels Task

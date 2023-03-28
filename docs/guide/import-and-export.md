@@ -205,6 +205,102 @@ This is an advance mapping and requires knowledge of the underlying TW models. T
 
 ## Exports
 
-## Requesting a new import or export type 
+### Full database dumps
 
+You can export a full copy of your database, minus binaries (e.g. images, documents) into PostgreSQL format via the `Export project database` task.  This lets you:
+* Archive your data 
+* Load it into a local version of TaxonWorks (e.g. running on your desktop)
+
+### Individual TaxonWorks tables
+_Individual tables in native native TaxonWorks format as CSV_
+
+#### Via "Project data overview and download"
+* Open the `Project data overview and download` task
+* Click a `Download` link corresponding to the table you want to download (22+ tables available)
+
+#### Via individual Data cards
+* Click on a Data Card, e.g. `Otus`.
+* On the bar in the middle click on `Download`, you'll get a CSV file with the data for that table.
+
+### CSV
+#### Basic
+* _Note that these formats are "in progress", they need refinement._
+* Open any of the `Filter` tasks
+* Complete a search
+* Select the `CSV` option in the download select and click the blue download button beside it.
+
+### Darwin Core Archives
+#### From the DwC Dashboard
+* Open the `DwC Dashboard` task
+* Click one of the green buttons in the `Download Darwin Core Archive` panel
+* Your download will be cued and built, then avilable under the `Recently created DwC Archives`
+
+#### From the collection object filter 
+* Open the task `Filter collection objects`
+* Perform a query
+* Use the download select to choose 'DwC'
+* Click the blue download button beside the select
+* Optionally click to include data-predicate fields, then click `Download`
+* Your download is available on the `DwC Dashboard` task after a short period.
+
+### Bibliographies (Reference lists)
+* Open the task `Filter sources`
+* Use the facets to filter a list of Sources
+
+#### As CSV
+* Select the `CSV` option in the download select and click the blue download button beside it.
+
+#### As BibTeX
+* Select the `BiBTeX` option in the download select and click the blue download button beside it.
+
+#### Formatted for journals
+* Select the `Download formatted` option in the download select and click the blue download button beside it.
+
+##### Create shareable link to your filtered bibliography
+You can share a zipped copy of the file by generating a link to it. This functionality is turned on if the project administrator has created an API token (See addendum).
+* Click `Generate download`
+* Copy the link generated and share it.
+
+A copy of the Download file is also available for future reference, for a period of 2 days, via the `Download` data card.
+
+#### Catalog of Life Data Package (ColDP)
+* Open the task `Catalogue of Life (ColDP) exports`
+* Use the `OTU` autocomplete to choose an OTU.  All children of this OTU, by proxy of the attached TaxonName name will be exported.
+* Click `Download`
+
+A copy of the Download file is also available for future reference, for a period of 2 days, via the `Download` data card.
+
+### Data matrices (evolutionary, descriptive, quantitative, etc.)
+* Open the `Obervation matrix hub` task
+* Click `View` beside the matrix to be downloaded
+* Click the link corresponding to the format you want to download (e.g. `TNT`, `nexus`, or `NeXML`)
+
+Descriptor lists and OTU contents are also available as downloads here.
+
+#### Nomenclature stats
+* Use the `Search a taxon name` autocomplete to select a taxon name
+* Refine the columns you wish to see and click `Search` again to update
+* Click the blue download icon on the top right 
+
+### JSON
+
+#### Individual records
+* Open a record in 'Show'
+* Notice the URL format, like `/otus/123`.  Nearly all records can be viewed in with a URL pattern like this (this is a "RESTful" format)
+* Add `.json` to the request, like `/otus/123.json`
+* Select all to copy-paste, or use your web-browsers save as to save as a JSON document 
+
+#### Via filters
+_All filters can all be used to generate a query that returns JSON_
+
+* Open a filter
+* Complete a search 
+* Click on the eyeball button and then `Show JSON request`
+* Copy the path of the request to your clipboard
+* Paste the path of the request to your TaxonWorks base URL (e.g. add it to something like `https://my.taxonworks.org/)` and hit enter 
+* Select all to copy-paste, or use your web-browsers save as to save as a JSON document 
+
+### The TaxonWorks API
+
+See [api.taxonworks.org](https://api.taxonworks.org).
 

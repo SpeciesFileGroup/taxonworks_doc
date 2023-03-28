@@ -22,7 +22,6 @@ _The intent is to move this content here, and remove the files from this list at
 * [manuals/NOMENCLATURE_BASICS.md](https://github.com/SpeciesFileGroup/taxonworks_doc/blob/archive/manuals/NOMENCLATURE_BASICS.md)
 * [manuals/GENERATORS.md](https://github.com/SpeciesFileGroup/taxonworks_doc/blob/archive/manuals/GENERATORS.md)
 * [manuals/SMART_SELECTOR.md](https://github.com/SpeciesFileGroup/taxonworks_doc/blob/archive/manuals/SMART_SELECTOR.md)
-* [manuals/EXPORTING_FROM_TAXONWORKS.md](https://github.com/SpeciesFileGroup/taxonworks_doc/blob/archive/manuals/EXPORTING_FROM_TAXONWORKS.md)
 * [manuals/MIGRATING_TO_TAXONWORKS.md](https://github.com/SpeciesFileGroup/taxonworks_doc/blob/archive/manuals/MIGRATING_TO_TAXONWORKS.md)
 * [manuals/STAGED_IMAGE_WORKFLOW.md](https://github.com/SpeciesFileGroup/taxonworks_doc/blob/archive/manuals/STAGED_IMAGE_WORKFLOW.md)
 * [manuals/README.md](https://github.com/SpeciesFileGroup/taxonworks_doc/blob/archive/manuals/README.md)

@@ -6,8 +6,9 @@ sidebarPosition: 60
 
 _Many projects start with imports, and target exports. Here is where you find what is possible in TaxonWorks._
 
-## Imports
-TaxonWorks offers two ways to import data: 1) via the User Interface (UI) entering one record at a time or batch uploading, and 2) programmatically with customized scripts for very large datasets (> 1000 records). We seek to make the data import and entry as savvy as possible. As you experience these options, please contribute your ideas for ways to enhance these processes. (Submit ideas, submit code, and please bring your voice to our [sfgcommons meetings on Wednesdays](https://speciesfilegroup.org/events.html)).
+## Import
+
+TaxonWorks offers two ways to import data: 1) via the User Interface (UI) entering one to many records at a time or batch uploading files, and 2) programmatically with customized scripts for large datasets (e.g. > 1000 records). We seek to make the data import and entry as savvy as possible. As you experience these options, please contribute your ideas for ways to enhance these processes. (Submit ideas, submit code, and please bring your voice to our [sfgcommons meetings on Wednesdays](https://speciesfilegroup.org/events.html)).
 
 ### Data types
 For bulk/batch uploads, TW supports import of various types of data including checklists, occurrence specimen record data, sequence data, source information (i.e. publications) and more. And using the DwC Archive Import Task, TW offers the use of the current gold standard for sharing specimen occurrence data via a tab-separated text file. This file can stand alone or be part of a Darwin Core Archive (DwCA) zipped file. These (your) data are mapped to Darwin Core terms, TaxonWorks specific elements, or your own custom Data Attributes (details below). Support for importing observations is underway. 
@@ -40,7 +41,7 @@ In your test project,
 Batch loaders (as of March 2022) include:
 
 - OTUs [operational taxonomic units](https://docs.taxonworks.org/about/glossary.html#otu-operational-taxonomic-unit)
-  - simple batchload
+  - simple batch load
   - data attributes
   - simple batch file
   - OTU with identifier batch load
@@ -70,13 +71,11 @@ Batch loaders (as of March 2022) include:
   - primers batch
 
 ### Record by record
-
 When first learning TaxonWorks, entering records one-at-a-time offers you the opportunity to learn about more of the features in TW and get a feel for how you and others experience the UI. 
 
 For example, you want to enter a specimen record. You have two Tasks enabling you to do this. Choose to use Comprehensive Specimen Digitization Task or the Simple New Specimen Task.
 
 #### Try Simple New Specimen
-
 In your project, try creating a simple new specimen record. 
 
 - Note you will need to select a namespace. You may find you need to add a namespace before you can do this TW task. Adding a value for namespace ensures your uploaded data records will be unique inside your TW project and across TW projects. In your project, you may also need more than one namespace. [Use Tommy’s INHS Insect Collection as an example, with 12 different namespaces that effectively group the various collections housed at INHS ENT].
@@ -203,8 +202,113 @@ This is an advance mapping and requires knowledge of the underlying TW models. T
 |`CollectionObject`|`buffered_collecting_event`, `buffered_determinations`, `buffered_other_labels`, `total`,
 |`CollectingEvent`|`document_label`, `print_label`, `verbatim_label`, `field_notes`, `formation`, `group`, `lithology`, `max_ma`, `maximum_elevation`, `member`, `min_ma`, `minimum_elevation`, `elevation_precision`, `start_date_day`, `start_date_month`, `start_date_year`, `end_date_day`, `end_date_month`, `end_date_year`, `time_end_hour`, `time_end_minute`, `time_end_second`, `time_start_hour`, `time_start_minute`, `time_start_second`, `verbatim_collectors`, `verbatim_date`, `verbatim_datum`, `verbatim_elevation`, `verbatim_geolocation_uncertainty`, `verbatim_habitat`, `verbatim_latitude`, `verbatim_locality`, `verbatim_longitude`, `verbatim_method`, `verbatim_trip_identifier`
 
-## Exports
+### Coming from other software
 
-## Requesting a new import or export type 
+#### Scratchpads
+We are in the process of exploring two routes to come from Scratchpads to TaxonWorks.  
 
+* The DwC import should work well for occurrence data that is based on collected objects.
+* The SFG team is has worked with a select number of individual Scratchpad curators to script the process of transferring their datadata. Contact us if you are interested in what this approach entails. Note that this process takes programming effort that is a limited resource within the SFG.
+
+
+## Export
+
+### Full database dumps
+
+You can export a full copy of your database, minus binaries (e.g. images, documents) into PostgreSQL format via the `Export project database` task.  This lets you:
+* Archive your data 
+* Load it into a local version of TaxonWorks (e.g. running on your desktop)
+
+### Individual TaxonWorks tables
+_Individual tables in native native TaxonWorks format as CSV_
+
+#### Via "Project data overview and download"
+* Open the `Project data overview and download` task
+* Click a `Download` link corresponding to the table you want to download (22+ tables available)
+
+#### Via individual Data cards
+* Click on a Data Card, e.g. `Otus`.
+* On the bar in the middle click on `Download`, you'll get a CSV file with the data for that table.
+
+### CSV
+#### Basic
+* _Note that these formats are "in progress", they need refinement._
+* Open any of the `Filter` tasks
+* Complete a search
+* Select the `CSV` option in the download select and click the blue download button beside it.
+
+### Darwin Core Archives
+#### From the DwC Dashboard
+* Open the `DwC Dashboard` task
+* Click one of the green buttons in the `Download Darwin Core Archive` panel
+* Your download will be cued and built, then avilable under the `Recently created DwC Archives`
+
+#### From the collection object filter 
+* Open the task `Filter collection objects`
+* Perform a query
+* Use the download select to choose 'DwC'
+* Click the blue download button beside the select
+* Optionally click to include data-predicate fields, then click `Download`
+* Your download is available on the `DwC Dashboard` task after a short period.
+
+### Bibliographies (Reference lists)
+* Open the task `Filter sources`
+* Use the facets to filter a list of Sources
+
+#### As CSV
+* Select the `CSV` option in the download select and click the blue download button beside it.
+
+#### As BibTeX
+* Select the `BiBTeX` option in the download select and click the blue download button beside it.
+
+#### Formatted for journals
+* Select the `Download formatted` option in the download select and click the blue download button beside it.
+
+##### Create shareable link to your filtered bibliography
+You can share a zipped copy of the file by generating a link to it. This functionality is turned on if the project administrator has created an API token (See addendum).
+* Click `Generate download`
+* Copy the link generated and share it.
+
+A copy of the Download file is also available for future reference, for a period of 2 days, via the `Download` data card.
+
+#### Catalog of Life Data Package (ColDP)
+* Open the task `Catalogue of Life (ColDP) exports`
+* Use the `OTU` autocomplete to choose an OTU.  All children of this OTU, by proxy of the attached TaxonName name will be exported.
+* Click `Download`
+
+A copy of the Download file is also available for future reference, for a period of 2 days, via the `Download` data card.
+
+### Data matrices (evolutionary, descriptive, quantitative, etc.)
+* Open the `Obervation matrix hub` task
+* Click `View` beside the matrix to be downloaded
+* Click the link corresponding to the format you want to download (e.g. `TNT`, `nexus`, or `NeXML`)
+
+Descriptor lists and OTU contents are also available as downloads here.
+
+#### Nomenclature stats
+* Use the `Search a taxon name` autocomplete to select a taxon name
+* Refine the columns you wish to see and click `Search` again to update
+* Click the blue download icon on the top right 
+
+### JSON
+
+#### Individual records
+* Open a record in 'Show'
+* Notice the URL format, like `/otus/123`.  Nearly all records can be viewed in with a URL pattern like this (this is a "RESTful" format)
+* Add `.json` to the request, like `/otus/123.json`
+* Select all to copy-paste, or use your web-browsers save as to save as a JSON document 
+
+#### Via filters
+_All filters can all be used to generate a query that returns JSON_
+
+* Open a filter
+* Complete a search 
+* Click on the eyeball button and then `Show JSON request`
+* Copy the path of the request to your clipboard
+* Paste the path of the request to your TaxonWorks base URL (e.g. add it to something like `https://my.taxonworks.org/)` and hit enter 
+* Select all to copy-paste, or use your web-browsers save as to save as a JSON document 
+
+### The TaxonWorks API
+
+See [api.taxonworks.org](https://api.taxonworks.org).
 

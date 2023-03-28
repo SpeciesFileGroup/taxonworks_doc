@@ -5,6 +5,9 @@ sidebarPosition: 40
 # Glossary
 _I read the word(s) X on this site, or heard them in relation to TaxonWorks. What do they mean according to this community?_
 
+### Asserted Distribution
+Refers to a geographic distribution record for a taxon listed in a publication. It is “asserted” in the sense that the information is simply taken as given from the publication. If it is “original” it is the first record for that OTU in that place.
+
 ### Buffered
 A prefix (`buffered_`) used to indicate verbatim text that is part of a CollectionObject record. Buffered fields are used TaxonWorks in a digitization workflow as the first step of transcribing labels, or images, to digital data. Buffered fields are write-once, they after addition they should not be changed, nor do they track changes to `parsed` values.
 
@@ -20,14 +23,23 @@ Typing a combination of keys to trigger a behaviour in the [UI](/about/glossary#
 ### Identifiers
 Identifiers distinguish instances, i.e. specific things. TaxonWorks supports many different types of identifiers, and multiple identifiers can be added to individual instances. Some identifier types map 1:1 with physical things like the catalog number attached to specimen in collections, others types are strictly digitial. Some identifiers are `Global`, some are `Local`. Global identifiers are those that come from well thought out systems that mint identifiers that are intended to be truly globally (universally) unique. Local identifiers have a user-defined Namespace (the fixed bit of the identifier that doesn't change across the identifier) and a value, which must be unique within that Namespace.
 
+### Is Original
+Throughout TW, “Is Original” next to a checkbox means that the information, data, or image has not been published before.
+
 ### Naïve matching
 Used in context of tracing text in `buffered` fields to the `verbatim` fields include parsed out values. "Naïve" means we anticipate a very simple match, string to string, no fuzziness, no AI, etc.
+
+### Namespace
+A “namespace” is the abbreviation for a collection used in specimen accession numbers. For example, in the accession number label USNM 1234567, “USNM” is the namespace. It is not necessarily the same as a repository, as there may be multiple namespaces used by a given repository.
 
 ### OTU (Operational Taxonomic Unit)
 The biological unit that is useful to work with. They act as proxies.
 
 ### Parsed values
-In TaxonWorks `parsed values` are the formalized representation of the data. For example the verbatim date "12.iv.1997" parsed into three fields in TaxonWorks: `start_date_day` (12), `start_date_month` (4), `start_date_year (1997).
+In TaxonWorks `parsed values` are the formalized representation of the data. For example the verbatim date "12.iv.1997" parsed into three fields in TaxonWorks: `start_date_day` (12), `start_date_month` (4), `start_date_year (1997)`.
+
+### Parent
+In TW the parent is the next higher taxon in which the taxon of interest is classified, for example, a genus for a species or a subfamily for a genus. By setting the parent, a curator controls how the classification will appear in TW. For example, for a small family in which subfamilies are not used, the parent of a genus may be a family. In other cases, the parent of a genus could be a tribe.  This is determined by the curator. The complete taxonomic history of the taxon’s classification is recorded separately on the Browse Nomenclature screen.
 
 ### Parsing
 Breaking down `buffered` or `verbatim` values into further fields, or semantic relationships.
@@ -35,14 +47,23 @@ Breaking down `buffered` or `verbatim` values into further fields, or semantic r
 ### Project
 An instance of TaxonWorks supports multiple projects. Each project may have one or more users. Data in one project are only accessible in that project -- with a couple of key strategic exceptions (e.g. "Community" data like source publications that are public, or people names) where data are shared across projects.
 
+### Protonym
+“Protonym” in TW refers to a name at the species, genus or family level in its first validly published form. It will always be associated with a literature citation, and it has an author and date, as spelled out by the rules of ICZN. You can think of it as occupying a unique niche in nomenclatural hyperspace. In cases of synonymy, the protonym is not the currently valid name. The currently valid protonym is indicated in many places in by a check mark. However, note that for species names in a taxonomic history, the check mark will indicate the original combination of the name rather than the current one.
+
 ### Pull Request
 A simple means to elegantly suggest changes to a website or code repository by editing a clone of that respository and then sending a message back to the origin that includes those changes. The changes can be considered by the maintainers of the original respostory and integrated, or not.
+
+### Repository
+Generally speaking, a collection in which specimens are deposited.  It may or may not be associated with an institution.
 
 ### Stage 2
 A temporary(?) code-name referencing a step in the digitization process that represents moving from Buffered or Verbatim values to `parsed values`.
 
 ### Staged (or staged images)
 A reference to a digitization process in where all data are laid out for complete capture within an image. TaxonWorks uses stages that have areas defined to match specific types of data, for example "Catalog numbers", "Specimen", "Image registration".
+
+### Taxon Name
+A taxonomic name, used in the same sense as in the ICZN.
 
 ### UI
 **U**ser **i**nterface = the buttons, inputs, layout, and views in the application.

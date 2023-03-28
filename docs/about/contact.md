@@ -7,7 +7,7 @@ _TW offers many ways for the community to offer help, find answers, and welcome 
 
 ## Chat
 
-Developers and users are almost always online in the [TaxonWorks chat forum](https://gitter.im/SpeciesFileGroup/taxonworks). A Github, or linked account is required to chat, but the channel is open for all to review and search.
+Developers and users are almost always online to chat. Join us via [TaxonWorks Gitter Chat](https://matrix.to/#/#taxonworks:gitter.im). A Github, or linked account is required to chat. The channel is open for all to review and search. Or join us [through our TaxonWorks Slack](https://join.slack.com/t/taxonworks/shared_invite/zt-1pnnvq3dc-4b685~M8gssOCR2Yk956Ng) that is connected to the Gitter Chat.
 
 ## Species File Group Community Liason
 

@@ -350,7 +350,7 @@ _Incertae sedis_ implies a relationship between two protonyms. Any time somethin
 
 #### Misidentifications
 
-Misidentifications are a tricky gray area. Remember that we only care about the nomenclatural consequences of the use of the names in questions. Taxon Identifications are linkages of `OTUs` to `Collection objects`, this is the preferred mechanism for linking one or more identifications to a collection object.
+Misidentifications are a tricky gray area. Remember that we only care about the nomenclatural consequences of the use of the names in question. Taxon Identifications are linkages of `OTUs` to `Collection objects`, this is the preferred mechanism for linking one or more identifications to a collection object.
 
 A question from a user reflects the trickiness:
 
@@ -441,6 +441,14 @@ The `Type` form is next, which opens up a new form to capture details on the typ
 - Be sure to `Save` all the information (green `Save` button at upper right) before moving to the `Type` screen. (UCD prefers to enter `Type` information last, after everything else on this page has been saved).
 
 In most cases, the `Quick type` screen will provide all the details you need to enter information on the type, and this is what we show below. However, if you have other information to add for the type, such as Lat/Long data, you will need to use the `Comprehensive` form.
+
+#left[In `Edit Taxon Name` task add `type` information using `Quick` or `Comprehensive` options](https://sfg.taxonworks.org/s/5h28m8 [the Edit Taxon Name form has two options for adding type information, quick or comprehensive])
+
+
+#left[The `Quick` `New Type Specimen` form](https://sfg.taxonworks.org/s/hiyjui [note the minimal fields available in the quick form about a type specimen])
+
+
+#left[The `Comprehensive` form to add many type specimen details](https://sfg.taxonworks.org/s/wre5nz [use this comprehensive form when you want to add many more details about a given type specimen])
 
 - First, pick the nature of the `type` (for most new species this will be a holotype), provide the `source` (click blue `pin` button if source is the `default`), and the `page number`(s) on which the type is designated.
 The rest of the information on the type is filled in with the screen below.

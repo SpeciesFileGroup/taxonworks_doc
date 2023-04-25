@@ -5,6 +5,11 @@ sidebarPosition: 40
 # Glossary
 _I read the word(s) X on this site, or heard them in relation to TaxonWorks. What do they mean according to this community?_
 
+Editing these pages? Adding a link to a Glossary term is simple, do it like this: 
+```Markdown
+[your term](/about/glossary#your-term)
+```
+
 ### Asserted Distribution
 Refers to a geographic distribution record for a taxon listed in a publication. It is “asserted” in the sense that the information is simply taken as given from the publication. If it is “original” it is the first record for that OTU in that place.
 
@@ -32,6 +37,9 @@ Used in context of tracing text in `buffered` fields to the `verbatim` fields in
 ### Namespace
 A “namespace” is the abbreviation for a collection used in specimen accession numbers. For example, in the accession number label USNM 1234567, “USNM” is the namespace. It is not necessarily the same as a repository, as there may be multiple namespaces used by a given repository.
 
+### Object
+An "object" is an abstract term often used when referencing the representation of a data instance _in code_. For example, in the underlying code in TaxonWorks there are TaxonName objects, CollectingEvent objects, CollectionObject objects, People objects, etc. We also often speak of adding attributes to objects.  In the case of TaxonWorks these additions are called DataAttributes and AlternateValues. In this case we are adding some description to our data-object, for example a name for a "body of water" attribute to our CollectingEvent, or an abbreviation for a term in the tihe title of a Source.
+
 ### OTU (Operational Taxonomic Unit)
 The biological unit that is useful to work with. They act as proxies.
 
@@ -55,6 +63,9 @@ A simple means to elegantly suggest changes to a website or code repository by e
 
 ### Repository
 Generally speaking, a collection in which specimens are deposited.  It may or may not be associated with an institution.
+
+### SOP
+"Standard operating proceedure." In TaxonWorks this might be a project-specific way of doing things. In TaxonWorks you can assert that some or all of your data was derived from some process by annotating it with a Protocol annotation.
 
 ### Stage 2
 A temporary(?) code-name referencing a step in the digitization process that represents moving from Buffered or Verbatim values to `parsed values`.

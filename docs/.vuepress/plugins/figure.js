@@ -1,42 +1,19 @@
-const FIGURE_REGEX =
+const FIGURE_RE =
   /#(\w+)*\[(\S.+)]\([\s]*(.*?)[\s]*(\[.*?\])*[\s]*(w\{.*?\}|h\{.*?\})*[\s]*(w\{.*?\}|h\{.*?\})??[)]/im
+
 const IMG_ATTRIBUTES = {
   w: 'width',
   h: 'height'
 }
 
-function figureRenderer(md) {
-  return function figureRender(tokens, idx) {
-    const all = tokens[idx]
-    const fig = all.fig ? `src="${md.utils.escapeHtml(all.fig)}"` : ''
-    const figalt = all.figalt ? `alt="${md.utils.escapeHtml(all.figalt)}"` : ''
-    const figcaption = all.figcaption ? makeFigureCaption(md, all) : ''
+function getFigcaptionAttrs({ width, position }) {
+  const attributes = [['class', `figure-${position}`]]
 
-    const figure = `
-      <figure>
-        <img
-          ${convertStyleAttributesIntoString(all.imgAttr)}
-          ${fig}
-          ${figalt}
-        />${figcaption}
-      </figure>
-    `
-
-    return figure
+  if (width) {
+    attributes.push(['style', `width: ${width}`])
   }
-}
 
-function makeFigureCaption(md, { imgAttr, figcaption, captionPosition }) {
-  const styleAttrs = imgAttr.width ? `style="width: ${imgAttr.width}"` : ''
-
-  return `
-    <figcaption
-      ${styleAttrs} 
-      class="figure-${captionPosition || 'left'}"
-    >
-      ${md.renderInline(figcaption)}
-    </figcaption>
-  `
+  return attributes
 }
 
 function getImageAttribute(param) {
@@ -48,77 +25,81 @@ function getImageAttribute(param) {
   return { [IMG_ATTRIBUTES[property]]: value }
 }
 
-function convertStyleAttributesIntoString(attributes) {
-  return Object.entries(attributes)
-    .map(([attr, value]) => `${[attr]}="${value}"`)
-    .join(' ')
-}
+export default function imageFiguresPlugin(md, options) {
+  options = options || {}
 
-function validateStart(src, pos) {
-  const startChar = src.charAt(pos)
+  function imageFigures(state) {
+    for (let i = 1, l = state.tokens.length; i < l - 1; ++i) {
+      const token = state.tokens[i]
 
-  if (startChar !== '#') return false
+      if (token.type !== 'inline') {
+        continue
+      }
 
-  return src.includes('[')
-}
+      if (i !== 0 && state.tokens[i - 1].type !== 'paragraph_open') {
+        continue
+      }
+      if (i !== l - 1 && state.tokens[i + 1].type !== 'paragraph_close') {
+        continue
+      }
 
-function figureRuler(md) {
-  return function figureTokenize(state, silent) {
-    const oldPos = state.pos
-    const valid = validateStart(state.src, oldPos)
+      const match = FIGURE_RE.exec(token.content.trim())
+      if (!match) {
+        continue
+      }
 
-    if (!valid) return false
+      const position = match[1] || 'left'
+      const caption = match[2] || ''
+      const imageUrl = match[3]
+      const altText = (match[4] || '').slice(1, -1)
+      const imgAttr = {
+        ...getImageAttribute(match[5]),
+        ...getImageAttribute(match[6])
+      }
 
-    const match = FIGURE_REGEX.exec(
-      state.src.slice(state.pos, state.src.length)
-    )
+      const figure = state.tokens[i - 1]
 
-    if (!match || match.length !== 7) return false
+      figure.type = 'figure_open'
+      figure.tag = 'figure'
+      state.tokens[i + 1].type = 'figure_close'
+      state.tokens[i + 1].tag = 'figure'
 
-    const captionPosition = match[1] || false
-    const figcaption = match[2] || false
-    const fig = match[3] || false
-    const figalt = match[4] ? match[4].substring(1, match[4].length - 1) : false
-    const imgAttr = {
-      ...getImageAttribute(match[5]),
-      ...getImageAttribute(match[6])
+      const imageToken = new state.Token('image', 'img', 0)
+
+      imageToken.content = altText
+      imageToken.attrs = [
+        ['src', imageUrl],
+        ['alt', altText],
+        ['title', altText],
+        ...Object.entries(imgAttr)
+      ]
+
+      imageToken.children = []
+
+      token.children = []
+      token.children.push(imageToken)
+
+      if (options.figcaption) {
+        const figCaption = caption
+
+        if (figCaption) {
+          const [captionContent] = md.parseInline(figCaption, state.env)
+          const figcaption = new state.Token('figcaption_open', 'figcaption', 1)
+          const figcaptionClose = new state.Token(
+            'figcaption_close',
+            'figcaption',
+            -1
+          )
+
+          figcaption.attrs = getFigcaptionAttrs({ ...imgAttr, position })
+
+          token.children.push(figcaption)
+          token.children.push(...captionContent.children)
+          token.children.push(figcaptionClose)
+        }
+      }
     }
-
-    const labelStart = state.pos + 2 + (captionPosition.length || 0)
-    const labelEnd = labelStart + (figcaption.length || 0)
-
-    if (labelEnd < 0) return false
-
-    const theState = state
-
-    if (!silent) {
-      theState.pos = labelStart
-      theState.caption = theState.src.slice(labelStart, labelEnd)
-
-      const newState = new theState.md.inline.State(
-        figcaption,
-        theState.md,
-        theState.env,
-        []
-      )
-      newState.md.inline.tokenize(newState)
-
-      const token = theState.push('figure', '')
-
-      token.captionPosition = captionPosition
-      token.figcaption = figcaption
-      token.fig = fig
-      token.figalt = figalt
-      token.imgAttr = imgAttr
-    }
-
-    theState.pos += theState.src.lastIndexOf(')')
-
-    return true
   }
-}
 
-module.exports = function figurePlugin(md) {
-  md.renderer.rules.figure = figureRenderer(md)
-  md.inline.ruler.before('emphasis', 'figure', figureRuler(md))
+  md.core.ruler.before('linkify', 'figure', imageFigures)
 }

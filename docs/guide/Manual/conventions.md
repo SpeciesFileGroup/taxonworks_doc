@@ -133,11 +133,13 @@ With your knowledge of the `Tasks`, `Data`, and `Favorites` structure you can tr
 
 2. ...
 
-## Common Icons in TaxonWorks
+## Icons in TaxonWorks
 Some icons in TaxonWorks help you move around (i.e. "navigate") in the software. Other icons _touch the database_, providing you with functions to add data or delete something. In TaxonWorks, icon button colors convey this idea.
 - Green buttons = write to the database
 - Red buttons = delete from the database
 - Blue buttons = activate something in the interface 
+
+Note also, all icons with a blue circle and white middle are `Radials` and serve to help you add information to (i. e. to `annotate`) the object you are looking at (e. g. the `Source` publication record, the `CollectionObject` record, the `Collecting Event` record, the `TaxonName` record, etc).
 
 | Icon   | Icon Name      | Purpose of Icon
 |:----------|:-----------------|----------------------------------------|
@@ -148,8 +150,7 @@ Some icons in TaxonWorks help you move around (i.e. "navigate") in the software.
 | <img src="https://sfg.taxonworks.org/s/5vz2hx"> |Browse Nomenclature | takes you from an OTU to its associated taxonomic name |
 | <img src="https://sfg.taxonworks.org/s/5ou5yb">|Pinboard            | Add (if green) or Remove (if red) an item from your Pinboard.  If the icon is blue, the item has been selected as the default in your pinboard and you can add it to a field automatically, for example, with literature citations.     |
 | <img src="https://sfg.taxonworks.org/s/tkwvhi">|Edit | With this icon, you may edit a given item. For example, from the `Browse nomenclature` page, this icon takes you to the `Edit taxon name` page associated with the taxon.
-| <img src="https://sfg.taxonworks.org/s/lnxbjc">|Trashcan            | Use this to remove the current record from the database                                |
-|<img src="https://sfg.taxonworks.org/s/sio9gk"> |Is Original         | If you check this, it means that the information has not been published before                                   |
+| <img src="https://sfg.taxonworks.org/s/lnxbjc">|Trashcan            | Use this to remove the current record from the database                                | 
 
 
 ## Did you know

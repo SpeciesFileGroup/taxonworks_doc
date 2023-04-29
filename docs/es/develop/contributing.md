@@ -120,10 +120,12 @@ Los ejemplos aqui muestran en formato Markdown(md) como agregar una imagen con s
 - (Opcional) Declare el ancho y alto o ambas de la imagen para controlar el tamaño en el que se mostraran.
 - El tamaño por defecto funciona bien. Algunas veces dependiendo de la captura de pantalla podría aparecer muy larga y entonces esta opción permite la opción de modificar su tamaño.
 
-`#position[caption text goes here](link [alt text if you want it])`  
-`#position[caption text goes here](link [alt text if you want it] w{60%})`  
-`#position[caption text goes here](link [alt text if you want it] h{50%})`  
-`#position[caption text goes here](link [alt text if you want it] w{80%} h{50%})`
+```
+#position[caption text goes here](link [alt text if you want it])
+#position[caption text goes here](link [alt text if you want it] w{60%})
+#position[caption text goes here](link [alt text if you want it] h{50%})
+#position[caption text goes here](link [alt text if you want it] w{80%} h{50%})
+```
 
 #### HTML para imágenes con subtitulo
 

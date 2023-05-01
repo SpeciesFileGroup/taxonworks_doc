@@ -461,10 +461,21 @@ The rest of the information on the type is filled in with the screen below.
   6. The `Repository` is the institution where the type is deposited.  Hopefully the repository will be in the TW table, otherwise you may need to create it using the `Repositories card` in the Data portfolio.  
   7. `Collection Event` refers to a specimen already in the TW database, which in most cases will not be the case if you are curating a new species description.
   8. In `Biocurations`, indicate whether the type is an adult or immature, and a male or female.
-  9. Finally, you enter the Identifier for the type, which consists of two parts.  You must first Search for the `Namespace` (see the [Glossary](https://docs.taxonworks.org/about/glossary.html#namespace) for more details) of the collection in which the type is deposited. Note that this may be different from the repository (a single institution may have several collections, each with a different “namespace”). Think of the `namespace` as the part of a specimen ID number that does not change for each specimen, for example, `TAMU` in `TAMU x01234567`. If the namespace is not in the database, you may need to create it, but since these are shared across projects, there is a good chance it will be there. Once you have selected the namespace, paste in the type or specimen number (only) in the `Identifier` field, and hit the green `Create` button.
- 
-[INSERT SCREENSHOT]
 
+#left[Adding more `Type` information](https://sfg.taxonworks.org/s/2xb157[where to add extra type information such as preparation type and repository])
+
+  9. Finally, you enter the `Identifier` for the type, which consists of two parts. Note that this may be different from the repository (a single institution may have several collections, each with a different “namespace”). Think of the `namespace` as the part of a specimen ID number that does not change for each specimen, for example, `TAMU` in `TAMU x01234567`. If the namespace is not in the database, you may need to create it, but since these are shared across projects, there is a good chance it will be there. (See the [Glossary](https://docs.taxonworks.org/about/glossary.html#namespace) for more details)  
+  - Click to open the `Radial Annotator`.
+  - Select the `Identifiers` option.
+  - For Identifier group, select `Local`.
+  - Next Search for the `Namespace` of the collection in which the type is deposited.
+  - Once you have selected the namespace, paste in the type or specimen number (only) in the `Identifier` field.
+  - Click the green `Create` button.
+    
+#left[Open the Radial Annotator to add a specimen `Identifier` in TaxonWorks](https://sfg.taxonworks.org/s/s1f87u [where to open the `Radial Annotator` in `Edit Taxon Name` to add identifier and namespace for a given specimen])
+    
+#left[Adding the specimen `Identifier`information](https://sfg.taxonworks.org/s/zedfbj [form to add specimen `namespace` and `local` `identifier`])
+ 
 If you wish to add `paratypes` (optional), you essentially follow the same process for each one.
 
 For many contemporary taxa, there may also be a `ZooBank number` associated with the species. The correct way to enter this is to:

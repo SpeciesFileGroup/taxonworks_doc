@@ -125,7 +125,7 @@ The `Data` tab provides you with more of a traditional _table_ view of informati
 
 If you would like more details about the TW Data Model, see the [Data](https://docs.taxonworks.org/develop/Data/) section of docs.taxonworks.org
 
-### Explore TW Tasks
+## Explore TW Tasks
 
 With your knowledge of the `Tasks`, `Data`, and `Favorites` structure you can try these actions.
 
@@ -139,18 +139,22 @@ Some icons in TaxonWorks help you move around (i.e. "navigate") in the software.
 - Red buttons = delete from the database
 - Blue buttons = activate something in the interface 
 
-Note also, all icons with a blue circle and white middle are `Radials` and serve to help you add information to (i. e. to `annotate`) the object you are looking at (e. g. the `Source` publication record, the `CollectionObject` record, the `Collecting Event` record, the `TaxonName` record, etc).
+Note also, all icons with a blue circle and white middle are `Radials` and serve to help you add information to (i. e. to `annotate`) the object you are looking at (e. g. the `Source` publication record, the `CollectionObject` record, the `Collecting Event` record, the `TaxonName` record, etc). In other words, a tool found many places in TW, that integrates commonly used functions or tasks for annotating things (adding related information) in one place.  The particular functions found after click are context dependent.
 
 | Icon   | Icon Name      | Purpose of Icon
 |:----------|:-----------------|----------------------------------------|
-|<img src="https://sfg.taxonworks.org/s/sio9gk"> |Radial Annotator    | a tool found many places in TW, that integrates commonly used functions or tasks for annotating things (adding related information) in one place.  The particular functions found after click are context dependent.
-|<img src="https://sfg.taxonworks.org/s/7w1dx2"> |Navigate radial     | use this icon to move across to different areas in TaxonWorks  |
-| <img src="https://sfg.taxonworks.org/s/w7ow2j">|Quick Forms         | use this to bring up commonly used forms associated with OTUs, such as `Asserted distributions` or `Biological Associations`|
-| <img src="https://sfg.taxonworks.org/s/mta4zq">|Browse Taxa         | moves you from a taxon name to its associated OTU |
-| <img src="https://sfg.taxonworks.org/s/5vz2hx"> |Browse Nomenclature | takes you from an OTU to its associated taxonomic name |
-| <img src="https://sfg.taxonworks.org/s/5ou5yb">|Pinboard            | Add (if green) or Remove (if red) an item from your Pinboard.  If the icon is blue, the item has been selected as the default in your pinboard and you can add it to a field automatically, for example, with literature citations.     |
-| <img src="https://sfg.taxonworks.org/s/tkwvhi">|Edit | With this icon, you may edit a given item. For example, from the `Browse nomenclature` page, this icon takes you to the `Edit taxon name` page associated with the taxon.
-| <img src="https://sfg.taxonworks.org/s/lnxbjc">|Trashcan            | Use this to remove the current record from the database                                | 
+|<img src="https://sfg.taxonworks.org/s/o70iza"> |Annotate Radial    | use this to add information to the current object of interest. The particular functions found after click are show you what types of information you can add.
+|<img src="https://sfg.taxonworks.org/s/59mm5b"> |Navigate Radial     | use this icon to move across to different areas in TaxonWorks  |
+|<img src="https://sfg.taxonworks.org/s/ybfj5n"> |Mass Annotate Radial     | use this icon to add information to many records at once in TaxonWorks  |
+|<img src="https://sfg.taxonworks.org/s/l80fse"> |Filter Radial     | use this icon to select a set of records from a search in TaxonWorks using the `Filter` task (e. g. `Filter Nomenclature`, `Filter Sources`, `Filter Collection Objects`, etc.)|
+|<img src="https://sfg.taxonworks.org/s/0h1xe6">|Quick Forms Radial        | use this to bring up commonly used forms associated with OTUs, such as `Asserted distributions` or `Biological Associations`|
+|<img src="https://sfg.taxonworks.org/s/swrp57">|Label Radial        | use this to create labels|
+|<img src="https://sfg.taxonworks.org/s/tncxw5">|Linker Radial        | use this to link data from one object to another in TaxonWorks |
+| <img src="https://sfg.taxonworks.org/s/y3pdwu">|Browse Taxa         | moves you from a taxon name to its associated OTU |
+| <img src="https://sfg.taxonworks.org/s/6kzyps"> |Browse Nomenclature | takes you from an OTU to its associated taxonomic name |
+| <img src="https://sfg.taxonworks.org/s/ge5g3e">|Pinboard            | Add (if green) or Remove (if red) an item from your Pinboard. If the icon is blue, the item has been selected as the default in your pinboard and you can add it to a field automatically, for example, with literature citations.     |
+| <img src="https://sfg.taxonworks.org/s/fw8tpm">|Edit | With this icon, you may edit a given item. For example, from the `Browse nomenclature` page, this icon takes you to the `Edit taxon name` page associated with the taxon.
+| <img src="https://sfg.taxonworks.org/s/piaoh5">|Trashcan            | Use this to remove the current record from the database                                | 
 
 
 ## Did you know

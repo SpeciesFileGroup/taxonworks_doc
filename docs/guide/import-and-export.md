@@ -239,16 +239,18 @@ _Individual tables in native native TaxonWorks format as CSV_
 
 ### Darwin Core Archives
 #### From the DwC Dashboard
-* Open the `DwC Dashboard` task
-* Click one of the green buttons in the `Download Darwin Core Archive` panel
-* Your download will be cued and built, then avilable under the `Recently created DwC Archives`
+* Open the `DwC Dashboard` task. 
+* Click one of the green buttons in the `Download Darwin Core Archive` panel.
+![**Legend**: The TaxonWorks Download Darwin Core Archive panel](https://sfg.taxonworks.org/s/5fge51)
+* Your download will be queued and built, then avilable under the `Recently created DwC Archives` section.
+![**Legend**: Recently created DwC Archives](https://sfg.taxonworks.org/s/meexoh)
 
 #### From the collection object filter 
-* Open the task `Filter collection objects`
-* Perform a query
-* Use the download select to choose 'DwC'
-* Click the blue download button beside the select
-* Optionally click to include data-predicate fields, then click `Download`
+* Open the task `Filter collection objects`.
+* Perform a query.
+* Use the download select to choose 'DwC'.
+* Click the blue download button beside the select.
+* Optionally click to include data-predicate fields, then click `Download`.
 * Your download is available on the `DwC Dashboard` task after a short period.
 
 ### Bibliographies (Reference lists)

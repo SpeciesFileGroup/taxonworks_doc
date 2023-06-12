@@ -240,7 +240,7 @@ _Individual tables in native native TaxonWorks format as CSV_
 ### Darwin Core Archives
 #### From the DwC Dashboard
 * Open the `DwC Dashboard` task. 
-* Click one of the green buttons in the `Download Darwin Core Archive` panel.
+* Click one of the green buttons in the `Download Darwin Core Archive` panel. This can sometimes take several seconds to create/load, so wait a few seconds, and you will see a result in the next step. 
 ![**Legend**: The TaxonWorks Download Darwin Core Archive panel](https://sfg.taxonworks.org/s/5fge51)
 * Your download will be queued and built, then avilable under the `Recently created DwC Archives` section.
 ![**Legend**: Recently created DwC Archives](https://sfg.taxonworks.org/s/meexoh)
@@ -252,6 +252,18 @@ _Individual tables in native native TaxonWorks format as CSV_
 * Click the blue download button beside the select.
 * Optionally click to include data-predicate fields, then click `Download`.
 * Your download is available on the `DwC Dashboard` task after a short period.
+
+#### Preparing your data for an aggregator (e.g. GBIF, iDigBio, ALA)
+* Your export will download as a [DWCA](https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide), that includes three files if unzipped:
+  1) data.csv (a TSV file that can be opened by most spreadsheet programs). This is your downloaded occurrence data.
+  2) eml.xml (a metadata file with information about your dataset)
+  3) meta.xml (a metadata file that describes the headers included in your dataset). 
+* You can edit your eml.xml file in a plain text editor to prepare it for upload to an aggregator. A sample file that works is available [here](https://www.dropbox.com/s/zq4honogcjn64bc/eml_sample.xml?dl=0).
+* Once you've edited this EML file, make sure to re-package it into a ZIP file.
+* CAUTION, if using a Mac, the system will add two invisible system files when re-zipping. A workaround is available here: https://perishablepress.com/remove-macosx-ds-store-zip-files-mac/ 
+* Once repackaged, add to your Integrated Publishing Toolkit (IPT) endpoint. More information on setting one up here: 
+  1) [iDigBio](https://www.idigbio.org/wiki/index.php/Data_Sharing_Data_Standards_and_Demystifying_the_IPT ) 
+  2) [GBIF](https://www.gbif.org/ipt)
 
 ### Bibliographies (Reference lists)
 * Open the task `Filter sources`

@@ -44,6 +44,13 @@ export default defineUserConfig({
     md.use(figurePlugin, { figcaption: true })
   },
 
+  extendsMarkdownOptions: (markdownOptions) => {
+    if (markdownOptions.headers === false) return
+    markdownOptions.headers ??= {}
+    if (markdownOptions.headers.level) return
+    markdownOptions.headers.level = [2, 3, 4, 5, 6]
+  },
+
   theme: defaultTheme({
     docsRepo: 'https://github.com/SpeciesFileGroup/taxonworks_doc',
     docsBranch: 'development',
@@ -57,7 +64,8 @@ export default defineUserConfig({
       '/': {
         lang: 'en-US',
         navbar: navbar.en,
-        sidebar: sidebar.en
+        sidebar: sidebar.en,
+        sidebarDepth: 3
       },
       '/es/': {
         navbar: navbar.es,
@@ -66,6 +74,7 @@ export default defineUserConfig({
         selectLanguageAriaLabel: 'Español',
 
         sidebar: sidebar.es,
+        sidebarDepth: 3,
 
         editLinkText: 'Edita esta pagina en GitHub',
         lastUpdatedText: 'Ultima actualización',

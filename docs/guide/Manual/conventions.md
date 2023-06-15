@@ -143,13 +143,16 @@ Note also, all icons with a blue circle and white middle are `Radials` and serve
 
 | Icon   | Icon Name      | Purpose of Icon
 |:----------|:-----------------|----------------------------------------|
-|<img src="https://sfg.taxonworks.org/s/o70iza"> |Annotate Radial    | use this to add information to the current object of interest. The particular functions found after click are show you what types of information you can add.
+||**Radial Icons in TaxonWorks**   | use these to add information to the current object of interest, move to a different area in TW, or select objects of interest. The particular functions found after click show you what types of information you can add or actions you can take. |
+|<img src="https://sfg.taxonworks.org/s/o70iza"> |Annotate Radial    | use this to add information to the current object of interest. The particular functions found after click are show you what types of information you can add. |
 |<img src="https://sfg.taxonworks.org/s/59mm5b"> |Navigate Radial     | use this icon to move across to different areas in TaxonWorks  |
 |<img src="https://sfg.taxonworks.org/s/ybfj5n"> |Mass Annotate Radial     | use this icon to add information to many records at once in TaxonWorks  |
 |<img src="https://sfg.taxonworks.org/s/l80fse"> |Filter Radial     | use this icon to select a set of records from a search in TaxonWorks using the `Filter` task (e. g. `Filter Nomenclature`, `Filter Sources`, `Filter Collection Objects`, etc.)|
 |<img src="https://sfg.taxonworks.org/s/0h1xe6">|Quick Forms Radial        | use this to bring up commonly used forms associated with OTUs, such as `Asserted distributions` or `Biological Associations`|
 |<img src="https://sfg.taxonworks.org/s/swrp57">|Label Radial        | use this to create labels|
-|<img src="https://sfg.taxonworks.org/s/tncxw5">|Linker Radial        | use this to link data from one object to another in TaxonWorks |
+|<img src="https://sfg.taxonworks.org/s/tncxw5">|Linker Radial        | use this to send selected results from a filtered search to another Task in TaxonWorks to further refine your data subset |
+|<img src="https://sfg.taxonworks.org/s/up6vns">|Loan Radial        | select objects to loan or that are being returned |
+||||
 | <img src="https://sfg.taxonworks.org/s/y3pdwu">|Browse Taxa         | moves you from a taxon name to its associated OTU |
 | <img src="https://sfg.taxonworks.org/s/6kzyps"> |Browse Nomenclature | takes you from an OTU to its associated taxonomic name |
 | <img src="https://sfg.taxonworks.org/s/ge5g3e">|Pinboard            | Add (if green) or Remove (if red) an item from your Pinboard. If the icon is blue, the item has been selected as the default in your pinboard and you can add it to a field automatically, for example, with literature citations.     |

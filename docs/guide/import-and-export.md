@@ -245,21 +245,23 @@ A quite common data package used for sharing data with biodiversity data aggrega
 #### From the DwC Dashboard
 * Open the `DwC Dashboard` task. 
 * Click one of the green buttons in the `Download Darwin Core Archive` section. 
-  * This can sometimes take several seconds to create/load, so wait a few seconds, and you will see a result in the next step.
-  * Note your button options for your dwca file. You may create a dwca for all your data, or a given desired or relevant subset. You can also create your own custom archive (see the `Create DwC Archive by filtered collection object result` option).   
+  * Note your green button options for your dwca file. You may create a dwca for all your data, or a given desired or relevant subset. You can also create your own custom archive (see the `Create DwC Archive by filtered collection object result` option). 
+  * Once you click on an option, generating the file can sometimes take several seconds to create/load, so wait a few seconds, and you will see a result in the next step.  
 ![**Legend**: The TaxonWorks Download Darwin Core Archive panel](https://sfg.taxonworks.org/s/6nga85)
 * Your download will be queued and built, then available under the `Recently created DwC Archives` section.
 ![**Legend**: Recently created DwC Archives](https://sfg.taxonworks.org/s/exphrc)
 
-#### From the Collection Object filter 
+#### From the `Filter collection objects` task 
 * Open the task `Filter collection objects`.
 * Perform a query to create your desired data subset.
-* Use the download select to choose 'DwC'.
-#left[**Legend**:From `Filter Collection Object, selecting the `DwC` download format for a given dataset](https://sfg.taxonworks.org/s/8f6ay6 [Where to select the dwca format for your `collection object` data download])
+* Use the download select to choose `DwC`.
+
+#left[**Legend**:From `Filter Collection Object`, select the `DwC` download format for a given dataset](https://sfg.taxonworks.org/s/8f6ay6 [Where to select the dwca format for your `collection object` data download])
 
 * Click the blue download button beside the select.
 * Optionally click to include data-predicate (custom) fields, scroll down, then click `Download`.  
-#left[**Legend**:Optional fields you can include in your dwca file](https://sfg.taxonworks.org/s/j450th [Optional fields you can include in your dwca file])
+
+#left[**Legend**: Optional fields you can include in your dwca file](https://sfg.taxonworks.org/s/j450th [Optional fields you can include in your dwca file])
 * Your download is available on the `DwC Dashboard` task after a short period.
 
 #### Preparing your data for an aggregator (e.g. GBIF, iDigBio, ALA)

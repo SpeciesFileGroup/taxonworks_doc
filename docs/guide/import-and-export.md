@@ -92,7 +92,7 @@ To upload occurrence (vouchered specimen data records) data, TW offers the abili
 For these **occurrence datasets** one needs to map each term to be imported. This next section explains the different mapping options available and steps needed to get started.
 
 ### Precursor steps to DwC-A import
-- For your dataset, you may need to create one or more **namespaces.** These namespaces allow TW to
+- For your dataset, you may need to create one or more **namespaces.** (and select one using the settings tab of the import page) These namespaces allow TW to
   - track uniqueness of each object and
   - group these objects. 
   

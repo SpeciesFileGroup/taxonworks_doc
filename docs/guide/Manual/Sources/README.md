@@ -274,9 +274,9 @@ To add additional information about the species from the publication, first navi
 
 Alternatively, you can use the `Browse OTU` task to find the OTU.  TW may bring up more than one choice:
 
-[INSERT SCREENSHOT HERE] 
+#left[`Browse OTUs` and find the subsequent combinations](https://sfg.taxonworks.org/s/egdwx6[Browse OTU task showing that more than one name may be found. Note the differences indicated by the presence of a check mark or letter 'c' in brackets indicating a new subsequent combination.])
 
-In this case the OTU name with the check mark refers to the protonym (name as originally published. The OTU name followed by (c) refers to a subsequent combination. It is best to choose the subsequent combination as this will ensure that the data is tracked correctly.
+In this case the OTU name with the check mark refers to the protonym (name as originally published. The OTU name followed by (c) refers to a `subsequent combination``. It is best to choose the `subsequent combination`` as this will ensure that the data is tracked correctly.
 
 (UCD-specific note: in this case, there is a third choice, which looks like a ghost, that is, a name that was created as a string when host or distribution records were imported from the original UCD@NHM. You should ignore ghosts. UCD@TW are working on eliminating them).
 
@@ -301,9 +301,9 @@ HINT: `Topics` are unique to each project. For the UCD project, having created a
   - `Is absent` presumably means that the publication states that the taxon is not present in the designated area, but UCD notes they are not sure when to use this.
 - Next, enter the most restrictive geographic area present in the TW database, which in most cases will be a state or a province.  
 
-HINT: If the paper contains many new asserted distributions, it is more efficient to record these using the `New Asserted Distribution task`. Here you can lock in the source and each OTU, and enter the geographic areas one by one, without having to repeat the other information. In this example, we have locked the source and OTU (red arrows below), and we can enter geographic areas one by one. The task contains other tools (not shown below) that enable you to clone combinations of the Source/OTU, Source/Geographic area, or OTU/Geographic area.
+HINT: If the paper contains many new asserted distributions, it is more efficient to record these using the `New Asserted Distribution task`. Here you can lock in the source and each OTU, and enter the geographic areas one by one, without having to repeat the other information. In this example, we have locked the source and OTU (orange boxes), and we can enter geographic areas one by one. The task contains other tools (not shown below) that enable you to clone combinations of the Source/OTU, Source/Geographic area, or OTU/Geographic area.
 
-[INSERT SCREENSHOT HERE]
+#left[`New Asserted Distribution Task` showing how to lock fields for re-use](https://sfg.taxonworks.org/s/fi56ai[new asserted distribution task showing how information can be resused to create many new assertions from a given source that have shared information])
 
 Next, update the `tags` (if necessary) to track progress. UCD Example, once you have entered the `distribution` data from the source, if you are not at this time going to enter other information such as biological associations, add the `Source processed – Distribution` tag to the source.
 

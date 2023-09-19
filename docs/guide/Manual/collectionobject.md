@@ -14,7 +14,7 @@ As a researcher, as an ecologist, as a collection manager, you want to gather, a
 
 `New Collecting Event Task`: In addition to the data about the `what` (that is, the physical specimen itself), information about the `where`, `how`, `who`, and `when`, etcetera fit elsewhere in the TaxonWorks data model: the `New Collecting Event (CE) Task` stores information about the where, when, and who.
 
-#left[Use the `New collecting event` task to capture events](https://sfg.taxonworks.org/s/wngpga [The `New collective event` task offers a way to add just the collecting events instead of other related data])
+#left[Use the `New collecting event` task to capture events](https://sfg.taxonworks.org/s/wngpga [The `New collecting event` task offers a way to add just the collecting events instead of other related data])
 
 `Comprehensive specimen digitization Task` (CSD): Combined into one screen, much of the data you have related to a specimen can be entered inside this one window. Inside this task, you have access to `buffered data` from stub records and `verbatim` data that can be parsed for you. You'll find you can add people, locality information, biological association data, and add custom fields you need. The following screenshot highlights the different sections of this task in TaxonWorks.
 
@@ -112,5 +112,8 @@ This section helps to atomize all the information about when and where and who i
 
 #### `Biological Associations` inside `Comprehensive specimen digitization Task`
 
+in progress
+
 #### `Type material` inside `Comprehensive specimen digitization Task`
 
+in progress

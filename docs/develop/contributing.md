@@ -108,7 +108,7 @@ In TaxonWorks, find the generated image link URLs, using the `Filter Image` task
 - Return to editing documentation and use the Markdown format or HTML format below to insert image URLs (examples next).
   - Note that both methods allow you to specify the image size.
 
-#### Markdown for image with caption
+#### Image caption markdown (writing docs)
 
 Examples here show the markdown (md) format for adding a **caption** to an image.
 

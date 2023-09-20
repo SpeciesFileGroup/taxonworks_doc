@@ -14,7 +14,7 @@ TaxonWorks offers two ways to import data: 1) via the User Interface (UI) enteri
 For bulk/batch uploads, TW supports import of various types of data including checklists, occurrence specimen record data, sequence data, source information (i.e. publications) and more. And using the DwC Archive Import Task, TW offers the use of the current gold standard for sharing specimen occurrence data via a tab-separated text file. This file can stand alone or be part of a Darwin Core Archive (DwCA) zipped file. These (your) data are mapped to Darwin Core terms, TaxonWorks specific elements, or your own custom Data Attributes (details below). Support for importing observations is underway. 
 
 - sample checklist (link)
-- sample specimen record dataset (link)
+- sample specimen record dataset (link) 
 
 ### Batch imports
 There are various batch importers available within the UI (user interface). These are polished to differing degrees and have various benefits and limitations. The required format is described in the UI. All batch loaders are two-step, allowing for (and requiring) a preview of results before inserting them into the database.
@@ -220,7 +220,7 @@ You can export a full copy of your database, minus binaries (e.g. images, docume
 * Load it into a local version of TaxonWorks (e.g. running on your desktop)
 
 ### Individual TaxonWorks tables
-_Individual tables in native native TaxonWorks format as CSV_
+_Individual tables in native TaxonWorks format as CSV_
 
 #### Via "Project data overview and download"
 * Open the `Project data overview and download` task
@@ -238,18 +238,43 @@ _Individual tables in native native TaxonWorks format as CSV_
 * Select the `CSV` option in the download select and click the blue download button beside it.
 
 ### Darwin Core Archives
-#### From the DwC Dashboard
-* Open the `DwC Dashboard` task
-* Click one of the green buttons in the `Download Darwin Core Archive` panel
-* Your download will be cued and built, then avilable under the `Recently created DwC Archives`
+A quite common data package used for sharing data with biodiversity data aggregators like the Global Biodiversity Information Facility (GBIF) and iDigBio, a **Darwin Core Archive (dwca)** contains several files (e.g. your data file, a metadata file, and an index file to tell computers reading the package what to expect to find in this specific data package). In TaxonWorks, you can create these packages as needed. To do so, you will use the DwC Dashboard shown next.  
 
-#### From the collection object filter 
-* Open the task `Filter collection objects`
-* Perform a query
-* Use the download select to choose 'DwC'
-* Click the blue download button beside the select
-* Optionally click to include data-predicate fields, then click `Download`
+#left[**Legend**: The `DwC Dashboard` Task](https://sfg.taxonworks.org/s/q4m8is [The DwC Dashboard Task])
+
+#### From the DwC Dashboard
+* Open the `DwC Dashboard` task. 
+* Click one of the green buttons in the `Download Darwin Core Archive` section. 
+  * Note your green button options for your dwca file. You may create a dwca for all your data, or a given desired or relevant subset. You can also create your own custom archive (see the `Create DwC Archive by filtered collection object result` option). 
+  * Once you click on an option, generating the file can sometimes take several seconds to create/load, so wait a few seconds, and you will see a result in the next step.  
+![**Legend**: The TaxonWorks Download Darwin Core Archive panel](https://sfg.taxonworks.org/s/6nga85)
+* Your download will be queued and built, then available under the `Recently created DwC Archives` section.
+![**Legend**: Recently created DwC Archives](https://sfg.taxonworks.org/s/exphrc)
+
+#### From the `Filter collection objects` task 
+* Open the task `Filter collection objects`.
+* Perform a query to create your desired data subset.
+* Use the download select to choose `DwC`.
+
+#left[**Legend**:From `Filter Collection Object`, select the `DwC` download format for a given dataset](https://sfg.taxonworks.org/s/8f6ay6 [Where to select the dwca format for your `collection object` data download])
+
+* Click the blue download button beside the select.
+* Optionally click to include data-predicate (custom) fields, scroll down, then click `Download`.  
+
+#left[**Legend**: Optional fields you can include in your dwca file](https://sfg.taxonworks.org/s/j450th [Optional fields you can include in your dwca file])
 * Your download is available on the `DwC Dashboard` task after a short period.
+
+#### Preparing your data for an aggregator (e.g. GBIF, iDigBio, ALA)
+* Your export will download as a [DWCA](https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide), that includes three files (or more) when unzipped:
+  1) data.csv (a tab-separated file (TSV) file that can be opened by most spreadsheet programs). This is your downloaded specimen occurrence data.
+  2) eml.xml (a metadata file with information about your dataset)
+  3) meta.xml (a metadata file that describes the headers included in your dataset). 
+* You can (and will need to) edit your eml.xml file in a plain text editor to prepare it for upload to an aggregator. A sample file that works is available [here](https://www.dropbox.com/s/zq4honogcjn64bc/eml_sample.xml?dl=0).
+* Once you've edited this EML file, make sure to re-package it into a ZIP file.
+* CAUTION, if using a Mac, the system will add two invisible system files when re-zipping. A workaround is available here: https://perishablepress.com/remove-macosx-ds-store-zip-files-mac/ 
+* Once repackaged, add this zipped file to your Integrated Publishing Toolkit (IPT) endpoint. Note there are existing IPT instances that would be happy to host your packaged data. More information on setting one up here: 
+  1) [iDigBio](https://www.idigbio.org/wiki/index.php/Data_Sharing_Data_Standards_and_Demystifying_the_IPT ) 
+  2) [GBIF](https://www.gbif.org/ipt)
 
 ### Bibliographies (Reference lists)
 * Open the task `Filter sources`

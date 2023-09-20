@@ -1,0 +1,105 @@
+digraph GeographicAreasGeographicItem {
+	graph [bb="0,0,524.4,252",
+		label="",
+		outputorder=edgesfirst,
+		rankdir=LR
+	];
+	node [label="\N"];
+	subgraph annotator_cluster {
+		graph [rank=min];
+	}
+	subgraph core {
+	}
+	subgraph supporting {
+		GeographicAreasGeographicItem	[color="#dedede",
+			fillcolor="#cdefab",
+			group=target,
+			height=0.61111,
+			href="/develop/Data/models.html#geographic-areas-geographic-item",
+			label=GeographicAreasGeographicItem,
+			pos="144.7,126",
+			shape=doubleoctagon,
+			style=filled,
+			target=_top,
+			width=4.0194];
+		PinboardItem	[color="#dddeee",
+			fillcolor="#eeefff",
+			group=supporting,
+			height=0.5,
+			href="/develop/Data/models.html#pinboard-item",
+			label=PinboardItem,
+			pos="378.4,234",
+			shape=box,
+			style=filled,
+			target=_top,
+			width=1.2639];
+		Role	[color="#dddeee",
+			fillcolor="#eeefff",
+			group=supporting,
+			height=0.5,
+			href="/develop/Data/models.html#role",
+			label=Role,
+			pos="378.4,180",
+			shape=box,
+			style=filled,
+			target=_top,
+			width=0.75];
+		VerifierRole	[color="#dddeee",
+			fillcolor="#eeefff",
+			group=supporting,
+			height=0.5,
+			href="/develop/Data/models.html#verifier-role",
+			label=VerifierRole,
+			pos="378.4,126",
+			shape=box,
+			style=filled,
+			target=_top,
+			width=1.1528];
+		Verifier	[color="#dddeee",
+			fillcolor="#eeefff",
+			group=supporting,
+			height=0.5,
+			href="/develop/Data/models.html#verifier",
+			label=Verifier,
+			pos="495.9,153",
+			shape=box,
+			style=filled,
+			target=_top,
+			width=0.79167];
+		GeographicArea	[color="#dddeee",
+			fillcolor="#eeefff",
+			group=supporting,
+			height=0.5,
+			href="/develop/Data/models.html#geographic-area",
+			label=GeographicArea,
+			pos="378.4,72",
+			shape=box,
+			style=filled,
+			target=_top,
+			width=1.4722];
+		GeographicItem	[color="#dddeee",
+			fillcolor="#eeefff",
+			group=supporting,
+			height=0.5,
+			href="/develop/Data/models.html#geographic-item",
+			label=GeographicItem,
+			pos="378.4,18",
+			shape=box,
+			style=filled,
+			target=_top,
+			width=1.4583];
+	}
+	GeographicAreasGeographicItem -> PinboardItem	[pos="e,338.46,215.85 193.15,148.12 232.86,166.63 289.28,192.93 329.2,211.53"];
+	GeographicAreasGeographicItem -> Role	[pos="e,351.39,173.94 227.39,145.04 266.31,154.11 310.89,164.5 341.27,171.58"];
+	GeographicAreasGeographicItem -> VerifierRole	[pos="e,336.73,126 289.47,126 302.62,126 315.25,126 326.64,126"];
+	GeographicAreasGeographicItem -> GeographicArea	[dir=back,
+		pos="s,227.39,106.96 237.42,104.62 267.3,97.66 299.42,90.174 325.34,84.132",
+		style=dashed];
+	GeographicAreasGeographicItem -> GeographicItem	[dir=back,
+		pos="s,193.15,103.88 202.47,99.538 244.7,79.851 301.25,53.496 338.46,36.147",
+		style=dashed];
+	Role -> Verifier	[pos="e,467.18,159.48 405.61,173.87 420.82,170.32 440.24,165.78 457.09,161.84",
+		style=invis];
+	VerifierRole -> Verifier	[pos="e,467.2,146.53 420.12,135.52 432.17,138.34 445.32,141.41 457.17,144.18",
+		style=dotted];
+}

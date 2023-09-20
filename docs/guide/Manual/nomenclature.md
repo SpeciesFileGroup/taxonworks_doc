@@ -461,10 +461,21 @@ The rest of the information on the type is filled in with the screen below.
   6. The `Repository` is the institution where the type is deposited.  Hopefully the repository will be in the TW table, otherwise you may need to create it using the `Repositories card` in the Data portfolio.  
   7. `Collection Event` refers to a specimen already in the TW database, which in most cases will not be the case if you are curating a new species description.
   8. In `Biocurations`, indicate whether the type is an adult or immature, and a male or female.
-  9. Finally, you enter the Identifier for the type, which consists of two parts.  You must first Search for the `Namespace` (see the [Glossary](https://docs.taxonworks.org/about/glossary.html#namespace) for more details) of the collection in which the type is deposited. Note that this may be different from the repository (a single institution may have several collections, each with a different “namespace”). Think of the `namespace` as the part of a specimen ID number that does not change for each specimen, for example, `TAMU` in `TAMU x01234567`. If the namespace is not in the database, you may need to create it, but since these are shared across projects, there is a good chance it will be there. Once you have selected the namespace, paste in the type or specimen number (only) in the `Identifier` field, and hit the green `Create` button.
- 
-[INSERT SCREENSHOT]
 
+#left[Adding more `Type` information](https://sfg.taxonworks.org/s/2xb157[where to add extra type information such as preparation type and repository])
+
+  9. Finally, you enter the `Identifier` for the type, which consists of two parts. Note that this may be different from the repository (a single institution may have several collections, each with a different “namespace”). Think of the `namespace` as the part of a specimen ID number that does not change for each specimen, for example, `TAMU` in `TAMU x01234567`. If the namespace is not in the database, you may need to create it, but since these are shared across projects, there is a good chance it will be there. (See the [Glossary](https://docs.taxonworks.org/about/glossary.html#namespace) for more details)  
+  - Click to open the `Radial Annotator`.
+  - Select the `Identifiers` option.
+  - For Identifier group, select `Local`.
+  - Next Search for the `Namespace` of the collection in which the type is deposited.
+  - Once you have selected the namespace, paste in the type or specimen number (only) in the `Identifier` field.
+  - Click the green `Create` button.
+    
+#left[Open the Radial Annotator to add a specimen `Identifier` in TaxonWorks](https://sfg.taxonworks.org/s/s1f87u [where to open the `Radial Annotator` in `Edit Taxon Name` to add identifier and namespace for a given specimen])
+    
+#left[Adding the specimen `Identifier`information](https://sfg.taxonworks.org/s/zedfbj [form to add specimen `namespace` and `local` `identifier`])
+ 
 If you wish to add `paratypes` (optional), you essentially follow the same process for each one.
 
 For many contemporary taxa, there may also be a `ZooBank number` associated with the species. The correct way to enter this is to:
@@ -999,6 +1010,15 @@ selected instead, you will get a soft validation waring "*Original Combination: 
 This is not a critical error. TaxonWorks can detect and automatically move the relationship
 from a genus to coordinate subgenus. But at the present implementation, it could only be done programmatically.
 
+### How do delete a duplicate Taxon Name?
 
-
+- In the future, we expect an interface to to merge two records. But it is not available at the moment
+- A taxon name could only be deleted if it does not have any associated record. All of those have to be deleted or reassigned before a TaxonName could be deleted. Suggestion, select one of two duplicate which has lower number of associated data (citations, relationships, otus, etc.)
+  - First, rename a TaxonName so you can isolate it from the name, which stays in the database. for example, if you have species name 'aus', change the name to 'ausdelete', so you can use the filter functionality to quickly navigate to the name.  
+  - Delete associated OTU. In the `Browse Nomenclature`, check if the name has an OTU, if present you can see it in the summany at the top right. If you follow the link, you will get to the OTU page. before deleting OTU. You can check if it has any data using `OTU Radial`, for example distribution, if it does, you can reassing the OTU to another TaxonName in the Edit mode, just select the other of two duplicates. If the OTU does not have related date, it could be safly deleted.
+  - On the duplicate TaxonName page go to Edit mode. In this interface, look at any `Statuses`, `Relationships`, `Original` or `Subsequent combinations`, `Gender` or `Part of Speech`, `Type species`, etc. If anything is present, it should be deleted, all of those will prevent TaxonName from being deleted. Once everething is cleared, try to use Delete button. The duplicate name may get deleted.
+  - If the TaxonName is still not deletable, it means that still there are some related records, which need some resolution. One of the common problem could be that a genus name, for example, is used as a Original genus or a genus name in a subsequent combination. To see if this is the case, use the `Radial Navigator` button and `Related` sector. It can redirect you to the interface which shows all TaxonName relationships (original and subsequent combinations, where this name is used). You can change all of them one by one, selecting the appropriate taxon, but there is also a helper task: `Merge Taxon Names` which could help to move all relationships from one TaxonName to another. Select `from Taxon Name` and `To Taxon Name`. and Proceed.
+  - You can use the `Radial Navigator` button and `Related` sector to verify that everything is moved. You can try to delete TaxonName again.
+  - If TaxonName could not be deleted, check what else is present in `Related`, see if there are still some relationship left in the list, which need to be resolved manually. Potential problem may also come from the `Collection Object` where the name is used for the type specimen, holotype, for example, if present, reassigne to another name, once the `Relatead` is cleare, the TaxonName could be safely delete.
+  - The things which could be deleted together with a TaxonName (they do not block deletion): authors, citations, data attributes, notes, tags, depictions, and other attributes, those if present will be deleted automatically together with TaxonName.
 

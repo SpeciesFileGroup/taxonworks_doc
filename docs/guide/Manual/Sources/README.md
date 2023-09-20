@@ -4,26 +4,27 @@ sidebarParentPosition: 40
 
 # About Sources in TW
 
-_Discover the Source (e.g. publications) management features of TaxonWorks here. For example, sources are shared across projects, a cool time-saving community feature of TW._
+_Discover the Source (e.g. publications) management features of TaxonWorks here. For example, **sources are shared across projects**, a cool and unique time-saving community feature of TW._
 
 Credit: much of the following information derived from a manual tailored for and written by the Universal Chalcidoidea Database (UCD@TW) Project community.
 
 ## The Source Hub
-In TaxonWorks, sources include the literature database, citations, and other content that is fed directly into the database. The easiest way to access sources is through the `Source hub` task. This is a unifying task that combines several commonly used tasks associated with sources. As a curator, researcher, data manager, student, or technician you may primarily be working from sources that are published papers. Source data can be entered one record at-a-time field-by-field or using BibTeX or CrossRef DOIs. From most reference manager software, one can export source information in the BibTex format and edited as needed in any regular text editor. This can be used for uploading `source` data into TW. With this [wiki](https://en.wikipedia.org/wiki/BibTeX), you can learn more about BibTex.
+In TaxonWorks, sources include the literature database, citations, and other related content that is fed directly into the database. The easiest way to access sources is through the `Source hub` task. This is a unifying task that combines several commonly used tasks associated with sources. As a curator, researcher, data manager, student, or technician you may primarily be working from sources that are published papers. Source data can be entered one record at-a-time field-by-field, or using BibTeX or CrossRef DOIs. From most reference manager software, one can export source information in the BibTex format and edit as needed in any regular text editor. This can be used for uploading `source` data into TW. With this [wiki](https://en.wikipedia.org/wiki/BibTeX), you can learn more about BibTex.
 
 <!--Source Hub [Screenshot](https://sfg.taxonworks.org/s/rdc03q) Legend
 <img align="right" width="200" title="Source Hub" src="https://sfg.taxonworks.org/s/rdc03q"/>-->
 
-#left[**Legend:** `Source hub` user interface sections](https://sfg.taxonworks.org/s/rdc03q [Screenshot of user interface for the Source hub task])
+#left[**Legend:** `Source hub` user interface sections: `select`, `filter`, `recent sources`, add `new source`, and `batch load`. ](https://sfg.taxonworks.org/s/rdc03q [Screenshot of user interface for the Source hub task])
 
 ### `Source hub` task features
-`Source hub` sections offer select, filter, recent sources, add new source, and batch upload. The `Select a source` option offers a smart selector so you only need to enter as many letters needed to uniquely identify a source. For example, the string 'wool dal sig' brings up Woolley and Dal Molin (2017). If a source is found it will show beneath the search box. 
+#### Select a `Source`
+The TW `Select a source` option offers a smart selector so you only need to enter as many letters needed to uniquely identify a source. For example, the search string 'wool dal sig' brings up Woolley and Dal Molin (2017). If a source is found it will show beneath the search box. 
 
-- Type information in `Select a source` to see if a source is in the database.
-  - If you click on a result in the popup beneath the search box, it will take you to a page describing the source. 
-  #left[**Legend**: `Source hub` search result](https://sfg.taxonworks.org/s/7vgq1z [User interface showing result of a source search])
-  <!--<img align="right" width="400" title="Search Sources" src="https://sfg.taxonworks.org/s/7vgq1z"/>-->
-- With `Filter sources` you can apply different search criteria to locate sources of interest. 
+- Type information in `Select a source` to see if a source is in the database. In this example, search string is 'Woolley, J. B.'
+- If you click on a result in the popup beneath the search box, it will take you to a page showing that source. 
+
+#left[**Legend**: `Source hub` search result](https://sfg.taxonworks.org/s/7vgq1z [User interface showing result of a source search])
+- With `Filter sources` you can apply different search criteria to locate sources of interest.
   - Use this feature to identify sources you want to work on.
 - `My recent sources` shows a list of sources that you have entered recently.
 - `New Source` takes you to a screen that enables you to add new sources using various methods.
@@ -112,7 +113,7 @@ Most of the fields may be self-explanatory. Here we note a few tricks, for insta
   - Choose title from the pick-list, the language for the translated title, and paste the translation in the Value field.
   - Be sure to `Save` it (green button) if this is a new source. Then the original title and translation will both be rendered.
 
-  As all fields are present on the data entry screen for all types of sources, it can be a bit confusing, particularly for books and chapters in books. The article type for a chapter in a book is "Inbook", and the book title would go into the Booktitle field.  For books, there are fields for Editors, Series (if needed), Booktitle, Publisher, and Address (usually city or city and country). The type of a technical report is "techreport".
+  As all fields are present on the data entry screen for all types of sources, it can be a bit confusing, particularly for books and chapters in books. The article type for a chapter in a book is "Inbook", and the book title would go into the Booktitle field.  For books, there are fields for Editors, Series (if needed), Booktitle, Publisher, and Address (usually city or city and country). The type of a technical report is `techreport`.
 
 ## PDFs for Sources
  Using the UCD@TW Project as an example, note that most screens that pull up lists of sources in TW have a convenient PDF icon that either opens the source in the PDF viewer (where you can download it), or enables you to download it directly to your browser. For example, if you pull up a source using the `Source hub`, you will get a screen like this -- the so-called `Show` page. The pdf icon will open the source in your browser.
@@ -147,7 +148,7 @@ Using the **Manage Controlled Vocabulary task** (shown below), you can create cu
 
 #left[**Legend**: Find `Manage Controlled Vocabulary task`](https://sfg.taxonworks.org/s/p7t05x [])
 
-#left[**Legend**: Create and Edit Tags](https://sfg.taxonworks.org/s/h1tuyz [])
+#left[**Legend**: Create and Edit Tags](https://sfg.taxonworks.org/s/h1tuyz [how to create and edit tags in TaxonWorks])
 
 - To create a new tag use the `Name`, `Definition`, and `Label color` fields on the left of the screen. 
 - Note that the definition field _must have at least_ **20 characters** before the `Create` button is clickable. 
@@ -183,11 +184,12 @@ Once you have created a list of sources, you can do the following:
 - **`Download formatted`**: here you have the option to choose a format style (e.g. Zootaxa) and create a formatted bibliography.
 - If a **pdf** is associated with the source, you can capture it using the pdf icon.
 
-## Importing
-### One at a time
-- 
-### Batch Upload
-Using the `Batch Upload` section of the `Sources` Data tab from the project home screen, you can upload a list of BibTex-formatted references all at once. 
+## Importing Sources
+### Add a Source, one at a time
+As described above, sources can be uploaded in different ways, one-at-a-time, or in batch using BibTeX format, searching CrossRef or using a URL that pulls in source data using CrossRef DOIs. With the `New Source` task, you have all these options in one task. See above section [Adding a Source](/guide/Manual/Sources/#adding-a-source)
+
+### Source Batch Upload
+Using the `Batch Upload` section of the `Sources` `Data tab` (i.e. not the `task` tab) from the project home screen, you can upload a list of BibTex-formatted references all at once. 
 ![batch_load](https://user-images.githubusercontent.com/11411328/190240979-b9801d87-b97b-47fd-a5aa-bbc251ff6253.jpg)
 
 From this screen, you can upload a Bibtex formatted TXT file that will allow for import of your references. Use this to load bibliographies exported from tools like EndNote, or Zotero. An example file is available [here](https://github.com/SpeciesFileGroup/taxonworks_doc/files/9569266/Monotomidae2.txt). Your Bibtex file must meet the following conditions:
@@ -207,21 +209,47 @@ Once you've ironed out any problems, you need to re-upload your data using the `
 
 Click the `Create` Button to upload your sources. 
 Once the upload finishes, you should get a screen like this:
-![image](https://user-images.githubusercontent.com/11411328/190246930-6c9b23a3-ece1-48d8-97de-f357f48fa5aa.png). 
+
+![image](https://user-images.githubusercontent.com/11411328/190246930-6c9b23a3-ece1-48d8-97de-f357f48fa5aa.png) 
+
 You can click the edit buttons or search for them in the `Filter Sources` task. 
 
+## Exporting Sources
+In TaxonWorks, several options exist to download a source list in the desired format (e. g. comma separated (aka CSV), BibTeX, a custom style of your choosing). Using the `Filter sources` task, you limit your sources to the desired subset and then choose your download format.
 
-## Exporting
-- CSV
-- in a custom format
+### Use `Filter sources` to download selected sources
+
+#left[Using `Filter sources` to select sources to export](https://sfg.taxonworks.org/s/ovt77c [boxes outlining options to select source data to download and to choose the download format])
+- Navigate to the `Filter sources` task.
+- Use the options in the left side column to limit (aka filter) your results to the desired subset
+  - E. g. In the screenshot above, we used the `Title` filter option with the string `Cecidomyiidae`.
+- Click on `Filter` at the top left of the window. The result (in this example) returns 1640 records.
+- Next, you will decide to download one of the following:
+  - all 1640 records
+  - a selected subset of the records shown on the first page (default limit is 50 records)
+  - all records on the page
+- `Select` your set to export.
+  - To select a few sources shown on the page, check the boxes next to each desired source.
+  - To export all sources on this specific page, you can check just the single box in the header row at the top of the list.
+  - To export all 1640 sources, you need to change the number of records shown on the page, to a number larger than your subset. See the drop-down option in the header menu for `records per page`.
+    - Maximum number supported is 2500. If your set is larger than that, you'll need to do this using more than one download. Example, you might add a year range to subset your records.
+- Use the download options picklist (in the header menu) to select: `CSV`, `BibTeX`, `Download formatted` to get these sources exported in the format you need.
+- If you `select` `CSV` from the drop-down options, then click the `down arrow` next to the drop-down box, you get a CSV file downloaded right away.
+- If you `select` `BibTeX` or `Download formatted` you will see a preview window to review if they look as expected. If all is well, `click` on the `Generate download` option.
+
+`BibTeX` option.
+  #left[Click the `Generate download` button to get the BibTeX file](https://sfg.taxonworks.org/s/sgsfe9 [Click the `Generate download` option to get the BibTeX file])
+
+`Download formatted` option gives you many standard publishing formats to choose from. In this example, we used `Zootaxa.`
+  #left[Click the `Generate download` button to get the `Custom formatted` file](https://sfg.taxonworks.org/s/8jl5hq [Click the `Generate download` option to get the `Custom formatted` file])
 
 ## Source Scenarios (aka How-To)
 When getting data from publication sources into TW, many "how-to" questions may arise. Please see next the following common situations and how to proceed for each. Each of these examples offer you an opportunity to _try it_ yourself in your sandbox account.
 
-### Find uncurated papers
-_Say you want to find new sources (papers) that have not yet been curated._ The easiest way to do this is to use the `Filter Sources` task. For example, if you enter the family name in both `Search Text and Title`, and `Source unprocessed` in Tags, you will generate a list of currently uncurated papers for that family:  
+### Find uncurated unparsed papers
+_Say you want to find new sources (papers) that have not yet been curated._ The easiest way to do this is to use the `Filter Sources` task. This specific example uses the [_tagging_ method chosen by the UCD@TW Project](/guide/Manual/Sources/#ucd-tw-project-tag-example). In this example, if you enter the family `Encyrtidae` name string in both `Search Text and Title`, and choose `Source unprocessed` tag in the Tags filter option, you will generate a list of currently uncurated papers for that family:  
 
-[INSERT SCREENSHOT] 
+#left[Tags can help you organize and find specific data](https://sfg.taxonworks.org/s/nnavty [Creating tags in TaxonWorks and applying them to objects, you can then use these tags to find or subset data records])
 
 The `tag` box allows you to create collections of sources, for example, to download as *.CSV files for your own spreadsheet or database.
 
@@ -246,9 +274,9 @@ To add additional information about the species from the publication, first navi
 
 Alternatively, you can use the `Browse OTU` task to find the OTU.  TW may bring up more than one choice:
 
-[INSERT SCREENSHOT HERE] 
+#left[`Browse OTUs` and find the subsequent combinations](https://sfg.taxonworks.org/s/egdwx6[Browse OTU task showing that more than one name may be found. Note the differences indicated by the presence of a check mark or letter 'c' in brackets indicating a new subsequent combination.])
 
-In this case the OTU name with the check mark refers to the protonym (name as originally published. The OTU name followed by (c) refers to a subsequent combination. It is best to choose the subsequent combination as this will ensure that the data is tracked correctly.
+In this case the OTU name with the check mark refers to the protonym (name as originally published. The OTU name followed by (c) refers to a `subsequent combination``. It is best to choose the `subsequent combination`` as this will ensure that the data is tracked correctly.
 
 (UCD-specific note: in this case, there is a third choice, which looks like a ghost, that is, a name that was created as a string when host or distribution records were imported from the original UCD@NHM. You should ignore ghosts. UCD@TW are working on eliminating them).
 
@@ -273,9 +301,9 @@ HINT: `Topics` are unique to each project. For the UCD project, having created a
   - `Is absent` presumably means that the publication states that the taxon is not present in the designated area, but UCD notes they are not sure when to use this.
 - Next, enter the most restrictive geographic area present in the TW database, which in most cases will be a state or a province.  
 
-HINT: If the paper contains many new asserted distributions, it is more efficient to record these using the `New Asserted Distribution task`. Here you can lock in the source and each OTU, and enter the geographic areas one by one, without having to repeat the other information. In this example, we have locked the source and OTU (red arrows below), and we can enter geographic areas one by one. The task contains other tools (not shown below) that enable you to clone combinations of the Source/OTU, Source/Geographic area, or OTU/Geographic area.
+HINT: If the paper contains many new asserted distributions, it is more efficient to record these using the `New Asserted Distribution task`. Here you can lock in the source and each OTU, and enter the geographic areas one by one, without having to repeat the other information. In this example, we have locked the source and OTU (orange boxes), and we can enter geographic areas one by one. The task contains other tools (not shown below) that enable you to clone combinations of the Source/OTU, Source/Geographic area, or OTU/Geographic area.
 
-[INSERT SCREENSHOT HERE]
+#left[`New Asserted Distribution Task` showing how to lock fields for re-use](https://sfg.taxonworks.org/s/fi56ai[new asserted distribution task showing how information can be resused to create many new assertions from a given source that have shared information])
 
 Next, update the `tags` (if necessary) to track progress. UCD Example, once you have entered the `distribution` data from the source, if you are not at this time going to enter other information such as biological associations, add the `Source processed – Distribution` tag to the source.
 
@@ -326,7 +354,7 @@ HINT: _There is at least one important caveat._ If you are capturing information
 
 Images can be attached to various entities in TW, such as `Collection objects` (specimens) including types, `OTUs` (concepts of taxa), `Collecting events`, etc.  If you put images in TW that are not your own property or are in the public domain, you should be sensitive to copyright issues. TW will accept images in PNG, TIFF, or JPEG formats. The following are probably the most common cases in which you might wish to upload images.  
 
-Type specimen images.  
+#### Adding `Type specimen` images  
 - Navigate to the `Collection object` form for the type using the `New type specimen task`, or go to the `Type` screen (either `Quick` or `Comprehensive`) in the `Edit taxon name` form. 
 - If the type has not already been recorded (which will be the case for many old names), you will need to create it first. **Drag and drop** the image into the `Depiction field` (it contains the text `Drop images here to add figures`), in either the `quick` or `comprehensive type` screen.
   - Of course, if you do this, you need to be sure that the images are actually of the types! Note that you can add images to holotypes, allotypes, and all of the other types possible in the `Type` screen. 
@@ -337,7 +365,7 @@ If the image is something other than the type specimen itself, such as labels of
 - Choose `Depiction` and check `Is data depiction`. 
 - If you are pulling the image from a publication, find `Citation` in the `Radial annotator` below the image and give the `source` and `page number`. 
 
-OTUs.  
+#### Images depicting taxa go with OTUs  
 
 Images illustrating taxa should be attached to `OTUs`.
 - Use the `Browse taxa` task to find the `OTU`.
@@ -346,7 +374,7 @@ Images illustrating taxa should be attached to `OTUs`.
 - If you are pulling the image from a published source, be sure to enter the `source` and `page number`, using the `Citations` slice in the `Radial annotator` to the right of the image.
 - To delete an image, click the red `trash icon`<img src="https://sfg.taxonworks.org/s/lnxbjc" width=20px/> to the right of it.
 
-Copyright issues.  
+#### Adding Image Copyright infomation
 
 To enter the `copyright status` for an image, find the `Attribution` slice in the `Radial annotator` associated with it (it also has a copyright symbol in it). Here you will find a menu with different copyright options, the year of copyright, and various other places to enter the `Creator`, `Owner`, `Editor`, and `Copyright holder` for the image.
 

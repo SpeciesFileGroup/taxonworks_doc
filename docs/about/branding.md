@@ -12,7 +12,7 @@ _Official branding material for TaxonWorks._
 
 ![Black full](/images/branding/Logo-Full/TaxonWorks_Logo-Full-Black.svg)
 ![Brown full](/images/branding/Logo-Full/TaxonWorks_Logo-Full-Brown.svg)
-![Tan full]()
+![Tan full](/images/branding/Logo-Full/TaxonWorks_Logo-Full-Tan.svg)
 <img src="/images/branding/Logo-Full/TaxonWorks_Logo-Full-Tan.svg" alt="White full" style="background-color: gray;"><br>
 ![Green full](/images/branding/Logo-Full/TaxonWorks_Logo-Full-Green.svg)
 ![DarkGreen full](/images/branding/Logo-Full/TaxonWorks_Logo-Full-DarkGreen.svg)

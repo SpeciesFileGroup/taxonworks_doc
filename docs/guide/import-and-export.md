@@ -19,7 +19,7 @@ For bulk/batch uploads, TW supports import of various types of data including ch
 ### Batch imports
 There are various batch importers available within the UI (user interface). These are polished to differing degrees and have various benefits and limitations. The required format is described in the UI. All batch loaders are two-step, allowing for (and requiring) a preview of results before inserting them into the database.
 
-- To explore available batch loaders click on a Data card in the Hub. If batch loader(s) are available then then the batch load link will be enabled. 
+- To explore available batch loaders click on a Data card in the Hub. If batch loader(s) are available then the batch load link will be enabled. 
 - Batch importers largely target tab-separated text files, though this is not exclusively the case.
 - Notable batch loaders are found in the TaxonNames, Otus, and Sources data cards, though others exist. 
 - Explore various batch loaders (each data card highlighted in yellow has associated batch loaders at this writing).
@@ -96,7 +96,7 @@ For these **occurrence datasets** one needs to map each term to be imported. Thi
   - track uniqueness of each object and
   - group these objects. 
   
-  For example, in your collection of physical objects, your catalog numbers may have duplicates if your specimens have come from other instituion collections in the past. Creating namespaces in TW is simple to do, but spending some time on this before upload can simplify the process. Namespaces also need to be unique in your TW Project (first-come, first-served). [NEED EXAMPLES here].
+  For example, in your collection of physical objects, your catalog numbers may have duplicates if your specimens have come from other institution collections in the past. Creating namespaces in TW is simple to do, but spending some time on this before upload can simplify the process. Namespaces also need to be unique in your TW Project (first-come, first-served). [NEED EXAMPLES here].
 - In addition, if your dataset has terms not mappable to TW concepts or the DwC terms we currently support, you will need to create custom "Data Attributes." These need to be created before upload (ideally). If you don't, then records with these data will not upload but are easy for you to address after other records import.
 - For some **biocuration** data in TW you may find you need to add the group and accepted values for a given class before upload (e.g. group=caste and class=queen).
 
@@ -121,6 +121,7 @@ Term|Mapping
 `individualCount` | The total number of entities associated with the specimen record (e.g. this record may be for a "lot" containing 6 objects).
 `sex` | Selects the biocuration class from the "sex" biocuration group to be assigned as biocuration classification for the specimen.
 `preparations` | Selects an existing preparation matching the name with this value.
+`occurrenceRemarks` | A note, attached to the specimen
 
 #### Event class
 
@@ -138,19 +139,31 @@ Term|Mapping
 `habitat` | Verbatim habitat of the collecting event
 `samplingProtocol` | Verbatim method of the collecting event
 `fieldNotes` | Field notes of the collecting event
+`eventRemarks` | A note attached to the collecting event.
 
 #### Location class
 
 Term|Mapping
 ---|---
 `fieldNumber` | Verbatim trip identifier of collecting event
+`verbatimLocality` | Verbatim locality of the collecting event
+`minimumElevationInMeters` | Minimum elevation (in meters) of the collecting event
+`maximumElevationInMeters` | Maximum elevation (in meters) of the collecting event
+`verbatimElevation` | Verbatim elevation of the collecting event
+`decimalLatitude` | Stored as verbatim latitude. If `decimalLongitude` is also present, a Georeference is created
+`decimalLongitude` | Stored as verbatim longitude. If `decimalLatitude` is also present, a Georeference is created
+`georeferencedBy` | A list (concatenated and separated) of names of people, groups, or organizations who determined the georeference (spatial representation) for the Location. If data is present in this column the importer searches for a Predicate with the uri `http://rs.tdwg.org/dwc/terms/georeferencedBy` or name `georeferencedBy`. If neither exist, creates a new predicate with the name `georeferencedBy` to store the data verbatim.
+`georeferenceRemarks` | A note attached to the georeference
 
-#### Identifcation class
+#### Identification class
 
 Term|Mapping
 ---|---
-`identifiedBy` | A list (concatenated and separated) of names of people, groups, or organizations who assigned the Taxon to the subject. If possible, separate the values in a list with space vertical bar space \| (known as a pipe). (e.g. <code>Theodore Pappenfuss &#124; Robert Macey</code>)
+`identifiedBy` | A list (concatenated and separated) of names of people or organizations who assigned the Taxon to the subject. If possible, separate the values in a list with space vertical bar space `\|` (known as a pipe). (e.g. `Theodore Pappenfuss \| Robert Macey`)
 `dateIdentified` | The date on which the subject was determined as representing the Taxon. Best practice is to use a date that conforms to ISO 8601-1:2019 [see examples](https://dwc.tdwg.org/terms/#dwc:dateIdentified).
+`identificationRemarks`| Comments or notes about the determination
+`typeStatus` | A single nomenclatural type to be applied to the subject. If only the type status is supplied (eg. `holotype`), the taxon from the current determination is used. When a typified scientific name is also provided, (e.g. `holotype of Aus bus`), the importer will search through all taxa having relationships with the current determination for a taxon with that name. Including authorship information may resolve assist in resolving homonyms. Examples: `holotype` `syntype of Pseudomyrma triplaridis boxi Wheeler, 1942`
+`identificationQualifier` | Used to create/assign `OTU`s of temporary/working names. If used, its value match that of the lowest taxon rank (`specificEpithet`/`infraspecificEpithet`). For example, to create the OTU _Strumigenys sphera_cf1_ (linked to the TaxonName _Strumigenys_): `sphera_cf1`,  with `scientificName` `Strumigenys`, `genus` `Strumigenys`, and `specificEpithet` `sphera_cf1`
 
 #### Taxon class
 
@@ -161,37 +174,41 @@ Term|Mapping
 `phylum` | Creates (unless already present) a protonym at phylum rank
 `class` | Creates (unless already present) a protonym at class rank
 `order` | Creates (unless already present) a protonym at order rank
+`superfamily` | The protonym at superfamily rank
 `family` | Creates (unless already present) a protonym at family rank
+`subfamily` | The protonym at subfamily rank
+`tribe` | The protonym at tribe rank
+`subtribe` | The protonym at subtribe rank
 `genus` | Ignored. Extracted from `scientificName` instead
 `subgenus` | Ignored. Extracted from `scientificName` instead
 `specificEpithet` | Ignored. Extracted from `scientificName` instead
 `infraspecificEpithet` | Ignored. Extracted from `scientificName` instead
 `scientificName` | Several protonyms created (only when not present already) with their corresponding ranks and placements
 `taxonRank` | The taxon rank of the most specific protonym
-`higherClassification` | Several protonyms created (only when not present already) with their corresponding ranks and placement. In case a protonym was not already present, only family-group names will be created, names with classsification higher than family-group not previously registered will result in error. Names at genus rank or lower are ignored and extracted from `scientificName` instead
-`scientificNameAuthorship` | Verbatim author of most specific protonym
+`higherClassification` | Several protonyms created (only when not present already) with their corresponding ranks and placement. In case a protonym was not already present, only family-group names will be created, names with classification higher than family-group not previously registered will result in error. Names at genus rank or lower are ignored and extracted from `scientificName` instead
+`scientificNameAuthorship` | Verbatim author of most specific protonym. If creating new nomenclature is enabled and the name of the taxon doesn't exist, authorship will be parsed and added to the new Protonym.
 
 ### TW non-standard mappings
 
 The DwC importer task includes some TW-specific mappings that are neither DwC core terms nor in any DwC extension term lists but instead, direct mappings to predicates in your projects imported as data attributes for collection objects and collecting events, biocuration groups and classes, and as an advanced-use feature you may have direct mappings to model fields.
 
-**IMPORTANT**: If submitting an actual DwC-A zip file and not tab-separated text file or spreadsheet, this TW-specific mappings have to be placed as headers in the core table, and not in meta.xml. If you are replacing a mapping from meta.xml, you must make sure to comment it out and also if inserting colums make sure you do the appropriate adjustments to avoid collision.
+**IMPORTANT**: If submitting an actual DwC-A zip file and not tab-separated text file or spreadsheet, this TW-specific mappings have to be placed as headers in the core table, and not in meta.xml. If you are replacing a mapping from meta.xml, you must make sure to comment it out and also if inserting columns make sure you do the appropriate adjustments to avoid collision.
 
 #### Mappings to project predicates
 
-In cases where you need to import predicate values targetting the imported collection object or collecting event you may do so by naming the column with a pattern like `TW:DataAttribute:<target_class>:<predicate_identifier>`.
-`<target_class>` may be `CollectionObject` or `CollectingEvent`, and the `<predicate_identifier>` may be the either the name of the predicate or its URI. As an example if you have a predicate registered with name `ageInDays` and URI `http://rs.gbif.org/terms/1.0/ageInDays`, both `TW:DataAttribute:CollectionObject:ageInDays` and `TW:DataAttribute:CollectionObject:http://rs.gbif.org/terms/1.0/ageInDays` can be used to refer to the same predicate.
+In cases where you need to import predicate values targeting the imported collection object or collecting event you may do so by naming the column with a pattern like `TW:DataAttribute:<target_class>:<predicate_identifier>`.
+`<target_class>` may be `CollectionObject` or `CollectingEvent`, and the `<predicate_identifier>` may be either the name of the predicate or its URI. As an example if you have a predicate registered with name `ageInDays` and URI `http://rs.gbif.org/terms/1.0/ageInDays`, both `TW:DataAttribute:CollectionObject:ageInDays` and `TW:DataAttribute:CollectionObject:http://rs.gbif.org/terms/1.0/ageInDays` can be used to refer to the same predicate.
 
 #### Mappings to biocuration groups and classes
 
-The importer is able to map `sex` into the appropriate biocuration group and select the approriate class according to the value. For additional mappings you may use a special column name pattern to select a biocuration group like `TW::BiocurationGroup:<group_identifier>` where `<group_identifier>` can be the name of the biocuration group or its URI. In addition the values must match an existing biocuration class and you may use either its name or URI. For example, if you have a biocuration group registered with name `Caste` and URI `urn:example:ants:caste` and biocuration class with name `Queen` and URI `urn:example:ants:caste:queen` the following examples do all create the same biocuration classification:
+The importer is able to map `sex` into the appropriate biocuration group and select the appropriate class according to the value. For additional mappings you may use a special column name pattern to select a biocuration group like `TW::BiocurationGroup:<group_identifier>` where `<group_identifier>` can be the name of the biocuration group or its URI. In addition, the values must match an existing biocuration class and you may use either its name or URI. For example, if you have a biocuration group registered with name `Caste` and URI `urn:example:ants:caste` and biocuration class with name `Queen` and URI `urn:example:ants:caste:queen` the following examples do all create the same biocuration classification:
 |Caste|urn:example:ants:caste|
 |---|---|
 Queen|urn:example:ants:caste:queen
 urn:example:ants:caste:queen|Queen
 #### Mappings to DwC predicates
 
-Whenever the importer sees that your project has custom attributes for collecting events and/or collection objects that matches Darwin Core URI terms (`http://rs.tdwg.org/dwc/terms/<term>`), them will be imported as data attributes regardless of any existing mapping of the same field. This allows to preserve verbatim dataaset value for reference as also to import data from terms not supported by the importer.
+Whenever the importer sees that your project has custom attributes for collecting events and/or collection objects that matches Darwin Core URI terms (`http://rs.tdwg.org/dwc/terms/<term>`), them will be imported as data attributes regardless of any existing mapping of the same field. This allows to preserve verbatim dataset value for reference as also to import data from terms not supported by the importer.
 
 #### Direct mapping to TW model fields (advanced)
 
@@ -202,13 +219,19 @@ This is an advance mapping and requires knowledge of the underlying TW models. T
 |`CollectionObject`|`buffered_collecting_event`, `buffered_determinations`, `buffered_other_labels`, `total`,
 |`CollectingEvent`|`document_label`, `print_label`, `verbatim_label`, `field_notes`, `formation`, `group`, `lithology`, `max_ma`, `maximum_elevation`, `member`, `min_ma`, `minimum_elevation`, `elevation_precision`, `start_date_day`, `start_date_month`, `start_date_year`, `end_date_day`, `end_date_month`, `end_date_year`, `time_end_hour`, `time_end_minute`, `time_end_second`, `time_start_hour`, `time_start_minute`, `time_start_second`, `verbatim_collectors`, `verbatim_date`, `verbatim_datum`, `verbatim_elevation`, `verbatim_geolocation_uncertainty`, `verbatim_habitat`, `verbatim_latitude`, `verbatim_locality`, `verbatim_longitude`, `verbatim_method`, `verbatim_trip_identifier`
 
+
+#### Adding tags to `CollectingEvent`s and `CollectionObject`s
+Tags can be added to collection objects and collecting events during the import. To do so, use the column header pattern `TW:Tag:CollectionObject:<tag_name_or_uri>` or `TW:Tag:CollectingEvent:<tag_name_or_uri>`
+A value of `true` or `1` will add the tag to the object. No value, `false`, or `0` will skip applying the tag for that row. 
+If a tag is applied to a collecting event in one row, subsequent `false`/`0` values will not remove it.
+
 ### Coming from other software
 
 #### Scratchpads
 We are in the process of exploring two routes to come from Scratchpads to TaxonWorks.  
 
 * The DwC import should work well for occurrence data that is based on collected objects.
-* The SFG team is has worked with a select number of individual Scratchpad curators to script the process of transferring their datadata. Contact us if you are interested in what this approach entails. Note that this process takes programming effort that is a limited resource within the SFG.
+* The SFG team has worked with a select number of individual Scratchpad curators to script the process of transferring their datadata. Contact us if you are interested in what this approach entails. Note that this process takes programming effort that is a limited resource within the SFG.
 
 
 ## Export

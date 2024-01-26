@@ -15,14 +15,9 @@ Adding a data model to TaxonWorks largely follows [Rails conventions for scaffol
 
 You can exclude some files while generating the model:
 
-`rails generate scaffold Organization --no-javascript --no-viewspecs --no-fixture --no-stylesheets --no-assets --no-scaffold-stylesheet -p`
+`rails generate scaffold Organization --no-javascript --no-view-specs --no-request-specs --no-fixture --no-stylesheets --no-assets --no-scaffold-stylesheet -p`
 
 Tip: Notice the `-p` for "practice" (or "preview"), this lets you preview what will be done without writing any files.
-
-We do not use the following (TODO: update flags)
-
-* spec/requests/\<model\>_spec.rb
-* spec/views/\<model\>/
 
 ### Migration tips
 

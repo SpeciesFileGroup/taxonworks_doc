@@ -48,26 +48,26 @@ docker-compose exec app bundle exec rails db:seed
 
 ## Creating a new task
 
-You can stub all the basic code for a new task using a generator.  The result of this call is a new blank card in Tasks that leads you to a new blank interface. [See the code base for more](https://github.com/SpeciesFileGroup/taxonworks/blob/development/lib/generators/taxonworks/task/USAGE.md)
+You can stub all the basic code for a new task using a generator.  The result of this call is a new blank card in Tasks that leads you to a new blank interface. [See the code base for more](https://github.com/SpeciesFileGroup/taxonworks/blob/development/lib/generators/taxon_works/task/USAGE.md)
 
 ```ruby
-rails scaffold taxonworks:task ...
+rails scaffold taxon_works:task ...
 ```
 
-To create Vue.js based stub use the `--vue` flag.  When using this paramater do not include method params:
+To create a Vue.js based stub use the `--vue` flag.  When using this parameter do not include method params:
 
 ```ruby
-rails generate taxonworks:task print_labels labels/ --vue
+rails generate taxon_works:task print_labels labels/ --vue
 ```
 
 You can use `-p` to "practice" running the tasks (no files are written/changed).
 
 ## Creating a new batch loader
 
-There is a batch-load middle layer that batch loaders can take advantage of.  This generator stubs in all the basic pieces that can then be further refined.  [See the code base for more](https://github.com/SpeciesFileGroup/taxonworks/blob/development/lib/generators/taxonworks/batch_load/USAGE.md)
+There is a batch-load middle layer that batch loaders can take advantage of.  This generator stubs in all the basic pieces that can then be further refined.  [See the code base for more](https://github.com/SpeciesFileGroup/taxonworks/blob/development/lib/generators/taxon_works/batch_load/USAGE.md)
 
 ```ruby
-rails scaffold taxonworks:batch_load ...
+rails scaffold taxon_works:batch_load ...
 ```
 
 ## Adding inline-help

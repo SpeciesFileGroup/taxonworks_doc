@@ -2,6 +2,7 @@ import { path } from '@vuepress/utils'
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 import { searchPlugin } from '@vuepress/plugin-search'
+import { viteBundler } from '@vuepress/bundler-vite'
 import figurePlugin from './plugins/figure'
 import taskListPlugin from 'markdown-it-task-lists'
 import * as navbar from './configs/navbar'
@@ -11,6 +12,8 @@ import * as pluginsLang from './configs/plugins'
 export default defineUserConfig({
   lang: 'en-US',
   head: [['link', { rel: 'icon', href: '/images/favicon.svg' }]],
+
+  bundler: viteBundler(),
 
   locales: {
     '/': {

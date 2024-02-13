@@ -1,7 +1,7 @@
 export const es = [
   {
     text: 'Guía',
-    link: '/es/guide/',
+    link: '/es/guide/'
   },
   {
     text: 'Desarrollar',
@@ -13,7 +13,7 @@ export const es = [
   },
   {
     text: 'Citar',
-    link: '/es/about/citing-taxonworks/'
+    link: '/es/about/citing-taxonworks'
   },
   {
     text: 'API',
@@ -32,16 +32,16 @@ export const es = [
     children: [
       {
         text: 'Documentación',
-        link: 'https://github.com/SpeciesFileGroup/taxonworks_doc',
+        link: 'https://github.com/SpeciesFileGroup/taxonworks_doc'
       },
       {
         text: 'Codigo',
-        link: 'https://github.com/SpeciesFileGroup/taxonworks',
+        link: 'https://github.com/SpeciesFileGroup/taxonworks'
       },
       {
         text: 'API',
-        link: 'https://github.com/SpeciesFileGroup/taxonworks_api',
-      },
-    ],
+        link: 'https://github.com/SpeciesFileGroup/taxonworks_api'
+      }
+    ]
   }
 ]

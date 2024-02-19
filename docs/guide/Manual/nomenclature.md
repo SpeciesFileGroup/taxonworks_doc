@@ -531,6 +531,8 @@ HINT a la UCD@TW: It is the consenus of UCD@TW curators that if a genus is synon
 3. Choose `Valid` (nested under Available), and then be sure to 
 4. enter the `Source citation` and pagination as above, but this time use the `Radial annotator` in the right lower corner of the `Status` box.
 
+HINT: Note well, after a name has been removed from synonymy using the `Valid Status`, if that name is moved into synonymy again, first complete the steps to create the [new synonymy](https://docs.taxonworks.org/guide/Manual/nomenclature.html#new-synonymy-or-removal-from-synonymy-stat-rev), then delete the `Valid` status. **This last step is required to show the name in its new, synonymized state.**
+
 ### New combination
 
 In an older version of TW, your strategy depended upon whether the combination is really new (that is, the species has previously been placed in that genus), or whether the combination had been used before. Scenarios 1 and 2 below cover those cases, respectively. Both procedures still work, but as of November 2021, there is new functionality on the `Edit Taxon Name` page that allows you to handle either case. This is shown as option 3 below. Option 3 is probably the easiest, most preferred way to handle all new combinations now.

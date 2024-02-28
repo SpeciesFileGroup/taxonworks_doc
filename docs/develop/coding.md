@@ -6,6 +6,51 @@ sidebarPosition: 50
 
 _You **can** code (TaxonWorks). Here's where to learn how._
 
+## Some common development patterns
+_A list of commonly repeated development patterns in TaxonWorks._
+
+Tip: If you're using the docker development environment you'll want to replace calls to `rails` below with `bin/rails`.
+
+### Enter the app shell
+
+* Open a terminal
+```
+cd /path/to/taxonworks/
+```
+If using [Docker environment](https://github.com/SpeciesFileGroup/install_taxonworks/blob/master/development/docker/README.md) then continue with:
+```
+docker-compose exec app bash
+```
+That puts you in a bash shell inside the linux docker image.
+
+### Enter the Rails console
+* Enter the app shell (see above)
+```
+rails c
+exit
+```
+From here you can play around with rails models and query the state of the application. See below for an example of creating a new user by running `create!` on the `User` model.
+
+Tip: Take care when performing database operations from the console, you have direct access to your app's data there. If you're just interested in playing around or trying something out to see how it will work, you can use `rails console --sandbox` instead - any changes you make from sandbox mode will be rolled back when you exit.
+
+### Create a taxonworks user from the console
+A fresh install of taxonworks doesn't include any users. This section covers creating a single user, or read on below for creating a project, users, and some seed data all at once.
+* Enter the Rails console (see above)
+```
+User.create!(name: 'you', password: 'password', password_confirmation: 'password', self_created: true, is_administrator: true, email: 'user@example.com')
+quit
+```
+
+### Seed a project, users, and some data from the command line
+* Enter the app shell (see above)
+```
+bundle exec rails db:seed
+```
+Alternatively if you're using docker you can execute the command above straight from the taxonworks directory using docker-compose:
+```
+docker-compose exec app bundle exec rails db:seed
+```
+This creates an admin and a non-admin user, which are admin@example.com and user@example.com respectively, both with password `taxonworks`.
 
 ## Scaffolding
 

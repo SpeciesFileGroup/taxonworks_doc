@@ -517,6 +517,19 @@ HINT: The `New type specimen task` is also used to add or modify information on 
    - Enter the `Source` (use the blue pin key!) and `page number`(s). 
    - If this is the first time the synonymy has been proposed, check the `Is Original` box.
 
+#### Example of Synonymization of subgenera
+
+Problem: Eremidium had five subgenera that became synonyms. Current state of modified data: Eremidium (Eremidium) has almost all citations, 4 synonyms and 22 species whereas Eremidium has 28 species (the species of the synonyms were moved under the genus). What would be the easiest way to end up with Eremidium without subgenus and all the 50 species?
+
+The method is to delete the genus and elevate subgenus to the genus level using the following steps. In this way you will preserve most of the data.
+- Rename the genus to something recognizable, e.g. “Eremidiumdelete”
+- Go to the subgenus and change parent and rank to "Eremidium"
+- Synonymize all subgenera to “Eremidium” (previous subgenus)
+- Apply all soft validation fixes
+- Follow the procedure to delete the duplicate e.g. "Eremidiumdelelete".
+- If species remain under Eremidiumdelete, make Eremidiumdelete genus a syn of Eremidium and transfer all the species as suggested. Then delete synonym relationship.
+- Now the children of Eremidiumdelete need to run the soft validation fix to change the parent.
+
 #### Transfer species to new parent or not
 If the junior synonym is a genus name, you must then decide if you want to transfer some or all of the species to the new parent. 
 - Once you have made the synonymy, TW will present a table called `Manage Synonyms`. This shows the current parent, and by default, the new parent. You can change the latter to cover cases in which a genus is being split up and the species are being moved to different genera. 

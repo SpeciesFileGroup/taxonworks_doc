@@ -59,14 +59,13 @@ See the factories [README.md](https://github.com/SpeciesFileGroup/taxonworks/blo
 _At this point restarting the server should already show you a clickable card on `Data`._
 
 ### Controller
-
+If you're new to rails, keep in mind that controller actions render views, which rely on helpers, so as you work through this section be aware that you may need to also jump to sections below to get everything working.
 * !! Add the pertinent concerns to the controller (shared vs. project)
 * Update `index` to load recent records
 * Make sure to permit your attributes
-* Check for an autcomplete action, follow patterns as seen in other controllers
 * Add a `list` action
 
-#### Controller spec
+#### Controller specs
 
 Rails no longer generates controller specs for you, and they're of limited usefulness, so we currently don't use them with new models.
 
@@ -75,7 +74,6 @@ Rails no longer generates controller specs for you, and they're of limited usefu
 * Delete `index.html.erb`
 * Follow Rails conventions for `_form.html.erb`. See any other `_form.html.erb` for TaxonWorks conventions and markup. Replace bits with partials as needed (e.g. `/shared/errors`)
 * Ensure you have JSON responses for show and index, see `_attributes.json.jbuilder` pattern in most models
-* Most models can use an autocomplete, add `autocomplete.json.jbuilder`, the action, and controller, see Queries below
 * Update `show.html.erb` to use a shared view
 * Add `_attributes.html.erb` so that the shared view can render attributes
 * Add a `list.html.erb`
@@ -86,7 +84,19 @@ We do not use view specs, remove if you missed the flag.
 
 ### Queries
 
-* You may want/need to add a filter or autocomplete query for the model.  See [README.md](https://github.com/SpeciesFileGroup/taxonworks/blob/development/lib/queries/README.md)
+* You may want/need to add a filter or autocomplete query for the model.  See [README.md](https://github.com/SpeciesFileGroup/taxonworks/blob/development/lib/queries/README.md) and below for more on autocomplete.
+
+#### Autocomplete
+The following adds support for autocomplete requests from any source for your model:
+* Add an `autocomplete` action to your controller
+* Add `autocomplete.json.jbuilder`
+* Add more helpers to support formatting of autocomplete results, see the [Helpers](#helpers) README
+* Add a new `lib/queries/<model>/autocomplete.rb` file, see the Queries README above - this is where your autocomplete queries are defined.
+
+You'll probably want to support a search box for your shared show view. If so, first add the autocomplete support above and then:
+* Add `<model>_search_form` to your helpers to tell the show view to display the quick_search_form partial in its search box
+* Add a `_quick_search_form.html.erb` partial - if you dig down into the partial used there you'll find the call to the autocomplete code you set up earlier
+* Add a `search` action to your controller, this will render whichever object you select from the autocomplete results
 
 ### Helpers
 

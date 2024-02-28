@@ -74,7 +74,7 @@ Rails no longer generates controller specs for you, and they're of limited usefu
 * Delete `index.html.erb`
 * Follow Rails conventions for `_form.html.erb`. See any other `_form.html.erb` for TaxonWorks conventions and markup. Replace bits with partials as needed (e.g. `/shared/errors`)
 * Ensure you have JSON responses for show and index, see `_attributes.json.jbuilder` pattern in most models
-* Update `show.html.erb` to use a shared view
+* Update `show.html.erb` to use a shared view; the shared view is customizable, see otus for example and the view itself for available customizations
 * Add `_attributes.html.erb` so that the shared view can render attributes
 * Add a `list.html.erb`
 

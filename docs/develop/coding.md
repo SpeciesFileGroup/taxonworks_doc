@@ -19,6 +19,11 @@ You can exclude some files while generating the model:
 
 Tip: Notice the `-p` for "practice" (or "preview"), this lets you preview what will be done without writing any files.
 
+If you're doing TaxonWorks development in Docker then you'll run the above command from within the docker image (`docker-compose exec app bash`); as a result, if you're on linux or mac, the files created by the generate command will be owned by root in your local TaxonWorks folder. To fix that, you can run something like
+```
+git ls-files -z -o --exclude-standard|xargs -0 sudo chown [user]:[user]   # Please check the ls-files output before running sudo chown!
+```
+
 ### Migration tips
 
 _This is not comprehensive, see existing migrations for patterns._

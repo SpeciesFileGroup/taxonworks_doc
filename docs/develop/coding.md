@@ -52,6 +52,11 @@ docker-compose exec app bundle exec rails db:seed
 ```
 This creates an admin and a non-admin user, which are admin@example.com and user@example.com respectively, both with password `taxonworks`.
 
+## Run asynchronous code / active jobs / delayed jobs
+Running `rails s` is not enough to make queued jobs run since the way it is setup they don't run in-process. Certain downloads, for example, exist as queued jobs and won't be available until those jobs are run.
+
+To make them run open up a new app shell and run `rails jobs:work`; this will run any existing jobs and then sit and watch for new jobs to run as they come in. You may notice that the CPU usage may constantly be reaching 100% for short bursts (and also speed up your CPU fan). If this is an inconvenience to you, or you wish to control when it is a good time to start working off jobs you may instead use `rails jobs:workoff`. This command will run all existing pending jobs and then exit.
+
 ## Scaffolding a new model
 
 _This is not a comprehensive list for adding a new model, but rather some point by point reminders._

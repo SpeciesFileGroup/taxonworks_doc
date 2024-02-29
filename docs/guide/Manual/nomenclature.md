@@ -522,9 +522,9 @@ HINT: The `New type specimen task` is also used to add or modify information on 
 Problem: Eremidium had five subgenera that became synonyms. Current state of modified data: Eremidium (Eremidium) has almost all citations, 4 synonyms and 22 species whereas Eremidium has 28 species (the species of the synonyms were moved under the genus). What would be the easiest way to end up with Eremidium without subgenus and all the 50 species?
 
 The method is to delete the genus and elevate subgenus to the genus level using the following steps. In this way you will preserve most of the data.
-- Rename the genus to something recognizable, e.g. “Eremidiumdelete”
+- Rename the genus to something recognizable, e.g. "Eremidiumdelete"
 - Go to the subgenus and change parent and rank to "Eremidium"
-- Synonymize all subgenera to “Eremidium” (previous subgenus)
+- Synonymize all subgenera to "Eremidium" (previous subgenus)
 - Apply all soft validation fixes
 - Follow the procedure to delete the duplicate e.g. "Eremidiumdelelete".
 - If species remain under Eremidiumdelete, make Eremidiumdelete genus a syn of Eremidium and transfer all the species as suggested. Then delete synonym relationship.

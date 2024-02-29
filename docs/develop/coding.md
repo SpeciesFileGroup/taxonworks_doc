@@ -52,7 +52,7 @@ docker-compose exec app bundle exec rails db:seed
 ```
 This creates an admin and a non-admin user, which are admin@example.com and user@example.com respectively, both with password `taxonworks`.
 
-## Scaffolding
+## Scaffolding a new Model
 
 _This is not a comprehensive list for adding a new model, but rather some point by point reminders._
 
@@ -151,5 +151,27 @@ You'll probably want to support a search box for your shared show view. If so, f
 ### Helpers
 
 * There are some must-dos here, see [helper README](https://github.com/SpeciesFileGroup/taxonworks/blob/development/app/helpers/README.md)
+
+## Creating a new TaxonWorks task
+
+You can stub all the basic code for a new task using a generator.  The result of this call is a new blank card in Tasks that leads you to a new blank interface. [See the code base for more](https://github.com/SpeciesFileGroup/taxonworks/blob/development/lib/generators/taxon_works/task/USAGE.md).
+
+```ruby
+rails scaffold taxon_works:task ...
+```
+
+To create a Vue.js based stub use the `--vue` flag.  When using this parameter do not include method params:
+
+```ruby
+rails generate taxon_works:task print_labels labels/ --vue
+```
+
+You can use `-p` to "practice" running the generator (no files are written/changed).
+
+Non-Vue.js-based tasks use the standard rails routes/controller/views directory structure.
+
+Vue.js app files are located in `app/javascript/vue/tasks/` - for example the generator command above will create a file `app/javascript/vue/tasks/labels/print_labels/app.vue` where you can start writing your Vue app.
+
+Another difference: while pure-rails tasks will typically get access to controller data via html.erb files, Vue-based tasks will instead retrieve that data via ajax calls to controller actions which will return json data from json.jbuilder view files. In TaxonWorks those collections of ajax routines are referred to as endpoints, e.g. there's an Otu endpoint at `app/javascript/vue/routes/endpoints/Otu.js` for retrieving Otu-related data. If you're writing a task related to a new model, one of your first tasks will likely be creating a new enpoint for your model so that you can retrieve data from it in your task.
 
 

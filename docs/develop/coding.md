@@ -9,7 +9,7 @@ _You **can** code (TaxonWorks). Here's where to learn how._
 ## Some common development patterns
 _A list of commonly repeated development patterns in TaxonWorks._
 
-Tip: If you're using the docker development environment you'll want to replace calls to `rails` below with `bin/rails`.
+Tip: If you're using the Docker development environment you'll want to replace calls to `rails` below with `bin/rails`.
 
 ### Enter the app shell
 
@@ -21,7 +21,7 @@ If using [Docker environment](https://github.com/SpeciesFileGroup/install_taxonw
 ```
 docker-compose exec app bash
 ```
-That puts you in a bash shell inside the linux docker image.
+That puts you in a bash shell inside the linux Docker image.
 
 ### Enter the Rails console
 * Enter the app shell (see above)
@@ -29,12 +29,12 @@ That puts you in a bash shell inside the linux docker image.
 rails c
 exit
 ```
-From here you can play around with rails models and query the state of the application. See below for an example of creating a new user by running `create!` on the `User` model.
+From here you can play around with Rails models and query the state of the application. See below for an example of creating a new user by running `create!` on the `User` model.
 
 Tip: Take care when performing database operations from the console, you have direct access to your app's data there. If you're just interested in playing around or trying something out to see how it will work, you can use `rails console --sandbox` instead - any changes you make from sandbox mode will be rolled back when you exit.
 
-### Create a taxonworks user from the console
-A fresh install of taxonworks doesn't include any users. This section covers creating a single user, or read on below for creating a project, users, and some seed data all at once.
+### Create a TaxonWorks user from the console
+A fresh install of TaxonWorks doesn't include any users. This section covers creating a single user, or read on below for creating a project, users, and some seed data all at once.
 * Enter the Rails console (see above)
 ```
 User.create!(name: 'you', password: 'password', password_confirmation: 'password', self_created: true, is_administrator: true, email: 'user@example.com')
@@ -46,13 +46,13 @@ quit
 ```
 bundle exec rails db:seed
 ```
-Alternatively if you're using docker you can execute the command above straight from the taxonworks directory using docker-compose:
+Alternatively if you're using Docker you can execute the command above straight from the TaxonWorks directory using `docker-compose`:
 ```
 docker-compose exec app bundle exec rails db:seed
 ```
 This creates an admin and a non-admin user, which are admin@example.com and user@example.com respectively, both with password `taxonworks`.
 
-## Scaffolding a new Model
+## Scaffolding a new model
 
 _This is not a comprehensive list for adding a new model, but rather some point by point reminders._
 
@@ -64,7 +64,7 @@ You can exclude some files while generating the model:
 
 Tip: Notice the `-p` for "practice" (or "preview"), this lets you preview what will be done without writing any files.
 
-If you're doing TaxonWorks development in Docker then you'll run the above command from within the docker image (`docker-compose exec app bash`); as a result, if you're on linux or mac, the files created by the generate command will be owned by root in your local TaxonWorks folder. To fix that, you can run something like
+If you're doing TaxonWorks development in Docker then you'll run the above command from within the [app shell](#enter_the_app_shell); as a result, if you're on linux or mac, the files created by the generate command will be owned by root in your local TaxonWorks folder. To fix that, you can run something like
 ```
 git ls-files -z -o --exclude-standard|xargs -0 sudo chown [user]:[user]   # Please check the ls-files output before running sudo chown!
 ```
@@ -94,7 +94,7 @@ Add the data_routes concern, and move the scaffolded resources line into alphabe
   end
 ```
 
-### Spec Factory
+### Spec factory
 
 See the factories [README.md](https://github.com/SpeciesFileGroup/taxonworks/blob/development/spec/factories/README.md).
 
@@ -109,7 +109,7 @@ See the factories [README.md](https://github.com/SpeciesFileGroup/taxonworks/blo
 _At this point restarting the server should already show you a clickable card on `Data`._
 
 ### Controller
-If you're new to rails, keep in mind that controller actions render views, which rely on helpers, so as you work through this section be aware that you may need to also jump to sections below to get everything working.
+If you're new to Rails, keep in mind that controller actions render views, which rely on helpers, so as you work through this section be aware that you may need to also jump to sections below to get everything working.
 * !! Add the pertinent concerns to the controller (shared vs. project)
 * Update `index` to load recent records
 * Make sure to permit your attributes
@@ -137,7 +137,7 @@ We do not use view specs, remove if you missed the flag.
 * You may want/need to add a filter or autocomplete query for the model.  See [README.md](https://github.com/SpeciesFileGroup/taxonworks/blob/development/lib/queries/README.md) and below for more on autocomplete.
 
 #### Autocomplete
-The following adds support for autocomplete requests from any source for your model:
+To support autocomplete for your model:
 * Add an `autocomplete` action to your controller
 * Add `autocomplete.json.jbuilder`
 * Add more helpers to support formatting of autocomplete results, see the [Helpers](#helpers) README
@@ -146,7 +146,7 @@ The following adds support for autocomplete requests from any source for your mo
 You'll probably want to support a search box for your shared show view. If so, first add the autocomplete support above and then:
 * Add `<model>_search_form` to your helpers to tell the show view to display the quick_search_form partial in its search box
 * Add a `_quick_search_form.html.erb` partial - if you dig down into the partial used there you'll find the call to the autocomplete code you set up earlier
-* Add a `search` action to your controller, this will render whichever object you select from the autocomplete results
+* Add a `search` action to your controller, this will render whichever object is selected from the autocomplete results
 
 ### Helpers
 
@@ -160,7 +160,7 @@ You can stub all the basic code for a new task using a generator.  The result of
 rails scaffold taxon_works:task ...
 ```
 
-To create a Vue.js based stub use the `--vue` flag.  When using this parameter do not include method params:
+To create a Vue.js-based stub use the `--vue` flag.  When using this parameter do not include method params:
 
 ```ruby
 rails generate taxon_works:task print_labels labels/ --vue
@@ -168,10 +168,8 @@ rails generate taxon_works:task print_labels labels/ --vue
 
 You can use `-p` to "practice" running the generator (no files are written/changed).
 
-Non-Vue.js-based tasks use the standard rails routes/controller/views directory structure.
+Non-Vue.js-based tasks use the standard Rails routes/controller/views directory structure.
 
-Vue.js app files are located in `app/javascript/vue/tasks/` - for example the generator command above will create a file `app/javascript/vue/tasks/labels/print_labels/app.vue` where you can start writing your Vue app.
+Vue.js app files, on the other hand, are located in `app/javascript/vue/tasks/` - for example the generator command above will create a file `app/javascript/vue/tasks/labels/print_labels/app.vue` where you can start writing your Vue app.
 
-Another difference: while pure-rails tasks will typically get access to controller data via html.erb files, Vue-based tasks will instead retrieve that data via ajax calls to controller actions which will return json data from json.jbuilder view files. In TaxonWorks those collections of ajax routines are referred to as endpoints, e.g. there's an Otu endpoint at `app/javascript/vue/routes/endpoints/Otu.js` for retrieving Otu-related data. If you're writing a task related to a new model, one of your first tasks will likely be creating a new enpoint for your model so that you can retrieve data from it in your task.
-
-
+Another difference: while pure-Rails tasks will typically get access to controller data via html.erb files, Vue-based tasks will instead retrieve that data via ajax calls to controller actions which will return json data from json.jbuilder view files. In TaxonWorks those collections of ajax routines are referred to as endpoints, e.g. there's an Otu endpoint at `app/javascript/vue/routes/endpoints/Otu.js` for retrieving Otu-related data. If you're writing a task related to a new model, one of your first tasks will likely be creating a new endpoint for your model so that you can retrieve data from it in your task.

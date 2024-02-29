@@ -8,14 +8,14 @@ _TaxonWorks offers conventions via a unique user interface building in forward-a
 
 ## Philosophy
 
-- TW seeks to offer a user interface (UI) that is as intuitive as possible that supports elegant software features to improve both the experience and the data products.  
+- TW seeks to offer a user interface (UI) that is as intuitive as possible that supports elegant software features to improve both the experience and the data products.
 - This guide and manual exemplify one way in which the Species File Group and TaxonWorks endeavor to build a sustainable, open, transparent community. The software and process for building and maintaining the content here were selected specifically for ease of community curation of this resource.
 - The structure, tasks, and features of TW focus on addressing specifically-stated needs of those using the product. We use an agile, "epic story" approach that can be summarized as: _As a [your role], I want to do [your task], in order to accomplish [some product]._
 - Note color conventions used in the TW UI offer information to orient the observer to more information (e.g. this task is still under development, or these data are shared across projects).
 
 
 ## Logging in
-This screenshot provides a quick overview of the TW User Interface after log in. In the caption, you will find brief descriptions of each highlighted feature. If you have an account, please log in and click to try header menu options. 
+This screenshot provides a quick overview of the TW User Interface after log in. In the caption, you will find brief descriptions of each highlighted feature. If you have an account, please log in and click to try header menu options.
 
 
 #left[**Legend**: The TaxonWorks User Interface after signin. See items explained next](https://sfg.taxonworks.org/s/ax1ccw [screenshot of the TaxonWorks User Interface options after logging in])
@@ -29,7 +29,7 @@ This screenshot provides a quick overview of the TW User Interface after log in.
   - `Account` to access your own account information
   - `Sign out`/in
 
-In the main section (left-to-right): click items under the headers. Options under `Projects` give you access to all your projects. With `Data` you can view `recently created` data added for that project. With `Preferences` you can order the User Interface hub options `Tasks`, `Data`, and `Favorites`. 
+In the main section (left-to-right): click items under the headers. Options under `Projects` give you access to all your projects. With `Data` you can view `recently created` data added for that project. With `Preferences` you can order the User Interface hub options `Tasks`, `Data`, and `Favorites`.
 
 - On the far bottom right, note the four icons (top to bottom).
   - Click a half-circle icon on the right side to open a panel
@@ -50,7 +50,7 @@ Under the `Data` topic, using `Overview` you can create specific reports for dif
 ### Add New Project
 #left[**Legend**: Add New Project UI](https://sfg.taxonworks.org/s/y40u6c [screenshot of the TaxonWorks Add New Project UI] w{60%})
 - To create a `New` Project
-  - Click `Administration` in the header menu, 
+  - Click `Administration` in the header menu,
   - then under `Projects` click `New`
   - Enter the desired `Name` in the field provided
   - You are a member by default.
@@ -71,7 +71,7 @@ Sandbox Only: Feel free to **add yourself to projects that are currently not vis
 - Click `List`
 - Review the list, select one using **Double click** for that `row`
 - Click `Add project member`, find your name
-- Click `Create Project member` 
+- Click `Create Project member`
 
 ### Add New User
 
@@ -93,7 +93,7 @@ Before adding anyone to the list of TW `Users`, please check the list as someone
 
 Note: you can also go to `Batch add new` to add many `users` at one time (see under `Administration` > `Users` > `Batch add new`) and you will need their email and name string for each new user.
 
-Note: in TaxonWorks a `Person` differs from a `User`. To be a `Person` in TaxonWorks, you have been vetted and with best practice, you have a globally unique identifier (e.g. an ORCiD or Wikidata Q number). 
+Note: in TaxonWorks a `Person` differs from a `User`. To be a `Person` in TaxonWorks, you have been vetted and with best practice, you have a globally unique identifier (e.g. an ORCiD or Wikidata Q number).
 
 ### Add Project Member
 
@@ -109,9 +109,9 @@ When you want to add an existing TW `User` to a `Project`see these steps:
 If you need to add many folks at one time, use the `Add many project members` option instead. (See `Project` > `Members` > `Add many project members`) and select the desired individuals and click `Create project members`.
 
 ### Inside a Project
-Note that once you log into a given project, you see 3 options for interacting with others and data. See the `Tasks`, `Data`, and `Favorites` tabs. 
+Note that once you log into a given project, you see 3 options for interacting with others and data. See the `Tasks`, `Data`, and `Favorites` tabs.
 
-The `Tasks` provide you with one-click access to working on a specific activity such as `Filter Sources` for the ones you seek or `Comprehensive Digitization` of specimen data. 
+The `Tasks` provide you with one-click access to working on a specific activity such as `Filter Sources` for the ones you seek or `Comprehensive Digitization` of specimen data.
 - currently 80 tasks exist in TW
 - tasks can be customized
 - new tasks can be written
@@ -119,9 +119,9 @@ The `Tasks` provide you with one-click access to working on a specific activity 
 - tasks are associated with given global concepts (e.g. `Nomenclature`, `Source`, `Biology`, `Collection object`, `Collecting event`, `Image`, `Matrix`, `dna`, etc.)
 
 With the `Favorites` tab, you can store your most-used tasks (aka activities) for quick access to what you do most often.
-- To add a task to appear in your `Favorites` tab, click the 'star' on the task card. 
+- To add a task to appear in your `Favorites` tab, click the 'star' on the task card.
 
-The `Data` tab provides you with more of a traditional _table_ view of information as stored in TW. Here you begin to get a sense of how the data are structured and related in TW. 
+The `Data` tab provides you with more of a traditional _table_ view of information as stored in TW. Here you begin to get a sense of how the data are structured and related in TW.
 
 If you would like more details about the TW Data Model, see the [Data](https://docs.taxonworks.org/develop/Data/) section of docs.taxonworks.org
 
@@ -137,14 +137,14 @@ With your knowledge of the `Tasks`, `Data`, and `Favorites` structure you can tr
 Some icons in TaxonWorks help you move around (i.e. "navigate") in the software. Other icons _touch the database_, providing you with functions to add data or delete something. In TaxonWorks, icon button colors convey this idea.
 - Green buttons = write to the database
 - Red buttons = delete from the database
-- Blue buttons = activate something in the interface 
+- Blue buttons = activate something in the interface
 
 Note also, all icons with a blue circle and white middle are `Radials` and serve to help you add information to (i. e. to `annotate`) the object you are looking at (e. g. the `Source` publication record, the `CollectionObject` record, the `Collecting Event` record, the `TaxonName` record, etc). In other words, a tool found many places in TW, that integrates commonly used functions or tasks for annotating things (adding related information) in one place.  The particular functions found after click are context dependent.
 
 | Icon   | Icon Name      | Purpose of Icon
 |:----------|:-----------------|----------------------------------------|
 ||**Radial Icons in TaxonWorks**   | use these to add information to the current object of interest, move to a different area in TW, or select objects of interest. The particular functions found after click show you what types of information you can add or actions you can take. |
-|<img src="https://sfg.taxonworks.org/s/o70iza"> |Annotate Radial    | use this to add information to the current object of interest. The particular functions found after click are show you what types of information you can add. |
+|<img src="https://sfg.taxonworks.org/s/o70iza"> |Annotate Radial    | use this to add information to the current object of interest. The particular functions found after click show you what types of information you can add. |
 |<img src="https://sfg.taxonworks.org/s/59mm5b"> |Navigate Radial     | use this icon to move across to different areas in TaxonWorks  |
 |<img src="https://sfg.taxonworks.org/s/ybfj5n"> |Mass Annotate Radial     | use this icon to add information to many records at once in TaxonWorks  |
 |<img src="https://sfg.taxonworks.org/s/l80fse"> |Filter Radial     | use this icon to select a set of records from a search in TaxonWorks using the `Filter` task (e. g. `Filter Nomenclature`, `Filter Sources`, `Filter Collection Objects`, etc.)|
@@ -157,9 +157,9 @@ Note also, all icons with a blue circle and white middle are `Radials` and serve
 | <img src="https://sfg.taxonworks.org/s/6kzyps"> |Browse Nomenclature | takes you from an OTU to its associated taxonomic name |
 | <img src="https://sfg.taxonworks.org/s/ge5g3e">|Pinboard            | Add (if green) or Remove (if red) an item from your Pinboard. If the icon is blue, the item has been selected as the default in your pinboard and you can add it to a field automatically, for example, with literature citations.     |
 | <img src="https://sfg.taxonworks.org/s/fw8tpm">|Edit | With this icon, you may edit a given item. For example, from the `Browse nomenclature` page, this icon takes you to the `Edit taxon name` page associated with the taxon.
-| <img src="https://sfg.taxonworks.org/s/piaoh5">|Trashcan            | Use this to remove the current record from the database                                | 
+| <img src="https://sfg.taxonworks.org/s/piaoh5">|Trashcan            | Use this to remove the current record from the database                                |
 
 
 ## Did you know
 - As of this writing, you can only be logged into one instance (one project) of TW at-a-time.
-- You can write your own tasks in TW? Ask us how.
+- You can write your own tasks in TW? See [the docs](https://docs.taxonworks.org/develop/coding.html#creating_a_new_taxonworks_task) or ask for more details.

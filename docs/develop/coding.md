@@ -163,7 +163,7 @@ You'll probably want to support a search box for your shared show view. If so, f
 You can stub all the basic code for a new task using a generator.  The result of this call is a new blank card in Tasks that leads you to a new blank interface. [See the code base for more](https://github.com/SpeciesFileGroup/taxonworks/blob/development/lib/generators/taxon_works/task/USAGE.md).
 
 ```ruby
-rails scaffold taxon_works:task ...
+rails generate taxon_works:task ...
 ```
 
 To create a Vue.js-based stub use the `--vue` flag.  When using this parameter do not include method params:
@@ -173,6 +173,9 @@ rails generate taxon_works:task print_labels labels/ --vue
 ```
 
 You can use `-p` to "practice" running the generator (no files are written/changed).
+
+As in the model-generating case, if you're developing using Docker then you'll be running `bin/rails generate` from a Docker app shell.
+ * If you're on linux or mac then any new files created by the command will be owned by root in your local taxonworks folder. See [Scaffolding a new model](#scaffolding-a-new-model) for a command to fix that.
 
 Non-Vue.js-based tasks use the standard Rails routes/controller/views directory structure.
 

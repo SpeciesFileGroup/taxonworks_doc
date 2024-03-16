@@ -110,6 +110,7 @@ See the factories [README.md](https://github.com/SpeciesFileGroup/taxonworks/blo
 * Tweak the model test to add at least a couple unit tests (`spec/models`)
 * If the model is project specific register it in `app/models/project.rb` `MANIFEST`
 * Register the model in `config/interface/hub/data.yml` (see comments therein)
+* If your model uses `has_closure_tree` add the hierarchy table for project export in `lib/export/project_data.rb`
 
 _At this point restarting the server should already show you a clickable card on `Data`._
 

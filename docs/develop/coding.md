@@ -193,8 +193,7 @@ See [Icons in TaxonWorks](https://docs.taxonworks.org/guide/Manual/conventions.h
 * Both radial annotators and navigators take an object of some model as input (via a Rails [global id](https://github.com/rails/globalid))
 
 ### Radial annotator slices
-* In short, you add slices to radial annotators for your model by including annotation concerns such as `Shared::Citations` or `Shared::Depictions` on your model
-* In more detail, there is a list of annotation types (see `ANNOTATION_TYPES`); when you add one of those concern types to your model, e.g. using `include Shared::Citations`, it adds a `has_many citations` relation on your model, which is how your model knows it has associated citations (the other side of the association is polymorphic, set up in part by including the`Shared::PolymorphicAnnotator` concern in the annotation model). The `Shared::IsData` concern, which all annotatable models must have, includes an `annotation_metadata` method which checks for the presence of such annotation relations on your model. Radial annotators query the `/annotations/:global_id/metadata` route to retrieve that data (see the associated `metadata.json.jbuilder` view) to figure out which annotations your model supports, and therefore which slices an annotator should present for an object of that model.
+* Add slices to radial annotators for your model by including annotation concerns such as `Shared::Citations` or `Shared::Depictions` on your model.
 * Your Vue task can respond to the addition, deletion, or editing of annotations via a radial annotator by listening for the `create`, `delete`, and `update` events emitted by the annotator.
 
 ### Radial navigator slices

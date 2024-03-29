@@ -12,7 +12,7 @@ As a researcher, as an ecologist, as a collection manager, you want to gather, a
 
 #left[The `New collection object` task best suits minimal or skeletal data record creation](https://sfg.taxonworks.org/s/lozewk [The `New collection object` task best suits minimal or skeletal data record creation offering only a few fields])
 
-`New Collecting Event Task`: In addition to the data about the `what` (that is, the physical specimen itself), information about the `where`, `how`, `who`, and `when`, etcetera fit elsewhere in the TaxonWorks data model: the `New Collecting Event (CE) Task` stores information about the where, when, and who.
+`New Collecting Event Task`: In addition to the data about the `what` (that is, the physical specimen itself), information about the `where`, `how`, `who`, and `when`, etcetera fit in the TaxonWorks data model in the `New Collecting Event (CE) Task`.
 
 #left[Use the `New collecting event` task to capture events](https://sfg.taxonworks.org/s/wngpga [The `New collecting event` task offers a way to add just the collecting events instead of other related data])
 
@@ -86,7 +86,7 @@ Here you find the information about the `who`, `when`, and `where` for the speci
   - `Habitat`: if provided on label or in another related souce, enter the `habitat` as it is shown in the image or relevant document.
   - `Date`: if provided on label or in another related souce, enter the `date` as it is shown in the image or relevant document.
   - `Datum`: if provided on label or in another related souce, enter the `datum` as it is shown in the image or relevant document.
-  - `Collectors`: if provided on label or in another related souce, enter the `collectors` as they appear in the image or relevant document.
+  - `Collectors`: if provided on label or in another related souce, enter the `collectors` as they appear in the image or relevant document. This would have the collector information as it appears on your document.
   - `Method`: if provided on label or in another related souce, enter the `method` as it is shown in the image or relevant document.
   - `Trip identifier`: if provided on label or in another related souce, enter this identifier as it is shown in the image or relevant document.
 
@@ -99,16 +99,24 @@ This section helps to atomize all the information about when and where and who i
 - `Elevation`: note a range and uncertainty can be added here. Please declare the units.
 - `Start time`: If relevant and provided, enter the time the event started.
 - `End time`: If relevant and provided, enter the time the event ended.
-- `Collectors`: 
-- `Trip code`:
-- `Identifier`:
-- `Group`:
-- `Formation`:
-- `Member`:
-- `Lithology`:
-- `Minumum MA`:
-- `Maximum MA`:
-- `Custom attributes`:
+- `Collectors` section: Search to find the collector(s). `Click` the desired `Collector` from the drop-down list. If you have more than one, Search to find the next collector and again, `Click` the desired name from the drop-down list. If the name you are searching for is not there, type the name (`family name, given name`) and `Click` `add new`. Repeat until you have all the collectors added for that `Collecting Event`.
+- `Trip code` section: The trip code comes from the combination of a `Namespace` and an `Identifier`. Together, they server as your unique identifier you assigned to this `Collecting Event`.
+- `Namespace` : `Search` to find the desired `Namespace` (if desired). You may need to add a `Namespace`. To do that see `New namespace` task.
+- `Identifier`: Enter the alphanumeric value that was selected for this `Collecting Event`.
+- `Group`: This is a geological term. From Wikipedia, "a lithostratigraphic unit consisting of a series of related formations that have been classified together to form a group." Enter the `Group` name.
+- `Formation`: The full name of the lithostratigraphic formation from which the dwc:MaterialEntity was collected _sensu_ [Darwin Core dwc:formation](http://rs.tdwg.org/dwc/terms/formation)
+- `Member`: The full name of the lithostratigraphic member from which the dwc:MaterialEntity was collected _sensu_ [Darwin Core:dwc:member](http://rs.tdwg.org/dwc/terms/member)
+- `Lithology`: From Wikipedia, "the lithology of a rock unit is a description of its physical characteristics visible at outcrop, in hand or core samples, or with low magnification microscopy." Enter the rock description here.
+- `Minumum MA`: The value representing an estimation for the minimum age of the material in million year units. MA is "megaannus".
+- `Maximum MA`: The value representing an estimation for the maximum age of the material in million year units. 
+- `Custom attributes` section: Each project in TaxonWorks can add new (customized) fields to their `Collecting Events` or their `Collection Objects`. Examples might be:  
+  -`WaterBody`: The name of the water body in which the dcterms:Location occurs. This term concept (its definition and expectations) comes from the Darwin Core standard, see [dwc:waterBody](  http://rs.tdwg.org/dwc/terms/waterBody)
+  -`georeferenceSources`: A list (concatenated and separated) of maps, gazetteers, or other resources used to georeference the dcterms:Location, described specifically enough to allow anyone in the future to use the same resources. This term concept (its definition and expectations) comes from the Darwin Core standard, see [dwc:georeferenceSources](http://rs.tdwg.org/dwc/terms/georeferenceSources)
+  -`lowestBiostratigraphicZone`: The full name of the lowest possible geological biostratigraphic zone of the stratigraphic horizon from which the dwc:MaterialEntity was collected. This term concept (its definition and expectations) comes from the Darwin Core standard, see [dwc:lowestBiostratigraphicZone](http://rs.tdwg.org/dwc/terms/lowestBiostratigraphicZone).
+
+  To add new fields to either your `CollectingEvent` or `CollectionObject` data model, you will need to access
+    - the `Manage Controlled Vocabulary Terms` task and
+    - (For Project Administrators), the `Project Preferences` to associate the newly added terms with the correct TW Object (e. g. the `CollectionObject` or `CollectingEvent`) so these terms will appear in the relevant tasks.
 
 #### `Biological Associations` inside `Comprehensive specimen digitization Task`
 

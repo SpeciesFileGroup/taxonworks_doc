@@ -6,6 +6,8 @@ sidebarPosition: 60
 
 _Many projects start with imports, and target exports. Here is where you find what is possible in TaxonWorks._
 
+For strategies on migrating whole projects see [Migrate to TaxonWorks](/guide/migrate-to-TaxonWorks)
+
 ## Import
 
 TaxonWorks offers two ways to import data: 1) via the User Interface (UI) entering one-to-many records at a time or batch uploading files, and 2) programmatically with customized scripts for large datasets (e.g. > 1000 records). We seek to make the data import and entry as savvy as possible. As you experience these options, please contribute your ideas for ways to enhance these processes. (Submit ideas, submit code, and please bring your voice to our [sfgcommons meetings on Wednesdays](https://speciesfilegroup.org/events.html)).
@@ -15,6 +17,10 @@ For bulk/batch uploads, TW supports import of various types of data including ch
 
 - sample checklist (link)
 - sample specimen record dataset (link) 
+
+### Drag-drop
+
+A powerful drag/drop tool lets you quickly load images to the system, linking them to attribution and taxon metadata. Relative to the time spent taking iamges the upload requirements should be negligible. See `Tasks -> New image`.
 
 ### Batch imports
 There are various batch importers available within the UI (user interface). These are polished to differing degrees and have various benefits and limitations. The required format is described in the UI. All batch loaders are two-step, allowing for (and requiring) a preview of results before inserting them into the database.

@@ -68,20 +68,31 @@ To upload occurrence data, TW offers the ability to use a DwC Archive file forma
 
 To use this approach you must have your specimen data in a single spreadsheet-style format that can be export as "CSV".
 
-Preparing for an import follows the following general proceedures:
+Preparing for an import follows the following general procedures:
 * [Map your data](/guide/import/map-your-data) (provide a column header) for each column of data to be imported
-* [Configure your TaxonWorks project](/guide/import#configure-your-project) by creating records that will be used during the import process
+* [Configure TaxonWorks for your DwC import](/guide/import#configure-taxonworks-for-your-dwc-import) by creating records that will be used during the import process
 
-::: warning
-As part of the process you may need to go back and forth between the mapping and configuring
+::: tip 
+As part of your process you may need to go back and forth between mapping and configuring
 :::
 
 ### Map your data
 
-The DwC importer provides flexibility in importing diverse data. These fall into 3 types:
+The DwC importer provides flexibility in importing diverse data. These fall in to several types:
 1) DwC terms
 2) User customizable data attributes
-3) TaxonWorks specific attributes
+3) User customizable biocuration classes
+3) TaxonWorks' model specific attributes
+
+As headers, these will look like this: 
+
+`catalogNumber`|`TW:DataAttribute:CollectionObject:color`|`caste`|`TW:CollectingEvent:verbatim_collectors`
+---|---|---|---
+_A DwC term mapping_ | _A user customizable data attribute_ | A TW biocuration attribute | _A TW specific attribute_ 
+
+::: tip
+A first step is to go through your data and figure out which column header type you'll need.  Start by matching to supported DwC terms, then go on from there.
+:::
 
 #### DwC term mapping
 
@@ -163,6 +174,8 @@ The DwC importer task includes some TW-specific mappings that are neither DwC co
  If submitting an actual DwC-A zip file and not tab-separated text file or spreadsheet, this TW-specific mappings have to be placed as headers in the core table, and not in meta.xml. If you are replacing a mapping from meta.xml, you must make sure to comment it out and also if inserting colums make sure you do the appropriate adjustments to avoid collision.
 :::
 
+_See [Configure TaxonWorks for your DwC import](/guide/import#configure-taxonworks-for-your-dwc-import) for how to create the records referenced in these mappings._
+
 ##### Mappings to project predicates
 
 In cases where you need to import predicate values targetting the imported collection object or collecting event you may do so by naming the column with a pattern like `TW:DataAttribute:<target_class>:<predicate_identifier>`.
@@ -189,15 +202,44 @@ This is an advance mapping and requires knowledge of the underlying TW models. T
 |`CollectionObject`|`buffered_collecting_event`, `buffered_determinations`, `buffered_other_labels`, `total`,
 |`CollectingEvent`|`document_label`, `print_label`, `verbatim_label`, `field_notes`, `formation`, `group`, `lithology`, `max_ma`, `maximum_elevation`, `member`, `min_ma`, `minimum_elevation`, `elevation_precision`, `start_date_day`, `start_date_month`, `start_date_year`, `end_date_day`, `end_date_month`, `end_date_year`, `time_end_hour`, `time_end_minute`, `time_end_second`, `time_start_hour`, `time_start_minute`, `time_start_second`, `verbatim_collectors`, `verbatim_date`, `verbatim_datum`, `verbatim_elevation`, `verbatim_geolocation_uncertainty`, `verbatim_habitat`, `verbatim_latitude`, `verbatim_locality`, `verbatim_longitude`, `verbatim_method`, `verbatim_trip_identifier`
 
-### Configure your project
+### Configure TaxonWorks for your DwC import
 
-- For your dataset, you may need to create one or more **namespaces.** These namespaces allow TW to
-  - track uniqueness of each object and
-  - group these objects. 
-  
-For example, in your collection of physical objects, your catalog numbers may have duplicates if your specimens have come from other instituion collections in the past. Creating namespaces in TW is simple to do, but spending some time on this before upload can simplify the process. Namespaces also need to be unique in your TW Project (first-come, first-served). [NEED EXAMPLES here].
-- In addition, if your dataset has terms not mappable to TW concepts or the DwC terms we currently support, you will need to create custom "Data Attributes." These need to be created before upload (ideally). If you don't, then records with these data will not upload but are easy for you to address after other records import.
-- For some **biocuration** data in TW you may find you need to add the group and accepted values for a given class before upload (e.g. group=caste and class=queen).
+To import your DwC you many need to create several types of things in TaxonWorks. These include [namespaces](Manual/identifiers#namespaces) and [controlled vocabulary terms](Manual/customization#controlled-vocabulary-terms).
+
+#### Namespaces
+
+In the context of the DwC importer namespaces allow TW to
+- Assign an Identifier as a CatalogNumber
+- Track uniqueness of each object during the import, helping TW to normalize your data, turning it from rows to Things
+- Group your Identifiers (and therefor the CollectionObjects they reference) as coming from a specific place
+
+#### Controlled vocabulary terms
+
+There are several kinds of CVTs that may be used in the import process.
+
+::: tip
+All CVTs are created and managed via the `Manage controlled vocabulary terms task`.
+::: 
+
+##### Predicates 
+
+Think of Predicates as your custom column headers. Predicates are referenced in DataAttributes. Use a Predicate when you want to assign many different values (have rows with many different values) under one heading.
+
+##### Biocuration classes
+
+Think of biocuration classes as custom attributes for your collection objects, things like  'male', 'pupa', or 'larva'.  These let you assign values useful for your curation of your specimens in a controlled way, ensuring problems like 'M.', 'MALE', 'ale' don't happen in what might otherwise be a "Sex" field. [TODO: reference groups?]. This approach is used when your rows have only a few specific values across the dataset.
+
+### Unmapped columns
+
+Column headers that can't be linked via one of the 3 mechanisms are ignored during the import process. This means its important to do some trial runs in a sandbox, or with a smaller dataset to see that your values are mapping over. The `Browse collection object` task is a good place to check this.
+
+::: danger 
+No warning is given when columns do not map, they are simply ignored.
+:::
+
+::: tip
+You can augment your data after import with batch update functionality inside TW. Carefully planning your overal import process can lead to a more efficient overall approach.  Sometimes its easier to work in spreadsheets, sometimes within a database.
+:::
 
 ## Drag and drop
 

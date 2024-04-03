@@ -69,7 +69,7 @@ To upload occurrence data, TW offers the ability to use a DwC Archive file forma
 To use this approach you must have your specimen data in a single spreadsheet-style format that can be export as "CSV".
 
 Preparing for an import follows the following general procedures:
-* [Map your data](/guide/import/map-your-data) (provide a column header) for each column of data to be imported
+* [Map your data](/guide/import#map-your-data) (provide a column header) for each column of data to be imported
 * [Configure TaxonWorks for your DwC import](/guide/import#configure-taxonworks-for-your-dwc-import) by creating records that will be used during the import process
 
 ::: tip 

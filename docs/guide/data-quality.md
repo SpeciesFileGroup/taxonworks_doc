@@ -29,7 +29,7 @@ In TaxonWorks, different types of records have dates associated, for example: th
 - **_flourit_ date and event date not compatible.**
 
 #### Filter Collecting Event by Date
-**Find** outlier dates using the `Filter Collecting Event` task, the `Filter Collection Object` task, and (in development) the `Project Vocabulary` task.
+**Find** outlier dates using the `Filter Collecting Event` task, the `Filter Collection Object` task, and you can use the `Project Vocabulary` task to peak inside each field in your database to see distinct values and the records with those values.
 
 #left[Using the **date range** method to find outlier dates with the `Filter Collecting Event` task](https://sfg.taxonworks.org/s/xcmcsl [the Filter Collecting Event task user interface showing where to enter start and end dates to filter with])
 
@@ -39,8 +39,12 @@ In TaxonWorks, different types of records have dates associated, for example: th
   - e. g. to check for future out-of-bounds dates try putting "tomorrow's" date in for the `start date` and some date way into the future for the `End date`
 - Click `Filter` to see resulting records.
 
-**Find** outlier dates using the (_in development_) `Project Vocabulary` task.
-With this task, one can see the unique values present for a given field and how many times that string/value occurs. In the future, you will be able to then click on one of the results of the output and see the associated records having that value. For the **out-of-expected-bounds-date** use case, one could see odd unexpected dates easily.
+::: tip 
+Note you can click any column to sort on that column (which sorts only for the records showing on that page). This makes it simpler to see outliers in a date-related column. These sets can also be downloaded as CSV files if need be.
+:::
+
+**Find** outlier dates using the `Project Vocabulary` task.
+With this task, one can see the unique values present for a given field and how many times that string/value occurs. You `click` on one of the results of the output and see the associated records having that value. For the **out-of-expected-bounds-date** use case, one could see odd unexpected dates easily.
 
 **Find** outlier dates based on someone's lifespan, when known. In the future, you can expect that if you have the active years for a given person entered into the database, and that person is linked to a record where the date collected or identified is not within their active years, you will be able to find these records.
 
@@ -78,3 +82,9 @@ With this task, one can see the unique values present for a given field and how 
 - Need to create or convert data into other formats? Some tools that help you with this part of any data transformation processes include:
   - [Tables Generator](https://www.tablesgenerator.com/) (e. g. HTML, LaTeX, MediaWiki, Markdown)
   - [PanDoc - a universal document converter](https://pandoc.org/)
+- Authority Files for comparing your data with known sources
+  - [Global Names Architecture Tools (GNA) Suite](https://globalnames.org/) helps you 
+    - **find** taxon names in documents or on websites
+    - **parse** taxon name strings into their parts (e. g. genus, specific epithet, author, year)
+    - **verify** taxon names against known sources
+    - [**compare** two files that contain taxon name strings](https://github.com/gnames/gndiff)

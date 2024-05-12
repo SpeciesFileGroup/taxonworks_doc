@@ -4,9 +4,9 @@ sidebarPosition: 55
 
 # Data Quality Help and Hints
 
-_Curating data to best support reproducible and [FAIR](https://en.wikipedia.org/wiki/FAIR_data) use means we all need ways to address data quality, completeness, and consistency. Here we gather our collective tips on finding and fixing (and preventing) some of the more common issues._
+_Curating data to best support reproducible and [FAIR](https://en.wikipedia.org/wiki/FAIR_data) use means we all need ways to address data quality (e.g.  completeness, consistency, compliance). We note **Quality**, as a abstract and rather subject term, proves difficult to pin down. **Fidelity*** may prove more a more tractable term. Here we gather our collective tips on defining, finding, fixing (and preventing) some of the more common issues._
 
-Our TW Philosopy on _data quality_: we try to build in methods to prevent issues in the first place. Where we know they can happen, we try to build in tools to help you both find and fix. We also plan further development to extend our `soft validation` tools which will discover issues for you and offer to fix them `on click`. Note that when, where, and how you find any data anomalies will vary. And in turn, this influences the options and methods for fixing them (e. g. one-by-one, bulk annotation, scripts). For example, you might notice issues when:
+Our TW Philosopy on _data quality_ or _fidelity_: we try to build in methods to prevent issues in the first place. Where we know they can happen, we try to build in tools to help you both find and fix. We also plan further development to extend our `soft validation` tools which will discover issues for you and offer to fix them `on click`. Note that when, where, and how you find any data anomalies will vary. And in turn, this influences the options and methods for fixing them (e. g. one-by-one, bulk annotation, scripts). For example, you might notice issues when:
 - cleaning data up in a spreadsheet _before_ upload to any CMS
 - exploring your exported data with tools like OpenRefine, or via R, or via another API
 - looking at feedback from another source (e. g. GBIF or iDigBio or ALA or OBIS or [Bionomia](https://bionomia.net/))
@@ -54,15 +54,11 @@ With this task, one can see the unique values present for a given field and how 
 - You can use the **download csv** version of the results if you have a lot of records and want to sort by year in a spreadsheet to see the extent of the year bounds.
   - You can sort by year by clicking on a given column, however, it is only sorting the records on that page (note the number of records per/page can be increased).
 
-
 ## Place
-
 
 ## Taxon
 
-
 ## Other 
-
 
 ## Tools and Resources
 - Data Carpentry [Data Cleaning with OpenRefine](https://datacarpentry.org/OpenRefine-ecology-lesson/)
@@ -87,4 +83,8 @@ With this task, one can see the unique values present for a given field and how 
     - **find** taxon names in documents or on websites
     - **parse** taxon name strings into their parts (e. g. genus, specific epithet, author, year)
     - **verify** taxon names against known sources
+    - **verify** from inside OpenRefine using the Global Names [_Reconciliation Service_](https://github.com/gnames/gnverifier/wiki/OpenRefine-readme).
     - [**compare** two files that contain taxon name strings](https://github.com/gnames/gndiff)
+
+### Footnotes
+  - **Fidelity*** - as referenced by Erica Krimmel at TaxonWorks Together 2024 as a term that may more exactly convey what we can manage when we talk about making our data as fit-for-purposes (known and imagined) as possible (rather than the more _subjective_ term of _quality_).

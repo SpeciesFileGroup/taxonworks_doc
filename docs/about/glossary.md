@@ -61,6 +61,15 @@ An instance of TaxonWorks supports multiple projects. Each project may have one 
 ### Pull Request
 A simple means to elegantly suggest changes to a website or code repository by editing a clone of that respository and then sending a message back to the origin that includes those changes. The changes can be considered by the maintainers of the original respostory and integrated, or not.
 
+### Radial
+A modal (pop-up requiring exit) form in TaxonWorks that looks like a pie. These are all indicated by a circular icon with a blue border.
+
+### Radial Annotator
+A [radial](glossary#radial) that lets you add an edit annotations on an object.
+
+### Radial Navigator
+A [radial](glossary#radial) that lets you navigate from an object to its related tasks and forms.
+
 ### Repository
 Generally speaking, a collection in which specimens are deposited.  It may or may not be associated with an institution.
 

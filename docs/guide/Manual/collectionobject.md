@@ -12,7 +12,7 @@ As a researcher, as an ecologist, as a collection manager, you want to gather, a
 
 #left[The `New collection object` task best suits minimal or skeletal data record creation](https://sfg.taxonworks.org/s/lozewk [The `New collection object` task best suits minimal or skeletal data record creation offering only a few fields])
 
-`New Collecting Event Task`: In addition to the data about the `what` (that is, the physical specimen itself), information about the `where`, `how`, `who`, and `when`, etcetera fit elsewhere in the TaxonWorks data model: the `New Collecting Event (CE) Task` stores information about the where, when, and who.
+`New Collecting Event Task`: In addition to the data about the `what` (that is, the physical specimen itself), information about the `where`, `how`, `who`, and `when`, etcetera fit in the TaxonWorks data model in the `New Collecting Event (CE) Task`.
 
 #left[Use the `New collecting event` task to capture events](https://sfg.taxonworks.org/s/wngpga [The `New collecting event` task offers a way to add just the collecting events instead of other related data])
 
@@ -32,7 +32,7 @@ In the top right of the above screenshot, note the options to change the layout 
 #### Collection object section inside `Comprehensive specimen digitization Task`
 In the top section of the CSD screenshot, you see sections for `Catalog number`, `Repository`, `Preparation`, `Buffered`, and `Depictions`.
 
-`Catalog number`: TW provides several ways for you to add `Catalog numbers` to ensure you can find or subset your CO items as needed. Note the `Namespace` concept in TW which keeps `Catalog numbers` unique inside a TW Project and across projects.
+`Catalog number`: TW provides several ways for you to add `Catalog numbers` to ensure you can find or subset your CO items as needed. Note the `Namespace` concept in TW which keeps `Catalog numbers` unique inside a TW Project.
 - Select an existing `Namespace` for this CO or add a `New` one if needed
   - You can `Search` to find the one you want.
   - `Recent` offers you items you've selected not too long ago.

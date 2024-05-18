@@ -33,7 +33,7 @@ Envielo! Es muy util que nos envie una grabación de su pantalla, o posicione la
 
 ### Documentar el codigo?
 
-La [documentación](http://rdoc.taxonworks.org) del codigo de TaxonWorks se hace en linea con [Yard tags](http://rdoc.info/gems/yard/file/docs/Tags.md).
+La [documentación](http://rdoc.taxonworks.org) del codigo de TaxonWorks se hace en linea con [Yard tags](https://rubydoc.info/gems/yard/file/docs/Tags.md).
 
 ## Documentación
 

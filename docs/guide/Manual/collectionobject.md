@@ -32,7 +32,7 @@ In the top right of the above screenshot, note the options to change the layout 
 #### Collection object section inside `Comprehensive specimen digitization Task`
 In the top section of the CSD screenshot, you see sections for `Catalog number`, `Repository`, `Preparation`, `Buffered`, and `Depictions`.
 
-`Catalog number`: TW provides several ways for you to add `Catalog numbers` to ensure you can find or subset your CO items as needed. Note the `Namespace` concept in TW which keeps `Catalog numbers` unique inside a TW Project and across projects.
+`Catalog number`: TW provides several ways for you to add `Catalog numbers` to ensure you can find or subset your CO items as needed. Note the `Namespace` concept in TW which keeps `Catalog numbers` unique inside a TW Project.
 - Select an existing `Namespace` for this CO or add a `New` one if needed
   - You can `Search` to find the one you want.
   - `Recent` offers you items you've selected not too long ago.

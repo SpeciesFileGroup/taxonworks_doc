@@ -4,9 +4,9 @@ sidebarPosition: 55
 
 # Data Quality Help and Hints
 
-_Curating data to best support reproducible and [FAIR](https://en.wikipedia.org/wiki/FAIR_data) use means we all need ways to address data quality, completeness, and consistency. Here we gather our collective tips on finding and fixing (and preventing) some of the more common issues._
+_Curating data to best support reproducible and [FAIR](https://en.wikipedia.org/wiki/FAIR_data) use means we all need ways to address data quality (e.g.  completeness, consistency, compliance). We note **Quality**, as a abstract and rather subject term, proves difficult to pin down. **Fidelity*** may prove more a more tractable term. Here we gather our collective tips on defining, finding, fixing (and preventing) some of the more common issues._
 
-Our TW Philosopy on _data quality_: we try to build in methods to prevent issues in the first place. Where we know they can happen, we try to build in tools to help you both find and fix. We also plan further development to extend our `soft validation` tools which will discover issues for you and offer to fix them `on click`. Note that when, where, and how you find any data anomalies will vary. And in turn, this influences the options and methods for fixing them (e. g. one-by-one, bulk annotation, scripts). For example, you might notice issues when:
+Our TW Philosopy on _data quality_ or _fidelity_: we try to build in methods to prevent issues in the first place. Where we know they can happen, we try to build in tools to help you both find and fix. We also plan further development to extend our `soft validation` tools which will discover issues for you and offer to fix them `on click`. Note that when, where, and how you find any data anomalies will vary. And in turn, this influences the options and methods for fixing them (e. g. one-by-one, bulk annotation, scripts). For example, you might notice issues when:
 - cleaning data up in a spreadsheet _before_ upload to any CMS
 - exploring your exported data with tools like OpenRefine, or via R, or via another API
 - looking at feedback from another source (e. g. GBIF or iDigBio or ALA or OBIS or [Bionomia](https://bionomia.net/))
@@ -20,6 +20,11 @@ In structuring these hints, we group the known issues into categories: `Identifi
 
 ## Identifiers
 
+### CatalogNumbers
+
+::: tip
+Duplicate `catalogNumbers` cannot happen with initial or subsequent (bulk OR one-by-one) uploads to TW. We use `namespaces` combined with the `catalogNumber` to ensure uniqueness. Our software won't let you create a duplicate catalogNumber. IF you need to record that a duplicate catalog number existed, you can put that in a custom field you create (or perhaps use "dwc:otherCatalogNumbers"). Another possibility is to use "containerize" in TaxonWorks, allowing you to assign this duplicate catalog number to its related object so that you can export this record (say, to GBIF or iDigBio) with the same catalog number as another record in the dataset. We note these duplicate catalogNumbers can, of course, be in legacy datasets. You will find them when you try to get these data into TW.
+::: 
 
 ## Time
 ### Date out-of-bounds
@@ -29,7 +34,7 @@ In TaxonWorks, different types of records have dates associated, for example: th
 - **_flourit_ date and event date not compatible.**
 
 #### Filter Collecting Event by Date
-**Find** outlier dates using the `Filter Collecting Event` task, the `Filter Collection Object` task, and (in development) the `Project Vocabulary` task.
+**Find** outlier dates using the `Filter Collecting Event` task, the `Filter Collection Object` task, and you can use the `Project Vocabulary` task to peak inside each field in your database to see distinct values and the records with those values.
 
 #left[Using the **date range** method to find outlier dates with the `Filter Collecting Event` task](https://sfg.taxonworks.org/s/xcmcsl [the Filter Collecting Event task user interface showing where to enter start and end dates to filter with])
 
@@ -39,8 +44,12 @@ In TaxonWorks, different types of records have dates associated, for example: th
   - e. g. to check for future out-of-bounds dates try putting "tomorrow's" date in for the `start date` and some date way into the future for the `End date`
 - Click `Filter` to see resulting records.
 
-**Find** outlier dates using the (_in development_) `Project Vocabulary` task.
-With this task, one can see the unique values present for a given field and how many times that string/value occurs. In the future, you will be able to then click on one of the results of the output and see the associated records having that value. For the **out-of-expected-bounds-date** use case, one could see odd unexpected dates easily.
+::: tip 
+Note you can click any column to sort on that column (which sorts only for the records showing on that page). This makes it simpler to see outliers in a date-related column. These sets can also be downloaded as CSV files if need be.
+:::
+
+**Find** outlier dates using the `Project Vocabulary` task.
+With this task, one can see the unique values present for a given field and how many times that string/value occurs. You `click` on one of the results of the output and see the associated records having that value. For the **out-of-expected-bounds-date** use case, one could see odd unexpected dates easily.
 
 **Find** outlier dates based on someone's lifespan, when known. In the future, you can expect that if you have the active years for a given person entered into the database, and that person is linked to a record where the date collected or identified is not within their active years, you will be able to find these records.
 
@@ -50,15 +59,114 @@ With this task, one can see the unique values present for a given field and how 
 - You can use the **download csv** version of the results if you have a lot of records and want to sort by year in a spreadsheet to see the extent of the year bounds.
   - You can sort by year by clicking on a given column, however, it is only sorting the records on that page (note the number of records per/page can be increased).
 
+### Event Date and Year Month Day
+In TaxonWorks these align automatically. 
+- If using the `DwC Occurrence Importer` and you provide the `eventDate` (in YYYY-MM-DD format) and you provide the dwc:day, dwc:month, and dwc:year, the importer software checks for consistency.
+- If using the `DwC Occurrence Importer` and you provide the `eventDate` (in YYYY-MM-DD format) only, we derive the dwc:day, dwc:month, and dwc:year on import. 
+- After upload, the `year`, `month`, and `day` fields can be edited, there is no single `eventDate` field which prevents these from potentially getting out of sync.
 
 ## Place
 
+### Coordinates Zero
+In TW this will depend. 0, 0 are of course "Valid" however they have to match other data in the record.
+
+**Find** 0, 0 coordinates uing the `Project vocabulary` task
+- Select model: `Collecting Event`
+- Select attribute: `verbatim_longitude` (or `verbatim_latitude`)
+- in `Beginning with` put: 0.0 (for example)
+- Click on `Show records`
+- Result is a set of records in `Filter collecting events`
+  - You will have a set of records that have the properties you provided that you can work on editing.
+  - You can edit one record at a time or potentially edit many at once depending on what needs to be updated.
+
+**Fix** unexpected coordinates
+It may be possible to fix more than one record at a time depending on the specific issue.
+
+- In your resulting set, Select a record to fix, 
+- Then click the `navigator` icon for that record and 
+- Click `Edit` in the options provided.
+
+If there are many to fix
+- Select all for that page, or some subset of records
+- Then click on the `radial collecting event` icon
+- In the `radial collecting event` radial pop-up, select one of these options
+  - Set `Collection Date/Time`
+  - Set `verbatim fields`
+
+### Coordinates Do Not Fall Within Named Geographic Unit
+IF you provide coordinates on upload, we compute the geographic units based on the gazetteer information. So we don't have this issue specifically. You can potentially see outliers using the following method.
+
+**Find and Fix**
+- Go to `Filter collecting events`
+- Search for the area of interest, (e. g. United States and pick `Descendants`)
+- Click `Filter`
+- In the resulting set, in the **left** sidebar, click the `linker` icon to get the `Radial linker`
+  - Select `Spatial Summary` which gives you a **scatter plot** where the x-axis is longitude, the y-axis is latitude
+  - IF there are longitudes with positive (or other outlier non-expected) values, you will be able to see them and go to those records to debug.
+
+::: tip
+Using the `Collecting Event` software, if you provide spatial constraint (choose a `GeographicArea with shape`) and try and provide a point outside that, you are not allowed to. We note at the same time, you can put whatever conflicting info you want in verbatim_ fields, these are not validated.
+:::
+
+### Georeference Metadata with no Associated Georeference
+
+### Elevation Unlikely
+To look for unlikely or unexpected elevations, one way would be to use the `Project vocabulary` task
+
+**Find and Fix** elevation value ranges uing the `Project vocabulary` task
+- Select model: `Collecting Event`
+- Select attribute: `maximum_elevation` (or `minimum_elevation`)
+- Click on `Show records`
+- in the **left** sidebar, click `Term` to sort column to see the value range for max (or min, depending on what you picked)
+- Click on the row with any unexpected value to see the records with that value (or click that value in the word cloud).
+- Result is a set of records in `Filter collecting events`
+  - You will have a set of records that have the properties you provided that you can work on editing.
+  - You can edit one record at a time or potentially edit many at once depending on what needs to be updated.
+
+### Improperly Negated Latitudes Longitudes
+
+**Find and Fix**
+- Go to `Filter collecting events`
+- Search for the area of interest, (e. g. United States and pick `Descendants`)
+- Click `Filter`
+- In the resulting set, in the **left** sidebar, click the `linker` icon to get the `Radial linker`
+  - Select `Spatial Summary` which gives you a **scatter plot** where the x-axis is longitude, the y-axis is latitude
+  - IF there are longitudes with positive values, you will be able to see them and go to those records to debug.
+
+### Invalid Coordinates
+
+### Lower Geography Values Provided, but No Higher Geography
+Selecting any `GeographicArea` happens in one place in TaxonWorks, so you automatically get spatial and parent validation going up.* In other words, if you provide the lower geography, we derive the higher geography where there is information in our gazetteers to do so.
+
+### Minimum and Maximum Elevation Values Mismatched
+Our Validation software catches this for any parsed values. You can of course put what you like in verbatim fields.
+
+### Mismatched Country and CountryCode Values
+
+### Mismatched Geographic Terms
+
+### Missing Latitudes Longitudes
+
+Using the `Filter collecting event` task, you can find records with no georeference. 
+
+### Misspelled Geographic Unit Names
 
 ## Taxon
 
+### Misspelled or Invalid Taxonomic Names
+
+### Unknown Higher Taxonomy
 
 ## Other 
 
+### Incorrect Character Encodings
+
+### Incorrect Line Endings
+
+### Invalid Individual Count
+
+### Nonstandardized basisOfRecord Values
+We generate `dwc:basisOfRecord`, so a non-issue for TW. If an issue on Import, our Importer software will tell you. With the Importer you can "find" and "replace" any non-standard value and then continue the upload.
 
 ## Tools and Resources
 - Data Carpentry [Data Cleaning with OpenRefine](https://datacarpentry.org/OpenRefine-ecology-lesson/)
@@ -78,3 +186,13 @@ With this task, one can see the unique values present for a given field and how 
 - Need to create or convert data into other formats? Some tools that help you with this part of any data transformation processes include:
   - [Tables Generator](https://www.tablesgenerator.com/) (e. g. HTML, LaTeX, MediaWiki, Markdown)
   - [PanDoc - a universal document converter](https://pandoc.org/)
+- Authority Files for comparing your data with known sources
+  - [Global Names Architecture Tools (GNA) Suite](https://globalnames.org/) helps you 
+    - **find** taxon names in documents or on websites
+    - **parse** taxon name strings into their parts (e. g. genus, specific epithet, author, year)
+    - **verify** taxon names against known sources
+    - **verify** from inside OpenRefine using the Global Names [_Reconciliation Service_](https://github.com/gnames/gnverifier/wiki/OpenRefine-readme).
+    - [**compare** two files that contain taxon name strings](https://github.com/gnames/gndiff)
+
+### Footnotes
+  - **Fidelity*** - as referenced by Erica Krimmel at TaxonWorks Together 2024 as a term that may more exactly convey what we can manage when we talk about making our data as fit-for-purposes (known and imagined) as possible (rather than the more _subjective_ term of _quality_).

@@ -33,7 +33,7 @@ Send! It is super useful for you to record your screen, or position a video came
 
 ### Document the code?
 
-TaxonWorks code [documentation](http://rdoc.taxonworks.org) is done inline with [Yard tags](http://rdoc.info/gems/yard/file/docs/Tags.md).
+TaxonWorks code [documentation](http://rdoc.taxonworks.org) is done inline with [Yard tags](https://rubydoc.info/gems/yard/file/docs/Tags.md).
 
 ## Documentation
 

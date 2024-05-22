@@ -91,7 +91,7 @@ As headers, these will look like this:
 _A DwC term mapping_ | _A user customizable data attribute_ | A TW biocuration attribute | _A TW specific attribute_ 
 
 ::: tip
-A first step is to go through your data and figure out which column header type you'll need.  Start by matching to supported DwC terms, then go on from there.
+A first step is to go through your data and figure out which column header type you'll need. Start by matching to supported DwC terms, then go on from there.
 :::
 
 #### DwC term mapping

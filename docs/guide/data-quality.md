@@ -4,8 +4,9 @@ sidebarPosition: 55
 
 # Data Quality Help and Hints
 
-_Curating data to best support reproducible and [FAIR](https://en.wikipedia.org/wiki/FAIR_data) use means we all need ways to address data quality (e.g.  completeness, consistency, compliance). We note **Quality**, as a abstract and rather subject term, proves difficult to pin down. **Fidelity*** may prove more a more tractable term. Here we gather our collective tips on defining, finding, fixing (and preventing) some of the more common issues._
+_Curating data to best support reproducible and [FAIR](https://en.wikipedia.org/wiki/FAIR_data) use means we all need ways to address data quality (e.g.  completeness, consistency, compliance). We note **Quality**, as a abstract and rather subjective term, proves difficult to pin down. **Fidelity*** may prove more a more tractable term. Here we gather our collective tips on defining, finding, fixing (and preventing) some of the more common issues._
 
+## Rationale and Background
 Our TW Philosopy on _data quality_ or _fidelity_: we try to build in methods to prevent issues in the first place. Where we know they can happen, we try to build in tools to help you both find and fix. We also plan further development to extend our `soft validation` tools which will discover issues for you and offer to fix them `on click`. Note that when, where, and how you find any data anomalies will vary. And in turn, this influences the options and methods for fixing them (e. g. one-by-one, bulk annotation, scripts). For example, you might notice issues when:
 - cleaning data up in a spreadsheet _before_ upload to any CMS
 - exploring your exported data with tools like OpenRefine, or via R, or via another API
@@ -13,10 +14,15 @@ Our TW Philosopy on _data quality_ or _fidelity_: we try to build in methods to 
 - someone on the internet sees something and contacts you
 - perusing data already in your own database
 - mapping you data to migrate to another database or share with an aggregator
-- using your database _data visualization_ tools to see _distinct values_ in a given field (e. g. Project vocabulary task in TaxonWorks) or on a map. See also [Distinct Values - Why This Data Directory?](https://github.com/tdwg/dwc-qa/tree/master/data)
+- using your database _data visualization_ tools to see _distinct values_ in a given field (e. g. `Project vocabulary task` in TaxonWorks) or on a map. 
+  - See also [Distinct Values - Why This Data Directory?](https://github.com/tdwg/dwc-qa/tree/master/data)
 - reviewing your software repository issue-tracker (e. g. [gitHub for TaxonWorks](https://github.com/SpeciesFileGroup/taxonworks/issues))
 
-In structuring these hints, we group the known issues into categories: `Identifiers` (e .g. catalog numbers), `Time` (e. g. dates), `Place` (aka geography, location), `Taxon`, and `Other` and `Tools and Resources`
+As a co-organizer of a Workshop at [Digital Data 8](https://digitaldata2024.sched.com/) called **Data cleaning for maximum impact: Tools and workflows for data providers to efficiently find and fix data quality issues** we created this resource. Other co-organizers did likewise and the resulting cross-platform page can be found at iDigBio: [Data Quality Toolkit 2024](https://www.idigbio.org/wiki/index.php/Data_Quality_Toolkit_2024). Each section below is linked to its corresponding topic on that iDigBio page.
+
+To _extend the value and scope of this work_, in each section below, we link to the work of the [Biodiversity Information Standards (TDWG) Biodiversity Data Quality Task Group (BDQ)](https://github.com/tdwg/bdq). We list the BDQ tests relevant to each issue, where they exist. We gratefully acknowledge the efforts of this TDWG Task Group and the contributions and conversations with Paul Morris and Lee Belbin in figuring out how to do this. Special thanks to Paul Morris for work done to map the BDQ tests to the specific data quality issues highlighted in this workshop and on this page. With these connections, we hope to enhance the software developer's vision and work to connect to the BDQ tests to the CMS functionality around preventing, finding, and fixing these types of issues.
+
+In structuring these hints, we group the known issues into categories: `Identifiers` (e .g. catalog numbers), `Time` (e. g. dates), `Place` (aka geography, location), `Taxon`, and `Other` and `Tools and Resources`.
 
 ## Identifiers
 

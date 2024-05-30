@@ -224,6 +224,8 @@ Using the `Filter collecting event` task, you can find records with no Georefere
 ### Misspelled Geographic Unit Names
 [idigbio-dqtk-geounit-names-spelling](https://www.idigbio.org/wiki/index.php/Data_Quality_Toolkit_2024#Misspelled_Geographic_Unit_Names), [TDWG BDQ](https://github.com/tdwg/bdq) Relevant Tests: [VALIDATION_COUNTRY_FOUND](https://github.com/tdwg/bdq/issues/21), [VALIDATION_STATEPROVINCE_FOUND](https://github.com/tdwg/bdq/issues/199)
 
+Users do not enter geographic names (unless the customize to export ADM level fields), they are selected from a controlled list of over 40k GeographicAreas. Errors are possible when source gazeteers included the error. We correct these at the installation level as found. TaxonWorks also has a generic set of annotations under the umbrella of AlternateValues.  This lets us link entities to alternate spellings, translations and abbreviations.
+
 ## Taxon
 
 ### Misspelled or Invalid Taxonomic Names

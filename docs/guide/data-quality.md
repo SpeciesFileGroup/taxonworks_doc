@@ -4,33 +4,64 @@ sidebarPosition: 55
 
 # Data Quality Help and Hints
 
-_Curating data to best support reproducible and [FAIR](https://en.wikipedia.org/wiki/FAIR_data) use means we all need ways to address data quality (e.g.  completeness, consistency, compliance). We note **Quality**, as a abstract and rather subjective term, proves difficult to pin down. **Fidelity*** may prove more a more tractable term. Here we gather our collective tips on defining, finding, fixing (and preventing) some of the more common issues._
+_The nature of data, particularly aspects of quality (e.g.  completeness, consistency, compliance) are directly related to whether or not it can be re-used (the R in [FAIR](https://en.wikipedia.org/wiki/FAIR_data)). **Quality** is an abstract and rather subjective term, one difficult to pin down. **Fidelity*** may prove more a more tractable term. Conceptual and implemented means to improve data quality in and around TaxonWorks._
+
+## Motivation
+
+This documentation originated via the co-organization of a workshop at [Digital Data 8](https://digitaldata2024.sched.com/), **Data cleaning for maximum impact: Tools and workflows for data providers to efficiently find and fix data quality issues**. Other co-organizers produced similar documentation resulting in a cross-platform page can be found at iDigBio: [Data Quality Toolkit 2024](https://www.idigbio.org/wiki/index.php/Data_Quality_Toolkit_2024). Each section below is linked to its corresponding topic on that iDigBio page.
 
 ## Rationale and Background
-Our TW Philosopy on _data quality_ or _fidelity_: we try to build in methods to prevent issues in the first place. Where we know they can happen, we try to build in tools to help you both find and fix. We also plan further development to extend our `soft validation` tools which will discover issues for you and offer to fix them `on click`. Note that when, where, and how you find any data anomalies will vary. And in turn, this influences the options and methods for fixing them (e. g. one-by-one, bulk annotation, scripts). For example, you might notice issues when:
-- cleaning data up in a spreadsheet _before_ upload to any CMS
-- exploring your exported data with tools like OpenRefine, or via R, or via another API
-- looking at feedback from another source (e. g. GBIF or iDigBio or ALA or OBIS or [Bionomia](https://bionomia.net/))
-- someone on the internet sees something and contacts you
-- perusing data already in your own database
-- mapping you data to migrate to another database or share with an aggregator
-- using your database _data visualization_ tools to see _distinct values_ in a given field (e. g. `Project vocabulary task` in TaxonWorks) or on a map. 
-  - See also [Distinct Values - Why This Data Directory?](https://github.com/tdwg/dwc-qa/tree/master/data)
-- reviewing your software repository issue-tracker (e. g. [gitHub for TaxonWorks](https://github.com/SpeciesFileGroup/taxonworks/issues))
 
-As a co-organizer of a Workshop at [Digital Data 8](https://digitaldata2024.sched.com/) called **Data cleaning for maximum impact: Tools and workflows for data providers to efficiently find and fix data quality issues** we created this resource. Other co-organizers did likewise and the resulting cross-platform page can be found at iDigBio: [Data Quality Toolkit 2024](https://www.idigbio.org/wiki/index.php/Data_Quality_Toolkit_2024). Each section below is linked to its corresponding topic on that iDigBio page.
+Our TW philosopy on _data quality_ or _fidelity_ is multifaceted and can be thought of as the concepts of prevention, discovery, and resolution as applied to a spectrum of processes, from designing the data-models, to implementing validations, to creating tools and workflows facilitating discovery and visualization, to building user-interfaces that curators use to resolve issues, to reflecting feedback from external sources back into the system.
 
-To _extend the value and scope of this work_, in each section below, we link to the work of the [Biodiversity Information Standards (TDWG) Biodiversity Data Quality Task Group (BDQ)](https://github.com/tdwg/bdq). We list the BDQ tests relevant to each issue, where they exist. We gratefully acknowledge the efforts of this TDWG Task Group and the contributions and conversations with Paul Morris and Lee Belbin in figuring out how to do this. Special thanks to Paul Morris for work done to map the BDQ tests to the specific data quality issues highlighted in this workshop and on this page. With these connections, we hope to enhance the software developer's vision and work to connect to the BDQ tests to the CMS functionality around preventing, finding, and fixing these types of issues.
+### Prevention
+Many of the issues highlighted below can be prevented at inception (when data are captured). At a low level this can happen during data-model design and implementation. For example in TaxonWorks we:
+* Carefully model our domain (models) []() so that there is a solid basis for expanding the semantics of what we are capturing. This helps to prevent the addition of fields that seem useful at the time but that ultimately confuse our understanding of the data as the system evolves. 
+* Isolating data fields from fields that facilitate TaxonWorks functionality. This separation of concerns ensures we can efficiently implement globally-relevant data-cleaning (e.g. stripping bad characters) and iterative checks on the data while not being confused by fields that don't require such.
+* Only permit data changes through a single API (TaxonWorks models), as opposed to updates directly to the database. This forces all validations to be checked when data enters the system, greatly improving data integrity.
+* Choosing either the database or the data-model as the location of data validation functions (not both, TaxonWorks validates in the model)
+* Creating (sometimes complex) tests that check that the validations implemented still hold, these are run on every single commit to the repository.
+* Using a _convention_ to implement our data models and their relationships to one another (e.g. Rails ActiveRecord models)
 
-In structuring these hints, we group the known issues into categories: `Identifiers` (e .g. catalog numbers), `Time` (e. g. dates), `Place` (aka geography, location), `Taxon`, and `Other` and `Tools and Resources`.
+### Discovery 
+In general, when, where, and how you find any data anomalies will vary, not only with respect to TaxonWorks but in working with data in general. For example, you might become aware of issues when:
+* Mapping you data to an external standard, perhaps during migration to another database or share with an aggregator
+* Cleaning data up in a spreadsheet _before_ upload to a workbench like TaxonWorks
+* Exploring your exported data with tools like OpenRefine, or via R, or via another API
+* Receiving feedback from another source (e. g. GBIF or iDigBio or ALA or OBIS or [Bionomia](https://bionomia.net/))
+* Hearing from someone on the internet sees something and contacts you
+* Perusing data already in your own database
+* Visualizing issues in day-to-day work, for example via the hundreds of notices possible in TaxonWorks on its "soft validation" framework.
+* Using your database _data visualization_ tools to see _distinct values_ in a given field (e. g. `Project vocabulary task` in TaxonWorks) or on a map. 
+* Reviewing your software repository issue-tracker (e.g. [gitHub for TaxonWorks](https://github.com/SpeciesFileGroup/taxonworks/issues))
+* Learning about what others have done in similar systems (e.g. see [Distinct Values - Why This Data Directory?](https://github.com/tdwg/dwc-qa/tree/master/data))
+
+How data issues are discovered influences the options and methods for fixing them (e. g. one-by-one, bulk annotation, scripts).
+
+### Resolution
+Example means to resolve the data are detailed in the specifics below. In addition to those one of the important ways to resolve problems is to use TaxonWorks models in scripts to batch process and fix data.
+
+### Acknowledgements
+To _extend the value and scope of this work_ we link to the work of the [Biodiversity Information Standards (TDWG) Biodiversity Data Quality Task Group (BDQ)](https://github.com/tdwg/bdq). We list the BDQ tests relevant to each issue, where they exist. With these connections, we hope to enhance the software developer's vision and work to connect to the BDQ tests to the workbench functionality around preventing, finding, and fixing these types of issues.
+
+We gratefully acknowledge the efforts of this TDWG Task Group and the contributions and conversations with Paul Morris and Lee Belbin in figuring out how to do this. Special thanks to Paul Morris for work done to map the BDQ tests to the specific data quality issues highlighted in this workshop and on this page.
+
+### Structure
+Issues below are grouped into the: `Identifiers` (e .g. catalog numbers), `Time` (e. g. dates), `Place` (aka geography, location), `Taxon`, and `Other` and `Tools and Resources`. 
+
+::: warning 
+TaxonWorks only references many DarwinCore fields on export of the data, i.e. in the translation of its data model to an external format. 
+:::
 
 ## Identifiers
 
 ### CatalogNumbers
 
 ::: tip
-Duplicate `catalogNumbers` cannot happen with initial or subsequent (bulk OR one-by-one) uploads to TW. We use `namespaces` combined with the `catalogNumber` to ensure uniqueness. Our software won't let you create a duplicate catalogNumber. IF you need to record that a duplicate catalog number existed, you can put that in a custom field you create (or perhaps use "dwc:otherCatalogNumbers"). Another possibility is to use "containerize" in TaxonWorks, allowing you to assign this duplicate catalog number to its related object so that you can export this record (say, to GBIF or iDigBio) with the same catalog number as another record in the dataset. We note these duplicate catalogNumbers can, of course, be in legacy datasets. You will find them when you try to get these data into TW.
-::: 
+Duplicate Identifiers are prevented in the data model. This prevents errors in initial or subsequent (bulk OR one-by-one) uploads to TW. We use `Namespaces` and a simple Identifier ontology to ensure sets of Identifiers whose members are all unique.
+:::
+
+ `catalogNumber` is only invoked as a column when exporting to Darwin Core format (it's not a specific field in a TaxonWorks model). When multiple objects are identified by the same `catalogNumber` we associate the corresponding Identifier to a virtual container.  This lets us export a "duplicate" `catalogNumber` in the export for each occurrence record (which is uniquely identified by a UUID) while maintain specific data on individual specimens. `catalogNumbers` that appear identical in their rendering can be differentiated via different Namespaces if it can be determined that they were created via independent processes.  Finally, you can extend any DarwinCore export with a custom data-attribute that might reference, say `dwc:otherCatalogNumbers`.
 
 ## Time
 
@@ -100,7 +131,7 @@ It may be possible to fix more than one record at a time depending on the specif
 - Then click the `navigator` icon for that record and 
 - Click `Edit` in the options provided.
 
-If there are many to fix
+If there are many to fix:
 - Select all for that page, or some subset of records
 - Then click on the `radial collecting event` icon
 - In the `radial collecting event` radial pop-up, select one of these options
@@ -110,7 +141,7 @@ If there are many to fix
 ### Coordinates Do Not Fall Within Named Geographic Unit
 [idigbio-dqtk-geo-unit](https://www.idigbio.org/wiki/index.php/Data_Quality_Toolkit_2024#Coordinates_Do_Not_Fall_Within_Named_Geographic_Unit), [TDWG BDQ](https://github.com/tdwg/bdq) Relevant Tests: [VALIDATION_COORDINATES-STATEPROVINCE_CONSISTENT](https://github.com/tdwg/bdq/issues/56), [VALIDATION_COORDINATES_COUNTRYCODE_CONSISTENT](https://github.com/tdwg/bdq/issues/50)
 
-IF you provide coordinates on upload, we compute the geographic units based on the gazetteer information. So we don't have this issue specifically. You can potentially see outliers using the following method.
+If you provide coordinates on upload, we compute the geographic units based on the gazetteer information. So we don't have this issue specifically. You can potentially see outliers using the following method.
 
 **Find and Fix**
 - Go to `Filter collecting events`
@@ -118,7 +149,7 @@ IF you provide coordinates on upload, we compute the geographic units based on t
 - Click `Filter`
 - In the resulting set, in the **left** sidebar, click the `linker` icon to get the `Radial linker`
   - Select `Spatial Summary` which gives you a **scatter plot** where the x-axis is longitude, the y-axis is latitude
-  - IF there are longitudes with positive (or other outlier non-expected) values, you will be able to see them and go to those records to debug.
+  - If there are longitudes with positive (or other outlier non-expected) values, you will be able to see them and go to those records to debug.
 
 ::: tip
 Using the `Collecting Event` software, if you provide spatial constraint (choose a `GeographicArea with shape`) and try and provide a point outside that, you are not allowed to. We note at the same time, you can put whatever conflicting info you want in verbatim_ fields, these are not validated.
@@ -127,12 +158,14 @@ Using the `Collecting Event` software, if you provide spatial constraint (choose
 ### Georeference Metadata with no Associated Georeference
 [idigbio-dqtk-metadata-no-georef](https://www.idigbio.org/wiki/index.php/Data_Quality_Toolkit_2024#Georeference_Metadata_with_no_Associated_Georeference) 
 
+Not possible on export (though the inverse is).
+
 ### Elevation Unlikely
 [idigbio-dqtk-elevation-questionable](https://www.idigbio.org/wiki/index.php/Data_Quality_Toolkit_2024#Elevation_is_Unlikely), [TDWG BDQ](https://github.com/tdwg/bdq) Relevant Tests: [VALIDATION_MAXELEVATION_INRANGE](https://github.com/tdwg/bdq/issues/112), [VALIDATION_MINELEVATION_INRANGE](https://github.com/tdwg/bdq/issues/39), see also [VALIDATION_MINDEPTH_INRANGE](https://github.com/tdwg/bdq/issues/107), [VALIDATION_MAXDEPTH_INRANGE](https://github.com/tdwg/bdq/issues/187) 
 
-To look for unlikely or unexpected elevations, one way would be to use the `Project vocabulary` task
+To look for unlikely or unexpected elevations, one way would be to use the `Project vocabulary` task.
 
-**Find and Fix** elevation value ranges uing the `Project vocabulary` task
+**Find and Fix** elevation value ranges uing the `Project vocabulary` task:
 - Select model: `Collecting Event`
 - Select attribute: `maximum_elevation` (or `minimum_elevation`)
 - Click on `Show records`
@@ -156,6 +189,8 @@ To look for unlikely or unexpected elevations, one way would be to use the `Proj
 ### Invalid Coordinates
 [idigbio-dqtk-invalid-coord](https://www.idigbio.org/wiki/index.php/Data_Quality_Toolkit_2024#Invalid_Coordinates), [TDWG BDQ](https://github.com/tdwg/bdq) Relevant Tests: [VALIDATION_DECIMALLATITUDE_INRANGE](https://github.com/tdwg/bdq/issues/79), [VALIDATION_DECIMALLONGITUDE_INRANGE](https://github.com/tdwg/bdq/issues/30)
 
+Coordinates are exported as Geo referenced, i.e. they can not be illegal values.  They can of course be based on points placed in error.  Errors are minimized due to cross-referencing to geo-spatial gazetteers ensuring that the points dropped are within 10km of the place selected.
+
 ### Lower Geography Values Provided, but No Higher Geography
 Selecting any `GeographicArea` happens in one place in TaxonWorks, so you automatically get spatial and parent validation going up.* In other words, if you provide the lower geography, we derive the higher geography where there is information in our gazetteers to do so.
 
@@ -165,16 +200,26 @@ Our Validation software catches this for any parsed values. You can of course pu
 ### Mismatched Country and CountryCode Values
 [idigbio-dqtk-mismatch-codes](https://www.idigbio.org/wiki/index.php/Data_Quality_Toolkit_2024#Mismatched_Country_and_CountryCode_Values), [TDWG BDQ](https://github.com/tdwg/bdq) Relevant Tests: [VALIDATION_COUNTRY_COUNTRYCODE_CONSISTENT](https://github.com/tdwg/bdq/issues/62)
 
+If a `country` is reported and we have access to a corresponding ISO code (true for a majority of cases), then they are always matched, i.e. they are derived from a unified source, not manually entered independently.
+
 ### Mismatched Geographic Terms
 [idigbio-dqtk-mismatch-terms](https://www.idigbio.org/wiki/index.php/Data_Quality_Toolkit_2024#Mismatched_Geographic_Terms)
+
+TaxonWorks makes use of an internally managed GeographicArea gazeteer. Selecting a finer resolution entity (e.g. county, state) permits us to crawl the parenthood to fill in the pertinent data.  
+
+::: warning
+TaxonWorks also does spatial lookup for Georeference point data. The lookup algorithm can error based on limits to the resolution of the referenced gazeteers.  In this case one cap prioritize the use of GeographicArea to over-ride the spatial lookup. 
+:::
 
 ### Missing Geodetic Datum
 [idigbio-dqtk-datum-missing](https://www.idigbio.org/wiki/index.php/Data_Quality_Toolkit_2024#Missing_Geodetic_Datum), [TDWG BDQ](https://github.com/tdwg/bdq) Relevant Tests: [VALIDATION_GEODETICDATUM_NOTEMPTY](https://github.com/tdwg/bdq/issues/78), see also [VALIDATION_GEODETICDATUM_STANDARD](https://github.com/tdwg/bdq/issues/59) expects an EPSG code, [AMENDMENT_GEODETICDATUM_STANDARDIZED](https://github.com/tdwg/bdq/issues/60) sets to an EPSG code, [AMENDMENT_GEODETICDATUM_ASSUMEDDEFAULT](https://github.com/tdwg/bdq/issues/102)
 
+Missing data here are the norm for historical data. For de-novo capture TaxonWorks exports a number of types as estimated from the processes by which the Georeference was captured or an explicity Protocol reference.
+
 ### Missing Latitudes Longitudes
 [idigbio-dqtk-lat-lon-missing](https://www.idigbio.org/wiki/index.php/Data_Quality_Toolkit_2024#Missing_Latitudes/Longitudes), [TDWG BDQ](https://github.com/tdwg/bdq) Relevant Tests: [VALIDATION_DECIMALLATITUDE_NOTEMPTY](https://github.com/tdwg/bdq/issues/119), [VALIDATION_DECIMALLONGITUDE_NOTEMPTY](https://github.com/tdwg/bdq/issues/96)
 
-Using the `Filter collecting event` task, you can find records with no georeference. 
+Using the `Filter collecting event` task, you can find records with no Georeference. 
 
 ### Misspelled Geographic Unit Names
 [idigbio-dqtk-geounit-names-spelling](https://www.idigbio.org/wiki/index.php/Data_Quality_Toolkit_2024#Misspelled_Geographic_Unit_Names), [TDWG BDQ](https://github.com/tdwg/bdq) Relevant Tests: [VALIDATION_COUNTRY_FOUND](https://github.com/tdwg/bdq/issues/21), [VALIDATION_STATEPROVINCE_FOUND](https://github.com/tdwg/bdq/issues/199)
@@ -184,27 +229,37 @@ Using the `Filter collecting event` task, you can find records with no georefere
 ### Misspelled or Invalid Taxonomic Names
 [idigbio-dqtk-taxonname-missing-invalid](https://www.idigbio.org/wiki/index.php/Data_Quality_Toolkit_2024#Misspelled_or_Invalid_Taxonomic_Names), [TDWG BDQ](https://github.com/tdwg/bdq) Relevant Tests: [VALIDATION_SCIENTIFICNAME_FOUND](https://github.com/tdwg/bdq/issues/46)
 
+A huge variety of nomenclatural nuances can be specifically classified and identified in TaxonWorks, synonymous and misspelled names included.  All of these represent the historical record.  TaxonDeterminations are linked to these names and a CollectionObject as a bridging step. Presenting synomous or misspelled names during export is not only possible but required in various cases (for example for nomenclatural catalogs).
+
 ### Unknown Higher Taxonomy
 [idigbio-dqtk-higher-tax-unknown](https://www.idigbio.org/wiki/index.php/Data_Quality_Toolkit_2024#Unknown_Higher_Taxonomy), [TDWG BDQ](https://github.com/tdwg/bdq) Relevant Tests: 
 [VALIDATION_KINGDOM_FOUND](https://github.com/tdwg/bdq/issues/81), [VALIDATION_PHYLUM_FOUND](https://github.com/tdwg/bdq/issues/22), [VALIDATION_CLASS_FOUND](ttps://github.com/tdwg/bdq/issues/77), [VALIDATION_ORDER_FOUND](ttps://github.com/tdwg/bdq/issues/83), [VALIDATION_SUPERFAMILY_FOUND](ttps://github.com/tdwg/bdq/issues/205) supplemental, [VALIDATION_FAMILY_FOUND](ttps://github.com/tdwg/bdq/issues/28), [VALIDATION_TRIBE_FOUND](ttps://github.com/tdwg/bdq/issues/207) supplemental, [VALIDATION_SUBTRIBE_FOUND](ttps://github.com/tdwg/bdq/issues/208) supplemental, [VALIDATION_GENUS_FOUND](ttps://github.com/tdwg/bdq/issues/122), [VALIDATION_TAXON_UNAMBIGUOUS](ttps://github.com/tdwg/bdq/issues/70), 
 [VALIDATION_CLASSIFICATION_CONSISTENT](ttps://github.com/tdwg/bdq/issues/123)
 
+Unknown higher taxonomy is highly specific to the purpose of use of the data. There is no one true classification of nomenclature, or taxa.  Syncronizing of TaxonWorks data to external taxonomies is best done via the processes that merge or take TaxonWorks data into a new system.
+
 ## Other 
 
 ### Incorrect Character Encodings
+All data are encoded as UTF-8. TaxonWorks pre-processes all strings before writing (persisting) them to remove a handful of well-known issues with encoding, for example trimming white-space and removing various invisible characters.
 
 ### Incorrect Line Endings
+Many different exports are possible in TaxonWorks. Exporting returns a unified format.
 
 ### Invalid Individual Count
 [idigbio-dqtk-invalid-count](https://www.idigbio.org/wiki/index.php/Data_Quality_Toolkit_2024#Invalid_Individual_Count), [TDWG BDQ](https://github.com/tdwg/bdq) Relevant Tests: 
 [VALIDATION_INDIVIDUALCOUNT_INTEGER](https://github.com/tdwg/bdq/issues/290)
+
+The CollectionObject model requires a positive integer as the `total`, invalid values are impossible. 
 
 ### Nonstandardized basisOfRecord Values
 [idigbio-dqtk-nonstand-basesOfRecord](https://www.idigbio.org/wiki/index.php/Data_Quality_Toolkit_2024#Non-standardized_BasisOfRecord_Values), [TDWG BDQ](https://github.com/tdwg/bdq) Relevant Tests: [VALIDATION_BASISOFRECORD_STANDARD](https://github.com/tdwg/bdq/issues/104), [AMENDMENT_BASISOFRECORD_STANDARDIZED](https://github.com/tdwg/bdq/issues/63)
 
 We generate `dwc:basisOfRecord`, so a non-issue for TW. If an issue on Import, our Importer software will tell you. With the Importer you can "find" and "replace" any non-standard value and then continue the upload.
 
-## Tools and Resources
+## External Tools and Resources
+
+Many approaches have influenced how we build and what we build in TaxonWorks with respect to data-quality: 
 - Data Carpentry [Data Cleaning with OpenRefine](https://datacarpentry.org/OpenRefine-ecology-lesson/)
 - Data Carpentry [Data Organization in Spreadsheets](https://datacarpentry.org/spreadsheet-ecology-lesson/)
 - [OpenRefine](https://openrefine.org/) as a great tool for
@@ -231,4 +286,4 @@ We generate `dwc:basisOfRecord`, so a non-issue for TW. If an issue on Import, o
     - [**compare** two files that contain taxon name strings](https://github.com/gnames/gndiff)
 
 ### Footnotes
-  - **Fidelity*** - as referenced by Erica Krimmel at TaxonWorks Together 2024 as a term that may more exactly convey what we can manage when we talk about making our data as fit-for-purposes (known and imagined) as possible (rather than the more _subjective_ term of _quality_).
+- **Fidelity** - as referenced by Erica Krimmel at [TaxonWorks Together](https://together.taxonworks.org) 2024 as a term that may more exactly convey what we can manage when we talk about making our data as fit-for-purposes (known and imagined) as possible (rather than the more _subjective_ term of _quality_).

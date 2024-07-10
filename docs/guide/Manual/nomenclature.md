@@ -52,6 +52,15 @@ Additionally, on any `Browse/Show` page you can:
 * ctrl+p - automatically pin and default that name to the pinboard
 * ctrl+g - pop-up a quick navigation modal that lets you navigate to the defaulted records
 
+##### Troubleshooting
+
+If you are using Firefox on Windows or Linux, the `alt` key is bound to the Firefox browser menu system which conflicts with the TaxonWorks hotkeys. If you do not ever use the `alt` keys to access Firefox browser menus, you can disable it by navigating to [about:config](about:config) and editing these keys:
+
+```
+ui.key.menuAccessKeyFocuses = false
+ui.key.menuAccessKey = 0
+```
+
 ## Understanding the data model
 
 Extensive information exists about the [TaxonWorks data model](https://docs.taxonworks.org/develop/Data/models.html). Information is presented in text and searchable graphic formats.

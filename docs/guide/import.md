@@ -105,13 +105,14 @@ Term|Mapping
 `type` | It is checked that it equals `PhysicalObject` before allowing the record to be imported. If the value is empty or term not present it is assumed it is a `PhysicalObject`
 `institutionCode` | Selects the repository for the specimen that is registered with an acronym equal to this value
 `collectionCode` | Paired with `institutionCode` it is used to select the namespace for `catalogNumber` from a user-defined lookup table in import settings, the value itself is not imported.
-`basisOfRecord` | It is checked that it equals an expected valid value for term, e.g. `PreservedSpecimen` or `FossilSpecimen` before allowing the record to be imported. If the value is empty or term not present it is assumed it is a `PreservedSpecimen` [IS THIS STILL TRUE?]
+`basisOfRecord` | It is checked that it equals an expected valid value for term, e.g. `PreservedSpecimen` or `FossilSpecimen` before allowing the record to be imported. If the value is empty or term not present it is assumed it is a `PreservedSpecimen`. _For compatibility with GBIF datasets, `PRESERVED_SPECIMEN` is also allowed._
 
 ##### Occurrence class
 
 Term|Mapping
 ---|---
-`catalogNumber` | The identifier value for Catalog Number local identifier. The namespace is selected from the namespaces lookup table in import settings queried by `institutionCode`:`collectionCode` pair.
+`catalogNumber` | The identifier value for Catalog Number local identifier. The namespace is selected from the namespaces lookup table in import settings queried by `institutionCode`:`collectionCode` pair. If you require several records to share the same Catalog Number identifier, you may do so by enabling `Containerize specimen with existing ones when catalog number already exists` import setting or by distinct `recordNumber` value.
+`recordNumber` | The identifier value for Record Number local identifier. If not empty the record requires to have the short name of the Namespace to use in a TW-specific column named `TW:Namespace:RecordNumber`. This DwC term enables the re-use of the same `catalogNumber` of both existing collection objects and records in the dataset, as the importer assigns related specimens to a container to allow sharing the same Catalog Number identifier.
 `recordedBy` | It is imported as-is in verbatim collectors field of the collecting event. Additionally, the value is parsed into people and assigned as collectors of the CE. Previously existing people are not used unless the data origin is the same dataset the record belongs to, otherwise any missing people are created.
 `individualCount` | The total number of entities associated with the specimen record (e.g. this record may be for a "lot" containing 6 objects).
 `sex` | Selects the biocuration class from the "sex" biocuration group to be assigned as biocuration classification for the specimen.
@@ -121,7 +122,8 @@ Term|Mapping
 
 Term|Mapping
 ---|---
-`fieldNumber` | Verbatim trip identifier of collecting event
+`eventID` | The identifier for the Collecting Event. If not empty the importer requires a Namespace for it. You may specify a Namespace in a TW-specific column named `TW:Namespace:EventID` by either using a global identifier type (e.g. `Identifier::Global::Uuid`, `Identifier::Global::Lsid`, etc.), or the short name of the Namespace for the Event local identifier. If no namespace is provided, the importer assigns a dataset-specific one with a synthetic name that you can later change. When an existing Collecting Event already has this identifier, the importer re-uses it and the event-related data is ignored.
+`fieldNumber` | The identifier value for Field Number local identifier. If not empty the record requires to have the short name of the Namespace to use in a TW-specific column named `TW:Namespace:FieldNumber`. The verbatim trip identifier is also populated by this DwC term. When an existing Collecting Event already has this identifier, the importer re-uses it and the event-related data is ignored. IMPORTANT: if a Collecting Event is already matched by `eventID`, this identifier must exactly match the existing one, otherwise the importer will reject the record. Same rejection will occur if mismatch happens the other way around.
 `eventDate` | The ISO8601-formatted date is split into start year, month and day collecting event fields. If the value is composed of two dates separated by `/`, then rightmost date is used as end date and split in the same way as start date. If data contradicts dates from other non-empty date-related terms the record will fail to import
 `eventTime` | Time is split into time start hour, minute, and second of collecting event
 `startDayOfYear` | Using `year` and the value for this term month and day are calculated and stored in start year, month, and day collecting event fields. If the computed value contradicts dates from other non-empty date-related terms the record will fail to import.

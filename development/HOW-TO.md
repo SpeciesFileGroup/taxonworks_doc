@@ -43,7 +43,7 @@ This includes an admin and a non-admin user, which are admin@example.com and use
 ### One-line using docker
 From the taxonworks directory:
 ```
-docker-compose exec app bundle exec rails db:seed
+docker compose exec app bundle exec rails db:seed
 ```
 
 ## Creating a new task

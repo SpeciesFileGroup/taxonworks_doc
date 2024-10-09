@@ -21,7 +21,7 @@ Send! It is super useful for you to record your screen, or position a video came
 ### Follow TaxonWorks code conventions
 
 - Various README.md files exist in the code-base.
-- We have code linter (Rubocop), but it is not heavily used. With growth this may change.
+- We have a code linter (Rubocop), but it is not heavily used. With growth this may change.
 
 ### Submit changes to the code base or repository
 
@@ -59,13 +59,13 @@ _A brief summary of the steps._
 - If you need to add an image see [including a screenshot](#including-screenshots-or-images).
 - Click `Commit changes` to submit a "pull request."
 - In the form that pops up:
-  - Add a (very) brief description of your change in the filed that has `Update README.md` in muted colors
+  - Add a (very) brief description of your change in the field that has `Update README.md` in muted colors
   - Add a longer optional description in the bigger box, if you want
-  - In your message not to use words like "Changed, tweaked, updated", describe _what_ was done
+  - In your message do not use words like "Changed, tweaked, updated", describe _what_ was done
   - Choose the second option `Create a new branch ...`. There is an exception to this, if your changes are small, and ready to go directly to the public site, then you can commit to the `development` branch.
 - Click `Commit changes` again
 
-A [TaxonWorks Docs GitHub repository](https://github.com/SpeciesFileGroup/taxonworks_doc) team member will review, make edits, ping you with questions if needed, and then ultimately accept the pull request to "merge" this our documentation.
+A [TaxonWorks Docs GitHub repository](https://github.com/SpeciesFileGroup/taxonworks_doc) team member will review, make edits, ping you with questions if needed, and then ultimately accept the pull request to "merge" this into our documentation.
 
 #### What branch should I use?
 
@@ -74,12 +74,12 @@ In deciding which branch to make a change on start by asking the question: "Is m
 In addition:
 
 - The _development_ branch is the staging ground for the _main_ branch.
-- You should always assume that that _development_ branch changes will go live at any time.
+- You should always assume that _development_ branch changes will go live at any time.
 - _Development_ changes may accumulate before moving to _main_.
 - The _main_ branch must never be committed to directly. Changes to _main_ happen when _development_ is merged into it.
 - It is always safest, and OK, to start a new branch.
 - It's best to limit the scope of your changes on each new branch.
-- If you have large/ongoing changes to your branch its useful to start your editing session by merging _development_ into _your branch_. This keeps the differences between _development_ and _your branch_ minimal.
+- If you have large/ongoing changes to your branch it's useful to start your editing session by merging _development_ into _your branch_. This keeps the differences between _development_ and _your branch_ minimal.
 - If you are editing locally, make sure you syncronize your changes with those on the remote server (`git pull`) before you start your editing session.
 
 #### Offline
@@ -87,7 +87,7 @@ In addition:
 _Offline editing follows a typical Git-based workflow that are detailed on Github and many other places online._
 
 - Fork the repository
-- Clone the fork your local machine
+- Clone the fork onto your local machine
 - Make a new feature branch
 - Edit, and commit to the branch
 - Push your local edits to your Github fork

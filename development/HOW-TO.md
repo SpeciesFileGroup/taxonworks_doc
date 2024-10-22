@@ -22,7 +22,7 @@ docker-compose exec app bash
 ## Enter the Rails console
 * Enter the app shell
 ```
-rails c
+bin/rails c
 exit
 ```
 

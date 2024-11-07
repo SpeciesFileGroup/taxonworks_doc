@@ -1,10 +1,29 @@
 ---
-sidebarPosition: 30
+sidebarPosition: 125 
 ---
 
 # Contributing
 
-_Contributions can come in many different ways, not all are technical. How do I contribute? You can always [contact us](/about/Contact) with questions._
+_Contributions are possible in many different ways, not all technical. How do I contribute? You can always [contact us](/about/contact) with questions._
+
+## Report a bug
+
+Where to file an issue:  
+* TaxonWorks the software - [issue tracker here](https://github.com/SpeciesFileGroup/taxonworks/issues)
+* TaxonWorks Docs (these pages) - [issue tracker is here](https://github.com/SpeciesFileGroup/taxonworks_docs/issues)
+* TaxonWorks API - [issue tracker is here](https://github.com/SpeciesFileGroup/taxonworks_api/issues)
+
+Before you file an issue:
+* Check to see that the issue is indeed new by carefully reviewing the existing issues.
+
+While filing your issue:
+* Use a issue template if available, this categorizes your insights into more actionable items for those seeking to address it
+* Tell a story! Give us enough background so that we can replicate exactly what you did. 
+* Include a success criterion. How do we know we've succeeded in addressing the issues without contacting you again?
+* Err on providing more, rather than less information.
+* Provide a meaningful title that identifies your role, and what you seek to accomplish, e.g. `As an X I need Y to do Z`
+* Provide links/URLs to the scenarios in question, particularly if referencing a specific data point
+* Consider adding Screenshots for context.
 
 ## Ideas, feature requests
 
@@ -12,28 +31,17 @@ _Contributions can come in many different ways, not all are technical. How do I 
 
 First, thanks, this is complicated stuff. Interface (e.g. forms, reports, searches) mockups are graphical ways of asking for new features. We love to see them. To create a mock-up you can use tools like Illustrator, Photoshop, or more technical design tools like Balsamiq or Sketch, or just draw them on paper and take a picture with your phone. The issue templates have inputs for handling images, just drag and drop them there. Add a little story, or multiple pictures to help describe how you might use the interface.
 
+:::tip
+Use the prefix `Task -` in the issue name to indicate the request for a new or improved task.
+:::
+
 ### Provide a suggestion for a feature or improvement via a video
 
-Send! It is super useful for you to record your screen, or position a video camera to capture your work on-screen and arround you. This way we see exactly how you work. You can send us big videos through file sharing services like [http://www.dropsend.com/](http://www.dropsend.com/). Find ways to [Contact us here](/about/Contact).
+Send! It is super useful for you to record your screen, or position a video camera to capture your work on-screen and around you. This way we see exactly how you work. You can send us big videos through file sharing services like [http://www.dropsend.com/](http://www.dropsend.com/). Find ways to [Contact us here](/about/Contact).
 
 ## Code
 
-### Follow TaxonWorks code conventions
-
-- Various README.md files exist in the code-base.
-- We have a code linter (Rubocop), but it is not heavily used. With growth this may change.
-
-### Submit changes to the code base or repository
-
-- [Fork](https://help.github.com/articles/fork-a-repo/) the repository on Github
-- Make a new branch off of the development branch
-  - It helps if the branch tracks an issue number, like `1234_my_feature_request`
-- If you have experience, rebase your branch against development before making a [pull request](/about/Glossary#Pull-request)
-- From your repository on Github select your branch, and use buttons there to make a [pull request](/about/Glossary#Pull-request).
-
-### Document the code?
-
-TaxonWorks code [documentation](http://rdoc.taxonworks.org) is done inline with [Yard tags](https://rubydoc.info/gems/yard/file/docs/Tags.md).
+See [Code](Code/).
 
 ## Documentation
 
@@ -67,7 +75,7 @@ _A brief summary of the steps._
 
 A [TaxonWorks Docs GitHub repository](https://github.com/SpeciesFileGroup/taxonworks_doc) team member will review, make edits, ping you with questions if needed, and then ultimately accept the pull request to "merge" this into our documentation.
 
-#### What branch should I use?
+##### What branch should I use?
 
 In deciding which branch to make a change on start by asking the question: "Is my change ready to go live, right now?" If the answer is _yes_ (and you have permissions) then you can _commit to the development branch_. If the answer is _no_ (e.g. you want to further refine your text), then you should commit to a new branch.
 
@@ -93,9 +101,9 @@ _Offline editing follows a typical Git-based workflow that are detailed on Githu
 - Push your local edits to your Github fork
 - Make a pull request
 
-### Including screenshots or images
+### Including images
 
-In adding documentation, you will note that on any page at [docs.taxonworks.org](https://docs.taxonworks.org) you can click the **Edit pencil icon** to add / edit text. To manage the screenshot image files we add to the documentation, we use `TaxonWorks Meta Project` hosted on [sfg.taxonworks.org](sfg.taxonworks.org). To add screenshots to this documentation, you'll need to become a member of that `TaxonWorks Meta Project`. Let us know you want to be added (e.g. send dlpaul AT illinois DOT edu an email, or ping us on [gitter](https://matrix.to/#/#taxonworks:gitter.im) or our [TaxonWorks Slack Workspace](https://join.slack.com/t/taxonworks/shared_invite/zt-1pnnvq3dc-4b685~M8gssOCR2Yk956Ng)). When taking screenshots, note the resolution of your computer's monitor makes a difference if these images are sharp and clear or out of focus.
+In adding documentation, you will note that on any page at [docs.taxonworks.org](https://docs.taxonworks.org) you can click the **Edit pencil icon** to add / edit text. To manage the image files, for example screenshots, we add to the documentation, we use `TaxonWorks Meta Project` hosted on [https://sfg.taxonworks.org](sfg.taxonworks.org). To add screenshots to this documentation, you'll need to become a member of that `TaxonWorks Meta Project`. Let us know you want to be added (e.g. send dlpaul AT illinois DOT edu an email, or ping us in [Element](https://matrix.to/#/#taxonworks:gitter.im) or [Slack](https://join.slack.com/t/taxonworks/shared_invite/zt-1pnnvq3dc-4b685~M8gssOCR2Yk956Ng)). When taking screenshots, note the resolution of your computer's monitor makes a difference if these images are sharp and clear or out of focus.
 
 - Take the desired screenshots.
 - Upload these images (in bulk or one-at-a-time) to the `TaxonWorks Meta Project` using the `New Image` task.
@@ -239,12 +247,3 @@ We use Markdown. Many guides exist, for example on [GitHub](https://docs.github.
 ```
 Some code, or literal example.
 ```
-
-## Project management
-
-_How to issues are triaged, prioritized, and discussed._
-
-### Categorize an Issue on Github
-
-_Not everyone has permissions to label issues._
-[See their descriptions.](https://github.com/SpeciesFileGroup/taxonworks/labels)

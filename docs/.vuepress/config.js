@@ -31,12 +31,6 @@ export default defineUserConfig({
     }
   },
 
-  markdown: {
-    code: {
-      lineNumbers: false
-    }
-  },
-
   clientAppEnhanceFiles: path.resolve(
     __dirname,
     './configs/clientAppEnhance.js'

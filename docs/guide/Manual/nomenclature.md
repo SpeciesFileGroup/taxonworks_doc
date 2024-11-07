@@ -52,11 +52,20 @@ Additionally, on any `Browse/Show` page you can:
 * ctrl+p - automatically pin and default that name to the pinboard
 * ctrl+g - pop-up a quick navigation modal that lets you navigate to the defaulted records
 
+##### Troubleshooting
+
+If you are using Firefox on Windows or Linux, the `alt` key is bound to the Firefox browser menu system which conflicts with the TaxonWorks hotkeys. If you do not ever use the `alt` keys to access Firefox browser menus, you can disable it by navigating to [about:config](about:config) and editing these keys:
+
+```
+ui.key.menuAccessKeyFocuses = false
+ui.key.menuAccessKey = 0
+```
+
 ## Understanding the data model
 
 Extensive information exists about the [TaxonWorks data model](https://docs.taxonworks.org/develop/Data/models.html). Information is presented in text and searchable graphic formats.
 
-* TaxonName relationships, at a low level, are gradually being documented [here](https://github.com/SpeciesFileGroup/taxonworks_doc/blob/dwc/concepts/TaxonWorksNomenclature.pdf) where you can zoom in to see details). See next for PNG version of the same information.
+TaxonName relationships, at a low level, are gradually being documented [here](https://github.com/SpeciesFileGroup/taxonworks_doc/blob/dwc/concepts/TaxonWorksNomenclature.pdf) where you can zoom in to see details). See next for PNG version of the same information.
  #left[**Legend:** Visualizing `TaxonName` relationships in TW](https://sfg.taxonworks.org/s/5oqq47 [PNG made from the PDF showing Taxon Name relationships in TW])
 
 ## Curating data

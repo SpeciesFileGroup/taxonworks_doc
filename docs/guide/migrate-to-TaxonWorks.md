@@ -9,7 +9,7 @@ For general import and input methods see [Import](/guide/import) and [Export](/g
 
 ## Overview
 
-Those considering TaxonWorks often have existing data in many different formats. One of their first questions is how can they get their existing data in to TaxonWorks. In your considerations it might help to read the [Checklist](#checklist), a generic list of things to consider.
+Those considering TaxonWorks often have existing data in many different formats. One of their first questions is how can they get their existing data into TaxonWorks. In your considerations it might help to read the [Checklist](#checklist), a generic list of things to consider.
 
 ## Strategies
 
@@ -17,7 +17,7 @@ TaxonWorks collectively provides a nice spectrum of strategies for moving projec
 
 ### Keying
 
-Even with a large dataset some see coming into a new project as a way to start fresh. Keying in your data has the benefit of forcing you to look carefully at it.  It ensures a maximal match to TaxonWorks concepts (data models) as everything is done "natively". It lets you master the interfaces you'll ultimately use through repeated use and experimentation. For incoming datasets with tables of less than 500 rows this is very feasible. Remember that the time spent starting, even if weeks or months, is a tiny fraction of the years spent curating into the future. The elephant in the room- the time it takes to write a script, reformat your data, test and refine batch loads is all time spent, often waiting for others, that you and your team could have been entering data.  
+Even with a large dataset some see coming into a new project as a way to start fresh. Keying in your data has the benefit of forcing you to look carefully at it. It ensures a maximal match to TaxonWorks concepts (data models) as everything is done "natively". It lets you master the interfaces you'll ultimately use through repeated use and experimentation. For incoming datasets with tables of less than 500 rows this is very feasible. Remember that the time spent starting, even if weeks or months, is a tiny fraction of the years spent curating into the future. The elephant in the room — the time it takes to write a script, reformat your data, test and refine batch loads — is all time spent, often waiting for others, that you and your team could have been entering data.  
 
 We've worked hard to build interfaces that variously:
 * Facilitate adding multiple items via drag and drop (e.g. images)
@@ -98,10 +98,10 @@ Longer than you expect, however this is highly dependent on what you're coming i
 ### Prepare your data
 _Or, "get to text"_
 
-Many systems that you migrate too will want your data in a text format (e.g. CSV). This is in contrast to something like a Spreadsheet. Depending on who is supporting the migration it might be valuable for you to get eperienced in exporting to this format, as it may happen iteratively and frequently. If your data are in a wide-spread SQL format that is compatible (e.g. SQLlite or PostgresQL) 
+Many systems that you migrate to will want your data in a text format (e.g. CSV). This is in contrast to something like a Spreadsheet. Depending on who is supporting the migration it might be valuable for you to get experienced in exporting to this format, as it may happen iteratively and frequently. If your data are in a wide-spread SQL format that is compatible (e.g. SQLlite or PostgresQL) 
 
 #### Archive your old data
-Consider archiving snapshots of your data as they originally existed for all the future digital-archaeologist who need to justify their jobs.
+Consider archiving snapshots of your data as they originally existed for all the future digital-archaeologists who need to justify their jobs.
 
 #### Organize your text
 Keep `original` copies of exported text files, as "pristine" as possible in one directory.  `Clone` those files into a *working* directory. Use Git to commit the files to persist changes at different times. _TODO: Reference to data carpentry class or R for data science setup._
@@ -123,11 +123,11 @@ Hopefully that system has ways to trial the import, and re-do it from scratch.  
 
 #### Plan for transition
 
-Set a date-time a making the final import run. Make sure your community is aware and engaged.
+Set a date-time for making the final import run. Make sure your community is aware and engaged.
 
 You may also consider taking the opportunity to:
 * Broaden your community by encouraging others to join.  Solo-run projects on complex data are "fragile" in ways that groups of collaborators don't face.
-* Adding new ways to communicate issues. Remember, no migration is perfect, immediately after the import run expect to see a flurry of communication that points out problems with the data, tools, etc.  Perhaps you can start a shared issue tracker or chat-room so that these issues become visible and accessible to others beyond yourself. Open, shared communications lets experts outside your community hop in and help, as opposed to, for example emails from 1 person to another that are "hidden"from others who might help.  Open communication also leaves an audit-trail that can be used to highlight the broader impacts of your project (e.g. look, X number of people need our data, and took the time to engage us) in ways that emails can not.
+* Adding new ways to communicate issues. Remember, no migration is perfect, immediately after the import run expect to see a flurry of communication that points out problems with the data, tools, etc. Perhaps you can start a shared issue tracker or chat-room so that these issues become visible and accessible to others beyond yourself. Open, shared communications lets experts outside your community hop in and help, as opposed to, for example emails from 1 person to another that are "hidden" from others who might help. Open communication also leaves an audit-trail that can be used to highlight the broader impacts of your project (e.g. look, X number of people need our data, and took the time to engage us) in ways that emails can not.
 
 #### Complete the migration
 

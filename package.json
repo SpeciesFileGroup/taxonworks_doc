@@ -30,6 +30,7 @@
     "@vuepress/plugin-search": "^2.0.0-rc.55",
     "@vuepress/theme-default": "^2.0.0-rc.60",
     "@vuepress/utils": "^2.0.0-rc.18",
+    "sass-embedded": "^1.80.6",
     "vuepress": "^2.0.0-rc.18"
   },
   "dependencies": {

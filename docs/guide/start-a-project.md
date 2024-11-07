@@ -46,7 +46,7 @@ As more and more projects are created in TaxonWorks the scope of the taxa covere
 ## Serve
 We encourage organizations or individuals with the resources to run their own instance of TaxonWorks. The core development team is mandated to facilitate this happening, and is committed to working with you to navigate the technical challenges to this. When individuals or organizations manage their own instance then this demonstrates to the broader community the growing role and importance of TaxonWorks. New instances help distribute valuable technical resources and underlying responsibility across our community.
 
-From a technical perspective you can get started with [install_taxonworks repository](https://github.com/SpeciesFileGroup/install_taxonworks).
+From a technical perspective you might start with the [Install](/Develop/Install/) instructions.
 
 From a social perspective we encourage you to reach out and discuss with us how to best setup a new production-ready instance.
 

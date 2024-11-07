@@ -9,6 +9,14 @@ _Categorized help that answer a commonly asked question._
 ### How do I contribute back to the community?
 See '[Contributing](/develop/Contributing)' in develop.
 
+### What browser's are supported?
+
+Firefox and Chrome. 
+
+::: danger
+Safari and Edge are not supported.
+::: 
+
 ### What about sequence and genomic data, how do they fit into TaxonWorks vision? 
 
 To see this vision realized we need dedicated collaborators (developers, work-bench experts, labs) and funding, i.e. the Species File Group and its current collaborators does not presently have these advances as targeted milestones, nor do they anticipate significant code-contributions from "core" members in the absence of said collaborations/funding. The SFG is very open to guiding work done in this area, i.e. facilitating developers and data-modellers and providing parallel work in some areas, for example implementing externally developed, well thought out, UIs.

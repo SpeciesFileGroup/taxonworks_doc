@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.18" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme')
+      const systemDarkMode =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (userMode === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (userMode === 'dark' || systemDarkMode) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" href="/images/favicon.svg"><title>TaxonWorks Docs</title><meta name="description" content="TaxonWorks is a workbench with many tools for describing life. This site contains the documentation.">
+    <link rel="preload" href="/assets/style-B3IP0MnU.css" as="style"><link rel="stylesheet" href="/assets/style-B3IP0MnU.css">
+    <link rel="modulepreload" href="/assets/app-B0NuMc7K.js"><link rel="modulepreload" href="/assets/404.html-C-x-zaga.js">
+    <link rel="prefetch" href="/assets/index.html-Cv5QPn4b.js" as="script"><link rel="prefetch" href="/assets/index.html-CsiqyKxu.js" as="script"><link rel="prefetch" href="/assets/branding.html-D_k1GNqv.js" as="script"><link rel="prefetch" href="/assets/citing-taxonworks.html-DBkIltu8.js" as="script"><link rel="prefetch" href="/assets/contact.html-BwaJnOVu.js" as="script"><link rel="prefetch" href="/assets/events.html-C43s69Fw.js" as="script"><link rel="prefetch" href="/assets/glossary.html-B9ct5bx6.js" as="script"><link rel="prefetch" href="/assets/index.html-GssfteQa.js" as="script"><link rel="prefetch" href="/assets/contributing.html-DDzrCy6-.js" as="script"><link rel="prefetch" href="/assets/index.html-By3dml24.js" as="script"><link rel="prefetch" href="/assets/index.html-Dszle2WT.js" as="script"><link rel="prefetch" href="/assets/api.html-hEceIzuk.js" as="script"><link rel="prefetch" href="/assets/community-resources.html-CmlM-pb2.js" as="script"><link rel="prefetch" href="/assets/data-quality.html-Bz61NL86.js" as="script"><link rel="prefetch" href="/assets/export.html-CtZucdjm.js" as="script"><link rel="prefetch" href="/assets/getting-started.html-OIgy8UYz.js" as="script"><link rel="prefetch" href="/assets/import.html-2UQpmCQ4.js" as="script"><link rel="prefetch" href="/assets/migrate-to-TaxonWorks.html-BCq_4wY-.js" as="script"><link rel="prefetch" href="/assets/other-documents.html-DNITlGFw.js" as="script"><link rel="prefetch" href="/assets/start-a-project.html-B5pw0DLt.js" as="script"><link rel="prefetch" href="/assets/videos.html-3TRra7hZ.js" as="script"><link rel="prefetch" href="/assets/index.html-BFWbgxMN.js" as="script"><link rel="prefetch" href="/assets/contributing.html-Cf4fCKFg.js" as="script"><link rel="prefetch" href="/assets/environment.html-C-yUV7y5.js" as="script"><link rel="prefetch" href="/assets/roadmap.html-e2ND_5BZ.js" as="script"><link rel="prefetch" href="/assets/troubleshoot.html-CokRYIYl.js" as="script"><link rel="prefetch" href="/assets/index.html-OJZj64gO.js" as="script"><link rel="prefetch" href="/assets/models.html-CVVtRfjc.js" as="script"><link rel="prefetch" href="/assets/tables.html-CzXIVSix.js" as="script"><link rel="prefetch" href="/assets/index.html-D1E_iuKe.js" as="script"><link rel="prefetch" href="/assets/index.html-BkXj7L_V.js" as="script"><link rel="prefetch" href="/assets/index.html-CuHjgAGg.js" as="script"><link rel="prefetch" href="/assets/bug-reporting.html-XgMPKCZM.js" as="script"><link rel="prefetch" href="/assets/contributing.html-DAQ4gnXU.js" as="script"><link rel="prefetch" href="/assets/installation.html-gU-UQa7s.js" as="script"><link rel="prefetch" href="/assets/index.html-CX-anpty.js" as="script"><link rel="prefetch" href="/assets/index.html-Bkt5wWP_.js" as="script"><link rel="prefetch" href="/assets/index.html-BdNbzc19.js" as="script"><link rel="prefetch" href="/assets/annotation.html-kI4nundm.js" as="script"><link rel="prefetch" href="/assets/collecting_event.html-BpqoK__V.js" as="script"><link rel="prefetch" href="/assets/collectionobject.html-BPD1SRWb.js" as="script"><link rel="prefetch" href="/assets/conventions.html-i1XeAK6h.js" as="script"><link rel="prefetch" href="/assets/customization.html-B8ZfKhxb.js" as="script"><link rel="prefetch" href="/assets/digitization.html-BK8mi3-_.js" as="script"><link rel="prefetch" href="/assets/identifiers.html-CQUjwlfx.js" as="script"><link rel="prefetch" href="/assets/matrices.html-D8Jh7ZEB.js" as="script"><link rel="prefetch" href="/assets/nomenclature.html-Njw5x_Zh.js" as="script"><link rel="prefetch" href="/assets/index.html-CZ_8TtWH.js" as="script"><link rel="prefetch" href="/assets/model.html-C_TAzJ2o.js" as="script"><link rel="prefetch" href="/assets/radial.html-CZyd1rNL.js" as="script"><link rel="prefetch" href="/assets/rake_task.html-CJCyPy6V.js" as="script"><link rel="prefetch" href="/assets/taxonworks_task.html-BLSyUWA0.js" as="script"><link rel="prefetch" href="/assets/tests.html-BIsyxlQP.js" as="script"><link rel="prefetch" href="/assets/index.html-p-QoZBIs.js" as="script"><link rel="prefetch" href="/assets/index.html-Bb-c2yWl.js" as="script"><link rel="prefetch" href="/assets/index.html-CWJ7puH6.js" as="script"><link rel="prefetch" href="/assets/index.html-Dl00WM-B.js" as="script"><link rel="prefetch" href="/assets/UPDATING_DOCKER_CONTAINER.html-C8Lla-nj.js" as="script"><link rel="prefetch" href="/assets/win_README.html-zBVTcElC.js" as="script"><link rel="prefetch" href="/assets/index.html-BG0xWN6e.js" as="script"><link rel="prefetch" href="/assets/arch.html-ClLEN7Ew.js" as="script"><link rel="prefetch" href="/assets/macos.html-D3y0-JjO.js" as="script"><link rel="prefetch" href="/assets/ubuntu_20_04.html-XPavdC4Y.js" as="script"><link rel="prefetch" href="/assets/ubuntu_22_04.html-fB2R3LAK.js" as="script"><link rel="prefetch" href="/assets/win_10.html-CKraFt0h.js" as="script"><link rel="prefetch" href="/assets/index.html-BwZTiRt8.js" as="script"><link rel="prefetch" href="/assets/index.html-B0Mo4Z84.js" as="script"><link rel="prefetch" href="/assets/setupDevtools-7MC2TMWH-BS_-9rjc.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container" vp-container data-v-67c08c1d><main class="page" data-v-67c08c1d><div class="theme-default-content" vp-content data-v-67c08c1d><h1 data-v-67c08c1d>404</h1><blockquote data-v-67c08c1d>That&#39;s a Four-Oh-Four.</blockquote><a class="route-link" href="/" data-v-67c08c1d>Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/assets/app-B0NuMc7K.js" defer></script>
+  </body>
+</html>

@@ -65,7 +65,7 @@ ui.key.menuAccessKey = 0
 
 Extensive information exists about the [TaxonWorks data model](https://docs.taxonworks.org/develop/Data/models.html). Information is presented in text and searchable graphic formats.
 
-* TaxonName relationships, at a low level, are gradually being documented [here](https://github.com/SpeciesFileGroup/taxonworks_doc/blob/dwc/concepts/TaxonWorksNomenclature.pdf) where you can zoom in to see details). See next for PNG version of the same information.
+TaxonName relationships, at a low level, are gradually being documented [here](https://github.com/SpeciesFileGroup/taxonworks_doc/blob/dwc/concepts/TaxonWorksNomenclature.pdf) where you can zoom in to see details). See next for PNG version of the same information.
  #left[**Legend:** Visualizing `TaxonName` relationships in TW](https://sfg.taxonworks.org/s/5oqq47 [PNG made from the PDF showing Taxon Name relationships in TW])
 
 ## Curating data

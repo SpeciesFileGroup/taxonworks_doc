@@ -44,6 +44,7 @@ If using [Docker environment](https://github.com/SpeciesFileGroup/install_taxonw
 docker compose exec app bash
 ```
 That puts you in a bash shell inside the linux Docker image.
+Older installations may require `docker-compose` instead of `docker compose`.
 
 ### Enter the Rails console
 * Enter the app shell (see above), or simply in native environment

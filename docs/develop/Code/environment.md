@@ -41,9 +41,10 @@ cd /path/to/taxonworks/
 ```
 If using [Docker environment](https://github.com/SpeciesFileGroup/install_taxonworks/blob/master/development/docker/README.md) then continue with:
 ```
-docker-compose exec app bash
+docker compose exec app bash
 ```
 That puts you in a bash shell inside the linux Docker image.
+Older installations may require `docker-compose` instead of `docker compose`.
 
 ### Enter the Rails console
 * Enter the app shell (see above), or simply in native environment
@@ -70,9 +71,9 @@ quit
 ```
 bundle exec rails db:seed
 ```
-Alternatively if you're using Docker you can execute the command above straight from the TaxonWorks directory using `docker-compose`:
+Alternatively if you're using Docker you can execute the command above straight from the TaxonWorks directory using `docker compose`:
 ```
-docker-compose exec app bundle exec rails db:seed
+docker compose exec app bundle exec rails db:seed
 ```
 This creates an admin and a non-admin user, which are admin@example.com and user@example.com respectively, both with password `taxonworks`.
 

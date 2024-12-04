@@ -4,7 +4,7 @@ sidebarPosition: 5
 
 # Contributing
 
-See also [Contributing](/CContributing/) for non-code contributions.
+See also [Contributing](/Contributing/) for non-code contributions.
 
 
 - Make a new branch off of the development branch (see [Fork](https://help.github.com/articles/fork-a-repo/))

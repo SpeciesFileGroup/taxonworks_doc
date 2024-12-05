@@ -40,10 +40,130 @@ These keys can be used on-or offline using the [pinpoint](https://github.com/Spe
 TaxonWorks exports print-ready formats with features including:
 * Auto numbering of the key on demand 
 * Markdown markup for eBook or further styling (coming)
-
-### API 
+ ### API 
 
 Standard keys can be exported as one JSON object.  This object is what is used by pinpoint.  It could also be used as a data-object in a larger integrated or aggregating format.  The model is in progress.
+
+### Tutorial: Standard Key
+
+What follows are the steps for entering data to create a basic dichotomous (standard) key. Please note carefully the logic of when and where key elements are entered as these intricacies are critical.
+
+The instructions that follow will allow you to recreate the key shown here:
+
+```
+Key to the males of Rhopalopsole species from Yunnan Province of China from 
+Yang, X. & Du, Y.-Z. (2024) A new species of Rhopalopsole (Plecoptera, Leuctridae) from Yunnan Province, China. Biodiversity Data Journal, 12, e134258: 10 pages. https://doi.org/10.3897/bdj.12.e134258.
+
+1 Lateral processes of tergum 10 bifurcate…………………………………………………….... 2
+
+– Lateral processes of tergum 10 not bifurcate……………………………………………….… 4
+
+2 Epiproct triangulate in dorsal view ………………………….R. brevidigitata Qian & Du, 2017
+
+– Epiproct not triangulated in dorsal view…………………………………..……………………. 3
+
+3 Antennae with long hairs…………………………………….…R. sinensis Yang & Yang, 1993
+
+– Antennae without long hairs……………………………..….R. yunnana Sivec & Harper, 2008
+
+4 Subanal lobes are divided into three parts……………………..…….R. dentiloba (Wu, 1973)
+
+– Subanal lobes are not divided into three parts…………………………..……………………. 5
+
+5 Lateral projections of tergum 10 nearly parallel-sided in lateral view……...R. emeishan Sivec & Harper, 2008
+
+– Lateral projections of tergum 10 gradually taper towards the apex in the lateral view……. 6
+
+6 Tergum 10 with central sclerite is about the same length and width…… R. faciursina Qian & Du, 2017
+
+– Tergum 10 with central sclerite distinctly broader than long…………………………………. 7
+
+7 Tergum 9 with a T-shaped weakly sclerotised area in the median……. R. siculiformis Qian & Du, 2012
+
+– Tergum 9 without a T-shaped weakly sclerotised area in the median………………..…….. 8
+
+8 The cercus with a small spine and tergum 9 is mostly sclerotised, somewhat less so in the median pentagonal area with a paired posterior process with sensilla basiconica………………………………………………………R. dulongjianga Yang & Du, sp. nov.
+
+– The cercus without spine and tergum 9 without a pentagonal weakly sclerotised area in the median………………………..R. bispina (Wu, 1949)
+```
+
+Starting from `New Dichotomous key` task:
+
+In the “Key metadata” box, enter a title and description.
+
+Search for and select the taxon for which the key was written, in this case "Rhopalopsole".
+
+Check the “Is publicly accessible” box.
+
+Save the metadata, then enter the citation for the source of the key using the radial annotator that will appear in the upper right corner.
+
+(https://sfg.taxonworks.org/s/0jo5bf [Elements of Key Metadata])
+
+Type “1” in the “couplet from citation” box.
+
+Cut and paste couplet 1a into the top left text box, and 1b into the top right text box.
+
+Click the “Update” button.
+
+(https://sfg.taxonworks.org/s/lvvz60 [Entering couplet 1])
+
+Note that since 1a (left column) directs the user to couplet 2, “create and edit the next couplet” must originate from the left hand column. Click on "create and edit the next couplet" in the left column.
+
+Type “2” in the "couplet from citation" box.
+
+Cut and paste couplet 2a into the top left text box, and 2b into the top right text box.
+
+Search for “brevidigitata” in the left OTU box and select the correct one from those shown.
+
+Click the “Update” button.
+
+(https://sfg.taxonworks.org/s/06f0yv [Entering couplet 2])
+
+In the "Previous couplets" box, click on couplet 1.
+
+This time, in the right hand column (couplet 1b), click on "Create and edit the next" couplet.
+
+Note that couplet 1b directs the user to couplet 4. Type “4” in the "Couplet number from citation" box.
+
+Cut and paste couplet 4a into the top left text box, and 4b into the top right text box.
+
+Search for “dentilobata” in the left OTU box and select the correct one from those shown.
+
+Click the “Update” button.
+
+In the "Previous couplets" box, click on couplet 1. Then go to bottom of left column and click on couplet 2 to return to couplet 2.
+
+Note that couplet 2b directs the user to couplet 3. Go to top of right column and click on “Create and edit next couplet”.
+
+Type “3” in the "Couplet number from citation" box.
+
+Cut and paste couplet 3a into the top left text box, and 3b into the top right text box.
+
+Search for “sinensis” in the left OTU box and select the correct one from those shown.
+
+Search for “yunnana” in the right OTU box and select the correct one from those shown.
+
+Click the “Update” button.
+
+(https://sfg.taxonworks.org/s/0vdwvg [Entering couplet 3])
+
+In the "Previous couplets box", click on couplet 1.
+
+Go to bottom of right column and click on Couplet 4 to return to couplet 4.
+
+Note that couplet 4b directs the use to 5, so go to top of right column and click on “Create and edit next couplet”.
+
+Type “5” in the "Couplet number from citation" box.
+
+Cut and paste couplet 5a into the top left text box, and 5b into the top right text box.
+
+Search for “emeishan” in the left OTU box and select the correct one from those shown.
+
+Click the “Update” button.
+
+Enter the rest of the couplets following the above pattern. Once the key is complete use the radial navigator button in the upper right to go to “Use dichotomous key” to check your work.
+
+
 
 ## Multi-entry keys
 

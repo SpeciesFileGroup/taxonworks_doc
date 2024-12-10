@@ -1,5 +1,5 @@
 ---
-sidebarPosition: 125 
+sidebarPosition: 2
 ---
 
 # Contributing
@@ -8,7 +8,7 @@ _Contributions are possible in many different ways, not all technical. How do I 
 
 ## Report a bug
 
-Where to file an issue:  
+Where to file an issue:
 * TaxonWorks the software - [issue tracker here](https://github.com/SpeciesFileGroup/taxonworks/issues)
 * TaxonWorks Docs (these pages) - [issue tracker is here](https://github.com/SpeciesFileGroup/taxonworks_docs/issues)
 * TaxonWorks API - [issue tracker is here](https://github.com/SpeciesFileGroup/taxonworks_api/issues)
@@ -18,12 +18,17 @@ Before you file an issue:
 
 While filing your issue:
 * Use a issue template if available, this categorizes your insights into more actionable items for those seeking to address it
-* Tell a story! Give us enough background so that we can replicate exactly what you did. 
+* Tell a story! Give us enough background so that we can replicate exactly what you did.
 * Include a success criterion. How do we know we've succeeded in addressing the issues without contacting you again?
 * Err on providing more, rather than less information.
 * Provide a meaningful title that identifies your role, and what you seek to accomplish, e.g. `As an X I need Y to do Z`
 * Provide links/URLs to the scenarios in question, particularly if referencing a specific data point
 * Consider adding Screenshots for context.
+
+
+## Code
+
+See [Code](Code/). For a slowly evolving experiment in sharing scripts based on TaxonWorks see also [taxonworks_api_scripts](https://github.com/SpeciesFileGroup/taxonworks_api_scripts).
 
 ## Ideas, feature requests
 
@@ -38,10 +43,6 @@ Use the prefix `Task -` in the issue name to indicate the request for a new or i
 ### Provide a suggestion for a feature or improvement via a video
 
 Send! It is super useful for you to record your screen, or position a video camera to capture your work on-screen and around you. This way we see exactly how you work. You can send us big videos through file sharing services like [http://www.dropsend.com/](http://www.dropsend.com/). Find ways to [Contact us here](/about/Contact).
-
-## Code
-
-See [Code](Code/).
 
 ## Documentation
 

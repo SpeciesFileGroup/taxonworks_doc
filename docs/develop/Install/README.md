@@ -1,6 +1,6 @@
 ---
-sidebarParentPosition: 2
-sidebarPosition: 1
+sidebarPosition: 3
+sidebarParentPosition: 3
 ---
 
 # Overview

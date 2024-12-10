@@ -1,5 +1,5 @@
 ---
-sidebarPosition: 20
+sidebarPosition: 3
 ---
 
 # Instalación

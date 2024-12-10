@@ -10,7 +10,6 @@ _The intent is to move this content here, and remove the files from this list at
 * [devops/DATA_CURATION.md](https://github.com/SpeciesFileGroup/taxonworks_doc/blob/archive/devops/DATA_CURATION.md)
 * [HOW-TO.md](https://github.com/SpeciesFileGroup/taxonworks_doc/blob/archive/development/HOW-TO.md)
 * [HELLOW_WORLD.md](https://github.com/SpeciesFileGroup/taxonworks_doc/blob/archive/development/HELLO_WORLD.md)
-* [SCAFFOLDING.md](https://github.com/SpeciesFileGroup/taxonworks_doc/blob/archive/development/SCAFFOLDING.md)
 * [/faq/basics.md](https://github.com/SpeciesFileGroup/taxonworks_doc/blob/archive/faq/basics.md)
 * [/faq/nomenclature.md](https://github.com/SpeciesFileGroup/taxonworks_doc/blob/archive/faq/nomenclature.md)
 * [/faq/README.md](https://github.com/SpeciesFileGroup/taxonworks_doc/blob/archive/faq/README.md)

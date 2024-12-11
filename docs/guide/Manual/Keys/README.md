@@ -95,73 +95,52 @@ Starting from `New Dichotomous key` task:
 * `Save` the metadata, then
 * Enter the `citation` for the source of the key using the `radial annotator` that will appear in the upper right corner.
 
-#left[**Legend** Elements of Key Metadata](https://sfg.taxonworks.org/s/0jo5bf)
+#left[**Legend**: Elements of Key Metadata](https://sfg.taxonworks.org/s/0jo5bf)
 
-Type “1” in the “couplet from citation” box.
+* Next type `1` in the `couplet from citation` box.
+* Cut and paste couplet 1a into the top left text box, and 1b into the top right text box.
+* Click the `Update` button.
 
-Cut and paste couplet 1a into the top left text box, and 1b into the top right text box.
+#left[**Legend**: Entering couplet 1](https://sfg.taxonworks.org/s/lvvz60)
 
-Click the “Update” button.
+* Note that since 1a (left column) directs the user to couplet 2, `create and edit the next couplet` must originate from the left hand column. 
+  * Click on `create and edit the next couplet` in the left column.
+* Type `2` in the `couplet from citation` box.
+* Cut and paste couplet 2a into the top left text box, and 2b into the top right text box.
+* Search for _`brevidigitata`_ in the left OTU box and `select` the correct one from those shown.
+* Click the `Update` button.
 
-(https://sfg.taxonworks.org/s/lvvz60 [Entering couplet 1])
+#left[**Legend**: Entering couplet 2](https://sfg.taxonworks.org/s/06f0yv)
 
-Note that since 1a (left column) directs the user to couplet 2, “create and edit the next couplet” must originate from the left hand column. Click on "create and edit the next couplet" in the left column.
+* Now, in the `Previous couplets` box, `click` on couplet 1.
+* This time, in the right hand column (couplet 1b), click on `Create and edit the next` couplet.
+* Note that couplet 1b directs the user to couplet 4. 
+  * Type `4` in the `Couplet number from citation` box.
+* Cut and paste couplet 4a into the top left text box, and 4b into the top right text box.
+* Search for _`dentilobata`_ in the left OTU box and `select` the correct one from those shown.
+* Click the `Update` button.
 
-Type “2” in the "couplet from citation" box.
+* In the `Previous couplets` box, `click` on `couplet 1`. 
+  * Then go to bottom of left column and `click` on `couplet 2` to return to couplet 2.
+* Note that couplet 2b directs the user to couplet 3. Go to top of right column and `click` on `Create and edit next couplet`.
+* Type `3` in the `Couplet number from citation` box.
+* Cut and paste couplet 3a into the top left text box, and 3b into the top right text box.
 
-Cut and paste couplet 2a into the top left text box, and 2b into the top right text box.
+* Search for _`sinensis`_ in the left OTU box and `select` the correct one from those shown.
+* Search for _`yunnana`_ in the right OTU box and `select` the correct one from those shown.
+* Click the `Update` button.
 
-Search for “brevidigitata” in the left OTU box and select the correct one from those shown.
+#left[**Legend**: Entering couplet 3](https://sfg.taxonworks.org/s/0vdwvg)
 
-Click the “Update” button.
+* In the `Previous couplets box`, click on `couplet 1`.
+* Go to bottom of right column and `click` on `Couplet 4` to return to couplet 4.
+* Note that couplet 4b directs the use to 5, so go to top of right column and `click` on `Create and edit next couplet`.
+* Type `5` in the `Couplet number from citation` box.
+* Cut and paste couplet 5a into the top left text box, and 5b into the top right text box.
+* Search for _`emeishan`_ in the left OTU box and `select` the correct one from those shown.
+* Click the `Update` button.
 
-(https://sfg.taxonworks.org/s/06f0yv [Entering couplet 2])
-
-In the "Previous couplets" box, click on couplet 1.
-
-This time, in the right hand column (couplet 1b), click on "Create and edit the next" couplet.
-
-Note that couplet 1b directs the user to couplet 4. Type “4” in the "Couplet number from citation" box.
-
-Cut and paste couplet 4a into the top left text box, and 4b into the top right text box.
-
-Search for “dentilobata” in the left OTU box and select the correct one from those shown.
-
-Click the “Update” button.
-
-In the "Previous couplets" box, click on couplet 1. Then go to bottom of left column and click on couplet 2 to return to couplet 2.
-
-Note that couplet 2b directs the user to couplet 3. Go to top of right column and click on “Create and edit next couplet”.
-
-Type “3” in the "Couplet number from citation" box.
-
-Cut and paste couplet 3a into the top left text box, and 3b into the top right text box.
-
-Search for “sinensis” in the left OTU box and select the correct one from those shown.
-
-Search for “yunnana” in the right OTU box and select the correct one from those shown.
-
-Click the “Update” button.
-
-(https://sfg.taxonworks.org/s/0vdwvg [Entering couplet 3])
-
-In the "Previous couplets box", click on couplet 1.
-
-Go to bottom of right column and click on Couplet 4 to return to couplet 4.
-
-Note that couplet 4b directs the use to 5, so go to top of right column and click on “Create and edit next couplet”.
-
-Type “5” in the "Couplet number from citation" box.
-
-Cut and paste couplet 5a into the top left text box, and 5b into the top right text box.
-
-Search for “emeishan” in the left OTU box and select the correct one from those shown.
-
-Click the “Update” button.
-
-Enter the rest of the couplets following the above pattern. Once the key is complete use the radial navigator button in the upper right to go to “Use dichotomous key” to check your work.
-
-
+Enter the rest of the couplets following the above pattern. Once the key is complete use the `radial navigator` button in the upper right to go to `Use dichotomous key` to check your work.
 
 ## Multi-entry keys
 

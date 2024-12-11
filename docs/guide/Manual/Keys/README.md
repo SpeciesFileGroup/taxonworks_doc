@@ -40,7 +40,7 @@ These keys can be used on-or offline using the [pinpoint](https://github.com/Spe
 TaxonWorks exports print-ready formats with features including:
 * Auto numbering of the key on demand 
 * Markdown markup for eBook or further styling (coming)
- ### API 
+### API 
 
 Standard keys can be exported as one JSON object.  This object is what is used by pinpoint.  It could also be used as a data-object in a larger integrated or aggregating format.  The model is in progress.
 
@@ -89,15 +89,13 @@ Yang, X. & Du, Y.-Z. (2024) A new species of Rhopalopsole (Plecoptera, Leuctrida
 
 Starting from `New Dichotomous key` task:
 
-In the “Key metadata” box, enter a title and description.
+* In the `Key metadata` box, enter a `title` and `description`.
+* `Search` for and `select` the taxon for which the key was written, in this case the genus _Rhopalopsole_.
+* Check the `Is publicly accessible` box.
+* `Save` the metadata, then
+* Enter the `citation` for the source of the key using the `radial annotator` that will appear in the upper right corner.
 
-Search for and select the taxon for which the key was written, in this case "Rhopalopsole".
-
-Check the “Is publicly accessible” box.
-
-Save the metadata, then enter the citation for the source of the key using the radial annotator that will appear in the upper right corner.
-
-(https://sfg.taxonworks.org/s/0jo5bf [Elements of Key Metadata])
+#left[**Legend** Elements of Key Metadata](https://sfg.taxonworks.org/s/0jo5bf)
 
 Type “1” in the “couplet from citation” box.
 

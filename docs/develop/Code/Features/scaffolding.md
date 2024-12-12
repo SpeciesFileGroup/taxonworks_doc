@@ -92,9 +92,11 @@ Refer to [Rails migration documentation](https://guides.rubyonrails.org/active_r
 
 Within `config/routes/data.rb` find the `resource:` block for your new model (e.g. search for `organizations`) then:
 
-* Add `concerns [:data_routes]`
+* Ensure the `resources:` block is present if it wasn't scaffolded
+* Include `concerns [:data_routes]`
 * Move the code block into alphabetic order within the file
 
+Your block should look like:
 ```Ruby
   resources :organizations do
     concerns [:data_routes]
@@ -116,6 +118,7 @@ In `app/models/organization.rb`:
   # ... others
   include Shared::IsData
 ```
+    * You'll need to remove `belongs_to :project_id` if present, it's convered in the `Housekeeping`
     * If the model is community:
 ```Ruby
   include Housekeeping::Users
@@ -125,15 +128,19 @@ In `app/models/organization.rb`:
 ```
 * If the model as a `project_id` register it in the `MANIFEST` constant in [`app/models/project.rb`](https://github.com/SpeciesFileGroup/taxonworks/blob/development/app/models/project.rb)
 * Add at least 1-2 model tests (e.g. in `spec/models/organization_spec.rb`)
-* Register the model in [`config/interface/hub/data.yml`](https://github.com/SpeciesFileGroup/taxonworks/blob/development/config/interface/hub/data.yml). See details therein.
+
 
 :::tip
 At this point when you restart the server you should see a clickable card on `Data`
 :::
 
+## Config
+
+* Register the model in [`config/interface/hub/data.yml`](https://github.com/SpeciesFileGroup/taxonworks/blob/development/config/interface/hub/data.yml). See details therein.
+
 ## Controller
 
-Controllers are at, for example app/controllers/organizations_controller.  See the `otus_controller` for example patterns.
+Controllers are at `app/controller/`, for example `app/controllers/organizations_controller.rb`.  See the `otus_controller.rb` for example patterns.
 
 :::tip
 Rails has naming conventions for pluralization. Models are singular, controllers are plural.
@@ -149,10 +156,34 @@ class OrganizationsController < ApplicationController
 ```Ruby
   include DataControllerConfiguration::SharedDataControllerConfiguration
 ```
-* Update `def index` to use `@recent_objects` 
+* Add the pagination `after_action` pattern if required
+* Update `def index` to stub in some variables for an html and json response  (these become more sophisticated down the road):
+  * Use `@recent_objects` in the html response
+  * Use `@organizations` (or the model name) in the json response
+  * Together it will look something like this:
+```Ruby
+  def index
+    respond_to do |format|
+      format.html do
+        @recent_objects = Organization.where(project_id: sessions_current_project_id).order(updated_at: :desc).limit(10)
+        render '/shared/data/all/index'
+      end
+      format.json {
+        @sounds = Organization.where(project_id: sessions_current_project_id)
+          .page(params[:page])
+          .per(params[:per])
+      }
+    end
+  end
+```
+  
 * Ensure `.permit()` calls permit writable attributes
 * Add an`autocomplete` action (method)
 * Add a`list` action
+
+:::tip
+At the point of updating the controller running the application and clicking through the model's card will raise errors on things missed or stubbed in error above.
+:::
 
 ### Controller tests
 
@@ -208,9 +239,10 @@ Reference existing patterns in `app/views/otus/` for details.
 
 * Delete `index.html.erb`
 * Follow Rails conventions for `_form.html.erb`. See any other `_form.html.erb` for TaxonWorks conventions and markup. Replace the partials as needed (e.g. `/shared/errors`)
-* Ensure you have JSON responses for `show` and `index` actions, see `_attributes.json.jbuilder` pattern in most models
+* Ensure you have JSON responses for `show` and `index` actions
+  * Rename the `_organization.json.jbuilder` partial to `_attributes.json.jbuilder`
 * Most models can use an autocomplete, add `autocomplete.json.jbuilder`.
-* Update `show.html.erb` to use a shared view. 
+* Update `show.html.erb` to use a shared view replacing everything with `<%= render(partial: 'shared/data/project/show', locals: {object: @organization}) -%>`
 * Add `_attributes.html.erb` so that shared view can render attributes
 * Add a `list.html.erb`
 

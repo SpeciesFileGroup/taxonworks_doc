@@ -851,11 +851,11 @@ Example use case of name ending corrected by subsequent publication:
 
 ### Junior synonym conserved by ICZN decision (i.e. senior synonym suppressed)
 
-- Start at the `Edit Taxon Name` form for the suppressed name (senior homonym). 
-- Under the `Relationship` section type in the suppressed name
+- Start at the `Edit Taxon Name` form for the suppressed name (senior synonym). 
+- Under the `Relationship` section type in the conserved name (jumior synonym).
 - And using the `Show all` button, select `suppressed under`. 
 - Cite this.
-- Next, go to the `Edit Taxon Name` form for the junior homonym.
+- If the two names had already been synonymized in TaxonWorks, you will next have to go to the `Edit Taxon Name` form for the junior synonym.
 - Under the `Status` section, use the `Show all` button to find `official list of specific names in zoology` and select `valid`. 
 - NB: use the `Advanced` button if for some reason the `Show all` button is grayed out. 
 - Cite this.

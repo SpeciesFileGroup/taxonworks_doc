@@ -852,7 +852,7 @@ Example use case of name ending corrected by subsequent publication:
 ### Junior synonym conserved by ICZN decision (i.e. senior synonym suppressed)
 
 - Start at the `Edit Taxon Name` form for the suppressed name (senior synonym). 
-- Under the `Relationship` section type in the conserved name (jumior synonym).
+- Under the `Relationship` section type in the conserved name (junior synonym).
 - And using the `Show all` button, select `suppressed under`. 
 - Cite this.
 - If the two names had already been synonymized in TaxonWorks, you will next have to go to the `Edit Taxon Name` form for the junior synonym.

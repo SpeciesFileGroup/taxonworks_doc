@@ -347,9 +347,21 @@ Several categories for the `family group name` exist:
 - `incorrect original family group name form`;
 - `subsequent family group name form`; 
 - `misspelling`.
+
 All of them could be added to the database as individual Protonym linked to the correct family group name form (valid or synonym) with a single `Taxon Name Relationship`, for example Aini is `family group name original form of` Ainae.
 
-To simplify the work with family family group names, two sections were added at the botom of **Edit task**. For each name (valid or synonym), an `Original form` could be added as well as multiple `Subsequen name forms` (with citations to the works where those forms were introduced). The two section should simplify working with history of a family-group name, and keeping track of spelling changes and/or historical changes of the taxon rank. It is recommended to track changes of a family-group name at the lovest coordinate rank taxon. For example, if you have a family, subfamily, and tribe based on the same genus name, all history should be added to the protonym at the tribe level (regardless at what level the name was treated in the literature historically).
+To simplify the work with family group names, two sections were added at the bottom of **Edit taxon name** task. For each name (valid or synonym), an `Original form` could be added as well as multiple `Subsequent name forms` (with citations to the works where those forms were introduced). The two sections should simplify working with the history of a family-group name, and keeping track of spelling changes and/or historical changes of the taxon rank. It is recommended to track changes of a family-group name at the lovest coordinate rank taxon. For example, if you have a family, subfamily, and tribe based on the same genus name, all history should be added to the protonym at the tribe level (regardless at what level the name was treated in the literature historically).
+
+Further examples of working with family group names:
+
+If a family group name form has never been entered into the database-- 
+1. go to the **Edit taxon name** task page of the name form currently in use (the form already in the database)
+2. add the new name form and citation under `Subsequent name form`
+
+If a family group name form is already in the database and is to be consolidated under another--
+1. go to the **Edit taxon name** task page of the name form being used
+2. in the `Relationship` field, enter the name form being consolidated and select it
+3. click on `Show all`, select `Family-group name form of` and provide citation
 
 ### Citations
 

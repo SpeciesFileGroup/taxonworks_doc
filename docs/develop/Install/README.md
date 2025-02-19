@@ -7,7 +7,7 @@ sidebarParentPosition: 3
 
 _How do I install TaxonWorks both in development and production environments? What tools and environments faciliate the development of TaxonWorks?_
 
-TaxonWorks installation is typically for one of the following puproses:
+TaxonWorks installation is typically for one of the following purposes:
 
 1. **[Development](Development/)** - TaxonWorks is installed for coding purposes.
 2. [Production](Production/) -  TaxonWorks is installed for serving/use purposes.

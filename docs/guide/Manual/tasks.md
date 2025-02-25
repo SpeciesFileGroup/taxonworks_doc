@@ -24,6 +24,6 @@ Because data in TaxonWorks may be related to other data in many different ways t
 Unify does not merge the attributes of the two objects in question if they differ (e.g. #1 above). The attributes of the kept object are retained, and those differences in the removed object are ignored.
 :::
 
-:::info
+:::tip
 If the process fails because the unification would create invalid data somewhere in the updated records all changes are reverted and you are left in the original state.  
 :::

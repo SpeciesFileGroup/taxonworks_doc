@@ -64,6 +64,134 @@ Batch loaders (as of March 2022) include:
 
 ## Darwin Core Archive (DwC-A) import
 
+### Checklist Data
+
+To upload checklist data, this method supports simple and somewhat more complex taxon name lists. Below you will find examples to guide how to create your own datatset and datasets you can use to try in a sandbox.
+
+### Preparing a Checklist
+
+- Please check the table below for fields the importer recognizes and whether or not certain fields are required or have dependencies (e. g. formatting, identifiers). This is the **mapping** step.
+- Identifiers are required in the following columns for this method to work (`taxonID`, `acceptedNameUsageID`, `parentNameUsageID`). 
+  - The `originalNameUsageID` column must be present for the dataset to import. The software will generate the numbers for you for this column if you don't fill it out (it duplicates the number in the taxonID column).
+- Running the exact same dataset in twice will not duplicate names in the case where 
+  - a) the `parentNameUsageID` _is null_ AND 
+  - b) you use `Settings` option to match on existing names where this `parentNameUsageID` is null. 
+  - IF `parentNameUsageID` _is null_ and you do not use the `Settings` option, the names will be entered (again) as children of Root and will say `[GENUS Unspecified]`.
+- Your data in your spreadsheet first goes through a `Staging` step. You will be able to edit data in each field at the point, if need be, before you click on `Import`.
+- Each name you want to import must have its own record row in your dataset. For example, if you will be including **higher classification** data, each of those higher taxa must have their own row. If not, your higher classification data for each taxa **will not import.**
+- Your dataset needs to be in xlsx, comma, or tab-separated format.
+
+:::tip
+- This method imports only, it does not update (e. g. fix typos) on a re-try, or add more data to a given exiting object in the database.
+- Case of taxonRank values doesn't seem to matter.
+- IF you want to match on existing names, what matters are [TO BE VERIFIED]: only the sciName + scientificNameAuthorship (Note a change to higher classification doesn't seem to matter to making the match).
+:::
+
+| field header | example data | comments |
+| :---- | :---- | :---- |
+| taxonID |  |  |
+| parentNameUsageID |  |  |
+| parentNameUsage |  |  |
+| acceptedNameUsageID |  |  |
+| scientificName |  |  |
+| kingdom |  |  |
+| class |  |  |
+| order |  |  |
+| family |  |  |
+| genus |  |  |
+| subgenus |  |  |
+| specificEpithet |  |  |
+| infraspecificEpithet |  |  |
+| taxonRank | Family, Genus, Tribe, Subtribe, Species  | not case sensitive |
+| scientificNameAuthorship | Hansson 2023 | needed if you want to match on existing names in the db|
+| originalNameUsageID |  | column MUST be present. IF all cells empty, software will populate them with taxonID at `Staging` step |
+| nomenclaturalCode | ICZN, ICN | This can be selected in the importer; does not have to be in the spreadsheet |
+| TW:TaxonNameClassification:Latinized:Gender |  | note maps directly to the TW datamodel; see TW:\<data model\>:... |
+| TW:TaxonNameClassification:Latinized:PartOfSpeech |  | note maps directly to the TW datamodel; see TW:\<data model\>:... |
+| TW:TaxonNameRelationship:incertae\_sedis\_in\_rank |  | note maps directly to the TW datamodel; see TW:\<data model\>:... |
+| TW:TaxonNameClassification:Iczn:Fossil  |  | note maps directly to the TW datamodel; see TW:\<data model\>:... |
+|  |  |  |
+| **need to search codebase to see if these are supported on import** |  |  |
+| taxonomicStatus | valid, incertae sedis, obsolete combination |  |
+| originalNameUsage |  |  |
+| cultivarEpithet |  |  |
+| nameAccordingTo |  |  |
+| nomenclaturalStatus |  |  |
+| taxonRemarks	 |  |  |
+| references |  |  |
+
+### The Checklist Importer
+
+What follows are the simplest steps when uploading names into an empty database. It is possible to **match** on existing names in your TW project in the event you are importing children of those names, for example.
+
+1. From the `Task` list select `Darwin Core Archive (DwC-A) import`
+
+#left[DwC-A Checklist Importer Task](https://sfg.taxonworks.org/s/0wsyos[shows the task card labeled DwC-A Import])
+
+2. In the importer interface, enter a `Description` for your dataset
+
+#left[DwC-A Checklist Importer Screen in TaxonWorks](https://sfg.taxonworks.org/s/fh5j3y[shows layout of drag and drop importer with description, nomencaltural code, and dataset type fields])
+
+3. Next, select the `Dataset type`. In this case, `Checklist`
+4. Then, select the relevant `Nomenclature code`
+5. Once you prepare your dataset, click to upload by picking or drag and drop.
+6. The software will `Stage` your data now (it will take a few seconds).
+
+#left[The DwC-A Importer `Staging` step](https://sfg.taxonworks.org/s/srblkw[showing the data ready to import with editable fields before import])
+7. In the resulting staged view, you can edit data in cells (only before the actual import)
+  - Note you can sort on the columns and replace values in all or any of the cells if necessary (not the header rows).
+      - Note your original dataset is stored permanently, but not with values you change after `Staging`
+7. Next click `Import`
+  - Names will import and you can click on `Browse` for a given row in your dataset to see the data in TW.
+8. If you get error messages, rows with errors don't upload.
+  - For some errors, you can fix them in the spreadsheet and try to `Import` that row/s again.
+
+(Errors: encoding e. g. "unparsed tail" in sci name)
+
+9. In the `Import` pop-up, note you can select `Retry errored records` where you've changed the data in the relevant cells.
+10. You can always download your original dataset.
+
+#### Sample Datasets
+We offer four different example datasets differing in complexity and source (e. g. one of them is from [Plazi Treatment Bank Treatment](https://treatment.plazi.org/GgServer/summary/FFA0AE675753FFF9FFC5FFF1FFA9530C)). We used [the `taxa new spp.txt` file in the the Darwin Core Archive package](https://treatment.plazi.org/GgServer/dwca/FFA0AE675753FFF9FFC5FFF1FFA9530C.zip) from Plazi. We had to modify it a bit. Not all columns in it will be recognized by the importer.
+
+**Note** there is a different file in the DwC-A pkg that links the page numbers for each new taxon name. With some work, we could adjust the importer to
+a) add a source 
+b) add a citation for that name inside that source
+c) OR match on an existing source AND
+d) add a page number citation for the name being imported
+
+I added source page numbers using TW Task `Citations by Source`
+
+ 
+#### Simplest Basic Checklist
+This dataset inserts a genus and 5 species in that genus. 
+  - It was used to upload names into an empty database.
+  - Import `Settings` DID NOT MATTER IN THIS USE CASE (see SANDWORM 07, 08)
+
+#### A New Genus with many new species
+
+One simple version (derived from Plazi Treatment Bank)
+One version with a few more fields (same Plazi Treatment source file to start with)
+An added feature / benefit of using this format is that Plazi has generated all (most of) the necessary identifiers for the upload to work. 
+So, if you have names to upload, it can pay to check Plazi Treatment Bank to see if they have parsed the names of interest from publication literature.
+
+(columns modified ...)
+(if you add what's needed, still to note that not all Plazi fields are uploaded ...)
+
+
+#### Bryozoa names from a website
+In this example set, we started with names we could see on the web (bryozoa.net) for the [year 2008](http://bryozoa.net/annual/taxa2008.html).
+
+
+#### More Complex Checklists
+
+Delving into more complex scenarios (synonyms for example) here are some examples for you to look at as you plan your name upload strategy. Note that in these datasets, the names existed in a source database. So the identifiers were from their own database.
+
+#### Source data from Checklist Bank
+
+---
+### Occurrence Data
+
 To upload occurrence data, TW offers the ability to use a DwC Archive file format. _For occurrences, the importer is presently limited to vouchered specimen data records._
 
 To use this approach you must have your specimen data in a single spreadsheet-style format that can be export as "CSV".
@@ -76,7 +204,7 @@ Preparing for an import follows the following general procedures:
 As part of your process you may need to go back and forth between mapping and configuring
 :::
 
-### Map your data
+#### Map your data
 
 The DwC importer provides flexibility in importing diverse data. These fall in to several types:
 1) DwC terms
@@ -204,7 +332,7 @@ This is an advance mapping and requires knowledge of the underlying TW models. T
 |`CollectionObject`|`buffered_collecting_event`, `buffered_determinations`, `buffered_other_labels`, `total`,
 |`CollectingEvent`|`document_label`, `print_label`, `verbatim_label`, `field_notes`, `formation`, `group`, `lithology`, `max_ma`, `maximum_elevation`, `member`, `min_ma`, `minimum_elevation`, `elevation_precision`, `start_date_day`, `start_date_month`, `start_date_year`, `end_date_day`, `end_date_month`, `end_date_year`, `time_end_hour`, `time_end_minute`, `time_end_second`, `time_start_hour`, `time_start_minute`, `time_start_second`, `verbatim_collectors`, `verbatim_date`, `verbatim_datum`, `verbatim_elevation`, `verbatim_geolocation_uncertainty`, `verbatim_habitat`, `verbatim_latitude`, `verbatim_locality`, `verbatim_longitude`, `verbatim_method`, `verbatim_trip_identifier`
 
-### Configure TaxonWorks for your DwC import
+### Configure TaxonWorks for your DwC Occurrence data import
 
 To import your DwC you many need to create several types of things in TaxonWorks. These include [namespaces](Manual/identifiers#namespaces) and [controlled vocabulary terms](Manual/customization#controlled-vocabulary-terms).
 

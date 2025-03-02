@@ -76,16 +76,18 @@ To upload checklist data, this method supports simple and somewhat more complex 
 - Running the exact same dataset in twice will not duplicate names in the case where 
   - a) the `parentNameUsageID` _is null_ AND 
   - b) you use the `Settings` option to match on existing names where the `parentNameUsageID` is null. 
-  - IF `parentNameUsageID` _is null_ and you do not use the `Settings` option, the names will be entered (again) as children of `Root` and will say `[GENUS Unspecified]`.
+  - IF `parentNameUsageID` _is null_ and you do not use the `Settings` option, the names will be entered (again) as children of `Root` and will say `[GENUS Unspecified]`. These would need to be cleaned up by hand after import.
 - Your data in your spreadsheet first goes through a `Staging` step. You will be able to edit data in each cell at the point, if need be, before you click on `Import`.
 - Each name you want to import must have its own record row in your dataset. For example, if you will be including **higher classification** data, each of those higher taxa must have their own row. If not, your higher classification data for each taxa **will not import.**
-- Your dataset needs to be in xlsx, comma, or tab-separated format.
+- Your dataset needs to be in xlsx, comma (csv), or tab-separated (txt) format.
+- For best results for how diacritics are handled (like umlauts or tildas), ensure your data are UTF-8 encoded.
 
 :::tip
-- This method imports only, it does not update (e. g. fix typos) on a re-try, or add more data to a given exiting object in the database.
+- This method imports only. It does not update (e. g. fix typos) on a re-try or add more data to a given exiting object in the database.
 - Case of `taxonRank` values doesn't seem to matter.
-- IF you want to match on existing names, what matters are [TO BE VERIFIED]: only the sciName + scientificNameAuthorship (Note a change to higher classification doesn't seem to matter to making the match).
+- IF you want to match on existing names, what matters are [TO BE VERIFIED]: only the `sciName` + `scientificNameAuthorship`. (Note a change to higher classification doesn't seem to matter to making the match).
 :::
+
 
 Term|Mapping
 ---|---
@@ -93,12 +95,12 @@ Term|Mapping
 `parentNameUsageID` | REQUIRED - a unique identifier for asserting the correct parent
 `parentNameUsage` |  
 `acceptedNameUsageID` | REQUIRED - if the name is a valid one, this matches the `taxonID`
-`scientificName` |  RREQUIRED
+`scientificName` |  REQUIRED
 `kingdom` |  
 `class` |  
 `order` |  
 `family` |  
-`genus` |  RREQUIRED
+`genus` |  REQUIRED
 `subgenus` |  
 `specificEpithet` |  REQUIRED
 `infraspecificEpithet` |  
@@ -134,12 +136,18 @@ What follows are the simplest steps when uploading names into an empty database.
 
 3. Next, select the `Dataset type`. In this case, `Checklist`
 4. Then, select the relevant `Nomenclature code`
-5. Once you prepare your dataset, click to upload it by picking or drag and drop.
-6. The software will `Stage` your data now (it will take a few seconds depending on the size of the import).
+5. Once you prepare your dataset, click to upload it by picking or drag and drop the file. 
+    - Depending on the file type (xlsx, csv, txt) you will need to verify the **separator** (delimiter) for the fields and strings. With xlsx files, the importer figures this out. With csv (comma) and txt (tab) you will get a pop-up asking you to confirm or pick the correct options.
+    - In either of these delimiter pop-ups, after you pick or verify, click `upload`.
+
+    #left[Checklist CSV file delimiter verification](https://sfg.taxonworks.org/s/6dyixc [popup to verify the delimiters used in the csv file to be uploaded])
+
+    #left[Checklist TXT file delimiter verification](https://sfg.taxonworks.org/s/35agr4 [popup to verify the delimiters used in the text file to be uploaded])
+6. The software will `Stage` your data now (it will take a few seconds or a bit longer depending on the size of the import).
 
 #left[The DwC-A Importer `Staging` step](https://sfg.taxonworks.org/s/srblkw[showing the data ready to import with editable fields before import])
 7. In the resulting staged view, you can edit data in cells (only before the actual import)
-  - Note you can sort on the columns and replace values in all or any of the cells if necessary (you cannot edit the header rows).
+  - Note at this point, you can sort on the columns and replace values in all or any of the cells if necessary (you cannot edit the header rows).
       - Note your original dataset is stored permanently, but not with values you change after `Staging`.
 
 7. Next click `Import`
@@ -158,23 +166,35 @@ What follows are the simplest steps when uploading names into an empty database.
 10. You can always download your original dataset.
 
 #### Sample Datasets
-We offer five different example datasets differing in complexity and source (e. g. one of them is from the DwC-A file from a [Plazi Treatment Bank Treatment](https://treatment.plazi.org/GgServer/summary/FFA0AE675753FFF9FFC5FFF1FFA9530C)).
+We offer five different example datasets differing in complexity and source (e. g. one of them is from the DwC-A file from a [Plazi Treatment Bank Treatment](https://treatment.plazi.org/GgServer/summary/FFA0AE675753FFF9FFC5FFF1FFA9530C)). Please use them to try out the DwC-A Checklist Importer and as models for your own dataset tests and uploads.
 
 #### Simplest Basic Checklist
 This dataset inserts a genus and 5 species in that genus. 
   - It was used to upload names into an empty database.
   - Import `Settings` did not seem to matter in this case since we were not trying to macth on any existing names in the database. (see SANDWORM 07, 08)
 
-#### A New Genus with many new species
+#### A Published Genus with many new species
 
-In this use case, we take advantage of the files that Plazi produces when it pulls names out of existing published literature. With these Plazi files you need to add or adjust very few fields (term) headers and the identifiers you need are already in place. This dataset adds one new genus and a lot of new children of that genus. The genus was also NOT already in the database. 
+In this use case, we take advantage of the files that Plazi produces when it pulls names out of existing published literature. With these Plazi files you need to add or adjust very few fields (term) headers and the identifiers you need are already in place. This dataset adds one new genus and a lot of new children of that genus. The validly published genus was also NOT already in the database. 
 
-If you were adding new children to an existing genus, then be sure to 
+If you are adding new children to an existing genus in the database, then be sure to 
 - Use the `Settings` option to match on existing names in the database. Note well that in order to match, the `scientificName` string and `scientificNameAuthorship` must match the database. 
 
-- One simple version (derived from Plazi Treatment Bank)
-- One version with a few more fields (same Plazi Treatment source file to start with)
-So, if you have names to upload, it can pay to check Plazi Treatment Bank to see if they have parsed the names of interest from publication literature.
+- One simple version (derived from Plazi Treatment Bank taxa.txt from inside the DwC-A file for a given treatment).
+
+1. From the original taxa.txt file
+    - we removed all the synonyms, just leaving new species
+    - we added a row for the Genus, Galeopsomyia, to match the parent in the TW database
+    - in the `parentNameUsageID` column we added a `1` for all the species
+    - in the genus row, we put a `1` for `taxonID`, `acceptedNameUsageID`, and `originalNameUsageID`.
+    - for the `scientificNameAuthorship` for the genus row, we made sure to match the Author name as it appears in the database.
+
+2. Dataset
+  - Original zipped treatment containing multiple files
+  - Original taxa.txt file
+  - Modified taxa.txt file
+
+3. So, if you have names to upload, it can pay to check Plazi Treatment Bank to see if they have parsed the names of interest from publication literature.
 
 To test the entire scenario, have a look at the [the `taxa new spp.txt` file in the the Darwin Core Archive package](https://treatment.plazi.org/GgServer/dwca/FFA0AE675753FFF9FFC5FFF1FFA9530C.zip) from Plazi. Columns not recognized by the importer will be ignored.
 

@@ -104,7 +104,7 @@ Term|Mapping
 `subgenus` |  
 `specificEpithet` |  REQUIRED
 `infraspecificEpithet` |  
-`taxonRank` | RREQUIRED - Family, Genus, Tribe, Subtribe, Species, etc (not case sensitive)
+`taxonRank` | REQUIRED - Family, Genus, Tribe, Subtribe, Species, etc (not case sensitive)
 `scientificNameAuthorship` | REQUIRED* - Must provide IF you want to match on existing names in the db (and same format)
 `originalNameUsageID` | REQUIRED - Column must be present. IF all cells empty, software will populate them with taxonID at `Staging` step 
 `nomenclaturalCode` | ICZN, ICN - This can be selected in the importer; does not have to be in the spreadsheet 
@@ -173,21 +173,24 @@ This dataset inserts a genus and 5 species in that genus.
   - It was used to upload names into an empty database.
   - Import `Settings` did not seem to matter in this case since we were not trying to macth on any existing names in the database. (see SANDWORM 07, 08)
 
+  #left[Simple DwC-A Checklist](https://sfg.taxonworks.org/s/t5nljb[image showing fields used and sample data for this simplest upload])
+
 #### A Published Genus with many new species
 
-In this use case, we take advantage of the files that Plazi produces when it pulls names out of existing published literature. With these Plazi files you need to add or adjust very few fields (term) headers and the identifiers you need are already in place. This dataset adds one new genus and a lot of new children of that genus. The validly published genus was also NOT already in the database. 
+In this use case, we take advantage of the files that Plazi produces when it pulls names out of existing published literature. With these Plazi files you need to add or adjust very few fields (term) headers and the identifiers you need are already in place. This dataset adds 300 names, one new genus and 299 new children of that genus. The validly published genus was also NOT already in the database. 
 
 If you are adding new children to an existing genus in the database, then be sure to 
-- Use the `Settings` option to match on existing names in the database. Note well that in order to match, the `scientificName` string and `scientificNameAuthorship` must match the database. 
+- Use the `Settings` option to match on existing names in the database. Note well that in order to match on existing, the `scientificName` string and `scientificNameAuthorship` in the dataset must match the database. 
 
-- One simple version (derived from Plazi Treatment Bank taxa.txt from inside the DwC-A file for a given treatment).
+Here is one simple version (derived from Plazi Treatment Bank taxa.txt from inside the DwC-A file for a given treatment). This file will import 300 names. NOT all fields in this file are imported.
 
 1. From the original taxa.txt file
     - we removed all the synonyms, just leaving new species
     - we added a row for the Genus, Galeopsomyia, to match the parent in the TW database
-    - in the `parentNameUsageID` column we added a `1` for all the species
     - in the genus row, we put a `1` for `taxonID`, `acceptedNameUsageID`, and `originalNameUsageID`.
+    - in the `parentNameUsageID` column we added a `1` for all the species
     - for the `scientificNameAuthorship` for the genus row, we made sure to match the Author name as it appears in the database.
+    - we edited the combinationAuthor field to match the paper (there was a parsing error in the Plazi Treatment which has been fixed)
 
 2. Dataset
   - Original zipped treatment containing multiple files
@@ -199,10 +202,11 @@ If you are adding new children to an existing genus in the database, then be sur
 To test the entire scenario, have a look at the [the `taxa new spp.txt` file in the the Darwin Core Archive package](https://treatment.plazi.org/GgServer/dwca/FFA0AE675753FFF9FFC5FFF1FFA9530C.zip) from Plazi. Columns not recognized by the importer will be ignored.
 
 **Note** there is a different file in the DwC-A pkg that links the page numbers for each new taxon name. With some work, we could adjust the importer to
-a) add a source 
-b) add a citation for that name inside that source
-c) OR match on an existing source AND
-d) add a page number citation for the name being imported
+- add a source 
+- add a citation for that name inside that source
+- OR match on an existing source AND
+- add a page number citation for the name being imported
+- and we could link to images (figures) that Plazi has deposited in Zenodo
 
 Meanwhile, you can use `Citations by Source` to add source page numbers in TW.
 

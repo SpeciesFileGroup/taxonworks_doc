@@ -13,6 +13,7 @@ In coding TaxonWorks there are a number of patterns that the basis for adding an
 * **Add a new Task to the UI** - See [TaxonWorks task](/develop/Code/Features/taxonworks_tasks)
 * **Write a script to add, alter, or report data** - See [Rake task](/develop/Code/Features/rake_task)
 * **Configure a radial menu** - See [Radial](/develop/Code/Features/radial)
+* **Add new help bubbles to the UI** - See [Help](/develop/Code/Features/help)
 
 While you code you will want to add and [run tests](/develop/Code/Features/tests) to ensure you're not unintentionally breaking things, and to ensure others can refactor what you've done.
 

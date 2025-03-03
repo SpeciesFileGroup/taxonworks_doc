@@ -254,7 +254,7 @@ The basic steps:
 4. Create the second relationship: Select the valid name `Aus bus` and add non specific `invalid, linked to` relationship (do not use `synonym` relationships, since `misapplication` is not an avaliable name)
 
 #### Misspelling
-Create the `misspelling` relationship the same way as `misapplication`.
+Create the `misspelling` relationship the same way as `misapplication`, but only a single relationship needed to link with correctly spelled protonym.
  
 ### Original combinations
 
@@ -350,6 +350,14 @@ Several categories for the `family group name` exist:
 All of them could be added to the database as individual Protonym linked to the correct family group name form (valid or synonym) with a single `Taxon Name Relationship`, for example Aini is `family group name original form of` Ainae.
 
 To simplify the work with family family group names, two sections were added at the botom of **Edit task**. For each name (valid or synonym), an `Original form` could be added as well as multiple `Subsequen name forms` (with citations to the works where those forms were introduced). The two section should simplify working with history of a family-group name, and keeping track of spelling changes and/or historical changes of the taxon rank. It is recommended to track changes of a family-group name at the lovest coordinate rank taxon. For example, if you have a family, subfamily, and tribe based on the same genus name, all history should be added to the protonym at the tribe level (regardless at what level the name was treated in the literature historically).
+
+#### Example
+For tribe *Cicadini* in the `Edit TaxonName` the following could be reported:
+`Original form`: *Cicadina*
+`Subsequent forms`: 
+  *Cicadini*
+  *Cicadinae*
+  *Cicadidae*
 
 ### Citations
 
@@ -613,6 +621,7 @@ However, if you are changing the categorical level of a `family-group name`, the
 The most common scenario will be that someone has discovered a junior homonym and provided a replacement name. Here are the steps you would follow. First be sure the `source` is the `default` in your `pinboard`.
 
 - First create the replacement name using the `New Taxon Name task`, as described above, entering all information on the authors, citation, etc.
+- Two relationships need to be created:
 - Then move to the junior homonym (`Browse Nomenclature`, click the green `Edit` button at top right corner). 
   - In the `Relationships` field, enter the `senior homonym`. 
   - You will be given a list of choices, choose `Homonym of`.
@@ -851,11 +860,11 @@ Example use case of name ending corrected by subsequent publication:
 
 ### Junior synonym conserved by ICZN decision (i.e. senior synonym suppressed)
 
-- Start at the `Edit Taxon Name` form for the suppressed name (senior homonym). 
-- Under the `Relationship` section type in the suppressed name
+- Start at the `Edit Taxon Name` form for the suppressed name (senior synonym). 
+- Under the `Relationship` section type in the conserved name (junior synonym).
 - And using the `Show all` button, select `suppressed under`. 
 - Cite this.
-- Next, go to the `Edit Taxon Name` form for the junior homonym.
+- If the two names had already been synonymized in TaxonWorks, you will next have to go to the `Edit Taxon Name` form for the junior synonym.
 - Under the `Status` section, use the `Show all` button to find `official list of specific names in zoology` and select `valid`. 
 - NB: use the `Advanced` button if for some reason the `Show all` button is grayed out. 
 - Cite this.
@@ -967,7 +976,8 @@ helps to override the error. For historical placements, a different relationship
 
 ### Is it possible to link a note to a family group name to specify what the original spelling is, at what level it was proposed and when?
 
-Another protonym with the original spelling should be created in the database. Clone button could be used to replicate 
+In the *Edit TaxonName* scroll down to the _Original form_ section and enter the original spelling of the name.
+Alternatively, another protonym with the original spelling should be created in the database. Clone button could be used to replicate 
 all information from the current family-group name. This new taxon name should be linked to the original name using special
 Taxon Name Relationship *Incorrect original spelling* or *Family group name original form*. TW could be restrictive
 in the ending of the original name before you assigne the relationship, so it is recommended to save the Taxon Name

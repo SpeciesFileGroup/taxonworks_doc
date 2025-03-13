@@ -79,7 +79,7 @@ To upload checklist data, this method supports simple and somewhat more complex 
   - IF `parentNameUsageID` _is null_ and you do not use the `Settings` option, the names will be entered (again) as children of `Root` and will say `[GENUS Unspecified]`. These would need to be cleaned up by hand after import.
 - Your data in your spreadsheet first goes through a `Staging` step. You will be able to edit data in each cell at the point, if need be, before you click on `Import`.
 - Each name you want to import must have its own record row in your dataset. For example, if you will be including **higher classification** data, each of those higher taxa must have their own row. If not, your higher classification data for each taxa **will not import.**
-- Your dataset needs to be in xlsx, comma (csv), or tab-separated (txt) format.
+- Your dataset needs to be in xlsx, comma (csv), or tab-separated (txt, tsv) format.
 - For best results for how diacritics are handled (like umlauts or tildas), ensure your data are UTF-8 encoded.
 
 :::tip
@@ -137,7 +137,7 @@ What follows are the simplest steps when uploading names into an empty database.
 3. Next, select the `Dataset type`. In this case, `Checklist`
 4. Then, select the relevant `Nomenclature code`
 5. Once you prepare your dataset, click to upload it by picking or drag and drop the file. 
-    - Depending on the file type (xlsx, csv, txt) you will need to verify the **separator** (delimiter) for the fields and strings. With xlsx files, the importer figures this out. With csv (comma) and txt (tab) you will get a pop-up asking you to confirm or pick the correct options.
+    - Depending on the file type (xlsx, csv, txt, tsv) you will need to verify the **separator** (delimiter) for the fields and strings. With xlsx files, the importer figures this out. With csv (comma) and txt (tab) you will get a pop-up asking you to confirm or pick the correct options.
     - In either of these delimiter pop-ups, after you pick or verify, click `upload`.
 
     #left[Checklist CSV file delimiter verification](https://sfg.taxonworks.org/s/6dyixc [popup to verify the delimiters used in the csv file to be uploaded])
@@ -166,18 +166,25 @@ What follows are the simplest steps when uploading names into an empty database.
 10. You can always download your original dataset.
 
 #### Sample Datasets
-We offer five different example datasets differing in complexity and source (e. g. one of them is from the DwC-A file from a [Plazi Treatment Bank Treatment](https://treatment.plazi.org/GgServer/summary/FFA0AE675753FFF9FFC5FFF1FFA9530C)). Please use them to try out the DwC-A Checklist Importer and as models for your own dataset tests and uploads.
+We offer five different example datasets (in various file formats) differing in complexity and source (e. g. one of them is from the DwC-A file from a [Plazi Treatment Bank Treatment](https://treatment.plazi.org/GgServer/summary/FFA0AE675753FFF9FFC5FFF1FFA9530C)). Please use them to try out the DwC-A Checklist Importer and as models for your own dataset tests and uploads.
 
 #### Simplest Basic Checklist
-This dataset inserts a genus and 5 species in that genus. 
-  - It was used to upload names into an empty database.
-  - Import `Settings` did not seem to matter in this case since we were not trying to macth on any existing names in the database. (see SANDWORM 07, 08)
+This dataset inserts a genus and 5 species in that genus. We provide this sample dataset in 3 file formats, csv, txt, xlsx. It was used to upload names into an empty project (no records in the database).
+  - [Basic sample dataset - CSV](docs\.vuepress\public\examples\sample-checklist-files\basic-simplest-checklist-20250301.csv)
+  - [Basic sample dataset - TXT](docs\.vuepress\public\examples\sample-checklist-files\basic-simplest-checklist-20250301.txt)
+  - [Basic sample dataset - XLSX](docs\.vuepress\public\examples\sample-checklist-files\basic-simplest-checklist-20250301.xlsx)
 
-  #left[Simple DwC-A Checklist](https://sfg.taxonworks.org/s/t5nljb[image showing fields used and sample data for this simplest upload])
+::: tip 
+Import `Settings` did not seem to matter in this case since we were not trying to macth on any existing names in the database. 
+<!---
+see SANDWORM 07, 08 -->
+:::
+
+#left[Simple DwC-A Checklist](https://sfg.taxonworks.org/s/t5nljb[image showing fields used and sample data for this simplest upload])
 
 #### A Published Genus with many new species
 
-In this use case, we take advantage of the files that Plazi produces when it pulls names out of existing published literature. With these Plazi files you need to add or adjust very few fields (term) headers and the identifiers you need are already in place. This dataset adds 300 names, one new genus and 299 new children of that genus. The validly published genus was also NOT already in the database. 
+In this use case, we take advantage of the Darwin Core Archive formatted **treatment** files that Plazi produces when it pulls names out of existing published literature. With these treatment files you need to add or adjust very few fields (term) headers and the identifiers you need are already in place. This dataset adds 300 names, one new genus and 299 new children of that genus. We did test where the validly published genus was also NOT already in the database. We then also tested how to match on an existing Genus already in the database. See the process below.
 
 If you are adding new children to an existing genus in the database, then be sure to 
 - Use the `Settings` option to match on existing names in the database. Note well that in order to match on existing, the `scientificName` string and `scientificNameAuthorship` in the dataset must match the database. 
@@ -186,32 +193,40 @@ Here is one simple version (derived from Plazi Treatment Bank taxa.txt from insi
 
 1. From the original taxa.txt file
     - we removed all the synonyms, just leaving new species
-    - we added a row for the Genus, Galeopsomyia, to match the parent in the TW database
+    - we added a row for the Genus, _Galeopsomyia_, to match the parent in the TW database
     - in the genus row, we put a `1` for `taxonID`, `acceptedNameUsageID`, and `originalNameUsageID`.
     - in the `parentNameUsageID` column we added a `1` for all the species
     - for the `scientificNameAuthorship` for the genus row, we made sure to match the Author name as it appears in the database.
-    - we edited the combinationAuthor field to match the paper (there was a parsing error in the Plazi Treatment which has been fixed)
+    - we edited the **combinationAuthor** field to match the paper (there was a parsing error in the Plazi Treatment which has been fixed)
 
 2. Dataset
-  - Original zipped treatment containing multiple files
-  - Original taxa.txt file
-  - Modified taxa.txt file
+  - [Original zipped treatment containing multiple files](docs\.vuepress\public\examples\sample-checklist-files\plazi-sample-checklist\FFA0AE675753FFF9FFC5FFF1FFA9530C.zip)
+  - [Original taxa.txt file](docs\.vuepress\public\examples\sample-checklist-files\plazi-sample-checklist\FFA0AE675753FFF9FFC5FFF1FFA9530C\taxa.txt)
+  - [Modified taxa.txt file](docs\.vuepress\public\examples\sample-checklist-files\plazi-treatment-text-file-modified.txt)
 
-3. So, if you have names to upload, it can pay to check Plazi Treatment Bank to see if they have parsed the names of interest from publication literature.
+3. So, if you have names to upload, it can pay to check [Plazi Treatment Bank](http://plazi.org/treatmentbank/) to see if they have already parsed the names of interest from that published literature.
 
-To test the entire scenario, have a look at the [the `taxa new spp.txt` file in the the Darwin Core Archive package](https://treatment.plazi.org/GgServer/dwca/FFA0AE675753FFF9FFC5FFF1FFA9530C.zip) from Plazi. Columns not recognized by the importer will be ignored.
+To test the entire scenario, have a look at the [Modified taxa.txt file](docs\.vuepress\public\examples\sample-checklist-files\plazi-treatment-text-file-modified.txt) and try using it to import (into a sandbox account). Columns not recognized by the importer will be ignored.
 
-**Note** there is a different file in the DwC-A pkg that links the page numbers for each new taxon name. With some work, we could adjust the importer to
-- add a source 
-- add a citation for that name inside that source
-- OR match on an existing source AND
-- add a page number citation for the name being imported
-- and we could link to images (figures) that Plazi has deposited in Zenodo
+**Note** there are other usefule files in the Plazi Treatment DwC-A pkg  
+- The ([references.txt](docs\.vuepress\public\examples\sample-checklist-files\plazi-sample-checklist\FFA0AE675753FFF9FFC5FFF1FFA9530C\references.txt)) that specifies the page numbers for each new taxon name. 
+- With some work, we could adjust the importer to add or match on an existing source 
+- We could imaging, on import, adding a citation for that name inside that source on the specific page.
+- With the [multimedia.txt](docs\.vuepress\public\examples\sample-checklist-files\plazi-sample-checklist\FFA0AE675753FFF9FFC5FFF1FFA9530C\multimedia.txt) data we could link to images (figures) that Plazi processing has deposited in Zenodo as part of creating the treatment.
+- Using the [occurrences.txt](docs\.vuepress\public\examples\sample-checklist-files\plazi-sample-checklist\FFA0AE675753FFF9FFC5FFF1FFA9530C\occurrences.txt) we could pull in data from the materials examined information for each specimen cited in the treatement.
 
-Meanwhile, you can use `Citations by Source` to add source page numbers in TW.
+Meanwhile, you can use `Citations by Source` to easily add the source page numbers provided in the treatment to each citation record in TW.
+
+::: tip
+Do check the page numbers that the treament file asserts to ensure the paper was parsed correctly.
+:::
 
 #### Bryozoa names from a website
-In this example set, we started with names we could see on the web (bryozoa.net) for the [year 2008](http://bryozoa.net/annual/taxa2008.html).
+In this example set, we started with names we could see on the web (bryozoa.net) for the [year 2008](http://bryozoa.net/annual/taxa2008.html). The following files differ only in file format. Each will import 171 names. Note that to create this file, we had to create the identifier columns for (`taxonID`, `acceptedNameUsageID`, `parentNameUsageID`, and `originalNameUsageID`). (Some testing suggests that you can leave `originalNameUsageID empty and the upload will work. The column must be present however).
+
+- [Bryozoa 2008 - CSV](docs\.vuepress\public\examples\sample-checklist-files\bryozoa-2008names-checklist.csv)  
+- [Bryozoa 2008 - TSV](docs\.vuepress\public\examples\sample-checklist-files\bryozoa-2008names-checklist.tsv)
+- [Bryozoa 2008 - XLSX](docs\.vuepress\public\examples\sample-checklist-files\bryozoa-2008names-checklist.xlsx)
 
 #### More Complex Checklists
 

@@ -29,7 +29,7 @@ Reopen a terminal.
 
 Install required packages.
 ```
-sudo apt-get install -y bison ca-certificates cmake curl gawk git gnupg imagemagick libgdbm-dev libgeos-dev libgmp-dev libmagickwand-dev libncurses5-dev libpq-dev libproj-dev libreadline-dev libyaml-dev meld pkg-config postgresql postgresql-contrib postgresql-postgis postgresql-postgis-scripts sqlite3 tesseract-ocr
+sudo apt-get install -y bison ca-certificates cmake curl g++ gawk git gnupg imagemagick libgdbm-dev libgeos-dev libgmp-dev libmagickwand-dev libncurses5-dev libpq-dev libproj-dev libreadline-dev libyaml-dev meld pkg-config postgresql postgresql-contrib postgresql-postgis postgresql-postgis-scripts sqlite3 tesseract-ocr
 ```
 
 When prompted do not supply a password. See below, the password must match `config/database.yml` if provided.

@@ -2,7 +2,7 @@
 sidebarPosition: 4 
 ---
 
-# Ubuntu 20.04
+# Ubuntu 24.04
 
 ## Overview
 1. Assumes a clean install of the OS.
@@ -27,16 +27,9 @@ sudo reboot
 
 Reopen a terminal.
 
-Add PostgreSQL source repository for apt-get.
-```
-echo "deb [arch=amd64] http://apt.postgresql.org/pub/repos/apt/ focal-pgdg main" | sudo tee -a /etc/apt/sources.list.d/pgdg.list
-wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-sudo apt-get update
-```
-
 Install required packages.
 ```
-sudo apt-get install -y postgresql-15 postgresql-contrib-15 libgeos-dev libproj-dev postgresql-15-postgis-3 postgresql-15-postgis-3-scripts libpq-dev cmake imagemagick libmagickwand-dev tesseract-ocr git meld curl gnupg ca-certificates
+sudo apt-get install -y bison ca-certificates cmake curl g++ gawk git gnupg imagemagick libgdbm-dev libgeos-dev libgmp-dev libmagickwand-dev libncurses5-dev libpq-dev libproj-dev libreadline-dev libyaml-dev meld pkg-config postgresql postgresql-contrib postgresql-postgis postgresql-postgis-scripts sqlite3 tesseract-ocr
 ```
 
 When prompted do not supply a password. See below, the password must match `config/database.yml` if provided.
@@ -46,7 +39,7 @@ sudo -u postgres createuser -s -d -P taxonworks_development
 
 Change permissions for posgresql, you are changing 'peer' to 'trust' for the matched line.
 ```
-sudo sed -i.bak 's/local\s*all\s*all\s*peer/local all all trust/'  /etc/postgresql/15/main/pg_hba.conf
+sudo sed -i.bak 's/local\s*all\s*all\s*peer/local all all trust/'  /etc/postgresql/16/main/pg_hba.conf
 sudo service postgresql restart
 ```
 
@@ -58,7 +51,7 @@ curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg 
 
 Configure apt-get to point to newer Node packages
 ```
-echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_18.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list
+echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_22.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list
 ```
 
 Install Node
@@ -71,7 +64,7 @@ Install RVM
 ```
 gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 
-\curl -sSL https://get.rvm.io | bash -s stable 
+\curl -sSL https://get.rvm.io | bash -s stable
 ```
 
 Configure your terminal to use RVM, in the menu bar of the terminal go to
@@ -86,7 +79,7 @@ git clone https://github.com/SpeciesFileGroup/taxonworks.git
 cd taxonworks
 ```
 
-When you do `cd taxonworks` you will see a message regarding a particular version of Ruby.  Install that version of Ruby with the command provided in the terminal. It will look something like: `rvm install 3.1.2`.
+When you do `cd taxonworks` you will see a message regarding a particular version of Ruby.  Install that version of Ruby with the command provided in the terminal. It will look something like: `rvm install 3.3.7`.
 
 ```
 cd . # Refreshes rvm to pick up recently installed ruby above
@@ -95,6 +88,8 @@ gem install bundler
 bundle
 npm install
 
+which geckodriver | grep -q snap && \ # Apply ff.snap only if geckodriver is in snap
+cp config/application_settings.yml.ff.snap config/application_settings.yml;
 cp config/database.yml.example config/database.yml
 cp config/secrets.yml.example config/secrets.yml
 
@@ -105,7 +100,8 @@ bundle exec rake db:schema:load && bundle exec rake db:test:prepare
 
 Run the test suite, you may see some failures, but the vast majority should pass.
 ```
-bundle exec rake
+# TMPDIR is a workaround to Firefox not being able to access /tmp due to being sandboxed by Snap
+TMPDIR=$(pwd)/tmp bundle exec rake
 ```
 
 If you receive any migration related errors when you run test suite, use the following command before proceeding ahead:

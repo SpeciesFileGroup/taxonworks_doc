@@ -9,6 +9,6 @@ _Instructions per operating system are provided in their respectively named file
 
 * [Arch Linux](arch.md)
 * [Mac OS](macos.md)
-* [Ubuntu 20.04](ubuntu_20_04.md)
 * [Ubuntu 22.04](ubuntu_22_04.md)
+* [Ubuntu 24.04](ubuntu_24_04.md)
 * [Windows 10](win_10.md)

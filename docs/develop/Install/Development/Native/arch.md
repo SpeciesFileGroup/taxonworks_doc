@@ -168,9 +168,11 @@ git config --global merge.tool meld
 
 Configure bundler to use --with-cflags:
 
+```
 bundle config build.ruby-prof --with-cflags="-DHAVE_STDBOOL_H" && bundle
+```
 
-Or set ruby-prof version 1.7.2 in the Gemfile and run bundle. 
+Or set ruby-prof version 1.7.2 in the Gemfile and run `bundle`.
 
 ### Selenium tests
 

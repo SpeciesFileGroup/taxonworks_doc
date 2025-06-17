@@ -18,9 +18,6 @@ rails generate taxon_works:task print_labels labels/ --vue
 
 You can use `-p` to "practice" running the generator (no files are written/changed).
 
-As in the model-generating case, if you're developing using Docker then you'll be running `bin/rails generate` from a Docker app shell.
- * If you're on linux or mac then any new files created by the command will be owned by root in your local taxonworks folder. See [Scaffolding a new model](#scaffolding-a-new-model) for a command to fix that.
-
 Non-Vue.js-based tasks use the standard Rails routes/controller/views directory structure.
 
 Vue.js app files, on the other hand, are located in `app/javascript/vue/tasks/` - for example the generator command above will create a file `app/javascript/vue/tasks/labels/print_labels/app.vue` where you can start writing your Vue app.

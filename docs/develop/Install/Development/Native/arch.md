@@ -164,6 +164,16 @@ git config --global merge.tool meld
 
 ## Troubleshooting
 
+### May 2025: bundle fails to install ruby-prof 1.7.1 with error: unknown type name ‘bool’
+
+Configure bundler to use --with-cflags:
+
+```
+bundle config build.ruby-prof --with-cflags="-DHAVE_STDBOOL_H" && bundle
+```
+
+Or set ruby-prof version 1.7.2 in the Gemfile and run `bundle`.
+
 ### Selenium tests
 
 In order for selenium tests to work, it may be necessary to add the following config to the `taxonworks/config/application_settings.yml` file:

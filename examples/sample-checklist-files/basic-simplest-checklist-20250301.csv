@@ -1,0 +1,7 @@
+﻿taxonID,acceptedNameUsageID,originalNameUsageID,parentNameUsageID,genus,specificEpithet,taxonRank,scientificName,scientificNameAuthorship
+1,1,,,Galeopsomyia,,genus,Galeopsomyia,
+2,2,,1,Galeopsomyia,carinata,Species,Galeopsomyia carinata,Hansson 2023
+3,3,,1,Galeopsomyia,casacocaensis,Species,Galeopsomyia casacocaensis,Hansson 2023
+4,4,,1,Galeopsomyia,cissusae,Species,Galeopsomyia cissusae,Hansson 2023
+5,5,,1,Galeopsomyia,collina,Species,Galeopsomyia collina,Hansson 2023
+6,6,,1,Galeopsomyia,copalensis,Species,Galeopsomyia copalensis,Hansson 2023

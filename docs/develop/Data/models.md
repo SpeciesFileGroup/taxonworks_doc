@@ -1,11 +1,11 @@
 ---
 ---
 # Models
-_This file auto-generated 2022-02-08 10:47:07 -0600 via 'rake tw:docs:model_ers'. Do not hand-edit._
+_This file auto-generated 2025-06-17 14:35:55 -0500 via 'rake tw:docs:model_ers'. Do not hand-edit._
 
 Algorithmically generated ER diagrams. Node shapes: green octagons- the target model the ER perspective is drawn from; orange rounded rectangles- core models;  light purple rectangles- supporting models; blue ovals- annotating models; purple diamonds- polymorphic models (matches to many other models). Node edges (arrow points to many side): solid arrows- 'has many'; dotted arrows- *target model* 'has many' _through_ one side model; dashed arrows: *target model* 'has one'; dotted squared arrows: *target model* 'has one', but _through_ a corresponding dotted relationship. See also description in [Overview](/develop/Data/#concepts). Click a node to navigate (not all are linked).
 
-[Alternate value](/develop/Data/models.html#alternate-value), [Asserted distribution](/develop/Data/models.html#asserted-distribution), [Attribution](/develop/Data/models.html#attribution), [Biocuration classification](/develop/Data/models.html#biocuration-classification), [Biological association](/develop/Data/models.html#biological-association), [Biological associations biological associations graph](/develop/Data/models.html#biological-associations-biological-associations-graph), [Biological associations graph](/develop/Data/models.html#biological-associations-graph), [Biological relationship type](/develop/Data/models.html#biological-relationship-type), [Biological relationship](/develop/Data/models.html#biological-relationship), [Character state](/develop/Data/models.html#character-state), [Citation topic](/develop/Data/models.html#citation-topic), [Citation](/develop/Data/models.html#citation), [Collecting event](/develop/Data/models.html#collecting-event), [Collection object observation](/develop/Data/models.html#collection-object-observation), [Collection object](/develop/Data/models.html#collection-object), [Collection profile](/develop/Data/models.html#collection-profile), [Common name](/develop/Data/models.html#common-name), [Confidence](/develop/Data/models.html#confidence), [Container item](/develop/Data/models.html#container-item), [Container](/develop/Data/models.html#container), [Content](/develop/Data/models.html#content), [Controlled vocabulary term](/develop/Data/models.html#controlled-vocabulary-term), [Data attribute](/develop/Data/models.html#data-attribute), [Dataset record field](/develop/Data/models.html#dataset-record-field), [Dataset record](/develop/Data/models.html#dataset-record), [Depiction](/develop/Data/models.html#depiction), [Derived collection object](/develop/Data/models.html#derived-collection-object), [Descriptor](/develop/Data/models.html#descriptor), [Documentation](/develop/Data/models.html#documentation), [Document](/develop/Data/models.html#document), [Extract](/develop/Data/models.html#extract), [Gene attribute](/develop/Data/models.html#gene-attribute), [Geographic area type](/develop/Data/models.html#geographic-area-type), [Geographic area](/develop/Data/models.html#geographic-area), [Geographic areas geographic item](/develop/Data/models.html#geographic-areas-geographic-item), [Geographic item](/develop/Data/models.html#geographic-item), [Georeference](/develop/Data/models.html#georeference), [Identifier](/develop/Data/models.html#identifier), [Image](/develop/Data/models.html#image), [Import dataset](/develop/Data/models.html#import-dataset), [Label](/develop/Data/models.html#label), [Language](/develop/Data/models.html#language), [Loan item](/develop/Data/models.html#loan-item), [Loan](/develop/Data/models.html#loan), [Namespace](/develop/Data/models.html#namespace), [Note](/develop/Data/models.html#note), [Observation matrix](/develop/Data/models.html#observation-matrix), [Observation matrix column item](/develop/Data/models.html#observation-matrix-column-item), [Observation matrix column](/develop/Data/models.html#observation-matrix-column), [Observation matrix row item](/develop/Data/models.html#observation-matrix-row-item), [Observation matrix row](/develop/Data/models.html#observation-matrix-row), [Observation](/develop/Data/models.html#observation), [Organization](/develop/Data/models.html#organization), [Origin relationship](/develop/Data/models.html#origin-relationship), [Otu page layout section](/develop/Data/models.html#otu-page-layout-section), [Otu page layout](/develop/Data/models.html#otu-page-layout), [Otu](/develop/Data/models.html#otu), [Person](/develop/Data/models.html#person), [Preparation type](/develop/Data/models.html#preparation-type), [Project member](/develop/Data/models.html#project-member), [Project source](/develop/Data/models.html#project-source), [Protocol relationship](/develop/Data/models.html#protocol-relationship), [Protocol](/develop/Data/models.html#protocol), [Ranged lot category](/develop/Data/models.html#ranged-lot-category), [Repository](/develop/Data/models.html#repository), [Role](/develop/Data/models.html#role), [Sequence relationship](/develop/Data/models.html#sequence-relationship), [Sequence](/develop/Data/models.html#sequence), [Serial chronology](/develop/Data/models.html#serial-chronology), [Serial](/develop/Data/models.html#serial), [Sled image](/develop/Data/models.html#sled-image), [Source](/develop/Data/models.html#source), [Tagged section keyword](/develop/Data/models.html#tagged-section-keyword), [Tag](/develop/Data/models.html#tag), [Taxon determination](/develop/Data/models.html#taxon-determination), [Taxon name classification](/develop/Data/models.html#taxon-name-classification), [Taxon name relationship](/develop/Data/models.html#taxon-name-relationship), [Taxon name](/develop/Data/models.html#taxon-name), [Type material](/develop/Data/models.html#type-material)
+[Alternate value](/develop/Data/models.html#alternate-value), [Asserted distribution](/develop/Data/models.html#asserted-distribution), [Attribution](/develop/Data/models.html#attribution), [Biocuration classification](/develop/Data/models.html#biocuration-classification), [Biological association](/develop/Data/models.html#biological-association), [Biological associations biological associations graph](/develop/Data/models.html#biological-associations-biological-associations-graph), [Biological associations graph](/develop/Data/models.html#biological-associations-graph), [Biological relationship type](/develop/Data/models.html#biological-relationship-type), [Biological relationship](/develop/Data/models.html#biological-relationship), [Cached map item translation](/develop/Data/models.html#cached-map-item-translation), [Cached map item](/develop/Data/models.html#cached-map-item), [Cached map register](/develop/Data/models.html#cached-map-register), [Cached map](/develop/Data/models.html#cached-map), [Character state](/develop/Data/models.html#character-state), [Citation topic](/develop/Data/models.html#citation-topic), [Citation](/develop/Data/models.html#citation), [Collecting event](/develop/Data/models.html#collecting-event), [Collection object observation](/develop/Data/models.html#collection-object-observation), [Collection object](/develop/Data/models.html#collection-object), [Collection profile](/develop/Data/models.html#collection-profile), [Common name](/develop/Data/models.html#common-name), [Confidence](/develop/Data/models.html#confidence), [Container item](/develop/Data/models.html#container-item), [Container](/develop/Data/models.html#container), [Content](/develop/Data/models.html#content), [Controlled vocabulary term](/develop/Data/models.html#controlled-vocabulary-term), [Conveyance](/develop/Data/models.html#conveyance), [Data attribute](/develop/Data/models.html#data-attribute), [Dataset record field](/develop/Data/models.html#dataset-record-field), [Dataset record](/develop/Data/models.html#dataset-record), [Depiction](/develop/Data/models.html#depiction), [Derived collection object](/develop/Data/models.html#derived-collection-object), [Descriptor](/develop/Data/models.html#descriptor), [Documentation](/develop/Data/models.html#documentation), [Document](/develop/Data/models.html#document), [Download](/develop/Data/models.html#download), [Extract](/develop/Data/models.html#extract), [Field occurrence](/develop/Data/models.html#field-occurrence), [Gazetteer](/develop/Data/models.html#gazetteer), [Gene attribute](/develop/Data/models.html#gene-attribute), [Geographic area type](/develop/Data/models.html#geographic-area-type), [Geographic area](/develop/Data/models.html#geographic-area), [Geographic areas geographic item](/develop/Data/models.html#geographic-areas-geographic-item), [Geographic item](/develop/Data/models.html#geographic-item), [Georeference](/develop/Data/models.html#georeference), [Identifier](/develop/Data/models.html#identifier), [Image](/develop/Data/models.html#image), [Import dataset](/develop/Data/models.html#import-dataset), [Label](/develop/Data/models.html#label), [Language](/develop/Data/models.html#language), [Lead](/develop/Data/models.html#lead), [Loan item](/develop/Data/models.html#loan-item), [Loan](/develop/Data/models.html#loan), [Namespace](/develop/Data/models.html#namespace), [Note](/develop/Data/models.html#note), [Observation matrix](/develop/Data/models.html#observation-matrix), [Observation matrix column item](/develop/Data/models.html#observation-matrix-column-item), [Observation matrix column](/develop/Data/models.html#observation-matrix-column), [Observation matrix row item](/develop/Data/models.html#observation-matrix-row-item), [Observation matrix row](/develop/Data/models.html#observation-matrix-row), [Observation](/develop/Data/models.html#observation), [Organization](/develop/Data/models.html#organization), [Origin relationship](/develop/Data/models.html#origin-relationship), [Otu page layout section](/develop/Data/models.html#otu-page-layout-section), [Otu page layout](/develop/Data/models.html#otu-page-layout), [Otu relationship](/develop/Data/models.html#otu-relationship), [Otu](/develop/Data/models.html#otu), [Person](/develop/Data/models.html#person), [Preparation type](/develop/Data/models.html#preparation-type), [Project member](/develop/Data/models.html#project-member), [Project source](/develop/Data/models.html#project-source), [Protocol relationship](/develop/Data/models.html#protocol-relationship), [Protocol](/develop/Data/models.html#protocol), [Ranged lot category](/develop/Data/models.html#ranged-lot-category), [Repository](/develop/Data/models.html#repository), [Role](/develop/Data/models.html#role), [Sequence relationship](/develop/Data/models.html#sequence-relationship), [Sequence](/develop/Data/models.html#sequence), [Serial chronology](/develop/Data/models.html#serial-chronology), [Serial](/develop/Data/models.html#serial), [Sled image](/develop/Data/models.html#sled-image), [Sound](/develop/Data/models.html#sound), [Source](/develop/Data/models.html#source), [Sqed depiction](/develop/Data/models.html#sqed-depiction), [Tagged section keyword](/develop/Data/models.html#tagged-section-keyword), [Tag](/develop/Data/models.html#tag), [Taxon determination](/develop/Data/models.html#taxon-determination), [Taxon name classification](/develop/Data/models.html#taxon-name-classification), [Taxon name relationship](/develop/Data/models.html#taxon-name-relationship), [Taxon name](/develop/Data/models.html#taxon-name), [Type material](/develop/Data/models.html#type-material)
 
 ## Alternate value
 [top](#models),[table](/develop/Data/tables.html#alternate-values),[rdoc](https://rdoc.taxonworks.org/AlternateValue.html)
@@ -40,8 +40,24 @@ Algorithmically generated ER diagrams. Node shapes: green octagons- the target m
 <object data="/images/model/biological_relationship_types_model_er.svg" type="image/svg+xml"></object>
 
 ## Biological relationship
-[top](#models),[table](/develop/Data/tables.html#biological-relationships),[rdoc](https://rdoc.taxonworks.org/BiologicalRelationship.html)
+[top](#models),[table](/develop/Data/tables.html#biological-relationships),[rdoc](https://rdoc.taxonworks.org/BiologicalRelationship.html),[api](https://api.taxonworks.org/#/biological_relationships)
 <object data="/images/model/biological_relationships_model_er.svg" type="image/svg+xml"></object>
+
+## Cached map item translation
+[top](#models),[table](/develop/Data/tables.html#cached-map-item-translations),[rdoc](https://rdoc.taxonworks.org/CachedMapItemTranslation.html)
+<object data="/images/model/cached_map_item_translations_model_er.svg" type="image/svg+xml"></object>
+
+## Cached map item
+[top](#models),[table](/develop/Data/tables.html#cached-map-items),[rdoc](https://rdoc.taxonworks.org/CachedMapItem.html)
+<object data="/images/model/cached_map_items_model_er.svg" type="image/svg+xml"></object>
+
+## Cached map register
+[top](#models),[table](/develop/Data/tables.html#cached-map-registers),[rdoc](https://rdoc.taxonworks.org/CachedMapRegister.html)
+<object data="/images/model/cached_map_registers_model_er.svg" type="image/svg+xml"></object>
+
+## Cached map
+[top](#models),[table](/develop/Data/tables.html#cached-maps),[rdoc](https://rdoc.taxonworks.org/CachedMap.html),[api](https://api.taxonworks.org/#/cached_maps)
+<object data="/images/model/cached_maps_model_er.svg" type="image/svg+xml"></object>
 
 ## Character state
 [top](#models),[table](/develop/Data/tables.html#character-states),[rdoc](https://rdoc.taxonworks.org/CharacterState.html)
@@ -72,7 +88,7 @@ Algorithmically generated ER diagrams. Node shapes: green octagons- the target m
 <object data="/images/model/collection_profiles_model_er.svg" type="image/svg+xml"></object>
 
 ## Common name
-[top](#models),[table](/develop/Data/tables.html#common-names),[rdoc](https://rdoc.taxonworks.org/CommonName.html)
+[top](#models),[table](/develop/Data/tables.html#common-names),[rdoc](https://rdoc.taxonworks.org/CommonName.html),[api](https://api.taxonworks.org/#/common_names)
 <object data="/images/model/common_names_model_er.svg" type="image/svg+xml"></object>
 
 ## Confidence
@@ -92,8 +108,12 @@ Algorithmically generated ER diagrams. Node shapes: green octagons- the target m
 <object data="/images/model/contents_model_er.svg" type="image/svg+xml"></object>
 
 ## Controlled vocabulary term
-[top](#models),[table](/develop/Data/tables.html#controlled-vocabulary-terms),[rdoc](https://rdoc.taxonworks.org/ControlledVocabularyTerm.html)
+[top](#models),[table](/develop/Data/tables.html#controlled-vocabulary-terms),[rdoc](https://rdoc.taxonworks.org/ControlledVocabularyTerm.html),[api](https://api.taxonworks.org/#/controlled_vocabulary_terms)
 <object data="/images/model/controlled_vocabulary_terms_model_er.svg" type="image/svg+xml"></object>
+
+## Conveyance
+[top](#models),[table](/develop/Data/tables.html#conveyances),[rdoc](https://rdoc.taxonworks.org/Conveyance.html),[api](https://api.taxonworks.org/#/conveyances)
+<object data="/images/model/conveyances_model_er.svg" type="image/svg+xml"></object>
 
 ## Data attribute
 [top](#models),[table](/develop/Data/tables.html#data-attributes),[rdoc](https://rdoc.taxonworks.org/DataAttribute.html),[api](https://api.taxonworks.org/#/data_attributes)
@@ -108,7 +128,7 @@ Algorithmically generated ER diagrams. Node shapes: green octagons- the target m
 <object data="/images/model/dataset_records_model_er.svg" type="image/svg+xml"></object>
 
 ## Depiction
-[top](#models),[table](/develop/Data/tables.html#depictions),[rdoc](https://rdoc.taxonworks.org/Depiction.html)
+[top](#models),[table](/develop/Data/tables.html#depictions),[rdoc](https://rdoc.taxonworks.org/Depiction.html),[api](https://api.taxonworks.org/#/depictions)
 <object data="/images/model/depictions_model_er.svg" type="image/svg+xml"></object>
 
 ## Derived collection object
@@ -127,9 +147,21 @@ Algorithmically generated ER diagrams. Node shapes: green octagons- the target m
 [top](#models),[table](/develop/Data/tables.html#documents),[rdoc](https://rdoc.taxonworks.org/Document.html)
 <object data="/images/model/documents_model_er.svg" type="image/svg+xml"></object>
 
+## Download
+[top](#models),[table](/develop/Data/tables.html#downloads),[rdoc](https://rdoc.taxonworks.org/Download.html),[api](https://api.taxonworks.org/#/downloads)
+<object data="/images/model/downloads_model_er.svg" type="image/svg+xml"></object>
+
 ## Extract
 [top](#models),[table](/develop/Data/tables.html#extracts),[rdoc](https://rdoc.taxonworks.org/Extract.html)
 <object data="/images/model/extracts_model_er.svg" type="image/svg+xml"></object>
+
+## Field occurrence
+[top](#models),[table](/develop/Data/tables.html#field-occurrences),[rdoc](https://rdoc.taxonworks.org/FieldOccurrence.html),[api](https://api.taxonworks.org/#/field_occurrences)
+<object data="/images/model/field_occurrences_model_er.svg" type="image/svg+xml"></object>
+
+## Gazetteer
+[top](#models),[table](/develop/Data/tables.html#gazetteers),[rdoc](https://rdoc.taxonworks.org/Gazetteer.html)
+<object data="/images/model/gazetteers_model_er.svg" type="image/svg+xml"></object>
 
 ## Gene attribute
 [top](#models),[table](/develop/Data/tables.html#gene-attributes),[rdoc](https://rdoc.taxonworks.org/GeneAttribute.html)
@@ -174,6 +206,10 @@ Algorithmically generated ER diagrams. Node shapes: green octagons- the target m
 ## Language
 [top](#models),[table](/develop/Data/tables.html#languages),[rdoc](https://rdoc.taxonworks.org/Language.html)
 <object data="/images/model/languages_model_er.svg" type="image/svg+xml"></object>
+
+## Lead
+[top](#models),[table](/develop/Data/tables.html#leads),[rdoc](https://rdoc.taxonworks.org/Lead.html),[api](https://api.taxonworks.org/#/leads)
+<object data="/images/model/leads_model_er.svg" type="image/svg+xml"></object>
 
 ## Loan item
 [top](#models),[table](/develop/Data/tables.html#loan-items),[rdoc](https://rdoc.taxonworks.org/LoanItem.html)
@@ -230,6 +266,10 @@ Algorithmically generated ER diagrams. Node shapes: green octagons- the target m
 ## Otu page layout
 [top](#models),[table](/develop/Data/tables.html#otu-page-layouts),[rdoc](https://rdoc.taxonworks.org/OtuPageLayout.html)
 <object data="/images/model/otu_page_layouts_model_er.svg" type="image/svg+xml"></object>
+
+## Otu relationship
+[top](#models),[table](/develop/Data/tables.html#otu-relationships),[rdoc](https://rdoc.taxonworks.org/OtuRelationship.html)
+<object data="/images/model/otu_relationships_model_er.svg" type="image/svg+xml"></object>
 
 ## Otu
 [top](#models),[table](/develop/Data/tables.html#otus),[rdoc](https://rdoc.taxonworks.org/Otu.html),[api](https://api.taxonworks.org/#/otus)
@@ -291,16 +331,24 @@ Algorithmically generated ER diagrams. Node shapes: green octagons- the target m
 [top](#models),[table](/develop/Data/tables.html#sled-images),[rdoc](https://rdoc.taxonworks.org/SledImage.html)
 <object data="/images/model/sled_images_model_er.svg" type="image/svg+xml"></object>
 
+## Sound
+[top](#models),[table](/develop/Data/tables.html#sounds),[rdoc](https://rdoc.taxonworks.org/Sound.html),[api](https://api.taxonworks.org/#/sounds)
+<object data="/images/model/sounds_model_er.svg" type="image/svg+xml"></object>
+
 ## Source
 [top](#models),[table](/develop/Data/tables.html#sources),[rdoc](https://rdoc.taxonworks.org/Source.html),[api](https://api.taxonworks.org/#/sources)
 <object data="/images/model/sources_model_er.svg" type="image/svg+xml"></object>
+
+## Sqed depiction
+[top](#models),[table](/develop/Data/tables.html#sqed-depictions),[rdoc](https://rdoc.taxonworks.org/SqedDepiction.html)
+<object data="/images/model/sqed_depictions_model_er.svg" type="image/svg+xml"></object>
 
 ## Tagged section keyword
 [top](#models),[table](/develop/Data/tables.html#tagged-section-keywords),[rdoc](https://rdoc.taxonworks.org/TaggedSectionKeyword.html)
 <object data="/images/model/tagged_section_keywords_model_er.svg" type="image/svg+xml"></object>
 
 ## Tag
-[top](#models),[table](/develop/Data/tables.html#tags),[rdoc](https://rdoc.taxonworks.org/Tag.html)
+[top](#models),[table](/develop/Data/tables.html#tags),[rdoc](https://rdoc.taxonworks.org/Tag.html),[api](https://api.taxonworks.org/#/tags)
 <object data="/images/model/tags_model_er.svg" type="image/svg+xml"></object>
 
 ## Taxon determination

@@ -1,7 +1,7 @@
 # Tables
-_This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_markdown'. Do not hand-edit._
+_This file auto-generated 2025-06-17 14:33:39 -0500 via 'rake tw:docs:table_markdown'. Do not hand-edit._
 
-[alternate_values](#alternate-values), [asserted_distributions](#asserted-distributions), [attributions](#attributions), [biocuration_classifications](#biocuration-classifications), [biological_associations](#biological-associations), [biological_associations_biological_associations_graphs](#biological-associations-biological-associations-graphs), [biological_associations_graphs](#biological-associations-graphs), [biological_relationship_types](#biological-relationship-types), [biological_relationships](#biological-relationships), [character_states](#character-states), [citation_topics](#citation-topics), [citations](#citations), [collecting_events](#collecting-events), [collection_object_observations](#collection-object-observations), [collection_objects](#collection-objects), [collection_profiles](#collection-profiles), [common_names](#common-names), [confidences](#confidences), [container_items](#container-items), [containers](#containers), [contents](#contents), [controlled_vocabulary_terms](#controlled-vocabulary-terms), [data_attributes](#data-attributes), [dataset_record_fields](#dataset-record-fields), [dataset_records](#dataset-records), [depictions](#depictions), [derived_collection_objects](#derived-collection-objects), [descriptors](#descriptors), [documentation](#documentation), [documents](#documents), [extracts](#extracts), [gene_attributes](#gene-attributes), [geographic_area_types](#geographic-area-types), [geographic_areas](#geographic-areas), [geographic_areas_geographic_items](#geographic-areas-geographic-items), [geographic_items](#geographic-items), [georeferences](#georeferences), [identifiers](#identifiers), [images](#images), [import_datasets](#import-datasets), [labels](#labels), [languages](#languages), [loan_items](#loan-items), [loans](#loans), [namespaces](#namespaces), [notes](#notes), [observation_matrices](#observation-matrices), [observation_matrix_column_items](#observation-matrix-column-items), [observation_matrix_columns](#observation-matrix-columns), [observation_matrix_row_items](#observation-matrix-row-items), [observation_matrix_rows](#observation-matrix-rows), [observations](#observations), [organizations](#organizations), [origin_relationships](#origin-relationships), [otu_page_layout_sections](#otu-page-layout-sections), [otu_page_layouts](#otu-page-layouts), [otus](#otus), [people](#people), [preparation_types](#preparation-types), [project_members](#project-members), [project_sources](#project-sources), [protocol_relationships](#protocol-relationships), [protocols](#protocols), [ranged_lot_categories](#ranged-lot-categories), [repositories](#repositories), [roles](#roles), [sequence_relationships](#sequence-relationships), [sequences](#sequences), [serial_chronologies](#serial-chronologies), [serials](#serials), [sled_images](#sled-images), [sources](#sources), [tagged_section_keywords](#tagged-section-keywords), [tags](#tags), [taxon_determinations](#taxon-determinations), [taxon_name_classifications](#taxon-name-classifications), [taxon_name_relationships](#taxon-name-relationships), [taxon_names](#taxon-names), [type_materials](#type-materials)
+[alternate_values](#alternate-values), [asserted_distributions](#asserted-distributions), [attributions](#attributions), [biocuration_classifications](#biocuration-classifications), [biological_associations](#biological-associations), [biological_associations_biological_associations_graphs](#biological-associations-biological-associations-graphs), [biological_associations_graphs](#biological-associations-graphs), [biological_relationship_types](#biological-relationship-types), [biological_relationships](#biological-relationships), [cached_map_item_translations](#cached-map-item-translations), [cached_map_items](#cached-map-items), [cached_map_registers](#cached-map-registers), [cached_maps](#cached-maps), [character_states](#character-states), [citation_topics](#citation-topics), [citations](#citations), [collecting_events](#collecting-events), [collection_object_observations](#collection-object-observations), [collection_objects](#collection-objects), [collection_profiles](#collection-profiles), [common_names](#common-names), [confidences](#confidences), [container_items](#container-items), [containers](#containers), [contents](#contents), [controlled_vocabulary_terms](#controlled-vocabulary-terms), [conveyances](#conveyances), [data_attributes](#data-attributes), [dataset_record_fields](#dataset-record-fields), [dataset_records](#dataset-records), [depictions](#depictions), [derived_collection_objects](#derived-collection-objects), [descriptors](#descriptors), [documentation](#documentation), [documents](#documents), [downloads](#downloads), [extracts](#extracts), [field_occurrences](#field-occurrences), [gazetteers](#gazetteers), [gene_attributes](#gene-attributes), [geographic_area_types](#geographic-area-types), [geographic_areas](#geographic-areas), [geographic_areas_geographic_items](#geographic-areas-geographic-items), [geographic_items](#geographic-items), [georeferences](#georeferences), [identifiers](#identifiers), [images](#images), [import_datasets](#import-datasets), [labels](#labels), [languages](#languages), [leads](#leads), [loan_items](#loan-items), [loans](#loans), [namespaces](#namespaces), [notes](#notes), [observation_matrices](#observation-matrices), [observation_matrix_column_items](#observation-matrix-column-items), [observation_matrix_columns](#observation-matrix-columns), [observation_matrix_row_items](#observation-matrix-row-items), [observation_matrix_rows](#observation-matrix-rows), [observations](#observations), [organizations](#organizations), [origin_relationships](#origin-relationships), [otu_page_layout_sections](#otu-page-layout-sections), [otu_page_layouts](#otu-page-layouts), [otu_relationships](#otu-relationships), [otus](#otus), [people](#people), [preparation_types](#preparation-types), [project_members](#project-members), [project_sources](#project-sources), [protocol_relationships](#protocol-relationships), [protocols](#protocols), [ranged_lot_categories](#ranged-lot-categories), [repositories](#repositories), [roles](#roles), [sequence_relationships](#sequence-relationships), [sequences](#sequences), [serial_chronologies](#serial-chronologies), [serials](#serials), [sled_images](#sled-images), [sounds](#sounds), [sources](#sources), [sqed_depictions](#sqed-depictions), [tagged_section_keywords](#tagged-section-keywords), [tags](#tags), [taxon_determinations](#taxon-determinations), [taxon_name_classifications](#taxon-name-classifications), [taxon_name_relationships](#taxon-name-relationships), [taxon_names](#taxon-names), [type_materials](#type-materials)
 ## alternate_values
 [top](#tables),[er](/develop/Data/models.html#alternate-value),[rdoc](https://rdoc.taxonworks.org/AlternateValue.html)
 
@@ -25,6 +25,8 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |Name|Type|
 |----|----|
 |id|integer|
+|asserted_distribution_shape_id|integer|
+|asserted_distribution_shape_type|character varying|
 |geographic_area_id|integer|
 |is_absent|boolean|
 |[otu](#otus)_id|integer|
@@ -55,7 +57,9 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |----|----|
 |id|integer|
 |[biocuration_class](#controlled_vocabulary_terms)_id|integer|
-|[biological_collection_object](#collection_objects)_id|integer|
+|biocuration_classification_object_id|bigint|
+|biocuration_classification_object_type|character varying|
+|[biological_collection_object](#collection_objects)_id|bigint|
 |position|integer|
 |created_by_id|integer|
 |updated_by_id|integer|
@@ -97,6 +101,7 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |Name|Type|
 |----|----|
 |id|integer|
+|layout|jsonb|
 |name|character varying|
 |created_by_id|integer|
 |updated_by_id|integer|
@@ -118,7 +123,7 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |updated_at|timestamp without time zone|
 |project_id|integer|
 ## biological_relationships
-[top](#tables),[er](/develop/Data/models.html#biological-relationship),[rdoc](https://rdoc.taxonworks.org/BiologicalRelationship.html)
+[top](#tables),[er](/develop/Data/models.html#biological-relationship),[rdoc](https://rdoc.taxonworks.org/BiologicalRelationship.html),[api](https://api.taxonworks.org/#/biological_relationships)
 
 |Name|Type|
 |----|----|
@@ -133,6 +138,59 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |created_at|timestamp without time zone|
 |updated_at|timestamp without time zone|
 |project_id|integer|
+## cached_map_item_translations
+[top](#tables),[er](/develop/Data/models.html#cached-map-item-translation),[rdoc](https://rdoc.taxonworks.org/CachedMapItemTranslation.html)
+
+|Name|Type|
+|----|----|
+|id|bigint|
+|cached_map_type|character varying|
+|geographic_item_id|bigint|
+|translated_geographic_item_id|bigint|
+|created_at|timestamp(6) without time zone|
+|updated_at|timestamp(6) without time zone|
+## cached_map_items
+[top](#tables),[er](/develop/Data/models.html#cached-map-item),[rdoc](https://rdoc.taxonworks.org/CachedMapItem.html)
+
+|Name|Type|
+|----|----|
+|id|bigint|
+|geographic_item_id|bigint|
+|is_absent|boolean|
+|level0_geographic_name|character varying|
+|level1_geographic_name|character varying|
+|level2_geographic_name|character varying|
+|[otu](#otus)_id|bigint|
+|reference_count|integer|
+|type|character varying|
+|untranslated|boolean|
+|created_at|timestamp(6) without time zone|
+|updated_at|timestamp(6) without time zone|
+|project_id|bigint|
+## cached_map_registers
+[top](#tables),[er](/develop/Data/models.html#cached-map-register),[rdoc](https://rdoc.taxonworks.org/CachedMapRegister.html)
+
+|Name|Type|
+|----|----|
+|id|bigint|
+|cached_map_register_object_id|bigint|
+|cached_map_register_object_type|character varying|
+|created_at|timestamp(6) without time zone|
+|updated_at|timestamp(6) without time zone|
+|project_id|bigint|
+## cached_maps
+[top](#tables),[er](/develop/Data/models.html#cached-map),[rdoc](https://rdoc.taxonworks.org/CachedMap.html),[api](https://api.taxonworks.org/#/cached_maps)
+
+|Name|Type|
+|----|----|
+|id|bigint|
+|cached_map_type|character varying|
+|geometry|geography(Geometry,4326)|
+|[otu](#otus)_id|bigint|
+|reference_count|integer|
+|created_at|timestamp(6) without time zone|
+|updated_at|timestamp(6) without time zone|
+|project_id|bigint|
 ## character_states
 [top](#tables),[er](/develop/Data/models.html#character-state),[rdoc](https://rdoc.taxonworks.org/CharacterState.html)
 
@@ -204,6 +262,7 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |maximum_elevation|numeric|
 |md5_of_verbatim_label|character varying|
 |member|character varying|
+|meta_prioritize_geographic_area|boolean|
 |min_ma|numeric|
 |minimum_elevation|numeric|
 |print_label|text|
@@ -220,6 +279,7 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |verbatim_date|character varying|
 |verbatim_datum|character varying|
 |verbatim_elevation|character varying|
+|verbatim_field_number|character varying|
 |verbatim_geolocation_uncertainty|character varying|
 |verbatim_habitat|text|
 |verbatim_label|text|
@@ -227,7 +287,6 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |verbatim_locality|character varying|
 |verbatim_longitude|character varying|
 |verbatim_method|character varying|
-|verbatim_trip_identifier|character varying|
 |created_by_id|integer|
 |updated_by_id|integer|
 |created_at|timestamp without time zone|
@@ -256,6 +315,7 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |buffered_determinations|text|
 |buffered_other_labels|text|
 |collecting_event_id|integer|
+|current_repository_id|integer|
 |deaccession_reason|character varying|
 |deaccessioned_at|date|
 |preparation_type_id|integer|
@@ -293,7 +353,7 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |updated_at|timestamp without time zone|
 |project_id|integer|
 ## common_names
-[top](#tables),[er](/develop/Data/models.html#common-name),[rdoc](https://rdoc.taxonworks.org/CommonName.html)
+[top](#tables),[er](/develop/Data/models.html#common-name),[rdoc](https://rdoc.taxonworks.org/CommonName.html),[api](https://api.taxonworks.org/#/common_names)
 
 |Name|Type|
 |----|----|
@@ -377,7 +437,7 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |updated_at|timestamp without time zone|
 |project_id|integer|
 ## controlled_vocabulary_terms
-[top](#tables),[er](/develop/Data/models.html#controlled-vocabulary-term),[rdoc](https://rdoc.taxonworks.org/ControlledVocabularyTerm.html)
+[top](#tables),[er](/develop/Data/models.html#controlled-vocabulary-term),[rdoc](https://rdoc.taxonworks.org/ControlledVocabularyTerm.html),[api](https://api.taxonworks.org/#/controlled_vocabulary_terms)
 
 |Name|Type|
 |----|----|
@@ -394,6 +454,23 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |created_at|timestamp without time zone|
 |updated_at|timestamp without time zone|
 |project_id|integer|
+## conveyances
+[top](#tables),[er](/develop/Data/models.html#conveyance),[rdoc](https://rdoc.taxonworks.org/Conveyance.html),[api](https://api.taxonworks.org/#/conveyances)
+
+|Name|Type|
+|----|----|
+|id|bigint|
+|conveyance_object_id|bigint|
+|conveyance_object_type|character varying|
+|end_time|numeric|
+|position|integer|
+|[sound](#sounds)_id|bigint|
+|start_time|numeric|
+|created_by_id|bigint|
+|updated_by_id|bigint|
+|created_at|timestamp(6) without time zone|
+|updated_at|timestamp(6) without time zone|
+|project_id|bigint|
 ## data_attributes
 [top](#tables),[er](/develop/Data/models.html#data-attribute),[rdoc](https://rdoc.taxonworks.org/DataAttribute.html),[api](https://api.taxonworks.org/#/data_attributes)
 
@@ -439,7 +516,7 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |updated_at|timestamp(6) without time zone|
 |project_id|bigint|
 ## depictions
-[top](#tables),[er](/develop/Data/models.html#depiction),[rdoc](https://rdoc.taxonworks.org/Depiction.html)
+[top](#tables),[er](/develop/Data/models.html#depiction),[rdoc](https://rdoc.taxonworks.org/Depiction.html),[api](https://api.taxonworks.org/#/depictions)
 
 |Name|Type|
 |----|----|
@@ -531,6 +608,26 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |created_at|timestamp without time zone|
 |updated_at|timestamp without time zone|
 |project_id|integer|
+## downloads
+[top](#tables),[er](/develop/Data/models.html#download),[rdoc](https://rdoc.taxonworks.org/Download.html),[api](https://api.taxonworks.org/#/downloads)
+
+|Name|Type|
+|----|----|
+|id|bigint|
+|description|character varying|
+|expires|timestamp without time zone|
+|filename|character varying|
+|is_public|boolean|
+|name|character varying|
+|request|character varying|
+|times_downloaded|integer|
+|total_records|integer|
+|type|character varying|
+|created_by_id|integer|
+|updated_by_id|integer|
+|created_at|timestamp without time zone|
+|updated_at|timestamp without time zone|
+|project_id|bigint|
 ## extracts
 [top](#tables),[er](/develop/Data/models.html#extract),[rdoc](https://rdoc.taxonworks.org/Extract.html)
 
@@ -547,6 +644,36 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |created_at|timestamp without time zone|
 |updated_at|timestamp without time zone|
 |project_id|integer|
+## field_occurrences
+[top](#tables),[er](/develop/Data/models.html#field-occurrence),[rdoc](https://rdoc.taxonworks.org/FieldOccurrence.html),[api](https://api.taxonworks.org/#/field_occurrences)
+
+|Name|Type|
+|----|----|
+|id|bigint|
+|collecting_event_id|bigint|
+|is_absent|boolean|
+|ranged_lot_category_id|bigint|
+|total|integer|
+|created_by_id|integer|
+|updated_by_id|integer|
+|created_at|timestamp(6) without time zone|
+|updated_at|timestamp(6) without time zone|
+|project_id|bigint|
+## gazetteers
+[top](#tables),[er](/develop/Data/models.html#gazetteer),[rdoc](https://rdoc.taxonworks.org/Gazetteer.html)
+
+|Name|Type|
+|----|----|
+|id|bigint|
+|geographic_item_id|integer|
+|iso_3166_a2|character varying|
+|iso_3166_a3|character varying|
+|name|character varying|
+|created_by_id|integer|
+|updated_by_id|integer|
+|created_at|timestamp(6) without time zone|
+|updated_at|timestamp(6) without time zone|
+|project_id|bigint|
 ## gene_attributes
 [top](#tables),[er](/develop/Data/models.html#gene-attribute),[rdoc](https://rdoc.taxonworks.org/GeneAttribute.html)
 
@@ -614,13 +741,8 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |Name|Type|
 |----|----|
 |id|integer|
-|geometry_collection|geography(GeometryCollectionZ,4326)|
-|line_string|geography(LineStringZ,4326)|
-|multi_line_string|geography(MultiLineStringZ,4326)|
-|multi_point|geography(MultiPointZ,4326)|
-|multi_polygon|geography(MultiPolygonZ,4326)|
-|point|geography(PointZ,4326)|
-|polygon|geography(PolygonZ,4326)|
+|cached_total_area|numeric|
+|geography|geography(GeometryZ,4326)|
 |type|character varying|
 |created_by_id|integer|
 |updated_by_id|integer|
@@ -639,9 +761,7 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |error_geographic_item_id|integer|
 |error_radius|numeric|
 |geographic_item_id|integer|
-|is_median_z|boolean|
 |is_public|boolean|
-|is_undefined_z|boolean|
 |month_georeferenced|integer|
 |position|integer|
 |type|character varying|
@@ -658,6 +778,7 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |----|----|
 |id|integer|
 |cached|text|
+|cached_numeric_identifier|double precision|
 |identifier|character varying|
 |identifier_object_id|integer|
 |identifier_object_type|character varying|
@@ -744,6 +865,27 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |updated_by_id|integer|
 |created_at|timestamp without time zone|
 |updated_at|timestamp without time zone|
+## leads
+[top](#tables),[er](/develop/Data/models.html#lead),[rdoc](https://rdoc.taxonworks.org/Lead.html),[api](https://api.taxonworks.org/#/leads)
+
+|Name|Type|
+|----|----|
+|id|bigint|
+|description|text|
+|is_public|boolean|
+|link_out|text|
+|link_out_text|character varying|
+|origin_label|character varying|
+|[otu](#otus)_id|bigint|
+|parent_id|bigint|
+|position|integer|
+|redirect_id|bigint|
+|text|text|
+|created_by_id|integer|
+|updated_by_id|integer|
+|created_at|timestamp(6) without time zone|
+|updated_at|timestamp(6) without time zone|
+|project_id|bigint|
 ## loan_items
 [top](#tables),[er](/develop/Data/models.html#loan-item),[rdoc](https://rdoc.taxonworks.org/LoanItem.html)
 
@@ -825,7 +967,9 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |Name|Type|
 |----|----|
 |id|integer|
+|is_public|boolean|
 |name|character varying|
+|[otu](#otus)_id|bigint|
 |created_by_id|integer|
 |updated_by_id|integer|
 |created_at|timestamp without time zone|
@@ -869,10 +1013,10 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |Name|Type|
 |----|----|
 |id|integer|
-|collection_object_id|integer|
 |controlled_vocabulary_term_id|integer|
 |observation_matrix_id|integer|
-|[otu](#otus)_id|integer|
+|observation_object_id|integer|
+|observation_object_type|character varying|
 |position|integer|
 |taxon_name_id|bigint|
 |type|character varying|
@@ -888,10 +1032,10 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |----|----|
 |id|integer|
 |cached_observation_matrix_row_item_id|integer|
-|collection_object_id|integer|
 |name|character varying|
 |observation_matrix_id|integer|
-|[otu](#otus)_id|integer|
+|observation_object_id|integer|
+|observation_object_type|character varying|
 |position|integer|
 |reference_count|integer|
 |created_by_id|integer|
@@ -909,13 +1053,15 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |cached_column_label|character varying|
 |cached_row_label|character varying|
 |character_state_id|integer|
-|collection_object_id|integer|
 |continuous_unit|character varying|
 |continuous_value|numeric|
+|day_made|integer|
 |description|text|
 |[descriptor](#descriptors)_id|integer|
 |frequency|character varying|
-|[otu](#otus)_id|integer|
+|month_made|integer|
+|observation_object_id|integer|
+|observation_object_type|character varying|
 |presence|boolean|
 |sample_max|numeric|
 |sample_mean|numeric|
@@ -925,7 +1071,9 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |sample_standard_deviation|numeric|
 |sample_standard_error|numeric|
 |sample_units|character varying|
+|time_made|time without time zone|
 |type|character varying|
+|year_made|integer|
 |created_by_id|integer|
 |updated_by_id|integer|
 |created_at|timestamp without time zone|
@@ -999,13 +1147,27 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |created_at|timestamp without time zone|
 |updated_at|timestamp without time zone|
 |project_id|integer|
+## otu_relationships
+[top](#tables),[er](/develop/Data/models.html#otu-relationship),[rdoc](https://rdoc.taxonworks.org/OtuRelationship.html)
+
+|Name|Type|
+|----|----|
+|id|bigint|
+|object_otu_id|integer|
+|subject_otu_id|integer|
+|type|character varying|
+|created_by_id|integer|
+|updated_by_id|integer|
+|created_at|timestamp(6) without time zone|
+|updated_at|timestamp(6) without time zone|
+|project_id|bigint|
 ## otus
 [top](#tables),[er](/develop/Data/models.html#otu),[rdoc](https://rdoc.taxonworks.org/Otu.html),[api](https://api.taxonworks.org/#/otus)
 
 |Name|Type|
 |----|----|
 |id|integer|
-|name|character varying|
+|name|text|
 |taxon_name_id|integer|
 |created_by_id|integer|
 |updated_by_id|integer|
@@ -1052,6 +1214,8 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |id|integer|
 |clipboard|jsonb|
 |is_project_administrator|boolean|
+|last_seen_at|timestamp without time zone|
+|time_active|integer|
 |user_id|integer|
 |created_by_id|integer|
 |updated_by_id|integer|
@@ -1092,6 +1256,7 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |----|----|
 |id|integer|
 |description|text|
+|is_machine_output|boolean|
 |name|character varying|
 |short_name|text|
 |created_by_id|integer|
@@ -1194,6 +1359,7 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |----|----|
 |id|integer|
 |first_year_of_issue|smallint|
+|is_electronic_only|boolean|
 |last_year_of_issue|smallint|
 |name|text|
 |place_published|character varying|
@@ -1218,6 +1384,18 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |object_layout|jsonb|
 |created_by_id|integer|
 |updated_by_id|integer|
+|created_at|timestamp(6) without time zone|
+|updated_at|timestamp(6) without time zone|
+|project_id|bigint|
+## sounds
+[top](#tables),[er](/develop/Data/models.html#sound),[rdoc](https://rdoc.taxonworks.org/Sound.html),[api](https://api.taxonworks.org/#/sounds)
+
+|Name|Type|
+|----|----|
+|id|bigint|
+|name|text|
+|created_by_id|bigint|
+|updated_by_id|bigint|
 |created_at|timestamp(6) without time zone|
 |updated_at|timestamp(6) without time zone|
 |project_id|bigint|
@@ -1275,6 +1453,27 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |updated_by_id|integer|
 |created_at|timestamp without time zone|
 |updated_at|timestamp without time zone|
+## sqed_depictions
+[top](#tables),[er](/develop/Data/models.html#sqed-depiction),[rdoc](https://rdoc.taxonworks.org/SqedDepiction.html)
+
+|Name|Type|
+|----|----|
+|id|integer|
+|boundary_color|character varying|
+|boundary_finder|character varying|
+|[depiction](#depictions)_id|integer|
+|has_border|boolean|
+|in_progress|timestamp without time zone|
+|layout|character varying|
+|metadata_map|jsonb|
+|result_boundary_coordinates|jsonb|
+|result_ocr|jsonb|
+|specimen_coordinates|jsonb|
+|created_by_id|integer|
+|updated_by_id|integer|
+|created_at|timestamp without time zone|
+|updated_at|timestamp without time zone|
+|project_id|integer|
 ## tagged_section_keywords
 [top](#tables),[er](/develop/Data/models.html#tagged-section-keyword),[rdoc](https://rdoc.taxonworks.org/TaggedSectionKeyword.html)
 
@@ -1290,7 +1489,7 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |updated_at|timestamp without time zone|
 |project_id|integer|
 ## tags
-[top](#tables),[er](/develop/Data/models.html#tag),[rdoc](https://rdoc.taxonworks.org/Tag.html)
+[top](#tables),[er](/develop/Data/models.html#tag),[rdoc](https://rdoc.taxonworks.org/Tag.html),[api](https://api.taxonworks.org/#/tags)
 
 |Name|Type|
 |----|----|
@@ -1311,12 +1510,14 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |Name|Type|
 |----|----|
 |id|integer|
-|[biological_collection_object](#collection_objects)_id|integer|
+|[biological_collection_object](#collection_objects)_id|bigint|
 |day_made|integer|
 |month_made|integer|
 |[otu](#otus)_id|integer|
 |position|integer|
 |print_label|text|
+|taxon_determination_object_id|bigint|
+|taxon_determination_object_type|character varying|
 |year_made|integer|
 |created_by_id|integer|
 |updated_by_id|integer|
@@ -1356,30 +1557,33 @@ _This file auto-generated 2022-02-08 10:47:05 -0600 via 'rake tw:docs:table_mark
 |Name|Type|
 |----|----|
 |id|integer|
-|cached|character varying|
-|cached_author_year|character varying|
-|cached_classified_as|character varying|
-|cached_html|character varying|
+|cached|text|
+|cached_author|text|
+|cached_author_year|text|
+|cached_classified_as|text|
+|cached_gender|text|
+|cached_html|text|
+|cached_is_available|boolean|
 |cached_is_valid|boolean|
 |cached_misspelling|boolean|
 |cached_nomenclature_date|date|
-|cached_original_combination|character varying|
-|cached_original_combination_html|character varying|
-|cached_primary_homonym|character varying|
-|cached_primary_homonym_alternative_spelling|character varying|
-|cached_secondary_homonym|character varying|
-|cached_secondary_homonym_alternative_spelling|character varying|
+|cached_original_combination|text|
+|cached_original_combination_html|text|
+|cached_primary_homonym|text|
+|cached_primary_homonym_alternative_spelling|text|
+|cached_secondary_homonym|text|
+|cached_secondary_homonym_alternative_spelling|text|
 |cached_valid_taxon_name_id|integer|
 |etymology|text|
-|feminine_name|character varying|
-|masculine_name|character varying|
-|name|character varying|
-|neuter_name|character varying|
+|feminine_name|text|
+|masculine_name|text|
+|name|text|
+|neuter_name|text|
 |parent_id|integer|
-|rank_class|character varying|
+|rank_class|text|
 |type|character varying|
-|verbatim_author|character varying|
-|verbatim_name|character varying|
+|verbatim_author|text|
+|verbatim_name|text|
 |year_of_publication|integer|
 |created_by_id|integer|
 |updated_by_id|integer|

@@ -1,0 +1,105 @@
+digraph CachedMap {
+	graph [bb="0,0,348.64,253.5",
+		label="",
+		outputorder=edgesfirst,
+		rankdir=LR
+	];
+	node [label="\N"];
+	subgraph annotator_cluster {
+		graph [rank=min];
+	}
+	subgraph core {
+		Otu	[color="#dddeee",
+			fillcolor="#fedcba",
+			group=core,
+			height=0.51389,
+			href="/develop/Data/models.html#otu",
+			label=Otu,
+			pos="210.26,235",
+			shape=Mrecord,
+			style=filled,
+			target=_top,
+			width=0.75];
+	}
+	subgraph supporting {
+		CachedMap	[color="#dedede",
+			fillcolor="#cdefab",
+			group=target,
+			height=0.61111,
+			href="/develop/Data/models.html#cached-map",
+			label=CachedMap,
+			pos="64.568,126",
+			shape=doubleoctagon,
+			style=filled,
+			target=_top,
+			width=1.7936];
+		PinboardItem	[color="#dddeee",
+			fillcolor="#eeefff",
+			group=supporting,
+			height=0.5,
+			href="/develop/Data/models.html#pinboard-item",
+			label=PinboardItem,
+			pos="210.26,180",
+			shape=box,
+			style=filled,
+			target=_top,
+			width=1.2535];
+		Role	[color="#dddeee",
+			fillcolor="#eeefff",
+			group=supporting,
+			height=0.5,
+			href="/develop/Data/models.html#role",
+			label=Role,
+			pos="210.26,126",
+			shape=box,
+			style=filled,
+			target=_top,
+			width=0.75];
+		VerifierRole	[color="#dddeee",
+			fillcolor="#eeefff",
+			group=supporting,
+			height=0.5,
+			href="/develop/Data/models.html#verifier-role",
+			label=VerifierRole,
+			pos="210.26,72",
+			shape=box,
+			style=filled,
+			target=_top,
+			width=1.1493];
+		Verifier	[color="#dddeee",
+			fillcolor="#eeefff",
+			group=supporting,
+			height=0.5,
+			href="/develop/Data/models.html#verifier",
+			label=Verifier,
+			pos="320.01,99",
+			shape=box,
+			style=filled,
+			target=_top,
+			width=0.79514];
+		Project	[color="#dddeee",
+			fillcolor="#eeefff",
+			group=supporting,
+			height=0.5,
+			href="/develop/Data/models.html#project",
+			label=Project,
+			pos="210.26,18",
+			shape=box,
+			style=filled,
+			target=_top,
+			width=0.75347];
+	}
+	CachedMap -> Otu	[dir=back,
+		pos="s,91.115,148.18 99.659,155.4 118.53,171.24 142.66,190.81 165.14,207 170.73,211.03 176.89,215.13 182.79,218.91",
+		style=dashed];
+	CachedMap -> PinboardItem	[pos="e,164.88,163.32 109.85,142.64 123.92,147.93 139.65,153.84 154.37,159.37"];
+	CachedMap -> Role	[pos="e,183.02,126 129.43,126 143.89,126 158.79,126 171.74,126"];
+	CachedMap -> VerifierRole	[pos="e,168.79,87.209 109.85,109.36 125.13,103.62 142.36,97.14 158.14,91.211"];
+	CachedMap -> Project	[dir=back,
+		pos="s,90.619,104.05 99.163,96.787 118.06,80.839 142.37,61.117 165.14,45 170.71,41.056 176.86,37.074 182.76,33.425",
+		style=dashed];
+	Role -> Verifier	[pos="e,291.04,106.01 237.62,119.4 250.4,116.19 266.01,112.28 280.12,108.74",
+		style=invis];
+	VerifierRole -> Verifier	[pos="e,290.95,91.968 252,82.208 261.13,84.497 270.8,86.92 279.87,89.192",
+		style=dotted];
+}

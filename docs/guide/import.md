@@ -259,12 +259,12 @@ Delving into more complex scenarios (synonyms for example) here are some example
 
 To upload occurrence data, TW offers the ability to use a DwC Archive file format. _For occurrences, the importer is presently limited to vouchered specimen data records._
 
-To use this approach you must have your specimen data in a single spreadsheet-style format that can be export as "CSV".
+To use this approach you must have your specimen data in a single spreadsheet-style format that can be exported as "CSV".
 
 Preparing for an import follows the following general procedures:
 
 - [Map your data](/guide/import#map-your-data) (provide a column header) for each column of data to be imported
-- [Configure TaxonWorks for your DwC import](/guide/import#configure-taxonworks-for-your-dwc-import) by creating records that will be used during the import process
+- [Configure TaxonWorks for your DwC import](/guide/import#configure-taxonworks-for-your-dwc-occurrence-data-import) by creating records that will be used during the import process
 
 ::: tip
 As part of your process you may need to go back and forth between mapping and configuring
@@ -286,12 +286,12 @@ As headers, these will look like this:
 | _A DwC term mapping_ | _A user customizable data attribute_      | A TW biocuration attribute | _A TW specific attribute_                |
 
 ::: tip
-A first step is to go through your data and figure out which column header type you'll need. Start by matching to supported DwC terms, then go on from there.
+A first step is to go through your data and figure out which column header types you'll need. Start by matching to supported DwC terms, then go on from there.
 :::
 
 #### DwC term mapping
 
-When going from DwC, a flat format, to TaxonWorks your moving your data from rows to Things. We can group the DwC terms into classes to reflect where they end up in TaxonWorks.
+When going from DwC, a flat format, to TaxonWorks you're moving your data from rows to Things. We can group the DwC terms into classes to reflect where they end up in TaxonWorks.
 
 ##### Record-level class
 
@@ -368,7 +368,7 @@ When going from DwC, a flat format, to TaxonWorks your moving your data from row
 The DwC importer task includes some TW-specific mappings that are neither DwC core terms nor in any DwC extension term lists but instead, direct mappings to predicates in your projects imported as data attributes for collection objects and collecting events, biocuration groups and classes, and as an advanced-use feature you may have direct mappings to model fields.
 
 ::: warning
-If submitting an actual DwC-A zip file and not tab-separated text file or spreadsheet, this TW-specific mappings have to be placed as headers in the core table, and not in meta.xml. If you are replacing a mapping from meta.xml, you must make sure to comment it out and also if inserting colums make sure you do the appropriate adjustments to avoid collision.
+If submitting an actual DwC-A zip file and not tab-separated text file or spreadsheet, these TW-specific mappings have to be placed as headers in the core table, and not in meta.xml. If you are replacing a mapping from meta.xml, you must make sure to comment it out and also if inserting columns make sure you do the appropriate adjustments to avoid collision.
 :::
 
 _See [Configure TaxonWorks for your DwC import](/guide/import#configure-taxonworks-for-your-dwc-import) for how to create the records referenced in these mappings._
@@ -376,11 +376,11 @@ _See [Configure TaxonWorks for your DwC import](/guide/import#configure-taxonwor
 ##### Mappings to project predicates
 
 In cases where you need to import predicate values targetting the imported collection object or collecting event you may do so by naming the column with a pattern like `TW:DataAttribute:<target_class>:<predicate_identifier>`.
-`<target_class>` may be `CollectionObject` or `CollectingEvent`, and the `<predicate_identifier>` may be the either the name of the predicate or its URI. As an example if you have a predicate registered with name `ageInDays` and URI `http://rs.gbif.org/terms/1.0/ageInDays`, both `TW:DataAttribute:CollectionObject:ageInDays` and `TW:DataAttribute:CollectionObject:http://rs.gbif.org/terms/1.0/ageInDays` can be used to refer to the same predicate.
+`<target_class>` may be `CollectionObject` or `CollectingEvent`, and the `<predicate_identifier>` may be either the name of the predicate or its URI. As an example if you have a predicate registered with name `ageInDays` and URI `http://rs.gbif.org/terms/1.0/ageInDays`, both `TW:DataAttribute:CollectionObject:ageInDays` and `TW:DataAttribute:CollectionObject:http://rs.gbif.org/terms/1.0/ageInDays` can be used to refer to the same predicate.
 
 ##### Mappings to biocuration groups and classes
 
-The importer is able to map `sex` into the appropriate biocuration group and select the approriate class according to the value. For additional mappings you may use a special column name pattern to select a biocuration group like `TW::BiocurationGroup:<group_identifier>` where `<group_identifier>` can be the name of the biocuration group or its URI. In addition the values must match an existing biocuration class and you may use either its name or URI. For example, if you have a biocuration group registered with name `Caste` and URI `urn:example:ants:caste` and biocuration class with name `Queen` and URI `urn:example:ants:caste:queen` the following examples do all create the same biocuration classification:
+The importer is able to map `sex` into the appropriate biocuration group and select the appropriate class according to the value. For additional mappings you may use a special column name pattern to select a biocuration group like `TW::BiocurationGroup:<group_identifier>` where `<group_identifier>` can be the name of the biocuration group or its URI. In addition the values must match an existing biocuration class and you may use either its name or URI. For example, if you have a biocuration group registered with name `Caste` and URI `urn:example:ants:caste` and biocuration class with name `Queen` and URI `urn:example:ants:caste:queen` the following examples do all create the same biocuration classification:
 |Caste|urn:example:ants:caste|
 |---|---|
 Queen|urn:example:ants:caste:queen
@@ -388,11 +388,11 @@ urn:example:ants:caste:queen|Queen
 
 ##### Mappings to DwC predicates
 
-Whenever the importer sees that your project has custom attributes for collecting events and/or collection objects that matches Darwin Core URI terms (`http://rs.tdwg.org/dwc/terms/<term>`), them will be imported as data attributes regardless of any existing mapping of the same field. This allows to preserve verbatim dataaset value for reference as also to import data from terms not supported by the importer.
+Whenever the importer sees that your project has custom attributes for collecting events and/or collection objects that match Darwin Core URI terms (`http://rs.tdwg.org/dwc/terms/<term>`), they will be imported as data attributes regardless of any existing mapping of the same field. This allows to preserve verbatim dataset values for reference and also to import data from terms not supported by the importer.
 
 ##### Direct mapping to TW model fields
 
-This is an advance mapping and requires knowledge of the underlying TW models. The pattern is `TW:<model_class>:<field>` where model can be either [`CollectionObject`](https://docs.taxonworks.org/develop/Data/models.html#collection-object) or [`CollectingEvent`](https://docs.taxonworks.org/develop/Data/models.html#collecting-event), and `<field>` can be the ones listed below.
+This is an advanced mapping and requires knowledge of the underlying TW models. The pattern is `TW:<model_class>:<field>` where model can be either [`CollectionObject`](https://docs.taxonworks.org/develop/Data/models.html#collection-object) or [`CollectingEvent`](https://docs.taxonworks.org/develop/Data/models.html#collecting-event), and `<field>` can be the ones listed below.
 
 | Class              | fields                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -429,14 +429,14 @@ Think of biocuration classes as custom attributes for your collection objects, t
 
 ### Unmapped columns
 
-Column headers that can't be linked via one of the 3 mechanisms are ignored during the import process. This means its important to do some trial runs in a sandbox, or with a smaller dataset to see that your values are mapping over. The `Browse collection object` task is a good place to check this.
+Column headers that can't be linked via one of the 3 mechanisms are ignored during the import process. This means it's important to do some trial runs in a sandbox, or with a smaller dataset to see that your values are mapping over. The `Browse collection object` task is a good place to check this.
 
 ::: danger
 No warning is given when columns do not map, they are simply ignored.
 :::
 
 ::: tip
-You can augment your data after import with batch update functionality inside TW. Carefully planning your overal import process can lead to a more efficient overall approach. Sometimes its easier to work in spreadsheets, sometimes within a database.
+You can augment your data after import with batch update functionality inside TW. Carefully planning your overal import process can lead to a more efficient overall approach. Sometimes it's easier to work in spreadsheets, sometimes within a database.
 :::
 
 ## Drag and drop

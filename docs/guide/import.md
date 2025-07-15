@@ -431,10 +431,6 @@ Think of biocuration classes as custom attributes for your collection objects, t
 
 Column headers that can't be linked via one of the 3 mechanisms are ignored during the import process. This means it's important to do some trial runs in a sandbox, or with a smaller dataset to see that your values are mapping over. The `Browse collection object` task is a good place to check this.
 
-::: danger
-No warning is given when columns do not map, they are simply ignored.
-:::
-
 ::: tip
 You can augment your data after import with batch update functionality inside TW. Carefully planning your overal import process can lead to a more efficient overall approach. Sometimes it's easier to work in spreadsheets, sometimes within a database.
 :::

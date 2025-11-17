@@ -32,7 +32,7 @@ Reopen a terminal.
 
 Install required packages.
 ```
-sudo pacman -S postgresql postgis imagemagick tesseract git meld curl cmake nodejs npm pkgconf base-devel tar gzip diffutils python-psycopg2 graphviz
+sudo pacman -S postgresql postgis imagemagick tesseract git meld curl cmake nodejs npm pkgconf base-devel tar gzip diffutils python-psycopg2 graphviz libyaml
 ```
 
 For Tesseract OCR, you also need to install your desired [language data packages](https://www.archlinux.org/packages/?sort=&q=tesseract-data-&maintainer=&flagged=). For example:

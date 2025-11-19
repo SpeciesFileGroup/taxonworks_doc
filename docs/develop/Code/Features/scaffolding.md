@@ -74,11 +74,11 @@ class CreateOrganizations < ActiveRecord::Migration[7.2]
 
       t.timestamps
     end
+
+    add_foreign_key :organizations, :users, column: :created_by_id
+    add_foreign_key :organizations, :users, column: :updated_by_id
+
   end
-
-  add_foreign_key :organizations, :users, column: :created_by_id
-  add_foreign_key :organizations, :users, column: :updated_by_id
-
 end
 ```
 

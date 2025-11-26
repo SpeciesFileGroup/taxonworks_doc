@@ -8,6 +8,10 @@ _Many projects start with imports, and target [Exports](/guide/export), the form
 
 For strategies on migrating whole projects see [Migrate to TaxonWorks](/guide/migrate-to-TaxonWorks). This includes an overview of the many ways that data can be added to TaxonWorks.
 
+::: tip
+If you're running TaxonWorks locally (i.e. not in production or on a sandbox) then you'll likely need to manually trigger processing of the background jobs created during import. See [Delayed Jobs](/guide/import#seed-a-project-users-and-some-data-from-the-command-line) for details.
+:::
+
 ## Batch loaders
 
 There are various batch importers available within the [UI](/about/glossary#ui). These are polished to differing degrees and have various benefits and limitations. The required format, and often an example spreadsheet, is provided in the UI. All batch loaders are two-step, allowing for (and requiring) a preview of results before inserting them into the database.

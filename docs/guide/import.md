@@ -501,7 +501,7 @@ Creation options are:
 * Add an existing Geographic Area or Gazetteer to your shape, by union or intersection
 
 #### The Import Gazetteers task
-The Import Gazetteers task allows you to import many shapes at once with whatever precision the original shapes were created with, via a [shapefile](https://en.wikipedia.org/wiki/Shapefile). Typically in this case the shapefile will be something you or a colleague found and downloaded online.
+The Import Gazetteers task allows you to import many shapes at once with whatever precision the original shapes were created with, via a [shapefile](https://en.wikipedia.org/wiki/Shapefile). Typically in this case the shapefile will be something you or a colleague found online and then downloaded.
 
 :::tip
 At this time we only support import of shapefiles. If you find the shapes you would like to import in a different format, you can likely use software such as ArcGIS (commercial), QGis, or GDAL (more advanced) to convert to the shapefile format.
@@ -535,11 +535,11 @@ Shapefiles provide their data spread over several different files - the mandator
 
 The easiest way to get our shapefile files into TaxonWorks is to click on the New tab in the 'Shapefile documents' section:
 
-#left[Shapefile documents chooser](https://sfg.taxonworks.org/s/ymlzrl)
+#left[Shapefile documents chooser](https://sfg.taxonworks.org/s/ne2kv9)
 
 Either drag your files into the drop region, or click in the drop region and select your files from the file selector (you can select them all at once by clicking the first one, then pressing the shift key and clicking on the last one). You should now see reds turned to green (as well as the yellow .cpg file, which is optional but should be included when you have one):
 
-#left[Shapefile documents loaded](https://sfg.taxonworks.org/s/s6u1z3)
+#left[Shapefile documents loaded](https://sfg.taxonworks.org/s/h6y457)
 
 Note that your required shapefile documents have been auto-selected for you: they appear below the select in rows with trash can icons.
 

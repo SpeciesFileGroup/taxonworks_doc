@@ -472,3 +472,142 @@ We are in the process of exploring two routes to come from Scratchpads to TaxonW
 
 - The DwC import should work well for occurrence data that is based on collected objects.
 - The SFG team is has worked with a select number of individual Scratchpad curators to script the process of transferring their datadata. Contact us if you are interested in what this approach entails. Note that this process takes programming effort that is a limited resource within the SFG.
+
+## Importing shapes (GIS)
+
+### Background
+TaxonWorks comes with its own *fixed* set of geographic shapes, called Geographic Areas. These consist solely of geopolitical shapes/boundaries at the county, state/province, and country levels. Frequently though individuals will have a need for more specialized shapes of, for example, a national park in which they study, or a particular water body, or one particular island. For these needs TaxonWorks has Gazetteers, which are individual named-shapes created/imported *as needed by users for their own use cases*. Gazetteers:
+* have a name, such as "Mediterranean Sea" or "Awaji Island" (rarely will these be geopolitical names, as opposed to Geographic Areas)
+* have a shape/boundary which is either created by the user or imported from a data file (typically a shapefile)
+* are project-level objects, as opposed to Geographic Areas which are community data
+
+### Creating Gazetteer shapes
+
+#### The New Gazetteer task
+We'll only touch briefly on the New Gazetteer task, which is geared more toward user-drawn shapes:
+
+#left[New Gazetteer Task](https://sfg.taxonworks.org/s/75gj90)
+
+The `name` field is required, `ISO 3166 A2/A3` are optional. You can see here that we've selected 2 of our projects to add the Gazetteer we're creating to.
+
+:::warning
+*You can't currently copy shapes between projects after importing* (though that option will be available in the future), so this is your one chance to do so.
+:::
+
+Creation options are:
+* From Leaflet: draw a shape on a map using your mouse
+* WKT coordinates: import a shape using the [well-known-text format](https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry)
+* Enter coordinates of a point
+* Add an existing Geographic Area or Gazetteer to your shape, by union or intersection
+
+#### The Import Gazetteers task
+The Import Gazetteers task allows you to import many shapes at once with whatever precision the original shapes were created with, via a [shapefile](https://en.wikipedia.org/wiki/Shapefile). Typically in this case the shapefile will be something you or a colleague found and downloaded online.
+
+:::tip
+At this time we only support import of shapefiles. If you find the shapes you would like to import in a different format, you can likely use software such as ArcGIS (commercial), QGis, or GDAL (more advanced) to convert to the shapefile format.
+:::
+
+:::warning
+We strongly encourage you to perform an initial test import on a *sandbox* to make sure everything turns out as expected; otherwise you may wind up with duplicated or missing shapes if there are issues with the import process and you have to run the import multiple times.
+:::
+
+:::tip
+Similarly to Taxon Name imports, it can be helpful to examine your gazetteer data prior to attempting an import. If you have GIS software experience with ArcGIS (ESRI) or QGis or similar, it can save time to examine your data to check for issues such as:
+* shapes with invalid geometry
+* a column that provides names for your shapes (can be called anything, doesn't need to be `name`)
+* duplicate names on different shapes
+* missing shapes or names
+* misspelled names or names with extra information you're not interested in
+
+*Some* of these issues can be dealt with in an ad-hoc manner in TaxonWorks, but in any case will likely be easier to resolve in GIS software made precisely for dealing with such data.
+:::
+
+For these instructions we'll go through the process of importing the 8 Biogeographical Realms of the World as provided by a shapefile we can download online. The original data link is [https://data-gis.unep-wcmc.org/portal/home/item.html?id=f196d94a226d430fa214947d51dad35a](https://data-gis.unep-wcmc.org/portal/home/item.html?id=f196d94a226d430fa214947d51dad35a) but *we won't be working directly with that download file* since it has one of the data issues mentioned above. The shapes for Nearctic, Oceanic, and Palearctic each cross the prime-meridian line, so those regions are provided by that shapefile as *two* polygons each, each with the same name.
+
+In our case we'd like to be able to filter by the entire region using just one polygon, not two, so we have two choices:
+1) Import that shapefile as is and then use the Create or Edit Gazetteers task to create the union of each of those pairs (followed by deleting the originals)
+2) Perform those unions using ArcGIS or QGis or similar and then import that new shapefile instead
+
+We'll go with option 2 here, where we've already created the new shapefile for you, available [here](/examples/shapefiles/biogeographical_regions_of_the_world_2004-eight_shapes.zip). Download that shapefile and unzip it - TaxonWorks doesn't currently support importing the zip file directly.
+
+##### Importing shapefile files
+Shapefiles provide their data spread over several different files - the mandatory ones for import into TaxonWorks are the .shp, .shx, .dbf, and .prj files (visit the Wikipedia link above for more on what each of those files contributes).
+
+The easiest way to get our shapefile files into TaxonWorks is to click on the New tab in the 'Shapefile documents' section:
+
+#left[Shapefile documents chooser](https://sfg.taxonworks.org/s/ymlzrl)
+
+Either drag your files into the drop region, or click in the drop region and select your files from the file selector (you can select them all at once by clicking the first one, then pressing the shift key and clicking on the last one). You should now see reds turned to green (as well as the yellow .cpg file, which is optional but should be included when you have one):
+
+#left[Shapefile documents loaded](https://sfg.taxonworks.org/s/s6u1z3)
+
+Note that your required shapefile documents have been auto-selected for you: they appear below the select in rows with trash can icons.
+
+##### Selecting the Name column
+It turns out shapefile data can be thought of a lot like we think of spreadsheet data: as columns and rows. We need to tell TaxonWorks which column has the names of our shapes - to do so click on the 'Select from shapefile fields' (i.e. columns) for the shapefile field containing the Gazetteer names:
+
+#left[Shapefile name field input](https://sfg.taxonworks.org/s/n6egx6)
+
+You'll see the list of all of the shapefile columns that might be your name column:
+
+#left[Shapefile fields](https://sfg.taxonworks.org/s/l3sc5f)
+
+These names were created by whoever made the shapefile, not necessarily with you in mind: in this case the likely choices are Realm or RealmCode, and RealmCode sounds more like a shorthand (it is), so we'll try 'Realm': click 'Realm' and then 'Select name field'.
+
+:::tip
+See the preview step described below for checking that the field you selected contains the data you expect.
+:::
+
+The name field is required for gazetteers; the next two, Iso 3166 A2 and A3, are not. They're not included by our shapefile, so we'll skip them.
+
+##### Selecting a source to cite your imported gazetteers with
+Next up you can enter a Source (the paper in which this data was described, e.g.) to cite each gazetteer you'll create. We'll pass this time.
+
+##### Importing gazetteers to multiple projects
+You also have the opportunity to choose which project(s) you'd like to import your shapes into - all of the projects you're currently a member of should be available as options:
+
+#left[Choose project(s) to import to](https://sfg.taxonworks.org/s/ac3mqc)
+
+:::warning
+*You can't currently copy shapes between projects after importing* (though that option will be available in the future), so this is your one chance to do so.
+:::
+
+##### Previewing your import data
+Before importing, you have the opportunity to *check that the choices you made above are actually giving reasonable looking data*. It's always a good idea to at least glance at the preview before importing. Here we see:
+
+#left[shapefile import preview](https://sfg.taxonworks.org/s/48cp0n)
+
+We see the eight expected regions, each with a single shape - that's what we want.
+
+TaxonWorks does not include a shape preview.
+
+:::warning
+If we had worked with the original unaltered shapefile instead then at this point we would see Nearctic, Oceanic, and Palearctic each listed twice, each with a count of 2: a red flag that there was an issue requiring our attention.
+:::
+
+:::tip
+The preview rows are ordered by the `Name` column. The first column of the preview, `Record number`, gives the row number of that name in the shapefile in case you need to make changes to your shapefile.
+:::
+
+##### Running the import job
+The preview contains the data we're expecting, so click on `Process shapefile` to submit the import request. Imports run in the background: you should now see your job listed in the `Import Job Status` section:
+
+#left[Import Job Status, new job](https://sfg.taxonworks.org/s/3zjk02)
+
+Press the refresh button to track your job's status as the job runs. Very detailed very large shapes have been known to take tens of minutes to import; less detailed shapes can take under a second.
+
+Here we see the job status is `Completed`, and we've imported all 8/8 shapes with no errors in about 2 seconds:
+
+#left[Import Job Status, job completed](https://sfg.taxonworks.org/s/katruo)
+
+##### Checking the results
+Click on the Gazetteers link to see a list of some/all of your new Gazetteers, and click one to check the imported shape:
+
+#left[Imported Palearctic shape](https://sfg.taxonworks.org/s/cajgwz)
+
+Note that the Palearctic shape here displays as two pieces, split across the prime meridian, as expected.
+
+
+
+
+

@@ -235,16 +235,40 @@ Add a `#list` spec:
 
 ## Views
 
-Reference existing patterns in `app/views/otus/` for details.
+:::tip
+In these steps reference existing patterns in `app/views/otus/` for details on how to conform the scaffolded files to TaxonWorks' conventions.
+:::
 
 * Delete `index.html.erb`
 * Follow Rails conventions for `_form.html.erb`. See any other `_form.html.erb` for TaxonWorks conventions and markup. Replace the partials as needed (e.g. `/shared/errors`)
 * Ensure you have JSON responses for `show` and `index` actions
-  * Rename the `_organization.json.jbuilder` partial to `_attributes.json.jbuilder`
-* Most models can use an autocomplete, add `autocomplete.json.jbuilder`.
+  * Rename the `_organization.json.jbuilder` to `_attributes.json.jbuilder`, edit accordingly.
+  * Rename `_organizations.html.erb` to `_attributes.html.erb` so that shared view can render attributes.
 * Update `show.html.erb` to use a shared view replacing everything with `<%= render(partial: 'shared/data/project/show', locals: {object: @organization}) -%>`
-* Add `_attributes.html.erb` so that shared view can render attributes
 * Add a `list.html.erb`
+
+:::tip
+To disable the `new` link in the shared index view add the model name to the constant in `Workbench::NavigationHelper` module
+:::
+
+#### Autocomplete
+Most models use an autocomplete in various places.
+* Add `def autocomplete` to the controller
+  * Return no more than 20 records, autocompletes reference user input like `(name: params.require(:term))`
+* Add `autocomplete.json.jbuilder` to `views/`, typically you can copy from `/app/views/otus/` and adapt
+* !! Add `_quick_search_form.html.erb` to `views/`, this is used in auto-generated show, index, etc., again see otus and adapt
+* Add a method in `helpers/`:
+```ruby
+  def sounds_search_form
+    render('/organizations/quick_search_form')
+  end
+```
+
+:::warning
+Not seeing autocomplete forms on scaffolded views? You are likely missing the `<model>s_search_form` method in `helpers/`.
+::: 
+
+After scaffolding, as implementation advances, see also the `/lib/queries/<model>/autocomplete.rb` pattern for advanced autocomplete logic.
 
 ### View specs
 

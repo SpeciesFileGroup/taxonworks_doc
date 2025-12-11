@@ -117,7 +117,9 @@ _Errors are listed in percieved likelihood of being hit_
 
 Running with [openssl prefix](https://github.com/rvm/rvm/issues/5240#issuecomment-1653046500) fixes the issue:
 
-rvm reinstall 3.2.2 --with-openssl-dir=$(brew --prefix openssl) --with-readline-dir=$(brew --prefix readline) --with-libyaml-dir=$(brew --prefix libyaml)  --disable-dtrace --disable-docs
+```
+rvm install 3.4.7 --with-openssl-dir=$(brew --prefix openssl) --with-readline-dir=$(brew --prefix readline) --with-libyaml-dir=$(brew --prefix libyaml)  --disable-dtrace --disable-docs
+```
 
 ### Random gems failing
 

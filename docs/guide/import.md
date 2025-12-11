@@ -8,6 +8,10 @@ _Many projects start with imports, and target [Exports](/guide/export), the form
 
 For strategies on migrating whole projects see [Migrate to TaxonWorks](/guide/migrate-to-TaxonWorks). This includes an overview of the many ways that data can be added to TaxonWorks.
 
+::: tip
+If you're running TaxonWorks locally (i.e. not in production or on a sandbox) then you'll likely need to manually trigger processing of the background jobs created during import. See [Delayed Jobs](/guide/import#seed-a-project-users-and-some-data-from-the-command-line) for details.
+:::
+
 ## Batch loaders
 
 There are various batch importers available within the [UI](/about/glossary#ui). These are polished to differing degrees and have various benefits and limitations. The required format, and often an example spreadsheet, is provided in the UI. All batch loaders are two-step, allowing for (and requiring) a preview of results before inserting them into the database.
@@ -259,12 +263,12 @@ Delving into more complex scenarios (synonyms for example) here are some example
 
 To upload occurrence data, TW offers the ability to use a DwC Archive file format. _For occurrences, the importer is presently limited to vouchered specimen data records._
 
-To use this approach you must have your specimen data in a single spreadsheet-style format that can be export as "CSV".
+To use this approach you must have your specimen data in a single spreadsheet-style format that can be exported as "CSV".
 
 Preparing for an import follows the following general procedures:
 
 - [Map your data](/guide/import#map-your-data) (provide a column header) for each column of data to be imported
-- [Configure TaxonWorks for your DwC import](/guide/import#configure-taxonworks-for-your-dwc-import) by creating records that will be used during the import process
+- [Configure TaxonWorks for your DwC import](/guide/import#configure-taxonworks-for-your-dwc-occurrence-data-import) by creating records that will be used during the import process
 
 ::: tip
 As part of your process you may need to go back and forth between mapping and configuring
@@ -286,12 +290,14 @@ As headers, these will look like this:
 | _A DwC term mapping_ | _A user customizable data attribute_      | A TW biocuration attribute | _A TW specific attribute_                |
 
 ::: tip
-A first step is to go through your data and figure out which column header type you'll need. Start by matching to supported DwC terms, then go on from there.
+A first step is to go through your data and figure out which column header types you'll need. Start by matching to supported DwC terms, then go on from there.
 :::
 
 #### DwC term mapping
 
-When going from DwC, a flat format, to TaxonWorks your moving your data from rows to Things. We can group the DwC terms into classes to reflect where they end up in TaxonWorks.
+When going from DwC, a flat format, to TaxonWorks you're moving your data from rows to Things. We can group the DwC terms into classes to reflect where they end up in TaxonWorks.
+
+Of the terms described below, the three required for occurrence data import are `occurrenceID`, `scientificName`, and `basisOfRecord`.
 
 ##### Record-level class
 
@@ -300,13 +306,14 @@ When going from DwC, a flat format, to TaxonWorks your moving your data from row
 | `type`            | It is checked that it equals `PhysicalObject` before allowing the record to be imported. If the value is empty or term not present it is assumed it is a `PhysicalObject`                                                                                                                                                 |
 | `institutionCode` | Selects the repository for the specimen that is registered with an acronym equal to this value                                                                                                                                                                                                                            |
 | `collectionCode`  | Paired with `institutionCode` it is used to select the namespace for `catalogNumber` from a user-defined lookup table in import settings, the value itself is not imported.                                                                                                                                               |
-| `basisOfRecord`   | It is checked that it equals an expected valid value for term, e.g. `PreservedSpecimen` or `FossilSpecimen` before allowing the record to be imported. If the value is empty or term not present it is assumed it is a `PreservedSpecimen`. _For compatibility with GBIF datasets, `PRESERVED_SPECIMEN` is also allowed._ |
+| `basisOfRecord`   | It is checked that it equals an expected valid value for term, e.g. `PreservedSpecimen` or `FossilSpecimen` before allowing the record to be imported. If the value is empty it is assumed it is a `PreservedSpecimen`. _For compatibility with GBIF datasets, `PRESERVED_SPECIMEN` is also allowed._ |
 
 ##### Occurrence class
 
 | Term              | Mapping                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `catalogNumber`   | The identifier value for Catalog Number local identifier. The namespace is selected from the namespaces lookup table in import settings queried by `institutionCode`:`collectionCode` pair. If you require several records to share the same Catalog Number identifier, you may do so by enabling `Containerize specimen with existing ones when catalog number already exists` import setting or by distinct `recordNumber` value.            |
+| `occurrenceID`    | Must be unique within your import; for reference/filtering purposes preferably universally unique, though that is not required.
+| `catalogNumber`   | The identifier value for a Catalog Number local identifier. The namespace is selected from the namespaces lookup table in import settings queried by `institutionCode`:`collectionCode` pair. If you require several records to share the same Catalog Number identifier, you may do so by enabling `Containerize specimen with existing ones when catalog number already exists` import setting or by distinct `recordNumber` value.            |
 | `recordNumber`    | The identifier value for Record Number local identifier. If not empty the record requires to have the short name of the Namespace to use in a TW-specific column named `TW:Namespace:RecordNumber`. This DwC term enables the re-use of the same `catalogNumber` of both existing collection objects and records in the dataset, as the importer assigns related specimens to a container to allow sharing the same Catalog Number identifier. |
 | `recordedBy`      | It is imported as-is in verbatim collectors field of the collecting event. Additionally, the value is parsed into people and assigned as collectors of the CE. Previously existing people are not used unless the data origin is the same dataset the record belongs to, otherwise any missing people are created.                                                                                                                             |
 | `individualCount` | The total number of entities associated with the specimen record (e.g. this record may be for a "lot" containing 6 objects).                                                                                                                                                                                                                                                                                                                   |
@@ -368,7 +375,7 @@ When going from DwC, a flat format, to TaxonWorks your moving your data from row
 The DwC importer task includes some TW-specific mappings that are neither DwC core terms nor in any DwC extension term lists but instead, direct mappings to predicates in your projects imported as data attributes for collection objects and collecting events, biocuration groups and classes, and as an advanced-use feature you may have direct mappings to model fields.
 
 ::: warning
-If submitting an actual DwC-A zip file and not tab-separated text file or spreadsheet, this TW-specific mappings have to be placed as headers in the core table, and not in meta.xml. If you are replacing a mapping from meta.xml, you must make sure to comment it out and also if inserting colums make sure you do the appropriate adjustments to avoid collision.
+If submitting an actual DwC-A zip file and not tab-separated text file or spreadsheet, these TW-specific mappings have to be placed as headers in the core table, and not in meta.xml. If you are replacing a mapping from meta.xml, you must make sure to comment it out and also if inserting columns make sure you do the appropriate adjustments to avoid collision.
 :::
 
 _See [Configure TaxonWorks for your DwC import](/guide/import#configure-taxonworks-for-your-dwc-import) for how to create the records referenced in these mappings._
@@ -376,11 +383,11 @@ _See [Configure TaxonWorks for your DwC import](/guide/import#configure-taxonwor
 ##### Mappings to project predicates
 
 In cases where you need to import predicate values targetting the imported collection object or collecting event you may do so by naming the column with a pattern like `TW:DataAttribute:<target_class>:<predicate_identifier>`.
-`<target_class>` may be `CollectionObject` or `CollectingEvent`, and the `<predicate_identifier>` may be the either the name of the predicate or its URI. As an example if you have a predicate registered with name `ageInDays` and URI `http://rs.gbif.org/terms/1.0/ageInDays`, both `TW:DataAttribute:CollectionObject:ageInDays` and `TW:DataAttribute:CollectionObject:http://rs.gbif.org/terms/1.0/ageInDays` can be used to refer to the same predicate.
+`<target_class>` may be `CollectionObject` or `CollectingEvent`, and the `<predicate_identifier>` may be either the name of the predicate or its URI. As an example if you have a predicate registered with name `ageInDays` and URI `http://rs.gbif.org/terms/1.0/ageInDays`, both `TW:DataAttribute:CollectionObject:ageInDays` and `TW:DataAttribute:CollectionObject:http://rs.gbif.org/terms/1.0/ageInDays` can be used to refer to the same predicate.
 
 ##### Mappings to biocuration groups and classes
 
-The importer is able to map `sex` into the appropriate biocuration group and select the approriate class according to the value. For additional mappings you may use a special column name pattern to select a biocuration group like `TW::BiocurationGroup:<group_identifier>` where `<group_identifier>` can be the name of the biocuration group or its URI. In addition the values must match an existing biocuration class and you may use either its name or URI. For example, if you have a biocuration group registered with name `Caste` and URI `urn:example:ants:caste` and biocuration class with name `Queen` and URI `urn:example:ants:caste:queen` the following examples do all create the same biocuration classification:
+The importer is able to map `sex` into the appropriate biocuration group and select the appropriate class according to the value. For additional mappings you may use a special column name pattern to select a biocuration group like `TW::BiocurationGroup:<group_identifier>` where `<group_identifier>` can be the name of the biocuration group or its URI. In addition the values must match an existing biocuration class and you may use either its name or URI. For example, if you have a biocuration group registered with name `Caste` and URI `urn:example:ants:caste` and biocuration class with name `Queen` and URI `urn:example:ants:caste:queen` the following examples do all create the same biocuration classification:
 |Caste|urn:example:ants:caste|
 |---|---|
 Queen|urn:example:ants:caste:queen
@@ -388,11 +395,11 @@ urn:example:ants:caste:queen|Queen
 
 ##### Mappings to DwC predicates
 
-Whenever the importer sees that your project has custom attributes for collecting events and/or collection objects that matches Darwin Core URI terms (`http://rs.tdwg.org/dwc/terms/<term>`), them will be imported as data attributes regardless of any existing mapping of the same field. This allows to preserve verbatim dataaset value for reference as also to import data from terms not supported by the importer.
+Whenever the importer sees that your project has custom attributes for collecting events and/or collection objects that match Darwin Core URI terms (`http://rs.tdwg.org/dwc/terms/<term>`), they will be imported as data attributes regardless of any existing mapping of the same field. This allows to preserve verbatim dataset values for reference and also to import data from terms not supported by the importer.
 
 ##### Direct mapping to TW model fields
 
-This is an advance mapping and requires knowledge of the underlying TW models. The pattern is `TW:<model_class>:<field>` where model can be either [`CollectionObject`](https://docs.taxonworks.org/develop/Data/models.html#collection-object) or [`CollectingEvent`](https://docs.taxonworks.org/develop/Data/models.html#collecting-event), and `<field>` can be the ones listed below.
+This is an advanced mapping and requires knowledge of the underlying TW models. The pattern is `TW:<model_class>:<field>` where model can be either [`CollectionObject`](https://docs.taxonworks.org/develop/Data/models.html#collection-object) or [`CollectingEvent`](https://docs.taxonworks.org/develop/Data/models.html#collecting-event), and `<field>` can be the ones listed below.
 
 | Class              | fields                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -429,14 +436,10 @@ Think of biocuration classes as custom attributes for your collection objects, t
 
 ### Unmapped columns
 
-Column headers that can't be linked via one of the 3 mechanisms are ignored during the import process. This means its important to do some trial runs in a sandbox, or with a smaller dataset to see that your values are mapping over. The `Browse collection object` task is a good place to check this.
-
-::: danger
-No warning is given when columns do not map, they are simply ignored.
-:::
+Column headers that can't be linked via one of the 3 mechanisms are ignored during the import process. This means it's important to do some trial runs in a sandbox, or with a smaller dataset to see that your values are mapping over. The `Browse collection object` task is a good place to check this.
 
 ::: tip
-You can augment your data after import with batch update functionality inside TW. Carefully planning your overal import process can lead to a more efficient overall approach. Sometimes its easier to work in spreadsheets, sometimes within a database.
+You can augment your data after import with batch update functionality inside TW. Carefully planning your overal import process can lead to a more efficient overall approach. Sometimes it's easier to work in spreadsheets, sometimes within a database.
 :::
 
 ## Drag and drop
@@ -469,3 +472,142 @@ We are in the process of exploring two routes to come from Scratchpads to TaxonW
 
 - The DwC import should work well for occurrence data that is based on collected objects.
 - The SFG team is has worked with a select number of individual Scratchpad curators to script the process of transferring their datadata. Contact us if you are interested in what this approach entails. Note that this process takes programming effort that is a limited resource within the SFG.
+
+## Importing shapes (GIS)
+
+### Background
+TaxonWorks comes with its own *fixed* set of geographic shapes, called Geographic Areas. These consist solely of geopolitical shapes/boundaries at the county, state/province, and country levels. Frequently though individuals will have a need for more specialized shapes of, for example, a national park in which they study, or a particular water body, or one particular island. For these needs TaxonWorks has Gazetteers, which are individual named-shapes created/imported *as needed by users for their own use cases*. Gazetteers:
+* have a name, such as "Mediterranean Sea" or "Awaji Island" (rarely will these be geopolitical names, as opposed to Geographic Areas)
+* have a shape/boundary which is either created by the user or imported from a data file (typically a shapefile)
+* are project-level objects, as opposed to Geographic Areas which are community data
+
+### Creating Gazetteer shapes
+
+#### The New Gazetteer task
+We'll only touch briefly on the New Gazetteer task, which is geared more toward user-drawn shapes:
+
+#left[New Gazetteer Task](https://sfg.taxonworks.org/s/75gj90)
+
+The `name` field is required, `ISO 3166 A2/A3` are optional. You can see here that we've selected 2 of our projects to add the Gazetteer we're creating to.
+
+:::warning
+*You can't currently copy shapes between projects after importing* (though that option will be available in the future), so this is your one chance to do so.
+:::
+
+Creation options are:
+* From Leaflet: draw a shape on a map using your mouse
+* WKT coordinates: import a shape using the [well-known-text format](https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry)
+* Enter coordinates of a point
+* Add an existing Geographic Area or Gazetteer to your shape, by union or intersection
+
+#### The Import Gazetteers task
+The Import Gazetteers task allows you to import many shapes at once with whatever precision the original shapes were created with, via a [shapefile](https://en.wikipedia.org/wiki/Shapefile). Typically in this case the shapefile will be something you or a colleague found online and then downloaded.
+
+:::tip
+At this time we only support import of shapefiles. If you find the shapes you would like to import in a different format, you can likely use software such as ArcGIS (commercial), QGis, or GDAL (more advanced) to convert to the shapefile format.
+:::
+
+:::warning
+We strongly encourage you to perform an initial test import on a *sandbox* to make sure everything turns out as expected; otherwise you may wind up with duplicated or missing shapes if there are issues with the import process and you have to run the import multiple times.
+:::
+
+:::tip
+Similarly to Taxon Name imports, it can be helpful to examine your gazetteer data prior to attempting an import. If you have GIS software experience with ArcGIS (ESRI) or QGis or similar, it can save time to examine your data to check for issues such as:
+* shapes with invalid geometry
+* a column that provides names for your shapes (can be called anything, doesn't need to be `name`)
+* duplicate names on different shapes
+* missing shapes or names
+* misspelled names or names with extra information you're not interested in
+
+*Some* of these issues can be dealt with in an ad-hoc manner in TaxonWorks, but in any case will likely be easier to resolve in GIS software made precisely for dealing with such data.
+:::
+
+For these instructions we'll go through the process of importing the 8 Biogeographical Realms of the World as provided by a shapefile we can download online. The original data link is [https://data-gis.unep-wcmc.org/portal/home/item.html?id=f196d94a226d430fa214947d51dad35a](https://data-gis.unep-wcmc.org/portal/home/item.html?id=f196d94a226d430fa214947d51dad35a) but *we won't be working directly with that download file* since it has one of the data issues mentioned above. The shapes for Nearctic, Oceanic, and Palearctic each cross the prime-meridian line, so those regions are provided by that shapefile as *two* polygons each, each with the same name.
+
+In our case we'd like to be able to filter by the entire region using just one polygon, not two, so we have two choices:
+1) Import that shapefile as is and then use the Create or Edit Gazetteers task to create the union of each of those pairs (followed by deleting the originals)
+2) Perform those unions using ArcGIS or QGis or similar and then import that new shapefile instead
+
+We'll go with option 2 here, where we've already created the new shapefile for you, available [here](/examples/shapefiles/biogeographical_regions_of_the_world_2004-eight_shapes.zip). Download that shapefile and unzip it - TaxonWorks doesn't currently support importing the zip file directly.
+
+##### Importing shapefile files
+Shapefiles provide their data spread over several different files - the mandatory ones for import into TaxonWorks are the .shp, .shx, .dbf, and .prj files (visit the Wikipedia link above for more on what each of those files contributes).
+
+The easiest way to get our shapefile files into TaxonWorks is to click on the New tab in the 'Shapefile documents' section:
+
+#left[Shapefile documents chooser](https://sfg.taxonworks.org/s/ne2kv9)
+
+Either drag your files into the drop region, or click in the drop region and select your files from the file selector (you can select them all at once by clicking the first one, then pressing the shift key and clicking on the last one). You should now see reds turned to green (as well as the yellow .cpg file, which is optional but should be included when you have one):
+
+#left[Shapefile documents loaded](https://sfg.taxonworks.org/s/h6y457)
+
+Note that your required shapefile documents have been auto-selected for you: they appear below the select in rows with trash can icons.
+
+##### Selecting the Name column
+It turns out shapefile data can be thought of a lot like we think of spreadsheet data: as columns and rows. We need to tell TaxonWorks which column has the names of our shapes - to do so click on the 'Select from shapefile fields' (i.e. columns) for the shapefile field containing the Gazetteer names:
+
+#left[Shapefile name field input](https://sfg.taxonworks.org/s/n6egx6)
+
+You'll see the list of all of the shapefile columns that might be your name column:
+
+#left[Shapefile fields](https://sfg.taxonworks.org/s/l3sc5f)
+
+These names were created by whoever made the shapefile, not necessarily with you in mind: in this case the likely choices are Realm or RealmCode, and RealmCode sounds more like a shorthand (it is), so we'll try 'Realm': click 'Realm' and then 'Select name field'.
+
+:::tip
+See the preview step described below for checking that the field you selected contains the data you expect.
+:::
+
+The name field is required for gazetteers; the next two, Iso 3166 A2 and A3, are not. They're not included by our shapefile, so we'll skip them.
+
+##### Selecting a source to cite your imported gazetteers with
+Next up you can enter a Source (the paper in which this data was described, e.g.) to cite each gazetteer you'll create. We'll pass this time.
+
+##### Importing gazetteers to multiple projects
+You also have the opportunity to choose which project(s) you'd like to import your shapes into - all of the projects you're currently a member of should be available as options:
+
+#left[Choose project(s) to import to](https://sfg.taxonworks.org/s/ac3mqc)
+
+:::warning
+*You can't currently copy shapes between projects after importing* (though that option will be available in the future), so this is your one chance to do so.
+:::
+
+##### Previewing your import data
+Before importing, you have the opportunity to *check that the choices you made above are actually giving reasonable looking data*. It's always a good idea to at least glance at the preview before importing. Here we see:
+
+#left[shapefile import preview](https://sfg.taxonworks.org/s/48cp0n)
+
+We see the eight expected regions, each with a single shape - that's what we want.
+
+TaxonWorks does not include a shape preview.
+
+:::warning
+If we had worked with the original unaltered shapefile instead then at this point we would see Nearctic, Oceanic, and Palearctic each listed twice, each with a count of 2: a red flag that there was an issue requiring our attention.
+:::
+
+:::tip
+The preview rows are ordered by the `Name` column. The first column of the preview, `Record number`, gives the row number of that name in the shapefile in case you need to make changes to your shapefile.
+:::
+
+##### Running the import job
+The preview contains the data we're expecting, so click on `Process shapefile` to submit the import request. Imports run in the background: you should now see your job listed in the `Import Job Status` section:
+
+#left[Import Job Status, new job](https://sfg.taxonworks.org/s/3zjk02)
+
+Press the refresh button to track your job's status as the job runs. Very detailed very large shapes have been known to take tens of minutes to import; less detailed shapes can take under a second.
+
+Here we see the job status is `Completed`, and we've imported all 8/8 shapes with no errors in about 2 seconds:
+
+#left[Import Job Status, job completed](https://sfg.taxonworks.org/s/katruo)
+
+##### Checking the results
+Click on the Gazetteers link to see a list of some/all of your new Gazetteers, and click one to check the imported shape:
+
+#left[Imported Palearctic shape](https://sfg.taxonworks.org/s/cajgwz)
+
+Note that the Palearctic shape here displays as two pieces, split across the prime meridian, as expected.
+
+
+
+
+

@@ -32,7 +32,7 @@ Reopen a terminal.
 
 Install required packages.
 ```
-sudo pacman -S postgresql postgis imagemagick tesseract git meld curl cmake nodejs npm pkgconf base-devel tar gzip diffutils python-psycopg2 graphviz
+sudo pacman -S postgresql postgis imagemagick tesseract git meld curl cmake nodejs npm pkgconf base-devel tar gzip diffutils python-psycopg2 graphviz libyaml
 ```
 
 For Tesseract OCR, you also need to install your desired [language data packages](https://www.archlinux.org/packages/?sort=&q=tesseract-data-&maintainer=&flagged=). For example:
@@ -163,6 +163,28 @@ git config --global merge.tool meld
 [1]: https://github.com/SpeciesFileGroup/install_taxonworks/blob/master/development/native/tuning_postgres_for_development.md
 
 ## Troubleshooting
+
+### Nov 2025: When installing rvm with Ruby it fails to compile Ruby 3.0.0
+
+When running `curl -sSL https://get.rvm.io | bash -s stable --ruby`, Ruby 3.0.0 fails to compile with:
+```
+ruby-3.0.0 - #extracting ruby-3.0.0 to /home/gdo/.rvm/src/ruby-3.0.0.....
+ruby-3.0.0 - #configuring.........................................................................
+ruby-3.0.0 - #post-configuration..
+ruby-3.0.0 - #compiling........................................................................................
+Error running '__rvm_make -j4',
+please read make.log
+```
+Try installing a more recent version of Ruby:
+```
+rvm install 3.4.4
+```
+Then change to the taxonworks directory and try running `bundle`. If that succeeds then the issue is likely fixed.
+
+This is untested but it may be possible to install RVM with a specific version of Ruby to skip installing Ruby 3.0.0:
+```
+curl -sSL https://get.rvm.io | bash -s stable --ruby=3.4.4
+```
 
 ### May 2025: bundle fails to install ruby-prof 1.7.1 with error: unknown type name ‘bool’
 

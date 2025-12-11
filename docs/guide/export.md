@@ -2,7 +2,11 @@
 sidebarPosition: 62 
 ---
 
-# Export 
+# Export
+
+::: tip
+If you're running TaxonWorks locally (i.e. not in production or on a sandbox) then you'll likely need to manually trigger processing of the background jobs created by export. See [Delayed Jobs](/guide/import#seed-a-project-users-and-some-data-from-the-command-line) for details.
+:::
 
 ## Full database dumps
 

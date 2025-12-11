@@ -57,7 +57,7 @@ end
 
 There are some TaxonWorks specific tweaks to make:
 * Add `null: false` and `index: true` to the created/updated fields
-* _After_ the `create_table`foreign key references to User like `add_foreign_key :organizations, :users, column: :updated_by_id`
+* _After_ the `create_table` call, add foreign key references to User like `add_foreign_key :organizations, :users, column: :updated_by_id`
 
 After these editions your file looks something like this:
 
@@ -74,11 +74,10 @@ class CreateOrganizations < ActiveRecord::Migration[7.2]
 
       t.timestamps
     end
+
+    add_foreign_key :organizations, :users, column: :created_by_id
+    add_foreign_key :organizations, :users, column: :updated_by_id
   end
-
-  add_foreign_key :organizations, :users, column: :created_by_id
-  add_foreign_key :organizations, :users, column: :updated_by_id
-
 end
 ```
 
@@ -90,11 +89,12 @@ Refer to [Rails migration documentation](https://guides.rubyonrails.org/active_r
 
 ## Routes
 
-Within `config/routes/data.rb` find the `resource:` block for your new model (e.g. search for `organizations`) then:
+Within `config/routes.rb` find the `resource:` block for your new model then:
 
+* Cut it from that file
+* Paste it alphabetically into `config/routes/data.rb`
 * Ensure the `resources:` block is present if it wasn't scaffolded
 * Include `concerns [:data_routes]`
-* Move the code block into alphabetic order within the file
 
 Your block should look like:
 ```Ruby
@@ -111,32 +111,31 @@ See factory [README.md](https://github.com/SpeciesFileGroup/taxonworks/blob/deve
 
 In `app/models/organization.rb`:
 
-* Document the models attributes with `@!attribute` statements, see any model for examples.  Note that as implemented Organization in TaxonWorks is 1:1 with another schema.* Add Concerns (extensions) to the model.  All data models require `Shared::IsData` _usually as the last concern_
+* Document the model's attributes with `@!attribute` statements, see any model for examples.  Note that as implemented Organization in TaxonWorks is 1:1 with another schema.* Add Concerns (extensions) to the model.  All data models require `Shared::IsData` _usually as the last concern_
     * If the model has a `project_id` (is project specific) this will look like:
-```Ruby
-  include Housekeeping
-  # ... others
-  include Shared::IsData
-```
-    * You'll need to remove `belongs_to :project_id` if present, it's convered in the `Housekeeping`
+    ```Ruby
+      include Housekeeping
+      # ... others
+      include Shared::IsData
+    ```
+    * You'll need to remove `belongs_to :project_id` if present, it's covered in the `Housekeeping`
     * If the model is community:
-```Ruby
-  include Housekeeping::Users
-  include Housekeeping::Timestamps
-  # ... others
-  include Shared::IsData
-```
-* If the model as a `project_id` register it in the `MANIFEST` constant in [`app/models/project.rb`](https://github.com/SpeciesFileGroup/taxonworks/blob/development/app/models/project.rb)
-* Add at least 1-2 model tests (e.g. in `spec/models/organization_spec.rb`)
-
-
-:::tip
-At this point when you restart the server you should see a clickable card on `Data`
-:::
+    ```Ruby
+      include Housekeeping::Users
+      include Housekeeping::Timestamps
+      # ... others
+      include Shared::IsData
+    ```
+    * If the model has a `project_id`, register the model in the `MANIFEST` constant in [`app/models/project.rb`](https://github.com/SpeciesFileGroup/taxonworks/blob/development/app/models/project.rb)
+    * Add at least 1-2 model tests (e.g. in `spec/models/organization_spec.rb`)
 
 ## Config
 
 * Register the model in [`config/interface/hub/data.yml`](https://github.com/SpeciesFileGroup/taxonworks/blob/development/config/interface/hub/data.yml). See details therein.
+
+:::tip
+At this point when you restart the server you should see a clickable card on `Data`
+:::
 
 ## Controller
 
@@ -169,7 +168,7 @@ class OrganizationsController < ApplicationController
         render '/shared/data/all/index'
       end
       format.json {
-        @sounds = Organization.where(project_id: sessions_current_project_id)
+        @organizations = Organization.where(project_id: sessions_current_project_id)
           .page(params[:page])
           .per(params[:per])
       }
@@ -182,7 +181,7 @@ class OrganizationsController < ApplicationController
 * Add a`list` action
 
 :::tip
-At the point of updating the controller running the application and clicking through the model's card will raise errors on things missed or stubbed in error above.
+At this point of updating the controller, running the application and clicking through the model's card will raise errors on things missed or stubbed in error above.
 :::
 
 ### Controller tests
@@ -230,7 +229,7 @@ Add a `#list` spec:
   end
 ```
 
-* Supply invalid_attributes where needed (the model validation rules will help determiner invalid values)
+* Supply invalid_attributes where needed (the model validation rules will help determine invalid values)
 * Run the controller spec and correct as necessary.
 
 ## Views

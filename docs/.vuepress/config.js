@@ -99,6 +99,14 @@ export default defineUserConfig({
       locales: {
         '/': pluginsLang.en,
         '/es/': pluginsLang.es
+      },
+      // Adds frontmatter keywords into the search index.
+      getExtraFields: (page) => {
+        // page.frontmatter.search?.keywords may be an array or a string
+        const kws = page.frontmatter?.search?.keywords
+        if (!kws) return []
+        if (Array.isArray(kws)) return kws
+        return [String(kws)]
       }
     })
   ]

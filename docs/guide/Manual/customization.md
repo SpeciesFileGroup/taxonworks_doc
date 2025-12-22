@@ -42,7 +42,7 @@ TaxonWorks supports several distinct CVT categories, each serving a different pu
 
 #left[The Manage Controlled Vocabulary task with the Predicates tab selected](https://sfg.taxonworks.org/s/mm68d4)
 
-In the sections below we'll cover the meaning, uses, and creation of each of the following CVT types supported in TaxonWorks.
+In the sections below we'll cover the meaning, uses, and creation of each of the following CVT types supported in TaxonWorks. See also the [FAQ](#cvt-faq).
 
 | Term Type | Purpose |
 |-----------|---------|
@@ -644,7 +644,7 @@ For example, a relationship type describing ecto-parasitism might use:
 These properties define the biological roles of the two related taxa within that association.
 
 #### Creating the relation
-[TODO move to a BA section of the guide]
+[TODO move to a Biological Associations section of the guide]
 To model this relationship in TaxonWorks we'll use the Biological Relationship Composer task:
 
 #left[The Biological Relationship Composer task](https://sfg.taxonworks.org/s/u9urki)
@@ -686,15 +686,61 @@ You may wonder 'why did I go through all of that work to create properties when 
 
 ## CVT Frequently Asked Questions
 
-#### **Can a Class belong to more than one Group?**  
-No — in TaxonWorks a class belongs to exactly one group, which helps maintain a simple classification.
+**An import (or another user) created a CVT that already exists under a different - preferred - name and assigned it to lots of imported records. What can I do?**
 
-#### **Can I rename Groups without breaking data?**  
-Yes. Group renaming does not affect existing specimen annotations.
+---
 
-#### **What happens when I merge two Classes?**  TODO unify
-All annotations referencing either class will point to the surviving one.
+Discuss with the importer/changer if possible. If you decide to make the change, use the [Unify Objects](tasks#unify-task) task to unify the two CVT terms: keep the older preferrred term, delete the new term. Any data previously associated with the deleted term will now be associated with the preferred term.
 
-Tag or DA?
-https://dwc.tdwg.org/list/
-[Phenotype and Trait Ontology (PATO)](https://ontobee.org/ontology/PATO)
+:::tip
+If relevant (data attributes and biocurations), also check to make sure that your existing CVT is using an appropriate URI (or specific Name) to allow matching of imported data on that CVT. When that's the case this won't happen. See [The role of URIs in CVTs](#the-role-of-uris-in-cvts) for details.
+:::
+
+**Should I use a Tag or a Confidence?**
+
+---
+
+There can definitely be some overlap here. In general confidences should carry with them some level of judgement of data as it is. Tags in these cases, on the other hand, will generally be more curatorial. Thus you may have a confidence value of "community ID" (implying not necessarily expert), whereas a Tag along the same lines might be "Needs ID review" (a call to curatorial action).
+
+**Should I use Tags or a Data Attribute?**
+
+---
+
+Again there's a gray area, particularly if what you're modeling is a boolean (true/false, yes/no) value. Data attributes should be thought of more as permanent (but changeable) data attribute/value pairs added to objects. Tags are maybe lighter annotations aimed more at process and filtering.
+
+**Can I require the values of my data attribute to come from a controlled vocabulary?**
+
+---
+
+Somewhat related to the previous. The answer is "Not yet". For now you'll need to rely on filtering or downloading data and using something like Open Refine to determine if any values don't match your expected terms.
+
+**Can I change my CVT without breaking data?**
+
+---
+
+Mostly yes. Changing and saving the form values in the edit form of a CVT does not affect existing object annotations, but it may affect import/export behavior in some cases. See [The role of URIs in CVTs](#the-role-of-uris-in-cvts) for details.
+
+**URIs seem to appear a lot in this discussion. Do I really need them?**
+
+---
+
+The short answer: the only place they're strictly required is so that certain DwCA export data (when it exists) gets added to your archive. Imports match certain data either by URI or by Name, so URI isn't strictly required, but is (arguably) more stable than Name.
+
+That said, why might you want to use them even where they're not required? There are no perfect solutions, and URIs are no exception, but the intent is that:
+- They're (in general) a source of well thought out terms and definitions that have been found useful to the community
+- As such, they have broad usage and community-agreed-on meaning (a constant struggle, to be fair)
+- They automatically sit within the broader context of the terms related to them, which provides additional meaning
+- If your data are going to be meaningfully ingestable by other programs, either now or in the future, then well-known persistent URIs, rather than name-matching, provide the clearest picture of what your data are intended to describe.
+
+**What are some other sources for useful CVT URIs if I would like to use them more?**
+
+---
+
+We've already mentioned the Darwin Core terms list: <https://dwc.tdwg.org/list/> See other TDWG standards at <https://www.tdwg.org/standards/>; Latimer Core in particular may be of interest in this context.
+
+Other sources include ontologies:
+- [Relations Ontology](https://oborel.github.io/) (RO)
+- [Ontology for Biomedical Investigations](https://obi-ontology.org/) (OBI, not restricted to biomedical use of course)
+- [The Environment Ontology](https://sites.google.com/site/environmentontology/home)
+
+You can also search for terms from many ontologies at [Ontobee](https://ontobee.org/).

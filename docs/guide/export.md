@@ -84,6 +84,10 @@ On export, TaxonWorks will automatically populate certain DwcA fields from predi
 
 See the [code](https://github.com/SpeciesFileGroup/taxonworks/blob/development/config/initializers/constants/_controlled_vocabularies/dwc_attribute_uris.rb) for the most up-to-date list.
 
+:::warning
+_Note that on export no processing or validation is done on the export of these fields, you get in the export what you type in the field._
+:::
+
 #### Mappings from biocuration groups and classes
 On export, TaxonWorks will automatically populate certain DwcA fields from biocuration *groups* (not classes) matching particular URIs. Currently those fields and URIs are:
 

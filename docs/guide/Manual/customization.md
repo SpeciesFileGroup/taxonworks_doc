@@ -24,10 +24,6 @@ Controlled Vocabulary Terms (CVTs) in TaxonWorks allow projects to **standardize
 
 CVTs are used wherever a project benefits from having a defined, reusable set of terms rather than free text.
 
-:::warning
-Compare this description with the Notes annotation, for example, which is completely freeform, devoid of any explicit or implied meaning, can't be filtered or searched on, and has no (natural) connections to ontologies or standardized export formats.
-:::
-
 ### Where CVTs Are Used in TaxonWorks
 
 ---
@@ -46,9 +42,9 @@ CVTs appear in many places, including:
 
 TaxonWorks supports several distinct CVT categories, each serving a different purpose. The Manage Controlled Vocabulary task is used to create and manage your project's CVTs:
 
-#left[The Manage Controlled Vocabulary task with the Keywords tab selected](https://sfg.taxonworks.org/s/4srbdn)
+#left[The Manage Controlled Vocabulary task with the Predicates tab selected](https://sfg.taxonworks.org/s/mm68d4)
 
-In the sections below we'll cover the meaning, uses, and creation of each of the six CVT types supported in TaxonWorks.
+In the sections below we'll cover the meaning, uses, and creation of each of the following CVT types supported in TaxonWorks.
 
 | Term Type | Purpose |
 |-----------|---------|
@@ -65,7 +61,7 @@ In the sections below we'll cover the meaning, uses, and creation of each of the
 ---
 
 All CVTs allow you to provide an external URI. A URI is a way to:
-- sync your terms to those used by the broader community
+- sync your terms to those used by users in other projects and the broader community
 - provide stronger semantics via built-in relations to other terms of a vocabulary
 - increase the likelihood of your exported data being interpretable by other systems and outside users
 
@@ -87,11 +83,7 @@ See
 
 ---
 
-Definitions clarify meaning for new users. Good definitions:
-
-- describe how the term is used in your project  
-- clarify ambiguity  
-- distinguish similar terms  
+Definitions clarify meaning for new users. Don't assume that your label is understandable, now, or over time! Provide a definition so that others may interpret and apply this CVT term as your project intends it to be used.
 
 Think in terms of how you would want your term to be passed on with fidelity to someone inheriting your dataset.
 
@@ -342,7 +334,7 @@ Observation method → Visual on an Observation Matrix entry
 ```
 
 :::warning
-In the last example you may find yourself saying 'the values of Observation Method should come from a controlled vocabulary!'. TaxonWorks does not yet support this (see issue TODO) - in such cases teams should agree on and document the expected set of terms. (Filtering can be used to weed out incorrect values.)
+In the last example you may find yourself saying 'the values of Observation Method should come from a controlled vocabulary!'. TaxonWorks does not yet support this (TODO issue #?) - in such cases teams should agree on and document the expected set of terms. (Filtering can be used to weed out incorrect values.)
 :::
 
 ---
@@ -407,8 +399,6 @@ Scale bar present
 
 ---
 
-See TODO FAQ link if you're not sure if a Tag or a Data Attribute better fits your use case.
-
 ### Creating a Predicate
 
 ---
@@ -438,19 +428,33 @@ The value of a data attribute is single-line unstructured data. Here we've enter
  In this case it may be better to use separate 'Permit number' and 'Permit issuer' data attributes to mitigate these issues. We may also want to image the permit itself and attach it to the collecting event as a depiction.
  :::
 
-#### Enabling Data Attribute Assignments in Comprehensive Specimen Digitization and Related Tasks
+#### Adding data attribute inputs to tasks
+
+:::warning
+You must be a project administrator to add data attribute inputs to tasks.
+:::
 
 The Comprehensive Specimen Digitization task and related tasks provide a shortcut for adding data attribute values to a specimen. The first time you use the task you'll see the following in the `Attributes` panel:
 
 #left[Attributes panel with a link to 'Select visible attributes'](https://sfg.taxonworks.org/s/q1hnjw)
 
-Click on the link, select the `CollectionObject` radio, and select which data attributes you'd like to appear on the specimen digitization page. In this case I've selected 'Emergence date' but not 'Imaging device' (intended for depictions) or 'Permit data' (intended for collecting events).
+Click on the link, select the `CollectionObject` radio, and select which data attributes you'd like to appear on the specimen digitization page. In this case 'Emergence date' is selected but not 'Imaging device' (intended for depictions) or 'Permit data' (intended for collecting events).
+
+:::tip
+You can also access the preferences page by clicking `Project` in the top right, and then `Preferences`.
+:::
 
 #left[Predicate selection for collection objects](https://sfg.taxonworks.org/s/843ut7)
 
-Now when I reload the Comprehensive Specimen Digitization page I see the Attributes panel has an input for 'Emergence date' where I can enter my data directly and then save without going through the annotator.
+Now when you reload the Comprehensive Specimen Digitization page you'll see the Attributes panel has an input for 'Emergence date' where you can enter data directly and then save without going through the annotator.
 
 #left[Attribute panel showing Emergence Date input](https://sfg.taxonworks.org/s/843ut7)
+
+A similar procedure applies for adding data attributes inputs to the `OTU quick forms` radial and the `New collecting event` task.
+
+:::tip
+Data attributes not available as inputs on tasks in this way can still always be created from the radial annotator.
+:::
 
 ## Confidences
 
@@ -537,8 +541,6 @@ Biocuration Classes are grouped into **Biocuration Groups**, which serve as **or
 
 ---
 
-### What Biocuration Classes Are Used For
-
 Biocuration Classes allow projects to:
 
 - **Describe biological state or condition** of specimens  
@@ -563,7 +565,11 @@ Examples of useful Groups:
 - “Castes”
 
 :::tip
-Biocuration classes aren't required to belong to a group, but groups *are* required to active automatic matching of data to biocuration classes on import and export - see [URIs for Biocuration Classes](#uris-for-biocuration-classes)
+Biocuration classes aren't required to belong to a group, but groups *are* required to trigger automatic matching of data to biocuration classes on import and export - see [URIs for Biocuration Classes](#uris-for-biocuration-classes)
+:::
+
+:::tip
+Classes, once created, can be added to one or more groups.
 :::
 
 :::tip
@@ -621,6 +627,7 @@ Click on `Create biocuration group` - the form you see here is the same as in th
 
 We'll add three classes to the 'sex' group: `female`, `male`, and `hermaphrodite`.
 
+TODO
 Should we look up URIs for those terms? They certainly exist and adding them would ground our terminology and increase the likelihood of it being interpretable by external ingestors of our data, but they're not specifically used by TaxonWorks. We'll choose to pass this time, they can be added later if need arises.
 
 To create the classes one by one, click on the `Create biocuration class` button, fill out the data, and click `Create`. You'll get a message each time a class is created, but the task only displays groups on the front screen, not classes.
@@ -698,7 +705,7 @@ For example, a relationship type describing ecto-parasitism might use:
 These properties define the biological roles of the two related taxa within that association.
 
 #### Creating the Relation
-TODO is this really for a BA section of the guide?
+[TODO move to a BA section of the guide]
 To model this relationship in TaxonWorks we'll use the Biological Relationship Composer task:
 
 #left[The Biological Relationship Composer task](https://sfg.taxonworks.org/s/u9urki)
@@ -750,3 +757,5 @@ Yes. Group renaming does not affect existing specimen annotations.
 All annotations referencing either class will point to the surviving one.
 
 Tag or DA?
+https://dwc.tdwg.org/list/
+[Phenotype and Trait Ontology (PATO)](https://ontobee.org/ontology/PATO)

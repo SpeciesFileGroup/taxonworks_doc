@@ -11,10 +11,10 @@ TaxonWorks provides a nearly universally applicable set of "annotation" types th
 _Annotations have many potential uses in TaxonWorks. Some examples to get you thinking._
 
 ### My data don't fit in TaxonWorks!
-You're checking out TaxonWorks, it seems to have most of what you need, but the [UI](/about/glossary#ui) seems to be missing fields for key data that are critical to your project. See [Data attributes](/guide/Manul/customization.html#predicates-data-attributes)
+You're checking out TaxonWorks, it seems to have most of what you need, but the [UI](/about/glossary#ui) seems to be missing fields for key data that are critical to your project. See [Data attributes](customization#predicates-data-attributes).
 
 ### Export to a particular DarwinCore field
-TaxonWorks maps its internal model to well over 50 Darwin Core fields automatically. In addition, users can add Controlled Vocabulary Terms that reference DarwinCore fields to further extend the data that can be exported. See [The role of URIs in CVTs](guide/Manul/customization.md#the-role-of-uris-in-cvts).
+TaxonWorks maps its internal model to well over 50 Darwin Core fields automatically. In addition, users can add Controlled Vocabulary Terms that reference DarwinCore fields to further extend the data that can be exported. See [The role of URIs in CVTs](customization#the-role-of-uris-in-cvts).
 
 ### I need to make a group of records
 As part of your [SOP](/about/glossary#sop) you are constantly needing to make temporary small groups of data to review and modify. 
@@ -34,8 +34,14 @@ The radial annotator is used to call up and access the different types of annota
 #center[A radial annotator opened for a CollectionObject](https://sfg.taxonworks.org/s/4h0mya [An open radial annotator] w{80%} h{50%})
 
 ## Annotation types
+
+### Data attributes
+-Think of [DataAttributes](/models#data-attributes) as custom columns on your table. There are two types in TaxonWorks, "Import", and "Internal". The latter are created in the user-interface, the former are used in the documentation of bulk-data import, typically for bespoke datasets. 
+
+DataAttributes are key-value pairs that reference a record (or [object](/about/glossary#object)). For example you might add a DataAttribute referencing a `Predicate` you created called "TownshipAndRange" with the value "Smithville" to a CollectingEvent. See [Data attributes](customization#predicates-data-attributes) for details.
+
 ### Tags
-Tags are used as an arbitrary label with your [object](/guide/glossary#object). Think of tags as data attributes with no value. You can apply tags in the radial annotator, in batch in filter interfaces, and in various other ways. See [Keywords / Tags](/guide/Manula/customization#keywords-tags) for more details.
+Tags are used as an arbitrary label with your [object](/guide/glossary#object). Think of tags as data attributes with no value. You can apply tags in the radial annotator, in batch in filter interfaces, and in various other ways. See [Tags](customization#keywords-tags) for more details.
 
 ### Protocols
 Tagging an object with a Protocol asserts "some or all of the data in here came from this process.  Create new protocols via `Data`->`Protocols`. You can attach PDFs describing your protocol to your Protocol to expand its description.
@@ -73,4 +79,4 @@ A Verifier is a very generic way of saying "This Person verified this record". I
 Some classes of data can be "documented", this simply means attaching a link to a binary document (e.g. pdf) to the record. The assertion being made is "this binary file contains the content of that thing", as in "This is the PDF of that Source".
 
 ### Confidences
-Projects can create their own arbitrary levels of [Confidence](/models#confidence) (think data-quality) that they can use to annotate their data with. For example you might have a ConfidenceLevel "1 - Origin unknonw" or "B - Spelling check required". See [Confidences](/guide/Manula/customization#confidences) for more details.
+Projects can create their own arbitrary levels of [Confidence](/models#confidence) (think data-quality) that they can use to annotate their data with. For example you might have a ConfidenceLevel "1 - Origin unknown" or "B - Spelling check required". See [Confidences](customization#confidences) for more details.

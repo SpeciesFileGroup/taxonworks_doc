@@ -6,8 +6,6 @@ search:
     - biological properties
     - certainty
     - certanties
-    - contents
-    - cvts
     - identification confidences
     - life stages
     - measurements
@@ -30,6 +28,18 @@ CVTs are used wherever a project benefits from having a defined, reusable set of
 Compare this description with the Notes annotation, for example, which is completely freeform, devoid of any explicit or implied meaning, can't be filtered or searched on, and has no (natural) connections to ontologies or standardized export formats.
 :::
 
+### Where CVTs Are Used in TaxonWorks
+
+---
+
+CVTs appear in many places, including:
+
+* Specimens / Collection Objects (e.g., biocuration classes like "female", "larva")
+* Images and Depictions (e.g., predicates such as “view angle”)
+* Identifications (e.g., confidence values)
+* Citations and content  (e.g., topics describing what a publication is about)
+* Tasks using structured metadata (e.g., batch loading, DwC exports)
+
 ### Types of Controlled Vocabulary Terms
 
 ---
@@ -50,26 +60,30 @@ In the sections below we'll cover the meaning, uses, and creation of each of the
 | **[Biological Properties](#biological-properties)** | Properties describing the role of each side of a biological relationship |
 
 
-#### The role of URIs in CVTs
+### The role of URIs in CVTs
 
 ---
 
-All CVTs allow you to provide an external URI. This is strongly recommended when:
+All CVTs allow you to provide an external URI. A URI is a way to:
+- sync your terms to those used by the broader community
+- provide stronger semantics via built-in relations to other terms of a vocabulary
+- increase the likelihood of your exported data being interpretable by other systems and outside users
 
-- aligning with external ontologies  
-- planning to import similar data later  
-- sharing data to aggregators (e.g., DwC-A)  
-- ensuring your meaning remains clear over time
+URIs play an additional special role in TaxonWorks in:
+- matching import columns to CVTs on import
+- auto-exporting CVT data on export.
 
-Examples include: TODO actual uri
+#### Import
+See 
+- [Mappings to project predicates](/guide/import.html#mappings-to-project-predicates) for data attribute mappings
+- [Mappings to biocuration groups and classes](/guide/import.html#mappings-to-biocuration-groups-and-classes) for biocuration mappings
 
-- TDWG vocabularies  
-- Darwin Core controlled vocabularies  
-- OBO ontologies (e.g., for life stage)  
+#### Export
+See 
+- [Mappings from project predicates](/guide/export.html#mappings-from-project-predicates) for data attribute mappings
+- [Mappings from project biocuration groups and classes](/guide/export.html#mappings-from-project-biocuration-groups-and-classes) for biocuration mappings
 
-TaxonWorks does not require URIs, but including them improves interoperability, clarity, and the possible downstream uses of your data.
-
-#### Keep definitions explicit
+### The role of definitions in CVTs
 
 ---
 
@@ -81,22 +95,9 @@ Definitions clarify meaning for new users. Good definitions:
 
 Think in terms of how you would want your term to be passed on with fidelity to someone inheriting your dataset.
 
-### Where CVTs Are Used in TaxonWorks
-
----
-
-CVTs appear in many places, including:
-
-* Descriptors and matrices  (e.g., structured attributes via predicates)
-* Specimens / Collection Objects (e.g., biocuration classes like "female", "larva")
-* Images (e.g., keywords, predicates such as “view angle”)
-* Identifications (e.g., confidence values)
-* Citations and content  (e.g., topics describing what a publication is about)
-* Tasks using structured metadata (e.g., batch loading, DwC exports)
-
 ## Keywords / Tags
 
-**Keywords**, often loosely referred to as *Tags* allow project members to categorize and group records using simple, user-defined terms. Keywords can be applied to many kinds of objects, including:
+**Keywords**, often loosely referred to as *Tags*, allow project members to categorize and group records using simple, user-defined terms. Keywords can be applied to many kinds of objects, including:
 
 - Collection Objects  
 - Depictions  
@@ -126,28 +127,21 @@ Ready for OCR
 ```
 
 #### Project-level organization
-```
 Voucher specimens
 High priority
 Unsorted
 Ravary Collection
 
-```
-
 #### Media
-```
 Habitus
 Genitalia
 SEM
 Map
-```
 
 #### Curation
-```
 Needs georeference
 Determination needs review
 Needs verification
-```
 
 ### Searching by Keywords
 
@@ -374,23 +368,14 @@ URIs make predicates interoperable with ontologies.
 
 ---
 
-### Using URIs with Predicates
+### URIs for Predicates
 
-URIs are especially important for Predicates because they:
+---
 
-- identify semantic meaning precisely  
-- align the attribute with external ontologies  
-- facilitate import matching  
-- support integration into DwC or other export formats  
+URIs play a special role on import and export in TaxonWorks via matching of URIs to particular columns of data - for details see:
 
-Examples of good URI sources: TODO examples
-
-- Darwin Core Measurement types  
-- OBO ontologies (e.g., ENVO, PATO)  
-- Project-defined vocabularies (stable internal IRIs)
-
-**If you use Predicates in measurement/observation workflows, add a URI.**
-
+- [Mappings to project predicates](/guide/import.html#mappings-to-project-predicates) for import matching
+- [Mappings from project predicates](/guide/export.html#mappings-from-project-predicates) for export matching
 ---
 
 ### Examples of Useful Predicates
@@ -578,11 +563,11 @@ Examples of useful Groups:
 - “Castes”
 
 :::tip
-TODO uri matching is on group(?) import?
+Biocuration classes aren't required to belong to a group, but groups *are* required to active automatic matching of data to biocuration classes on import and export - see [URIs for Biocuration Classes](#uris-for-biocuration-classes)
 :::
 
 :::tip
-Groups are an organizational tool for grouping biocuration classes, they aren't themselves applied to data (classes are). Classes aren't required to belong to a group (but see the previous tip!).
+Groups are an organizational tool for grouping biocuration classes, they aren't themselves applied to data (classes are).
 :::
 
 ### Examples: Biocuration Classes & the Groups They Belong To
@@ -618,7 +603,7 @@ Click on `Create biocuration group` - the form you see here is the same as in th
 4. Optionally add a **URI**
 5. Save
 
-Here we've filled out the form to create a 'Sex' biocuration group. Note in particular that we've included the TDWG URI for 'sex' and used the TDWG definition for our definition. This will be important for ? TODO
+Here we've filled out the form to create a 'Sex' biocuration group. Note in particular that we've included the TDWG URI for 'sex' and used the TDWG definition for our definition.
 
 #left[Create a biocuration group](https://sfg.taxonworks.org/s/2x00eh)
 
@@ -654,28 +639,13 @@ Now when you view the Manage Biocuration Classes and Groups main page, you'll se
 
 You're now ready to add any class you've created to a Collection Object.
 
-### URIs for Biocuration Classes (Highly Recommended)
-
-Biocuration Classes benefit greatly from **URIs**, because: TODO
-
-- many biological properties already have standardized ontology terms  
-- URIs ensure clarity in large, multi-user projects  
-- URIs are used in **import matching**  
-- URIs support semantic export (e.g., DwC, JSON-LD)  
-- URIs prevent duplication of similar concepts  
-
-Examples of possible ontology sources:
-
-- **OBO** ontologies (e.g., PATO for qualities)  
-- **Uberon** for anatomical references (occasionally relevant)  
-- **ENVO** for environmental state classes  
-- **Custom stable project URIs**  
-
-If your project imports specimen metadata from other systems, URIs may **automatically match incoming terms**, reducing manual cleanup.
-
-TODO: list which uris we match on, across all CVT types
+### URIs for Biocuration Classes
 
 ---
+
+URIs play a special role on import and export in TaxonWorks via matching of URIs to particular columns of data - for details see:
+- [Mappings to biocuration groups and classes](/guide/import.html#mappings-to-biocuration-groups-and-classes) for export matching
+- [Mappings from project biocuration groups and classes](/guide/export.html#mappings-from-project-biocuration-groups-and-classes) for import matching
 
 ### Applying Biocuration Classes to Specimens
 
@@ -684,29 +654,6 @@ To add biocuration classes to a Collection Object you can use the Comprehensive 
 #left[The 'Object details' panel showing biocuration groups and classes](https://sfg.taxonworks.org/s/ocak34)
 
 Simply click on classes to select them, and then click `Save`.
-
-### Import Matching for Biocuration Classes
-
----
-
-When importing specimen data (CSV, batch loaders, DwC-A, etc.):
-
-TaxonWorks attempts to match incoming class labels against:
-
-1. **URI** (best and most stable match)  
-2. **Name / alternate names**  
-3. **Definition** (in some loaders)  
-4. **Group context** (for structured imports)
-
-If URIs match, data loads cleanly without ambiguity.
-
-If names are inconsistent (“male” vs. “Masculine” vs. “♂”), matching may fail, requiring manual cleanup.
-
-Therefore:
-
-#### 👉 Use URIs for all biocuration classes when possible.
-
----
 
 ## Biological properties
 

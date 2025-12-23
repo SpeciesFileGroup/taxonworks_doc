@@ -5,7 +5,7 @@ search:
     - annotation confidences
     - biological properties
     - certainty
-    - certanties
+    - certainties
     - identification confidences
     - life stages
     - measurements
@@ -38,7 +38,7 @@ TaxonWorks supports several distinct CVT categories, each serving a different pu
 
 #left[The Manage Controlled Vocabulary task with the Predicates tab selected](https://sfg.taxonworks.org/s/mm68d4)
 
-In the sections below we'll cover the meaning, uses, and creation of each of the following CVT types supported in TaxonWorks. See also the [FAQ](#cvt-faq).
+In the sections below we'll cover the meaning, uses, and creation of each of the following CVT types supported in TaxonWorks. See also the [FAQ](#cvt-frequently-asked-questions).
 
 | Term Type | Purpose |
 |-----------|---------|
@@ -47,7 +47,7 @@ In the sections below we'll cover the meaning, uses, and creation of each of the
 | **[Predicates and Data Attributes](#predicates-data-attributes)** | Expand existing TaxonWorks data models with attributes you can assign values to |
 | **[Confidences](#confidences)** | Qualitative confidence levels assigned to identifications and more |
 | **[Biocuration Classes and Groups](#biocuration-classes-groups)** | Controlled values describing biological properties of specimens |
-| **[Biological Properties](#biological-properties)** | Properties describing the role of each side of a biological relationship |
+| **[Biological Properties](#biological-properties)** | Properties describing the role of each side of a biological association |
 
 
 ### The role of URIs in CVTs
@@ -63,29 +63,29 @@ Some common examples relate to Darwin Core terms:
 - the URI for "lifeStage": [http://rs.tdwg.org/dwc/terms/lifeStage](http://rs.tdwg.org/dwc/terms/lifeStage)
 - the URI for "habitat": [http://rs.tdwg.org/dwc/terms/habitat](http://rs.tdwg.org/dwc/terms/habitat)
 
-You can find the entire list of DarwinCore terms at [https://dwc.tdwg.org/list/](https://dwc.tdwg.org/list/), but the use of URIs isn't limited to DarwinCore, there are many other terms associated with bioinformatics that could apply here.
+You can find the entire list of DarwinCore terms at [https://dwc.tdwg.org/list/](https://dwc.tdwg.org/list/), but the use of URIs isn't limited to DarwinCore, there are many other terms associated with bioinformatics that could apply here (see the [FAQ](#cvt-frequently-asked-questions)).
 
 URIs play an additional special role in TaxonWorks in:
 - matching import columns to CVTs on import
 - auto-exporting CVT data on export.
 
 #### Import
-On import, column headers can be matched to CVTs, either by URI or by name, with a value in that column being used to create a CVT of the header's type with that value for that row's import object.
+On import, column headers can be matched to CVTs, either by URI or by name, with a value in that column being used to create a CVT of the header's type.
 See 
 - [Mappings to project predicates](/guide/import.html#mappings-to-project-predicates) for data attribute mappings
 - [Mappings to biocuration groups and classes](/guide/import.html#mappings-to-biocuration-groups-and-classes) for biocuration mappings
 
 #### Export
-On export, if your data uses CVTs with particular URIS, then TaxonWorks "knows" that those CVTs correspond to well-known DarwinCore terms and can export them as such automatically.
+On export, if your data uses CVTs with particular URIs, then TaxonWorks recognizes that those CVTs correspond to well-known DarwinCore terms and can export them as such automatically.
 See 
 - [Mappings from project predicates](/guide/export.html#mappings-from-project-predicates) for data attribute mappings
-- [Mappings from project biocuration groups and classes](/guide/export.html#mappings-from-project-biocuration-groups-and-classes) for biocuration mappings
+- [Mappings from project biocuration groups and classes](/guide/export.html#mappings-from-biocuration-groups-and-classes) for biocuration mappings
 
 ### The role of definitions in CVTs
 
 ---
 
-Definitions clarify meaning for new users. Don't assume that your label is understandable, now, or over time! Provide a definition so that others may interpret and apply this CVT term as your project intends it to be used.
+Each CVT has a required definition. Definitions clarify meaning for new users - don't assume that your label alone is understandable, now, or over time! Provide a definition so that others may interpret and apply this CVT term as your project intends it to be used.
 
 ## Keywords / Tags
 
@@ -100,7 +100,7 @@ Definitions clarify meaning for new users. Don't assume that your label is under
 - Loans  
 - and more  
 
-Keywords support broad organizational tasks, informal labels, workflow markers, and semantic tagging.
+Keywords support broad organizational tasks, curational workflow markers, and semantic tagging.
 
 :::tip
 A *keyword* is simply a term, like "Needs review". A *tag* is a keyword on a particular piece of data (we say the data has been tagged with that keyword). "Tag" is sometimes loosely used in place of "keyword".
@@ -159,8 +159,7 @@ You can create or edit keywords using the Manage Controlled Vocabulary task.
 
 ---
 
-**On a single object**
-As an example, we'll add the "Ravary collection" tag to a collection object we want to tag as being in that collection. 
+**On a single object**: As an example, we'll add the "Ravary collection" tag to a collection object we want to tag as being in that collection. 
 
 1. Open the annotator radial for the collection object (from filter, browse, or show e.g.)
 2. Select the Tag slice, select the All tab (or try one of the other tabs) and click on the yellow "Ravary collection" option.
@@ -169,12 +168,11 @@ As an example, we'll add the "Ravary collection" tag to a collection object we w
 
 ---
 
-**Bulk add on filter results**
-Any filter on an object that supports tags will include the option to batch add tags to a filter result via the [mass annotator radial](conventions#icons-in-taxonworks).
+**Bulk add on filter results**: Any filter on an object that supports tags will include the option to batch add tags to a filter result via the [mass annotator radial](conventions#icons-in-taxonworks).
 
 ## Topics
 
-**Topics** are Controlled Vocabulary Terms used to describe the *subject* or *focus* of something — usually a **Citation** or **Content** record. A Topic answers the question:
+**Topics** are Controlled Vocabulary Terms used to describe the *subject* or *focus* of a **Citation** or **Content** record. A Topic answers the question:
 
 > “What is this publication (or piece of content) about?”
 
@@ -192,52 +190,14 @@ Common examples:
 Topics allow you to:
 
 **Filter literature by subject**
-Example:
-> “Show me all sources that have been cited with the topic ‘Distribution’.”
+
+Filter Source example:
+> “Show me all sources that have been cited with the topic ‘*some_genus* Distribution’.”
 
 **Filter content and notes**
-Example:
+
+Filter Contents example:
 > “Find project notes about larval morphology.”
-
-### Example topic sets
-
-Below are some small general example sets that may help you think about topics that would be useful for your project.
-
-**Taxonomy & Systematics**
-```
-Taxonomy
-Phylogeny
-Revision
-Species Description
-Type Information
-```
-
-**Morphology & Anatomy**
-```
-Morphology
-Genitalia
-External Anatomy
-Internal Anatomy
-Development
-```
-
-**Ecology & Environment**
-```
-Distribution
-Habitat
-Host Association
-Behavior
-Life History
-Paleoenvironment
-```
-
-**Methods & Tools**
-```
-Molecular Methods
-Imaging
-Statistics
-Data Standards
-```
 
 ### Creating topics
 
@@ -258,11 +218,13 @@ First create a citation on an object using its radial annotator. After the citat
 
 ## Predicates (Data Attributes)
 
+Predicates/data attributes allow users to add their own data fields to existing models like Collection Object and many others.
+
 **Predicates** (also known as **Data Attribute _types_**) provide the *label* of the data being added to an object.
 
-Data attributes, on the other hand, are the combination of a predicate with a value for that predicate, on a particular piece of data.
+**Data attributes**, on the other hand, are the combination of a predicate with a value for that predicate, on a particular piece of data.
 
-For example, if you have a predicate named "Elevation", you could assign the data attribute 'Elevation = 12m' to a particular Collection Object.
+For example, if you have a predicate named "Temperature (in C)", you could assign the data attribute 'Temperature = 25' to a particular Collecting Event.
 
 :::tip
 Data attributes are to Predicates as Tags are to Keywords.
@@ -270,7 +232,6 @@ Data attributes are to Predicates as Tags are to Keywords.
 
 Predicates tell TaxonWorks **what the data attribute represents**, such as:
 
-- “Elevation”  
 - “Body length”  
 - “Life habit”  
 - “View angle” (for depictions)  
@@ -299,7 +260,6 @@ A Data Attribute is always:
 Examples:
 
 ```
-Elevation → 1250 m on a Collecting Event
 Body length → 12 mm on a Collection Object
 View angle → Dorsal on a Depiction of a Collection Object
 Observation method → Visual on an Observation Matrix entry
@@ -356,7 +316,7 @@ Scale bar present
 
 You can create or edit predicates using the Manage Controlled Vocabulary task.
 
-#left[Creating a predicate](https://sfg.taxonworks.org/s/f8u1q5)
+#left[Creating a predicate](https://sfg.taxonworks.org/s/u99xbi)
 
 ### Using predicates in the UI
 
@@ -364,14 +324,16 @@ You can create or edit predicates using the Manage Controlled Vocabulary task.
 
 **On a single object**
 
-Here we'll assign data to the 'Permit data' data attribute of a collecting event. From the radial annotator of the desired collecting event, select the Data Attributes slice and then fill in your data:
+Here we'll assign data to the 'Permit data' data attribute of a collecting event that we created above, as a cautionary tale. From the radial annotator of the desired collecting event, select the Data Attributes slice and then fill in your data:
 
 #left[Assigning data attribute data to a collecting event](https://sfg.taxonworks.org/s/gvkj6e)
 
-:::warning
+:::danger
 The value of a data attribute is single-line unstructured data. Here we've entered the data in the format described by the data attribute, but there are no guarantees that there won't be typos or users forgetting the correct format, etc. - in fact it's all but guaranteed that those things will happen. 
 
- In this case it may be better to use separate 'Permit number' and 'Permit issuer' data attributes to mitigate these issues. We may also want to image the permit itself and attach it to the collecting event as a depiction.
+ In this case it's likely better to use separate 'Permit number' and 'Permit issuer' data attributes to mitigate these issues. We may also want to image the permit itself and attach it to the collecting event as a depiction.
+
+ With great power comes great responsibility.
  :::
 
 ---
@@ -389,7 +351,7 @@ Any filter on an object that supports data attributes will include the option to
 You must be a project administrator to add data attribute inputs to tasks.
 :::
 
-The Comprehensive Specimen Digitization task and related tasks provide a shortcut for adding data attribute values to a specimen. The first time you use the task you'll see the following in the `Attributes` panel:
+The Comprehensive Specimen Digitization task and related tasks provide a shortcut for adding data attribute values to a specimen. By default you'll see the following in the `Attributes` panel:
 
 #left[Attributes panel with a link to 'Select visible attributes'](https://sfg.taxonworks.org/s/q1hnjw)
 
@@ -444,15 +406,12 @@ Typical examples:
 
 Confidences help you:
 
-**Track uncertainty explicitly**
-A determination like _Boops boops_ (?)” can be annotated with “Low confidence,” making uncertainty searchable and standardized.
+**Track uncertainty explicitly**: A determination like _Boops boops_ (?)” can be annotated with “Low confidence,” making uncertainty searchable and standardized.
 
-**Communicate reliability**
-Collaborators can quickly interpret data quality.
+**Communicate reliability**: Collaborators can quickly interpret data quality.
 
-**Support curation**
-Example:  
-> “Show determinations with low confidence.”
+**Support curation**: Filter Collection Object example:  
+> “Show collection objects with low confidence determinations.”
 
 ### Creating a confidence
 
@@ -468,7 +427,7 @@ You can create or edit confidence levels using the Manage Controlled Vocabulary 
 
 **On a single object**
 
-To indicate confidence level on taxon determinations of a specimen, we'll put the confidence on the specimen, where we can filter confidences using Filter Collection Objects. Click on the annotator radial for the collection object, select the Confidences slice, click the All tab or search for the desired confidence, and click on it to add it.
+To indicate confidence level on taxon determinations of a specimen, we'll put the confidence on the specimen, where we can filter confidences using Filter Collection Objects (this isn't entirely satisfactory when a collection object has multiple determinations, but that's a rare case). Click on the annotator radial for the collection object, select the Confidences slice, click the All tab or search for the desired confidence, and click on it to add it.
 
 #left[A confidence added to a collection object](https://sfg.taxonworks.org/s/040way)
 
@@ -497,7 +456,7 @@ Biocuration Classes allow projects to:
 
 - **Describe biological state** of specimens  
 - **Support filtering** (e.g., “show all larvae of a particular genus”)  
-- **Enable standardized DwC exports** (e.g., sex, lifeStage, preparations)  
+- **Enable standardized DwC exports** (sex, lifeStage, and caste)  
 
 ---
 
@@ -513,7 +472,7 @@ Examples of useful Groups:
 - “Life stage”
 - “Condition”
 - "Organism product"
-- “Castes”
+- “Caste”
 
 :::tip
 Biocuration classes aren't required to belong to a group, but groups *are* required in order to trigger automatic matching of data to biocuration classes on import and export - see [URIs for Biocuration Classes](#uris-for-biocuration-classes)
@@ -570,7 +529,7 @@ To create the classes one by one, click on the `Create biocuration class` button
 Classes in the same group are often assigned the same color so that users can tell at a glance which group a given displayed class comes from.
 :::
 
-To add the new classes to the 'sex' group, click the blue 'plus' button in the 'sex' rows - you'll see the following 'Add biocuration class to sex' modal, showing *all* of the biocuration classes you've created. As you click classes they're added to the 'sex' group and turn from green to red - here we've selected the three sex classes we created earlier.
+To add the new classes to the 'sex' group, click the blue 'plus' button in the 'sex' row - you'll see the following 'Add biocuration class to sex' modal, showing *all* of the biocuration classes you've created. As you click classes they're added to the 'sex' group and turn from green to red - here we've selected the three sex classes we created earlier.
 
 #left[The 'Add biocuration class to sex' modal with three sex classes selected](https://sfg.taxonworks.org/s/273v6d)
 
@@ -585,8 +544,8 @@ You're now ready to add any class you've created to a Collection Object.
 ---
 
 URIs play a special role on import and export in TaxonWorks via matching of URIs to particular columns of data - for details see:
-- [Mappings to biocuration groups and classes](/guide/import.html#mappings-to-biocuration-groups-and-classes) for export matching
-- [Mappings from project biocuration groups and classes](/guide/export.html#mappings-from-project-biocuration-groups-and-classes) for import matching
+- [Mappings to biocuration groups and classes](/guide/import.html#mappings-to-biocuration-groups-and-classes) for import matching
+- [Mappings from project biocuration groups and classes](/guide/export.html#mappings-from-biocuration-groups-and-classes) for export matching
 
 ### Applying biocuration classes to specimens
 
@@ -600,25 +559,21 @@ To add biocuration classes to a Collection Object you can use the Comprehensive 
 
 Simply click on classes to select them, and then click `Save`.
 
+You can also add classes to any Collection Object via its [quick forms](conventions#icons-in-taxonworks) radial and selecting the "Biocuration classifications" slice.
+
 ---
 
 **Bulk add from Filter Collection Objects**
 
-You can bulk add biocurations to a Filter Collection Object result set by clicking the `Radial collection object` icon ![Radial collection object icon](https://sfg.taxonworks.org/s/tzopol) and selecting the `Add biocurations` slice.
+You can bulk add biocurations to a Filter Collection Object result set by clicking the `Radial collection object` icon ![Radial collection object icon](https://sfg.taxonworks.org/s/tzopol) and selecting the "Add biocurations" slice.
 
 ## Biological properties
 
 **Biological properties** are controlled vocabulary terms used to qualify **biological relationships** between taxa. They describe the *role or biological state* each side of a biological relation has relative to the other side, such as “host”, “parasite”, “predator", "prey".
 
-### What biological properties are used for
+The main utility of biological properties within TaxonWorks is to support filtering of biological associations:
 
----
-
-Biological properties are used to:
-
-- specify the role an organism plays in a biological relationship
-- distinguish directional or asymmetric relationships
-- support filtering and querying of biological associations
+> Find all biological associations where the host is Salix.
 
 ### Examples of biological properties
 
@@ -651,16 +606,20 @@ These properties define the biological roles of the two related taxa within that
 
 ---
 
-[TODO move to a Biological Associations section of the guide]
 To model this relationship in TaxonWorks we'll use the Biological Relationship Composer task:
 
 #left[The Biological Relationship Composer task](https://sfg.taxonworks.org/s/u9urki)
 
-The Relations Ontology (RO) provides a definition for [`ectoparasite of`](https://www.ebi.ac.uk/ols4/ontologies/ro/properties/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FRO_0002632?lang=en), we'll use that here: 'A sub-relation of parasite-of in which the parasite lives on or in the integumental system of the host'. Relations don't have a `URI` field so we'll included the URI link with the definition.
+The Relations Ontology (RO) provides a definition for [`ectoparasite of`](https://www.ebi.ac.uk/ols4/ontologies/ro/properties/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FRO_0002632?lang=en), we'll use that here: 'A sub-relation of parasite-of in which the parasite lives on or in the integumental system of the host'. Relations don't have a `URI` field so we've included the URI link with the definition.
 
-This relation is *not*:
-- **transitive**: if A is an ectoparasite of B and B is an ectoparasite of C, it doesn't necessarily follow that A is an ectoparasite of C
-- **reflexive**: in general A is not an ectoparasite of A
+This relation is *not* transitive or reflexive, so we don't mark those boxes.
+:::tip
+In general a relation is:
+- **transitive** when: if A is related to B and B is related to C, then A is related to C (for all A, B, C)
+- **reflexive** when: A is related to A (for all A)
+
+In the example above, 'is related to' would be 'is ectoparasite of', and A, B, C would be any species in our project (loosely speaking).
+:::
 
 We can either create our Biological Properties for this relationship in the Manage Controlled Vocabulary task, or right here by clicking New under Properties on the right. We'll add the `parasite` and `host` properties with their definitions:
 
@@ -681,11 +640,11 @@ Here's what our completed relation looks like:
 
 ---
 
-We'll use the relation we just created to model the '_Cimex adjunctus_ is an ectoparasite of _Myotis septentrionalis_' relation between a 'bed bug' and a bat.
+We'll use the relation we just created to model the [_Cimex adjunctus_ is an ectoparasite of _Myotis septentrionalis_](https://www.globalbioticinteractions.org/?accordingTo=https%3A%2F%2Fdoi.org%2F10.1644%2F1545-1410%282000%29634%253C0001%3AMS%253E2.0.CO%3B2&interactionType=parasiteOf&sourceTaxon=Cimex%20adjunctus) relation between a 'bat bug' and a bat.
 
 Open the New Biological Association task, choose _Cimex adjunctus_ as the subject, 'ectoparasite of' as the Relationship, and _Myotis septentrionalis_ as the Related (i.e. object).
 
-Here we created that relationship and then reloaded the relationship in Edit mode so that you can see both:
+Here we created that relationship (listed at the bottom) and then reloaded the relationship in Edit mode so that you can see both:
 
 #left[The new relationship listed at the bottom, with data in edit mode at the top](https://sfg.taxonworks.org/s/dztkem)
 
@@ -702,7 +661,7 @@ You may wonder 'why did I go through all of that work to create properties when 
 Discuss with the importer/changer if possible. If you decide to make the change, use the [Unify Objects](tasks#unify-task) task to unify the two CVT terms: keep the older preferrred term, delete the new term. Any data previously associated with the deleted term will now be associated with the preferred term.
 
 :::tip
-If relevant (data attributes and biocurations), also check to make sure that your existing CVT is using an appropriate URI (or specific Name) to allow matching of imported data on that CVT. When that's the case this won't happen. See [The role of URIs in CVTs](#the-role-of-uris-in-cvts) for details.
+If the CVT is a data attribute or biocuration, also check to make sure that your existing CVT is using an appropriate URI (or specific Name) to allow matching of imported data on that CVT. Existing biocurations will be reused on import when that's the case. See [The role of URIs in CVTs](#the-role-of-uris-in-cvts) for details.
 :::
 
 **Should I use a Tag or a Confidence?**
@@ -723,11 +682,6 @@ Again there's a gray area, particularly if what you're modeling is a boolean (tr
 
 Somewhat related to the previous. The answer is "Not yet". For now you'll need to rely on filtering or downloading data and using something like Open Refine to determine if any values don't match your expected terms.
 
-**Can I change my CVT without breaking data?**
-
----
-
-Mostly yes. Changing and saving the form values in the edit form of a CVT does not affect existing object annotations, but it may affect import/export behavior in some cases. See [The role of URIs in CVTs](#the-role-of-uris-in-cvts) for details.
 
 **URIs seem to appear a lot in this discussion. Do I really need them?**
 
@@ -749,7 +703,7 @@ We've already mentioned the Darwin Core terms list: <https://dwc.tdwg.org/list/>
 
 Other sources include ontologies:
 - [Relations Ontology](https://oborel.github.io/) (RO)
+- [The Environment Ontology](https://sites.google.com/site/environmentontology/home) (EnvO)
 - [Ontology for Biomedical Investigations](https://obi-ontology.org/) (OBI, not restricted to biomedical use of course)
-- [The Environment Ontology](https://sites.google.com/site/environmentontology/home)
 
 You can also search for terms from many ontologies at [Ontobee](https://ontobee.org/).

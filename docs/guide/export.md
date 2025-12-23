@@ -72,15 +72,15 @@ A quite common data package used for sharing data with biodiversity data aggrega
   2) [GBIF](https://www.gbif.org/ipt)
 
 #### Mappings from project predicates
-On export, TaxonWorks will automatically populate certain DwcA fields from predicates matching particular URIs. Currently those fields and URIs are:
+On export, TaxonWorks will automatically populate certain DwCA fields from predicates matching particular URIs. Currently those fields and URIs are:
 
 | DwC term | URI |
 |----------|-----|
-| waterBody | http://rs.tdwg.org/dwc/terms/waterBody |
-| minimumDepthInMeters | http://rs.tdwg.org/dwc/terms/minimumDepthInMeters |
-| maximumDepthInMeters | http://rs.tdwg.org/dwc/terms/maximumDepthInMeters |
-| verbatimDepth | http://rs.tdwg.org/dwc/terms/verbatimDepth |
-| associatedTaxa | http://rs.tdwg.org/dwc/terms/associatedTaxa |
+| waterBody | <http://rs.tdwg.org/dwc/terms/waterBody> |
+| minimumDepthInMeters | <http://rs.tdwg.org/dwc/terms/minimumDepthInMeters> |
+| maximumDepthInMeters | <http://rs.tdwg.org/dwc/terms/maximumDepthInMeters> |
+| verbatimDepth | <http://rs.tdwg.org/dwc/terms/verbatimDepth> |
+| associatedTaxa | <http://rs.tdwg.org/dwc/terms/associatedTaxa> |
 
 See the [code](https://github.com/SpeciesFileGroup/taxonworks/blob/development/config/initializers/constants/_controlled_vocabularies/dwc_attribute_uris.rb) for the most up-to-date list.
 
@@ -89,17 +89,17 @@ _Note that on export no processing or validation is done on the export of these 
 :::
 
 #### Mappings from biocuration groups and classes
-On export, TaxonWorks will automatically populate certain DwcA fields from biocuration *groups* (not classes) matching particular URIs. Currently those fields and URIs are:
+On export, TaxonWorks will automatically populate certain DwCA fields with biocuration class values when their biocuration *group* (not class) has a matching URI. Currently those fields and URIs are:
 
 | DwC term | URI |
 |----------|-----|
-| sex | http://rs.tdwg.org/dwc/terms/sex |
-| lifeStage | http://rs.tdwg.org/dwc/terms/lifeStage |
-| caste | http://rs.tdwg.org/dwc/terms/caste |
+| sex | <http://rs.tdwg.org/dwc/terms/sex> |
+| lifeStage | <http://rs.tdwg.org/dwc/terms/lifeStage> |
+| caste | <http://rs.tdwg.org/dwc/terms/caste> |
 
 See the [code](https://github.com/SpeciesFileGroup/taxonworks/blob/development/config/initializers/constants/_controlled_vocabularies/dwc_attribute_uris.rb) for the most up-to-date list.
 
-In addition, existence of a biocuration *class* with the URI http://rs.tdwg.org/dwc/terms/FossilSpecimen on a collection object will set the `basisOfRecord` for that object to 'FossilSpecimen' on export.
+In addition, existence of a biocuration *class* with the URI <http://rs.tdwg.org/dwc/terms/FossilSpecimen> on a collection object will set the `basisOfRecord` for that object to 'FossilSpecimen' on export.
 
 ## Bibliographies (Reference lists)
 * Open the task `Filter sources`

@@ -22,16 +22,12 @@ to their own workflows.
 
 Controlled Vocabulary Terms (CVTs) allow projects to **standardize repeated concepts**, promote **consistency**, and improve **search, filtering, reporting, and data exchange**. They play a central role in annotation and metadata throughout TaxonWorks.
 
-### Where CVTs are used in TaxonWorks
-
----
-
 Nearly every object in TaxonWorks can be annotated and/or extended to varying degrees. That being the case, the following are just a few brief indications of where various types of CVTs might apply:
 
 * Specimens / Collection Objects (e.g., biocuration classes like "female", "larva")
 * Images and Depictions (e.g., predicates such as “view angle”)
-* Identifications (e.g., confidence values like "community ID")
-* Citations and content  (e.g., topics describing what a publication is about, like "Phylogenetics" or "Project alpha")
+* Identifications (e.g., confidence values like "community ID" or "low confidence")
+* Citations and content  (e.g., topics describing what a publication is about, like "larval morphology" or "Project alpha")
 * Import and export (matching CVTs to import/export columns)
 
 ### Types of Controlled Vocabulary Terms
@@ -114,7 +110,7 @@ A *keyword* is simply a term, like "Needs review". A *tag* is a keyword on a par
 
 ---
 
-#### Digitization
+**Digitization**
 ```
 Pending imaging
 Published figure
@@ -122,7 +118,7 @@ Needs cropping
 Ready for OCR
 ```
 
-#### Project-level organization
+**Project-level organization**
 ```
 Voucher specimens
 High priority
@@ -130,7 +126,7 @@ Unsorted
 Ravary Collection
 ```
 
-#### Media
+**Media**
 ```
 Habitus
 Genitalia
@@ -138,7 +134,7 @@ SEM
 Map
 ```
 
-#### Curation
+**Curation**
 ```
 Needs georeference
 Determination needs review
@@ -163,7 +159,7 @@ You can create or edit keywords using the Manage Controlled Vocabulary task.
 
 ---
 
-#### On a single object
+**On a single object**
 As an example, we'll add the "Ravary collection" tag to a collection object we want to tag as being in that collection. 
 
 1. Open the annotator radial for the collection object (from filter, browse, or show e.g.)
@@ -171,7 +167,9 @@ As an example, we'll add the "Ravary collection" tag to a collection object we w
 
 #left[Adding a tag to a collection object](https://sfg.taxonworks.org/s/xnzxlt)
 
-#### Bulk add on filter results
+---
+
+**Bulk add on filter results**
 Any filter on an object that supports tags will include the option to batch add tags to a filter result via the [mass annotator radial](conventions#icons-in-taxonworks).
 
 ## Topics
@@ -193,11 +191,11 @@ Common examples:
 
 Topics allow you to:
 
-#### Filter literature by subject  
+**Filter literature by subject**
 Example:
 > “Show me all sources that have been cited with the topic ‘Distribution’.”
 
-#### Filter content and notes  
+**Filter content and notes**
 Example:
 > “Find project notes about larval morphology.”
 
@@ -205,7 +203,7 @@ Example:
 
 Below are some small general example sets that may help you think about topics that would be useful for your project.
 
-#### **Taxonomy & Systematics**
+**Taxonomy & Systematics**
 ```
 Taxonomy
 Phylogeny
@@ -214,7 +212,7 @@ Species Description
 Type Information
 ```
 
-#### **Morphology & Anatomy**
+**Morphology & Anatomy**
 ```
 Morphology
 Genitalia
@@ -223,7 +221,7 @@ Internal Anatomy
 Development
 ```
 
-#### **Ecology & Environment**
+**Ecology & Environment**
 ```
 Distribution
 Habitat
@@ -233,7 +231,7 @@ Life History
 Paleoenvironment
 ```
 
-#### **Methods & Tools**
+**Methods & Tools**
 ```
 Molecular Methods
 Imaging
@@ -325,7 +323,7 @@ URIs on predicates play a special role on import and export in TaxonWorks via ma
 
 Here are some general groups of predicates to get you thinking about what might be useful in your project.
 
-#### For specimen data
+**For specimen data**
 ```
 Body length
 Depth
@@ -333,7 +331,7 @@ Life habit
 Emerged date
 ```
 
-#### For collecting events
+**For collecting events**
 ```
 Permit number
 Site code
@@ -342,7 +340,7 @@ Weather
 Microhabitat
 ```
 
-#### For image metadata
+**For image metadata**
 ```
 View angle
 Imaging device
@@ -364,7 +362,7 @@ You can create or edit predicates using the Manage Controlled Vocabulary task.
 
 ---
 
-#### On a single object
+**On a single object**
 
 Here we'll assign data to the 'Permit data' data attribute of a collecting event. From the radial annotator of the desired collecting event, select the Data Attributes slice and then fill in your data:
 
@@ -376,7 +374,9 @@ The value of a data attribute is single-line unstructured data. Here we've enter
  In this case it may be better to use separate 'Permit number' and 'Permit issuer' data attributes to mitigate these issues. We may also want to image the permit itself and attach it to the collecting event as a depiction.
  :::
 
-#### Bulk add on filter results
+---
+
+**Bulk add on filter results**
 
 Any filter on an object that supports data attributes will include the option to batch add them to a filter result via the [mass annotator radial](conventions#icons-in-taxonworks).
 
@@ -444,13 +444,13 @@ Typical examples:
 
 Confidences help you:
 
-#### Track uncertainty explicitly  
+**Track uncertainty explicitly**
 A determination like _Boops boops_ (?)” can be annotated with “Low confidence,” making uncertainty searchable and standardized.
 
-#### Communicate reliability  
+**Communicate reliability**
 Collaborators can quickly interpret data quality.
 
-#### Support curation
+**Support curation**
 Example:  
 > “Show determinations with low confidence.”
 
@@ -466,13 +466,15 @@ You can create or edit confidence levels using the Manage Controlled Vocabulary 
 
 ---
 
-#### On a single object
+**On a single object**
 
 To indicate confidence level on taxon determinations of a specimen, we'll put the confidence on the specimen, where we can filter confidences using Filter Collection Objects. Click on the annotator radial for the collection object, select the Confidences slice, click the All tab or search for the desired confidence, and click on it to add it.
 
 #left[A confidence added to a collection object](https://sfg.taxonworks.org/s/040way)
 
-#### Bulk add on filter results
+---
+
+**Bulk add on filter results**
 
 Any filter on an object that supports confidences will include the option to batch add them to a filter result via the [mass annotator radial](conventions#icons-in-taxonworks).
 
@@ -590,7 +592,7 @@ URIs play a special role on import and export in TaxonWorks via matching of URIs
 
 ---
 
-#### On a single object
+**On a single object**
 
 To add biocuration classes to a Collection Object you can use the Comprehensive Specimen Digitization task. There, in the "Object details" panel, you'll see the groups and classes you've created:
 
@@ -598,7 +600,9 @@ To add biocuration classes to a Collection Object you can use the Comprehensive 
 
 Simply click on classes to select them, and then click `Save`.
 
-#### Bulk add from Filter Collection Objects
+---
+
+**Bulk add from Filter Collection Objects**
 
 You can bulk add biocurations to a Filter Collection Object result set by clicking the `Radial collection object` icon ![Radial collection object icon](https://sfg.taxonworks.org/s/tzopol) and selecting the `Add biocurations` slice.
 
@@ -643,7 +647,10 @@ For example, a relationship type describing ecto-parasitism might use:
 
 These properties define the biological roles of the two related taxa within that association.
 
-#### Creating the relation
+**Creating the relation**
+
+---
+
 [TODO move to a Biological Associations section of the guide]
 To model this relationship in TaxonWorks we'll use the Biological Relationship Composer task:
 
@@ -670,7 +677,9 @@ Now click `Create`. A 'Flip' button has appeared below the relation; click it. N
 Here's what our completed relation looks like:
 #left[The completed `ectoparasite of` relation](https://sfg.taxonworks.org/s/bg80r0)
 
-#### Creating a relationship using our relation
+**Creating a relationship using our relation**
+
+---
 
 We'll use the relation we just created to model the '_Cimex adjunctus_ is an ectoparasite of _Myotis septentrionalis_' relation between a 'bed bug' and a bat.
 

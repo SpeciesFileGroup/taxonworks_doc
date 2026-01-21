@@ -299,31 +299,7 @@ Find the `New type specimen` task via the `New taxon name` task `Type` section o
 
 See also the [basic article parsing](https://github.com/SpeciesFileGroup/taxonworks_doc/blob/archive/manuals/BASIC_ARTICLE_PARSING.md) exercise for a walk through that addresses many of these issues in a more contextual framework.
 
-_Before you start_: Add `biocuration classifications` that you might reference (e.g. `Male`, `Female`, `Adult` etc.). You can do this by adding a new `Controlled Vocabulary Term` of type `BiocurationClass` or you can use the `Manage biocuration classes and groups` task to do this. You only need to set these up once in your project. You can add to them later as needed. See the screenshots below.
-    #left[Manage Biocuration Groups and the Classes associated with each of the groups](https://sfg.taxonworks.org/s/t3ssdi [buttons showing where to add classes or groups and what class terms already exist for a group]) 
-
-Adding `Groups` and `Classes` can be done independently. You can then assign classes to a given group (e. g. class `Female` or `Male` get added to group `Sex`). Classes do not have to be part of a group. Adding Groups and Classes work the same way. Classes, once added, can be associated with any given group created. Note the "plus" sign in the above screenshot which gives you a list of your classes you can add to that group.
-
-#left[Manage Biocuration Groups using the `Manage Controlled Vocabulary` task](https://sfg.taxonworks.org/s/o8mldy [Add group name, define what you mean with this label, choose a color for the group label, and assign a known standard ontology or link to a standard term if one applies])
-
-  - To add a `biocuration group`
-    - Select `Biocuration Group` from the menu bar.
-    - Give your `biocuration group` a `Name`
-    - Next, `write a definition` for this `group` so that others may apply it correctly for your project. Note that definitions must be at least 20 characters.
-    - Then, `select` a color to apply to this `group` label for ease of use / finding in the user interface. 
-    - If one exists, enter a URL here to a known standard term / ontology entry for this group concept.
-      - Example, for `group` = `Sex` there is a term in the Darwin Core Standard (DwC) (from Biodiversity Information Standards TDWG) for `Sex`. You would get this URL `http://rs.tdwg.org/dwc/terms/sex` from the [DwC Terms List](https://dwc.tdwg.org/list/) from [tdwg.org](https://www.tdwg.org/) and enter it in the URL field for this term. This ensures the data get mapped / associated with the intended concept on export.
-    - Lastly, click `Create.`
-
-#left[Manage Biocuration Classes using the `Manage Controlled Vocabulary` task](https://sfg.taxonworks.org/s/nz19xm [Add class name, define what you mean with this label, choose a color for the class label, and assign a known standard ontology or link to a standard term if one applies])  
-  - To add a `biocuration class`
-    - Select `Biocuration Class` from the menu bar.
-    - Give your `biocuration class` a `Name`.
-    - Next, `write a definition` for this `class` so that others may apply it correctly for your project. Note that definitions must be at least 20 characters.
-    - Then, `select` a color to apply to this `class` label for ease of use / finding in the user interface. 
-    - If one exists, enter a URL here to a known standard term / ontology entry for this group concept.
-      - Example, for `class` = `Female` there is a standard term and definition in the [Phenotype and Trait Ontology (PATO)](https://ontobee.org/ontology/PATO). You can search PATO for `female` and you will get this URL `http://purl.obolibrary.org/obo/PATO_0000383` to enter in the URL field for this term. This ensures the data get mapped / associated with the intended concept on export.
-    - Lastly, click `Create.`
+_Before you start_: Add `biocuration classifications` that you might reference (e.g. `Male`, `Female`, `Adult` etc.) - see [Biocuration Classes & Groups](/guide/Manual/customization.html#biocuration-classes-groups) for directions.
 
 Now you can navigate to the `New type specimen` task
 - Select the `type` (e.g. holotype, paratype, etc.), this unlocks the `Collection object` section of the form (see screen shot next).

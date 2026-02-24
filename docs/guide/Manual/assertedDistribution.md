@@ -1,5 +1,5 @@
 ---
-sidebar position: 550
+sidebarPosition: 550
 ---
 # Asserted Distributions
 

@@ -3,6 +3,7 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 import { searchPlugin } from '@vuepress/plugin-search'
 import { viteBundler } from '@vuepress/bundler-vite'
+import { markdownChartPlugin } from '@vuepress/plugin-markdown-chart'
 import figurePlugin from './plugins/figure'
 import taskListPlugin from 'markdown-it-task-lists'
 import * as navbar from './configs/navbar'
@@ -100,6 +101,9 @@ export default defineUserConfig({
         '/': pluginsLang.en,
         '/es/': pluginsLang.es
       }
-    })
+    }),
+    markdownChartPlugin({
+      mermaid: true
+    }),
   ]
 })

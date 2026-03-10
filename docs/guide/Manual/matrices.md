@@ -45,29 +45,29 @@ Extensive information exists about the [TaxonWorks data model](https://docs.taxo
   - `Create` will save the record, but you can continue editing the descriptor
   - `Create and return to matrix`, will return you back to the Edit matrix interface
   - `Create and new` could be used if multiple descriptors need to be defined.
-- Alternatively, if descriptors do already exists in the database, they could be just added to an existing matrix in the `Edit observation matrix` interface by using the search interface on the low left side. Change the `Row\Column` switch to the `Column`, and use `Search` option. Alternatively, multiple descriptors could be copies from another matrix using `From Another Matrix` option.
+- Alternatively, if descriptors do already exist in the database, they could be just added to an existing matrix in the `Edit observation matrix` interface by using the search interface on the low left side. Change the `Row\Column` switch to the `Column`, and use `Search` option. Alternatively, multiple descriptors could be copies from another matrix using `From Another Matrix` option.
 
 ### Adding an OTU or Collection Object to the Matrix
 
 - To add `Rows` to the matrix, change `Row/Column` switch to `Row`; `Dynamic/Fixed` switch to `Fixed` position. `OTU`, `Collection Object`, or `Extract` could be added to a matrix as a `Row`. Assuming that those objects already exist in the database, they could be added to the matrix using `Search` or `From Another Matrix` options, it will work very simillar to adding an existing `Descriptor` to the matrix.
 - There is also an option to add a new `Row` to the matrix directly from the `Browse OTU` or `Browse Nomenclature` tasks. In either of tasks, select `OTU radial` button, in the `Observation matrices` sector, you can select a matrix to automatically add this OTU to it, and proceed directly to scoring mode.
-- Addvanced option to add multiple OTUs to the matrix is using `Dynamic` option. This option allow to select either all OTUs marked with a specific `Tag` or select a parent taxon, for example a genus, to add all children taxa, for example species, if new species are added to a genus in the future, those should automatically be added to the matrix.
+- Advanced option to add multiple OTUs to the matrix is using `Dynamic` option. This option allow to select either all OTUs marked with a specific `Tag` or select a parent taxon, for example a genus, to add all children taxa, for example species, if new species are added to a genus in the future, those should automatically be added to the matrix.
 
-### Reordering And Editing Rows and Collumns in the Matrix
+### Reordering And Editing Rows and Columns in the Matrix
 
-- Select `Sortable columns/rows` checkbox on the top, after that the columns and rowns could be resorted by drugging each up and down the list. 
+- Select `Sortable columns/rows` checkbox on the top, after that the columns and rows could be resorted by drugging each up and down the list. 
 - OTUs could also be sorted by their nomenclature, using `Sort by nomenclature` button.
-- To delete a `Row` or `Column` from the matrix, use the Trash can button. Keep in mind, deleting each of those does not delete the corresponding object from the database, it only delete its association with a particular Matrix. Deleting Rows and Columns also do not affect the observations associated with those.
-- To edit Row or column, for example to add a new character state to the descriptor, use `Edit` button next to this descriptor.
+- To delete a `Row` or `Column` from the matrix, use the Trash can button. Keep in mind, deleting each of those does not delete the corresponding object from the database, it only deletes its association with a particular Matrix. Deleting Rows and Columns also do not affect the observations associated with those.
+- To edit a Row or Column, for example to add a new character state to the descriptor, use `Edit` button next to this descriptor.
 
 ### Adding scores to a Row
 - In the `Edit Matrix` interface, select a 'Score' button second after an OTU or Collection object name in the list
 - You will see the list of descriptors and all possible states, you can check applicable states or add values for numeric descriptors. All changes are saved automatically.
-- Scores could also be cloned from an another object in the matrix using `Clone and copy` button. After cloning, only few changes may be required to separate one OTU or a Collection Object from another. It is recommended to select the most similar object for clonning.
-- `Destroy` button could be use to clear all scores from a particular OTU or a Collection object.
+- Scores can also be cloned from an another object in the matrix using `Clone and copy` button. After cloning, only few changes may be required to separate one OTU or a Collection Object from another. It is recommended to select the most similar object for clonning.
+- The `Destroy` button can be used to clear all scores from a particular OTU or a Collection object.
 - The `Matrix Row Coder` interface could also be accessed from the `Browse OTU` or `Browse Nomenclature` tasks. In either of tasks, select `OTU radial` button, in the `Observation matrices` sector, you can select a matrix to automatically add this OTU to it (if not added previously), and proceed directly to scoring mode.
 
-### Adding scores to a Collumn
+### Adding scores to a Column
 - In the `Edit Matrix` interface, select a 'Score' button second after a Descriptor in the list
 - You will see the list of OTUs and Collection object associated with this particular Descriptor. You can check applicable states or add values for numeric descriptors. All changes are saved automatically.
 - On the top of the form, there are options to `Destroy all observations`, `Populate column` with one particular character state,
@@ -79,21 +79,21 @@ Extensive information exists about the [TaxonWorks data model](https://docs.taxo
 
 ## Interactive key interface
 
-- The `Interactive key` interface is divided into 4 frames: the top one with the title and options; the middle one with the list of descriptors; the lower two frames include the list of rows which could be identifier, and eliminated rows which will be populated once the identification is started.
-- The descriptors are sorted by their weight and separating power. The order of the descriptors could be changed in the preferences on the top.
-- To start the identification, select one character state from any descriptor. It is possible to select more than one state in a case of uncertanty, to do this, click on the descriptor name, and make multiple selection.
+- The `Interactive key` interface is divided into 4 frames: the top one with the title and options; the middle one with the list of descriptors; the lower two frames include the list of rows which could be identified, and eliminated rows which will be populated once the identification is started.
+- The descriptors are sorted by their weight and separating power. The order of the descriptors can be changed in the preferences on the top.
+- To start the identification, select one character state from any descriptor. It is possible to select more than one state in a case of uncertanty, to do this, click on the descriptor name, and make multiple selections.
 - By default the rows which do not have scores for selected descriptor are not eliminated from the list, it is assumed that any character state is possible, but this behavior could be changed in the settings on the top of the page, if it is needed, for example, for the matrix evaluation.
 - If a particular row in the matrix does not have a score matching selected character state, this taxon or collection object is moved to the list of Eliminated rows. The behavior could be slightly changed by adding error tolerance. The tolerance equal '1' means that a single error in identification is permitted, the row will be eliminated only when 2 or more errors exists.
 - To clear the interactive key, and start the identification from the beginning, use `Reset` button.
 - If the matrix is large, it could be more convenient not to eliminate the row after selection of each descriptor, since the wait time could be several seconds, before you can select a next descriptor. It is possible to use `Refresh only taxa` option. The list of descriptors will not be updated before the `Refresh` button is clicked.
-- After the refresh, the taxa not matching the search criteria are moved to the right, and the list of descriptors also updated to bring more useful once closer to the top of the list.
-- Continue determination before only one or few rows still present in the list of Remaining.
+- After the refresh, the taxa not matching the search criteria are moved to the right, and the list of descriptors is also updated to bring more useful ones closer to the top of the list.
+- Continue determination until only one or a few rows are still present in the list of Remaining.
 - It is also possible to use `Select` button, to reduce the list of rows to be identified from the very beginning. If the list of entities is reduced, the list of descriptors will also be optimized to identify the remaining entries.
 - To make the interactive key more functional, you can add depictions to each character state of each descriptor. To do this, go back to the `Edit Matrix` interface, select one of the descriptors, click edit button next to it. In the `Edit` mode, you can use the radial annotator next to each character state to add a depiction.
 
 ## Image matrices
 
-_Image matrix is a specialized matrix which has defined descriptors and row, but does not have any scores. Instead of scores, images are added as a depiction to each cell of the table. The image matrix could also be used as a pictorial key for taxon identification, the images from the matrix are also viewed in the Browse OTU page. So instead of adding images directly to each OTU, they could be added to the image matrix instead to get additional functionality._
+_Image matrix is a specialized matrix which has defined descriptors and rows, but does not have any scores. Instead of scores, images are added as a depiction to each cell of the table. The image matrix could also be used as a pictorial key for taxon identification, the images from the matrix are also viewed in the Browse OTU page. So instead of adding images directly to each OTU, they could be added to the image matrix instead to get additional functionality._
 
 - To work with an image matrix, create a new matrix as described above.
 - Add rows to the matrix, OTUs for example.
@@ -101,9 +101,9 @@ _Image matrix is a specialized matrix which has defined descriptors and row, but
 - Once the rows and columns are defined, the most convenient way to work with the image matrix would be to use the `Observation Matrix Dashbord` task.
 - In the `Observation Matrix Dashbord` task, select a parent taxon and rank of the children taxa which you would like to see, for example, select a genus name, and select species rank to see all the species-level taxa from this particular genus. Once selected, click the `Search` button.
 - You will see the table of OTUs with some summary, how many observations has each, and how many depictions are added to a particular OTU in an image matrix.
-- Use `Open in a matrix` button next to one of the OTUs to add OTU to a matrix. Select the image matrix from the list. Once the matrix is selected, you get redirected to an editing interface, which looks like a table, where the descriptors are the headers of each column.
-- To add an image to a particular cell of the table, simly drug and drop it from a folder on your computer to that cell. The images could also be moved from one cell to another.
-- Once the image added, you can provide some metadata. Click on the image to add caption. Click the `Radial Annotator` button, to add citation and/or attribution.
+- Use the `Open in a matrix` button next to one of the OTUs to add OTU to a matrix. Select the image matrix from the list. Once the matrix is selected, you get redirected to an editing interface, which looks like a table, where the descriptors are the headers of each column.
+- To add an image to a particular cell of the table, simply drag and drop it from a folder on your computer to that cell. The images can also be moved from one cell to another.
+- Once the image is added, you can provide some metadata. Click on the image to add a caption. Click the `Radial Annotator` button, to add citation and/or attribution.
 - Adding images to multiple OTUs: in the 'Observation matrices dashboard', once you filtered the list of OTUs, select few of tham and click the `Edit image matrix` buttom. The table for editing multiple OTUs will be opened.   WARNING: do not select all OTUs for editing, since ALL of tham will be added to a matrix as separate Rows. 
 - Use the previous step to add multiple OTUs to any given matrix, not only to Image matrix, that could be another fast way to add multiple rows, for example adding rows for a future ineractive key.
 - Image matrix for any given OTU could also be accessed with the `OTU Radial` button, in the `Browse OTU`, or `Browse Nomenclature` tasks.
@@ -115,7 +115,7 @@ _Image matrix is a specialized matrix which has defined descriptors and row, but
 - In the View mode, you can hide some rows but clicking a checkbox before each row, or you can quickly switch to the Edit mode.
 
 ## FAQ related to how to form descriptors so that automatically generated description could be used in publication
-- Each descriptor and character state has additional fieds, which are accessible with `Show more` option in the Edit descriptor interface.
+- Each descriptor and character state has additional fields, which are accessible with `Show more` option in the Edit descriptor interface.
 - In the field `Description name`, provide an alternative verbiage for for a descriptor and each character state. For example, you have a descriptor "Head, length to width ration" with a state "2.2". That is how the character is displayed in the matrix. For `Description name`, alternative values could be provided, for example "Head" for descriptor and "2.2x as long as wide" for the state, so that the autogenerated description would have a sentance "Head 2.2x as long as wide"
 - Two consecutive descriptors with the same `Description name` will be combined into a single sentence, for example "Head 2.2 as long as wide; brown".
 

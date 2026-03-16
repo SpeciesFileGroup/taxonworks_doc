@@ -91,6 +91,23 @@ Extensive information exists about the [TaxonWorks data model](https://docs.taxo
 - It is also possible to use `Select` button, to reduce the list of rows to be identified from the very beginning. If the list of entities is reduced, the list of descriptors will also be optimized to identify the remaining entries.
 - To make the interactive key more functional, you can add depictions to each character state of each descriptor. To do this, go back to the `Edit Matrix` interface, select one of the descriptors, click edit button next to it. In the `Edit` mode, you can use the radial annotator next to each character state to add a depiction.
 
+## Multi-entry keys
+
+An observation matrix in TaxonWorks can be used as a multi-entry key within or outside of TaxonWorks using the app [distinguish](https://github.com/SpeciesFileGroup/distinguish). Internally this integration extends the role of a multi-entry key engine far beyond its use in diagnosing taxa.  For example the interface can be used to:
+
+* Evaluate progress in the construction of large complicated datasets
+* Create a single point of entry for adding annotations of all types that reflect workflows, scientific addenda, etc.
+* Navigate to and from other linked resources within TaxonWorks
+* Provide multi-language context for the underlying coding of data
+
+Features include:
+* Ability to translate any Descriptor (= Character traditionally) into any number of languages
+* Qualitative weighting of descriptors
+* Prioritization of choices based on descriptor order, weighting, or next-best-algorithm
+* Toggling between ranks of terminals (only species, only genera, etc.)
+* Trivial re-use and reformulation of the key scope by adding or removing new descriptors or terminals
+* Rows from OTUs (taxa), CollectionObjects, or Extracts
+
 ## Image matrices
 
 _Image matrix is a specialized matrix which has defined descriptors and rows, but does not have any scores. Instead of scores, images are added as a depiction to each cell of the table. The image matrix could also be used as a pictorial key for taxon identification, the images from the matrix are also viewed in the Browse OTU page. So instead of adding images directly to each OTU, they could be added to the image matrix instead to get additional functionality._

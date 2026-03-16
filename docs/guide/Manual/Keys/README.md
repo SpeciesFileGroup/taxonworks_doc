@@ -143,23 +143,6 @@ Starting from the `New Dichotomous key` task:
 
 Enter the rest of the couplets following the above pattern. Once the key is complete use the `radial navigator` button in the upper right to go to `Use dichotomous key` to check your work.
 
-## Multi-entry keys
-
-An observation matrix in TaxonWorks can be used as a multi-entry key within or outside of TaxonWorks using the app [distinguish](https://github.com/SpeciesFileGroup/distinguish). Internally this integration extends the role of a multi-entry key engine far beyond its use in diagnosing taxa.  For example the interface can be used to:
-
-* Evaluate progress in the construction of large complicated datasets
-* Create a single point of entry for adding annotations of all types that reflect workflows, scientific addenda, etc.
-* Navigate to and from other linked resources within TaxonWorks
-* Provide multi-language context for the underlying coding of data
-
-Features include:
-* Ability to translate any Descriptor (= Character traditionally) into any number of languages
-* Qualitative weighting of descriptors
-* Prioritization of choices based on descriptor order, weighting, or next-best-algorithm
-* Toggling between ranks of terminals (only species, only genera, etc.)
-* Trivial re-use and reformulation of the key scope by adding or removing new descriptors or terminals
-* Rows from OTUs (taxa), CollectionObjects, or Extracts
-
 ## Integration of standard and multi-entry keys
 
 3i, one of the precursors to TaxonWorks had functionality that lets multi-entry key algorithms drive the creation of traditional keys in a sophisticated manner.  We have architected TaxonWorks to facilitate replicating that functionality, and to innovate on this front. Internally we have a solid understanding of how to tackle first steps. See the issue tracker for more.

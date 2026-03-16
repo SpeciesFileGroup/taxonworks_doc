@@ -45,6 +45,23 @@ TaxonWorks exports print-ready formats with features including:
 
 Standard keys can be exported as one JSON object.  This object is what is used by pinpoint.  It could also be used as a data-object in a larger integrated or aggregating format.  The model is in progress.
 
+### Layouts for standard keys
+You have two options in TaxonWorks for how to display standard keys. Click the blue button in the upper right corner to switch between them at any time.
+
+The button says what you'd be switching to, so when it says `Full key`, you're actually currently in `Previous and future` view:
+
+#left[`Previous and future` view of a standard key](https://sfg.taxonworks.org/s/ln55xm)
+
+In this view you can see, above the couplets, each of the leads you've already selected. In each individual lead (typically a left and right "column") of the current couplet you can see all of the remaining choices to be made below that lead. See the next section for a tutorial of how to construct a key using this view.
+
+When the button says `Previous and future` you're in `Full key` view:
+
+#left[`Full key` view of a standard key](https://sfg.taxonworks.org/s/q9tvk9)
+
+In this view the `Key preview` section shows your key in the way it might typically appear in print. The pair of green arrows points to the couplet you're currently viewing. Click on a numbered blue button to load that couplet for viewing/editing; clicking on numbers that aren't buttons navigates within the key within loading a new couplet. Click on the blue circle with a plus inside it in the second lead of couplet 8 to create a new couplet below it - leads that have already been assigned an OTU don't show this button, so you can tell at a glance which terminal leads have not yet been assigned an OTU.
+
+The tutorial of the next section should be followable using the full key view: adding data proceeds the same, only navigation needs to be adjusted.
+
 ### Tutorial: Standard Key
 
 What follows are the steps for entering data to create a basic dichotomous (standard) key. Please note carefully the logic of when and where key elements are entered as these intricacies are critical.

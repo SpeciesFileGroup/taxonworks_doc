@@ -160,6 +160,10 @@ Starting from the `New Dichotomous key` task:
 
 Enter the rest of the couplets following the above pattern. Once the key is complete use the `radial navigator` button in the upper right to go to `Use dichotomous key` to check your work.
 
+If your project is set up on Taxon Pages, then an online version of your key will be available on the taxon page of the OTU the key is based on. For example [here](https://dermaptera.speciesfile.org/keys/1220) is the Taxon Pages version of a standard key to the "Higher Taxa of Dermaptera Known in Australia":
+
+#left[The Taxon Pages version of a standard key](https://sfg.taxonworks.org/s/3cozmy)
+
 ## Integration of standard and multi-entry keys
 
 3i, one of the precursors to TaxonWorks had functionality that lets multi-entry key algorithms drive the creation of traditional keys in a sophisticated manner.  We have architected TaxonWorks to facilitate replicating that functionality, and to innovate on this front. Internally we have a solid understanding of how to tackle first steps. See the issue tracker for more.

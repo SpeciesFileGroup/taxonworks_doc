@@ -1,0 +1,63 @@
+{
+	"identifier": {
+		"plazi": "FFA0AE675753FFF9FFC5FFF1FFA9530C"
+	},
+	"title": "EULOPHIDAE OF COSTA RICA (HYMENOPTERA: CHALCIDOIDEA), 5: The genus Galeopsomyia Girault",
+	"version": "1732858631049",
+	"issued": "2024-11-29",
+	"creator": [
+		{
+			"organisation": "Scientific Associate Biological Museum (Entomology), Lund University Sölvegatan 37, SE- 22362 Lund, Sweden & Natural History Museum, Insects Division Cromwell Road, London SW 7 5 BD, United Kingdom",
+			"given": "Christer",
+			"family": "Hansson"
+		},
+		{
+			"organisation": "School of Biology and Zoology Museum Biodiversity and Tropical Ecology Research Center (CIBET) University of Costa Rica, San Pedro de Montes de Oca 11501 - 2060, San José, Costa Rica",
+			"given": "Paul E.",
+			"family": "Hanson"
+		}
+	],
+	"editor": [
+	],
+	"publisher": {
+		"organisation": "Plazi",
+		"city": "Bern",
+		"country": "CH",
+		"email": "info@plazi.org",
+		"url": "https://plazi.org/"
+	},
+	"contact": {
+		"family": "Sautter",
+		"given": "Guido",
+		"organisation": "Plazi",
+		"email": "sautter@plazi.org",
+		"url": "https://plazi.org"
+	},
+	"description": "This dataset contains the digitized treatments in Plazi based on the original journal article Hansson, Christer, Hanson, Paul E. (2023): EULOPHIDAE OF COSTA RICA (HYMENOPTERA: CHALCIDOIDEA), 5: The genus Galeopsomyia Girault. Taxonomic Monographs on Neotropical Hymenoptera (Oxford, England) 3 (1): 1-743, ISBN: 978-1-7397467-2-8, DOI: 10.5281/zenodo.8372024, URL: http://dx.doi.org/10.5281/zenodo.8372023",
+	"url": "https://tb.plazi.org/GgServer/summary/FFA0AE675753FFF9FFC5FFF1FFA9530C",
+	"license": "CC0",
+	"source": [
+		{
+			"author": [
+				{
+					"given": "Christer",
+					"family": "Hansson"
+				},
+				{
+					"given": "Paul E.",
+					"family": "Hanson"
+				}
+			],
+			"type": "article-journal",
+			"containerTitle": "Taxonomic Monographs on Neotropical Hymenoptera",
+			"volume": "3",
+			"issue": "1",
+			"page": "1-743",
+			"issued": "2023-09-28",
+			"doi": "10.5281/zenodo.8372024",
+			"isbn": "978-1-7397467-2-8",
+			"id": "10.5281/zenodo.8372024",
+			"title": "EULOPHIDAE OF COSTA RICA (HYMENOPTERA: CHALCIDOIDEA), 5: The genus Galeopsomyia Girault"
+		}
+	]
+}

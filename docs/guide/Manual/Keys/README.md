@@ -166,6 +166,83 @@ If your project is set up on Taxon Pages, then an online version of your key wil
 
 ## Integration of standard and multi-entry keys
 
-3i, one of the precursors to TaxonWorks had functionality that lets multi-entry key algorithms drive the creation of traditional keys in a sophisticated manner.  We have architected TaxonWorks to facilitate replicating that functionality, and to innovate on this front. Internally we have a solid understanding of how to tackle first steps. See the issue tracker for more.
- 
+3i, one of the precursors to TaxonWorks, had functionality that lets multi-entry key algorithms drive the creation of traditional keys in a sophisticated manner. Here we discuss that functionality as it has been implemented in TaxonWorks.
+
+The functionality discussed here was motivated by the realization that it's often a more straightforward task to split a group by characters one at a time, in no particular order, than it is to sit down and write a standard key from start to end by scratch, **_especially for large groups_** (for small groups one can simply try things in a few different orders until one lands on a good plan). 
+
+The linkage used here is: once the character data has been determined and known to split a group into the parts you want - by experimenting with the interactive key for those characters, for example - then the knowledge gained by studying the character data and the interactive key can be used to build a standard key from the top down. At each stage of the standard key you ask yourself: "of the remaining descriptors in the interactive key for this stage, which character state(s) best split the `Remaining` data in the key?" That choice of state(s) determines a positive selection ("brown") and its opposite ("not brown") - those become the leads of your next couplet, and the `Remaining`/`Eliminated` of the interactive key with that character state selected become the OTUs that remain to be resolved for the left and right lead of that new couplet.
+
+:::tip
+You *could* (often) follow this process blindly, making random choices of character states at each stage, to create a valid key; the point here is not that TaxonWorks does all the work for you, but rather that it *allows* you to be the one deciding the best way in which to split at each stage - creating a user-friendly key - and automates the rest.
+:::
+
+### An example
+As an example we'll retrace the beginning steps of a case where the work has already been done: the leafhopper genus *Eratoneura*. The [interactive key](https://hoppers.speciesfile.org/interactive_keys/21) has 198 OTUs and 40 descriptors; the resulting [dichotomous key](https://hoppers.speciesfile.org/keys/1379) has 199 couplets.
+
+#### Lead OTUs
+This process requires keeping track of a list of OTUs at each stage of a key. Interactive keys already do so explicitly with their `Remaining`/`Eliminated` lists at each stage, but for dichotomous keys such lists are typically only implicit: the list of OTUs associated with a lead of a particular couplet is all of the OTUs on leads that are children of the given lead, i.e. all of the OTUs that could potentially turn out to be the correct identification (just like `Remaining` for interactive keys). Naturally then the list of `lead OTUs` for the start of a key is all of the OTUs that can be identified using the key.  We'll start there.
+
+##### Ways to add `lead OTUs` to a key
+* Create your new standard key as usual. Click the blue arrow next to the `Update` button to reveal more options, select `Add an OTUs list`, choose `From an observation matrix`, and choose your existing matrix. That brings up a selectable list of all of the OTU rows from that matrix; click `Select all` and then `Add OTUs`. Note the message that's returned: `Added otus to the lead list; saved link to observation matrix`.
+
+:::important
+Currently this is the only option for adding an OTUs list to your standard key that will save a link to an observation matrix, which will be useful if you intend to create your key using an interactive key.
+:::
+
+You can skip to the next section now if your sole interest is in using an existing interactive key to create a dichotomous key; if you're interested in more general uses of `lead OTUs` for key creation, read on.
+
+* From an existing `observation matrix`. In this case the matrix for *Eratoneura* has already been built, so we can copy its OTUs to a new interactive `lead OTUs` key. Go to the `Edit observation matrix` task for the *Eratoneura* matrix, click on the `Radial matrix` button <img src="https://sfg.taxonworks.org/s/286w1x" width="20px">, select `Add to a new key`, type the name of your new key, select `Create` and then click on `Edit` to start editing the new key.
+* The more general route is to use `Filter OTU`. For example, here we want only the current valid species of *Eratoneura*, so we'll start at `Filter Taxon Names` to get that result, and then send it to `Filter OTUs`. Now click on the `Radial Matrix` button <img src="https://sfg.taxonworks.org/s/286w1x" width="20px">, and proceed as in the observation matrix case.
+
+:::tip
+There are restrictions on when/where lead OTUs can be attached to leads of a key; in general you'll want to start a new key with lead OTUs rather than trying to add them to an existing partially completed key.
+:::
+
+What you see looks similar to the standard traditional key interface, except that now each lead has a list of OTUs attached below it.  The rules of `lead OTUS` are:
+* when a new couplet is created, all of the parent lead's OTUs are placed on the *right* lead of the new couplet. This encourages the notion that a user-friendly key places short paths on the left and longer paths on the right.
+* each couplet must divide its leads in some way; the logic here is that each final lead of a key should have an OTU.
+  * `lead otus` *can* be added to both sides of a couplet, representing the case where there's not enough information at a given couplet to determine that OTU.
+* when your key is complete, all of your original `lead otus` should still exist in the key; in an ideal world each original `lead otu` will exist at the end on a unique leaf/terminal lead.
+  * it's possible to delete and add OTUs to your OTU lists; under "normal" operations you'll never want to do so.
+
+#left[The start of a `lead OTUs` key, with all `lead OTUs` assigned to the right lead](https://sfg.taxonworks.org/s/7bzx4f)
+
+Some notes on the screenshot:
+* a bright green large circle and a full-color OTU name indicate an OTU is assigned to that lead (as on the right here). Click the smaller TaxonWorks-standard green circle with the plus sign in it (on the left here) to move an OTU to the lead you clicked on - note that that will *remove that OTU from the other lead*. Here for example we've clicked the add button on the second OTU on the left:
+
+#left[The second OTU of the list moved to the left side](https://sfg.taxonworks.org/s/xdujq0)
+
+* To support multi-furcating keys, we don't include a remove button that you could click on an existing `lead OTU` to have it reappear as selected on the other side - this protects the requirement that you never lose OTUs while creating the key
+* To add an OTU to a new lead without removing it from any others, double-click on the add button
+* Click on `Reset all OTUs` on the right-most lead to move all lead OTUs for that couplet back to the rightmost lead
+* `lead OTU` moves are auto-saved, you don't need to click `update` on the key after moving `lead OTUs`
+
+#### Using an existing interactive key to divide `lead OTUs`
+Use the `Reset all OTUs` button on the right lead to reset the OTUs state if you've moved things around in the previous section. Now you should see a blue `Send OTUs to interactive key` on the right lead. Click it.
+* if you created your OTUs list using the method that saves an associated matrix, that click will open the expected interactive key directly
+* if not, you'll be presented with the option to choose which interactive key to send your OTUs to each time you click the button [TODO: offer to save the association]
+
+#left[Interactive key being used in the service of a standard key](https://sfg.taxonworks.org/s/pavfpk)
+
+Note that all of your `lead OTUs` are under `Remaining` in the interactive key. We now want to use the interactive key to split those OTUs in a way that's useful for our standard key. In this case, using our knowledge of the characters (and the fact that we already know what the outcome should be!), we'll select the two character states `slender` and `small toothlike` for character 33, `Shape of aedeagus distal processes`: this splits the original OTUs into 12 `Remaining` and 185 `Eliminated` in the interactive key. We want to transfer that split, *and the character states that produced it*, back to our key as the first couplet, so click the `Return to key` button to do so. Note the `Remaining` OTUs are now assigned to the left lead, and the `Eliminated` OTUs are assigned to the right lead. Also the lead text of the left and right leads has been updated with the text of the character states you selected on the left, and the character state text of those character states you did not select on the right. The text is unsaved at this point; at any time you're free to make adjustments to the text and/or the division of OTUs.
+
+* If you check the `Send character depictions` checkbox then depictions associated with the character states you selected will be automatically added to the corresponding leads.
+
+#left[The OTUs of the key have been split by our selection in the interactive key](https://sfg.taxonworks.org/s/nsmvk9)
+
+There are still multiple OTUs remaining on both sides, so let's continue a bit. Click `Create the next couplet` on the left side. Note, as expected, that the 12 OTUs from the left side of the previous couplet all start off on the right side of this new couplet. Click `Send OTUs to interactive key` to split this new set of OTUs. This time we'll select all of the non-absent character states of the character `Position and length of aedeagus ventral processes`: that leaves 2 `Remaining` and 10 `Eliminated` - send those back to the key.
+
+Our key now looks like:
+
+#left[Two remaining OTUs on the left, 10 on the right](https://sfg.taxonworks.org/s/4piqc3)
+
+We're already down to 2 OTUs on the left branches, let's finish that off: click `Create the next couplet` on the left side - again the new couplet loads with the 2 OTUs from the previous couplet on the right. Click `Send OTUs to interactive key`. The interactive key, as expected, shows 2 `Remaining` and 0 `Eliminated` (it automatically restricts the key to the set of OTUs we send it). In this particular case there are many characters left which distinguish the two species; it's up to you which one to send back - this is a case where you'll likely want to update the returned text to add more relevant states to this final lead for a species.
+
+At this point, with exactly one OTU available and assigned on each side, the list OTUs are automatically assigned to their respective leads. This branch of the key is complete.
+
+#left[Both left and right leads have a final OTU assigned](https://sfg.taxonworks.org/s/2idlk3)
+
+If we step back to couplet 2, we now see that the left side indicates for us `Descendants key-complete`, so we know we don't need to do anymore work on the left side. The next step would be to create the next couplet below the right lead of couplet 2, split its OTUs, on and on until all OTU lists have been split as far as possible by the key.
+
+
 

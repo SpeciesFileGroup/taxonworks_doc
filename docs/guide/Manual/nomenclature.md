@@ -406,7 +406,7 @@ After the Protonym for the first name is created two relationships will be added
 
 Once the misapplication is created, an `OTU` could be linked to the `TaxonName`, which could be used, for example, for `taxon determination`.
 
-## Nomenclature Senarios (aka How-To) 
+## Nomenclature Scenarios (aka How-To) 
 
 ### Add new taxon name
 For this task, be sure you have put the `source` in the `Pinboard` and selected it as the `default`, as this will save a lot of time during the process. Note also, that TW is smart, and as soon as you enter the name, it checks to see if it already has it (see example below).

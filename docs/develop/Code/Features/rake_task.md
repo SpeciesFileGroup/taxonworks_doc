@@ -96,3 +96,11 @@ If you see `Configuration successful`
 
 At this point you are able to create [Rake tasks](https://github.com/ruby/rake) that access TaxonWork's environment.
 
+You'll need to nest your new tasks in your `.rake` file like this: 
+```ruby
+namespace :tw do
+  namespace :your_new_task do
+  end
+end
+```
+

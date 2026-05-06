@@ -241,6 +241,9 @@ The basic steps:
 2. Navigate to the _invalid_ name `Aus aus`
 3. Create the first relationship: Select the _senior homonym_ name `Bus aus` and a homonym relationship (be specific: `primary homonym` or `secondary homonym`)
 4. Create the second relationship: Select the valid name (replacement name) `Aus bus` and add a synonym relationship (`replaced by` or `subjective synonym of`, the second option is true when the substitute name was selected from one of the junior synonyms)
+   ##### Example:
+   <img width="837" height="145" alt="image" src="https://github.com/user-attachments/assets/675b2647-e306-45fd-b8f4-db7c7f62c16f" />
+
 
 #### Example 3: Misapplication
 
@@ -252,6 +255,9 @@ The basic steps:
 2. Navigate to the _invalid_ name `Aus aus Author2`
 3. Create the first relationship: Select the _correctly applied name_ name `Aus aus Author1` and a `misapplication` relationship
 4. Create the second relationship: Select the valid name `Aus bus` and add non specific `invalid, linked to` relationship (do not use `synonym` relationships, since `misapplication` is not an avaliable name)
+   ##### Example:
+   <img width="800" height="135" alt="image" src="https://github.com/user-attachments/assets/95dcb962-ceb0-4cf5-8ac1-1fef470bb92e" />
+
 
 #### Misspelling
 Create the `misspelling` relationship the same way as `misapplication`, but only a single relationship needed to link with correctly spelled protonym.

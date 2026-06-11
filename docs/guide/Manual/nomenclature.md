@@ -229,7 +229,11 @@ Here's a quick example of what it looks like when you have completed the above p
 * Once the relationship is created a `citation` could be added to this `relationship` to indicate the `Source`, where this synonymy was first proposed.
 * In cases of competing synonymy, where in one source `Aus` is recorded as synonym of `Bus`, and in the next publication it is a synonym of `Cus`, **both** synonym relationships should be created in the database, if the citations are provided, the latest citation will be used to position
 the taxon in the classification.
-* In cases where the name was reported as a synonym by mistake and was revalidated in a later publication, the relationship _should not be deleted_, a `valid` status could be added to the taxon to overwrite the synonymy (see above) 
+* In cases where the name was reported as a synonym by mistake and was revalidated in a later publication, the relationship _should not be deleted_, a `valid` status could be added to the taxon to overwrite the synonymy (see above)
+
+::: tip 
+When a synonymic relationship is saved, the junior synonym is **NOT** moved to where you would expect to see it on the Navigate panel of the Browse taxon names task. But a soft validation fix will appear in the right hand column of the Browse taxon names task that when clicked on will move the junior synonym to the appropriate location in the Navigate panel. Prior to this fix being deployed, the junior synonym will remain in its original location on the Navigate panel, but the font color will change to brown. After the fix is deployed the junior synonym will appear under the senior synonym in the Navigate panel, beside an equal sign, and the font color will return to blue. **A problem arises** if you synonymize a name with a name that itself has been synonymized. In this instance, you have to first deploy the fix for the first synonymy before the fix button for the second synonymy will appear in the soft validation panel.
+:::
 
 #### Example 2: Homonomy
 

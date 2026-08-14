@@ -1,0 +1,105 @@
+digraph CachedMapItemTranslation {
+	graph [bb="0,0,548.41,252",
+		label="",
+		outputorder=edgesfirst,
+		rankdir=LR
+	];
+	node [label="\N"];
+	subgraph annotator_cluster {
+		graph [rank=min];
+	}
+	subgraph core {
+	}
+	subgraph supporting {
+		CachedMapItemTranslation	[color="#dedede",
+			fillcolor="#cdefab",
+			group=target,
+			height=0.61111,
+			href="/develop/Data/models.html#cached-map-item-translation",
+			label=CachedMapItemTranslation,
+			pos="128.83,126",
+			shape=doubleoctagon,
+			style=filled,
+			target=_top,
+			width=3.5786];
+		PinboardItem	[color="#dddeee",
+			fillcolor="#eeefff",
+			group=supporting,
+			height=0.5,
+			href="/develop/Data/models.html#pinboard-item",
+			label=PinboardItem,
+			pos="374.41,234",
+			shape=box,
+			style=filled,
+			target=_top,
+			width=1.2535];
+		Role	[color="#dddeee",
+			fillcolor="#eeefff",
+			group=supporting,
+			height=0.5,
+			href="/develop/Data/models.html#role",
+			label=Role,
+			pos="374.41,180",
+			shape=box,
+			style=filled,
+			target=_top,
+			width=0.75];
+		VerifierRole	[color="#dddeee",
+			fillcolor="#eeefff",
+			group=supporting,
+			height=0.5,
+			href="/develop/Data/models.html#verifier-role",
+			label=VerifierRole,
+			pos="374.41,126",
+			shape=box,
+			style=filled,
+			target=_top,
+			width=1.1493];
+		Verifier	[color="#dddeee",
+			fillcolor="#eeefff",
+			group=supporting,
+			height=0.5,
+			href="/develop/Data/models.html#verifier",
+			label=Verifier,
+			pos="519.78,153",
+			shape=box,
+			style=filled,
+			target=_top,
+			width=0.79514];
+		GeographicItem	[color="#dddeee",
+			fillcolor="#eeefff",
+			group=supporting,
+			height=0.5,
+			href="/develop/Data/models.html#geographic-item",
+			label=GeographicItem,
+			pos="374.41,72",
+			shape=box,
+			style=filled,
+			target=_top,
+			width=1.4514];
+		TranslatedGeographicItem	[color="#dddeee",
+			fillcolor="#eeefff",
+			group=supporting,
+			height=0.5,
+			href="/develop/Data/models.html#translated-geographic-item",
+			label=TranslatedGeographicItem,
+			pos="374.41,18",
+			shape=box,
+			style=filled,
+			target=_top,
+			width=2.2431];
+	}
+	CachedMapItemTranslation -> PinboardItem	[pos="e,329.15,220.18 171.21,148.37 203.92,165.58 251.01,189.33 293.66,207 301.55,210.27 309.99,213.45 318.31,216.42"];
+	CachedMapItemTranslation -> Role	[pos="e,347.02,174.15 211.28,144.06 253.46,153.41 302.93,164.38 336.03,171.71"];
+	CachedMapItemTranslation -> VerifierRole	[pos="e,332.56,126 258.04,126 280.33,126 302.34,126 321.06,126"];
+	CachedMapItemTranslation -> GeographicItem	[dir=back,
+		pos="s,211.28,107.94 222.12,105.54 255.89,98.053 292.89,89.851 321.84,83.432",
+		style=dashed];
+	CachedMapItemTranslation -> TranslatedGeographicItem	[dir=back,
+		pos="s,171.21,103.63 181.19,98.414 213.07,81.841 255.17,60.946 293.66,45 300.82,42.034 308.43,39.14 316,36.413",
+		style=dashed];
+	Role -> Verifier	[pos="e,490.69,158.29 401.71,175.05 423.48,170.95 454.75,165.06 479.49,160.4",
+		style=invis];
+	VerifierRole -> Verifier	[pos="e,490.71,147.71 416.11,133.66 436.04,137.42 459.93,141.92 479.65,145.63",
+		style=dotted];
+}

@@ -1,0 +1,172 @@
+﻿taxonID,acceptedNameUsageID,parentNameUsageID,originalNameUsageID,phylum,family,genus,subgenus,specificEpithet,taxonRank,scientificName,scientificNameAuthorship,TW:TaxonDetermination:Tag:OTUage,tag:OTUlocality
+200,200,,200,Bryozoa,,,,,phylum,Bryozoa,,,
+1,1,200,1,Bryozoa,,Acanthoclema,,,genus,Acanthoclema,,,
+2,2,1,2,Bryozoa,,Acanthoclema,,elegantula,species,Acanthoclema elegantula Ernst 2008,Ernst 2008,Middle Devonian,Germany
+3,3,200,3,Bryozoa,,Alternifenestella,,,genus,Alternifenestella,,,
+4,4,3,4,Bryozoa,,Alternifenestella,,esaulovae,species,Alternifenestella esaulovae Gorjunova & Sedaeva 2008,Gorjunova & Sedaeva 2008,Permian Guadalupian,Russia Russian Platform
+5,5,200,5,Bryozoa,,Anomalotoechus,,,genus,Anomalotoechus,,,
+6,6,5,6,Bryozoa,,Anomalotoechus,,quasitypicus,species,Anomalotoechus quasitypicus,Ernst 2008,Middle Devonian,Germany
+7,7,5,7,Bryozoa,,Anomalotoechus,,tenuis,species,Anomalotoechus tenuis Ernst 2008,Ernst 2008,Middle Devonian,Germany
+8,8,200,8,Bryozoa,,Atactotoechus,,,genus,Atactotoechus,,,
+9,9,8,9,Bryozoa,,Atactotoechus,,divulgatus,species,Atactotoechus divulgatus Ernst 2008,Ernst 2008,Early Devonian Pragian,Czech Republic
+10,10,200,10,Bryozoa,,Bashkirella,,,genus,Bashkirella,,,
+11,11,10,11,Bryozoa,,Bashkirella,,minor,species,Bashkirella minor Ernst & Winkler Prins 2008,Ernst & Winkler Prins 2008,Carboniferous Pennsylvanian Bashkirian-Moscovian,Spain
+12,12,200,12,Bryozoa,Brydonellidae,,,,family,Brydonellidae Taylor Casadío & Gordon 2008,"Taylor, Casadío & Gordon 2008",,
+13,13,12,13,Bryozoa,,Buffonellaria,,,genus,Buffonellaria,,,
+14,14,13,14,Bryozoa,,Buffonellaria,,acorensis,species,Buffonellaria acorensis Berning & Kukliński 2008,Berning & Kukliński 2008,Recent,Atlantic east Azores
+15,15,13,15,Bryozoa,,Buffonellaria,,antoniettae,species,Buffonellaria antoniettae Berning & Kukliński 2008,Berning & Kukliński 2008,Recent,Mediterranean Sicily
+16,16,13,16,Bryozoa,,Buffonellaria,,arctica,species,Buffonellaria arctica Berning & Kukliński 2008,Berning & Kukliński 2008,Recent,"Arctic Svalbard, Greenland"
+17,17,13,17,Bryozoa,,Buffonellaria,,harmelini,species,Buffonellaria harmelini Berning & Kukliński 2008,Berning & Kukliński 2008,Recent,Mediterranean
+18,18,13,18,Bryozoa,,Buffonellaria,,jensi,species,Buffonellaria jensi Berning & Kukliński 2008,Berning & Kukliński 2008,Recent,Atlantic east Madeira
+19,19,13,19,Bryozoa,,Buffonellaria,,muriella,species,Buffonellaria muriella Berning & Kukliński 2008,Berning & Kukliński 2008,Recent,Atlantic east England
+20,20,13,20,Bryozoa,,Buffonellaria,,ritae,species,Buffonellaria ritae Berning & Kukliński 2008,Berning & Kukliński 2008,Recent,Atlantic east Madeira
+21,21,12,21,Bryozoa,,Bugula,,,genus,Bugula,,,
+22,22,21,22,Bryozoa,,Bugula,,ceylonensis,species,Bugula ceylonensis Winston & Woollacott 2008,Winston & Woollacott 2008,Recent,Indian Ocean - Sri Lanka
+23,23,21,23,Bryozoa,,Bugula,,miniatella,species,Bugula miniatella Winston & Woollacott 2008,Winston & Woollacott 2008,Recent,West Atlantic - Tortugas
+24,24,21,24,Bryozoa,,Bugula,,paternostrae,species,Bugula paternostrae Winston & Woollacott 2008,Winston & Woollacott 2008,Recent,Indo-Pacific Indonesia
+25,25,21,25,Bryozoa,,Bugula,,providensis,species,Bugula providensis Winston & Woollacott 2008,Winston & Woollacott 2008,Recent,Indian Ocean - Seychelles
+26,26,21,26,Bryozoa,,Bugula,,robustoides,species,Bugula robustoides Winston & Woollacott 2008,Winston & Woollacott 2008,Recent,South Pacific - Australia
+27,27,21,27,Bryozoa,,Bugula,,solorensis,species,Bugula solorensis Winston & Woollacott 2008,Winston & Woollacott 2008,Recent,"Indo-Pacific Indonesia, Zanzibar, Samoa"
+28,28,12,28,Bryozoa,,Callaetea,,,genus,Callaetea Winston 2008,Winston 2008,,
+29,29,28,29,Bryozoa,,Callaetea,,liliacea,species,Callaetea liliacea Winston 2008,Winston 2008,Recent,West Atlantic - Caribbean Belize
+30,30,12,30,Bryozoa,,Charixa,,,genus,Charixa,,,
+31,31,30,31,Bryozoa,,Charixa,,burdonaria,species,Charixa burdonaria Taylor Lazo & Aguirre-Urreta 2008,"Taylor, Lazo & Aguirre-Urreta 2008",Early Cretaceous,Argentina
+32,32,12,32,Bryozoa,,Cliotrypa,,,genus,Cliotrypa,,,
+33,33,32,33,Bryozoa,,Cliotrypa,,serratula,species,Cliotrypa serratula Ernst 2008,Ernst 2008,Middle Devonian,Germany
+34,34,32,34,Bryozoa,,Cliotrypa,,cystosa,species,Cliotrypa cystosa Ernst 2008,Ernst 2008,Middle Devonian,Germany
+35,35,12,35,Bryozoa,,Crisia,,,genus,Crisia,,,
+36,36,35,36,Bryozoa,,Crisia,,romanica,species,Crisia romanica Zágorsek Silye & Szabó 2008,"Zágorsek, Silye, & Szabó 2008",Neogene Miocene,Rumania
+37a,37a,12,37a,Bryozoa,,Cystodictya,,,genus,Cystodictya,,,
+37,37,37a,37,Bryozoa,,Cystodictya,,angusta,species,Cystodictya angusta Ernst Weidlich & Schäfer 2008,"Ernst, Weidlich & Schäfer 2008",Permian Cisuralian-Guadalupian,Oman
+38,38,12,38,Bryozoa,,Diphragmoides,,,genus,Diphragmoides Ernst 2008,Ernst 2008,,
+39,39,38,39,Bryozoa,,Diphragmoides,,paradoxus,species,Diphragmoides paradoxus Ernst 2008,Ernst 2008,Middle Devonian,Germany
+40,40,12,40,Bryozoa,,Discoporella,,,genus,Discoporella,,,
+41,41,40,41,Bryozoa,,Discoporella,,bocasdeltoroensis,species,Discoporella bocasdeltoroensis Herrera-Cubilla Dick Sanner & Jackson 2008,"Herrera-Cubilla, Dick, Sanner & Jackson 2008",Recent,West Atlantic - Caribbean Panama
+42,42,40,42,Bryozoa,,Discoporella,,cookae,species,Discoporella cookae Herrera-Cubilla Dick Sanner & Jackson 2008,"Herrera-Cubilla, Dick, Sanner & Jackson 2008",Recent,East Pacific Panama
+43,43,40,43,Bryozoa,,Discoporella,,marcusorum,species,Discoporella marcusorum Herrera-Cubilla Dick Sanner & Jackson 2008,"Herrera-Cubilla, Dick, Sanner & Jackson 2008",Recent,East Pacific Panama
+44,44,40,44,Bryozoa,,Discoporella,,peltifera,species,Discoporella peltifera Herrera-Cubilla Dick Sanner & Jackson 2008,"Herrera-Cubilla, Dick, Sanner & Jackson 2008",Recent,West Atlantic - Caribbean Panama
+45,45,40,45,Bryozoa,,Discoporella,,scutella,species,Discoporella scutella Herrera-Cubilla Dick Sanner & Jackson 2008,"Herrera-Cubilla, Dick, Sanner & Jackson 2008",Recent,West Atlantic - Caribbean Panama
+46,46,40,46,Bryozoa,,Discoporella,,terminata,species,Discoporella terminata Herrera-Cubilla Dick Sanner & Jackson 2008,"Herrera-Cubilla, Dick, Sanner & Jackson 2008",Recent,West Atlantic - Caribbean Panama
+47,47,40,47,Bryozoa,,Discoporella,,triangula,species,Discoporella triangula Herrera-Cubilla Dick Sanner & Jackson 2008,"Herrera-Cubilla, Dick, Sanner & Jackson 2008",Recent,West Atlantic - Caribbean Panama
+48,48,12,48,Bryozoa,,Dyscritella,,,genus,Dyscritella,,,
+49,49,48,49,Bryozoa,,Dyscritella,,bohemica,species,Dyscritella bohemica Ernst 2008,Ernst 2008,Early Devonian Pragian,Czech Republic
+50,50,12,50,Bryozoa,,Eifelipora,,,genus,Eifelipora Ernst 2008,Ernst 2008,,
+51,51,50,51,Bryozoa,,Eifelipora,,ramosa,species,Eifelipora ramosa Ernst 2008,Ernst 2008,Middle Devonian,Germany
+52,52,12,52,Bryozoa,,Electra,,,genus,Electra,,,
+53,53,52,53,Bryozoa,,Electra,,moskvikvendi,species,Electra moskvikvendi Nikulina 2008,Nikulina 2008,Recent,Baltic
+54,54,52,54,Bryozoa,,Electra,,scuticifera,species,Electra scuticifera Nikulina 2008,Nikulina 2008,Recent,South Pacific - New Zealand
+55,55,12,55,Bryozoa,,Favosipora,,,genus,Favosipora,,,
+56,56,55,56,Bryozoa,,Favosipora,,ichnusae,species,Favosipora ichnusae Toscano & Taylor 2008,Toscano & Taylor 2008,Neogene Miocene Aquitanian-Burdigalian,Italy Sardinia
+57,57,12,57,Bryozoa,,Fistuliphragma,,,genus,Fistuliphragma,,,
+58,58,57,58,Bryozoa,,Fistuliphragma,,eifelensis,species,Fistuliphragma eifelensis Ernst 2008,Ernst 2008,Middle Devonian,Germany
+59,59,57,59,Bryozoa,,Fistuliphragma,,gracilis,species,Fistuliphragma gracilis Ernst 2008,Ernst 2008,Middle Devonian,Germany
+59a,59a,12,59a,Bryozoa,,Fistulipora,,,genus,Fistulipora,,,
+60,60,59a,60,Bryozoa,,Fistulipora,,bohatyi,species,Fistulipora bohatyi Ernst 2008,Ernst 2008,Middle Devonian,Germany
+61,61,59a,61,Bryozoa,,Fistulipora,,reimersi,species,Fistulipora reimersi Ernst 2008,Ernst 2008,Middle Devonian,Germany
+62,62,59a,62,Bryozoa,,Fistulipora,,schlueteri,species,Fistulipora schlueteri Ernst 2008,Ernst 2008,Middle Devonian,Germany
+63,63,12,63,Bryozoa,,Intrapora,,,genus,Intrapora,,,
+64,64,63,64,Bryozoa,,Intrapora,,leunisseni,species,Intrapora leunisseni Ernst 2008,Ernst 2008,Middle Devonian,Germany
+65,65,63,65,Bryozoa,,Intrapora,,variabilis,species,Intrapora variabilis Ernst 2008,Ernst 2008,Middle Devonian,Germany
+66,66,12,66,Bryozoa,,Herentia,,,genus,Herentia,,,
+67,67,66,67,Bryozoa,,Herentia,,andreasi,species,Herentia andreasi Berning Tilbrook & Rosso 2008,"Berning, Tilbrook & Rosso 2008",Recent,Mediterranean Adriatic
+68,68,66,68,Bryozoa,,Herentia,,majae,species,Herentia majae Berning Tilbrook & Rosso 2008,"Berning, Tilbrook & Rosso 2008",Recent,Atlantic Madeira
+69,69,12,69,Bryozoa,,Hippomonavella,,,genus,Hippomonavella,,,
+70,70,69,70,Bryozoa,,Hippomonavella,,brasiliensis,species,Hippomonavella brasiliensis Ramalho Muricy & Taylor 2008,"Ramalho, Muricy & Taylor 2008",Recent,West Atlantic Brazil
+71,71,12,71,Bryozoa,,Hyporosopora,,,genus,Hyporosopora,,,
+72,72,71,72,Bryozoa,,Hyporosopora,,mittai,species,Hyporosopora mittai Viskova 2008,Viskova 2008,Middle Jurassic Callovian,Russia Moscow
+73,73,12,73,Bryozoa,,Leioclema,,,genus,Leioclema,,,
+74,74,73,74,Bryozoa,,Leioclema,,ahuettensis,species,Leioclema ahuettensis Ernst 2008,Ernst 2008,Middle Devonian,Germany
+75,75,73,75,Bryozoa,,Leioclema,,crenulata,species,Leioclema crenulata Ernst 2008,Ernst 2008,Middle Devonian,Germany
+76,76,73,76,Bryozoa,,Leioclema,,elegans,species,Leioclema elegans Ernst 2008,Ernst 2008,Early Devonian Pragian,Czech Republic
+77,77,73,77,Bryozoa,,Leioclema,,serratula,species,Leioclema serratula Ernst 2008,Ernst 2008,Middle Devonian,Germany
+78,78,12,78,Bryozoa,,Leptotrypella,,,genus,Leptotrypella,,,
+79,79,78,79,Bryozoa,,Leptotrypella,,punctata,species,Leptotrypella punctata Ernst 2008,Ernst 2008,Early Devonian Pragian,Czech Republic
+80,80,12,80,Bryozoa,,Loxophragma,,,genus,Loxophragma,,,
+81,81,80,81,Bryozoa,,Loxophragma,,fistulosum,species,Loxophragma fistulosum Ernst 2008,Ernst 2008,Early Devonian Pragian,Czech Republic
+83,83,12,83,Bryozoa,,Lynnopora,,,genus,Lynnopora Gorjunova & Koromyslova 2008,Gorjunova & Koromyslova 2008,,
+84,84,83,84,Bryozoa,,Lynnopora,,lunata,species,Lynnopora lunata Gorjunova & Koromyslova 2008,Gorjunova & Koromyslova 2008,Early-Middle Ordovician (Arenigian),Russia
+85,85,12,85,Bryozoa,,Macropora,,,genus,Macropora,,,
+86,86,85,86,Bryozoa,,Macropora,,bullata,species,Macropora bullata Gordon & Taylor 2008,Gordon & Taylor 2008,Paleogene Eocene Priabonian,New Zealand
+87,87,85,87,Bryozoa,,Macropora,,carlosi,species,Macropora carlosi Gordon & Taylor 2008,Gordon & Taylor 2008,Recent,Pacific southwest Norfolk Ridge
+88,88,85,88,Bryozoa,,Macropora,,filifera,species,Macropora filifera Gordon & Taylor 2008,Gordon & Taylor 2008,Recent,New Zealand
+89,89,85,89,Bryozoa,,Macropora,,leeae,species,Macropora leeae Gordon & Taylor 2008,Gordon & Taylor 2008,Paleogene Oligocene Rupelian,New Zealand
+90,90,85,90,Bryozoa,,Macropora,,mawatariorum,species,Macropora mawatariorum Gordon & Taylor 2008,Gordon & Taylor 2008,Recent,Japan
+91,91,85,91,Bryozoa,,Macropora,,nodulosa,species,Macropora nodulosa Gordon & Taylor 2008,Gordon & Taylor 2008,Recent,New Zealand
+92,92,85,92,Bryozoa,,Macropora,,pittensis,species,Macropora pittensis Gordon & Taylor 2008,Gordon & Taylor 2008,Neogene Pliocene Zanclean-Piacenzian,New Zealand Chatham Islands
+93,93,85,93,Bryozoa,,Macropora,,septispinosa,species,Macropora septispinosa Gordon & Taylor 2008,Gordon & Taylor 2008,Neogene Miocene Burdigalian-Aquitanian,New Zealand
+94,94,85,94,Bryozoa,,Macropora,,similis,species,Macropora similis Gordon & Taylor 2008,Gordon & Taylor 2008,Neogene Pliocene,New Zealand
+95,95,12,95,Bryozoa,,Microcampylus,,,genus,Microcampylus,,,
+96,96,95,96,Bryozoa,,Microcampylus,,obscurus,species,Microcampylus obscurus Ernst 2008,Ernst 2008,Early Devonian Pragian,Czech Republic
+97,97,95,97,Bryozoa,,Microcampylus,,regularis,species,Microcampylus regularis Ernst 2008,Ernst 2008,Middle Devonian,Germany
+98,98,12,98,Bryozoa,,Microporella,,,genus,Microporella,,,
+99,99,98,99,Bryozoa,,Microporella,,klugei,species,Microporella klugei Kukliński & Taylor 2008,Kukliński & Taylor 2008,Recent,Arctic
+100,100,98,100,Bryozoa,,Monoporella,,aleutica,species,Monoporella aleutica Dick 2008,Dick 2008,Recent,Northeast Pacific Alaska
+101,101,98,101,Bryozoa,,Monoporella,,ellefsoni,species,Monoporella ellefsoni Dick 2008,Dick 2008,Recent,Northeast Pacific Alaska
+102,102,98,102,Bryozoa,,Monoporella,,elongata,species,Monoporella elongata Dick 2008,Dick 2008,Recent,Northeast Pacific Alaska
+103,103,98,103,Bryozoa,,Monoporella,,flexibila,species,Monoporella flexibila Dick 2008,Dick 2008,Recent,Northeast Pacific Alaska
+104,104,98,104,Bryozoa,,Monoporella,,gigantea,species,Monoporella gigantea Dick 2008,Dick 2008,Recent,Northeast Pacific Alaska
+105,105,98,105,Bryozoa,,Monoporella,,seastormi,species,Monoporella seastormi Dick 2008,Dick 2008,Recent,Northeast Pacific Alaska
+106,106,12,106,Bryozoa,,Multihemiphragma,,,genus,Multihemiphragma Ernst 2008,Ernst 2008,,
+107,107,106,107,Bryozoa,,Multihemiphragma,,tenuis,species,Multihemiphragma tenuis Ernst 2008,Ernst 2008,Middle Devonian,Germany
+108,108,12,108,Bryozoa,,Neuquenopora,,,genus,Neuquenopora Taylor Lazo & Aguirre-Urreta 2008,"Taylor, Lazo & Aguirre-Urreta 2008",,Argentina
+109,109,108,109,Bryozoa,,Neuquenopora,,carrerai,species,Neuquenopora carrerai Taylor Lazo & Aguirre-Urreta 2008,"Taylor, Lazo & Aguirre-Urreta 2008",Early Cretaceous,Argentina
+110,110,12,110,Bryozoa,,Orbiramus,,,genus,Orbiramus,,,
+111,111,110,111,Bryozoa,,Orbiramus,,grandis,species,Orbiramus grandis Xia Zhang & Yan 2008,"Xia, Zhang & Yan 2008",Early Ordovician Floian,China
+112,112,12,112,Bryozoa,,Orthopora,,,genus,Orthopora,,,
+113,113,112,113,Bryozoa,,Orthopora,,punctata,species,Orthopora punctata Ernst Weidlich & Schäfer 2008,"Ernst, Weidlich & Schäfer 2008",Permian Cisuralian-Guadalupian,Oman
+114,114,112,114,Bryozoa,,Orthopora,,tenuis,species,Orthopora tenuis Ernst 2008,Ernst 2008,Early Devonian Pragian,Czech Republic
+115,115,12,115,Bryozoa,,Paracuneatopora,,,genus,Paracuneatopora Ernst 2008,Ernst 2008,,
+116,116,115,116,Bryozoa,,Paracuneatopora,,striata,species,Paracuneatopora striata Ernst 2008,Ernst 2008,Early Devonian Pragian,Czech Republic
+117,117,12,117,Bryozoa,,Parkermavella,,,genus,Parkermavella,,,
+118,118,117,118,Bryozoa,,Parkermavella,,spathata,species,Parkermavella spathata Ramalho Muricy & Taylor 2008,"Ramalho, Muricy & Taylor 2008",Recent,West Atlantic Brazil
+119,119,12,119,Bryozoa,,Permopora,,,genus,Permopora,,,
+120,120,119,120,Bryozoa,,Permopora,,volgensis,species,Permopora volgensis Gorjunova & Sedaeva 2008,Gorjunova & Sedaeva 2008,Permian Guadalupian,Russia Russian Platform
+121,121,12,121,Bryozoa,,Poricella,,,genus,Poricella,,,
+122,122,121,122,Bryozoa,,Poricella,,garbovensis,species,Poricella garbovensis Zágoršek Filopescu Holcová,"Zágoršek, Filipescu, Holcová",Neogene Miocene,Rumania
+123,123,12,123,Bryozoa,,Reptomulticava,,,genus,Reptomulticava,,,
+124,124,123,124,Bryozoa,,Reptomulticava,,pileola,species,Reptomulticava pileola Viskova 2008,Viskova 2008,Middle Jurassic Callovian,Russia Moscow
+125,125,12,125,Bryozoa,,Revalotrypa,,,genus,Revalotrypa,,,
+126,126,125,126,Bryozoa,,Revalotrypa,,krestensis,species,Revalotrypa krestensis Koromyslova 2008,Koromyslova 2008,Early-Middle Ordovician,Russia
+127,127,12,127,Bryozoa,,Rhabdomeson,,,genus,Rhabdomeson,,,
+128,128,127,128,Bryozoa,,Rhabdomeson,,coniforme,species,Rhabdomeson coniforme Ernst Weidlich & Schäfer 2008,"Ernst, Weidlich & Schäfer 2008",Permian Cisuralian-Guadalupian,Oman
+129,129,127,129,Bryozoa,,Rhabdomeson,,latum,species,Rhabdomeson latum Ernst Weidlich & Schäfer 2008,"Ernst, Weidlich & Schäfer 2008",Permian Cisuralian-Guadalupian,Oman
+130,130,12,130,Bryozoa,,Rhombocladia,,,genus,Rhombocladia,,,
+131,131,130,131,Bryozoa,,Rhombocladia,,quasiminor,species,Rhombocladia quasiminor Ernst Weidlich & Schäfer 2008,"Ernst, Weidlich & Schäfer 2008",Permian Cisuralian-Guadalupian,Oman
+132,132,12,132,Bryozoa,,Smittina,,,genus,Smittina,,,
+133,133,132,133,Bryozoa,,Smittina,,humilis,species,Smittina humilis Gontar 2008,Gontar 2008,Recent,Antarctic
+134,134,132,134,Bryozoa,,Smittina,,impellucida,species,Smittina impellucida Gontar 2008,Gontar 2008,Recent,Antarctic
+135,135,132,135,Bryozoa,,Smittina,,multanguloporata,species,Smittina multanguloporata Gontar 2008,Gontar 2008,Recent,Antarctic
+136,136,12,136,Bryozoa,,Spirodella,,,genus,Spirodella Viskova 2008,Viskova 2008,,
+137,137,136,137,Bryozoa,,Spirodella,,radiolobata,species,Spirodella radiolobata Viskova 2008,Viskova 2008,Middle Jurassic Callovian,Russia Moscow
+138,138,12,138,Bryozoa,,Stellahexaformis,,,genus,Stellahexaformis,,,
+139,139,138,139,Bryozoa,,Stellahexaformis,,burovi,species,Stellahexaformis burovi Gorjunova & Sedaeva 2008,Gorjunova & Sedaeva 2008,Permian Guadalupian,Russia Russian Platform
+139a,139a,12,139a,Bryozoa,,Streblotrypa,,,genus,Streblotrypa,,,
+139b,139b,139a,139b,Bryozoa,,Streblotrypa,Streblotrypa,,subgenus,Streblotrypa,,,
+140,140,139b,140,Bryozoa,,Streblotrypa,Streblotrypa,binodata,species,Streblotrypa (Streblotrypa) binodata Ernst Weidlich & Schäfer 2008,"Ernst, Weidlich & Schäfer 2008",Permian Cisuralian-Guadalupian,Oman
+141,141,139b,141,Bryozoa,,Streblotrypa,Streblotrypa,peculiaris,species,Streblotrypa (Streblotrypa) peculiaris Ernst & Winkler Prins 2008,Ernst & Winkler Prins 2008,Carboniferous Pennsylvanian Kasimovian,Spain
+142,142,12,142,Bryozoa,,Streblotrypella,,,genus,Streblotrypella,,,
+143,143,142,143,Bryozoa,,Streblotrypella,,eifelensis,species,Streblotrypella eifelensis Ernst 2008,Ernst 2008,Middle Devonian,Germany
+143a,143a,12,143a,Bryozoa,,Sulcoretepora,,,genus,Sulcoretepora,,,
+144,144,143a,144,Bryozoa,,Sulcoretepora,,orientalis,species,Sulcoretepora orientalis Ernst Weidlich & Schäfer 2008,"Ernst, Weidlich & Schäfer 2008",Permian Cisuralian-Guadalupian,Oman
+145,145,143a,145,Bryozoa,,Sulcoretepora,,tenuis,species,Sulcoretepora tenuis Ernst 2008,Ernst 2008,Middle Devonian,Germany
+146,146,12,146,Bryozoa,,Therenia,,,genus,Therenia,,,
+147,147,146,147,Bryozoa,,Therenia,,cryptooecium,species,Therenia cryptooecium Berning Tilbrook & Rosso 2008,"Berning, Tilbrook & Rosso 2008",Recent,East Atlantic Ghana
+148,148,146,148,Bryozoa,,Therenia,,peristomata,species,Therenia peristomata Berning Tilbrook & Rosso 2008,"Berning, Tilbrook & Rosso 2008",Recent,Atlantic Madeira
+149,149,146,149,Bryozoa,,Therenia,,rosei,species,Therenia rosei Berning Tilbrook & Rosso 2008,"Berning, Tilbrook & Rosso 2008",Recent,Mediterranean
+150,150,146,150,Bryozoa,,Therenia,,transylvanica,species,Threnia transylvanica Zágoršek Filipescu Holcová 2010,"Zágoršek, Filipescu, Holcová 2010",Neogene Miocene,Rumania
+150a,150a,12,150a,Bryozoa,,Trematooecia,,,genus,Trematooecia,,,
+151,151,150a,151,Bryozoa,,Trematooecia,,ligulata,species,Trematooecia ligulata Ayari & Taylor 2008,Ayari & Taylor 2008,Recent,Mediterranean
+152,152,12,152,Bryozoa,,Uharella,,,genus,Uharella Taylor Casadío & Gordon 2008,"Taylor, Casadío & Gordon 2008",,
+153,153,152,153,Bryozoa,,Uharella,,seymourensis,species,Uharella seymourensis Taylor Casadío & Gordon 2008,"Taylor, Casadío & Gordon 2008",Paleogene Eocene,Antarctic
+154,154,12,154,Bryozoa,,Ulrichotrypella,,,genus,Ulrichotrypella,,,
+155,155,154,155,Bryozoa,,Ulrichotrypella,,omanica,species,Ulrichotrypella omanica Ernst Weidlich & Schäfer 2008,"Ernst, Weidlich & Schäfer 2008",Permian Cisuralian-Guadalupian,Oman
+156,156,12,156,Bryozoa,,Wjatkella,,,genus,Wjatkella,,,
+157,157,156,157,Bryozoa,,Wjatkella,,definita,species,Wjatkella definita Gorjunova & Sedaeva 2008,Gorjunova & Sedaeva 2008,Permian Guadalupian,Russia Russian Platform
+158,158,12,158,Bryozoa,,Zimmerella,,,genus,Zimmerella Taylor 2008,Taylor 2008,,
+159,159,12,159,Bryozoa,,Wilbertopora,,,genus,Wilbertopora,,,
+160,160,159,160,Bryozoa,,Wilbertopora,,sannerae,species,Wilbertopora sannerae Taylor 2008,Taylor 2008,Late Cretaceous Campanian,USA California
+161,161,12,161,Bryozoa,,Onychocella,,,genus,Onychocella,,,
+162,162,161,162,Bryozoa,,Onychocella,,schopforum,species,Onychocella schopforum Taylor 2008,Taylor 2008,Late Cretaceous Campanian-Maastrichtian,USA California
+163,163,12,163,Bryozoa,,Trichinopolia,,,genus,Trichinopolia,,,
+164,164,163,164,Bryozoa,,Trichinopolia,,lata,species,Trichinopolia lata Taylor 2008,Taylor 2008,Late Cretaceous Campanian-Maastrichtian,USA California
+165,165,163,165,Bryozoa,,Trichinopolia,,californica,species,Trichinopolia californica Taylor 2008,Taylor 2008,Late Cretaceous Campanian,USA California

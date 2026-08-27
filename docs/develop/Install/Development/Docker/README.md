@@ -140,4 +140,18 @@ To fix this you may follow [Post-installation steps for Linux](https://docs.dock
 
 * This can happen after `docker compose build`; clear your browser cookies for that page and try again.
 
+### "Blocked hosts" error when accessing TaxonWorks with custom hostname
+
+* Problem: When accessing TaxonWorks using a custom hostname (e.g., `taxonworks.local` or `taxonworks.yourdomain.com`), you see a "Blocked hosts" error page.
+* Solution: Configure allowed hosts in `config/application_settings.yml`:
+  1. Create the file `config/application_settings.yml` in your TaxonWorks directory (this file is git-ignored)
+  2. Add your custom hostname(s) to the allowed hosts list:
+     ```yaml
+     allowed_hosts:
+       - taxonworks.local
+       - taxonworks.yourdomain.com
+     ```
+  3. Restart the Docker containers with `docker compose down` followed by `docker compose up`
+* Note: This is a Rails security feature that prevents DNS rebinding attacks. The default configuration allows `localhost` and `127.0.0.1`, but custom hostnames must be explicitly allowed.
+
 

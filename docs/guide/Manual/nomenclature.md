@@ -675,41 +675,16 @@ Diacritical marks (e.g. umlauts, tildas) on author names pose special problems, 
 
 ### Changing rank of a family-level taxon
 <a name="change family-level taxon rank"></a>
-This is a multi-step process. You may need to raise or lower the rank of a family-level taxon. The process is the same. Here's an example: let’s assume that we wish to raise the categorical level of the taxon Coccophaginae to family level, Coccophagidae. Here are the steps to follow.
+You may need to raise or lower the rank of a family-level taxon. This is a multi-step process. Here's an example: let’s assume that we wish to raise the categorical level of the taxon Coccophaginae to family level, Coccophagidae. Here are the steps to follow.
 
-1. Check to see if Coccophagidae has been used at the family level before (use `Browse Nomenclature`). If it has, you can skip step 2 below, because the taxon name Coccophagidae already exists in the system.
+1. Navigate to the Edit Taxon Name screen of the name being moved to a new rank, in this example, Coccophaginae.
 
-2. If the taxon at the family-level (Coccophagidae here) does not exist, navigate to the taxon name Coccophaginae (`Browse Nomenclature`) and move to the `Edit Taxon Name screen` to create the name Coccophagidae.
-- The best way to do this is to `Clone` the subfamily level name (green button in upper right), as this will retain the author and date, type genus, and other historical information.
-- `Select all the boxes` to retain all historical information and type `CLONE` in the box. This will active the green `Clone` button. Note that _you are creating a `taxon name` here_, not an OTU, which is a separate issue.
+2. Copy the name, scroll down to the Original Form section and paste the current ranked name there.
 
-3. You are now on the `Edit taxon name` page for the cloned name. 
-- Change the family ending suffix to “idae”, or Coccophagidae.
-- Now change the parent. In this case, it will now be Chalcidoidea.
-- Then `Show all ranks`, and pick `Family`.  
+3. Scroll back up and change the name to the new rank, in this example, Coccophagidae.
+   
+4. Scroll down to the Subesequent Name Forms section, click on the "clone from current" button, and enter the citation for the rank change.
 
-4. To record who made the change in categorical level:
-- Scroll down to the `Classification field`
-- Click `Set to Parent` (which will pick up Chalcidoidea from above), if the current classification is correct. Otherwise, type in the correct parent. 
-  - Below the field will be two choices, `Incertae Sedis` and `Classified As`. Pick Source `Classified As`.
-- Enter the `source` and `page number` for the publication in which the change was made (in this case, elevation of Coccophaginae to Coccophagidae).
-
-5. Now you need to make the appropriate changes to the nominate subfamily taxon, the subfamily Coccophaginae in this example.
-- `Navigate` to the `Edit Taxon Name` form for Coccophaginae.
-- Change the `parent` here to the new family-level name, in this case, Coccophagidae.  
-
-6. Next, scroll down to the Relationships field.  
-- Enter the new `family-level name` (Coccophagidae), and 
-- `show all possible choices` (blue box to right). 
-  - Choose `Family Group Name, Original Form Of` from the menu of choices (it is below `Usage` which is below `Unavailable or Invalid, linked to`).
-- Enter the `source` and `page number`, as always.
-
-7. At this point, a `Manage Synonymy` screen will appear. This provides a dashboard for assigning the classification of all taxa subordinate to the family name (children, in other words).  
-
-8. Below the `Manage Synonymy` screen you will find the `Classification` screen.
-- Type in new `Parent` (Coccophagidae in this example), and 
-- Choose `Source Classified As`.
-- Enter the `citation` and `page number` for the appropriate publication.
 
 ### Changing rank of a genus-level taxon or species-level taxon
 

@@ -9,7 +9,7 @@ _There are various ways to cite TaxonWorks, products derived from the software, 
 ## Software
 
 ### Collective code, documentation and API related material
-TaxonWorks Community. 2022. Taxonworks [software and supporting resources], https://taxonworks.org. Species File Group (maintainers, https://speciesfilegroup.org). Accessible at: https://github.com/SpeciesFileGroup/taxonworks.
+TaxonWorks Community. 2026. TaxonWorks [software and supporting resources], https://taxonworks.org. Species File Group (maintainers, https://speciesfilegroup.org). Accessible at: https://github.com/SpeciesFileGroup/taxonworks.
 
 ```bibtex
 @misc{taxonworks_software_and_related,
@@ -22,7 +22,7 @@ TaxonWorks Community. 2022. Taxonworks [software and supporting resources], http
 ```
 
 ### Code (version free)
-TaxonWorks Community (2022) TaxonWorks [software]. Species File Group (maintainers, https://speciesfilegroup.org). Accessible at: https://github.com/SpeciesFileGroup/taxonworks
+TaxonWorks Community (2026) TaxonWorks [software]. Species File Group (maintainers, https://speciesfilegroup.org). Accessible at: https://github.com/SpeciesFileGroup/taxonworks
 
 ```bibtex
 @misc{taxonworks_software,
@@ -35,7 +35,7 @@ TaxonWorks Community (2022) TaxonWorks [software]. Species File Group (maintaine
 ```
 
 ### Code at a specific version 
-TaxonWorks Community (2022) TaxonWorks [software, Version 0.29.0]. Species File Group (maintainers, https://speciesfilegroup.org). Accessible at https://github.com/SpeciesFileGroup/taxonworks/tree/v0.29.0
+TaxonWorks Community (2026) TaxonWorks [software, Version 0.29.0]. Species File Group (maintainers, https://speciesfilegroup.org). Accessible at https://github.com/SpeciesFileGroup/taxonworks/tree/v0.29.0
 
 ```bibtex
 @misc{taxonworks_software_version_29,
@@ -48,7 +48,7 @@ TaxonWorks Community (2022) TaxonWorks [software, Version 0.29.0]. Species File 
 ```
 
 ### Documentation (these pages)
-TaxonWorks Community (2022) TaxonWorks [documentation]. Species File Group (maintainers, https://speciesfilegroup.org). [Accessed yyyy/mm/dd] Accessible at https://docs.taxonworks.org
+TaxonWorks Community (2026) TaxonWorks [documentation]. Species File Group (maintainers, https://speciesfilegroup.org). [Accessed yyyy/mm/dd] Accessible at https://docs.taxonworks.org
 
 ``` bibtex
 @misc{taxonworks_documentation,

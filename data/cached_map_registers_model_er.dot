@@ -1,0 +1,105 @@
+digraph CachedMapRegister {
+	graph [bb="0,0,650.3,252",
+		label="",
+		outputorder=edgesfirst,
+		rankdir=LR
+	];
+	node [label="\N"];
+	subgraph annotator_cluster {
+		graph [rank=min];
+	}
+	subgraph core {
+	}
+	subgraph supporting {
+		CachedMapRegister	[color="#dedede",
+			fillcolor="#cdefab",
+			group=target,
+			height=0.61111,
+			href="/develop/Data/models.html#cached-map-register",
+			label=CachedMapRegister,
+			pos="97.807,126",
+			shape=doubleoctagon,
+			style=filled,
+			target=_top,
+			width=2.7169];
+		PinboardItem	[color="#dddeee",
+			fillcolor="#eeefff",
+			group=supporting,
+			height=0.5,
+			href="/develop/Data/models.html#pinboard-item",
+			label=PinboardItem,
+			pos="394.33,234",
+			shape=box,
+			style=filled,
+			target=_top,
+			width=1.2535];
+		Role	[color="#dddeee",
+			fillcolor="#eeefff",
+			group=supporting,
+			height=0.5,
+			href="/develop/Data/models.html#role",
+			label=Role,
+			pos="394.33,180",
+			shape=box,
+			style=filled,
+			target=_top,
+			width=0.75];
+		VerifierRole	[color="#dddeee",
+			fillcolor="#eeefff",
+			group=supporting,
+			height=0.5,
+			href="/develop/Data/models.html#verifier-role",
+			label=VerifierRole,
+			pos="394.33,126",
+			shape=box,
+			style=filled,
+			target=_top,
+			width=1.1493];
+		Verifier	[color="#dddeee",
+			fillcolor="#eeefff",
+			group=supporting,
+			height=0.5,
+			href="/develop/Data/models.html#verifier",
+			label=Verifier,
+			pos="621.67,153",
+			shape=box,
+			style=filled,
+			target=_top,
+			width=0.79514];
+		Project	[color="#dddeee",
+			fillcolor="#eeefff",
+			group=supporting,
+			height=0.5,
+			href="/develop/Data/models.html#project",
+			label=Project,
+			pos="394.33,72",
+			shape=box,
+			style=filled,
+			target=_top,
+			width=0.75347];
+	}
+	CachedMapRegister -> PinboardItem	[pos="e,348.92,231.17 127.96,148.33 153.8,166.97 193.27,192.72 231.61,207 265.59,219.65 305.78,226.4 337.6,229.98"];
+	CachedMapRegister -> Role	[pos="e,366.95,175.89 172.82,141.53 191.95,145.41 212.53,149.47 231.61,153 273.99,160.84 322.81,168.85 355.63,174.09"];
+	CachedMapRegister -> VerifierRole	[pos="e,352.78,126 196.06,126 244.56,126 301.26,126 341.4,126"];
+	CachedMapRegister -> Project	[dir=back,
+		pos="s,172.82,110.47 183.72,108.28 199.61,105.09 216.11,101.87 231.61,99 279.2,90.194 334.9,81.177 366.95,76.113",
+		style=dashed];
+	"Objects with Cached map registers"	[color="#dedede",
+		fillcolor="#cdabef",
+		group=polymorphic,
+		height=0.5,
+		href="/develop/Data/models.html#objects with cached map register",
+		label="Objects with Cached map registers",
+		pos="394.33,18",
+		shape=hexagon,
+		style=filled,
+		target=_top,
+		width=4.5199];
+	CachedMapRegister -> "Objects with Cached map registers"	[dir=back,
+		pos="s,127.96,103.67 137.25,97.086 162.73,79.341 197.62,57.663 231.61,45 248.42,38.741 266.75,33.927 284.83,30.226",
+		style=dashed];
+	Role -> Verifier	[pos="e,592.79,156.34 421.62,176.85 461.03,172.13 535.68,163.18 581.52,157.69",
+		style=invis];
+	VerifierRole -> Verifier	[pos="e,592.63,149.64 436.14,130.89 477.35,135.83 540.57,143.4 581.27,148.28",
+		style=dotted];
+}

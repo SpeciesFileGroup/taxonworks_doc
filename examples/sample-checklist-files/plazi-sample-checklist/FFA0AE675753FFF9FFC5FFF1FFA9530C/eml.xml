@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?><eml:eml packageId="FFA0AE675753FFF9FFC5FFF1FFA9530C/eml-1732858631049.xml" scope="system" system="Plazi" xmlns:d="eml://ecoinformatics.org/dataset-2.0.1" xmlns:dc="http://purl.org/dc/terms/" xmlns:eml="eml://ecoinformatics.org/eml-2.0.1" xmlns:md="eml://ecoinformatics.org/methods-2.0.1" xmlns:proj="eml://ecoinformatics.org/project-2.0.1" xmlns:res="eml://ecoinformatics.org/resource-2.0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><dataset><alternateIdentifier>FFA0AE675753FFF9FFC5FFF1FFA9530C</alternateIdentifier><citation author="Hansson, Christer; Hanson, Paul E." issued="2023" title="EULOPHIDAE OF COSTA RICA (HYMENOPTERA: CHALCIDOIDEA), 5: The genus Galeopsomyia Girault" containerTitle="Taxonomic Monographs on Neotropical Hymenoptera" volume="3" issue="1" page="1-743" doi="10.5281/zenodo.8372024" isbn="978-1-7397467-2-8" issn="2754-9844">Hansson, Christer, Hanson, Paul E. (2023): EULOPHIDAE OF COSTA RICA (HYMENOPTERA: CHALCIDOIDEA), 5: The genus Galeopsomyia Girault. Taxonomic Monographs on Neotropical Hymenoptera (Oxford, England) 3 (1): 1-743, ISBN: 978-1-7397467-2-8, DOI: 10.5281/zenodo.8372024, URL: http://dx.doi.org/10.5281/zenodo.8372023</citation><title>EULOPHIDAE OF COSTA RICA (HYMENOPTERA: CHALCIDOIDEA), 5: The genus Galeopsomyia Girault</title><creator><individualName><givenName>Christer</givenName><surName>Hansson</surName></individualName></creator><creator><individualName><givenName>Paul E.</givenName><surName>Hanson</surName></individualName></creator><pubDate>2023-09-28</pubDate><language>en</language><abstract><para>This dataset contains the digitized treatments in Plazi based on the original journal article Hansson, Christer, Hanson, Paul E. (2023): EULOPHIDAE OF COSTA RICA (HYMENOPTERA: CHALCIDOIDEA), 5: The genus Galeopsomyia Girault. Taxonomic Monographs on Neotropical Hymenoptera (Oxford, England) 3 (1): 1-743, ISBN: 978-1-7397467-2-8, DOI: 10.5281/zenodo.8372024, URL: http://dx.doi.org/10.5281/zenodo.8372023</para></abstract><intellectualRights><para>To the extent possible under law, the publisher has waived all copyright and related or neighboring rights to these data, and has released them under<ulink url="https://creativecommons.org/publicdomain/zero/1.0/"><citetitle>CC0 Public Domain Dedication</citetitle></ulink>.
+        Users may copy, modify, distribute and use the work, including for commercial purposes.</para><para>No known copyright restrictions apply. See Agosti, D., Egloff, W., 2009. Taxonomic information exchange and copyright: the Plazi approach. BMC Research Notes 2009, 2:53<ulink url="https://doi.org/10.1186/1756-0500-2-53"><citetitle>https://doi.org/10.1186/1756-0500-2-53</citetitle></ulink>for further explanation.</para></intellectualRights><distribution scope="document"><online><url function="information">https://tb.plazi.org/GgServer/summary/FFA0AE675753FFF9FFC5FFF1FFA9530C</url></online></distribution><contact><individualName><givenName>Guido</givenName><surName>Sautter</surName></individualName><electronicMailAddress>sautter@plazi.org</electronicMailAddress><onlineUrl>https://plazi.org</onlineUrl></contact><associatedParty><organizationName>Plazi</organizationName><address><city>Bern</city><country>Switzerland</country></address><electronicMailAddress>info@plazi.org</electronicMailAddress><onlineUrl>https://plazi.org/</onlineUrl><role>publisher</role></associatedParty><metadataProvider><organizationName>Plazi</organizationName><individualName><surName>felipe</surName></individualName></metadataProvider></dataset><additionalMetadata><metadata><gbif><dateStamp>2024-11-29T05:37:11+0000</dateStamp><bibliography><citation author="Hansson, Christer; Hanson, Paul E." issued="2023" title="EULOPHIDAE OF COSTA RICA (HYMENOPTERA: CHALCIDOIDEA), 5: The genus Galeopsomyia Girault" containerTitle="Taxonomic Monographs on Neotropical Hymenoptera" volume="3" issue="1" page="1-743" doi="10.5281/zenodo.8372024" isbn="978-1-7397467-2-8" issn="2754-9844">Hansson, Christer, Hanson, Paul E. (2023): EULOPHIDAE OF COSTA RICA (HYMENOPTERA: CHALCIDOIDEA), 5: The genus Galeopsomyia Girault. Taxonomic Monographs on Neotropical Hymenoptera (Oxford, England) 3 (1): 1-743, ISBN: 978-1-7397467-2-8, DOI: 10.5281/zenodo.8372024, URL: http://dx.doi.org/10.5281/zenodo.8372023</citation></bibliography></gbif><plaziMods><mods:mods xmlns:mods="http://www.loc.gov/mods/v3">
+    <mods:titleInfo>
+        <mods:title>EULOPHIDAE OF COSTA RICA (HYMENOPTERA: CHALCIDOIDEA), 5: The genus Galeopsomyia Girault</mods:title>
+    </mods:titleInfo>
+    <mods:name type="personal">
+        <mods:role>
+            <mods:roleTerm>Author</mods:roleTerm>
+        </mods:role>
+        <mods:namePart>Hansson, Christer</mods:namePart>
+        <mods:affiliation>Scientific Associate Biological Museum (Entomology), Lund University Sölvegatan 37, SE- 22362 Lund, Sweden &amp; Natural History Museum, Insects Division Cromwell Road, London SW 7 5 BD, United Kingdom</mods:affiliation>
+    </mods:name>
+    <mods:name type="personal">
+        <mods:role>
+            <mods:roleTerm>Author</mods:roleTerm>
+        </mods:role>
+        <mods:namePart>Hanson, Paul E.</mods:namePart>
+        <mods:affiliation>School of Biology and Zoology Museum Biodiversity and Tropical Ecology Research Center (CIBET) University of Costa Rica, San Pedro de Montes de Oca 11501 - 2060, San José, Costa Rica</mods:affiliation>
+    </mods:name>
+    <mods:typeOfResource>text</mods:typeOfResource>
+    <mods:relatedItem type="host">
+        <mods:titleInfo>
+            <mods:title>Taxonomic Monographs on Neotropical Hymenoptera</mods:title>
+        </mods:titleInfo>
+        <mods:part>
+            <mods:date>2023</mods:date>
+            <mods:detail type="series">
+                <mods:title>Oxford, England</mods:title>
+            </mods:detail>
+            <mods:detail type="pubDate">
+                <mods:number>2023-09-28</mods:number>
+            </mods:detail>
+            <mods:detail type="volume">
+                <mods:number>3</mods:number>
+            </mods:detail>
+            <mods:detail type="issue">
+                <mods:number>1</mods:number>
+            </mods:detail>
+            <mods:extent unit="page">
+                <mods:start>1</mods:start>
+                <mods:end>743</mods:end>
+            </mods:extent>
+        </mods:part>
+    </mods:relatedItem>
+    <mods:location>
+        <mods:url>http://dx.doi.org/10.5281/zenodo.8372023</mods:url>
+    </mods:location>
+    <mods:classification>journal article</mods:classification>
+    <mods:identifier type="CLB-Dataset">296056</mods:identifier>
+    <mods:identifier type="DOI">10.5281/zenodo.8372024</mods:identifier>
+    <mods:identifier type="GBIF-Dataset">35ca31b2-de5d-49eb-9d06-af983c255fdc</mods:identifier>
+    <mods:identifier type="ISBN">978-1-7397467-2-8</mods:identifier>
+    <mods:identifier type="ISSN">2754-9844</mods:identifier>
+    <mods:identifier type="Zenodo-Dep">8372024</mods:identifier>
+    <mods:identifier type="ZooBank">D833085E-4DB3-48D3-964F-A41566442672</mods:identifier>
+</mods:mods></plaziMods></metadata></additionalMetadata></eml:eml>

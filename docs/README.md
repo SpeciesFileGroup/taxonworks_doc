@@ -2,7 +2,8 @@
 home: true
 title: Home
 heroImage: /images/taxonworks_home.svg
-actions: 
+heroImageDark: /images/taxonworks_home_dark.svg
+actions:
   - text: Guide
     link: /guide/
     type: primary
@@ -14,7 +15,7 @@ actions:
     type: secondary
 features:
   - title: Guide
-    splash: Learn to use TaxonWorks 
+    splash: Learn to use TaxonWorks
     details: Get the big picture. Start a project. Get started. Study manuals, watch videos, get tips, learn best practices from SOPs, answer "How do I?" from FAQs, mobilize data with import and export, conect workflows with the API. Request features, file bug reports.
   - title: Develop
     splash: Learn to develop TaxonWorks
